@@ -109,6 +109,19 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 | 20:00 daily | Recap reminder (push + email) linking to the recap box |
 | Sunday morning | Weekly edition: market overview + "what is really possible now" radar |
 
+## 3.9 Design (agreed 2026-10-31)
+- Mood: calm minimal (Morning Spark-like), no personal branding, neutral for the community.
+- Palette: Midnight `#0b1957`, Sapphire `#426bc2`, Petal `#e8d9ed`, Lace `#f7f4ed`, Lavender `#d2b3db`, Bridal Blue `#e9f3ff`.
+- Reading: swipeable cards by default (one section per card); a toggle at the top switches to one long scroll.
+- Language toggle EN / VI at the top.
+- Chrome new tab: compact card (Frontier headline + today's question + 3 exercise buttons) with "Read full edition".
+
+## 3.10 Source collection (updated 2026-10-31)
+- Blogs/newsletters: RSS, fetched directly (25 feeds, most verified).
+- YouTube: YouTube Data API (free key, ~20 quota units/day for 10 channels) as primary; YouTube RSS as fallback (it is often down for hours).
+- Podcasts: podcast RSS feeds for show notes; public transcript archives where they exist (e.g. Lenny's Podcast transcripts on GitHub).
+- Sites without feeds: read the page directly.
+
 ## 4. Repo layout
 
 ```
