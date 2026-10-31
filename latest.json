@@ -1,0 +1,80 @@
+{
+ "date": "2026-10-31",
+ "edition": "001",
+ "summary": {
+  "en": "AI gets real numbers: a profitable frontier lab, a cheaper computer-use model, and software output tripling.",
+  "vi": "AI có những con số thật: một lab hàng đầu có lãi, một model dùng máy tính rẻ hơn, và lượng phần mềm tăng gấp ba."
+ },
+ "big": {
+  "en": "This week the AI business showed its numbers. Anthropic's IPO filing shows a frontier lab can be very profitable per sale, OpenAI shipped a cheaper mid-tier model built for using computers, and GitHub reports that software output tripled in under a year because of coding agents. For product people the message is clear: building is getting cheap and abundant, so deciding what is worth building becomes the scarce skill.",
+  "vi": "Tuần này ngành AI công bố những con số thật. Hồ sơ IPO của Anthropic cho thấy một lab hàng đầu có thể lãi rất cao trên mỗi đồng doanh thu, OpenAI ra mắt một model tầm trung rẻ hơn chuyên thao tác máy tính, và GitHub báo cáo lượng phần mềm tăng gấp ba trong chưa đầy một năm nhờ agent viết code. Với người làm sản phẩm, thông điệp rất rõ: xây dựng ngày càng rẻ và dư thừa, nên khả năng quyết định điều gì đáng xây trở thành kỹ năng khan hiếm."
+ },
+ "headlines": [
+  {
+   "t": {
+    "en": "Anthropic files for IPO: $16.3bn revenue in six months",
+    "vi": "Anthropic nộp hồ sơ IPO: doanh thu 16,3 tỷ USD trong sáu tháng"
+   },
+   "src": "hellochinatech.com",
+   "url": "https://hellochinatech.com/p/anthropic-s1-zhipu-minimax-margins"
+  },
+  {
+   "t": {
+    "en": "OpenAI's GPT-6.1 Terra: a cheaper mid-tier model for computer use",
+    "vi": "GPT-6.1 Terra của OpenAI: model tầm trung rẻ hơn cho thao tác máy tính"
+   },
+   "src": "simonwillison.net",
+   "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
+  },
+  {
+   "t": {
+    "en": "GitHub Octoverse 2026: software output tripled in under a year",
+    "vi": "GitHub Octoverse 2026: lượng phần mềm tăng gấp ba trong chưa đầy một năm"
+   },
+   "src": "simonwillison.net",
+   "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/"
+  }
+ ],
+ "question": {
+  "en": "If building software is three times cheaper, what becomes the scarce skill on your team, and are you practicing it every week?",
+  "vi": "Nếu xây phần mềm rẻ hơn ba lần, kỹ năng nào trở nên khan hiếm trong team bạn, và bạn có luyện nó mỗi tuần không?"
+ },
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Map the four risks for one feature",
+    "vi": "Vẽ bản đồ bốn rủi ro cho một tính năng"
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Draft a post: software output tripled, taste did not",
+    "vi": "Nháp bài đăng: lượng phần mềm tăng gấp ba, gu thì không"
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Rebuild one screen you admire with an AI tool, using real data",
+    "vi": "Dựng lại một màn hình bạn thích bằng công cụ AI, dùng dữ liệu thật"
+   }
+  }
+ ]
+}

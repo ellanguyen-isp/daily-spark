@@ -1,0 +1,215 @@
+#!/usr/bin/env python3
+"""daily-spark build tool (standard library only).
+
+  python3 scripts/spark.py ledger
+      What was already sent: recent dates, used source URLs, timeless sources.
+
+  python3 scripts/spark.py publish EDITION.json [--private-dir DIR]
+      Validate a full edition, then:
+        - write the public copy (no "work" section) to editions/data/<date>.json
+        - rebuild editions/index.json and latest.json
+        - if --private-dir is given, write the full edition as Markdown there
+"""
+import argparse
+import json
+import re
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "editions" / "data"
+LANGS = ("en", "vi")
+FORBIDDEN = "—"  # em dash: house style says never use it
+
+
+class Invalid(Exception):
+    pass
+
+
+def need(cond, msg):
+    if not cond:
+        raise Invalid(msg)
+
+
+def bi(v, where, is_list=False):
+    """A bilingual field: {"en": ..., "vi": ...}."""
+    need(isinstance(v, dict), f"{where}: must be {{en, vi}}")
+    for l in LANGS:
+        need(l in v and v[l], f"{where}.{l}: missing")
+        if is_list:
+            need(isinstance(v[l], list) and len(v[l]) >= 2, f"{where}.{l}: needs a list of at least 2 points")
+
+
+def walk_text(o, path="$"):
+    if isinstance(o, str):
+        yield path, o
+    elif isinstance(o, dict):
+        for k, v in o.items():
+            yield from walk_text(v, f"{path}.{k}")
+    elif isinstance(o, list):
+        for i, v in enumerate(o):
+            yield from walk_text(v, f"{path}[{i}]")
+
+
+def used_urls(exclude_date=None):
+    urls = {}
+    for f in sorted(DATA.glob("*.json")):
+        if f.stem == exclude_date:
+            continue
+        for u in re.findall(r'"url":\s*"([^"]+)"', f.read_text()):
+            urls[u] = f.stem
+    return urls
+
+
+def validate(E):
+    need(re.fullmatch(r"\d{4}-\d{2}-\d{2}", E.get("date", "")), "date: YYYY-MM-DD")
+    need(isinstance(E.get("edition"), str) and re.fullmatch(r"\d{3}", E["edition"]), 'edition: 3-digit string like "001"')
+    bi(E.get("summary"), "summary")
+    need(isinstance(E.get("minutes"), int), "minutes: integer")
+
+    F = E.get("frontier")
+    need(isinstance(F, dict), "frontier: missing")
+    bi(F.get("big"), "frontier.big")
+    need(1 <= len(F.get("items", [])) <= 5, "frontier.items: 1 to 5 stories")
+    for i, it in enumerate(F["items"]):
+        w = f"frontier.items[{i}]"
+        need(it.get("url", "").startswith("http"), f"{w}.url: original source link required")
+        need(it.get("date"), f"{w}.date: required")
+        bi(it.get("t"), w + ".t"); bi(it.get("p"), w + ".p", True); bi(it.get("w"), w + ".w")
+
+    need(2 <= len(E.get("people", [])) <= 4, "people: 2 to 4 items")
+    for i, it in enumerate(E["people"]):
+        w = f"people[{i}]"
+        need(it.get("url", "").startswith("http"), f"{w}.url: original source link required")
+        need(it.get("date") and it.get("who"), f"{w}: date and who required")
+        bi(it.get("t"), w + ".t"); bi(it.get("p"), w + ".p", True); bi(it.get("k"), w + ".k")
+
+    for i, it in enumerate(E.get("work", [])):
+        w = f"work[{i}]"
+        bi(it.get("t"), w + ".t"); bi(it.get("p"), w + ".p", True); bi(it.get("k"), w + ".k")
+
+    T = E.get("timeless")
+    need(isinstance(T, dict), "timeless: missing")
+    need(T.get("src"), "timeless.src: required")
+    for k in ("q", "e", "x"):
+        bi(T.get(k), "timeless." + k)
+    bi(T.get("a"), "timeless.a", True)
+
+    need(len(E.get("think", [])) == 3, "think: exactly 3 questions")
+    for i, it in enumerate(E["think"]):
+        bi(it.get("q"), f"think[{i}].q"); bi(it.get("c"), f"think[{i}].c")
+
+    ex = E.get("exercises", [])
+    need([e.get("k") for e in ex] == ["work", "write", "build"], "exercises: work, write, build in that order")
+    for e in ex:
+        w = "exercises." + e["k"]
+        need(e.get("time"), w + ".time: required")
+        bi(e.get("tag"), w + ".tag"); bi(e.get("g"), w + ".g"); bi(e.get("s"), w + ".s", True); bi(e.get("o"), w + ".o")
+
+    for path, text in walk_text(E):
+        need(FORBIDDEN not in text, f"{path}: contains an em dash; rewrite the sentence")
+
+    reused = {u: d for u, d in used_urls(E["date"]).items()
+              if u in {x.get("url") for x in F["items"] + E["people"]}}
+    need(not reused, "already sent before: " + ", ".join(f"{u} ({d})" for u, d in reused.items()))
+
+
+def rebuild_index():
+    eds = []
+    for f in sorted(DATA.glob("*.json"), reverse=True):
+        E = json.loads(f.read_text())
+        eds.append({"date": E["date"], "edition": E["edition"], "summary": E["summary"], "minutes": E["minutes"]})
+    (ROOT / "editions" / "index.json").write_text(json.dumps({"editions": eds}, ensure_ascii=False, indent=1))
+    if eds:
+        E = json.loads((DATA / f"{eds[0]['date']}.json").read_text())
+        latest = {
+            "date": E["date"], "edition": E["edition"], "summary": E["summary"],
+            "big": E["frontier"]["big"],
+            "headlines": [{"t": it["t"], "src": it.get("src", ""), "url": it["url"]} for it in E["frontier"]["items"]],
+            "question": E["think"][0]["q"],
+            "exercises": [{"k": e["k"], "tag": e["tag"], "time": e["time"], "g": e["g"]} for e in E["exercises"]],
+        }
+        (ROOT / "latest.json").write_text(json.dumps(latest, ensure_ascii=False, indent=1))
+    return eds
+
+
+def to_markdown(E):
+    en = lambda o: o["en"] if isinstance(o, dict) else o  # noqa: E731
+    out = [f"---\ntype: daily-spark\ndate: {E['date']}\nedition: \"{E['edition']}\"\n---\n",
+           f"# daily-spark {E['date']} · Edition {E['edition']}\n", f"> {en(E['summary'])}\n",
+           "## Frontier\n", f"**The big picture:** {en(E['frontier']['big'])}\n"]
+    for it in E["frontier"]["items"]:
+        out.append(f"### {en(it['t'])}\n{it['date']} · [{it.get('src') or it['url']}]({it['url']})\n")
+        out += [f"- {p}" for p in en(it["p"])]
+        out.append(f"\n**Why it matters:** {en(it['w'])}\n")
+    if E["frontier"].get("watch"):
+        out.append(f"**What to watch next:** {en(E['frontier']['watch'])}\n")
+    out.append("## From people you follow\n")
+    for it in E["people"]:
+        out.append(f"### {en(it['t'])}\n{it['date']} · {it['who']} · [{it.get('src') or it['url']}]({it['url']})\n")
+        out += [f"- {p}" for p in en(it["p"])]
+        out.append(f"\n**Takeaway:** {en(it['k'])}\n")
+    if E.get("work"):
+        out.append("## Relevant to your work (private)\n")
+        for it in E["work"]:
+            out.append(f"### {en(it['t'])}\n")
+            out += [f"- {p}" for p in en(it["p"])]
+            out.append(f"\n**Takeaway:** {en(it['k'])}\n")
+    T = E["timeless"]
+    out.append(f"## Timeless\n> {en(T['q'])}\n> {T['src']}\n\n{en(T['e'])}\n")
+    out += [f"- {p}" for p in en(T["a"])]
+    out.append(f"\n**Example:** {en(T['x'])}\n\n## Think\n")
+    out += [f"{i + 1}. {en(q['q'])} _({en(q['c'])})_" for i, q in enumerate(E["think"])]
+    out.append("\n## Exercises\n")
+    for e in E["exercises"]:
+        out.append(f"### {en(e['tag'])} · {e['time']}: {en(e['g'])}")
+        out += [f"{i + 1}. {s}" for i, s in enumerate(en(e["s"]))]
+        out.append(f"\nYou will have: {en(e['o'])}\n")
+    return "\n".join(out) + "\n"
+
+
+def cmd_ledger(_):
+    files = sorted(DATA.glob("*.json"))
+    print(f"{len(files)} editions published.", "Next edition:", f"{len(files) + 1:03d}")
+    for f in files[-7:]:
+        E = json.loads(f.read_text())
+        print(" ", E["date"], E["edition"], "|", E["summary"]["en"], "| timeless:", E["timeless"]["src"])
+    urls = used_urls()
+    print(f"{len(urls)} source URLs already used (never reuse them).")
+    return 0
+
+
+def cmd_publish(a):
+    E = json.loads(Path(a.file).read_text())
+    try:
+        validate(E)
+    except Invalid as e:
+        print("INVALID:", e, file=sys.stderr)
+        return 1
+    public = {k: v for k, v in E.items() if k != "work"}
+    DATA.mkdir(parents=True, exist_ok=True)
+    (DATA / f"{E['date']}.json").write_text(json.dumps(public, ensure_ascii=False, indent=1))
+    eds = rebuild_index()
+    print(f"published {E['date']} (edition {E['edition']}); {len(eds)} editions on the site")
+    if a.private_dir:
+        d = Path(a.private_dir)
+        d.mkdir(parents=True, exist_ok=True)
+        (d / f"{E['date']}.md").write_text(to_markdown(E))
+        (d / f"{E['date']}.json").write_text(json.dumps(E, ensure_ascii=False, indent=1))
+        print("private copy ->", d / f"{E['date']}.md")
+    return 0
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = ap.add_subparsers(dest="cmd", required=True)
+    sub.add_parser("ledger")
+    p = sub.add_parser("publish")
+    p.add_argument("file")
+    p.add_argument("--private-dir")
+    a = ap.parse_args(argv)
+    return {"ledger": cmd_ledger, "publish": cmd_publish}[a.cmd](a)
+
+
+if __name__ == "__main__":
+    sys.exit(main())

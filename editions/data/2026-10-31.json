@@ -1,0 +1,385 @@
+{
+ "date": "2026-10-31",
+ "edition": "001",
+ "minutes": 9,
+ "summary": {
+  "en": "AI gets real numbers: a profitable frontier lab, a cheaper computer-use model, and software output tripling.",
+  "vi": "AI có những con số thật: một lab hàng đầu có lãi, một model dùng máy tính rẻ hơn, và lượng phần mềm tăng gấp ba."
+ },
+ "frontier": {
+  "big": {
+   "en": "This week the AI business showed its numbers. Anthropic's IPO filing shows a frontier lab can be very profitable per sale, OpenAI shipped a cheaper mid-tier model built for using computers, and GitHub reports that software output tripled in under a year because of coding agents. For product people the message is clear: building is getting cheap and abundant, so deciding what is worth building becomes the scarce skill.",
+   "vi": "Tuần này ngành AI công bố những con số thật. Hồ sơ IPO của Anthropic cho thấy một lab hàng đầu có thể lãi rất cao trên mỗi đồng doanh thu, OpenAI ra mắt một model tầm trung rẻ hơn chuyên thao tác máy tính, và GitHub báo cáo lượng phần mềm tăng gấp ba trong chưa đầy một năm nhờ agent viết code. Với người làm sản phẩm, thông điệp rất rõ: xây dựng ngày càng rẻ và dư thừa, nên khả năng quyết định điều gì đáng xây trở thành kỹ năng khan hiếm."
+  },
+  "items": [
+   {
+    "date": "2026-10-27",
+    "src": "hellochinatech.com",
+    "tag": "Business",
+    "url": "https://hellochinatech.com/p/anthropic-s1-zhipu-minimax-margins",
+    "t": {
+     "en": "Anthropic files for IPO: $16.3bn revenue in six months",
+     "vi": "Anthropic nộp hồ sơ IPO: doanh thu 16,3 tỷ USD trong sáu tháng"
+    },
+    "stat": {
+     "v": "$16.3bn",
+     "l": {
+      "en": "revenue in H1 2026, up from $1.2bn a year earlier",
+      "vi": "doanh thu nửa đầu 2026, so với 1,2 tỷ USD một năm trước"
+     }
+    },
+    "p": {
+     "en": [
+      "Cost of serving customers was about 15% of revenue, so gross margin is near 85%",
+      "R&D, including training compute, was 60% of revenue",
+      "Operating loss for the half was $693m, and the second quarter alone made a $974m operating profit",
+      "China's listed labs Zhipu and MiniMax earn about a hundred times less and spend more than twice their revenue on R&D"
+     ],
+     "vi": [
+      "Chi phí phục vụ khách hàng khoảng 15% doanh thu, nên biên lợi nhuận gộp gần 85%",
+      "Chi phí R&D, gồm cả compute để huấn luyện, bằng 60% doanh thu",
+      "Lỗ hoạt động nửa năm là 693 triệu USD, riêng quý hai lãi hoạt động 974 triệu USD",
+      "Hai lab niêm yết của Trung Quốc là Zhipu và MiniMax có doanh thu thấp hơn khoảng một trăm lần và chi cho R&D gấp hơn hai lần doanh thu"
+     ]
+    },
+    "w": {
+     "en": "AI models are a real, high-margin business, which means model prices are set by competition, not by cost. Ben Thompson's read: the core business is very profitable, but competition may eat those profits. Expect prices to keep moving, and design AI features so you can switch models.",
+     "vi": "Model AI là một ngành kinh doanh thật với biên lợi nhuận cao, nghĩa là giá model do cạnh tranh quyết định chứ không do chi phí. Nhận định của Ben Thompson: mảng cốt lõi rất có lãi, nhưng cạnh tranh có thể ăn mòn lợi nhuận. Giá sẽ còn biến động, nên hãy thiết kế tính năng AI để có thể đổi model."
+    }
+   },
+   {
+    "date": "2026-10-26",
+    "src": "simonwillison.net",
+    "tag": "Model",
+    "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+    "t": {
+     "en": "OpenAI's GPT-6.1 Terra: a cheaper mid-tier model for computer use",
+     "vi": "GPT-6.1 Terra của OpenAI: model tầm trung rẻ hơn cho thao tác máy tính"
+    },
+    "stat": {
+     "v": "$1 / $5",
+     "l": {
+      "en": "per million input / output tokens, almost half the price of GPT-6.1 Sol",
+      "vi": "cho mỗi triệu token đầu vào / đầu ra, gần bằng một nửa giá GPT-6.1 Sol"
+     }
+    },
+    "p": {
+     "en": [
+      "The launch focuses on visual reasoning, precise computer use and clearer writing",
+      "OpenAI's Ted Sanders: similar to the top models on vision and computer use, but much faster",
+      "It sits in the middle of the lineup, like Sonnet in Anthropic's family",
+      "Built for workday tasks: drafting proposals, reading technical drawings, filling out forms"
+     ],
+     "vi": [
+      "Bản ra mắt tập trung vào suy luận hình ảnh, thao tác máy tính chính xác và viết rõ ràng hơn",
+      "Ted Sanders của OpenAI: ngang các model hàng đầu về hình ảnh và thao tác máy tính, nhưng nhanh hơn nhiều",
+      "Nằm ở giữa dòng sản phẩm, giống Sonnet trong họ model của Anthropic",
+      "Dành cho việc văn phòng hằng ngày: soạn đề xuất, đọc bản vẽ kỹ thuật, điền form"
+     ]
+    },
+    "w": {
+     "en": "Computer use is a repetitive, high-volume task, so a fast and cheap model makes it practical. Features where the AI clicks through a flow for the user are moving from demo to product.",
+     "vi": "Thao tác máy tính là việc lặp lại với khối lượng lớn, nên một model nhanh và rẻ giúp nó khả thi. Những tính năng mà AI tự bấm qua một quy trình thay người dùng đang đi từ demo thành sản phẩm."
+    }
+   },
+   {
+    "date": "2026-10-28",
+    "src": "simonwillison.net",
+    "tag": "Data",
+    "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+    "t": {
+     "en": "GitHub Octoverse 2026: software output tripled in under a year",
+     "vi": "GitHub Octoverse 2026: lượng phần mềm tăng gấp ba trong chưa đầy một năm"
+    },
+    "stat": {
+     "v": "220M",
+     "l": {
+      "en": "merged pull requests per month, triple a year ago",
+      "vi": "pull request được merge mỗi tháng, gấp ba năm ngoái"
+     }
+    },
+    "p": {
+     "en": [
+      "Commits more than tripled to 7.38 billion per month, mostly in the second half of the year",
+      "New repositories doubled to 30.3 million per month",
+      "Simon Willison reads it as a stark picture of agentic engineering",
+      "The report now also breaks numbers out by industry"
+     ],
+     "vi": [
+      "Số commit tăng hơn gấp ba lên 7,38 tỷ mỗi tháng, phần lớn trong nửa cuối năm",
+      "Số repository mới tăng gấp đôi lên 30,3 triệu mỗi tháng",
+      "Simon Willison xem đây là bức tranh rõ nét về lập trình bằng agent",
+      "Báo cáo nay còn chia số liệu theo ngành"
+     ]
+    },
+    "w": {
+     "en": "When building is three times cheaper, the bottleneck moves to choosing the right problem and judging quality. That is the PM's job, and it is getting more valuable, not less.",
+     "vi": "Khi xây dựng rẻ hơn ba lần, nút thắt chuyển sang việc chọn đúng vấn đề và đánh giá chất lượng. Đó là việc của PM, và nó đang có giá trị hơn chứ không giảm."
+    }
+   }
+  ],
+  "watch": {
+   "en": "How investors price Anthropic's IPO, and whether cheap computer-use models make 'the AI does it for you' a standard feature in consumer apps.",
+   "vi": "Nhà đầu tư định giá IPO của Anthropic ra sao, và liệu model thao tác máy tính giá rẻ có biến 'AI làm giúp bạn' thành tính năng tiêu chuẩn trong ứng dụng tiêu dùng."
+  }
+ },
+ "people": [
+  {
+   "who": "The Skip (Nikhyl Singhal)",
+   "date": "2026-10-29",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=9Fo_iTWn7iU",
+   "kind": {
+    "en": "New episode · from description",
+    "vi": "Tập mới · từ phần mô tả"
+   },
+   "t": {
+    "en": "Inside PM at Anthropic: who makes it, and who doesn't",
+    "vi": "Làm PM ở Anthropic: ai trụ lại, ai không"
+   },
+   "p": {
+    "en": [
+     "Guest Dianne Na Penn leads product for Anthropic's research and labs teams",
+     "She joined in 2023 as the first technical PM; her team ran product on every model from Claude 2 to Claude 5.5",
+     "Her team helped incubate Claude Code, MCP, Skills and Claude Design",
+     "Early-career PMs and former forward-deployed engineers have an edge there"
+    ],
+    "vi": [
+     "Khách mời Dianne Na Penn phụ trách sản phẩm cho các team nghiên cứu và labs của Anthropic",
+     "Bà vào Anthropic năm 2023 với vai trò PM kỹ thuật đầu tiên; team của bà làm sản phẩm cho mọi model từ Claude 2 đến Claude 5.5",
+     "Team của bà góp phần ươm tạo Claude Code, MCP, Skills và Claude Design",
+     "PM mới vào nghề và cựu kỹ sư triển khai tại khách hàng có lợi thế ở đó"
+    ]
+   },
+   "k": {
+    "en": "At AI labs, closeness to the model and to real users beats years of title. Your hands-on AI work counts more than you think.",
+    "vi": "Ở các AI lab, sự gần gũi với model và với người dùng thật quan trọng hơn số năm kinh nghiệm. Những việc AI bạn tự tay làm có giá trị hơn bạn nghĩ."
+   }
+  },
+  {
+   "who": "Aakash Gupta",
+   "date": "2026-10-30",
+   "src": "news.aakashg.com",
+   "url": "https://www.news.aakashg.com/p/pm-take-home-assignment-playbook",
+   "kind": {
+    "en": "Newsletter · free part read",
+    "vi": "Bản tin · đã đọc phần miễn phí"
+   },
+   "t": {
+    "en": "PM interview homework is back, and AI changed what wins",
+    "vi": "Bài tập về nhà khi phỏng vấn PM quay lại, và AI đã thay đổi cách thắng"
+   },
+   "stat": {
+    "v": "40 to 45%",
+    "l": {
+     "en": "of PM job seekers faced at least one take-home or presentation",
+     "vi": "người tìm việc PM gặp ít nhất một bài tập về nhà hoặc bài thuyết trình"
+    }
+   },
+   "p": {
+    "en": [
+     "Anthropic, Amazon, Airbnb, Uber and Databricks regularly assign homework; Series A to D startups even more",
+     "Work sample tests are the best predictor of job performance in a classic 1998 study",
+     "Common formats: a PRD, a strategy or roadmap, a case study, or a past project walkthrough",
+     "Some companies ask you not to use AI unless they say so"
+    ],
+    "vi": [
+     "Anthropic, Amazon, Airbnb, Uber và Databricks thường giao bài tập; startup vòng A đến D còn giao nhiều hơn",
+     "Theo một nghiên cứu kinh điển năm 1998, bài làm mẫu là cách dự đoán năng lực làm việc tốt nhất",
+     "Dạng thường gặp: PRD, chiến lược hoặc roadmap, case study, hoặc trình bày một dự án đã làm",
+     "Có công ty yêu cầu không dùng AI trừ khi họ cho phép"
+    ]
+   },
+   "k": {
+    "en": "Keep one past project ready to present as a short case. A shipped AI project with evals is exactly the kind of work sample that stands out.",
+    "vi": "Hãy chuẩn bị sẵn một dự án cũ để trình bày như một case ngắn. Một dự án AI đã ra mắt kèm evals chính là bài làm mẫu nổi bật."
+   }
+  },
+  {
+   "who": "How I AI (Claire Vo)",
+   "date": "2026-10-26",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/why-reddit-built-its-own-ai-prototyping",
+   "kind": {
+    "en": "Podcast episode · from show notes",
+    "vi": "Tập podcast · từ ghi chú tập"
+   },
+   "t": {
+    "en": "Why Reddit built its own AI prototyping tool",
+    "vi": "Vì sao Reddit tự xây công cụ làm prototype bằng AI"
+   },
+   "stat": {
+    "v": "700+",
+    "l": {
+     "en": "prototypes live on Reddit Proto, used by 100% of UX and product",
+     "vi": "prototype đang chạy trên Reddit Proto, 100% team UX và sản phẩm sử dụng"
+    }
+   },
+   "p": {
+    "en": [
+     "A design system MCP maps Reddit's product language to production code",
+     "Designers go from a blank slate to a shareable prototype in minutes, with no Git",
+     "Prototypes use real Reddit data instead of mock data, and leadership reviews them directly",
+     "A 'feature capsule' packages the prototype for the engineering handoff"
+    ],
+    "vi": [
+     "Một MCP của design system nối ngôn ngữ sản phẩm của Reddit với code thật",
+     "Designer đi từ trang trắng đến prototype chia sẻ được trong vài phút, không cần Git",
+     "Prototype dùng dữ liệu thật của Reddit thay vì dữ liệu giả, và lãnh đạo xem trực tiếp",
+     "Một 'feature capsule' đóng gói prototype để bàn giao cho kỹ sư"
+    ]
+   },
+   "k": {
+    "en": "The best prototypes use real data and real components. A PM who can bring a clickable prototype to a review shortens weeks of debate.",
+    "vi": "Prototype tốt nhất dùng dữ liệu và component thật. Một PM mang được prototype bấm thử vào buổi review sẽ rút ngắn hàng tuần tranh luận."
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "Tackle the four big risks before you build: value, usability, feasibility, viability.",
+   "vi": "Giải quyết bốn rủi ro lớn trước khi xây: giá trị, dễ dùng, khả thi, bền vững."
+  },
+  "src": "Inspired · Marty Cagan",
+  "date": "2017 · book, 2nd edition",
+  "url": "",
+  "e": {
+   "en": "Most products fail because nobody wants them, people cannot figure them out, the team cannot build them, or the business cannot support them. Cagan's point is to test these risks cheaply during discovery, so engineering only builds what already passed.",
+   "vi": "Phần lớn sản phẩm thất bại vì không ai cần, người dùng không biết dùng, team không xây được, hoặc doanh nghiệp không gánh nổi. Ý của Cagan là kiểm tra các rủi ro này với chi phí thấp trong giai đoạn khám phá, để kỹ sư chỉ xây những gì đã vượt qua."
+  },
+  "a": {
+   "en": [
+    "Value: ask 5 target users about the last time they had this problem",
+    "Usability: put a clickable prototype in front of them and watch, do not explain",
+    "Feasibility and viability: one short chat with your tech lead and one with whoever owns revenue or legal"
+   ],
+   "vi": [
+    "Giá trị: hỏi 5 người dùng mục tiêu về lần gần nhất họ gặp vấn đề này",
+    "Dễ dùng: đưa prototype bấm thử cho họ và quan sát, đừng giải thích",
+    "Khả thi và bền vững: một cuộc trò chuyện ngắn với tech lead và một với người phụ trách doanh thu hoặc pháp lý"
+   ]
+  },
+  "x": {
+   "en": "Before building a US-only feature, a week of value and usability tests with real US users is cheaper than a month of engineering on the wrong idea.",
+   "vi": "Trước khi xây một tính năng chỉ dành cho thị trường Mỹ, một tuần test giá trị và độ dễ dùng với người dùng Mỹ thật rẻ hơn một tháng kỹ sư làm sai ý tưởng."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "If building software is three times cheaper, what becomes the scarce skill on your team, and are you practicing it every week?",
+    "vi": "Nếu xây phần mềm rẻ hơn ba lần, kỹ năng nào trở nên khan hiếm trong team bạn, và bạn có luyện nó mỗi tuần không?"
+   },
+   "c": {
+    "en": "Connects the big picture and GitHub Octoverse to your role.",
+    "vi": "Nối bức tranh lớn và GitHub Octoverse với vai trò của bạn."
+   }
+  },
+  {
+   "q": {
+    "en": "Which of the four risks is biggest for your current project right now, and how could you test it in one week without engineers?",
+    "vi": "Trong bốn rủi ro, rủi ro nào lớn nhất với dự án hiện tại của bạn, và bạn có thể test nó trong một tuần mà không cần kỹ sư như thế nào?"
+   },
+   "c": {
+    "en": "Today's timeless principle plus Reddit's prototyping approach.",
+    "vi": "Nguyên tắc bất biến hôm nay cộng với cách làm prototype của Reddit."
+   }
+  },
+  {
+   "q": {
+    "en": "If you had to present one past project as interview homework tomorrow, which one shows your judgment best, and why?",
+    "vi": "Nếu ngày mai phải trình bày một dự án cũ như bài tập phỏng vấn, dự án nào thể hiện khả năng phán đoán của bạn rõ nhất, và vì sao?"
+   },
+   "c": {
+    "en": "Aakash's homework playbook and the Anthropic PM episode.",
+    "vi": "Cẩm nang bài tập của Aakash và tập podcast về PM ở Anthropic."
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Map the four risks for one feature",
+    "vi": "Vẽ bản đồ bốn rủi ro cho một tính năng"
+   },
+   "s": {
+    "en": [
+     "Pick one feature you are planning",
+     "Write one line of evidence for each risk: value, usability, feasibility, viability",
+     "Mark the weakest risk and propose a one-week test"
+    ],
+    "vi": [
+     "Chọn một tính năng bạn đang lên kế hoạch",
+     "Viết một dòng bằng chứng cho mỗi rủi ro: giá trị, dễ dùng, khả thi, bền vững",
+     "Đánh dấu rủi ro yếu nhất và đề xuất một bài test trong một tuần"
+    ]
+   },
+   "o": {
+    "en": "A 4-row risk table to bring to your next sync",
+    "vi": "Một bảng rủi ro 4 dòng để mang tới buổi sync tiếp theo"
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Draft a post: software output tripled, taste did not",
+    "vi": "Nháp bài đăng: lượng phần mềm tăng gấp ba, gu thì không"
+   },
+   "s": {
+    "en": [
+     "Open with GitHub's number: 220 million merged pull requests a month",
+     "Add two lines on what this means for product people, from your own work",
+     "End with a question to your readers"
+    ],
+    "vi": [
+     "Mở đầu bằng con số của GitHub: 220 triệu pull request được merge mỗi tháng",
+     "Thêm hai dòng về ý nghĩa với người làm sản phẩm, từ chính công việc của bạn",
+     "Kết bằng một câu hỏi cho người đọc"
+    ]
+   },
+   "o": {
+    "en": "A LinkedIn draft in your own words",
+    "vi": "Một bản nháp LinkedIn bằng lời của bạn"
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Rebuild one screen you admire with an AI tool, using real data",
+    "vi": "Dựng lại một màn hình bạn thích bằng công cụ AI, dùng dữ liệu thật"
+   },
+   "s": {
+    "en": [
+     "Pick one screen from a consumer app you like",
+     "Rebuild it with Claude or Cursor using a small set of real sample data",
+     "Write 3 notes: what was easy, what was hard, what you would change"
+    ],
+    "vi": [
+     "Chọn một màn hình từ một ứng dụng tiêu dùng bạn thích",
+     "Dựng lại bằng Claude hoặc Cursor với một ít dữ liệu mẫu thật",
+     "Ghi 3 nhận xét: điều gì dễ, điều gì khó, bạn sẽ đổi gì"
+    ]
+   },
+   "o": {
+    "en": "A tiny prototype for your personal lab",
+    "vi": "Một prototype nhỏ cho lab cá nhân của bạn"
+   }
+  }
+ ]
+}
