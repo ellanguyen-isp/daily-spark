@@ -109,12 +109,17 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 | 20:00 daily | Recap reminder (push + email) linking to the recap box |
 | Sunday morning | Weekly edition: market overview + "what is really possible now" radar |
 
-## 3.9 Design (agreed 2026-10-31)
-- Mood: calm minimal (Morning Spark-like), no personal branding, neutral for the community.
-- Palette: Midnight `#0b1957`, Sapphire `#426bc2`, Petal `#e8d9ed`, Lace `#f7f4ed`, Lavender `#d2b3db`, Bridal Blue `#e9f3ff`.
-- Reading: swipeable cards by default (one section per card); a toggle at the top switches to one long scroll.
-- Language toggle EN / VI at the top.
-- Chrome new tab: compact card (Frontier headline + today's question + 3 exercise buttons) with "Read full edition".
+## 3.9 Design (final, locked 2026-10-31)
+- Reference: `design/final.html` (interactive, phone + web, EN/VI). Exploration history: `design/mockup.html`.
+- Palette "Petal": background Petal `#e8d9ed`; cards Lace `#f7f4ed` and Bridal Blue `#e9f3ff` (one color per section); accent Sapphire `#426bc2`; text Midnight `#0b1957`. No component uses the page background color.
+- Card layout "Option 1": sections have no frame (title on the page); every point is its own stamp card (scalloped edge).
+- Fonts: Instrument Serif for headlines and the quote only; IBM Plex Sans for all text and all numbers (lining, tabular). One type scale: 11 / 13 / 15 / 21 / 30 / 44.
+- Dates: `30 Oct 2026` in content, `Sat 31 Oct 2026` in titles.
+- Home page: title + one-line description; daily sparks as one-line rows (date, summary, edition or Today), all in light beige, newest first. No wordmark in the header.
+- Daily page: translucent top bar (back, date, menu). Menu = reading mode (swipe default / scroll), language EN/VI, feedback legend, other days. Translucent bottom bar with swipe dots.
+- Content depth: Frontier = big picture + 3 to 4 stories (date, original source, type, key points, why it matters) + what to watch; People = 3 items with 4 key points + takeaway; key numbers only for standout items.
+- Feedback per item: 4 icons in one line: Useful, Knew it (raise the bar), Not for me, Go deeper.
+- Chrome new tab: compact card with big picture, frontier headlines with sources, today's question, 3 exercise buttons, link to the full spark.
 
 ## 3.10 Source collection (updated 2026-10-31)
 - Blogs/newsletters: RSS, fetched directly (25 feeds, most verified).
