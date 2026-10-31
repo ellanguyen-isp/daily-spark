@@ -158,7 +158,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .stat { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .stat .v { font-family: var(--p-body); font-weight: 600; font-size: 26px; line-height: 1; color: var(--p-accent); font-variant-numeric: lining-nums tabular-nums; }
 .stat .l { font-size: var(--t-small); color: var(--p-muted); }
-.kicker { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.kicker { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
 .card h2 { font-family: var(--p-display); font-weight: 400; font-size: var(--t-h2); line-height: 1.08; margin: 0; text-wrap: balance; }
 .card h3 { font-family: var(--p-display); font-weight: 400; font-size: var(--t-h3); line-height: 1.18; margin: 0; text-wrap: balance; }
 .card p { margin: 0; }
@@ -182,8 +182,9 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .lock { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; border: 1px dashed var(--p-muted); border-radius: 999px; padding: 2px 10px; color: var(--p-muted); width: fit-content; }
 .quote { font-family: var(--p-display); font-size: 34px; line-height: 1.1; margin: 0; text-wrap: balance; }
 .qs { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--item-gap); counter-reset: q; }
-.qs li { counter-increment: q; background: var(--p-inset); border-radius: 14px; padding: 14px 16px; display: grid; grid-template-columns: 28px 1fr; gap: 6px; }
-.qs li::before { content: counter(q, decimal-leading-zero); font-family: var(--p-body); font-size: var(--t-small); font-weight: 600; color: var(--p-accent); padding-top: 2px; }
+.qs li { background: var(--p-inset); border-radius: 14px; padding: 14px 16px; display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 6px; }
+.qs li > .qn { font-family: var(--p-body); font-size: var(--t-small); font-weight: 600; color: var(--p-accent); padding-top: 3px; font-variant-numeric: lining-nums tabular-nums; }
+.qs li > .qt { min-width: 0; }
 .qs .ctx { display: block; font-size: var(--t-small); color: var(--p-muted); margin-top: 4px; }
 .answer { width: 100%; min-height: 76px; border: 1px solid var(--p-line); border-radius: 12px; background: var(--p-field); padding: 10px 12px; resize: vertical; color: var(--p-ink); }
 .ex-opt .goal { font-weight: 600; }
@@ -470,7 +471,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
   // ---------- Pieces ----------
   function cardColor(i) { var p = PALETTES[state.palette]; return state.cardTone === "pastel" ? p.cards[i % p.cards.length] : p.surface; }
   function kicker(sec, i, total) {
-    return '<div class="kicker"><span class="lbl muted">' + esc(u("s_" + sec)) + '</span><span class="lbl muted num">' + two(i + 1) + " / " + two(total) + "</span></div>";
+    return '<div class="kicker"><h2>' + esc(u("s_" + sec)) + '</h2><span class="lbl muted num">' + two(i + 1) + " / " + two(total) + "</span></div>";
   }
   function srcline(date, src, extra) {
     return '<div class="srcline"><span class="num">' + esc(date) + '</span><a href="#source">' + esc(src) + ' ↗</a>' + (extra ? '<span>' + esc(extra) + '</span>' : "") + '</div>';
@@ -505,7 +506,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
     var body = "";
     if (sec === "frontier") {
       var F = C.frontier;
-      body = '<h2>' + esc(u("s_frontier")) + '</h2>' +
+      body = '' +
         '<div class="item">' + block(u("bigpic"), '<p>' + esc(L(F.big)) + '</p>') + '</div><div class="items">' +
         F.items.map(function (it, j) {
           return '<div class="item">' + srcline(it.date, it.src) + '<span class="badge">' + esc(it.tag) + '</span><h3>' + esc(L(it.t)) + '</h3>' + stat("f" + j) +
@@ -513,12 +514,12 @@ button, input, select, textarea { font: inherit; color: inherit; }
         }).join("") + '</div>' +
         '<div class="item">' + block(u("watch"), '<p>' + esc(L(F.watch)) + '</p>') + '</div>';
     } else if (sec === "people") {
-      body = '<h2>' + esc(u("s_people")) + '</h2><div class="items">' + C.people.map(function (it, j) {
+      body = '<div class="items">' + C.people.map(function (it, j) {
         return '<div class="item">' + srcline(it.date, it.src, it.who) + '<span class="small">' + esc(L(it.kind)) + '</span><h3>' + esc(L(it.t)) + '</h3>' + stat("p" + j) +
           block(u("points"), list(L(it.p))) + '<div class="why">' + block(u("take"), '<p>' + esc(L(it.k)) + '</p>') + '</div>' + fb("p" + j) + '</div>';
       }).join("") + '</div>';
     } else if (sec === "work") {
-      body = '<h2>' + esc(u("s_work")) + '</h2><span class="lock">🔒 ' + esc(u("private")) + '</span><div class="items">' + C.work.map(function (it, j) {
+      body = '<span class="lock">🔒 ' + esc(u("private")) + '</span><div class="items">' + C.work.map(function (it, j) {
         return '<div class="item"><h3>' + esc(L(it.t)) + '</h3>' + block(u("points"), list(L(it.p))) +
           '<div class="why">' + block(u("take"), '<p>' + esc(L(it.k)) + '</p>') + '</div>' + fb("w" + j) + '</div>';
       }).join("") + '</div>';
@@ -529,11 +530,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
         '<div class="item">' + block(u("apply"), list(L(T.a))) + '</div>' +
         '<div class="item">' + block(u("example"), '<p>' + esc(L(T.x)) + '</p>') + fb("t0") + '</div></div>';
     } else if (sec === "think") {
-      body = '<h2>' + esc(u("s_think")) + '</h2><ol class="qs">' + C.think.map(function (it) {
-        return '<li class="item"><span>' + esc(L(it.q)) + '<span class="ctx">' + esc(L(it.c)) + '</span></span></li>';
+      body = '<ol class="qs">' + C.think.map(function (it, j) {
+        return '<li class="item"><span class="qn">' + two(j + 1) + '</span><span class="qt">' + esc(L(it.q)) + '<span class="ctx">' + esc(L(it.c)) + '</span></span></li>';
       }).join("") + '</ol><div class="block"><label class="lbl" for="ans">' + esc(u("answer_ph")) + '</label><textarea class="answer" id="ans"></textarea></div>';
     } else if (sec === "exercises") {
-      body = '<h2>' + esc(u("s_exercises")) + '</h2><div class="items">' + C.exercises.map(function (e) {
+      body = '<div class="items">' + C.exercises.map(function (e) {
         var on = state.picked === e.k;
         return '<div class="item ex-opt"><div class="ex-head"><span class="lbl"><span>' + esc(L(e.tag)) + '</span> · <span class="num">' + esc(e.time) + '</span></span><button type="button" data-pick="' + e.k + '" aria-pressed="' + on + '">' +
           esc(on ? u("picked") : u("pick")) + '</button></div><span class="goal">' + esc(L(e.g)) + '</span><ol>' + L(e.s).map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") +
