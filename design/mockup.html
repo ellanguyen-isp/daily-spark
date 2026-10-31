@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>daily-spark Mockups</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Serif+Display&family=Fraunces:opsz,wght@9..144,400;9..144,600&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Studio chrome: single light world, built from Ella's palette.
+   Layout: control panel (left / top on phone) + live preview (right). */
+:root {
+  --midnight: #0b1957;
+  --sapphire: #426bc2;
+  --petal: #e8d9ed;
+  --lace: #f7f4ed;
+  --lavender: #d2b3db;
+  --bridal: #e9f3ff;
+  --studio-bg: #eef0f6;
+  --studio-ink: #0b1957;
+  --studio-muted: #5a6386;
+  --studio-line: #d6dbea;
+  --ui-font: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--studio-bg);
+  color: var(--studio-ink);
+  font-family: var(--ui-font);
+  font-size: 15px;
+  line-height: 1.5;
+}
+button, input, select, textarea { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--sapphire); outline-offset: 2px; }
+
+.studio {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 24px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .studio { grid-template-columns: 1fr; padding: 16px; gap: 16px; }
+}
+
+/* ---------- Control panel ---------- */
+.panel {
+  background: #fff;
+  border: 1px solid var(--studio-line);
+  border-radius: 16px;
+  padding: 20px;
+  display: grid;
+  gap: 18px;
+  position: sticky;
+  top: 16px;
+}
+@media (max-width: 900px) { .panel { position: static; } }
+.panel h1 {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.1;
+  margin: 0;
+  text-wrap: balance;
+}
+.panel .lede { margin: 6px 0 0; color: var(--studio-muted); font-size: 14px; }
+.group { display: grid; gap: 8px; }
+.group > .label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--studio-muted);
+}
+.seg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.seg button {
+  border: 1px solid var(--studio-line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.seg button[aria-pressed="true"] {
+  background: var(--midnight);
+  border-color: var(--midnight);
+  color: #fff;
+}
+.swatches { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+.swatch {
+  border: 1px solid var(--studio-line);
+  border-radius: 12px;
+  padding: 8px;
+  background: #fff;
+  cursor: pointer;
+  text-align: left;
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+}
+.swatch[aria-pressed="true"] { border-color: var(--midnight); box-shadow: 0 0 0 1px var(--midnight); }
+.swatch .chips { display: flex; height: 18px; border-radius: 6px; overflow: hidden; }
+.swatch .chips span { flex: 1; }
+.checks { display: grid; gap: 6px; }
+.checks label { display: flex; gap: 8px; align-items: center; font-size: 14px; cursor: pointer; }
+.export {
+  border-top: 1px solid var(--studio-line);
+  padding-top: 16px;
+  display: grid;
+  gap: 8px;
+}
+.btn-primary {
+  background: var(--sapphire);
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.export textarea {
+  width: 100%;
+  min-height: 92px;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 12px;
+  border: 1px solid var(--studio-line);
+  border-radius: 10px;
+  padding: 8px;
+  background: var(--studio-bg);
+  resize: vertical;
+}
+.hint { font-size: 12px; color: var(--studio-muted); margin: 0; }
+
+/* ---------- Preview stage ---------- */
+.stage { display: grid; gap: 12px; justify-items: center; min-width: 0; }
+.stage-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--studio-muted);
+}
+.stage-bar strong { color: var(--studio-ink); }
+
+.device {
+  width: 390px;
+  max-width: 100%;
+  height: 800px;
+  border-radius: 44px;
+  border: 10px solid #111a3d;
+  overflow: hidden;
+  box-shadow: 0 30px 60px -30px rgba(11,25,87,.45);
+  position: relative;
+  background: var(--p-bg);
+}
+.device.desktop {
+  width: 100%;
+  max-width: 980px;
+  height: 680px;
+  border-radius: 14px;
+  border-width: 1px;
+  border-color: var(--studio-line);
+}
+.device.newtab { height: 600px; }
+
+/* ---------- The daily-spark page (preview) ---------- */
+.ds {
+  --gap: 14px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--p-bg);
+  color: var(--p-ink);
+  font-family: var(--p-body);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.ds.compact { --gap: 10px; font-size: 14px; }
+.ds-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 18px 10px;
+  border-bottom: 1px solid var(--p-line);
+}
+.device:not(.desktop) .ds-top { padding-top: 22px; }
+.wordmark { font-family: var(--p-display); font-size: 22px; line-height: 1; }
+.wordmark small {
+  display: block;
+  font-family: var(--p-body);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--p-muted);
+  margin-top: 4px;
+}
+.toggles { display: flex; gap: 6px; }
+.pill {
+  display: inline-flex;
+  border: 1px solid var(--p-line);
+  border-radius: 999px;
+  overflow: hidden;
+  font-size: 12px;
+}
+.pill button {
+  border: 0;
+  background: transparent;
+  padding: 4px 9px;
+  cursor: pointer;
+  color: var(--p-muted);
+}
+.pill button[aria-pressed="true"] { background: var(--p-ink); color: var(--p-bg); }
+
+.sample-flag {
+  margin: 10px 18px 0;
+  font-size: 11px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--p-muted);
+}
+
+/* swipe */
+.track {
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  min-height: 0;
+}
+.track::-webkit-scrollbar { display: none; }
+.slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  padding: 14px 18px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.device.desktop .slide { align-items: center; }
+.device.desktop .slide > .card { width: min(560px, 100%); }
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0 16px;
+}
+.dots .dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--p-line);
+  border: 0; padding: 0; cursor: pointer;
+}
+.dots .dot[aria-current="true"] { background: var(--p-accent); width: 20px; border-radius: 6px; }
+.dots .nav {
+  border: 1px solid var(--p-line);
+  background: transparent;
+  color: var(--p-ink);
+  border-radius: 999px;
+  width: 30px; height: 30px;
+  cursor: pointer;
+}
+
+/* scroll */
+.flow {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 18px 28px;
+  display: grid;
+  gap: var(--gap);
+  align-content: start;
+}
+.device.desktop .flow { justify-items: center; }
+.device.desktop .flow > .card { width: min(620px, 100%); }
+
+/* cards */
+.card {
+  position: relative;
+  background: var(--card, var(--p-surface));
+  color: var(--p-ink);
+  border-radius: 18px;
+  padding: 18px;
+  display: grid;
+  gap: var(--gap);
+  align-content: start;
+}
+.slide > .card { min-height: 100%; }
+.style-line .card { background: transparent; border: 1px solid var(--p-line); }
+.style-stamp .card { border-radius: 4px; margin: 6px; }
+.style-stamp .card::before {
+  content: "";
+  position: absolute;
+  inset: -6px;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 50% 0, var(--p-bg) 4px, transparent 4.5px) 0 -1px / 13px 7px repeat-x,
+    radial-gradient(circle at 50% 100%, var(--p-bg) 4px, transparent 4.5px) 0 calc(100% + 1px) / 13px 7px repeat-x,
+    radial-gradient(circle at 0 50%, var(--p-bg) 4px, transparent 4.5px) -1px 0 / 7px 13px repeat-y,
+    radial-gradient(circle at 100% 50%, var(--p-bg) 4px, transparent 4.5px) calc(100% + 1px) 0 / 7px 13px repeat-y,
+    var(--card, var(--p-surface));
+  border-radius: 2px;
+}
+.style-stamp .card { background: transparent; isolation: isolate; }
+
+.kicker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--p-muted);
+}
+.kicker .num { font-variant-numeric: tabular-nums; }
+.card h2 {
+  font-family: var(--p-display);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.08;
+  margin: 0;
+  text-wrap: balance;
+}
+.ds.compact .card h2 { font-size: 25px; }
+.card h3 {
+  font-family: var(--p-display);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.15;
+  margin: 0;
+  text-wrap: balance;
+}
+.card p { margin: 0; }
+.why { border-left: 2px solid var(--p-accent); padding-left: 10px; }
+.why b { display: block; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--p-accent); }
+.meta { font-size: 12px; color: var(--p-muted); }
+.src { color: var(--p-accent); text-decoration: none; font-size: 13px; font-weight: 500; }
+.item { display: grid; gap: 6px; padding-top: 12px; border-top: 1px solid var(--p-line); }
+.item:first-of-type { border-top: 0; padding-top: 0; }
+.rate { display: flex; gap: 6px; }
+.rate button {
+  border: 1px solid var(--p-line);
+  background: transparent;
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--p-ink);
+}
+.rate button[aria-pressed="true"] { background: var(--p-accent); border-color: var(--p-accent); color: #fff; }
+.lock {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 11px;
+  border: 1px dashed var(--p-muted);
+  border-radius: 999px;
+  padding: 2px 8px;
+  color: var(--p-muted);
+  width: fit-content;
+}
+.quote {
+  font-family: var(--p-display);
+  font-size: 34px;
+  line-height: 1.08;
+  margin: 0;
+  text-wrap: balance;
+}
+.ds.compact .quote { font-size: 28px; }
+.qs { margin: 0; padding-left: 0; list-style: none; display: grid; gap: 10px; counter-reset: q; }
+.qs li { counter-increment: q; display: grid; grid-template-columns: 26px 1fr; gap: 6px; }
+.qs li::before { content: counter(q); font-family: var(--p-display); font-size: 22px; line-height: 1.1; color: var(--p-accent); }
+.answer {
+  width: 100%;
+  min-height: 70px;
+  border: 1px solid var(--p-line);
+  border-radius: 12px;
+  background: var(--p-bg);
+  padding: 8px 10px;
+  resize: vertical;
+  color: var(--p-ink);
+}
+.ex { display: grid; gap: 8px; }
+.ex-opt {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid var(--p-line);
+  border-radius: 14px;
+  padding: 10px 12px;
+  background: var(--p-bg);
+}
+.ex-opt .tag { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--p-accent); font-weight: 600; }
+.ex-opt button {
+  border: 1px solid var(--p-accent);
+  background: transparent;
+  color: var(--p-accent);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ex-opt button[aria-pressed="true"] { background: var(--p-accent); color: #fff; }
+.recap { display: grid; gap: 8px; }
+.recap .save {
+  justify-self: start;
+  background: var(--p-ink);
+  color: var(--p-bg);
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+.saved { font-size: 12px; color: var(--p-muted); }
+
+/* new tab */
+.browser { height: 100%; display: flex; flex-direction: column; background: var(--p-bg); }
+.chrome-bar {
+  display: flex; align-items: center; gap: 8px;
+  padding: 8px 12px;
+  background: #dfe3ee;
+  font-size: 12px; color: #3b4466;
+}
+.chrome-bar .tabx { background: #fff; border-radius: 8px 8px 0 0; padding: 4px 14px; }
+.chrome-bar .dotsx { display: flex; gap: 5px; }
+.chrome-bar .dotsx i { width: 10px; height: 10px; border-radius: 50%; background: #c2c8da; display: block; }
+.nt-body { flex: 1; display: grid; place-items: center; padding: 24px 16px; }
+.nt-card {
+  width: min(520px, 100%);
+  display: grid;
+  gap: 14px;
+}
+.nt-card .date { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--p-muted); }
+.nt-btns { display: flex; flex-wrap: wrap; gap: 8px; }
+.nt-btns button {
+  border: 1px solid var(--p-line);
+  background: var(--p-bg);
+  color: var(--p-ink);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.nt-btns button[aria-pressed="true"] { background: var(--p-accent); border-color: var(--p-accent); color: #fff; }
+.readfull { color: var(--p-accent); font-weight: 600; text-decoration: none; font-size: 14px; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .track { scroll-behavior: smooth; }
+}
+</style>
+</head>
+<body>
+<div class="studio">
+  <aside class="panel" aria-label="Customize">
+    <div>
+      <h1>daily-spark mockups</h1>
+      <p class="lede">Change anything below. The preview updates live. When it looks right, copy your settings and send them back to Claude.</p>
+    </div>
+
+    <div class="group"><span class="label">View</span>
+      <div class="seg" data-key="view">
+        <button data-v="swipe">Swipe cards</button>
+        <button data-v="scroll">Long scroll</button>
+        <button data-v="newtab">Chrome new tab</button>
+      </div>
+    </div>
+
+    <div class="group"><span class="label">Device</span>
+      <div class="seg" data-key="device">
+        <button data-v="phone">Phone</button>
+        <button data-v="desktop">Laptop</button>
+      </div>
+    </div>
+
+    <div class="group"><span class="label">Palette</span>
+      <div class="swatches" id="swatches"></div>
+    </div>
+
+    <div class="group"><span class="label">Card colors</span>
+      <div class="seg" data-key="cardTone">
+        <button data-v="pastel">One color per section</button>
+        <button data-v="single">Same for all</button>
+      </div>
+    </div>
+
+    <div class="group"><span class="label">Card style</span>
+      <div class="seg" data-key="cardStyle">
+        <button data-v="soft">Soft</button>
+        <button data-v="stamp">Stamp</button>
+        <button data-v="line">Outline</button>
+      </div>
+    </div>
+
+    <div class="group"><span class="label">Headline font</span>
+      <div class="seg" data-key="display">
+        <button data-v="instrument">Instrument Serif</button>
+        <button data-v="fraunces">Fraunces</button>
+        <button data-v="dmserif">DM Serif</button>
+      </div>
+    </div>
+
+    <div class="group"><span class="label">Body font</span>
+      <div class="seg" data-key="body">
+        <button data-v="dmsans">DM Sans</button>
+        <button data-v="manrope">Manrope</button>
+        <button data-v="plex">IBM Plex Sans</button>
+      </div>
+    </div>
+
+    <div class="group"><span class="label">Spacing</span>
+      <div class="seg" data-key="density">
+        <button data-v="comfortable">Comfortable</button>
+        <button data-v="compact">Compact</button>
+      </div>
+    </div>
+
+    <div class="group"><span class="label">Language</span>
+      <div class="seg" data-key="lang">
+        <button data-v="en">English</button>
+        <button data-v="vi">Tiếng Việt</button>
+      </div>
+    </div>
+
+    <div class="group"><span class="label">Sections to show</span>
+      <div class="checks" id="checks"></div>
+    </div>
+
+    <div class="export">
+      <button class="btn-primary" id="copyBtn" type="button">Copy my settings</button>
+      <textarea id="out" readonly aria-label="Your settings"></textarea>
+      <p class="hint" id="copyNote">Paste these settings into the chat. They become the final design.</p>
+    </div>
+  </aside>
+
+  <main class="stage">
+    <div class="stage-bar">
+      <span><strong id="stageTitle">Swipe cards</strong> · sample edition, content is placeholder</span>
+      <span id="stageHint">Swipe, drag, or use the arrows</span>
+    </div>
+    <div class="device" id="device"></div>
+  </main>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  var PALETTES = {
+    lace:     { name: "Lace",     bg: "#f7f4ed", ink: "#0b1957", muted: "#5a6386", line: "#dcd8e6", accent: "#426bc2", surface: "#ffffff", cards: ["#e9f3ff", "#e8d9ed", "#ffffff", "#efe3f2", "#e9f3ff", "#ffffff"] },
+    bridal:   { name: "Bridal Blue", bg: "#e9f3ff", ink: "#0b1957", muted: "#56628c", line: "#cfdcf2", accent: "#426bc2", surface: "#f7f4ed", cards: ["#f7f4ed", "#e8d9ed", "#ffffff", "#f7f4ed", "#ffffff", "#e8d9ed"] },
+    petal:    { name: "Petal",    bg: "#e8d9ed", ink: "#0b1957", muted: "#5d5a83", line: "#d2bfdb", accent: "#426bc2", surface: "#f7f4ed", cards: ["#f7f4ed", "#e9f3ff", "#ffffff", "#f7f4ed", "#e9f3ff", "#ffffff"] },
+    midnight: { name: "Midnight", bg: "#0b1957", ink: "#f7f4ed", muted: "#aab4d8", line: "#2a3a7c", accent: "#9db8f0", surface: "#14246b", cards: ["#14246b", "#1d2c78", "#18276f", "#22307d", "#14246b", "#1d2c78"] }
+  };
+  var DISPLAY = {
+    instrument: '"Instrument Serif", Georgia, serif',
+    fraunces: '"Fraunces", Georgia, serif',
+    dmserif: '"DM Serif Display", Georgia, serif'
+  };
+  var BODY = {
+    dmsans: '"DM Sans", system-ui, sans-serif',
+    manrope: '"Manrope", system-ui, sans-serif',
+    plex: '"IBM Plex Sans", system-ui, sans-serif'
+  };
+  var SECTIONS = ["frontier", "people", "work", "timeless", "think", "exercises"];
+
+  var T = {
+    en: {
+      date: "Sat 31 Oct 2026", edition: "Edition 001", sample: "Sample edition · placeholder content",
+      swipe: "Swipe", scroll: "Scroll",
+      s_frontier: "Frontier", s_people: "From people you follow", s_work: "Relevant to your work",
+      s_timeless: "Timeless", s_think: "Think", s_exercises: "Exercises",
+      why: "Why it matters", private: "Private · only in your copy",
+      f_title: "A frontier lab ships agents that work for hours on one task",
+      f_why: "Long-running agents change what a feature is. The unit of work becomes the outcome, not the click, so onboarding and pricing get redesigned around jobs people hand off.",
+      f_src: "OpenAI news · sample",
+      p1_src: "Lenny's Podcast · new episode", p1_title: "How PMs at AI labs replace specs with evals",
+      p1_ins: "The eval set is the spec. Writing 20 examples of great output forces more clarity than a ten-page PRD.",
+      p1_meta: "68 min · summarized from transcript",
+      p2_src: "Starter Story Build · new video", p2_title: "A solo builder ships a niche AI tool in one weekend",
+      p2_ins: "Distribution came first: they found 200 people in one community before writing any code.",
+      p2_meta: "22 min · summarized from description",
+      w_title: "Show value before the signup wall",
+      w_ins: "Your recap said US users drop at account creation. Two of today's items point the same way: let people feel one result first, then ask.",
+      t_quote: "Talk about their life, not your idea.",
+      t_src: "The Mom Test · Rob Fitzpatrick",
+      t_note: "Compliments are noise. Past behavior is signal.",
+      q1: "If evals are the new spec, what are 5 examples of great output for the feature you are working on?",
+      q2: "Which assumption this week came from a compliment instead of behavior?",
+      q3: "What would you build if a user could hand off a whole day of work?",
+      answer_ph: "Write 2 or 3 lines. Your own words.",
+      e_work_tag: "Work", e_work: "Write 5 examples of great output for one feature and share them with your team.",
+      e_write_tag: "Write", e_write: "Draft 3 lines for a post: evals are the new PRD, and here is why.",
+      e_build_tag: "Build", e_build: "Spend 30 minutes making a tiny eval sheet for an AI tool you use every day.",
+      pick: "Pick", picked: "Picked",
+      recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today?",
+      save: "Save", saved: "Saved on this preview only",
+      readfull: "Read the full edition →", nt_q: "Today's question",
+      prev: "Previous card", next: "Next card"
+    },
+    vi: {
+      date: "Thứ Bảy, 31/10/2026", edition: "Số 001", sample: "Bản mẫu · nội dung minh họa",
+      swipe: "Vuốt", scroll: "Cuộn",
+      s_frontier: "Tin nóng", s_people: "Từ người bạn theo dõi", s_work: "Liên quan đến công việc",
+      s_timeless: "Bất biến", s_think: "Suy ngẫm", s_exercises: "Bài tập",
+      why: "Vì sao quan trọng", private: "Riêng tư · chỉ trong bản của bạn",
+      f_title: "Một phòng lab AI hàng đầu ra mắt agent làm việc liên tục hàng giờ cho một nhiệm vụ",
+      f_why: "Agent chạy dài thay đổi định nghĩa tính năng. Đơn vị công việc trở thành kết quả, không còn là cú click, nên onboarding và giá sẽ được thiết kế lại quanh những việc người dùng giao trọn.",
+      f_src: "OpenAI news · mẫu",
+      p1_src: "Lenny's Podcast · tập mới", p1_title: "PM ở các AI lab thay spec bằng evals như thế nào",
+      p1_ins: "Bộ eval chính là spec. Viết 20 ví dụ về đầu ra tuyệt vời buộc bạn rõ ràng hơn một PRD mười trang.",
+      p1_meta: "68 phút · tóm tắt từ transcript",
+      p2_src: "Starter Story Build · video mới", p2_title: "Một builder làm một mình ra mắt công cụ AI ngách trong một cuối tuần",
+      p2_ins: "Phân phối đi trước: họ tìm được 200 người trong một cộng đồng trước khi viết dòng code nào.",
+      p2_meta: "22 phút · tóm tắt từ phần mô tả",
+      w_title: "Cho thấy giá trị trước bức tường đăng ký",
+      w_ins: "Recap của bạn nói người dùng Mỹ rời đi ở bước tạo tài khoản. Hai nội dung hôm nay cùng chỉ một hướng: cho họ cảm nhận một kết quả trước, rồi mới hỏi.",
+      t_quote: "Hỏi về cuộc sống của họ, đừng hỏi về ý tưởng của bạn.",
+      t_src: "The Mom Test · Rob Fitzpatrick",
+      t_note: "Lời khen là nhiễu. Hành vi trong quá khứ mới là tín hiệu.",
+      q1: "Nếu evals là spec mới, 5 ví dụ về đầu ra tuyệt vời cho tính năng bạn đang làm là gì?",
+      q2: "Giả định nào của bạn tuần này đến từ một lời khen, không phải từ hành vi?",
+      q3: "Bạn sẽ xây gì nếu người dùng có thể giao trọn một ngày làm việc?",
+      answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.",
+      e_work_tag: "Công việc", e_work: "Viết 5 ví dụ về đầu ra tuyệt vời cho một tính năng và chia sẻ với team.",
+      e_write_tag: "Viết", e_write: "Nháp 3 dòng cho một bài đăng: evals là PRD mới, và đây là lý do.",
+      e_build_tag: "Xây", e_build: "Dành 30 phút làm một bảng eval nhỏ cho một công cụ AI bạn dùng hằng ngày.",
+      pick: "Chọn", picked: "Đã chọn",
+      recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì đã thay đổi trong cách bạn nghĩ hoặc làm?",
+      save: "Lưu", saved: "Chỉ lưu trong bản xem thử này",
+      readfull: "Đọc bản đầy đủ →", nt_q: "Câu hỏi hôm nay",
+      prev: "Thẻ trước", next: "Thẻ sau"
+    }
+  };
+
+  var state = {
+    view: "swipe", device: "phone", palette: "lace", cardTone: "pastel", cardStyle: "soft",
+    display: "instrument", body: "dmsans", density: "comfortable", lang: "en",
+    sections: { frontier: true, people: true, work: true, timeless: true, think: true, exercises: true },
+    picked: "", votes: {}, slide: 0
+  };
+  try {
+    var saved = JSON.parse(localStorage.getItem("ds-mockup") || "null");
+    if (saved && typeof saved === "object") {
+      Object.keys(saved).forEach(function (k) { if (k in state && k !== "slide") state[k] = saved[k]; });
+    }
+  } catch (e) {}
+
+  function persist() {
+    try { localStorage.setItem("ds-mockup", JSON.stringify(state)); } catch (e) {}
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; });
+  }
+
+  // ---------- Panel ----------
+  var sw = document.getElementById("swatches");
+  Object.keys(PALETTES).forEach(function (k) {
+    var p = PALETTES[k];
+    var b = document.createElement("button");
+    b.type = "button"; b.className = "swatch"; b.dataset.v = k;
+    b.innerHTML = '<span class="chips"><span style="background:' + p.bg + '"></span><span style="background:' + p.cards[0] +
+      '"></span><span style="background:' + p.cards[1] + '"></span><span style="background:' + p.accent + '"></span><span style="background:' + p.ink + '"></span></span>' + esc(p.name);
+    b.addEventListener("click", function () { state.palette = k; update(); });
+    sw.appendChild(b);
+  });
+
+  var checks = document.getElementById("checks");
+  SECTIONS.forEach(function (s) {
+    var id = "chk-" + s;
+    var l = document.createElement("label");
+    l.setAttribute("for", id);
+    l.innerHTML = '<input type="checkbox" id="' + id + '"> <span data-sec="' + s + '"></span>';
+    l.querySelector("input").addEventListener("change", function (e) { state.sections[s] = e.target.checked; state.slide = 0; update(); });
+    checks.appendChild(l);
+  });
+
+  document.querySelectorAll(".seg[data-key]").forEach(function (seg) {
+    seg.querySelectorAll("button").forEach(function (b) {
+      b.type = "button";
+      b.addEventListener("click", function () {
+        state[seg.dataset.key] = b.dataset.v;
+        if (seg.dataset.key === "view") state.slide = 0;
+        update();
+      });
+    });
+  });
+
+  document.getElementById("copyBtn").addEventListener("click", function () {
+    var out = document.getElementById("out");
+    out.select();
+    var note = document.getElementById("copyNote");
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(out.value).then(function () {
+        note.textContent = "Copied. Paste it into the chat with Claude.";
+      }, function () {
+        note.textContent = "Copy was blocked. The text is selected above: copy it by hand.";
+      });
+    } else {
+      note.textContent = "The text is selected above: copy it by hand.";
+    }
+  });
+
+  // ---------- Preview pieces ----------
+  function t(k) { return T[state.lang][k]; }
+  function cardColor(i) {
+    var p = PALETTES[state.palette];
+    return state.cardTone === "pastel" ? p.cards[i % p.cards.length] : p.surface;
+  }
+  function kicker(sec, i, total) {
+    return '<div class="kicker"><span>' + esc(t("s_" + sec)) + '</span><span class="num">' +
+      String(i + 1).padStart(2, "0") + " / " + String(total).padStart(2, "0") + "</span></div>";
+  }
+  function rate(id) {
+    var v = state.votes[id] || "";
+    return '<div class="rate" role="group" aria-label="Rate this item">' +
+      '<button type="button" data-vote="' + id + '" data-val="up" aria-pressed="' + (v === "up") + '" aria-label="More like this">👍</button>' +
+      '<button type="button" data-vote="' + id + '" data-val="down" aria-pressed="' + (v === "down") + '" aria-label="Less like this">👎</button></div>';
+  }
+  function sectionHTML(sec, i, total) {
+    var head = kicker(sec, i, total);
+    var body = "";
+    if (sec === "frontier") {
+      body = '<h2>' + esc(t("f_title")) + '</h2><p class="why"><b>' + esc(t("why")) + '</b>' + esc(t("f_why")) +
+        '</p><a class="src" href="#frontier">' + esc(t("f_src")) + '</a>' + rate("f1");
+    } else if (sec === "people") {
+      body = ["p1", "p2"].map(function (p) {
+        return '<div class="item"><a class="src" href="#people">' + esc(t(p + "_src")) + '</a><h3>' + esc(t(p + "_title")) +
+          '</h3><p>' + esc(t(p + "_ins")) + '</p><span class="meta">' + esc(t(p + "_meta")) + '</span>' + rate(p) + '</div>';
+      }).join("");
+    } else if (sec === "work") {
+      body = '<span class="lock">🔒 ' + esc(t("private")) + '</span><h2>' + esc(t("w_title")) + '</h2><p>' + esc(t("w_ins")) + '</p>' + rate("w1");
+    } else if (sec === "timeless") {
+      body = '<p class="quote">' + esc(t("t_quote")) + '</p><p>' + esc(t("t_note")) + '</p><span class="meta">' + esc(t("t_src")) + '</span>';
+    } else if (sec === "think") {
+      body = '<ol class="qs"><li>' + esc(t("q1")) + '</li><li>' + esc(t("q2")) + '</li><li>' + esc(t("q3")) + '</li></ol>' +
+        '<label class="meta" for="ans">' + esc(t("answer_ph")) + '</label><textarea class="answer" id="ans"></textarea>';
+    } else if (sec === "exercises") {
+      body = '<div class="ex">' + ["work", "write", "build"].map(function (e) {
+        var on = state.picked === e;
+        return '<div class="ex-opt"><div><div class="tag">' + esc(t("e_" + e + "_tag")) + '</div><div>' + esc(t("e_" + e)) +
+          '</div></div><button type="button" data-pick="' + e + '" aria-pressed="' + on + '">' + esc(on ? t("picked") : t("pick")) + '</button></div>';
+      }).join("") + '</div>' +
+        '<div class="recap"><h3>' + esc(t("recap_title")) + '</h3><label class="meta" for="recapBox">' + esc(t("recap_ph")) +
+        '</label><textarea class="answer" id="recapBox"></textarea><button type="button" class="save" id="saveRecap">' + esc(t("save")) +
+        '</button><span class="saved" id="savedNote" hidden>' + esc(t("saved")) + '</span></div>';
+    }
+    return '<article class="card" style="--card:' + cardColor(i) + '">' + head + body + '</article>';
+  }
+
+  function topBar() {
+    return '<header class="ds-top"><div class="wordmark">daily-spark<small>' + esc(t("date")) + " · " + esc(t("edition")) + '</small></div>' +
+      '<div class="toggles">' +
+      (state.view !== "newtab" ? '<div class="pill" role="group" aria-label="Reading mode"><button type="button" data-inner="view" data-v="swipe" aria-pressed="' + (state.view === "swipe") + '">' + esc(t("swipe")) +
+        '</button><button type="button" data-inner="view" data-v="scroll" aria-pressed="' + (state.view === "scroll") + '">' + esc(t("scroll")) + '</button></div>' : "") +
+      '<div class="pill" role="group" aria-label="Language"><button type="button" data-inner="lang" data-v="en" aria-pressed="' + (state.lang === "en") +
+      '">EN</button><button type="button" data-inner="lang" data-v="vi" aria-pressed="' + (state.lang === "vi") + '">VI</button></div></div></header>';
+  }
+
+  function renderPreview() {
+    var p = PALETTES[state.palette];
+    var dev = document.getElementById("device");
+    dev.className = "device" + (state.device === "desktop" || state.view === "newtab" ? " desktop" : "") + (state.view === "newtab" ? " newtab" : "");
+    var vars = "--p-bg:" + p.bg + ";--p-ink:" + p.ink + ";--p-muted:" + p.muted + ";--p-line:" + p.line + ";--p-accent:" + p.accent +
+      ";--p-surface:" + p.surface + ";--p-display:" + DISPLAY[state.display] + ";--p-body:" + BODY[state.body] + ";";
+    dev.setAttribute("style", vars);
+    var cls = "ds style-" + state.cardStyle + (state.density === "compact" ? " compact" : "");
+    var secs = SECTIONS.filter(function (s) { return state.sections[s]; });
+
+    if (state.view === "newtab") {
+      var on = state.picked;
+      dev.innerHTML = '<div class="browser ' + cls + '"><div class="chrome-bar"><span class="dotsx"><i></i><i></i><i></i></span><span class="tabx">New Tab</span></div>' +
+        topBar() + '<div class="nt-body"><article class="card nt-card" style="--card:' + cardColor(0) + '">' +
+        '<span class="date">' + esc(t("s_frontier")) + '</span><h2>' + esc(t("f_title")) + '</h2>' +
+        '<span class="date">' + esc(t("nt_q")) + '</span><p>' + esc(t("q1")) + '</p>' +
+        '<div class="nt-btns">' + ["work", "write", "build"].map(function (e) {
+          return '<button type="button" data-pick="' + e + '" aria-pressed="' + (on === e) + '">' + esc(t("e_" + e + "_tag")) + '</button>';
+        }).join("") + '</div><a class="readfull" href="#full">' + esc(t("readfull")) + '</a></article></div></div>';
+    } else if (state.view === "swipe") {
+      if (state.slide >= secs.length) state.slide = 0;
+      dev.innerHTML = '<div class="' + cls + '">' + topBar() + '<div class="sample-flag">' + esc(t("sample")) + '</div>' +
+        '<div class="track" id="track">' + secs.map(function (s, i) { return '<div class="slide">' + sectionHTML(s, i, secs.length) + '</div>'; }).join("") + '</div>' +
+        '<nav class="dots" aria-label="Cards"><button type="button" class="nav" id="prev" aria-label="' + esc(t("prev")) + '">‹</button>' +
+        secs.map(function (s, i) { return '<button type="button" class="dot" data-go="' + i + '" aria-label="' + esc(t("s_" + s)) + '" aria-current="' + (i === state.slide) + '"></button>'; }).join("") +
+        '<button type="button" class="nav" id="next" aria-label="' + esc(t("next")) + '">›</button></nav></div>';
+      var track = document.getElementById("track");
+      requestAnimationFrame(function () { track.scrollLeft = track.clientWidth * state.slide; });
+      var tmr;
+      track.addEventListener("scroll", function () {
+        clearTimeout(tmr);
+        tmr = setTimeout(function () {
+          var i = Math.round(track.scrollLeft / track.clientWidth);
+          if (i !== state.slide) {
+            state.slide = i;
+            dev.querySelectorAll(".dot").forEach(function (d, j) { d.setAttribute("aria-current", String(j === i)); });
+          }
+        }, 80);
+      });
+      function go(i) { i = Math.max(0, Math.min(secs.length - 1, i)); track.scrollTo({ left: track.clientWidth * i }); }
+      document.getElementById("prev").addEventListener("click", function () { go(state.slide - 1); });
+      document.getElementById("next").addEventListener("click", function () { go(state.slide + 1); });
+      dev.querySelectorAll(".dot").forEach(function (d) { d.addEventListener("click", function () { go(+d.dataset.go); }); });
+      // mouse drag on laptop
+      var down = false, sx = 0, sl = 0;
+      track.addEventListener("pointerdown", function (e) {
+        if (e.pointerType !== "mouse" || e.target.closest("button, textarea, a")) return;
+        down = true; sx = e.clientX; sl = track.scrollLeft; track.style.scrollSnapType = "none";
+      });
+      window.addEventListener("pointermove", function (e) { if (down) track.scrollLeft = sl - (e.clientX - sx); });
+      window.addEventListener("pointerup", function () {
+        if (!down) return; down = false; track.style.scrollSnapType = "";
+        go(Math.round(track.scrollLeft / track.clientWidth));
+      });
+    } else {
+      dev.innerHTML = '<div class="' + cls + '">' + topBar() + '<div class="sample-flag">' + esc(t("sample")) + '</div>' +
+        '<div class="flow">' + secs.map(function (s, i) { return sectionHTML(s, i, secs.length); }).join("") + '</div></div>';
+    }
+
+    dev.querySelectorAll("[data-inner]").forEach(function (b) {
+      b.addEventListener("click", function () { state[b.dataset.inner] = b.dataset.v; update(); });
+    });
+    dev.querySelectorAll("[data-pick]").forEach(function (b) {
+      b.addEventListener("click", function () { state.picked = state.picked === b.dataset.pick ? "" : b.dataset.pick; update(); });
+    });
+    dev.querySelectorAll("[data-vote]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var id = b.dataset.vote, v = b.dataset.val;
+        state.votes[id] = state.votes[id] === v ? "" : v;
+        dev.querySelectorAll('[data-vote="' + id + '"]').forEach(function (x) { x.setAttribute("aria-pressed", String(state.votes[id] === x.dataset.val)); });
+        persist();
+      });
+    });
+    var sv = document.getElementById("saveRecap");
+    if (sv) sv.addEventListener("click", function () { document.getElementById("savedNote").hidden = false; });
+  }
+
+  function update() {
+    document.querySelectorAll(".seg[data-key]").forEach(function (seg) {
+      seg.querySelectorAll("button").forEach(function (b) { b.setAttribute("aria-pressed", String(state[seg.dataset.key] === b.dataset.v)); });
+    });
+    sw.querySelectorAll(".swatch").forEach(function (b) { b.setAttribute("aria-pressed", String(state.palette === b.dataset.v)); });
+    SECTIONS.forEach(function (s) {
+      document.getElementById("chk-" + s).checked = !!state.sections[s];
+      checks.querySelector('[data-sec="' + s + '"]').textContent = T.en["s_" + s] + (s === "work" ? " (private)" : "");
+    });
+    var titles = { swipe: "Swipe cards", scroll: "Long scroll", newtab: "Chrome new tab" };
+    var hints = { swipe: "Swipe, drag, or use the arrows", scroll: "Scroll inside the screen", newtab: "Compact card shown on every new tab" };
+    document.getElementById("stageTitle").textContent = titles[state.view];
+    document.getElementById("stageHint").textContent = hints[state.view];
+    var settings = {
+      default_view: state.view === "newtab" ? "swipe" : state.view, device_checked: state.device,
+      palette: state.palette, card_colors: state.cardTone, card_style: state.cardStyle,
+      headline_font: state.display, body_font: state.body, spacing: state.density, default_language: state.lang,
+      sections: SECTIONS.filter(function (s) { return state.sections[s]; })
+    };
+    document.getElementById("out").value = "daily-spark design settings\n" + JSON.stringify(settings, null, 2);
+    renderPreview();
+    persist();
+  }
+
+  update();
+})();
+</script>
+</body>
+</html>
