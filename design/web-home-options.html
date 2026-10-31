@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Home Options</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+/* Three directions for the daily-spark web home page, all inside Ella's palette.
+   Layout: option tabs on top, then a browser-width preview of each direction. */
+:root {
+  --midnight: #0b1957; --sapphire: #426bc2; --petal: #e8d9ed; --lace: #f7f4ed; --lavender: #d2b3db; --bridal: #e9f3ff;
+  --studio: #eef0f6; --line: rgba(11,25,87,.14); --muted: #5a5683;
+  --serif: "Instrument Serif", Georgia, serif; --sans: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--studio); color: var(--midnight); font-family: var(--sans); font-size: 15px; line-height: 1.55; font-variant-numeric: lining-nums tabular-nums; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--sapphire); outline-offset: 2px; }
+a { color: inherit; text-decoration: none; }
+
+.top { max-width: 1240px; margin: 0 auto; padding: 24px 16px 12px; display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: end; }
+.top h1 { font-family: var(--serif); font-weight: 400; font-size: 34px; line-height: 1; margin: 0; }
+.top p { margin: 6px 0 0; color: var(--muted); font-size: 14px; max-width: 560px; }
+.tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.tabs button { border: 1px solid var(--line); background: #fff; border-radius: 999px; padding: 7px 14px; cursor: pointer; font-size: 14px; }
+.tabs button[aria-selected="true"] { background: var(--midnight); color: #fff; border-color: var(--midnight); }
+.frame { max-width: 1240px; margin: 0 auto 32px; padding: 0 16px; }
+.browser { border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 30px 60px -36px rgba(11,25,87,.4); }
+.bbar { display: flex; gap: 8px; align-items: center; padding: 9px 12px; background: #e3e6ef; font-size: 12px; color: #4a5378; }
+.bbar i { width: 10px; height: 10px; border-radius: 50%; background: #c3c8d8; display: block; }
+.bbar .url { margin-left: 8px; background: #fff; border-radius: 999px; padding: 3px 12px; flex: 1; max-width: 420px; }
+.note { max-width: 1240px; margin: 0 auto; padding: 0 16px 12px; font-size: 13px; color: var(--muted); }
+.view[hidden] { display: none; }
+.spark { display: inline-block; width: 22px; height: 22px; }
+.lang { display: inline-flex; border: 1px solid currentColor; border-radius: 999px; overflow: hidden; font-size: 12px; opacity: .9; }
+.lang span { padding: 3px 10px; }
+.lang span.on { background: currentColor; }
+.lang span.on b { color: var(--midnight); font-weight: 500; }
+
+/* ---------- A. Night Edition (inspired by the engraved blue footer) ---------- */
+.a { background: linear-gradient(180deg, #13277a 0%, var(--midnight) 70%); color: var(--lace); position: relative; }
+.a-nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 40px; }
+.a-brand { display: flex; align-items: center; gap: 10px; font-family: var(--serif); font-size: 28px; }
+.a-hero { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 48px; padding: 24px 40px 0; align-items: start; }
+.a-hero h2 { font-family: var(--serif); font-weight: 400; font-size: 64px; line-height: .98; margin: 0 0 16px; text-wrap: balance; }
+.a-hero h2 em { font-style: italic; color: var(--bridal); }
+.a-hero p { font-family: var(--serif); font-style: italic; font-size: 21px; line-height: 1.4; margin: 0; max-width: 460px; color: #dfe6fb; }
+.a-loop { display: flex; gap: 22px; margin-top: 22px; font-family: var(--serif); font-size: 18px; }
+.a-loop span { border-top: 1px solid rgba(247,244,237,.5); padding-top: 6px; }
+.a-today { border: 1px solid rgba(247,244,237,.35); padding: 20px 22px; display: grid; gap: 10px; background: rgba(247,244,237,.06); }
+.a-today .k { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--bridal); }
+.a-today h3 { font-family: var(--serif); font-weight: 400; font-size: 26px; line-height: 1.15; margin: 0; }
+.a-today ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 14px; }
+.a-today li { display: flex; justify-content: space-between; gap: 10px; border-top: 1px solid rgba(247,244,237,.18); padding-top: 6px; }
+.a-today li span:last-child { color: #b9c6ef; white-space: nowrap; font-size: 12px; }
+.a-today .go { color: var(--lace); font-family: var(--serif); font-style: italic; font-size: 18px; }
+.a-list { padding: 30px 40px 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 26px; }
+.a-list .col h4 { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; font-weight: 500; margin: 0 0 10px; }
+.a-list .col h4::after { content: ""; display: block; width: 28px; border-top: 1px solid rgba(247,244,237,.6); margin-top: 10px; }
+.a-list .col a { display: block; font-family: var(--serif); font-size: 17px; line-height: 1.6; color: #e4e9fa; }
+.a-list .col a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.a canvas { display: block; width: 100%; height: 230px; margin-top: 18px; }
+
+/* ---------- B. The Index (numbered list with dotted dividers) ---------- */
+.b { background: var(--lace); color: var(--midnight); }
+.b-nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 40px; border-bottom: 1px solid var(--line); }
+.b-brand { display: flex; gap: 10px; align-items: center; font-family: var(--serif); font-size: 26px; }
+.b-body { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr); gap: 56px; padding: 40px 40px 48px; }
+.b-left { position: sticky; top: 24px; align-self: start; display: grid; gap: 16px; }
+.mono { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.mono::before { content: "■ "; color: var(--sapphire); }
+.b-left h2 { font-family: var(--serif); font-weight: 400; font-size: 52px; line-height: 1; margin: 0; }
+.b-left p { margin: 0; color: #3b4470; max-width: 380px; }
+.b-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin-top: 6px; }
+.b-stats div { background: var(--petal); padding: 12px; border-radius: 10px; }
+.b-stats b { display: block; font-size: 24px; font-weight: 600; color: var(--sapphire); line-height: 1.1; }
+.b-stats span { font-size: 12px; color: var(--muted); }
+.b-list { display: grid; }
+.b-row { display: grid; grid-template-columns: 54px minmax(0, 1fr) auto; gap: 18px; padding: 22px 0; border-bottom: 1px dashed rgba(11,25,87,.25); align-items: start; }
+.b-row:first-child { padding-top: 0; }
+.b-row .n { font-family: var(--mono); font-size: 18px; color: var(--sapphire); padding-top: 2px; }
+.b-row h3 { margin: 0 0 4px; font-weight: 500; font-size: 18px; }
+.b-row p { margin: 0; color: #4b5480; font-size: 14px; }
+.b-row .d { font-family: var(--mono); font-size: 12px; color: var(--muted); white-space: nowrap; display: grid; justify-items: end; gap: 6px; }
+.b-row .chip { border: 1px solid var(--line); background: #fff; border-radius: 6px; padding: 2px 7px; }
+.b-row.today .chip { background: var(--sapphire); color: #fff; border-color: var(--sapphire); }
+.b-row:hover h3 { color: var(--sapphire); }
+
+/* ---------- C. Card Row (soft gradient cards) ---------- */
+.c { background: var(--petal); color: var(--midnight); }
+.c-nav { display: flex; justify-content: space-between; align-items: center; padding: 22px 40px; }
+.c-brand { display: flex; gap: 10px; align-items: center; font-family: var(--serif); font-size: 26px; }
+.c-hero { padding: 26px 40px 10px; max-width: 760px; }
+.c-hero h2 { font-family: var(--serif); font-weight: 400; font-size: 58px; line-height: 1; margin: 0 0 12px; text-wrap: balance; }
+.c-hero p { margin: 0; color: #3b4470; font-size: 16px; }
+.c-row { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(230px, 1fr); gap: 14px; padding: 26px 40px 20px; overflow-x: auto; scrollbar-width: thin; }
+.c-card { border-radius: 18px; padding: 18px; display: grid; gap: 10px; align-content: space-between; min-height: 260px; background: linear-gradient(180deg, var(--lace) 0%, var(--lace) 45%, #efe2f3 100%); border: 1px solid rgba(255,255,255,.6); }
+.c-card.today { background: linear-gradient(180deg, var(--lace) 0%, #e3ecfd 55%, #c9d9fb 100%); grid-column: span 2; }
+.c-card:nth-child(3n) { background: linear-gradient(180deg, var(--lace) 0%, var(--lace) 40%, #f1dfe9 100%); }
+.c-card .ic { width: 28px; height: 28px; }
+.c-card .meta { font-size: 12px; color: var(--muted); display: flex; justify-content: space-between; }
+.c-card h3 { font-family: var(--serif); font-weight: 400; font-size: 24px; line-height: 1.1; margin: 0; }
+.c-card p { margin: 0; font-size: 14px; color: #3b4470; }
+.c-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 13px; }
+.c-card li::before { content: "↗ "; color: var(--sapphire); }
+.c-card .go { font-weight: 600; color: var(--sapphire); font-size: 14px; }
+.c-foot { padding: 6px 40px 30px; display: flex; gap: 10px; flex-wrap: wrap; }
+.c-foot span { background: rgba(255,255,255,.6); border-radius: 999px; padding: 4px 12px; font-size: 13px; }
+
+@media (max-width: 860px) {
+  .a-hero, .b-body { grid-template-columns: minmax(0, 1fr); gap: 26px; }
+  .a-hero h2 { font-size: 44px; } .b-left h2 { font-size: 40px; } .c-hero h2 { font-size: 42px; }
+  .a-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .a-nav, .a-hero, .a-list, .b-nav, .b-body, .c-nav, .c-hero, .c-row, .c-foot { padding-left: 18px; padding-right: 18px; }
+  .b-left { position: static; }
+  .c-card.today { grid-column: span 1; }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div>
+    <h1>Web home: 3 directions</h1>
+    <p>Same palette and fonts as the locked design. Only the home page changes; daily pages stay as they are. Content is sample: only the 31 Oct summary is real.</p>
+  </div>
+  <nav class="tabs" role="tablist" aria-label="Options">
+    <button role="tab" id="tab-a" aria-selected="true" aria-controls="view-a">A · Night Edition</button>
+    <button role="tab" id="tab-b" aria-selected="false" aria-controls="view-b">B · The Index</button>
+    <button role="tab" id="tab-c" aria-selected="false" aria-controls="view-c">C · Card Row</button>
+  </nav>
+</header>
+<p class="note" id="note"></p>
+
+<div class="frame">
+  <div class="browser">
+    <div class="bbar"><i></i><i></i><i></i><span class="url">ellanguyen-isp.github.io/daily-spark</span></div>
+
+    <!-- A -->
+    <section class="view a" id="view-a" role="tabpanel" aria-labelledby="tab-a">
+      <div class="a-nav">
+        <span class="a-brand"><svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1c.6 5.4 5.6 10.4 11 11-5.4.6-10.4 5.6-11 11-.6-5.4-5.6-10.4-11-11 5.4-.6 10.4-5.6 11-11z" fill="#f7f4ed"/></svg>daily-spark</span>
+        <span class="lang"><span class="on"><b>EN</b></span><span>VI</span></span>
+      </div>
+      <div class="a-hero">
+        <div>
+          <h2>One spark a day, <em>for people who build.</em></h2>
+          <p>Digest the market, think for yourself, build something, recap what you learned.</p>
+          <div class="a-loop"><span>Digest</span><span>Think</span><span>Build</span><span>Recap</span></div>
+        </div>
+        <a class="a-today" href="#today">
+          <span class="k">Today · Sat 31 Oct 2026 · Edition 001</span>
+          <h3>AI gets real numbers: a profitable frontier lab, a cheaper computer-use model, and software output tripling.</h3>
+          <ul>
+            <li><span>Anthropic files for IPO: $16.3bn revenue in six months</span><span>hellochinatech.com</span></li>
+            <li><span>GPT-6.1 Terra: a cheaper model for computer use</span><span>simonwillison.net</span></li>
+            <li><span>GitHub Octoverse: software output tripled</span><span>simonwillison.net</span></li>
+          </ul>
+          <span class="go">Read today's spark →</span>
+        </a>
+      </div>
+      <div class="a-list">
+        <div class="col"><h4>This week</h4><a href="#d">31 Oct · AI gets real numbers</a><a href="#d">30 Oct · Assistants act in the browser</a><a href="#d">29 Oct · Distribution is the new moat</a></div>
+        <div class="col"><h4>Last week</h4><a href="#d">28 Oct · Trust becomes the product</a><a href="#d">27 Oct · Evals join the PM toolkit</a><a href="#d">24 Oct · Prototypes beat specs</a></div>
+        <div class="col"><h4>Timeless</h4><a href="#d">The four big risks</a><a href="#d">The Mom Test</a><a href="#d">Jobs to be done</a></div>
+        <div class="col"><h4>Your loop</h4><a href="#d">12 sparks read</a><a href="#d">4 exercises done</a><a href="#d">2 posts shipped</a></div>
+      </div>
+      <canvas id="land" aria-label="Engraved landscape illustration" role="img"></canvas>
+    </section>
+
+    <!-- B -->
+    <section class="view b" id="view-b" role="tabpanel" aria-labelledby="tab-b" hidden>
+      <div class="b-nav">
+        <span class="b-brand"><svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1c.6 5.4 5.6 10.4 11 11-5.4.6-10.4 5.6-11 11-.6-5.4-5.6-10.4-11-11 5.4-.6 10.4-5.6 11-11z" fill="#426bc2"/></svg>daily-spark</span>
+        <span class="lang" style="color: var(--midnight)"><span class="on"><b style="color: var(--lace)">EN</b></span><span>VI</span></span>
+      </div>
+      <div class="b-body">
+        <div class="b-left">
+          <span class="mono">Daily sparks</span>
+          <h2>One small loop, every morning.</h2>
+          <p>Digest the market, think for yourself, build something, recap what you learned. A new edition lands at 07:00.</p>
+          <div class="b-stats">
+            <div><b>12</b><span>sparks read</span></div>
+            <div><b>4</b><span>exercises done</span></div>
+            <div><b>2</b><span>posts shipped</span></div>
+          </div>
+        </div>
+        <div class="b-list">
+          <a class="b-row today" href="#d"><span class="n">005</span><span><h3>AI gets real numbers</h3><p>A profitable frontier lab, a cheaper computer-use model, and software output tripling.</p></span><span class="d"><span>31 Oct 2026</span><span class="chip">Today</span></span></a>
+          <a class="b-row" href="#d"><span class="n">004</span><span><h3>Assistants act in the browser</h3><p>Apps rethink their front door as assistants learn to book, fill forms and compare.</p></span><span class="d"><span>30 Oct 2026</span><span class="chip">9 min</span></span></a>
+          <a class="b-row" href="#d"><span class="n">003</span><span><h3>Distribution is the new moat</h3><p>Solo builders ship faster than ever; the winners found users before code.</p></span><span class="d"><span>29 Oct 2026</span><span class="chip">8 min</span></span></a>
+          <a class="b-row" href="#d"><span class="n">002</span><span><h3>Trust becomes the product</h3><p>Health apps race to add AI coaching, and users ask who checks the advice.</p></span><span class="d"><span>28 Oct 2026</span><span class="chip">8 min</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- C -->
+    <section class="view c" id="view-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+      <div class="c-nav">
+        <span class="c-brand"><svg class="spark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1c.6 5.4 5.6 10.4 11 11-5.4.6-10.4 5.6-11 11-.6-5.4-5.6-10.4-11-11 5.4-.6 10.4-5.6 11-11z" fill="#426bc2"/></svg>daily-spark</span>
+        <span class="lang" style="color: var(--midnight)"><span class="on"><b style="color: var(--lace)">EN</b></span><span>VI</span></span>
+      </div>
+      <div class="c-hero">
+        <h2>A daily loop, not just a digest.</h2>
+        <p>Digest the market, think for yourself, build something, recap what you learned.</p>
+      </div>
+      <div class="c-row">
+        <a class="c-card today" href="#d">
+          <div class="meta"><span>Today · Edition 001</span><span>9 min</span></div>
+          <div>
+            <h3>AI gets real numbers</h3>
+            <p>A profitable frontier lab, a cheaper computer-use model, and software output tripling.</p>
+          </div>
+          <ul><li>Anthropic files for IPO: $16.3bn in six months</li><li>GPT-6.1 Terra for computer use</li><li>GitHub Octoverse: output tripled</li></ul>
+          <span class="go">Read today's spark →</span>
+        </a>
+        <a class="c-card" href="#d"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#426bc2" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 8h18"/></svg><div><div class="meta"><span>30 Oct</span><span>9 min</span></div><h3>Assistants act in the browser</h3></div><p>Apps rethink their front door.</p></a>
+        <a class="c-card" href="#d"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#426bc2" stroke-width="1.6" aria-hidden="true"><path d="M4 18l5-6 4 3 7-9"/></svg><div><div class="meta"><span>29 Oct</span><span>8 min</span></div><h3>Distribution is the new moat</h3></div><p>Users before code.</p></a>
+        <a class="c-card" href="#d"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="#426bc2" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg><div><div class="meta"><span>28 Oct</span><span>8 min</span></div><h3>Trust becomes the product</h3></div><p>AI coaching in health apps.</p></a>
+      </div>
+      <div class="c-foot"><span>12 sparks read</span><span>4 exercises done</span><span>2 posts shipped</span></div>
+    </section>
+  </div>
+</div>
+
+<script>
+(function () {
+  var NOTES = {
+    a: "A · Night Edition: inspired by the engraved blue footer. Deep blue hero, italic serif, today's spark as a framed panel, archive in columns, and a hand-engraved style landscape. Most distinctive and brand-like.",
+    b: "B · The Index: inspired by the numbered list. Title and your loop stats stay pinned on the left; editions are a numbered list with dotted dividers on the right. Calmest and easiest to scan.",
+    c: "C · Card Row: inspired by the gradient cards. Today is a wide card with its headlines; past days scroll sideways as soft gradient cards. Most visual and app-like."
+  };
+  var tabs = document.querySelectorAll("[role=tab]");
+  function show(id) {
+    tabs.forEach(function (t) {
+      var on = t.id === "tab-" + id;
+      t.setAttribute("aria-selected", String(on));
+      document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+    });
+    document.getElementById("note").textContent = NOTES[id];
+    if (id === "a") draw();
+  }
+  tabs.forEach(function (t) { t.addEventListener("click", function () { show(t.id.slice(4)); }); });
+
+  // Engraved-style landscape: ridge lines plus hatching, drawn once per size.
+  function draw() {
+    var c = document.getElementById("land"); if (!c || !c.offsetWidth) return;
+    var dpr = Math.min(2, window.devicePixelRatio || 1), W = c.offsetWidth, H = c.offsetHeight;
+    c.width = W * dpr; c.height = H * dpr;
+    var g = c.getContext("2d"); g.scale(dpr, dpr);
+    g.fillStyle = "#0b1957"; g.fillRect(0, 0, W, H);
+    var seed = 7; function rnd() { seed = (seed * 16807) % 2147483647; return seed / 2147483647; }
+    function ridge(x, base, amp, f1, f2, ph) { return base - amp * (0.55 * Math.sin(x * f1 + ph) + 0.3 * Math.sin(x * f2 + ph * 2) + 0.15 * Math.sin(x * f2 * 3.1)); }
+    // ground
+    g.fillStyle = "#f2ecdf"; g.beginPath(); g.moveTo(0, H);
+    for (var x = 0; x <= W; x += 4) g.lineTo(x, ridge(x, H * 0.55, H * 0.12, 0.004, 0.011, 1.2));
+    g.lineTo(W, H); g.closePath(); g.fill();
+    // far hills hatching
+    g.strokeStyle = "rgba(66,107,194,.85)"; g.lineWidth = 1;
+    for (var layer = 0; layer < 3; layer++) {
+      var base = H * (0.42 + layer * 0.07), amp = H * (0.18 - layer * 0.04), ph = layer * 2.1;
+      for (x = 0; x < W; x += 3) {
+        var top = ridge(x, base, amp, 0.005 + layer * 0.002, 0.013, ph), len = 6 + rnd() * 18;
+        if (rnd() < 0.7) { g.beginPath(); g.moveTo(x, top + rnd() * 4); g.lineTo(x + 2, top + len); g.stroke(); }
+      }
+      g.beginPath(); for (x = 0; x <= W; x += 3) { var y = ridge(x, base, amp, 0.005 + layer * 0.002, 0.013, ph); if (x === 0) g.moveTo(x, y); else g.lineTo(x, y); }
+      g.strokeStyle = "rgba(11,25,87,.9)"; g.stroke(); g.strokeStyle = "rgba(66,107,194,.85)";
+    }
+    // grass tufts
+    g.strokeStyle = "rgba(11,25,87,.75)";
+    for (var i = 0; i < W / 6; i++) {
+      var gx = rnd() * W, gy = H * 0.7 + rnd() * H * 0.3;
+      for (var k = 0; k < 4; k++) { g.beginPath(); g.moveTo(gx, gy); g.lineTo(gx + (rnd() - 0.5) * 8, gy - 4 - rnd() * 8); g.stroke(); }
+    }
+    // horizon dashes
+    g.strokeStyle = "rgba(66,107,194,.5)";
+    for (i = 0; i < W / 3; i++) { var hx = rnd() * W, hy = H * 0.6 + rnd() * H * 0.4; g.beginPath(); g.moveTo(hx, hy); g.lineTo(hx + 4 + rnd() * 10, hy); g.stroke(); }
+  }
+  window.addEventListener("resize", function () { if (!document.getElementById("view-a").hidden) draw(); });
+  show("a");
+})();
+</script>
+</body>
+</html>
