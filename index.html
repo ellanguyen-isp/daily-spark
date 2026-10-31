@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#e8d9ed">
+<meta name="theme-color" content="#f7f4ed">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="daily-spark">
@@ -233,6 +233,48 @@ button, input, textarea { font: inherit; color: inherit; }
 .wfoot .wcont { display: flex; justify-content: space-between; gap: 12px; padding: 18px 0 28px; font-size: 13px; color: var(--p-muted); }
 .hero .brand svg { width: 40px; height: 40px; }
 .hero .brand span { font-size: 40px; }
+
+/* ---------- Home: Pinterest-style stamp grid on Lace (beige). Today = biggest card. ---------- */
+.device.home-bg, .home-bg .ds { --p-bg: #f7f4ed; --p-nav: rgba(247,244,237,.8); background: #f7f4ed; }
+.mhome { flex: 1; overflow-y: auto; }
+.mcont { width: min(1200px, 100% - 40px); margin: 0 auto; }
+.mnav { position: sticky; top: 0; z-index: 4; background: var(--p-nav); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-bottom: 1px solid var(--p-line); padding-top: env(safe-area-inset-top); }
+.mnav .mcont { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; }
+.mhero { padding: 30px 0 22px; display: grid; gap: 8px; }
+.mhero h1 { font-family: var(--p-display); font-weight: 400; font-size: clamp(34px, 6vw, 58px); line-height: 1; margin: 0; text-wrap: balance; }
+.mhero p { margin: 0; max-width: 640px; }
+.mgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); grid-auto-rows: 6px; column-gap: 18px; padding: 6px 0 40px; }
+@media (max-width: 560px) { .mgrid { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 12px; } }
+.mcard { position: relative; isolation: isolate; margin: 6px; padding: 18px; display: grid; gap: 10px; align-content: start; align-self: start; color: var(--p-ink); text-decoration: none; }
+.mcard::before { content: ""; position: absolute; inset: -6px; z-index: -1; border-radius: 2px;
+  background:
+    radial-gradient(circle at 50% 0, var(--p-bg) 4px, transparent 4.5px) 0 -1px / 13px 7px repeat-x,
+    radial-gradient(circle at 50% 100%, var(--p-bg) 4px, transparent 4.5px) 0 calc(100% + 1px) / 13px 7px repeat-x,
+    radial-gradient(circle at 0 50%, var(--p-bg) 4px, transparent 4.5px) -1px 0 / 7px 13px repeat-y,
+    radial-gradient(circle at 100% 50%, var(--p-bg) 4px, transparent 4.5px) calc(100% + 1px) 0 / 7px 13px repeat-y,
+    var(--card); }
+.mcard:hover::before { filter: brightness(.98) saturate(1.1); }
+.mcard .mmeta { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; color: var(--p-muted); }
+.mcard h3 { font-family: var(--p-display); font-weight: 400; font-size: 23px; line-height: 1.12; margin: 0; text-wrap: balance; }
+.mcard p { margin: 0; font-size: 14px; color: #3b4470; }
+.mcard .mfoot { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--p-muted); padding-top: 4px; }
+.mcard .mk { width: 18px; height: 18px; color: var(--p-accent); display: inline-flex; }
+.mcard .mk svg { width: 100%; height: 100%; }
+.mcard.mtoday { grid-column: span 2; padding: 26px; gap: 14px; }
+@media (max-width: 560px) { .mcard.mtoday { grid-column: 1 / -1; padding: 20px; } }
+.mcard.mtoday .pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.mcard.mtoday .pills span { background: var(--p-ink); color: var(--p-surface); border-radius: 999px; padding: 2px 10px; font-size: 11px; letter-spacing: .09em; text-transform: uppercase; font-weight: 600; }
+.mcard.mtoday .pills span + span { background: rgba(255,255,255,.7); color: var(--p-ink); }
+.mcard.mtoday h2 { font-family: var(--p-display); font-weight: 400; font-size: clamp(32px, 4.2vw, 46px); line-height: 1.02; margin: 0; text-wrap: balance; }
+.mcard.mtoday .sub { font-size: 16px; color: var(--p-ink); }
+.mcard.mtoday .bigmk { position: absolute; right: 22px; top: 18px; width: 64px; height: 64px; color: var(--p-accent); opacity: .9; }
+.mcard.mtoday .bigmk svg { width: 100%; height: 100%; }
+.mcard.mtoday ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.mcard.mtoday li { display: flex; justify-content: space-between; gap: 12px; background: rgba(255,255,255,.66); border-radius: 10px; padding: 8px 12px; font-size: 14px; }
+.mcard.mtoday li span:last-child { color: var(--p-muted); font-size: 12px; white-space: nowrap; }
+.mcard.mtoday .go { justify-self: start; background: var(--p-ink); color: var(--p-surface); border-radius: 999px; padding: 8px 18px; font-weight: 500; font-size: 14px; }
+.mfootbar { border-top: 1px solid var(--p-line); }
+.mfootbar .mcont { display: flex; justify-content: space-between; gap: 12px; padding: 16px 0 24px; font-size: 13px; color: var(--p-muted); }
 </style>
 </head>
 <body>
@@ -377,8 +419,41 @@ button, input, textarea { font: inherit; color: inherit; }
       '<div class="wgrid">' + today + '<div class="wlist"><span class="lbl muted">' + esc(u("previous")) + '</span>' + list + '</div></div></main>' +
       '<footer class="wfoot"><div class="wcont"><span>daily spark · ' + esc(u("footer")) + '</span><span class="num">' + state.days.length + ' ' + esc(u("editions")) + '</span></div></footer></div>';
   }
+  var MCARDS = ["#e9f3ff", "#efe3f2", "#e8d9ed", "#e3ecfd", "#f1e6f4", "#e9f3ff"];
+  function masonryHomeHTML() {
+    var d0 = state.days[0], rest = state.days.slice(1, 40), cards = "";
+    if (d0) {
+      var sp = splitSummary(L(d0.summary)), lt = state.latest && state.latest.date === d0.date ? state.latest : null;
+      cards += '<a class="mcard mtoday" href="#' + d0.date + '" style="--card:#e8d9ed"><span class="bigmk">' + MARK + '</span>' +
+        '<span class="pills"><span>' + esc(u("today")) + '</span><span class="num">' + esc(u("edition")) + ' ' + esc(d0.edition) + '</span></span>' +
+        '<span class="mmeta num" style="display:block">' + esc(longDate(d0.date)) + ' · ' + esc(d0.minutes) + ' min</span>' +
+        '<h2>' + esc(sp[0]) + '</h2>' + (sp[1] ? '<p class="sub">' + esc(sp[1]) + '</p>' : "") +
+        (lt ? '<ul>' + lt.headlines.map(function (h) { return '<li><span>' + esc(L(h.t)) + '</span><span>' + esc(h.src) + '</span></li>'; }).join("") + '</ul>' : "") +
+        '<span class="go">' + esc(u("readtoday")) + '</span></a>';
+    }
+    cards += rest.map(function (d, i) {
+      var sp = splitSummary(L(d.summary));
+      return '<a class="mcard" href="#' + d.date + '" style="--card:' + MCARDS[i % MCARDS.length] + '"><span class="mmeta"><span class="num">' + esc(shortDate(d.date)) + '</span><span class="num">' +
+        esc(u("edition")) + ' ' + esc(d.edition) + '</span></span><h3>' + esc(sp[0]) + '</h3>' + (sp[1] ? '<p>' + esc(sp[1]) + '</p>' : "") +
+        '<span class="mfoot"><span class="mk">' + MARK + '</span><span class="num">' + esc(d.minutes) + ' min</span></span></a>';
+    }).join("");
+    if (!d0) cards = '<p class="small">' + esc(u("none")) + '</p>';
+    return '<div class="mhome"><header class="mnav"><div class="mcont"><a class="brand" href="#" aria-label="daily spark">' + MARK + '<span>daily spark</span></a>' + langSeg() + '</div></header>' +
+      '<main class="mcont"><section class="mhero"><h1>' + esc(u("slogan")) + '</h1><p>' + esc(u("tagline")) + '</p></section>' +
+      '<div class="mgrid" id="mgrid">' + cards + '</div></main>' +
+      '<footer class="mfootbar"><div class="mcont"><span>daily spark · ' + esc(u("footer")) + '</span><span class="num">' + state.days.length + ' ' + esc(u("editions")) + '</span></div></footer></div>';
+  }
+  function layoutMasonry() {
+    var g = document.getElementById("mgrid"); if (!g) return;
+    var cs = getComputedStyle(g), row = parseFloat(cs.gridAutoRows) || 6;
+    g.querySelectorAll(".mcard").forEach(function (c) {
+      c.style.gridRowEnd = "auto";
+      var h = c.getBoundingClientRect().height + 12 + 18;  /* stamp margin + vertical gap */
+      c.style.gridRowEnd = "span " + Math.ceil(h / row);
+    });
+  }
   function homeHTML() {
-    if (isWeb()) return webHomeHTML();
+    return masonryHomeHTML();
     var latest = state.days.length ? state.days[0].date : null;
     var rows = state.days.length ? state.days.map(function (d) {
       return '<a class="dayrow" href="#' + d.date + '"><span class="dt num">' + esc(shortDate(d.date)) + '</span><span class="sum">' + esc(L(d.summary)) + '</span>' +
@@ -423,11 +498,12 @@ button, input, textarea { font: inherit; color: inherit; }
   }
 
   function render() {
-    dev.className = "device" + (isWeb() ? " web" : "");
+    dev.className = "device" + (isWeb() ? " web" : "") + (state.cur ? "" : " home-bg");
     document.documentElement.lang = state.lang;
     dev.innerHTML = '<div class="ds layout-1">' + (state.cur ? dayHTML() : homeHTML()) + '</div>';
     document.title = state.cur ? "daily spark · " + shortDate(state.cur) : "daily spark";
     wire();
+    if (!state.cur) { layoutMasonry(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutMasonry); }
   }
 
   function wire() {
@@ -484,7 +560,7 @@ button, input, textarea { font: inherit; color: inherit; }
   }
 
   var lastWeb = isWeb();
-  window.addEventListener("resize", function () { if (isWeb() !== lastWeb) { lastWeb = isWeb(); render(); } });
+  window.addEventListener("resize", function () { if (isWeb() !== lastWeb) { lastWeb = isWeb(); render(); } else if (!state.cur) layoutMasonry(); });
   window.addEventListener("hashchange", route);
   fetch("editions/index.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : { editions: [] }; })
     .catch(function () { return { editions: [] }; })
