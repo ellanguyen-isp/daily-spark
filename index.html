@@ -260,6 +260,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .mcard .mfoot { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: var(--p-muted); padding-top: 4px; }
 .mcard .mk { width: 18px; height: 18px; color: var(--p-accent); display: inline-flex; }
 .mcard .mk svg { width: 100%; height: 100%; }
+.mcard.prev { gap: 8px; padding: 16px 18px; }
 .mcard.mtoday { grid-column: span 2; padding: 26px; gap: 14px; }
 @media (max-width: 560px) { .mcard.mtoday { grid-column: 1 / -1; padding: 20px; } .mcard.mtoday li { flex-direction: column; gap: 2px; } }
 .mcard.mtoday .pills { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -419,7 +420,7 @@ button, input, textarea { font: inherit; color: inherit; }
       '<div class="wgrid">' + today + '<div class="wlist"><span class="lbl muted">' + esc(u("previous")) + '</span>' + list + '</div></div></main>' +
       '<footer class="wfoot"><div class="wcont"><span>daily spark · ' + esc(u("footer")) + '</span><span class="num">' + state.days.length + ' ' + esc(u("editions")) + '</span></div></footer></div>';
   }
-  var MCARDS = ["#f1e6f4"];  /* previous days: one light purple; Today uses Petal */
+  var MCARDS = ["#f6f0f9"];  /* previous days: one light purple; Today uses Petal */
   function masonryHomeHTML() {
     var d0 = state.days[0], rest = state.days.slice(1, 40), cards = "";
     if (d0) {
@@ -433,9 +434,7 @@ button, input, textarea { font: inherit; color: inherit; }
     }
     cards += rest.map(function (d, i) {
       var sp = splitSummary(L(d.summary));
-      return '<a class="mcard" href="#' + d.date + '" style="--card:' + MCARDS[i % MCARDS.length] + '"><span class="mmeta"><span class="num">' + esc(shortDate(d.date)) + '</span><span class="num">' +
-        esc(u("edition")) + ' ' + esc(d.edition) + '</span></span><h3>' + esc(sp[0]) + '</h3>' + (sp[1] ? '<p>' + esc(sp[1]) + '</p>' : "") +
-        '<span class="mfoot"><span class="mk">' + MARK + '</span><span class="num">' + esc(d.minutes) + ' min</span></span></a>';
+      return '<a class="mcard prev" href="#' + d.date + '" style="--card:' + MCARDS[i % MCARDS.length] + '"><span class="mmeta"><span class="num">' + esc(shortDate(d.date)) + '</span></span><h3>' + esc(sp[0]) + '</h3></a>';
     }).join("");
     if (!d0) cards = '<p class="small">' + esc(u("none")) + '</p>';
     return '<div class="mhome"><header class="mnav"><div class="mcont"><a class="brand" href="#" aria-label="daily spark">' + MARK + '<span>daily spark</span></a>' + langSeg() + '</div></header>' +
