@@ -315,7 +315,7 @@ button, input, textarea { font: inherit; color: inherit; }
       private: "Private · only in your copy", watch: "What to watch next",
       fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper",
       answer_ph: "Write 2 or 3 lines. Your own words.", pick: "Pick", picked: "Picked", output: "You will have",
-      recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today? What did you learn?", save: "Save", saved: "Saved in this browser. Syncing arrives in week 2.",
+      recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today? What did you learn?", save: "Save", saved: "Saved. Tomorrow's spark will use it.", savedLocal: "Saved in this browser only. Connect this device in the menu to sync.", device: "This device", connected: "Connected: your recaps and feedback sync.", notConnected: "Not connected: answers stay in this browser.", keyPh: "Paste your write key", connect: "Connect", disconnect: "Disconnect",
       prev: "Previous", next: "Next", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
     vi: { tagline: "Một vòng lặp nhỏ mỗi ngày cho người làm sản phẩm: nắm thị trường, tự suy nghĩ, xây một thứ gì đó, và tổng kết điều đã học.",
       sparks: "Các spark mỗi ngày", today: "Hôm nay", edition: "Số", allsparks: "Tất cả spark", menu: "Menu", reading: "Cách đọc", language: "Ngôn ngữ",
@@ -325,7 +325,7 @@ button, input, textarea { font: inherit; color: inherit; }
       private: "Riêng tư · chỉ trong bản của bạn", watch: "Điều cần theo dõi tiếp",
       fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu",
       answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.", pick: "Chọn", picked: "Đã chọn", output: "Kết quả",
-      recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì thay đổi trong cách bạn nghĩ hoặc làm? Bạn học được gì?", save: "Lưu", saved: "Đã lưu trong trình duyệt này. Đồng bộ sẽ có ở tuần 2.",
+      recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì thay đổi trong cách bạn nghĩ hoặc làm? Bạn học được gì?", save: "Lưu", saved: "Đã lưu. Spark ngày mai sẽ dùng nội dung này.", savedLocal: "Chỉ lưu trong trình duyệt này. Kết nối thiết bị trong menu để đồng bộ.", device: "Thiết bị này", connected: "Đã kết nối: recap và phản hồi được đồng bộ.", notConnected: "Chưa kết nối: câu trả lời chỉ ở trong trình duyệt này.", keyPh: "Dán write key của bạn", connect: "Kết nối", disconnect: "Ngắt kết nối",
       prev: "Trước", next: "Sau", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
   };
   var WD = { en: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], vi: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"] };
@@ -336,6 +336,18 @@ button, input, textarea { font: inherit; color: inherit; }
 
   var state = { lang: load("lang", "en"), view: load("view", "swipe"), menu: false, slide: 0, days: [], cur: null, ed: null, fb: load("fb", {}), picked: load("picked", {}) };
   var dev = document.getElementById("device");
+  var SITE = { supabase_url: "", supabase_anon_key: "" };
+  fetch("config/site.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : {}; }).then(function (c) { SITE = Object.assign(SITE, c || {}); }).catch(function () {});
+  function wkey() { return load("wkey", ""); }
+  function canSync() { return !!(SITE.supabase_url && SITE.supabase_anon_key && wkey()); }
+  function sync(table, row) {
+    if (!canSync()) return Promise.resolve(false);
+    return fetch(SITE.supabase_url.replace(/\/$/, "") + "/rest/v1/" + table, {
+      method: "POST",
+      headers: { "apikey": SITE.supabase_anon_key, "Authorization": "Bearer " + SITE.supabase_anon_key, "Content-Type": "application/json", "Prefer": "return=minimal", "x-ds-key": wkey() },
+      body: JSON.stringify(row)
+    }).then(function (r) { return r.ok; }).catch(function () { return false; });
+  }
 
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
   function u(k) { return U[state.lang][k]; }
@@ -518,6 +530,10 @@ button, input, textarea { font: inherit; color: inherit; }
       esc(u("swipe")) + '</button><button type="button" data-set="view" data-v="scroll" aria-pressed="' + (state.view === "scroll") + '">' + esc(u("scroll")) + '</button></div></div>' +
       '<div class="row"><span class="lbl muted">' + esc(u("language")) + '</span>' + langSeg() + '</div>' +
       '<div class="row"><span class="lbl muted">' + esc(u("fbtitle")) + '</span>' + fbKey() + '</div>' +
+      '<div class="row"><span class="lbl muted">' + esc(u("device")) + '</span><span class="small">' + esc(wkey() ? u("connected") : u("notConnected")) + '</span>' +
+      (wkey() ? '<button type="button" class="iconbtn" id="disc" style="justify-self:start">' + esc(u("disconnect")) + '</button>' :
+        '<div style="display:flex;gap:6px"><input id="wk" type="password" autocomplete="off" placeholder="' + esc(u("keyPh")) + '" style="flex:1;min-width:0;border:1px solid var(--p-line);border-radius:10px;padding:6px 10px;background:var(--p-field)">' +
+        '<button type="button" class="iconbtn" id="conn">' + esc(u("connect")) + '</button></div>') + '</div>' +
       '<div class="row"><span class="lbl muted">' + esc(u("otherdays")) + '</span><ul class="datelist">' + state.days.map(function (d) {
         return '<li><button type="button" data-go-day="' + d.date + '" aria-current="' + (d.date === state.cur) + '"><span class="num">' + esc(longDate(d.date)) + '</span><span><span>' + esc(u("edition")) + '</span> <span class="num">' + esc(d.edition) + '</span></span></button></li>';
       }).join("") + '</ul></div></div>' : "";
@@ -577,17 +593,24 @@ button, input, textarea { font: inherit; color: inherit; }
     dev.querySelectorAll("[data-menu]").forEach(function (b) { b.addEventListener("click", function () { state.menu = !state.menu; render(); }); });
     dev.querySelectorAll("[data-go-day]").forEach(function (b) { b.addEventListener("click", function () { location.hash = b.dataset.goDay; }); });
     dev.querySelectorAll("[data-pick]").forEach(function (b) { b.addEventListener("click", function () {
-      state.picked[state.cur] = state.picked[state.cur] === b.dataset.pick ? "" : b.dataset.pick; save("picked", state.picked); render(); }); });
+      state.picked[state.cur] = state.picked[state.cur] === b.dataset.pick ? "" : b.dataset.pick; save("picked", state.picked);
+      sync("picks", { day: state.cur, exercise: state.picked[state.cur] || "" }); render(); }); });
     dev.querySelectorAll("[data-fb]").forEach(function (b) { b.addEventListener("click", function () {
       var id = fbid(b.dataset.fb), v = b.dataset.val;
       state.fb[id] = state.fb[id] === v ? "" : v; save("fb", state.fb);
+      sync("feedback", { day: state.cur, item: b.dataset.fb, value: state.fb[id] || "" });
       dev.querySelectorAll('[data-fb="' + b.dataset.fb + '"]').forEach(function (x) { x.setAttribute("aria-pressed", String(state.fb[id] === x.dataset.val)); });
     }); });
     var sv = document.getElementById("saveRecap");
     if (sv) sv.addEventListener("click", function () {
-      var r = load("recaps", {}); r[state.cur] = document.getElementById("recapBox").value; save("recaps", r);
-      document.getElementById("savedNote").hidden = false;
+      var body = document.getElementById("recapBox").value, note = document.getElementById("savedNote");
+      var r = load("recaps", {}); r[state.cur] = body; save("recaps", r);
+      sync("recaps", { day: state.cur, body: body }).then(function (ok) { note.textContent = ok ? u("saved") : u("savedLocal"); note.hidden = false; });
     });
+    var cb = document.getElementById("conn");
+    if (cb) cb.addEventListener("click", function () { var v = document.getElementById("wk").value.trim(); if (v) { save("wkey", v); render(); } });
+    var db = document.getElementById("disc");
+    if (db) db.addEventListener("click", function () { save("wkey", ""); render(); });
     var rb = document.getElementById("recapBox");
     if (rb) rb.value = load("recaps", {})[state.cur] || "";
   }
