@@ -276,6 +276,26 @@ button, input, textarea { font: inherit; color: inherit; }
 .mcard.mtoday .go { justify-self: start; background: var(--p-ink); color: var(--p-surface); border-radius: 999px; padding: 8px 18px; font-weight: 500; font-size: 14px; }
 .mfootbar { border-top: 1px solid var(--p-line); }
 .mfootbar .mcont { display: flex; justify-content: space-between; gap: 12px; padding: 16px 0 24px; font-size: 13px; color: var(--p-muted); }
+
+/* ---------- Home v3 (per Ella's sketch): logo + settings, thick rule, greeting, Today left, one-line rows right ---------- */
+.shome { flex: 1; overflow-y: auto; }
+.scont { width: min(1100px, 100% - 40px); margin: 0 auto; }
+.snav { position: sticky; top: 0; z-index: 4; background: var(--p-nav); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); padding-top: env(safe-area-inset-top); }
+.snav .scont { display: flex; justify-content: space-between; align-items: center; padding: 16px 0 14px; border-bottom: 2px solid var(--p-ink); }
+.sgreet { padding: 40px 0 28px; display: grid; gap: 6px; }
+.sgreet h1 { font-family: var(--p-display); font-weight: 400; font-size: clamp(30px, 4.6vw, 46px); line-height: 1.05; margin: 0; text-wrap: balance; }
+.sgreet p { margin: 0; color: var(--p-muted); }
+.sgrid { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 28px; padding-bottom: 44px; align-items: start; }
+@media (max-width: 760px) { .sgrid { grid-template-columns: minmax(0, 1fr); gap: 22px; } }
+.srows { display: grid; gap: 12px; }
+.srows > .lbl { margin-bottom: 2px; }
+.srow { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 10px; background: #f1e8f5; color: var(--p-ink); text-decoration: none; }
+.srow:hover { box-shadow: inset 0 0 0 1px var(--p-accent); }
+.srow .sd { font-weight: 600; font-size: 14px; white-space: nowrap; }
+.srow .st { font-family: var(--p-display); font-size: 19px; line-height: 1.2; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.srow .se { font-size: 12px; color: var(--p-muted); white-space: nowrap; }
+.sempty { margin: 0; padding: 16px; border: 1px dashed var(--p-line); border-radius: 10px; color: var(--p-muted); font-size: 14px; }
+.sgrid .mcard.mtoday { grid-column: auto; margin: 6px; }
 </style>
 </head>
 <body>
@@ -296,7 +316,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper",
       answer_ph: "Write 2 or 3 lines. Your own words.", pick: "Pick", picked: "Picked", output: "You will have",
       recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today? What did you learn?", save: "Save", saved: "Saved in this browser. Syncing arrives in week 2.",
-      prev: "Previous", next: "Next", slogan: "A daily loop, not just a digest.", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
+      prev: "Previous", next: "Next", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
     vi: { tagline: "Một vòng lặp nhỏ mỗi ngày cho người làm sản phẩm: nắm thị trường, tự suy nghĩ, xây một thứ gì đó, và tổng kết điều đã học.",
       sparks: "Các spark mỗi ngày", today: "Hôm nay", edition: "Số", allsparks: "Tất cả spark", menu: "Menu", reading: "Cách đọc", language: "Ngôn ngữ",
       otherdays: "Ngày khác", swipe: "Vuốt", scroll: "Cuộn", fbtitle: "Biểu tượng phản hồi",
@@ -306,7 +326,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu",
       answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.", pick: "Chọn", picked: "Đã chọn", output: "Kết quả",
       recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì thay đổi trong cách bạn nghĩ hoặc làm? Bạn học được gì?", save: "Lưu", saved: "Đã lưu trong trình duyệt này. Đồng bộ sẽ có ở tuần 2.",
-      prev: "Trước", next: "Sau", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
+      prev: "Trước", next: "Sau", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
   };
   var WD = { en: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], vi: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"] };
   var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -451,8 +471,33 @@ button, input, textarea { font: inherit; color: inherit; }
       c.style.gridRowEnd = "span " + Math.ceil(h / row);
     });
   }
+  var OWNER = "Ella";  /* community users: change to your own name */
+  function todayVN() { return new Date(Date.now() + 7 * 3600 * 1000).toISOString().slice(0, 10); }
+  function splitHomeHTML() {
+    var d0 = state.days[0], rest = state.days.slice(1, 8), today = "";
+    var fresh = d0 && d0.date === todayVN();
+    var greet = state.lang === "vi"
+      ? (fresh ? "Chào " + OWNER + ", spark hôm nay của bạn đã sẵn sàng." : "Chào " + OWNER + ", đây là spark mới nhất của bạn.")
+      : (fresh ? "Hi " + OWNER + ", your spark for today is ready." : "Hi " + OWNER + ", here is your latest spark.");
+    if (d0) {
+      var sp = splitSummary(L(d0.summary)), lt = state.latest && state.latest.date === d0.date ? state.latest : null;
+      today = '<a class="mcard mtoday" href="#' + d0.date + '" style="--card:#e8d9ed"><span class="bigmk">' + MARK + '</span>' +
+        '<span class="pills"><span>' + esc(fresh ? u("today") : u("latest")) + '</span><span class="num">' + esc(u("edition")) + ' ' + esc(d0.edition) + '</span></span>' +
+        '<span class="mmeta num" style="display:block">' + esc(longDate(d0.date)) + ' · ' + esc(d0.minutes) + ' min</span>' +
+        '<h2>' + esc(sp[0]) + '</h2>' + (sp[1] ? '<p class="sub">' + esc(sp[1]) + '</p>' : "") +
+        (lt ? '<ul>' + lt.headlines.map(function (h) { return '<li><span>' + esc(L(h.t)) + '</span><span>' + esc(h.src) + '</span></li>'; }).join("") + '</ul>' : "") +
+        '<span class="go">' + esc(u("readtoday")) + '</span></a>';
+    } else { today = '<p class="sempty">' + esc(u("none")) + '</p>'; }
+    var rows = rest.length ? rest.map(function (d) {
+      return '<a class="srow" href="#' + d.date + '"><span class="sd num">' + esc(shortDate(d.date)) + '</span><span class="st">' + esc(splitSummary(L(d.summary))[0]) +
+        '</span><span class="se num">' + esc(u("edition")) + ' ' + esc(d.edition) + '</span></a>';
+    }).join("") : '<p class="sempty">' + esc(u("earlier")) + '</p>';
+    return '<div class="shome"><header class="snav"><div class="scont"><a class="brand" href="#" aria-label="daily spark">' + MARK + '<span>daily spark</span></a>' + langSeg() + '</div></header>' +
+      '<main class="scont"><section class="sgreet"><h1>' + esc(greet) + '</h1><p>' + esc(u("tagline")) + '</p></section>' +
+      '<div class="sgrid">' + today + '<div class="srows"><span class="lbl muted">' + esc(u("previous")) + '</span>' + rows + '</div></div></main></div>';
+  }
   function homeHTML() {
-    return masonryHomeHTML();
+    return splitHomeHTML();
     var latest = state.days.length ? state.days[0].date : null;
     var rows = state.days.length ? state.days.map(function (d) {
       return '<a class="dayrow" href="#' + d.date + '"><span class="dt num">' + esc(shortDate(d.date)) + '</span><span class="sum">' + esc(L(d.summary)) + '</span>' +
