@@ -181,7 +181,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .fbkey svg { width: 15px; height: 15px; fill: none; stroke: var(--p-accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .fb button[aria-pressed="true"] { background: var(--p-accent); border-color: var(--p-accent); color: #fff; }
 .lock { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; border: 1px dashed var(--p-muted); border-radius: 999px; padding: 2px 10px; color: var(--p-muted); width: fit-content; }
-.quote { font-family: var(--p-display); font-size: 34px; line-height: 1.1; margin: 0; text-wrap: balance; }
+.quote { font-family: var(--p-display); font-size: 26px; line-height: 1.15; margin: 0; text-wrap: balance; }
 .qs { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--item-gap); counter-reset: q; }
 .qs li { background: var(--p-inset); border-radius: 14px; padding: 14px 16px; display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 6px; }
 .qs li > .qn { font-family: var(--p-body); font-size: var(--t-small); font-weight: 600; color: var(--p-accent); padding-top: 3px; font-variant-numeric: lining-nums tabular-nums; }
@@ -307,7 +307,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
       loop: ["Digest", "Think", "Build", "Recap"], sparks: "Daily sparks", today: "Today", edition: "Edition",
       allsparks: "All sparks", menu: "Menu", fbtitle: "Feedback icons", reading: "Reading", language: "Language", otherdays: "Other days", swipe: "Swipe", scroll: "Scroll",
       s_frontier: "Frontier", s_people: "From people you follow", s_work: "Relevant to your work", s_timeless: "Timeless", s_think: "Think", s_exercises: "Exercises",
-      bigpic: "The big picture", points: "Key points", why: "Why it matters", take: "Takeaway for you", apply: "How to apply", example: "Example",
+      bigpic: "The big picture", principle: "The principle", points: "Key points", why: "Why it matters", take: "Takeaway for you", apply: "How to apply", example: "Example",
       private: "Private · only in your copy", watch: "What to watch next",
       fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper",
       answer_ph: "Write 2 or 3 lines. Your own words.", pick: "Pick", picked: "Picked", output: "You will have",
@@ -318,7 +318,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
       loop: ["Tiếp nhận", "Suy ngẫm", "Xây", "Tổng kết"], sparks: "Các spark mỗi ngày", today: "Hôm nay", edition: "Số",
       allsparks: "Tất cả spark", menu: "Menu", fbtitle: "Biểu tượng phản hồi", reading: "Cách đọc", language: "Ngôn ngữ", otherdays: "Ngày khác", swipe: "Vuốt", scroll: "Cuộn",
       s_frontier: "Tin nóng", s_people: "Từ người bạn theo dõi", s_work: "Liên quan đến công việc", s_timeless: "Bất biến", s_think: "Suy ngẫm", s_exercises: "Bài tập",
-      bigpic: "Bức tranh lớn", points: "Ý chính", why: "Vì sao quan trọng", take: "Bài học cho bạn", apply: "Cách áp dụng", example: "Ví dụ",
+      bigpic: "Bức tranh lớn", principle: "Nguyên tắc", points: "Ý chính", why: "Vì sao quan trọng", take: "Bài học cho bạn", apply: "Cách áp dụng", example: "Ví dụ",
       private: "Riêng tư · chỉ trong bản của bạn", watch: "Điều cần theo dõi tiếp",
       fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu",
       answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.", pick: "Chọn", picked: "Đã chọn", output: "Kết quả",
@@ -535,8 +535,8 @@ button, input, select, textarea { font: inherit; color: inherit; }
       }).join("") + '</div>';
     } else if (sec === "timeless") {
       var T = C.timeless;
-      body = '<p class="quote">' + esc(L(T.q)) + '</p>' + srcline(T.date, T.src) +
-        '<div class="items"><div class="item"><p>' + esc(L(T.e)) + '</p></div>' +
+      body = '<div class="items"><div class="item"><span class="lbl">' + esc(u("principle")) + '</span><p class="quote">' + esc(L(T.q)) + '</p>' + srcline(T.date, T.src) + '</div>' +
+        '<div class="item"><p>' + esc(L(T.e)) + '</p></div>' +
         '<div class="item">' + block(u("apply"), list(L(T.a))) + '</div>' +
         '<div class="item">' + block(u("example"), '<p>' + esc(L(T.x)) + '</p>') + fb("t0") + '</div></div>';
     } else if (sec === "think") {
