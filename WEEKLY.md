@@ -20,6 +20,7 @@ Shared rules (two repos, privacy, writing rules, no em dash) are in `CLAUDE.md`.
 5. **Radar.** Open `radar.json`. Update it from this week's evidence:
    - add a capability that became real (`status: new`), move maturity when evidence changes (`status: moved`), and set every other entry to `status: stable` (except entries whose `since` is today: they stay `new`);
    - add the new source to `evidence` (newest first, keep at most 4); set `updated` to today;
+   - every new or moved entry gets one line appended to its `history`: `{"date": today, "maturity": <new maturity>, "note": {en, vi} why}` (oldest first; never delete history);
    - never upgrade maturity on one vendor's claim alone; "ready" needs real users or independent proof.
    Run `python3 scripts/spark.py radar` until it passes. In the edition, `radar.note` says in 1 to 2 sentences what changed, and `radar.changes` lists the new and moved entries (`id`, `status`, `e`).
 6. **Week in review (private).** From this week's recaps, picks and feedback: 2 to 4 `wins`, 2 to 4 `stuck` points, and one `pattern`

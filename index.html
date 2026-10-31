@@ -334,6 +334,65 @@ button, input, textarea { font: inherit; color: inherit; }
 .srow .st .wtag { font-family: var(--p-body); }
 .sradar { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 12px 16px; border-radius: 10px; border: 1px dashed var(--p-line); color: var(--p-ink); text-decoration: none; font-size: 14px; margin-top: 4px; }
 .sradar:hover { border-color: var(--p-accent); }
+
+/* ---------- Radar dashboard: circle + list, detail panel / bottom sheet, history ---------- */
+.rflow { flex: 1; overflow-y: auto; padding: 74px 18px 40px; }
+.rwrap { width: min(1120px, 100%); margin: 0 auto; display: grid; gap: 18px; }
+.rhead { display: flex; justify-content: space-between; align-items: end; gap: 12px; flex-wrap: wrap; }
+.rhead h2 { font-family: var(--p-display); font-weight: 400; font-size: 34px; line-height: 1.05; margin: 0; }
+.rhead p { margin: 4px 0 0; color: var(--p-muted); font-size: 14px; max-width: 640px; }
+.rstats { display: flex; gap: 8px; flex-wrap: wrap; }
+.rstat { background: #17286f; border-radius: 12px; padding: 10px 14px; display: grid; gap: 2px; min-width: 92px; }
+.rstat b { font-size: 22px; line-height: 1; font-weight: 600; }
+.rstat span { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--p-muted); }
+@media (max-width: 760px) { .rstats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); width: 100%; } .rstat { min-width: 0; padding: 8px 10px; } .rstat span { font-size: 9px; } }
+.rgrid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 22px; align-items: start; }
+@media (max-width: 860px) { .rgrid { grid-template-columns: minmax(0, 1fr); } }
+.rsvgbox { background: #17286f; border-radius: 18px; padding: 10px; position: sticky; top: 0; }
+@media (max-width: 860px) { .rsvgbox { position: static; } }
+.rsvg { width: 100%; height: auto; display: block; }
+.rsvg .ring-ready { fill: rgba(199,240,216,.10); } .rsvg .ring-emerging { fill: rgba(246,230,180,.07); } .rsvg .ring-early { fill: rgba(246,201,201,.05); }
+.rsvg .ringline { fill: none; stroke: rgba(247,244,237,.18); }
+.rsvg .spoke { stroke: rgba(247,244,237,.12); }
+.rsvg .alabel { fill: #b9bde3; font: 600 10px var(--p-body); letter-spacing: .08em; text-transform: uppercase; }
+.rsvg .rlabel { fill: rgba(247,244,237,.45); font: 600 9px var(--p-body); letter-spacing: .1em; text-transform: uppercase; }
+.rsvg .dot { cursor: pointer; }
+.rsvg .dot circle.b { stroke: #0b1957; stroke-width: 2; }
+.rsvg .dot text { font: 700 10px var(--p-body); fill: #0b1957; pointer-events: none; }
+.rsvg .dot .halo { fill: none; stroke: #c7a9e3; stroke-width: 2; stroke-dasharray: 3 3; }
+.rsvg .dot.sel circle.b { stroke: #f7f4ed; stroke-width: 3; }
+.rsvg .dot.dim { opacity: .25; }
+.rsvg .dot:hover circle.b, .rsvg .dot:focus circle.b { stroke: #f7f4ed; }
+.rlegend { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; padding: 6px 0 4px; font-size: 12px; color: var(--p-muted); }
+.rlegend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+.rlegend .h { border: 2px dashed #c7a9e3; background: transparent; }
+.rtools { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.rlist { display: grid; gap: 14px; }
+.rlist h3 { font-family: var(--p-display); font-weight: 400; font-size: 21px; margin: 6px 0 0; }
+.rrow { width: 100%; text-align: left; display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; gap: 12px; align-items: center; border: 0; border-radius: 12px; padding: 12px 14px; background: #17286f; color: var(--p-ink); cursor: pointer; font: inherit; }
+.rrow:hover, .rrow[aria-current="true"] { box-shadow: inset 0 0 0 2px #c7a9e3; }
+.rrow.dim { opacity: .4; }
+.rrow .n { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 11px; color: #0b1957; }
+.rrow .c { display: grid; gap: 2px; min-width: 0; }
+.rrow .c b { font-weight: 500; font-size: 15px; line-height: 1.3; }
+.rrow .c span { font-size: 12px; color: var(--p-muted); }
+.m-ready { background: #c7f0d8; } .m-emerging { background: #f6e6b4; } .m-early { background: #f6c9c9; }
+.rback { position: absolute; inset: 0; z-index: 7; background: rgba(4,10,40,.5); }
+.rpanel { position: absolute; z-index: 8; background: #13225f; color: #f7f4ed; overflow-y: auto; display: grid; gap: 16px; align-content: start; padding: 20px; box-shadow: 0 20px 60px rgba(0,0,0,.4); }
+.device.web .rpanel { top: 0; right: 0; bottom: 0; width: min(440px, 100%); border-left: 1px solid rgba(247,244,237,.14); padding-top: 22px; }
+.device.web .rback { background: rgba(4,10,40,.25); }
+.device:not(.web) .rpanel { left: 0; right: 0; bottom: 0; max-height: 82%; border-radius: 20px 20px 0 0; padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+.device:not(.web) .rpanel::before { content: ""; justify-self: center; width: 40px; height: 4px; border-radius: 4px; background: rgba(247,244,237,.3); margin-top: -8px; }
+.rpanel .ptop { display: flex; justify-content: space-between; gap: 8px; align-items: start; }
+.rpanel h2 { font-family: var(--p-display); font-weight: 400; font-size: 28px; line-height: 1.1; margin: 0; }
+.rpanel .sec { display: grid; gap: 6px; background: rgba(255,255,255,.05); border-radius: 12px; padding: 14px; }
+.rpanel p { margin: 0; }
+.rpanel .pnav { display: flex; justify-content: space-between; gap: 8px; }
+.tl { list-style: none; margin: 0; padding: 0 0 0 4px; display: grid; gap: 12px; }
+.tl li { position: relative; padding-left: 20px; display: grid; gap: 2px; }
+.tl li::before { content: ""; position: absolute; left: 0; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--tc, #c7a9e3); }
+.tl li:not(:last-child)::after { content: ""; position: absolute; left: 4px; top: 18px; bottom: -12px; width: 2px; background: rgba(247,244,237,.18); }
+.tl .d { font-size: 12px; color: var(--p-muted); }
 </style>
 </head>
 <body>
@@ -357,7 +416,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper",
       answer_ph: "Write 2 or 3 lines. Your own words.", pick: "Pick", picked: "Picked", output: "You will have",
       recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today? What did you learn?", save: "Save", saved: "Saved. Tomorrow's spark will use it.", savedLocal: "Saved in this browser only. Connect this device in the menu to sync.", device: "This device", connected: "Connected: your recaps and feedback sync.", notConnected: "Not connected: answers stay in this browser.", keyPh: "Paste your write key", connect: "Connect", disconnect: "Disconnect",
-      prev: "Previous", next: "Next", s_market: "Market overview", s_trend: "Mega trend vs hype", s_radar: "Radar", s_review: "Week in review", s_bet: "Next week's bet", mega: "Mega trend", hype: "Hype", weekly: "Weekly", thisweek: "This week", wins: "Wins", stuck: "Where you got stuck", pattern: "The pattern", whybet: "Why this bet", openradar: "Open the full radar →", radar_t: "What's really possible now", ready: "Ready", emerging: "Emerging", early: "Early", st_new: "New", st_moved: "Moved", st_stable: "Stable", breaks: "Where it breaks", meansp: "What it means for products", evid: "Evidence", updated: "Updated", readweek: "Read this week →", weekof: "Week of", radarlink: "Radar: what's really possible now", changes: "Changes this week", steps: "Steps", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
+      prev: "Previous", next: "Next", s_market: "Market overview", s_trend: "Mega trend vs hype", s_radar: "Radar", s_review: "Week in review", s_bet: "Next week's bet", mega: "Mega trend", hype: "Hype", weekly: "Weekly", thisweek: "This week", wins: "Wins", stuck: "Where you got stuck", pattern: "The pattern", whybet: "Why this bet", openradar: "Open the full radar →", radar_t: "What's really possible now", ready: "Ready", emerging: "Emerging", early: "Early", st_new: "New", st_moved: "Moved", st_stable: "Stable", breaks: "Where it breaks", meansp: "What it means for products", evid: "Evidence", updated: "Updated", readweek: "Read this week →", weekof: "Week of", radarlink: "Radar: what's really possible now", changes: "Changes this week", steps: "Steps", allcaps: "All", onlych: "Only this week's changes", history: "History", close: "Close", capabilities: "capabilities", tapdot: "Tap a dot or a row to see the details.", newmoved: "New or moved this week", sincelbl: "On radar since", areas: "areas", nochange: "No changes this week.", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
     vi: { tagline: "Một vòng lặp nhỏ mỗi ngày cho người làm sản phẩm: nắm thị trường, tự suy nghĩ, xây một thứ gì đó, và tổng kết điều đã học.",
       sparks: "Các spark mỗi ngày", today: "Hôm nay", edition: "Số", allsparks: "Tất cả spark", menu: "Menu", reading: "Cách đọc", language: "Ngôn ngữ",
       otherdays: "Ngày khác", swipe: "Vuốt", scroll: "Cuộn", fbtitle: "Biểu tượng phản hồi",
@@ -367,7 +426,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu",
       answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.", pick: "Chọn", picked: "Đã chọn", output: "Kết quả",
       recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì thay đổi trong cách bạn nghĩ hoặc làm? Bạn học được gì?", save: "Lưu", saved: "Đã lưu. Spark ngày mai sẽ dùng nội dung này.", savedLocal: "Chỉ lưu trong trình duyệt này. Kết nối thiết bị trong menu để đồng bộ.", device: "Thiết bị này", connected: "Đã kết nối: recap và phản hồi được đồng bộ.", notConnected: "Chưa kết nối: câu trả lời chỉ ở trong trình duyệt này.", keyPh: "Dán write key của bạn", connect: "Kết nối", disconnect: "Ngắt kết nối",
-      prev: "Trước", next: "Sau", s_market: "Tổng quan thị trường", s_trend: "Xu hướng lớn và cơn sốt", s_radar: "Radar", s_review: "Nhìn lại tuần", s_bet: "Cược cho tuần tới", mega: "Xu hướng lớn", hype: "Cơn sốt", weekly: "Hằng tuần", thisweek: "Tuần này", wins: "Điều làm tốt", stuck: "Chỗ bạn bị kẹt", pattern: "Quy luật", whybet: "Vì sao chọn cược này", openradar: "Mở toàn bộ radar →", radar_t: "Điều thật sự làm được lúc này", ready: "Sẵn sàng", emerging: "Đang lên", early: "Còn sớm", st_new: "Mới", st_moved: "Thay đổi", st_stable: "Ổn định", breaks: "Chỗ còn yếu", meansp: "Ý nghĩa cho sản phẩm", evid: "Bằng chứng", updated: "Cập nhật", readweek: "Đọc bản tuần này →", weekof: "Tuần", radarlink: "Radar: điều thật sự làm được lúc này", changes: "Thay đổi tuần này", steps: "Các bước", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
+      prev: "Trước", next: "Sau", s_market: "Tổng quan thị trường", s_trend: "Xu hướng lớn và cơn sốt", s_radar: "Radar", s_review: "Nhìn lại tuần", s_bet: "Cược cho tuần tới", mega: "Xu hướng lớn", hype: "Cơn sốt", weekly: "Hằng tuần", thisweek: "Tuần này", wins: "Điều làm tốt", stuck: "Chỗ bạn bị kẹt", pattern: "Quy luật", whybet: "Vì sao chọn cược này", openradar: "Mở toàn bộ radar →", radar_t: "Điều thật sự làm được lúc này", ready: "Sẵn sàng", emerging: "Đang lên", early: "Còn sớm", st_new: "Mới", st_moved: "Thay đổi", st_stable: "Ổn định", breaks: "Chỗ còn yếu", meansp: "Ý nghĩa cho sản phẩm", evid: "Bằng chứng", updated: "Cập nhật", readweek: "Đọc bản tuần này →", weekof: "Tuần", radarlink: "Radar: điều thật sự làm được lúc này", changes: "Thay đổi tuần này", steps: "Các bước", allcaps: "Tất cả", onlych: "Chỉ thay đổi tuần này", history: "Lịch sử", close: "Đóng", capabilities: "năng lực", tapdot: "Chạm vào một chấm hoặc một dòng để xem chi tiết.", newmoved: "Mới hoặc thay đổi tuần này", sincelbl: "Có trên radar từ", areas: "lĩnh vực", nochange: "Tuần này không có thay đổi.", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
   };
   var WD = { en: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], vi: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"] };
   var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -481,9 +540,9 @@ button, input, textarea { font: inherit; color: inherit; }
       body = '<div class="item"><p>' + esc(L(R.note)) + '</p><a href="#radar">' + esc(u("openradar")) + '</a></div>' +
         ((R.changes || []).length ? '<span class="lbl muted">' + esc(u("changes")) + '</span><div class="items">' + R.changes.map(function (c) {
           var r = byId[c.id];
-          return '<div class="item"><div class="pills2"><span class="pill ' + esc(c.status) + '">' + esc(u("st_" + c.status)) + '</span>' +
+          return '<a class="item" href="#radar/' + esc(c.id) + '" style="text-decoration:none;color:inherit"><div class="pills2"><span class="pill ' + esc(c.status) + '">' + esc(u("st_" + c.status)) + '</span>' +
             (r ? '<span class="pill ' + esc(r.maturity) + '">' + esc(u(r.maturity)) + '</span><span class="small">' + esc(r.area) + '</span>' : "") + '</div>' +
-            '<h3>' + esc(r ? L(r.cap) : c.id) + '</h3><p>' + esc(L(c.e)) + '</p></div>';
+            '<h3>' + esc(r ? L(r.cap) : c.id) + ' →</h3><p>' + esc(L(c.e)) + '</p></a>';
         }).join("") + '</div>' : "");
     } else if (sec === "review") {
       var V = E.review;
@@ -498,24 +557,97 @@ button, input, textarea { font: inherit; color: inherit; }
     return '<article class="card" id="sec-' + sec + '" style="--card:' + (E.type === "weekly" ? WCARDS[i % WCARDS.length] : CARDS[i % CARDS.length]) + '">' + kicker(sec, i, total) + body + '</article>';
   }
 
+  var MCOL = { ready: "#c7f0d8", emerging: "#f6e6b4", early: "#f6c9c9" };
+  function radarOrder(R) {
+    var out = [];
+    ["ready", "emerging", "early"].forEach(function (m) { R.entries.forEach(function (x) { if (x.maturity === m) out.push(x); }); });
+    out.forEach(function (x, i) { x._n = i + 1; });
+    return out;
+  }
+  function changed(x) { return x.status === "new" || x.status === "moved"; }
+  function radarSVG(R, list) {
+    var areas = [];
+    R.entries.forEach(function (x) { if (areas.indexOf(x.area) < 0) areas.push(x.area); });
+    var web = isWeb(), dr = web ? 11 : 14;
+    var RING = { ready: [0, 82], emerging: [82, 132], early: [132, 174] }, n = areas.length, span = 2 * Math.PI / n, g = "";
+    g += '<circle class="ring-early" r="174"/><circle class="ring-emerging" r="132"/><circle class="ring-ready" r="82"/>';
+    g += '<circle class="ringline" r="174"/><circle class="ringline" r="132"/><circle class="ringline" r="82"/>';
+    areas.forEach(function (a, i) {
+      var t0 = -Math.PI / 2 + i * span, tm = t0 + span / 2;
+      g += '<line class="spoke" x1="0" y1="0" x2="' + (174 * Math.cos(t0)).toFixed(1) + '" y2="' + (174 * Math.sin(t0)).toFixed(1) + '"/>';
+      var lr = web ? 194 : 190, lx = lr * Math.cos(tm), ly = lr * Math.sin(tm);
+      g += '<text class="alabel" x="' + lx.toFixed(1) + '" y="' + (ly + 4).toFixed(1) + '" text-anchor="' + (!web || Math.abs(lx) < 30 ? "middle" : lx > 0 ? "start" : "end") + '"' + (web ? "" : ' style="font-size:12px"') + '>' + esc(a) + '</text>';
+    });
+    [["ready", -76], ["emerging", -126], ["early", -168]].forEach(function (q) {
+      var t = u(q[0]), wdt = t.length * 6.4 + 10;
+      g += '<rect x="' + (-wdt / 2).toFixed(1) + '" y="' + (q[1] - 9) + '" width="' + wdt.toFixed(1) + '" height="13" rx="6.5" fill="#17286f"/>' +
+        '<text class="rlabel" x="0" y="' + q[1] + '" text-anchor="middle">' + esc(t) + '</text>';
+    });
+    areas.forEach(function (a, i) {
+      ["ready", "emerging", "early"].forEach(function (m) {
+        var es = list.filter(function (x) { return x.area === a && x.maturity === m; }), k = es.length;
+        es.forEach(function (x, j) {
+          var t = -Math.PI / 2 + i * span + span * (j + 1) / (k + 1), r0 = RING[m][0], w = RING[m][1] - r0;
+          var r = k === 1 ? r0 + w * (m === "ready" ? .62 : .5) : r0 + w * (j % 2 ? .3 : .68);
+          var cx = r * Math.cos(t), cy = r * Math.sin(t);
+          var cls = "dot" + (state.rsel === x.id ? " sel" : "") + (state.ronly && !changed(x) ? " dim" : "");
+          g += '<g class="' + cls + '" data-r="' + esc(x.id) + '" tabindex="0" role="button" aria-label="' + esc(x._n + ". " + L(x.cap)) + '">' +
+            (changed(x) ? '<circle class="halo" cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + (dr + 4) + '"/>' : "") +
+            '<circle class="b" cx="' + cx.toFixed(1) + '" cy="' + cy.toFixed(1) + '" r="' + dr + '" fill="' + MCOL[x.maturity] + '"/>' +
+            '<text x="' + cx.toFixed(1) + '" y="' + (cy + 3.5).toFixed(1) + '" text-anchor="middle"' + (web ? "" : ' style="font-size:13px"') + '>' + x._n + '</text><title>' + esc(L(x.cap)) + '</title></g>';
+        });
+      });
+    });
+    return '<svg class="rsvg" viewBox="' + (web ? "-292 -212 584 424" : "-238 -208 476 416") + '" role="img" aria-label="' + esc(u("radar_t")) + '">' + g + '</svg>';
+  }
+  function radarPanel(list) {
+    var i = -1;
+    list.forEach(function (x, j) { if (x.id === state.rsel) i = j; });
+    if (i < 0) return "";
+    var x = list[i], prev = list[(i - 1 + list.length) % list.length], next = list[(i + 1) % list.length];
+    var hist = (x.history || []).slice().reverse();
+    return '<div class="rback" data-rclose="1"></div><aside class="rpanel" role="dialog" aria-label="' + esc(L(x.cap)) + '">' +
+      '<div class="ptop"><div class="pills2"><span class="pill ' + esc(x.maturity) + '">' + esc(u(x.maturity)) + '</span>' +
+      (x.status !== "stable" ? '<span class="pill ' + esc(x.status) + '">' + esc(u("st_" + x.status)) + '</span>' : "") + '<span class="small">' + esc(x.area) + ' · #' + x._n + '</span></div>' +
+      '<button type="button" class="iconbtn" data-rclose="1" aria-label="' + esc(u("close")) + '">✕</button></div>' +
+      '<h2>' + esc(L(x.cap)) + '</h2>' +
+      '<div class="sec">' + block(u("meansp"), '<p>' + esc(L(x.means)) + '</p>') + '</div>' +
+      '<div class="sec">' + block(u("breaks"), '<p>' + esc(L(x.limit)) + '</p>') + '</div>' +
+      '<div class="sec">' + block(u("evid"), '<div class="evlist">' + x.evidence.map(function (ev) { return '<div class="ev">' + srcline(ev.date, ev.src, ev.url) + '<span class="small">' + esc(L(ev.note)) + '</span></div>'; }).join("") + '</div>') + '</div>' +
+      '<div class="sec">' + block(u("history"), hist.length ? '<ol class="tl">' + hist.map(function (h) {
+        return '<li style="--tc:' + MCOL[h.maturity] + '"><span class="d num">' + esc(itemDate(h.date)) + ' · ' + esc(u(h.maturity)) + '</span><span>' + esc(L(h.note)) + '</span></li>';
+      }).join("") + '</ol>' : '<p class="small">' + esc(u("sincelbl")) + ' ' + esc(itemDate(x.since)) + '</p>') + '</div>' +
+      '<div class="pnav"><button type="button" class="iconbtn" data-r="' + esc(prev.id) + '">‹ ' + prev._n + '</button><button type="button" class="iconbtn" data-r="' + esc(next.id) + '">' + next._n + ' ›</button></div></aside>';
+  }
   function radarHTML() {
     var R = state.radar;
     var top = '<div class="bar top"><div class="topin"><a class="iconbtn" href="#" aria-label="' + esc(u("allsparks")) + '" style="text-decoration:none">←' + (isWeb() ? " " + esc(u("allsparks")) : "") + '</a>' +
       '<span class="titlebtn">' + esc(u("s_radar")) + '</span>' + langSeg() + '</div></div>';
     if (!R) return top + '<div class="home"><p>' + esc(state.err ? u("missing") : u("loading")) + '</p></div>';
-    var groups = ["ready", "emerging", "early"].map(function (m) {
-      var es = R.entries.filter(function (x) { return x.maturity === m; });
+    var list = radarOrder(R), nch = list.filter(changed).length;
+    var count = function (m) { return list.filter(function (x) { return x.maturity === m; }).length; };
+    var stats = '<div class="rstats">' + ["ready", "emerging", "early"].map(function (m) {
+      return '<div class="rstat" style="box-shadow: inset 3px 0 0 ' + MCOL[m] + '"><b class="num">' + count(m) + '</b><span>' + esc(u(m)) + '</span></div>';
+    }).join("") + '<div class="rstat" style="box-shadow: inset 3px 0 0 #c7a9e3"><b class="num">' + nch + '</b><span>' + esc(u("changes")) + '</span></div></div>';
+    var rows = ["ready", "emerging", "early"].map(function (m) {
+      var es = list.filter(function (x) { return x.maturity === m; });
       if (!es.length) return "";
-      return '<div class="rgroup"><h3>' + esc(u(m)) + ' <span class="small num">· ' + es.length + '</span></h3><div class="items">' + es.map(function (x) {
-        return '<div class="item" id="r-' + esc(x.id) + '"><div class="pills2"><span class="pill ' + esc(x.maturity) + '">' + esc(u(x.maturity)) + '</span>' +
-          (x.status !== "stable" ? '<span class="pill ' + esc(x.status) + '">' + esc(u("st_" + x.status)) + '</span>' : "") + '<span class="small">' + esc(x.area) + '</span></div>' +
-          '<h3>' + esc(L(x.cap)) + '</h3>' + block(u("meansp"), '<p>' + esc(L(x.means)) + '</p>') + block(u("breaks"), '<p>' + esc(L(x.limit)) + '</p>') +
-          block(u("evid"), '<div class="evlist">' + x.evidence.map(function (ev) { return '<div class="ev">' + srcline(ev.date, ev.src, ev.url) + '<span class="small">' + esc(L(ev.note)) + '</span></div>'; }).join("") + '</div>') + '</div>';
-      }).join("") + '</div></div>';
+      return '<div class="rgroup"><h3>' + esc(u(m)) + ' <span class="small num">· ' + es.length + '</span></h3>' + es.map(function (x) {
+        return '<button type="button" class="rrow' + (state.ronly && !changed(x) ? " dim" : "") + '" data-r="' + esc(x.id) + '" aria-current="' + (state.rsel === x.id) + '">' +
+          '<span class="n m-' + esc(x.maturity) + '">' + x._n + '</span><span class="c"><b>' + esc(L(x.cap)) + '</b><span>' + esc(x.area) + ' · ' + esc(itemDate(x.evidence[0].date)) + '</span></span>' +
+          (changed(x) ? '<span class="pill ' + esc(x.status) + '">' + esc(u("st_" + x.status)) + '</span>' : '<span></span>') + '</button>';
+      }).join("") + '</div>';
     }).join("");
-    return top + '<div class="flow"><article class="card" style="--card:#17286f"><div class="kicker"><h2>' + esc(u("radar_t")) + '</h2><span class="lbl muted num">' + esc(u("updated")) + ' ' + esc(itemDate(R.updated)) + '</span></div>' +
-      '<div class="item"><p>' + esc(L(R.intro)) + '</p></div>' + groups + '</article></div>';
+    var tools = '<div class="rtools"><div class="seg2"><button type="button" data-ronly="0" aria-pressed="' + !state.ronly + '">' + esc(u("allcaps")) + '</button>' +
+      '<button type="button" data-ronly="1" aria-pressed="' + !!state.ronly + '">' + esc(u("onlych")) + ' · ' + nch + '</button></div></div>';
+    var legend = '<div class="rlegend"><span><i style="background:' + MCOL.ready + '"></i>' + esc(u("ready")) + '</span><span><i style="background:' + MCOL.emerging + '"></i>' + esc(u("emerging")) +
+      '</span><span><i style="background:' + MCOL.early + '"></i>' + esc(u("early")) + '</span><span><i class="h"></i>' + esc(u("newmoved")) + '</span></div>';
+    return top + '<div class="rflow" id="rflow"><div class="rwrap"><div class="rhead"><div><h2>' + esc(u("radar_t")) + '</h2><p>' + esc(L(R.intro)) + '</p>' +
+      '<p class="num">' + esc(u("updated")) + ' ' + esc(itemDate(R.updated)) + ' · ' + list.length + ' ' + esc(u("capabilities")) + '</p></div>' + stats + '</div>' +
+      '<div class="rgrid"><div class="rsvgbox">' + radarSVG(R, list) + legend + '<p class="small" style="text-align:center;margin:0 0 6px">' + esc(u("tapdot")) + '</p></div>' +
+      '<div class="rlist">' + tools + rows + '</div></div></div></div>' + radarPanel(list);
   }
+
 
   function langSeg() {
     return '<div class="seg2" role="group" aria-label="' + esc(u("language")) + '"><button type="button" data-set="lang" data-v="en" aria-pressed="' + (state.lang === "en") +
@@ -655,12 +787,14 @@ button, input, textarea { font: inherit; color: inherit; }
   }
 
   function render() {
+    var rf = document.getElementById("rflow"), rkeep = rf && state.cur === "radar" ? rf.scrollTop : 0;
     var wk = isWeekly();
     dev.className = "device" + (isWeb() ? " web" : "") + (state.cur ? "" : " home-bg") + (wk ? " weekly" : "");
     document.documentElement.lang = state.lang;
     var tc = document.querySelector('meta[name="theme-color"]'); if (tc) tc.setAttribute("content", wk ? "#0b1957" : "#f7f4ed");
     dev.innerHTML = '<div class="ds layout-1">' + (state.cur === "radar" ? radarHTML() : state.cur ? dayHTML() : homeHTML()) + '</div>';
     document.title = state.cur === "radar" ? "daily spark · radar" : state.cur ? "daily spark · " + shortDate(state.cur) : "daily spark";
+    if (rkeep) { var rf2 = document.getElementById("rflow"); if (rf2) rf2.scrollTop = rkeep; }
     wire();
     if (!state.cur) { layoutMasonry(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutMasonry); }
   }
@@ -710,6 +844,13 @@ button, input, textarea { font: inherit; color: inherit; }
     if (cb) cb.addEventListener("click", function () { var v = document.getElementById("wk").value.trim(); if (v) { save("wkey", v); render(); } });
     var db = document.getElementById("disc");
     if (db) db.addEventListener("click", function () { save("wkey", ""); render(); });
+    dev.querySelectorAll("[data-r]").forEach(function (b) {
+      function open() { location.hash = "radar/" + b.dataset.r; }
+      b.addEventListener("click", open);
+      b.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); } });
+    });
+    dev.querySelectorAll("[data-rclose]").forEach(function (b) { b.addEventListener("click", function () { location.hash = "radar"; }); });
+    dev.querySelectorAll("[data-ronly]").forEach(function (b) { b.addEventListener("click", function () { state.ronly = b.dataset.ronly === "1"; render(); }); });
     var rb = document.getElementById("recapBox");
     if (rb) rb.value = load("recaps", {})[state.cur] || "";
   }
@@ -722,9 +863,12 @@ button, input, textarea { font: inherit; color: inherit; }
       fetch("editions/data/" + h + ".json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then(function (E) { if (state.cur === h) { state.ed = E; render(); if (E.type === "weekly" && !state.radar) loadRadar(); } })
         .catch(function () { if (state.cur === h) { state.err = true; render(); } });
-    } else if (h === "radar") {
-      if (state.cur !== "radar") { state.cur = "radar"; state.ed = null; state.err = false; render(); }
-      loadRadar();
+    } else if (h === "radar" || h.indexOf("radar/") === 0) {
+      var sel = h.slice(6) || null, was = state.cur === "radar";
+      state.rsel = sel;
+      if (!was) { state.cur = "radar"; state.ed = null; state.err = false; }
+      render();
+      if (!state.radar) loadRadar();
     } else { state.cur = null; render(); }
   }
   function loadRadar() {
@@ -736,6 +880,7 @@ button, input, textarea { font: inherit; color: inherit; }
   var lastWeb = isWeb();
   window.addEventListener("resize", function () { if (isWeb() !== lastWeb) { lastWeb = isWeb(); render(); } else if (!state.cur) layoutMasonry(); });
   window.addEventListener("hashchange", route);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape" && state.cur === "radar" && state.rsel) location.hash = "radar"; });
   fetch("editions/index.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : { editions: [] }; })
     .catch(function () { return { editions: [] }; })
     .then(function (idx) {

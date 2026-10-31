@@ -33,6 +33,16 @@
       "vi": "Đăng tháng 8/2026. Khảo sát hơn 15.000 lập trình viên (tháng 5 đến tháng 7): 90% dùng agent viết code hằng tuần, 68% hằng ngày; Claude Code tăng từ 18% lên 39% từ tháng 1."
      }
     }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "ready",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    }
    ]
   },
   {
@@ -63,6 +73,16 @@
       "vi": "Simon Willison gọi tháng 10/2026 là điểm bước ngoặt: bốn game ông thật sự thích chơi, làm ra mà không nhìn vào code."
      }
     }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "ready",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    }
    ]
   },
   {
@@ -91,6 +111,16 @@
      "note": {
       "en": "GPT-6.1 Terra: a mid-tier computer-use model at $1 in / $5 out per million tokens, half the price of the model it replaces.",
       "vi": "GPT-6.1 Terra: model tầm trung chuyên dùng máy tính, giá $1 đầu vào / $5 đầu ra mỗi triệu token, rẻ bằng nửa model nó thay thế."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "emerging",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
      }
     }
    ]
@@ -132,6 +162,16 @@
       "vi": "Gemini API thêm chạy nền, nên lập trình viên không cần giữ kết nối mở cho các việc dài."
      }
     }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "emerging",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    }
    ]
   },
   {
@@ -160,6 +200,16 @@
      "note": {
       "en": "Gemini at Work 2026: persistent coworker agents get their own Workspace account, email, calendar and Drive.",
       "vi": "Gemini at Work 2026: agent đồng nghiệp lâu dài có tài khoản Workspace, email, lịch và Drive riêng."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "early",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
      }
     }
    ]
@@ -192,6 +242,16 @@
       "vi": "Agent của Spawn sửa code đang chạy và ra mắt mỗi giờ; khoảng 60% việc bắt đầu từ lỗi production hoặc lỗi do AI trong game tự báo."
      }
     }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "early",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    }
    ]
   },
   {
@@ -220,6 +280,16 @@
      "note": {
       "en": "OpenAI rebuilt ChatGPT memory for long-running projects, with context users can review.",
       "vi": "OpenAI xây lại bộ nhớ ChatGPT cho các dự án dài, kèm ngữ cảnh người dùng có thể xem lại."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "emerging",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
      }
     }
    ]
@@ -252,6 +322,16 @@
       "vi": "GPT-Realtime-2: giọng nói sang giọng nói, chỉnh được mức suy luận, gọi nhiều công cụ cùng lúc, ngữ cảnh 128K."
      }
     }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "ready",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    }
    ]
   },
   {
@@ -280,6 +360,16 @@
      "note": {
       "en": "GPT-Realtime-Translate: live speech translation at $0.034 per minute.",
       "vi": "GPT-Realtime-Translate: dịch giọng nói trực tiếp với giá $0.034 mỗi phút."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "ready",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
      }
     }
    ]
@@ -312,6 +402,16 @@
       "vi": "Từ Sora 2 và Veo 3, các model video hàng đầu tạo hội thoại và âm thanh khớp trong một lần; các nhóm giờ dùng chúng cho quảng cáo."
      }
     }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "ready",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    }
    ]
   },
   {
@@ -342,6 +442,16 @@
       "vi": "Cả Claude và ChatGPT bản web đều kết nối được MCP server tự làm, nhưng phải qua khá nhiều bước."
      }
     }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "emerging",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    }
    ]
   },
   {
@@ -370,6 +480,16 @@
      "note": {
       "en": "WWDC26: Apple Foundation Models co-built with Gemini, on-device for personal context, reached through App Intents and Core AI.",
       "vi": "WWDC26: Apple Foundation Models làm cùng Gemini, chạy trên máy cho ngữ cảnh cá nhân, dùng qua App Intents và Core AI."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "emerging",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
      }
     }
    ]

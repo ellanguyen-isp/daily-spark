@@ -97,6 +97,10 @@ def validate_radar(R):
             need(ev.get("url", "").startswith("http") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", ev.get("date", "")),
                  f"{w}.evidence[{j}]: url and YYYY-MM-DD date required")
             bi(ev.get("note"), f"{w}.evidence[{j}].note")
+        for j, h in enumerate(x.get("history", [])):
+            need(re.fullmatch(r"\d{4}-\d{2}-\d{2}", h.get("date", "")) and h.get("maturity") in MATURITY,
+                 f"{w}.history[{j}]: date (YYYY-MM-DD) and maturity required")
+            bi(h.get("note"), f"{w}.history[{j}].note")
     no_dash(R)
     return ids
 
