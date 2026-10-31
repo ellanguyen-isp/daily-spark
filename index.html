@@ -337,7 +337,7 @@ button, input, textarea { font: inherit; color: inherit; }
 
 /* ---------- Radar dashboard: circle + list, detail panel / bottom sheet, history ---------- */
 .rflow { flex: 1; overflow-y: auto; padding: 74px 18px 40px; }
-.rwrap { width: min(1120px, 100%); margin: 0 auto; display: grid; gap: 18px; }
+.rwrap { width: min(980px, 100%); margin: 0 auto; display: grid; gap: 18px; }
 .rhead { display: flex; justify-content: space-between; align-items: end; gap: 12px; flex-wrap: wrap; }
 .rhead h2 { font-family: var(--p-display); font-weight: 400; font-size: 34px; line-height: 1.05; margin: 0; }
 .rhead p { margin: 4px 0 0; color: var(--p-muted); font-size: 14px; max-width: 640px; }
@@ -393,6 +393,36 @@ button, input, textarea { font: inherit; color: inherit; }
 .tl li::before { content: ""; position: absolute; left: 0; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--tc, #c7a9e3); }
 .tl li:not(:last-child)::after { content: ""; position: absolute; left: 4px; top: 18px; bottom: -12px; width: 2px; background: rgba(247,244,237,.18); }
 .tl .d { font-size: 12px; color: var(--p-muted); }
+
+/* ---------- Radar progress chart: one row per capability on Early -> Emerging -> Ready ---------- */
+.pchart { background: #17286f; border-radius: 18px; padding: 14px 16px 10px; display: grid; gap: 2px; }
+.prow { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr) 76px; gap: 14px; align-items: center; width: 100%; text-align: left; border: 0; background: transparent; color: var(--p-ink); font: inherit; cursor: pointer; padding: 9px 8px; border-radius: 10px; }
+.prow:hover, .prow[aria-current="true"] { background: rgba(255,255,255,.06); box-shadow: inset 0 0 0 1px #c7a9e3; }
+.prow.dim { opacity: .35; }
+.prow > .pill { justify-self: end; }
+.prow.phead { cursor: default; padding-top: 2px; padding-bottom: 6px; }
+.prow.phead:hover { background: transparent; box-shadow: none; }
+.prow .pl { display: flex; gap: 10px; align-items: center; min-width: 0; }
+.prow .pl .n { flex: 0 0 24px; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 11px; color: #0b1957; }
+.prow .pl b { font-weight: 500; font-size: 14px; line-height: 1.3; }
+.prow .pl small { display: block; font-size: 11px; color: var(--p-muted); }
+.ptrack { position: relative; height: 28px; }
+.ptrack::before { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 2px; background: rgba(247,244,237,.12); }
+.ptrack .tick { position: absolute; top: 50%; width: 6px; height: 6px; margin: -3px 0 0 -3px; border-radius: 50%; background: rgba(247,244,237,.25); }
+.ptrack .seg { position: absolute; top: 50%; height: 3px; margin-top: -1.5px; background: #c7a9e3; border-radius: 2px; }
+.ptrack .pt { position: absolute; top: 50%; width: 16px; height: 16px; margin: -8px 0 0 -8px; border-radius: 50%; border: 2px solid #0b1957; }
+.ptrack .pt.was { background: #17286f; border: 2px solid #c7a9e3; width: 12px; height: 12px; margin: -6px 0 0 -6px; }
+.pcols { position: relative; height: 16px; }
+.pcols span { position: absolute; transform: translateX(-50%); font-size: 10px; letter-spacing: .09em; text-transform: uppercase; font-weight: 600; color: var(--p-muted); white-space: nowrap; }
+.pgap { height: 1px; background: rgba(247,244,237,.1); margin: 4px 8px; }
+.plegend { display: flex; gap: 14px; flex-wrap: wrap; font-size: 12px; color: var(--p-muted); padding: 8px 8px 2px; }
+.plegend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; vertical-align: -1px; }
+@media (max-width: 760px) {
+  .prow { grid-template-columns: minmax(0, 1fr) auto; row-gap: 6px; }
+  .prow > .pill, .prow > span:last-child { justify-self: end; }
+  .prow .ptrack, .prow .pcols { grid-column: 1 / -1; grid-row: 2; }
+  .prow.phead .pl { display: none; }
+}
 </style>
 </head>
 <body>
@@ -416,7 +446,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper",
       answer_ph: "Write 2 or 3 lines. Your own words.", pick: "Pick", picked: "Picked", output: "You will have",
       recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today? What did you learn?", save: "Save", saved: "Saved. Tomorrow's spark will use it.", savedLocal: "Saved in this browser only. Connect this device in the menu to sync.", device: "This device", connected: "Connected: your recaps and feedback sync.", notConnected: "Not connected: answers stay in this browser.", keyPh: "Paste your write key", connect: "Connect", disconnect: "Disconnect",
-      prev: "Previous", next: "Next", s_market: "Market overview", s_trend: "Mega trend vs hype", s_radar: "Radar", s_review: "Week in review", s_bet: "Next week's bet", mega: "Mega trend", hype: "Hype", weekly: "Weekly", thisweek: "This week", wins: "Wins", stuck: "Where you got stuck", pattern: "The pattern", whybet: "Why this bet", openradar: "Open the full radar →", radar_t: "What's really possible now", ready: "Ready", emerging: "Emerging", early: "Early", st_new: "New", st_moved: "Moved", st_stable: "Stable", breaks: "Where it breaks", meansp: "What it means for products", evid: "Evidence", updated: "Updated", readweek: "Read this week →", weekof: "Week of", radarlink: "Radar: what's really possible now", changes: "Changes this week", steps: "Steps", allcaps: "All", onlych: "Only this week's changes", history: "History", close: "Close", capabilities: "capabilities", tapdot: "Tap a dot or a row to see the details.", newmoved: "New or moved this week", sincelbl: "On radar since", areas: "areas", nochange: "No changes this week.", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
+      prev: "Previous", next: "Next", s_market: "Market overview", s_trend: "Mega trend vs hype", s_radar: "Radar", s_review: "Week in review", s_bet: "Next week's bet", mega: "Mega trend", hype: "Hype", weekly: "Weekly", thisweek: "This week", wins: "Wins", stuck: "Where you got stuck", pattern: "The pattern", whybet: "Why this bet", openradar: "Open the full radar →", radar_t: "What's really possible now", ready: "Ready", emerging: "Emerging", early: "Early", st_new: "New", st_moved: "Moved", st_stable: "Stable", breaks: "Where it breaks", meansp: "What it means for products", evid: "Evidence", updated: "Updated", readweek: "Read this week →", weekof: "Week of", radarlink: "Radar: what's really possible now", changes: "Changes this week", steps: "Steps", allcaps: "All", onlych: "Only this week's changes", history: "History", close: "Close", capabilities: "capabilities", tapdot: "Tap a row to see the details and its history.", newmoved: "New or moved this week", sincelbl: "On radar since", areas: "areas", nochange: "No changes this week.", lastwk: "Before", nowlbl: "Now", movelbl: "Moved", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
     vi: { tagline: "Một vòng lặp nhỏ mỗi ngày cho người làm sản phẩm: nắm thị trường, tự suy nghĩ, xây một thứ gì đó, và tổng kết điều đã học.",
       sparks: "Các spark mỗi ngày", today: "Hôm nay", edition: "Số", allsparks: "Tất cả spark", menu: "Menu", reading: "Cách đọc", language: "Ngôn ngữ",
       otherdays: "Ngày khác", swipe: "Vuốt", scroll: "Cuộn", fbtitle: "Biểu tượng phản hồi",
@@ -426,7 +456,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu",
       answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.", pick: "Chọn", picked: "Đã chọn", output: "Kết quả",
       recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì thay đổi trong cách bạn nghĩ hoặc làm? Bạn học được gì?", save: "Lưu", saved: "Đã lưu. Spark ngày mai sẽ dùng nội dung này.", savedLocal: "Chỉ lưu trong trình duyệt này. Kết nối thiết bị trong menu để đồng bộ.", device: "Thiết bị này", connected: "Đã kết nối: recap và phản hồi được đồng bộ.", notConnected: "Chưa kết nối: câu trả lời chỉ ở trong trình duyệt này.", keyPh: "Dán write key của bạn", connect: "Kết nối", disconnect: "Ngắt kết nối",
-      prev: "Trước", next: "Sau", s_market: "Tổng quan thị trường", s_trend: "Xu hướng lớn và cơn sốt", s_radar: "Radar", s_review: "Nhìn lại tuần", s_bet: "Cược cho tuần tới", mega: "Xu hướng lớn", hype: "Cơn sốt", weekly: "Hằng tuần", thisweek: "Tuần này", wins: "Điều làm tốt", stuck: "Chỗ bạn bị kẹt", pattern: "Quy luật", whybet: "Vì sao chọn cược này", openradar: "Mở toàn bộ radar →", radar_t: "Điều thật sự làm được lúc này", ready: "Sẵn sàng", emerging: "Đang lên", early: "Còn sớm", st_new: "Mới", st_moved: "Thay đổi", st_stable: "Ổn định", breaks: "Chỗ còn yếu", meansp: "Ý nghĩa cho sản phẩm", evid: "Bằng chứng", updated: "Cập nhật", readweek: "Đọc bản tuần này →", weekof: "Tuần", radarlink: "Radar: điều thật sự làm được lúc này", changes: "Thay đổi tuần này", steps: "Các bước", allcaps: "Tất cả", onlych: "Chỉ thay đổi tuần này", history: "Lịch sử", close: "Đóng", capabilities: "năng lực", tapdot: "Chạm vào một chấm hoặc một dòng để xem chi tiết.", newmoved: "Mới hoặc thay đổi tuần này", sincelbl: "Có trên radar từ", areas: "lĩnh vực", nochange: "Tuần này không có thay đổi.", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
+      prev: "Trước", next: "Sau", s_market: "Tổng quan thị trường", s_trend: "Xu hướng lớn và cơn sốt", s_radar: "Radar", s_review: "Nhìn lại tuần", s_bet: "Cược cho tuần tới", mega: "Xu hướng lớn", hype: "Cơn sốt", weekly: "Hằng tuần", thisweek: "Tuần này", wins: "Điều làm tốt", stuck: "Chỗ bạn bị kẹt", pattern: "Quy luật", whybet: "Vì sao chọn cược này", openradar: "Mở toàn bộ radar →", radar_t: "Điều thật sự làm được lúc này", ready: "Sẵn sàng", emerging: "Đang lên", early: "Còn sớm", st_new: "Mới", st_moved: "Thay đổi", st_stable: "Ổn định", breaks: "Chỗ còn yếu", meansp: "Ý nghĩa cho sản phẩm", evid: "Bằng chứng", updated: "Cập nhật", readweek: "Đọc bản tuần này →", weekof: "Tuần", radarlink: "Radar: điều thật sự làm được lúc này", changes: "Thay đổi tuần này", steps: "Các bước", allcaps: "Tất cả", onlych: "Chỉ thay đổi tuần này", history: "Lịch sử", close: "Đóng", capabilities: "năng lực", tapdot: "Chạm vào một dòng để xem chi tiết và lịch sử.", newmoved: "Mới hoặc thay đổi tuần này", sincelbl: "Có trên radar từ", areas: "lĩnh vực", nochange: "Tuần này không có thay đổi.", lastwk: "Trước đó", nowlbl: "Hiện tại", movelbl: "Dịch chuyển", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
   };
   var WD = { en: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], vi: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"] };
   var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -619,6 +649,26 @@ button, input, textarea { font: inherit; color: inherit; }
       }).join("") + '</ol>' : '<p class="small">' + esc(u("sincelbl")) + ' ' + esc(itemDate(x.since)) + '</p>') + '</div>' +
       '<div class="pnav"><button type="button" class="iconbtn" data-r="' + esc(prev.id) + '">‹ ' + prev._n + '</button><button type="button" class="iconbtn" data-r="' + esc(next.id) + '">' + next._n + ' ›</button></div></aside>';
   }
+  var POS = { early: 12, emerging: 50, ready: 88 };
+  function progressChart(list) {
+    var head = '<div class="prow phead"><span class="pl"></span><span class="pcols">' + ["early", "emerging", "ready"].map(function (m) {
+      return '<span style="left:' + POS[m] + '%">' + esc(u(m)) + '</span>'; }).join("") + '</span><span></span></div>';
+    var last = null, rows = list.map(function (x) {
+      var h = x.history || [], now = x.maturity, was = h.length > 1 ? h[h.length - 2].maturity : null;
+      var a = POS[now], b = was && was !== now ? POS[was] : null;
+      var track = '<span class="ptrack">' + ["early", "emerging", "ready"].map(function (m) { return '<span class="tick" style="left:' + POS[m] + '%"></span>'; }).join("") +
+        (b != null ? '<span class="seg" style="left:' + Math.min(a, b) + '%;width:' + Math.abs(a - b) + '%"></span><span class="pt was" style="left:' + b + '%"></span>' : "") +
+        '<span class="pt" style="left:' + a + '%;background:' + MCOL[now] + '"></span></span>';
+      var gap = last && last !== now ? '<div class="pgap"></div>' : ""; last = now;
+      return gap + '<button type="button" class="prow' + (state.ronly && !changed(x) ? " dim" : "") + '" data-r="' + esc(x.id) + '" aria-current="' + (state.rsel === x.id) + '">' +
+        '<span class="pl"><span class="n m-' + esc(now) + '">' + x._n + '</span><span><b>' + esc(L(x.cap)) + '</b><small>' + esc(x.area) + ' · ' + esc(itemDate(x.evidence[0].date)) + '</small></span></span>' +
+        track + (changed(x) ? '<span class="pill ' + esc(x.status) + '">' + esc(u("st_" + x.status)) + '</span>' : '<span></span>') + '</button>';
+    }).join("");
+    var legend = '<div class="plegend"><span><i style="background:' + MCOL.ready + '"></i>' + esc(u("ready")) + '</span><span><i style="background:' + MCOL.emerging + '"></i>' + esc(u("emerging")) +
+      '</span><span><i style="background:' + MCOL.early + '"></i>' + esc(u("early")) + '</span><span><i style="border:2px solid #c7a9e3"></i>' + esc(u("lastwk")) +
+      '</span><span><i style="background:#c7a9e3;border-radius:2px;height:3px;width:16px;vertical-align:3px"></i>' + esc(u("movelbl")) + '</span></div>';
+    return '<div class="pchart">' + head + rows + legend + '</div>';
+  }
   function radarHTML() {
     var R = state.radar;
     var top = '<div class="bar top"><div class="topin"><a class="iconbtn" href="#" aria-label="' + esc(u("allsparks")) + '" style="text-decoration:none">←' + (isWeb() ? " " + esc(u("allsparks")) : "") + '</a>' +
@@ -644,8 +694,7 @@ button, input, textarea { font: inherit; color: inherit; }
       '</span><span><i style="background:' + MCOL.early + '"></i>' + esc(u("early")) + '</span><span><i class="h"></i>' + esc(u("newmoved")) + '</span></div>';
     return top + '<div class="rflow" id="rflow"><div class="rwrap"><div class="rhead"><div><h2>' + esc(u("radar_t")) + '</h2><p>' + esc(L(R.intro)) + '</p>' +
       '<p class="num">' + esc(u("updated")) + ' ' + esc(itemDate(R.updated)) + ' · ' + list.length + ' ' + esc(u("capabilities")) + '</p></div>' + stats + '</div>' +
-      '<div class="rgrid"><div class="rsvgbox">' + radarSVG(R, list) + legend + '<p class="small" style="text-align:center;margin:0 0 6px">' + esc(u("tapdot")) + '</p></div>' +
-      '<div class="rlist">' + tools + rows + '</div></div></div></div>' + radarPanel(list);
+      tools + progressChart(list) + '<p class="small" style="margin:0">' + esc(u("tapdot")) + '</p></div></div>' + radarPanel(list);
   }
 
 

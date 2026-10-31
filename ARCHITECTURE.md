@@ -126,7 +126,7 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 - Sections: market overview (big picture + 3 to 5 shifts with sources) · mega trend vs hype · radar changes · week in review (private, stripped like "work") · next week's bet.
 - Design: same stamp layout in Midnight blue (bg `#0b1957`, cards `#17286f`, Lace text, lavender accent `#c7a9e3`).
 - Home: a weekly shows as the Today card on Sunday; Monday to Saturday a "This week" card sits above Previous sparks; weekly rows carry a "Weekly" tag. A "Radar" link sits under the list.
-- Radar: `radar.json` (public), dashboard page `#radar`: radar circle (rings = maturity, slices = area, numbered dots, dashed halo = new or moved), stats, filter "only this week's changes", list grouped by maturity. Click a dot or row: side panel (web) / bottom sheet (phone) at `#radar/<id>` with meaning, limits, evidence and history timeline. Each capability: area, maturity (ready / emerging / early), status (new / moved / stable), what it means for products, where it breaks, 1 to 4 dated sources. Validate with `spark.py radar`.
+- Radar: `radar.json` (public), dashboard page `#radar`: stats, filter "only this week's changes", and a progress chart (one row per capability on an Early, Emerging, Ready line; hollow dot + line = where it was before its last move). Click a row: side panel (web) / bottom sheet (phone) at `#radar/<id>` with meaning, limits, evidence and history timeline. Each capability: area, maturity (ready / emerging / early), status (new / moved / stable), what it means for products, where it breaks, 1 to 4 dated sources. Validate with `spark.py radar`.
 
 ## 3.10 Source collection (updated 2026-10-31)
 - Blogs/newsletters: RSS, fetched directly (25 feeds, most verified).
