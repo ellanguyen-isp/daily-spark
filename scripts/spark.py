@@ -5,10 +5,13 @@
       What was already sent: recent dates, used source URLs, timeless sources.
 
   python3 scripts/spark.py publish EDITION.json [--private-dir DIR]
-      Validate a full edition, then:
-        - write the public copy (no "work" section) to editions/data/<date>.json
+      Validate a full edition (daily, or "type": "weekly"), then:
+        - write the public copy (no private "work" / "review" sections) to editions/data/<date>.json
         - rebuild editions/index.json and latest.json
         - if --private-dir is given, write the full edition as Markdown there
+
+  python3 scripts/spark.py radar
+      Validate radar.json (the "what's really possible now" page).
 """
 import argparse
 import json
@@ -20,6 +23,14 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "editions" / "data"
 LANGS = ("en", "vi")
 FORBIDDEN = "—"  # em dash: house style says never use it
+PRIVATE = ("work", "review")  # sections that never reach the public repo
+RADAR = ROOT / "radar.json"
+MATURITY = ("ready", "emerging", "early")
+STATUS = ("new", "moved", "stable")
+
+
+def kind(E):
+    return E.get("type", "daily")
 
 
 class Invalid(Exception):
@@ -61,7 +72,76 @@ def used_urls(exclude_date=None):
     return urls
 
 
+def no_dash(o):
+    for path, text in walk_text(o):
+        need(FORBIDDEN not in text, f"{path}: contains an em dash; rewrite the sentence")
+
+
+def validate_radar(R):
+    need(re.fullmatch(r"\d{4}-\d{2}-\d{2}", R.get("updated", "")), "radar.updated: YYYY-MM-DD")
+    bi(R.get("intro"), "radar.intro")
+    ids = set()
+    need(6 <= len(R.get("entries", [])) <= 24, "radar.entries: 6 to 24 capabilities")
+    for i, x in enumerate(R["entries"]):
+        w = f"radar.entries[{i}]"
+        need(re.fullmatch(r"[a-z0-9-]+", x.get("id", "")), w + ".id: short-kebab-id")
+        need(x["id"] not in ids, w + ".id: duplicate"); ids.add(x["id"])
+        need(x.get("maturity") in MATURITY, w + ".maturity: " + "/".join(MATURITY))
+        need(x.get("status") in STATUS, w + ".status: " + "/".join(STATUS))
+        need(re.fullmatch(r"\d{4}-\d{2}-\d{2}", x.get("since", "")), w + ".since: YYYY-MM-DD")
+        need(x.get("area"), w + ".area: required")
+        for k in ("cap", "means", "limit"):
+            bi(x.get(k), f"{w}.{k}")
+        need(1 <= len(x.get("evidence", [])) <= 4, w + ".evidence: 1 to 4 sources")
+        for j, ev in enumerate(x["evidence"]):
+            need(ev.get("url", "").startswith("http") and re.fullmatch(r"\d{4}-\d{2}-\d{2}", ev.get("date", "")),
+                 f"{w}.evidence[{j}]: url and YYYY-MM-DD date required")
+            bi(ev.get("note"), f"{w}.evidence[{j}].note")
+    no_dash(R)
+    return ids
+
+
+def validate_weekly(E):
+    need(re.fullmatch(r"\d{4}-\d{2}-\d{2}", E.get("date", "")), "date: YYYY-MM-DD")
+    need(isinstance(E.get("edition"), str) and re.fullmatch(r"W\d{2}", E["edition"]), 'edition: weekly number like "W01"')
+    need(isinstance(E.get("minutes"), int), "minutes: integer")
+    bi(E.get("summary"), "summary")
+    wk = E.get("week", {})
+    need(re.fullmatch(r"\d{4}-\d{2}-\d{2}", wk.get("from", "")) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", wk.get("to", "")),
+         "week: {from, to} as YYYY-MM-DD")
+    M = E.get("market")
+    need(isinstance(M, dict), "market: missing")
+    bi(M.get("big"), "market.big")
+    need(3 <= len(M.get("shifts", [])) <= 5, "market.shifts: 3 to 5 shifts")
+    for i, it in enumerate(M["shifts"]):
+        w = f"market.shifts[{i}]"
+        need(it.get("url", "").startswith("http") and it.get("date"), f"{w}: url and date required")
+        bi(it.get("t"), w + ".t"); bi(it.get("p"), w + ".p", True); bi(it.get("w"), w + ".w")
+    T = E.get("trend", [])
+    need(2 <= len(T) <= 6, "trend: 2 to 6 calls")
+    need({x.get("k") for x in T} == {"mega", "hype"}, 'trend: at least one "mega" and one "hype"')
+    for i, x in enumerate(T):
+        bi(x.get("t"), f"trend[{i}].t"); bi(x.get("e"), f"trend[{i}].e")
+    R = E.get("radar")
+    need(isinstance(R, dict), "radar: missing")
+    bi(R.get("note"), "radar.note")
+    ids = validate_radar(json.loads(RADAR.read_text())) if RADAR.exists() else set()
+    for i, c in enumerate(R.get("changes", [])):
+        need(c.get("id") in ids, f"radar.changes[{i}].id: not in radar.json")
+        need(c.get("status") in STATUS, f"radar.changes[{i}].status")
+        bi(c.get("e"), f"radar.changes[{i}].e")
+    if E.get("review"):
+        V = E["review"]
+        bi(V.get("wins"), "review.wins", True); bi(V.get("stuck"), "review.stuck", True); bi(V.get("pattern"), "review.pattern")
+    B = E.get("bet")
+    need(isinstance(B, dict) and B.get("time"), "bet: missing (with time)")
+    bi(B.get("t"), "bet.t"); bi(B.get("why"), "bet.why"); bi(B.get("s"), "bet.s", True); bi(B.get("o"), "bet.o")
+    no_dash(E)
+
+
 def validate(E):
+    if kind(E) == "weekly":
+        return validate_weekly(E)
     need(re.fullmatch(r"\d{4}-\d{2}-\d{2}", E.get("date", "")), "date: YYYY-MM-DD")
     need(isinstance(E.get("edition"), str) and re.fullmatch(r"\d{3}", E["edition"]), 'edition: 3-digit string like "001"')
     bi(E.get("summary"), "summary")
@@ -106,8 +186,7 @@ def validate(E):
         need(e.get("time"), w + ".time: required")
         bi(e.get("tag"), w + ".tag"); bi(e.get("g"), w + ".g"); bi(e.get("s"), w + ".s", True); bi(e.get("o"), w + ".o")
 
-    for path, text in walk_text(E):
-        need(FORBIDDEN not in text, f"{path}: contains an em dash; rewrite the sentence")
+    no_dash(E)
 
     reused = {u: d for u, d in used_urls(E["date"]).items()
               if u in {x.get("url") for x in F["items"] + E["people"]}}
@@ -118,11 +197,18 @@ def rebuild_index():
     eds = []
     for f in sorted(DATA.glob("*.json"), reverse=True):
         E = json.loads(f.read_text())
-        eds.append({"date": E["date"], "edition": E["edition"], "summary": E["summary"], "minutes": E["minutes"]})
+        eds.append({"date": E["date"], "edition": E["edition"], "type": kind(E), "summary": E["summary"], "minutes": E["minutes"]})
     (ROOT / "editions" / "index.json").write_text(json.dumps({"editions": eds}, ensure_ascii=False, indent=1))
     if eds:
         E = json.loads((DATA / f"{eds[0]['date']}.json").read_text())
         latest = {
+            "type": "weekly", "date": E["date"], "edition": E["edition"], "summary": E["summary"],
+            "big": E["market"]["big"],
+            "headlines": [{"t": it["t"], "src": it.get("src", ""), "url": it["url"]} for it in E["market"]["shifts"]],
+            "question": E["bet"]["t"],
+            "exercises": [{"k": "bet", "tag": {"en": "Next week's bet", "vi": "Cược tuần tới"}, "time": E["bet"]["time"], "g": E["bet"]["t"]}],
+        } if kind(E) == "weekly" else {
+            "type": "daily",
             "date": E["date"], "edition": E["edition"], "summary": E["summary"],
             "big": E["frontier"]["big"],
             "headlines": [{"t": it["t"], "src": it.get("src", ""), "url": it["url"]} for it in E["frontier"]["items"]],
@@ -133,7 +219,36 @@ def rebuild_index():
     return eds
 
 
+def weekly_markdown(E):
+    en = lambda o: o["en"] if isinstance(o, dict) else o  # noqa: E731
+    out = [f"---\ntype: daily-spark-weekly\ndate: {E['date']}\nedition: \"{E['edition']}\"\nweek: {E['week']['from']} to {E['week']['to']}\n---\n",
+           f"# daily-spark weekly {E['date']} · {E['edition']}\n", f"> {en(E['summary'])}\n",
+           "## Market overview\n", f"{en(E['market']['big'])}\n"]
+    for it in E["market"]["shifts"]:
+        out.append(f"### {en(it['t'])}\n{it['date']} · [{it.get('src') or it['url']}]({it['url']})\n")
+        out += [f"- {p}" for p in en(it["p"])]
+        out.append(f"\n**Why it matters:** {en(it['w'])}\n")
+    out.append("## Mega trend vs hype\n")
+    out += [f"- **{x['k'].upper()}: {en(x['t'])}** {en(x['e'])}" for x in E["trend"]]
+    out.append(f"\n## Radar\n{en(E['radar']['note'])}\n")
+    out += [f"- {c['id']} ({c['status']}): {en(c['e'])}" for c in E["radar"].get("changes", [])]
+    if E.get("review"):
+        V = E["review"]
+        out.append("\n## Week in review (private)\n**Wins**")
+        out += [f"- {p}" for p in en(V["wins"])]
+        out.append("\n**Stuck**")
+        out += [f"- {p}" for p in en(V["stuck"])]
+        out.append(f"\n**Pattern:** {en(V['pattern'])}\n")
+    B = E["bet"]
+    out.append(f"\n## Next week's bet · {B['time']}\n**{en(B['t'])}**\n\n{en(B['why'])}\n")
+    out += [f"{i + 1}. {s}" for i, s in enumerate(en(B["s"]))]
+    out.append(f"\nYou will have: {en(B['o'])}\n")
+    return "\n".join(out) + "\n"
+
+
 def to_markdown(E):
+    if kind(E) == "weekly":
+        return weekly_markdown(E)
     en = lambda o: o["en"] if isinstance(o, dict) else o  # noqa: E731
     out = [f"---\ntype: daily-spark\ndate: {E['date']}\nedition: \"{E['edition']}\"\n---\n",
            f"# daily-spark {E['date']} · Edition {E['edition']}\n", f"> {en(E['summary'])}\n",
@@ -170,12 +285,16 @@ def to_markdown(E):
 
 def cmd_ledger(_):
     files = sorted(DATA.glob("*.json"))
-    print(f"{len(files)} editions published.", "Next edition:", f"{len(files) + 1:03d}")
-    for f in files[-7:]:
-        E = json.loads(f.read_text())
-        print(" ", E["date"], E["edition"], "|", E["summary"]["en"], "| timeless:", E["timeless"]["src"])
+    eds = [json.loads(f.read_text()) for f in files]
+    daily = [E for E in eds if kind(E) == "daily"]
+    weekly = [E for E in eds if kind(E) == "weekly"]
+    print(f"{len(daily)} daily + {len(weekly)} weekly editions published.",
+          "Next daily:", f"{len(daily) + 1:03d}", "· next weekly:", f"W{len(weekly) + 1:02d}")
+    for E in eds[-7:]:
+        extra = "| timeless: " + E["timeless"]["src"] if kind(E) == "daily" else "| weekly"
+        print(" ", E["date"], E["edition"], "|", E["summary"]["en"], extra)
     urls = used_urls()
-    print(f"{len(urls)} source URLs already used (never reuse them).")
+    print(f"{len(urls)} source URLs already used (never reuse them in a daily).")
     return 0
 
 
@@ -186,7 +305,7 @@ def cmd_publish(a):
     except Invalid as e:
         print("INVALID:", e, file=sys.stderr)
         return 1
-    public = {k: v for k, v in E.items() if k != "work"}
+    public = {k: v for k, v in E.items() if k not in PRIVATE}
     DATA.mkdir(parents=True, exist_ok=True)
     (DATA / f"{E['date']}.json").write_text(json.dumps(public, ensure_ascii=False, indent=1))
     eds = rebuild_index()
@@ -200,6 +319,16 @@ def cmd_publish(a):
     return 0
 
 
+def cmd_radar(_):
+    try:
+        ids = validate_radar(json.loads(RADAR.read_text()))
+    except (Invalid, FileNotFoundError, json.JSONDecodeError) as e:
+        print("INVALID:", e, file=sys.stderr)
+        return 1
+    print(f"radar.json ok: {len(ids)} capabilities")
+    return 0
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -207,8 +336,9 @@ def main(argv=None):
     p = sub.add_parser("publish")
     p.add_argument("file")
     p.add_argument("--private-dir")
+    sub.add_parser("radar")
     a = ap.parse_args(argv)
-    return {"ledger": cmd_ledger, "publish": cmd_publish}[a.cmd](a)
+    return {"ledger": cmd_ledger, "publish": cmd_publish, "radar": cmd_radar}[a.cmd](a)
 
 
 if __name__ == "__main__":

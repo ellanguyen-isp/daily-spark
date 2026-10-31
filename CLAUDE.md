@@ -15,6 +15,8 @@ Site: https://ellanguyen-isp.github.io/daily-spark/  ·  Today's page: `<site>#Y
 **Privacy:** never copy anything from the private repo into this repo except through `spark.py publish`, which strips the "work" section.
 Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `ella@personal/` or anything else.
 
+**Sunday is different:** the weekly edition replaces the daily. Follow `WEEKLY.md` instead of "The run" below (the writing rules here still apply).
+
 ## The run
 
 0. **Sync.** In this repo: `git fetch origin main && git checkout -B main origin/main`.

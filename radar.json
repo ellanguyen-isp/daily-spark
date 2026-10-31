@@ -1,0 +1,378 @@
+{
+ "updated": "2026-11-01",
+ "intro": {
+  "en": "What AI can really do for products right now, with proof. Ready = you can ship it today. Emerging = works, but test it hard first. Early = real demos, not yet safe to build a business on. The weekly edition updates this page every Sunday.",
+  "vi": "AI thật sự làm được gì cho sản phẩm ngay lúc này, kèm bằng chứng. Ready = có thể ra mắt ngay hôm nay. Emerging = chạy được, nhưng phải thử kỹ trước. Early = có demo thật, nhưng chưa nên xây cả một doanh nghiệp trên nó. Bản weekly cập nhật trang này mỗi Chủ nhật."
+ },
+ "entries": [
+  {
+   "id": "coding-agents",
+   "area": "Build",
+   "maturity": "ready",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Coding agents as the default way to write software",
+    "vi": "Agent viết code trở thành cách mặc định để làm phần mềm"
+   },
+   "means": {
+    "en": "A small team, or a PM alone, can ship working features in hours. The bottleneck moves from writing code to deciding what to build and checking it works.",
+    "vi": "Một nhóm nhỏ, hoặc chỉ một PM, có thể ra tính năng chạy được trong vài giờ. Điểm nghẽn chuyển từ viết code sang quyết định làm gì và kiểm tra nó có chạy đúng không."
+   },
+   "limit": {
+    "en": "Agents still make confident mistakes. Review, tests and a clear spec decide the quality, not the model.",
+    "vi": "Agent vẫn sai một cách rất tự tin. Chất lượng do review, test và spec rõ ràng quyết định, không phải do model."
+   },
+   "evidence": [
+    {
+     "date": "2026-08-01",
+     "src": "blog.jetbrains.com",
+     "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
+     "note": {
+      "en": "Published August 2026. Survey of 15,000+ developers (May to July): 90% use coding agents weekly, 68% daily; Claude Code went from 18% to 39% at work since January.",
+      "vi": "Đăng tháng 8/2026. Khảo sát hơn 15.000 lập trình viên (tháng 5 đến tháng 7): 90% dùng agent viết code hằng tuần, 68% hằng ngày; Claude Code tăng từ 18% lên 39% từ tháng 1."
+     }
+    }
+   ]
+  },
+  {
+   "id": "vibe-prototypes",
+   "area": "Build",
+   "maturity": "ready",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Non-coders building fun, working apps and games by prompting",
+    "vi": "Người không biết code tự làm app và game chạy được, vui, chỉ bằng prompt"
+   },
+   "means": {
+    "en": "Prototypes are almost free. The scarce skill is taste: a novel idea and knowing what makes it delightful.",
+    "vi": "Làm prototype gần như miễn phí. Kỹ năng hiếm bây giờ là gu: một ý tưởng mới và biết điều gì làm nó thú vị."
+   },
+   "limit": {
+    "en": "Fine for prototypes and side projects. Security, data and scale still need real engineering.",
+    "vi": "Ổn cho prototype và dự án phụ. Bảo mật, dữ liệu và quy mô lớn vẫn cần kỹ sư thật."
+   },
+   "evidence": [
+    {
+     "date": "2026-10-28",
+     "src": "simonwillison.net",
+     "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/",
+     "note": {
+      "en": "Simon Willison calls October 2026 the inflection point: four games he enjoyed playing, built without looking at the code.",
+      "vi": "Simon Willison gọi tháng 10/2026 là điểm bước ngoặt: bốn game ông thật sự thích chơi, làm ra mà không nhìn vào code."
+     }
+    }
+   ]
+  },
+  {
+   "id": "computer-use",
+   "area": "Agents",
+   "maturity": "emerging",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "AI that uses a computer like a person: clicks, types, fills forms",
+    "vi": "AI dùng máy tính như người: bấm, gõ, điền form"
+   },
+   "means": {
+    "en": "Any tool without an API can now be automated. Price dropped enough to run it on everyday tasks, not just demos.",
+    "vi": "Mọi công cụ không có API giờ đều tự động hoá được. Giá đã giảm đủ để dùng cho việc hằng ngày, không chỉ để demo."
+   },
+   "limit": {
+    "en": "Slower and less reliable than an API. Keep a human check before anything that sends, pays or deletes.",
+    "vi": "Chậm hơn và kém ổn định hơn API. Luôn để người kiểm tra trước khi gửi, thanh toán hay xoá thứ gì."
+   },
+   "evidence": [
+    {
+     "date": "2026-10-26",
+     "src": "openai.com",
+     "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+     "note": {
+      "en": "GPT-6.1 Terra: a mid-tier computer-use model at $1 in / $5 out per million tokens, half the price of the model it replaces.",
+      "vi": "GPT-6.1 Terra: model tầm trung chuyên dùng máy tính, giá $1 đầu vào / $5 đầu ra mỗi triệu token, rẻ bằng nửa model nó thay thế."
+     }
+    }
+   ]
+  },
+  {
+   "id": "background-agents",
+   "area": "Agents",
+   "maturity": "emerging",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Agents that keep working for hours or days after you close the laptop",
+    "vi": "Agent tiếp tục làm việc hàng giờ, hàng ngày sau khi bạn gập laptop"
+   },
+   "means": {
+    "en": "Products can sell finished outcomes, not chat sessions. Design shifts to hand-offs: what the agent may do alone, and when it must ask.",
+    "vi": "Sản phẩm có thể bán kết quả hoàn chỉnh, không phải phiên chat. Thiết kế chuyển sang chuyện bàn giao: agent được tự làm gì, và khi nào phải hỏi."
+   },
+   "limit": {
+    "en": "Permissions and saved progress are the hard part. A smarter model does not fix an agent that forgets what it already did.",
+    "vi": "Phần khó là quyền hạn và lưu tiến độ. Model thông minh hơn không cứu được agent quên mất việc nó đã làm."
+   },
+   "evidence": [
+    {
+     "date": "2026-10-08",
+     "src": "andrew.ooo",
+     "url": "https://andrew.ooo/answers/what-is-google-gemini-agent-gemini-at-work-2026/",
+     "note": {
+      "en": "Google's Gemini agent (private preview) runs tasks in the cloud for hours or days, with sub-agents and memory.",
+      "vi": "Gemini agent của Google (bản xem trước riêng) chạy việc trên cloud hàng giờ đến hàng ngày, có agent con và bộ nhớ."
+     }
+    },
+    {
+     "date": "2026-07-07",
+     "src": "ppc.land",
+     "url": "https://ppc.land/google-lets-gemini-agents-run-background-tasks-without-breaking-connections/",
+     "note": {
+      "en": "Gemini API added background execution, so developers no longer hold a connection open for long tasks.",
+      "vi": "Gemini API thêm chạy nền, nên lập trình viên không cần giữ kết nối mở cho các việc dài."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ai-coworkers",
+   "area": "Agents",
+   "maturity": "early",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "AI coworkers with their own email, calendar and team role",
+    "vi": "Đồng nghiệp AI có email, lịch và vai trò riêng trong nhóm"
+   },
+   "means": {
+    "en": "Work tools start to treat agents as team members. Onboarding, access and accountability for agents become product features.",
+    "vi": "Công cụ làm việc bắt đầu coi agent như thành viên nhóm. Việc onboard, cấp quyền và chịu trách nhiệm cho agent trở thành tính năng sản phẩm."
+   },
+   "limit": {
+    "en": "Private previews only, no public price. Wait for real customer stories before you build on it.",
+    "vi": "Mới là bản xem trước riêng, chưa có giá công khai. Chờ câu chuyện khách hàng thật rồi hãy xây trên nó."
+   },
+   "evidence": [
+    {
+     "date": "2026-10-08",
+     "src": "andrew.ooo",
+     "url": "https://andrew.ooo/answers/what-is-google-gemini-agent-gemini-at-work-2026/",
+     "note": {
+      "en": "Gemini at Work 2026: persistent coworker agents get their own Workspace account, email, calendar and Drive.",
+      "vi": "Gemini at Work 2026: agent đồng nghiệp lâu dài có tài khoản Workspace, email, lịch và Drive riêng."
+     }
+    }
+   ]
+  },
+  {
+   "id": "agent-run-teams",
+   "area": "Agents",
+   "maturity": "early",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Products built and shipped mostly by swarms of agents",
+    "vi": "Sản phẩm được xây và ra mắt chủ yếu bởi một bầy agent"
+   },
+   "means": {
+    "en": "A glimpse of the AI-native company: bugs reported by users get fixed and shipped within the hour. Speed of the feedback loop becomes the moat.",
+    "vi": "Một cái nhìn về công ty AI-native: lỗi người dùng báo được sửa và ra mắt trong vòng một giờ. Tốc độ của vòng phản hồi trở thành lợi thế."
+   },
+   "limit": {
+    "en": "Very expensive and rare. Spawn says it spends 30x its payroll on tokens. Copy the loop, not the budget.",
+    "vi": "Rất đắt và hiếm. Spawn nói họ chi cho token gấp 30 lần quỹ lương. Hãy học vòng lặp, đừng học ngân sách."
+   },
+   "evidence": [
+    {
+     "date": "2026-10-29",
+     "src": "simonwillison.net",
+     "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+     "note": {
+      "en": "Spawn's agents change live code and ship hourly; about 60% of work starts from a production error or a bug the in-game AI filed.",
+      "vi": "Agent của Spawn sửa code đang chạy và ra mắt mỗi giờ; khoảng 60% việc bắt đầu từ lỗi production hoặc lỗi do AI trong game tự báo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "memory",
+   "area": "Assistants",
+   "maturity": "emerging",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Assistants that remember you across weeks and projects",
+    "vi": "Trợ lý nhớ bạn qua nhiều tuần và nhiều dự án"
+   },
+   "means": {
+    "en": "Personal context becomes the switching cost. Products that hold a user's history (and let them edit it) get stickier.",
+    "vi": "Ngữ cảnh cá nhân trở thành rào cản chuyển đổi. Sản phẩm giữ được lịch sử của người dùng (và cho họ sửa) sẽ giữ chân tốt hơn."
+   },
+   "limit": {
+    "en": "Memory can be wrong or stale, and users need to see and fix it. Trust is the product, not recall.",
+    "vi": "Bộ nhớ có thể sai hoặc cũ, và người dùng cần xem và sửa được. Sản phẩm thật sự là niềm tin, không phải khả năng nhớ."
+   },
+   "evidence": [
+    {
+     "date": "2026-06-04",
+     "src": "kingy.ai",
+     "url": "https://kingy.ai/news/ai-launch-tracker-openais-new-chatgpt-memory-system-leads-june-8-2026/",
+     "note": {
+      "en": "OpenAI rebuilt ChatGPT memory for long-running projects, with context users can review.",
+      "vi": "OpenAI xây lại bộ nhớ ChatGPT cho các dự án dài, kèm ngữ cảnh người dùng có thể xem lại."
+     }
+    }
+   ]
+  },
+  {
+   "id": "voice-agents",
+   "area": "Interfaces",
+   "maturity": "ready",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Voice agents that think, look things up and act while you talk",
+    "vi": "Agent giọng nói biết suy nghĩ, tra cứu và hành động ngay khi bạn đang nói"
+   },
+   "means": {
+    "en": "Phone support, booking and coaching can run on voice with real reasoning. Voice is now a full interface, not a gimmick.",
+    "vi": "Hỗ trợ qua điện thoại, đặt lịch và coaching có thể chạy bằng giọng nói với khả năng suy luận thật. Giọng nói giờ là một giao diện đầy đủ, không còn là trò mới lạ."
+   },
+   "limit": {
+    "en": "Audio is pricey ($32 in / $64 out per million audio tokens). Budget per minute before you design the flow.",
+    "vi": "Âm thanh khá đắt ($32 vào / $64 ra mỗi triệu token âm thanh). Tính chi phí mỗi phút trước khi thiết kế luồng."
+   },
+   "evidence": [
+    {
+     "date": "2026-05-07",
+     "src": "dsebastien.net",
+     "url": "https://www.dsebastien.net/2026-05-07-gpt-realtime-2-openais-voice-model-gets-gpt-5-class-reasoning/",
+     "note": {
+      "en": "GPT-Realtime-2: speech-to-speech with adjustable reasoning, parallel tool calls and a 128K context.",
+      "vi": "GPT-Realtime-2: giọng nói sang giọng nói, chỉnh được mức suy luận, gọi nhiều công cụ cùng lúc, ngữ cảnh 128K."
+     }
+    }
+   ]
+  },
+  {
+   "id": "live-translation",
+   "area": "Interfaces",
+   "maturity": "ready",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Live speech translation, cheap enough for any app",
+    "vi": "Dịch giọng nói trực tiếp, đủ rẻ cho mọi app"
+   },
+   "means": {
+    "en": "A Vietnamese team can talk to US users in real time. Language stops being a barrier for interviews, sales and support.",
+    "vi": "Một nhóm Việt Nam có thể nói chuyện với người dùng Mỹ theo thời gian thực. Ngôn ngữ không còn là rào cản cho phỏng vấn, bán hàng và hỗ trợ."
+   },
+   "limit": {
+    "en": "Check Vietnamese quality yourself: launch support was 70+ input languages but only 13 output languages.",
+    "vi": "Hãy tự kiểm tra chất lượng tiếng Việt: lúc ra mắt hỗ trợ hơn 70 ngôn ngữ đầu vào nhưng chỉ 13 ngôn ngữ đầu ra."
+   },
+   "evidence": [
+    {
+     "date": "2026-05-07",
+     "src": "dsebastien.net",
+     "url": "https://www.dsebastien.net/2026-05-07-gpt-realtime-2-openais-voice-model-gets-gpt-5-class-reasoning/",
+     "note": {
+      "en": "GPT-Realtime-Translate: live speech translation at $0.034 per minute.",
+      "vi": "GPT-Realtime-Translate: dịch giọng nói trực tiếp với giá $0.034 mỗi phút."
+     }
+    }
+   ]
+  },
+  {
+   "id": "video-with-sound",
+   "area": "Media",
+   "maturity": "ready",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Short video with matching sound from one prompt",
+    "vi": "Video ngắn có âm thanh khớp, chỉ từ một prompt"
+   },
+   "means": {
+    "en": "Ad creative, product clips and social content can be tested in volume. Marketing tests get cheaper than the meeting about them.",
+    "vi": "Có thể thử quảng cáo, clip sản phẩm và nội dung mạng xã hội với số lượng lớn. Thử nghiệm marketing rẻ hơn cả cuộc họp bàn về nó."
+   },
+   "limit": {
+    "en": "Short clips work; long stories still drift. Faces, hands and brand details need a human check.",
+    "vi": "Clip ngắn thì ổn; câu chuyện dài vẫn bị lệch. Khuôn mặt, bàn tay và chi tiết thương hiệu cần người kiểm tra."
+   },
+   "evidence": [
+    {
+     "date": "2025-09-30",
+     "src": "entagl.com",
+     "url": "https://www.entagl.com/blog/ai-video-generation-2026-ad-creative",
+     "note": {
+      "en": "Since Sora 2 and Veo 3, flagship video models generate synced dialogue and sound in one pass; teams now use them for ad creative.",
+      "vi": "Từ Sora 2 và Veo 3, các model video hàng đầu tạo hội thoại và âm thanh khớp trong một lần; các nhóm giờ dùng chúng cho quảng cáo."
+     }
+    }
+   ]
+  },
+  {
+   "id": "apps-in-chat",
+   "area": "Distribution",
+   "maturity": "emerging",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Your product running inside ChatGPT and Claude",
+    "vi": "Sản phẩm của bạn chạy ngay bên trong ChatGPT và Claude"
+   },
+   "means": {
+    "en": "Chat assistants become a new app store. A connector can reach users where they already work, without a new app to install.",
+    "vi": "Trợ lý chat trở thành một kho ứng dụng mới. Một connector có thể đến với người dùng ngay nơi họ đang làm việc, không cần cài app mới."
+   },
+   "limit": {
+    "en": "Setup is still clunky for normal users and discovery is weak. Treat it as a channel test, not your only home.",
+    "vi": "Việc cài đặt vẫn rườm rà với người dùng thường và khó được tìm thấy. Coi đây là kênh để thử, đừng coi là ngôi nhà duy nhất."
+   },
+   "evidence": [
+    {
+     "date": "2026-07-29",
+     "src": "simonwillison.net",
+     "url": "https://simonwillison.net/2026/Jul/29/mcp-in-claude-and-chatgpt/",
+     "note": {
+      "en": "Both Claude and ChatGPT web apps can connect custom MCP servers, but it takes quite a few steps.",
+      "vi": "Cả Claude và ChatGPT bản web đều kết nối được MCP server tự làm, nhưng phải qua khá nhiều bước."
+     }
+    }
+   ]
+  },
+  {
+   "id": "on-device",
+   "area": "Platforms",
+   "maturity": "emerging",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Private AI that runs on the phone, built into the OS",
+    "vi": "AI riêng tư chạy ngay trên điện thoại, tích hợp sẵn trong hệ điều hành"
+   },
+   "means": {
+    "en": "Personal data features (health, messages, photos) can use AI without sending data to a server. A big opening for health and wellness apps.",
+    "vi": "Các tính năng dùng dữ liệu cá nhân (sức khoẻ, tin nhắn, ảnh) có thể dùng AI mà không gửi dữ liệu lên server. Một cơ hội lớn cho các app sức khoẻ."
+   },
+   "limit": {
+    "en": "Apple exposes it through system frameworks only, not a raw model. Less control over prompts than a cloud API.",
+    "vi": "Apple chỉ mở qua framework hệ thống, không cho dùng model trực tiếp. Ít quyền kiểm soát prompt hơn API trên cloud."
+   },
+   "evidence": [
+    {
+     "date": "2026-06-08",
+     "src": "mer.vin",
+     "url": "https://mer.vin/linkedin/apple-wwdc26-siri-ai-and-gemini-backed-foundation-models-on-device-and-private-cloud-compute-linkedin/",
+     "note": {
+      "en": "WWDC26: Apple Foundation Models co-built with Gemini, on-device for personal context, reached through App Intents and Core AI.",
+      "vi": "WWDC26: Apple Foundation Models làm cùng Gemini, chạy trên máy cho ngữ cảnh cá nhân, dùng qua App Intents và Core AI."
+     }
+    }
+   ]
+  }
+ ]
+}

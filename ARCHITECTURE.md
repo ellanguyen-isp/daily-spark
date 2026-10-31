@@ -105,9 +105,9 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 ### 3.8 Schedules
 | Time (local) | Task |
 |---|---|
-| 06:30 daily | Morning edition, notify by ~07:00 |
-| 20:00 daily | Recap reminder (push + email) linking to the recap box |
-| Sunday morning | Weekly edition: market overview + "what is really possible now" radar |
+| 06:12 Monday to Saturday | Morning edition, notify by ~07:00 |
+| 19:42 daily | Recap reminder (push + email) linking to the recap box |
+| 07:41 Sunday | Weekly edition (replaces the daily): market overview + "what is really possible now" radar. Runbook: `WEEKLY.md` |
 
 ## 3.9 Design (final, locked 2026-10-31)
 - Reference: `design/final.html` (interactive, phone + web, EN/VI). Exploration history: `design/mockup.html`.
@@ -120,6 +120,13 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 - Content depth: Frontier = big picture + 3 to 4 stories (date, original source, type, key points, why it matters) + what to watch; People = 3 items with 4 key points + takeaway; key numbers only for standout items.
 - Feedback per item: 4 icons in one line: Useful, Knew it (raise the bar), Not for me, Go deeper.
 - Chrome new tab: compact card with big picture, frontier headlines with sources, today's question, 3 exercise buttons, link to the full spark.
+
+## 3.11 Weekly edition and radar (added 2026-10-31)
+- Sunday only; the weekly replaces that day's daily. Edition number `W01`, `W02`...; `"type": "weekly"` in the JSON and in `editions/index.json`.
+- Sections: market overview (big picture + 3 to 5 shifts with sources) · mega trend vs hype · radar changes · week in review (private, stripped like "work") · next week's bet.
+- Design: same stamp layout in Midnight blue (bg `#0b1957`, cards `#17286f`, Lace text, lavender accent `#c7a9e3`).
+- Home: a weekly shows as the Today card on Sunday; Monday to Saturday a "This week" card sits above Previous sparks; weekly rows carry a "Weekly" tag. A "Radar" link sits under the list.
+- Radar: `radar.json` (public), page `#radar`. Each capability: area, maturity (ready / emerging / early), status (new / moved / stable), what it means for products, where it breaks, 1 to 4 dated sources. Validate with `spark.py radar`.
 
 ## 3.10 Source collection (updated 2026-10-31)
 - Blogs/newsletters: RSS, fetched directly (25 feeds, most verified).

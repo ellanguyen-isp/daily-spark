@@ -296,6 +296,44 @@ button, input, textarea { font: inherit; color: inherit; }
 .srow .se { font-size: 12px; color: var(--p-muted); white-space: nowrap; }
 .sempty { margin: 0; padding: 16px; border: 1px dashed var(--p-line); border-radius: 10px; color: var(--p-muted); font-size: 14px; }
 .sgrid .mcard.mtoday { grid-column: auto; margin: 6px; }
+
+/* ---------- Weekly + Radar: Midnight blue stamp style (Lace text on midnight) ---------- */
+.device.weekly, .weekly .ds {
+  --p-bg: #0b1957; --p-ink: #f7f4ed; --p-muted: #b9bde3; --p-line: rgba(247,244,237,.16); --p-accent: #c7a9e3;
+  --p-surface: #17286f; --p-inset: rgba(255,255,255,.06); --p-chip: rgba(255,255,255,.08); --p-field: #17286f; --p-nav: rgba(11,25,87,.8);
+  background: #0b1957; color: #f7f4ed;
+}
+.weekly .seg2 button[aria-pressed="true"], .weekly .iconbtn[aria-expanded="true"] { background: #f7f4ed; color: #0b1957; }
+.weekly a { color: #e9d9f7; }
+.weekly .stat .v { color: #c7a9e3; }
+.wtag { display: inline-block; background: #0b1957; color: #f7f4ed; border-radius: 999px; padding: 1px 8px; font-family: var(--p-body); font-size: 10px; letter-spacing: .09em; text-transform: uppercase; font-weight: 600; vertical-align: 2px; margin-right: 8px; }
+.weekly .wtag { background: #c7a9e3; color: #0b1957; }
+.pill { display: inline-block; border-radius: 999px; padding: 1px 9px; font-size: 10px; letter-spacing: .09em; text-transform: uppercase; font-weight: 600; background: var(--p-chip); color: var(--p-ink); border: 1px solid var(--p-line); }
+.pill.mega, .pill.ready { background: #c7f0d8; color: #0b1957; border-color: transparent; }
+.pill.hype, .pill.early { background: #f6c9c9; color: #0b1957; border-color: transparent; }
+.pill.emerging { background: #f6e6b4; color: #0b1957; border-color: transparent; }
+.pill.new { background: #c7a9e3; color: #0b1957; border-color: transparent; }
+.pills2 { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.evlist { display: grid; gap: 10px; }
+.evlist .ev { display: grid; gap: 2px; }
+.rgroup { display: grid; gap: 4px; }
+.rgroup > h3 { margin-top: 8px; }
+/* home: weekly as Today card, and the "This week" card */
+.mcard.mweek { color: #f7f4ed; }
+.mcard.mweek .mmeta, .mcard.mweek .sub { color: #dcdcf2; }
+.mcard.mweek .pills span { background: #c7a9e3; color: #0b1957; }
+.mcard.mweek .pills span + span { background: rgba(255,255,255,.14); color: #f7f4ed; }
+.mcard.mweek li { background: rgba(255,255,255,.08); }
+.mcard.mweek li span:last-child { color: #c9cbe8; }
+.mcard.mweek .bigmk { color: #c7a9e3; }
+.mcard.mweek .go { background: #f7f4ed; color: #0b1957; }
+.swk { display: grid; gap: 6px; padding: 16px 18px; border-radius: 12px; background: #0b1957; color: #f7f4ed; text-decoration: none; margin-bottom: 10px; }
+.swk:hover { box-shadow: 0 0 0 2px #c7a9e3; }
+.swk .st { font-family: var(--p-display); font-size: 22px; line-height: 1.15; }
+.swk .se { font-size: 12px; color: #c9cbe8; }
+.srow .st .wtag { font-family: var(--p-body); }
+.sradar { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 12px 16px; border-radius: 10px; border: 1px dashed var(--p-line); color: var(--p-ink); text-decoration: none; font-size: 14px; margin-top: 4px; }
+.sradar:hover { border-color: var(--p-accent); }
 </style>
 </head>
 <body>
@@ -306,6 +344,9 @@ button, input, textarea { font: inherit; color: inherit; }
   "use strict";
   var SECTIONS = ["frontier", "people", "work", "timeless", "think", "exercises"];
   var CARDS = ["#f7f4ed", "#e9f3ff", "#f4effa", "#e9f3ff", "#f7f4ed", "#e9f3ff"];
+  var WSECTIONS = ["market", "trend", "radar", "review", "bet"];
+  var WCARDS = ["#17286f", "#1b2f7c"];
+  function isWeekly() { return state.cur === "radar" || !!(state.ed && state.ed.type === "weekly"); }
   var U = {
     en: { tagline: "A small daily loop for product builders: digest the market, think for yourself, build something, recap what you learned.",
       sparks: "Daily sparks", today: "Today", edition: "Edition", allsparks: "All sparks", menu: "Menu", reading: "Reading", language: "Language",
@@ -316,7 +357,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper",
       answer_ph: "Write 2 or 3 lines. Your own words.", pick: "Pick", picked: "Picked", output: "You will have",
       recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today? What did you learn?", save: "Save", saved: "Saved. Tomorrow's spark will use it.", savedLocal: "Saved in this browser only. Connect this device in the menu to sync.", device: "This device", connected: "Connected: your recaps and feedback sync.", notConnected: "Not connected: answers stay in this browser.", keyPh: "Paste your write key", connect: "Connect", disconnect: "Disconnect",
-      prev: "Previous", next: "Next", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
+      prev: "Previous", next: "Next", s_market: "Market overview", s_trend: "Mega trend vs hype", s_radar: "Radar", s_review: "Week in review", s_bet: "Next week's bet", mega: "Mega trend", hype: "Hype", weekly: "Weekly", thisweek: "This week", wins: "Wins", stuck: "Where you got stuck", pattern: "The pattern", whybet: "Why this bet", openradar: "Open the full radar →", radar_t: "What's really possible now", ready: "Ready", emerging: "Emerging", early: "Early", st_new: "New", st_moved: "Moved", st_stable: "Stable", breaks: "Where it breaks", meansp: "What it means for products", evid: "Evidence", updated: "Updated", readweek: "Read this week →", weekof: "Week of", radarlink: "Radar: what's really possible now", changes: "Changes this week", steps: "Steps", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
     vi: { tagline: "Một vòng lặp nhỏ mỗi ngày cho người làm sản phẩm: nắm thị trường, tự suy nghĩ, xây một thứ gì đó, và tổng kết điều đã học.",
       sparks: "Các spark mỗi ngày", today: "Hôm nay", edition: "Số", allsparks: "Tất cả spark", menu: "Menu", reading: "Cách đọc", language: "Ngôn ngữ",
       otherdays: "Ngày khác", swipe: "Vuốt", scroll: "Cuộn", fbtitle: "Biểu tượng phản hồi",
@@ -326,7 +367,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu",
       answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.", pick: "Chọn", picked: "Đã chọn", output: "Kết quả",
       recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì thay đổi trong cách bạn nghĩ hoặc làm? Bạn học được gì?", save: "Lưu", saved: "Đã lưu. Spark ngày mai sẽ dùng nội dung này.", savedLocal: "Chỉ lưu trong trình duyệt này. Kết nối thiết bị trong menu để đồng bộ.", device: "Thiết bị này", connected: "Đã kết nối: recap và phản hồi được đồng bộ.", notConnected: "Chưa kết nối: câu trả lời chỉ ở trong trình duyệt này.", keyPh: "Dán write key của bạn", connect: "Kết nối", disconnect: "Ngắt kết nối",
-      prev: "Trước", next: "Sau", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
+      prev: "Trước", next: "Sau", s_market: "Tổng quan thị trường", s_trend: "Xu hướng lớn và cơn sốt", s_radar: "Radar", s_review: "Nhìn lại tuần", s_bet: "Cược cho tuần tới", mega: "Xu hướng lớn", hype: "Cơn sốt", weekly: "Hằng tuần", thisweek: "Tuần này", wins: "Điều làm tốt", stuck: "Chỗ bạn bị kẹt", pattern: "Quy luật", whybet: "Vì sao chọn cược này", openradar: "Mở toàn bộ radar →", radar_t: "Điều thật sự làm được lúc này", ready: "Sẵn sàng", emerging: "Đang lên", early: "Còn sớm", st_new: "Mới", st_moved: "Thay đổi", st_stable: "Ổn định", breaks: "Chỗ còn yếu", meansp: "Ý nghĩa cho sản phẩm", evid: "Bằng chứng", updated: "Cập nhật", readweek: "Đọc bản tuần này →", weekof: "Tuần", radarlink: "Radar: điều thật sự làm được lúc này", changes: "Thay đổi tuần này", steps: "Các bước", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
   };
   var WD = { en: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], vi: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"] };
   var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -422,8 +463,58 @@ button, input, textarea { font: inherit; color: inherit; }
       }).join("") + '</div><div class="item"><h3>' + esc(u("recap_title")) + '</h3><label class="small" for="recapBox">' + esc(u("recap_ph")) +
         '</label><textarea class="answer" id="recapBox"></textarea><button type="button" class="save" id="saveRecap">' + esc(u("save")) +
         '</button><span class="small" id="savedNote" hidden>' + esc(u("saved")) + '</span></div>';
+    } else if (sec === "market") {
+      var M = E.market;
+      body = '<div class="item">' + block(u("bigpic"), '<p>' + esc(L(M.big)) + '</p>') + '</div><div class="items">' +
+        M.shifts.map(function (it, j) {
+          return '<div class="item">' + srcline(it.date, it.src, it.url) + (it.tag ? '<span class="badge">' + esc(it.tag) + '</span>' : "") + '<h3>' + esc(L(it.t)) + '</h3>' + stat(it.stat) +
+            block(u("points"), list(it.p)) + '<div class="why">' + block(u("why"), '<p>' + esc(L(it.w)) + '</p>') + '</div>' + fb("m" + j) + '</div>';
+        }).join("") + '</div>';
+    } else if (sec === "trend") {
+      body = '<div class="items">' + E.trend.map(function (x, j) {
+        return '<div class="item"><div class="pills2"><span class="pill ' + esc(x.k) + '">' + esc(u(x.k)) + '</span></div><h3>' + esc(L(x.t)) + '</h3><p>' + esc(L(x.e)) + '</p>' +
+          (x.url ? srcline(x.date, x.src, x.url) : "") + fb("h" + j) + '</div>';
+      }).join("") + '</div>';
+    } else if (sec === "radar") {
+      var R = E.radar, byId = {};
+      ((state.radar && state.radar.entries) || []).forEach(function (r) { byId[r.id] = r; });
+      body = '<div class="item"><p>' + esc(L(R.note)) + '</p><a href="#radar">' + esc(u("openradar")) + '</a></div>' +
+        ((R.changes || []).length ? '<span class="lbl muted">' + esc(u("changes")) + '</span><div class="items">' + R.changes.map(function (c) {
+          var r = byId[c.id];
+          return '<div class="item"><div class="pills2"><span class="pill ' + esc(c.status) + '">' + esc(u("st_" + c.status)) + '</span>' +
+            (r ? '<span class="pill ' + esc(r.maturity) + '">' + esc(u(r.maturity)) + '</span><span class="small">' + esc(r.area) + '</span>' : "") + '</div>' +
+            '<h3>' + esc(r ? L(r.cap) : c.id) + '</h3><p>' + esc(L(c.e)) + '</p></div>';
+        }).join("") + '</div>' : "");
+    } else if (sec === "review") {
+      var V = E.review;
+      body = '<span class="lock">🔒 ' + esc(u("private")) + '</span><div class="items"><div class="item">' + block(u("wins"), list(V.wins)) + '</div>' +
+        '<div class="item">' + block(u("stuck"), list(V.stuck)) + '</div><div class="item">' + block(u("pattern"), '<p>' + esc(L(V.pattern)) + '</p>') + '</div></div>';
+    } else if (sec === "bet") {
+      var B = E.bet;
+      body = '<div class="items"><div class="item"><span class="lbl"><span>' + esc(u("s_bet")) + '</span> · <span class="num">' + esc(B.time) + '</span></span><h3>' + esc(L(B.t)) + '</h3>' +
+        block(u("whybet"), '<p>' + esc(L(B.why)) + '</p>') + '</div><div class="item ex-opt">' + block(u("steps"), '<ol>' + (L(B.s) || []).map(function (x) { return "<li>" + esc(x) + "</li>"; }).join("") + '</ol>') +
+        '<span class="small">' + esc(u("output")) + ': ' + esc(L(B.o)) + '</span></div></div>';
     }
-    return '<article class="card" id="sec-' + sec + '" style="--card:' + CARDS[i % CARDS.length] + '">' + kicker(sec, i, total) + body + '</article>';
+    return '<article class="card" id="sec-' + sec + '" style="--card:' + (E.type === "weekly" ? WCARDS[i % WCARDS.length] : CARDS[i % CARDS.length]) + '">' + kicker(sec, i, total) + body + '</article>';
+  }
+
+  function radarHTML() {
+    var R = state.radar;
+    var top = '<div class="bar top"><div class="topin"><a class="iconbtn" href="#" aria-label="' + esc(u("allsparks")) + '" style="text-decoration:none">←' + (isWeb() ? " " + esc(u("allsparks")) : "") + '</a>' +
+      '<span class="titlebtn">' + esc(u("s_radar")) + '</span>' + langSeg() + '</div></div>';
+    if (!R) return top + '<div class="home"><p>' + esc(state.err ? u("missing") : u("loading")) + '</p></div>';
+    var groups = ["ready", "emerging", "early"].map(function (m) {
+      var es = R.entries.filter(function (x) { return x.maturity === m; });
+      if (!es.length) return "";
+      return '<div class="rgroup"><h3>' + esc(u(m)) + ' <span class="small num">· ' + es.length + '</span></h3><div class="items">' + es.map(function (x) {
+        return '<div class="item" id="r-' + esc(x.id) + '"><div class="pills2"><span class="pill ' + esc(x.maturity) + '">' + esc(u(x.maturity)) + '</span>' +
+          (x.status !== "stable" ? '<span class="pill ' + esc(x.status) + '">' + esc(u("st_" + x.status)) + '</span>' : "") + '<span class="small">' + esc(x.area) + '</span></div>' +
+          '<h3>' + esc(L(x.cap)) + '</h3>' + block(u("meansp"), '<p>' + esc(L(x.means)) + '</p>') + block(u("breaks"), '<p>' + esc(L(x.limit)) + '</p>') +
+          block(u("evid"), '<div class="evlist">' + x.evidence.map(function (ev) { return '<div class="ev">' + srcline(ev.date, ev.src, ev.url) + '<span class="small">' + esc(L(ev.note)) + '</span></div>'; }).join("") + '</div>') + '</div>';
+      }).join("") + '</div></div>';
+    }).join("");
+    return top + '<div class="flow"><article class="card" style="--card:#17286f"><div class="kicker"><h2>' + esc(u("radar_t")) + '</h2><span class="lbl muted num">' + esc(u("updated")) + ' ' + esc(itemDate(R.updated)) + '</span></div>' +
+      '<div class="item"><p>' + esc(L(R.intro)) + '</p></div>' + groups + '</article></div>';
   }
 
   function langSeg() {
@@ -493,20 +584,26 @@ button, input, textarea { font: inherit; color: inherit; }
       : (fresh ? "Hi " + OWNER + ", your spark for today is ready." : "Hi " + OWNER + ", here is your latest spark.");
     if (d0) {
       var sp = splitSummary(L(d0.summary)), lt = state.latest && state.latest.date === d0.date ? state.latest : null;
-      today = '<a class="mcard mtoday" href="#' + d0.date + '" style="--card:#e8d9ed"><span class="bigmk">' + MARK + '</span>' +
-        '<span class="pills"><span>' + esc(fresh ? u("today") : u("latest")) + '</span><span class="num">' + esc(u("edition")) + ' ' + esc(d0.edition) + '</span></span>' +
+      var w0 = d0.type === "weekly";
+      today = '<a class="mcard mtoday' + (w0 ? ' mweek' : '') + '" href="#' + d0.date + '" style="--card:' + (w0 ? '#0b1957' : '#e8d9ed') + '"><span class="bigmk">' + MARK + '</span>' +
+        '<span class="pills"><span>' + esc(w0 ? u("weekly") : fresh ? u("today") : u("latest")) + '</span><span class="num">' + esc(w0 ? d0.edition : u("edition") + ' ' + d0.edition) + '</span></span>' +
         '<span class="mmeta num" style="display:block">' + esc(longDate(d0.date)) + ' · ' + esc(d0.minutes) + ' min</span>' +
         '<h2>' + esc(sp[0]) + '</h2>' + (sp[1] ? '<p class="sub">' + esc(sp[1]) + '</p>' : "") +
         (lt ? '<ul>' + lt.headlines.map(function (h) { return '<li><span>' + esc(L(h.t)) + '</span><span>' + esc(h.src) + '</span></li>'; }).join("") + '</ul>' : "") +
-        '<span class="go">' + esc(u("readtoday")) + '</span></a>';
+        '<span class="go">' + esc(w0 ? u("readweek") : u("readtoday")) + '</span></a>';
     } else { today = '<p class="sempty">' + esc(u("none")) + '</p>'; }
+    var wk = state.days.filter(function (d) { return d.type === "weekly"; })[0];
+    var week = wk && wk !== d0 ? '<a class="swk" href="#' + wk.date + '"><span><span class="wtag" style="background:#c7a9e3;color:#0b1957">' + esc(u("thisweek")) + '</span><span class="se num">' + esc(shortDate(wk.date)) + ' · ' + esc(wk.edition) + '</span></span>' +
+      '<span class="st">' + esc(splitSummary(L(wk.summary))[0]) + '</span><span class="se">' + esc(u("readweek")) + '</span></a>' : "";
     var rows = rest.length ? rest.map(function (d) {
-      return '<a class="srow" href="#' + d.date + '"><span class="sd num">' + esc(shortDate(d.date)) + '</span><span class="st">' + esc(splitSummary(L(d.summary))[0]) +
-        '</span><span class="se num">' + esc(u("edition")) + ' ' + esc(d.edition) + '</span></a>';
+      var w = d.type === "weekly";
+      return '<a class="srow" href="#' + d.date + '"><span class="sd num">' + esc(shortDate(d.date)) + '</span><span class="st">' + (w ? '<span class="wtag">' + esc(u("weekly")) + '</span>' : "") + esc(splitSummary(L(d.summary))[0]) +
+        '</span><span class="se num">' + esc(w ? d.edition : u("edition") + ' ' + d.edition) + '</span></a>';
     }).join("") : '<p class="sempty">' + esc(u("earlier")) + '</p>';
+    var radar = '<a class="sradar" href="#radar"><span>' + esc(u("radarlink")) + '</span><span>→</span></a>';
     return '<div class="shome"><header class="snav"><div class="scont"><a class="brand" href="#" aria-label="daily spark">' + MARK + '<span>daily spark</span></a>' + langSeg() + '</div></header>' +
       '<main class="scont"><section class="sgreet"><h1>' + esc(greet) + '</h1><p>' + esc(u("tagline")) + '</p></section>' +
-      '<div class="sgrid">' + today + '<div class="srows"><span class="lbl muted">' + esc(u("previous")) + '</span>' + rows + '</div></div></main></div>';
+      '<div class="sgrid">' + today + '<div class="srows">' + week + '<span class="lbl muted">' + esc(u("previous")) + '</span>' + rows + radar + '</div></div></main></div>';
   }
   function homeHTML() {
     return splitHomeHTML();
@@ -535,14 +632,14 @@ button, input, textarea { font: inherit; color: inherit; }
         '<div style="display:flex;gap:6px"><input id="wk" type="password" autocomplete="off" placeholder="' + esc(u("keyPh")) + '" style="flex:1;min-width:0;border:1px solid var(--p-line);border-radius:10px;padding:6px 10px;background:var(--p-field)">' +
         '<button type="button" class="iconbtn" id="conn">' + esc(u("connect")) + '</button></div>') + '</div>' +
       '<div class="row"><span class="lbl muted">' + esc(u("otherdays")) + '</span><ul class="datelist">' + state.days.map(function (d) {
-        return '<li><button type="button" data-go-day="' + d.date + '" aria-current="' + (d.date === state.cur) + '"><span class="num">' + esc(longDate(d.date)) + '</span><span><span>' + esc(u("edition")) + '</span> <span class="num">' + esc(d.edition) + '</span></span></button></li>';
+        return '<li><button type="button" data-go-day="' + d.date + '" aria-current="' + (d.date === state.cur) + '"><span class="num">' + esc(longDate(d.date)) + '</span><span>' + (d.type === "weekly" ? '<span class="wtag">' + esc(u("weekly")) + '</span>' : '<span>' + esc(u("edition")) + '</span> ') + '<span class="num">' + esc(d.edition) + '</span></span></button></li>';
       }).join("") + '</ul></div></div>' : "";
     return top + sheet;
   }
   function dayHTML() {
     var E = state.ed;
     if (!E) return dayNav() + '<div class="home"><p>' + esc(state.err ? u("missing") : u("loading")) + '</p></div>';
-    var secs = SECTIONS.filter(function (s) { return s === "work" ? E.work && E.work.length : !!E[s]; });
+    var secs = E.type === "weekly" ? WSECTIONS.filter(function (s) { return !!E[s]; }) : SECTIONS.filter(function (s) { return s === "work" ? E.work && E.work.length : !!E[s]; });
     if (state.slide >= secs.length) state.slide = 0;
     var reading;
     if (state.view === "swipe") {
@@ -558,10 +655,12 @@ button, input, textarea { font: inherit; color: inherit; }
   }
 
   function render() {
-    dev.className = "device" + (isWeb() ? " web" : "") + (state.cur ? "" : " home-bg");
+    var wk = isWeekly();
+    dev.className = "device" + (isWeb() ? " web" : "") + (state.cur ? "" : " home-bg") + (wk ? " weekly" : "");
     document.documentElement.lang = state.lang;
-    dev.innerHTML = '<div class="ds layout-1">' + (state.cur ? dayHTML() : homeHTML()) + '</div>';
-    document.title = state.cur ? "daily spark · " + shortDate(state.cur) : "daily spark";
+    var tc = document.querySelector('meta[name="theme-color"]'); if (tc) tc.setAttribute("content", wk ? "#0b1957" : "#f7f4ed");
+    dev.innerHTML = '<div class="ds layout-1">' + (state.cur === "radar" ? radarHTML() : state.cur ? dayHTML() : homeHTML()) + '</div>';
+    document.title = state.cur === "radar" ? "daily spark · radar" : state.cur ? "daily spark · " + shortDate(state.cur) : "daily spark";
     wire();
     if (!state.cur) { layoutMasonry(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutMasonry); }
   }
@@ -621,9 +720,17 @@ button, input, textarea { font: inherit; color: inherit; }
     if (/^\d{4}-\d{2}-\d{2}$/.test(h)) {
       if (state.cur !== h) { state.cur = h; state.ed = null; state.err = false; state.slide = 0; render(); }
       fetch("editions/data/" + h + ".json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
-        .then(function (E) { if (state.cur === h) { state.ed = E; render(); } })
+        .then(function (E) { if (state.cur === h) { state.ed = E; render(); if (E.type === "weekly" && !state.radar) loadRadar(); } })
         .catch(function () { if (state.cur === h) { state.err = true; render(); } });
+    } else if (h === "radar") {
+      if (state.cur !== "radar") { state.cur = "radar"; state.ed = null; state.err = false; render(); }
+      loadRadar();
     } else { state.cur = null; render(); }
+  }
+  function loadRadar() {
+    return fetch("radar.json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (R) { state.radar = R; if (isWeekly()) render(); })
+      .catch(function () { if (state.cur === "radar") { state.err = true; render(); } });
   }
 
   var lastWeb = isWeb();

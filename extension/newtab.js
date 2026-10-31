@@ -4,8 +4,8 @@ var SITE = "https://ellanguyen-isp.github.io/daily-spark/";
 var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 var T = {
-  en: { big: "The big picture", heads: "Today's frontier", q: "Today's question", full: "Read the full spark →", fail: "Could not load today's spark. Check your connection, or open the site." },
-  vi: { big: "Bức tranh lớn", heads: "Tin nóng hôm nay", q: "Câu hỏi hôm nay", full: "Đọc spark đầy đủ →", fail: "Không tải được spark hôm nay. Kiểm tra kết nối, hoặc mở trang web." }
+  en: { big: "The big picture", heads: "Today's frontier", wheads: "This week's shifts", q: "Today's question", wq: "Next week's bet", full: "Read the full spark →", fail: "Could not load today's spark. Check your connection, or open the site." },
+  vi: { big: "Bức tranh lớn", heads: "Tin nóng hôm nay", wheads: "Chuyển động tuần này", q: "Câu hỏi hôm nay", wq: "Cược tuần tới", full: "Đọc spark đầy đủ →", fail: "Không tải được spark hôm nay. Kiểm tra kết nối, hoặc mở trang web." }
 };
 var lang = "en";
 try { lang = localStorage.getItem("ds-nt-lang") || "en"; } catch (e) {}
@@ -37,7 +37,7 @@ function render() {
   card.appendChild(big);
 
   var hb = el("div", {});
-  hb.appendChild(el("span", { class: "lbl" }, t.heads));
+  hb.appendChild(el("span", { class: "lbl" }, data.type === "weekly" ? t.wheads : t.heads));
   var ul = el("ul", { class: "heads" });
   data.headlines.forEach(function (h) {
     var li = el("li"), a = el("a", { href: h.url, target: "_blank", rel: "noopener" });
@@ -49,7 +49,7 @@ function render() {
   card.appendChild(hb);
 
   var q = el("div", { class: "box" });
-  q.appendChild(el("span", { class: "lbl" }, t.q));
+  q.appendChild(el("span", { class: "lbl" }, data.type === "weekly" ? t.wq : t.q));
   q.appendChild(el("p", {}, L(data.question)));
   card.appendChild(q);
 
