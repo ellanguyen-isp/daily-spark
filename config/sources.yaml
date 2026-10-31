@@ -1,0 +1,145 @@
+# daily-spark sources (Ella's list, v1, 2026-10-31)
+#
+# type:     youtube | rss | person | web
+# role:     people   -> section 2 "From people you follow"
+#           frontier -> section 1 (big product / AI news)
+#           timeless -> section 4 (lasting principles)
+# priority: 1 = always check, 2 = check often, 3 = background
+# verified: true = feed confirmed working; false = will be checked on the first fetch run
+#
+# YouTube feeds use: https://www.youtube.com/feeds/videos.xml?channel_id=<id>
+
+youtube:
+  - name: Starter Story
+    handle: "@starterstory"
+    channel_id: UChhw6DlKKTQ9mYSpTfXUYqA
+    tags: [indie-business, founders, case-studies]
+    role: people
+    priority: 2
+    verified: true
+
+  - name: Starter Story Build
+    handle: "@StarterStoryBuild"
+    channel_id: UCLbKt4FZKk41HwZ2A3Mnz4Q
+    tags: [building, ai-tools, side-projects]
+    role: people
+    priority: 2
+    verified: true
+
+  - name: Lenny's Podcast
+    handle: "@LennysPodcast"
+    channel_id: UC6t1O76G0jYXOAoYCm153dA
+    tags: [product, growth, career, ai-products]
+    role: people
+    priority: 1
+    verified: true
+
+  - name: The Skip (Nikhyl Singhal)
+    handle: "@theskippodcast"
+    channel_id: UCh7GaxymwIpq6FPqKPX3VdA
+    tags: [product-leadership, career]
+    role: people
+    priority: 2
+    verified: true
+
+  - name: YC Root Access
+    handle: "@ycrootaccess"
+    channel_id: UCxIJaCMEptJjxmmQgGFsnCg
+    tags: [startups, founders, ai]
+    role: people
+    priority: 2
+    verified: true
+
+  - name: Aakash Gupta (Product Growth)
+    handle: "@growproduct"
+    channel_id: UCsHBhXybRz2CCfpU0hWp7ow
+    tags: [product, growth, ai-pm, career]
+    role: people
+    priority: 1
+    verified: true
+
+  - name: Y Combinator
+    handle: "@ycombinator"
+    channel_id: UCcefcZRL2oaA_uBNeo5UOWg
+    tags: [startups, startup-school, ai]
+    role: people
+    priority: 1
+    verified: true
+
+  - name: Naval
+    handle: "@NavalR"
+    channel_id: UCh_dVD10YuSghle8g6yjePg
+    tags: [wealth, leverage, judgment]
+    role: timeless
+    priority: 3
+    verified: true
+
+  - name: Every
+    handle: "@EveryInc"
+    channel_id: UCjIMtrzxYc0lblGhmOgC_CA
+    tags: [ai-native-work, ai-products]
+    role: people
+    priority: 2
+    verified: true
+
+  - name: Vietnam Innovators Digest
+    handle: "@vietnaminnovatorsdigest"
+    channel_id: UCGQBjZVcqbpT24lFfebnkdA
+    tags: [vietnam, startups, sea]
+    role: people
+    priority: 2
+    verified: true
+
+rss:
+  # Lenny's 12 (written sources)
+  - { name: Lenny's Newsletter, url: "https://www.lennysnewsletter.com/feed", tags: [product, growth], role: people, priority: 1, verified: false }
+  - { name: Simon Willison, url: "https://simonwillison.net/atom/everything/", tags: [ai-engineering, agents], role: frontier, priority: 1, verified: false }
+  - { name: Every, url: "https://every.to/feed", tags: [ai-native-work], role: people, priority: 2, verified: false }
+  - { name: Benedict Evans, url: "https://www.ben-evans.com/benedictevans?format=rss", tags: [tech-strategy, ai-economics], role: people, priority: 2, verified: false }
+  - { name: Rob Snyder (Physics of Startups), url: "https://robsnyder.substack.com/feed", tags: [pmf, pull], role: people, priority: 2, verified: false }
+  - { name: Aakash Gupta newsletter, url: "https://www.news.aakashg.com/feed", tags: [product, ai-pm], role: people, priority: 2, verified: false }
+
+  # Morning Spark thinkers
+  - { name: Stratechery (Ben Thompson), url: "https://stratechery.com/feed/", tags: [aggregation, strategy], role: people, priority: 2, verified: false }
+  - { name: Product Talk (Teresa Torres), url: "https://www.producttalk.org/feed/", tags: [discovery], role: people, priority: 2, verified: false }
+  - { name: John Cutler, url: "https://cutlefish.substack.com/feed", tags: [product-ops, systems], role: people, priority: 2, verified: false }
+  - { name: SVPG (Marty Cagan), url: "https://www.svpg.com/feed/", tags: [empowered-teams], role: people, priority: 3, verified: false }
+  - { name: Andrew Chen, url: "https://andrewchen.substack.com/feed", tags: [network-effects, growth], role: people, priority: 3, verified: false }
+  - { name: April Dunford, url: "https://www.aprildunford.com/blog", tags: [positioning], role: people, priority: 3, verified: false }
+  - { name: Jason Cohen, url: "https://longform.asmartbear.com/", tags: [bootstrapping, strategy], role: people, priority: 3, verified: false }
+  - { name: Gibson Biddle, url: "https://gibsonbiddle.com/", tags: [product-strategy, metrics], role: people, priority: 3, verified: false }
+  - { name: Brian Balfour, url: "https://brianbalfour.com/essays", tags: [growth-loops], role: people, priority: 3, verified: false }
+  - { name: Melissa Perri, url: "https://melissaperri.com/blog", tags: [product-ops], role: people, priority: 3, verified: false }
+
+  # From Ella's second brain
+  - { name: Hello China Tech, url: "https://hellochinatech.com/feed", tags: [china, ai, consumer-tech], role: people, priority: 2, verified: false }
+  - { name: Hacker News front page, url: "https://news.ycombinator.com/rss", tags: [launches, ai], role: frontier, priority: 1, verified: false }
+
+people:
+  # Builders mostly active on X / LinkedIn (not readable automatically).
+  # Followed through their blogs, podcasts and interviews instead.
+  - { name: Karri Saarinen (Linear), via: [linear.app/blog, interviews], tags: [craft, context-as-product], role: people, priority: 2 }
+  - { name: Cat Wu (Anthropic, Claude Code), via: [interviews, anthropic.com/news], tags: [ai-products, evals], role: people, priority: 2 }
+  - { name: Fiona Fung (Anthropic, Claude Code), via: [interviews], tags: [ai-products, research-previews], role: people, priority: 2 }
+  - { name: Claire Vo (How I AI), via: [How I AI podcast, chatprd.ai blog], tags: [ai-workflows, vibe-coding], role: people, priority: 2 }
+  - { name: Andrej Karpathy, via: [youtube @AndrejKarpathy, karpathy.ai], tags: [llms, ai-fundamentals], role: frontier, priority: 2 }
+
+frontier_search:
+  # Web search queries for section 1 (only "should know" news; skip if nothing).
+  - "new AI model release this week"
+  - "Anthropic Claude announcement"
+  - "OpenAI announcement product launch"
+  - "Google Gemini launch"
+  - "AI product launch Product Hunt top"
+
+timeless:
+  # Pool for section 4. Rotate; never repeat within 60 days.
+  - { name: Paul Graham essays, url: "https://paulgraham.com/articles.html" }
+  - { name: Naval (How to Get Rich, Almanack) }
+  - { name: "Inspired (Marty Cagan)" }
+  - { name: "The Lean Startup (Eric Ries)" }
+  - { name: "The Mom Test (Rob Fitzpatrick)" }
+  - { name: "The Jobs To Be Done Playbook" }
+  - { name: "Escaping the Build Trap (Melissa Perri)" }
+  - { name: "Continuous Discovery Habits (Teresa Torres)" }
+  - { name: "Obviously Awesome (April Dunford)" }
