@@ -1,14 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <defs>
-    <pattern id="h" width="1" height="1"/>
-  </defs>
-  <rect width="512" height="512" fill="#e8d9ed"/>
-  <!-- stamp card -->
-  <g>
-    <rect x="96" y="96" width="320" height="320" fill="#f7f4ed"/>
+  <rect width="512" height="512" fill="#b394d0"/>
+  <g transform="translate(256 256) scale(0.52) translate(-627 -627)" fill="#fbf0dc">
+    <polygon points="625,332 638,332 657,535 607,557"/>
+    <polygon points="607,712 660,688 638,920 626,920"/>
+    <polygon points="333,613 632,590 920,613 920,628 646,650 333,628"/>
+    <polygon points="371,767 547,645 632,590 881,473 889,487 727,598 646,651 378,780"/>
   </g>
-  <g fill="#e8d9ed"><circle cx="96" cy="96" r="7"/><circle cx="96" cy="416" r="7"/><circle cx="96" cy="96" r="7"/><circle cx="416" cy="96" r="7"/><circle cx="116" cy="96" r="7"/><circle cx="116" cy="416" r="7"/><circle cx="96" cy="116" r="7"/><circle cx="416" cy="116" r="7"/><circle cx="136" cy="96" r="7"/><circle cx="136" cy="416" r="7"/><circle cx="96" cy="136" r="7"/><circle cx="416" cy="136" r="7"/><circle cx="156" cy="96" r="7"/><circle cx="156" cy="416" r="7"/><circle cx="96" cy="156" r="7"/><circle cx="416" cy="156" r="7"/><circle cx="176" cy="96" r="7"/><circle cx="176" cy="416" r="7"/><circle cx="96" cy="176" r="7"/><circle cx="416" cy="176" r="7"/><circle cx="196" cy="96" r="7"/><circle cx="196" cy="416" r="7"/><circle cx="96" cy="196" r="7"/><circle cx="416" cy="196" r="7"/><circle cx="216" cy="96" r="7"/><circle cx="216" cy="416" r="7"/><circle cx="96" cy="216" r="7"/><circle cx="416" cy="216" r="7"/><circle cx="236" cy="96" r="7"/><circle cx="236" cy="416" r="7"/><circle cx="96" cy="236" r="7"/><circle cx="416" cy="236" r="7"/><circle cx="256" cy="96" r="7"/><circle cx="256" cy="416" r="7"/><circle cx="96" cy="256" r="7"/><circle cx="416" cy="256" r="7"/><circle cx="276" cy="96" r="7"/><circle cx="276" cy="416" r="7"/><circle cx="96" cy="276" r="7"/><circle cx="416" cy="276" r="7"/><circle cx="296" cy="96" r="7"/><circle cx="296" cy="416" r="7"/><circle cx="96" cy="296" r="7"/><circle cx="416" cy="296" r="7"/><circle cx="316" cy="96" r="7"/><circle cx="316" cy="416" r="7"/><circle cx="96" cy="316" r="7"/><circle cx="416" cy="316" r="7"/><circle cx="336" cy="96" r="7"/><circle cx="336" cy="416" r="7"/><circle cx="96" cy="336" r="7"/><circle cx="416" cy="336" r="7"/><circle cx="356" cy="96" r="7"/><circle cx="356" cy="416" r="7"/><circle cx="96" cy="356" r="7"/><circle cx="416" cy="356" r="7"/><circle cx="376" cy="96" r="7"/><circle cx="376" cy="416" r="7"/><circle cx="96" cy="376" r="7"/><circle cx="416" cy="376" r="7"/><circle cx="396" cy="96" r="7"/><circle cx="396" cy="416" r="7"/><circle cx="96" cy="396" r="7"/><circle cx="416" cy="396" r="7"/><circle cx="416" cy="96" r="7"/><circle cx="416" cy="416" r="7"/><circle cx="96" cy="416" r="7"/><circle cx="416" cy="416" r="7"/></g>
-  <!-- spark -->
-  <path d="M256 158 C266 222 290 246 354 256 C290 266 266 290 256 354 C246 290 222 266 158 256 C222 246 246 222 256 158 Z" fill="#426bc2"/>
-  <circle cx="338" cy="176" r="14" fill="#0b1957"/>
 </svg>

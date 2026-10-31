@@ -1,11 +1,11 @@
 {
-  "name": "daily-spark",
+  "name": "daily spark",
   "short_name": "daily-spark",
   "description": "A small daily loop for product builders: digest, think, build, recap.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#e8d9ed",
+  "background_color": "#b394d0",
   "theme_color": "#e8d9ed",
   "icons": [
     { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },

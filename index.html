@@ -12,7 +12,7 @@
 <link rel="icon" type="image/svg+xml" href="icons/icon.svg">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
 <meta name="description" content="A small daily loop for product builders: digest the market, think for yourself, build something, recap what you learned.">
-<title>daily-spark</title>
+<title>daily spark</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
@@ -187,6 +187,52 @@ button, input, textarea { font: inherit; color: inherit; }
 .home, .flow, .slide { padding-top: calc(74px + env(safe-area-inset-top)) !important; }
 .slide { padding-bottom: calc(76px + env(safe-area-inset-bottom)) !important; }
 .sheet { top: calc(64px + env(safe-area-inset-top)) !important; }
+
+/* ---------- Web home (760px and up): logo bar, big Today card left, compact list right ---------- */
+.whome { flex: 1; overflow-y: auto; }
+.wcont { width: min(1160px, 100% - 64px); margin: 0 auto; }
+.wnav { position: sticky; top: 0; z-index: 4; background: var(--p-nav); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); border-bottom: 1px solid var(--p-line); }
+.wnav .wcont { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--p-ink); text-decoration: none; }
+.brand svg { width: 34px; height: 34px; }
+.brand span { font-family: var(--p-display); font-style: italic; font-size: 28px; line-height: 1; }
+.whero { padding: 44px 0 30px; display: grid; gap: 10px; }
+.whero h1 { font-family: var(--p-display); font-weight: 400; font-size: 58px; line-height: 1; margin: 0; text-wrap: balance; }
+.whero p { margin: 0; max-width: 640px; font-size: 16px; }
+.wgrid { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); padding-bottom: 48px; }
+.wtoday { padding-right: 32px; border-right: 1px solid var(--p-line); display: grid; gap: 18px; align-content: start; color: var(--p-ink); }
+.cover { position: relative; aspect-ratio: 3 / 2; border-radius: 18px; overflow: hidden; display: grid; place-items: center; text-decoration: none;
+  background: radial-gradient(120% 90% at 0% 0%, #e9f3ff 0%, transparent 55%), radial-gradient(120% 120% at 100% 100%, #f1d9e9 0%, transparent 55%), linear-gradient(135deg, #b9c8f5 0%, #b394d0 55%, #e2b9d6 100%); }
+.cover .mk { color: #fbf0dc; width: 34%; display: block; filter: drop-shadow(0 6px 18px rgba(11,25,87,.18)); }
+.cover .mk svg { width: 100%; height: auto; display: block; }
+.cover .ck { position: absolute; top: 18px; left: 20px; right: 20px; display: flex; justify-content: space-between; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: #fbf0dc; font-weight: 600; }
+.cover .ck span { background: rgba(11,25,87,.42); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); border-radius: 999px; padding: 3px 10px; }
+.wtoday h2 { font-family: var(--p-display); font-weight: 400; font-size: 40px; line-height: 1.05; margin: 0; text-wrap: balance; }
+.wtoday .sub { margin: 0; font-size: 17px; }
+.wtoday ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.wtoday li a { display: flex; justify-content: space-between; gap: 12px; background: var(--p-surface); border-radius: 10px; padding: 9px 12px; color: var(--p-ink); text-decoration: none; font-size: 14px; }
+.wtoday li a:hover { box-shadow: inset 0 0 0 1px var(--p-accent); }
+.wtoday li span:last-child { color: var(--p-muted); font-size: 12px; white-space: nowrap; }
+.wmeta { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--p-muted); }
+.readbtn { justify-self: start; background: var(--p-ink); color: var(--p-surface); border-radius: 999px; padding: 9px 18px; text-decoration: none; font-weight: 500; }
+.wlist { padding-left: 32px; display: grid; align-content: start; }
+.wlist > .lbl { margin-bottom: 6px; }
+.wrow { display: grid; grid-template-columns: minmax(0, 1fr) 132px; gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--p-line); color: var(--p-ink); text-decoration: none; align-items: start; }
+.wrow:last-child { border-bottom: 0; }
+.wrow h3 { margin: 0 0 4px; font-weight: 600; font-size: 18px; line-height: 1.3; }
+.wrow p { margin: 0 0 8px; font-size: 14px; color: #3b4470; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.wrow:hover h3 { color: var(--p-accent); }
+.thumb { aspect-ratio: 3 / 2; border-radius: 10px; display: grid; place-items: center; position: relative; overflow: hidden; color: #fbf0dc; }
+.thumb .mk { width: 34%; display: block; }
+.thumb .mk svg { width: 100%; height: auto; display: block; }
+.thumb b { position: absolute; left: 8px; bottom: 6px; font-size: 11px; font-weight: 600; letter-spacing: .04em; }
+.t0 { background: linear-gradient(135deg, #b394d0, #e2b9d6); } .t1 { background: linear-gradient(135deg, #426bc2, #b394d0); }
+.t2 { background: linear-gradient(135deg, #0b1957, #426bc2); } .t3 { background: linear-gradient(135deg, #d2b3db, #9db8f0); }
+.empty { margin: 0; padding: 18px; border: 1px dashed var(--p-line); border-radius: 14px; color: var(--p-muted); font-size: 14px; }
+.wfoot { border-top: 1px solid var(--p-line); }
+.wfoot .wcont { display: flex; justify-content: space-between; gap: 12px; padding: 18px 0 28px; font-size: 13px; color: var(--p-muted); }
+.hero .brand svg { width: 40px; height: 40px; }
+.hero .brand span { font-size: 40px; }
 </style>
 </head>
 <body>
@@ -207,7 +253,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper",
       answer_ph: "Write 2 or 3 lines. Your own words.", pick: "Pick", picked: "Picked", output: "You will have",
       recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today? What did you learn?", save: "Save", saved: "Saved in this browser. Syncing arrives in week 2.",
-      prev: "Previous", next: "Next", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
+      prev: "Previous", next: "Next", slogan: "A daily loop, not just a digest.", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
     vi: { tagline: "Một vòng lặp nhỏ mỗi ngày cho người làm sản phẩm: nắm thị trường, tự suy nghĩ, xây một thứ gì đó, và tổng kết điều đã học.",
       sparks: "Các spark mỗi ngày", today: "Hôm nay", edition: "Số", allsparks: "Tất cả spark", menu: "Menu", reading: "Cách đọc", language: "Ngôn ngữ",
       otherdays: "Ngày khác", swipe: "Vuốt", scroll: "Cuộn", fbtitle: "Biểu tượng phản hồi",
@@ -217,7 +263,7 @@ button, input, textarea { font: inherit; color: inherit; }
       fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu",
       answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.", pick: "Chọn", picked: "Đã chọn", output: "Kết quả",
       recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì thay đổi trong cách bạn nghĩ hoặc làm? Bạn học được gì?", save: "Lưu", saved: "Đã lưu trong trình duyệt này. Đồng bộ sẽ có ở tuần 2.",
-      prev: "Trước", next: "Sau", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
+      prev: "Trước", next: "Sau", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
   };
   var WD = { en: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], vi: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"] };
   var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -309,14 +355,37 @@ button, input, textarea { font: inherit; color: inherit; }
     return '<div class="seg2" role="group" aria-label="' + esc(u("language")) + '"><button type="button" data-set="lang" data-v="en" aria-pressed="' + (state.lang === "en") +
       '">EN</button><button type="button" data-set="lang" data-v="vi" aria-pressed="' + (state.lang === "vi") + '">VI</button></div>';
   }
+  var MARK = '<svg viewBox="320 320 614 614" aria-hidden="true" fill="currentColor"><polygon points="625,332 638,332 657,535 607,557"/><polygon points="607,712 660,688 638,920 626,920"/><polygon points="333,613 632,590 920,613 920,628 646,650 333,628"/><polygon points="371,767 547,645 632,590 881,473 889,487 727,598 646,651 378,780"/></svg>';
+  function splitSummary(t) { var i = t.indexOf(": "); return i > 0 ? [t.slice(0, i), t.charAt(i + 2).toUpperCase() + t.slice(i + 3)] : [t, ""]; }
+  function webHomeHTML() {
+    var d0 = state.days[0], rest = state.days.slice(1, 9), today;
+    if (d0) {
+      var sp = splitSummary(L(d0.summary)), lt = state.latest && state.latest.date === d0.date ? state.latest : null;
+      today = '<div class="wtoday"><a class="cover" href="#' + d0.date + '" aria-label="' + esc(sp[0]) + '"><span class="ck"><span>' + esc(u("today")) + '</span><span class="num">' + esc(u("edition")) + ' ' + esc(d0.edition) + '</span></span><span class="mk">' + MARK + '</span></a>' +
+        '<span class="wmeta num">' + esc(longDate(d0.date)) + ' · ' + esc(d0.minutes) + ' min</span>' +
+        '<h2>' + esc(sp[0]) + '</h2>' + (sp[1] ? '<p class="sub">' + esc(sp[1]) + '</p>' : "") +
+        (lt ? '<ul>' + lt.headlines.map(function (h) { return '<li><a href="' + esc(h.url) + '" target="_blank" rel="noopener"><span>' + esc(L(h.t)) + '</span><span>' + esc(h.src) + ' ↗</span></a></li>'; }).join("") + '</ul>' : "") +
+        '<a class="readbtn" href="#' + d0.date + '">' + esc(u("readtoday")) + '</a></div>';
+    } else { today = '<div class="wtoday"><p class="empty">' + esc(u("none")) + '</p></div>'; }
+    var list = rest.length ? rest.map(function (d, i) {
+      var sp = splitSummary(L(d.summary));
+      return '<a class="wrow" href="#' + d.date + '"><span><h3>' + esc(sp[0]) + '</h3><p>' + esc(sp[1] || "") + '</p><span class="wmeta num">' + esc(shortDate(d.date)) + ' · ' + esc(u("edition")) + ' ' + esc(d.edition) + '</span></span>' +
+        '<span class="thumb t' + (i % 4) + '"><span class="mk">' + MARK + '</span><b class="num">' + esc(shortDate(d.date)) + '</b></span></a>';
+    }).join("") : '<p class="empty">' + esc(u("earlier")) + '</p>';
+    return '<div class="whome"><header class="wnav"><div class="wcont"><a class="brand" href="#" aria-label="daily spark">' + MARK + '<span>daily spark</span></a>' + langSeg() + '</div></header>' +
+      '<main class="wcont"><section class="whero"><h1>' + esc(u("slogan")) + '</h1><p>' + esc(u("tagline")) + '</p></section>' +
+      '<div class="wgrid">' + today + '<div class="wlist"><span class="lbl muted">' + esc(u("previous")) + '</span>' + list + '</div></div></main>' +
+      '<footer class="wfoot"><div class="wcont"><span>daily spark · ' + esc(u("footer")) + '</span><span class="num">' + state.days.length + ' ' + esc(u("editions")) + '</span></div></footer></div>';
+  }
   function homeHTML() {
+    if (isWeb()) return webHomeHTML();
     var latest = state.days.length ? state.days[0].date : null;
     var rows = state.days.length ? state.days.map(function (d) {
       return '<a class="dayrow" href="#' + d.date + '"><span class="dt num">' + esc(shortDate(d.date)) + '</span><span class="sum">' + esc(L(d.summary)) + '</span>' +
         (d.date === latest ? '<span class="today">' + esc(u("today")) + '</span>' : '<span class="ed"><span>' + esc(u("edition")) + '</span> <span class="num">' + esc(d.edition) + '</span></span>') + '</a>';
     }).join("") : '<p class="small">' + esc(u("none")) + '</p>';
     return '<div class="bar top"><div class="topin" style="justify-content: flex-end">' + langSeg() + '</div></div>' +
-      '<div class="home"><section class="hero"><h1>daily-spark</h1><p>' + esc(u("tagline")) + '</p></section>' +
+      '<div class="home"><section class="hero"><h1 class="brand">' + MARK + '<span>daily spark</span></h1><p>' + esc(u("tagline")) + '</p></section>' +
       '<span class="lbl muted">' + esc(u("sparks")) + '</span><div class="days">' + rows + '</div></div>';
   }
   function dayNav() {
@@ -357,7 +426,7 @@ button, input, textarea { font: inherit; color: inherit; }
     dev.className = "device" + (isWeb() ? " web" : "");
     document.documentElement.lang = state.lang;
     dev.innerHTML = '<div class="ds layout-1">' + (state.cur ? dayHTML() : homeHTML()) + '</div>';
-    document.title = state.cur ? "daily-spark · " + shortDate(state.cur) : "daily-spark";
+    document.title = state.cur ? "daily spark · " + shortDate(state.cur) : "daily spark";
     wire();
   }
 
@@ -419,7 +488,11 @@ button, input, textarea { font: inherit; color: inherit; }
   window.addEventListener("hashchange", route);
   fetch("editions/index.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : { editions: [] }; })
     .catch(function () { return { editions: [] }; })
-    .then(function (idx) { state.days = idx.editions || []; route(); });
+    .then(function (idx) {
+      state.days = idx.editions || [];
+      return fetch("latest.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+    })
+    .then(function (lt) { state.latest = lt; route(); });
 })();
 </script>
 </body>
