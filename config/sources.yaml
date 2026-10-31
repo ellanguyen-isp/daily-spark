@@ -7,7 +7,9 @@
 # priority: 1 = always check, 2 = check often, 3 = background
 # verified: true = feed confirmed working; false = will be checked on the first fetch run
 #
-# YouTube feeds use: https://www.youtube.com/feeds/videos.xml?channel_id=<id>
+# YouTube: primary = YouTube Data API (free key, playlistItems.list, 1 unit/call).
+# Fallback = https://www.youtube.com/feeds/videos.xml?channel_id=<id> (often down for hours, so never the only path).
+# verified: true for YouTube = channel id confirmed from the channel page.
 
 youtube:
   - name: Starter Story
@@ -92,28 +94,37 @@ youtube:
 
 rss:
   # Lenny's 12 (written sources)
-  - { name: Lenny's Newsletter, url: "https://www.lennysnewsletter.com/feed", tags: [product, growth], role: people, priority: 1, verified: false }
-  - { name: Simon Willison, url: "https://simonwillison.net/atom/everything/", tags: [ai-engineering, agents], role: frontier, priority: 1, verified: false }
-  - { name: Every, url: "https://every.to/feed", tags: [ai-native-work], role: people, priority: 2, verified: false }
-  - { name: Benedict Evans, url: "https://www.ben-evans.com/benedictevans?format=rss", tags: [tech-strategy, ai-economics], role: people, priority: 2, verified: false }
-  - { name: Rob Snyder (Physics of Startups), url: "https://robsnyder.substack.com/feed", tags: [pmf, pull], role: people, priority: 2, verified: false }
-  - { name: Aakash Gupta newsletter, url: "https://www.news.aakashg.com/feed", tags: [product, ai-pm], role: people, priority: 2, verified: false }
+  - { name: Lenny's Newsletter, url: "https://www.lennysnewsletter.com/feed", tags: [product, growth], role: people, priority: 1, verified: true }
+  - { name: Simon Willison, url: "https://simonwillison.net/atom/everything/", tags: [ai-engineering, agents], role: frontier, priority: 1, verified: true }
+  - { name: Every, url: "https://every.to/chain-of-thought/feed", tags: [ai-native-work], role: people, priority: 2, verified: true }
+  - { name: Benedict Evans, url: "https://www.ben-evans.com/benedictevans?format=rss", tags: [tech-strategy, ai-economics], role: people, priority: 2, verified: true }
+  - { name: Rob Snyder (Physics of Startups), url: "https://www.robsnyder.co/", type: web, tags: [pmf, pull], role: people, priority: 2, verified: false, note: "no feed found; check site weekly" }
+  - { name: Aakash Gupta newsletter, url: "https://www.news.aakashg.com/feed", tags: [product, ai-pm], role: people, priority: 2, verified: true }
 
   # Morning Spark thinkers
-  - { name: Stratechery (Ben Thompson), url: "https://stratechery.com/feed/", tags: [aggregation, strategy], role: people, priority: 2, verified: false }
-  - { name: Product Talk (Teresa Torres), url: "https://www.producttalk.org/feed/", tags: [discovery], role: people, priority: 2, verified: false }
-  - { name: John Cutler, url: "https://cutlefish.substack.com/feed", tags: [product-ops, systems], role: people, priority: 2, verified: false }
-  - { name: SVPG (Marty Cagan), url: "https://www.svpg.com/feed/", tags: [empowered-teams], role: people, priority: 3, verified: false }
-  - { name: Andrew Chen, url: "https://andrewchen.substack.com/feed", tags: [network-effects, growth], role: people, priority: 3, verified: false }
-  - { name: April Dunford, url: "https://www.aprildunford.com/blog", tags: [positioning], role: people, priority: 3, verified: false }
-  - { name: Jason Cohen, url: "https://longform.asmartbear.com/", tags: [bootstrapping, strategy], role: people, priority: 3, verified: false }
-  - { name: Gibson Biddle, url: "https://gibsonbiddle.com/", tags: [product-strategy, metrics], role: people, priority: 3, verified: false }
-  - { name: Brian Balfour, url: "https://brianbalfour.com/essays", tags: [growth-loops], role: people, priority: 3, verified: false }
-  - { name: Melissa Perri, url: "https://melissaperri.com/blog", tags: [product-ops], role: people, priority: 3, verified: false }
+  - { name: Stratechery (Ben Thompson), url: "https://stratechery.com/feed/", tags: [aggregation, strategy], role: people, priority: 2, verified: true }
+  - { name: Product Talk (Teresa Torres), url: "https://www.producttalk.org/feed/", tags: [discovery], role: people, priority: 2, verified: true }
+  - { name: John Cutler, url: "https://cutlefish.substack.com/feed", tags: [product-ops, systems], role: people, priority: 2, verified: true }
+  - { name: SVPG (Marty Cagan), url: "https://www.svpg.com/feed/", tags: [empowered-teams], role: people, priority: 3, verified: true }
+  - { name: Andrew Chen, url: "https://andrewchen.substack.com/feed", tags: [network-effects, growth], role: people, priority: 3, verified: true }
+  - { name: April Dunford, url: "https://aprildunford.substack.com/feed", tags: [positioning], role: people, priority: 3, verified: true }
+  - { name: Jason Cohen, url: "https://longform.asmartbear.com/index.xml", tags: [bootstrapping, strategy], role: people, priority: 3, verified: true }
+  - { name: Gibson Biddle, url: "https://gibsonbiddle.substack.com/feed", tags: [product-strategy, metrics], role: people, priority: 3, verified: true }
+  - { name: Brian Balfour, url: "https://brianbalfour.com/essays?format=rss", tags: [growth-loops], role: people, priority: 3, verified: true }
+  - { name: Melissa Perri, url: "https://melissaperri.com/blog?format=rss", tags: [product-ops], role: people, priority: 3, verified: true }
 
   # From Ella's second brain
-  - { name: Hello China Tech, url: "https://hellochinatech.com/feed", tags: [china, ai, consumer-tech], role: people, priority: 2, verified: false }
-  - { name: Hacker News front page, url: "https://news.ycombinator.com/rss", tags: [launches, ai], role: frontier, priority: 1, verified: false }
+  - { name: Hello China Tech, url: "https://hellochinatech.com/feed", tags: [china, ai, consumer-tech], role: people, priority: 2, verified: true }
+  - { name: Y Combinator blog, url: "https://www.ycombinator.com/blog/rss", tags: [startups], role: people, priority: 2, verified: true }
+  - { name: Naval, url: "https://nav.al/feed", tags: [leverage, judgment], role: timeless, priority: 3, verified: true }
+  - { name: Linear blog (Karri Saarinen), url: "https://linear.app/rss/blog.xml", tags: [craft], role: people, priority: 3, verified: true }
+
+  # Frontier (official AI news + launches)
+  - { name: OpenAI news, url: "https://openai.com/news/rss.xml", tags: [ai-models], role: frontier, priority: 1, verified: true }
+  - { name: Google AI blog, url: "https://blog.google/technology/ai/rss/", tags: [ai-models], role: frontier, priority: 1, verified: true }
+  - { name: Product Hunt, url: "https://www.producthunt.com/feed", tags: [launches], role: frontier, priority: 1, verified: true }
+  - { name: Anthropic news, url: "https://www.anthropic.com/news", type: web, tags: [ai-models], role: frontier, priority: 1, verified: false, note: "no RSS; read the page" }
+  - { name: Hacker News front page, url: "https://news.ycombinator.com/rss", tags: [launches, ai], role: frontier, priority: 1, verified: true }
 
 people:
   # Builders mostly active on X / LinkedIn (not readable automatically).
