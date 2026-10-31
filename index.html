@@ -85,6 +85,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .loop > span { font-size: var(--t-small); border: 1px solid var(--p-line); background: var(--p-chip); border-radius: 999px; padding: 4px 12px; }
 .days { display: grid; gap: 8px; max-width: 720px; width: 100%; }
 .dayrow { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 12px; text-align: left; border: 0; border-radius: 12px; padding: 11px 14px; background: var(--p-surface); color: var(--p-ink); cursor: pointer; font: inherit; }
+.dayrow, .dayrow:visited { text-decoration: none; }
 .dayrow:hover { box-shadow: inset 0 0 0 1px var(--p-accent); }
 .dayrow .dt { font-weight: 600; font-size: var(--t-small); white-space: nowrap; }
 .dayrow .sum { font-size: var(--t-small); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
