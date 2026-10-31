@@ -46,8 +46,9 @@ Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `e
 11. **Check** the page: open `index.html` locally (Playwright is available) once, look at today's spark, fix anything broken.
 12. **Commit and push both repos** to `main` (pushing is authorised; no pull request).
     This repo: `git add -A && git commit -m "edition <date>" && git push`. Private repo: commit only `daily-spark/`.
-13. **Notify.** Send one email with Gmail to the user (address in `profile.yaml`), subject `daily-spark · <d Mon>: <summary>`,
-    body = the summary, the 2 to 4 frontier headlines, and the link `<site>#<date>`.
+13. **Notify.** Send one email with Gmail to the user (address in `profile.yaml`), subject `daily spark · <d Mon>: <headline>`
+    (headline = the summary's part before the colon). HTML body: fill `templates/email.html` exactly (one headline row per frontier story);
+    plain-text body: the same content as plain lines. Link: `<site>#<date>`.
     Your **final message** is the same short text (it becomes the push notification). If the run failed, the final message
     is one plain line saying what broke and whether an edition was published.
 
