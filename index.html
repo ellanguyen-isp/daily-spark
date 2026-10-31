@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#e8d9ed">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="daily-spark">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icons/icon.svg">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
 <meta name="description" content="A small daily loop for product builders: digest the market, think for yourself, build something, recap what you learned.">
 <title>daily-spark</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,6 +34,9 @@ button, input, textarea { font: inherit; color: inherit; }
 :focus-visible { outline: 2px solid var(--p-accent); outline-offset: 2px; }
 .device { position: relative; height: 100%; overflow: hidden; background: var(--p-bg); }
 .wrap-error { padding: 80px 18px; max-width: 640px; }
+/* Full-screen app on phones: keep content clear of the notch and home bar. */
+.bar.top { padding-top: env(safe-area-inset-top); }
+.bar.bottom { padding-bottom: env(safe-area-inset-bottom); }
 /* ---------- daily-spark (preview) ----------
    One type scale: 11 label / 13 small / 15 body / 21 h3 / 30 h2 / 44 hero.
    All numbers: body font, lining + tabular figures. */
@@ -171,6 +182,10 @@ button, input, textarea { font: inherit; color: inherit; }
 .readfull { color: var(--p-accent); font-weight: 600; text-decoration: none; }
 @media (prefers-reduced-motion: no-preference) { .track, .flow, .home { scroll-behavior: smooth; } }
 
+
+.home, .flow, .slide { padding-top: calc(74px + env(safe-area-inset-top)) !important; }
+.slide { padding-bottom: calc(76px + env(safe-area-inset-bottom)) !important; }
+.sheet { top: calc(64px + env(safe-area-inset-top)) !important; }
 </style>
 </head>
 <body>
