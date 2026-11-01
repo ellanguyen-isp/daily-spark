@@ -1,16 +1,26 @@
-<!-- daily spark morning email. Replace every {{...}}; repeat the headline <p> once per frontier story (2 to 4). -->
-<div style="background:#f7f4ed;padding:24px 12px;font-family:'IBM Plex Sans',Helvetica,Arial,sans-serif;color:#0b1957">
+<!-- daily spark morning email (design system v1). Replace every {{...}}; repeat the headline <a class="ds-row"> once per frontier story (2 to 4).
+     Light by default. Mail apps that support dark mode (Apple Mail, Outlook) switch to the dark colors below; Gmail keeps light. -->
+<style>
+@media (prefers-color-scheme: dark) {
+  .ds-page { background:#0b1957 !important; color:#f7f4ed !important; }
+  .ds-card { background:#17286f !important; }
+  .ds-ink { color:#f7f4ed !important; }
+  .ds-muted { color:#b9bde3 !important; }
+  .ds-row { color:#f7f4ed !important; border-color:rgba(247,244,237,.16) !important; }
+  .ds-btn { background:#c7a9e3 !important; color:#0b1957 !important; }
+}
+</style>
+<div class="ds-page" style="background:#e8d9ed;padding:32px 16px;font-family:'IBM Plex Sans',Helvetica,Arial,sans-serif;color:#0b1957">
 <div style="max-width:560px;margin:0 auto">
-<p style="margin:0 0 4px;font-family:Georgia,serif;font-style:italic;font-size:22px">daily spark</p>
-<div style="border-top:2px solid #0b1957;margin:10px 0 20px"></div>
-<p style="margin:0 0 16px;font-family:Georgia,serif;font-size:26px;line-height:1.15">Hi {{NAME}}, your spark for today is ready.</p>
-<div style="background:#e8d9ed;border-radius:6px;padding:20px">
-<p style="margin:0 0 6px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#5a5683">{{LONG_DATE}} · Edition {{EDITION}} · {{MINUTES}} min</p>
-<p style="margin:0 0 8px;font-family:Georgia,serif;font-size:24px;line-height:1.1">{{HEADLINE}}</p>
-<p style="margin:0 0 14px;font-size:15px;line-height:1.5">{{SUBTITLE}}</p>
-<p style="margin:0 0 6px;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#426bc2;font-weight:600">Today's frontier</p>
-<p style="margin:0 0 6px;background:#f6f0f9;border-radius:6px;padding:8px 10px;font-size:14px">{{STORY_TITLE}} <span style="color:#5a5683;font-size:12px">· {{STORY_SOURCE}}</span></p>
-<a href="{{SITE}}#{{DATE}}" style="display:inline-block;margin-top:10px;background:#0b1957;color:#f7f4ed;text-decoration:none;border-radius:999px;padding:10px 20px;font-size:14px">Read today's spark →</a>
+<p class="ds-ink" style="margin:0 0 24px;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:30px;line-height:34px;color:#0b1957">daily spark</p>
+<p class="ds-ink" style="margin:0 0 24px;font-family:'Instrument Serif',Georgia,serif;font-size:30px;line-height:34px;color:#0b1957">Hi {{NAME}}, your spark for today is ready.</p>
+<div class="ds-card" style="background:#f7f4ed;border-radius:12px;padding:24px">
+<p class="ds-muted" style="margin:0 0 8px;font-size:11px;line-height:14px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:#5a5683">{{LONG_DATE}} · Edition {{EDITION}} · {{MINUTES}} min</p>
+<p class="ds-ink" style="margin:0 0 8px;font-family:'Instrument Serif',Georgia,serif;font-size:30px;line-height:34px;color:#0b1957">{{HEADLINE}}</p>
+<p class="ds-ink" style="margin:0 0 16px;font-size:15px;line-height:22px;color:#0b1957">{{SUBTITLE}}</p>
+<p class="ds-muted ds-row" style="margin:0;padding-bottom:8px;border-bottom:1px solid rgba(11,25,87,.14);font-size:11px;line-height:14px;letter-spacing:.06em;text-transform:uppercase;font-weight:600;color:#5a5683">Today's frontier</p>
+<a class="ds-row" href="{{SITE}}#{{DATE}}" style="display:block;padding:12px 0;border-bottom:1px solid rgba(11,25,87,.14);color:#0b1957;text-decoration:none;font-size:15px;line-height:22px;font-weight:600">{{STORY_TITLE}} <span class="ds-muted" style="font-size:13px;font-weight:400;color:#5a5683">· {{STORY_SOURCE}}</span></a>
+<a class="ds-btn" href="{{SITE}}#{{DATE}}" style="display:inline-block;margin-top:24px;background:#426bc2;color:#f7f4ed;text-decoration:none;border-radius:999px;padding:11px 24px;font-size:15px;line-height:22px;font-weight:600">Read today's spark</a>
 </div>
-<p style="margin:18px 0 0;font-size:12px;color:#5a5683">daily spark · digest, think, build, recap</p>
+<p class="ds-muted" style="margin:24px 0 0;font-size:13px;line-height:18px;color:#5a5683">daily spark · digest, think, build, recap</p>
 </div></div>

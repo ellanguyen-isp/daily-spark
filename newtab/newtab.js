@@ -5,12 +5,14 @@ var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", 
 var WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 var MARK = '<svg viewBox="320 320 614 614" aria-hidden="true" fill="currentColor"><polygon points="625,332 638,332 657,535 607,557"/><polygon points="607,712 660,688 638,920 626,920"/><polygon points="333,613 632,590 920,613 920,628 646,650 333,628"/><polygon points="371,767 547,645 632,590 881,473 889,487 727,598 646,651 378,780"/></svg>';
 var T = {
-  en: { full: "Read the full spark →", fullw: "Read this week →", edition: "Edition", weekly: "Weekly", frontier: "Frontier", people: "People", shift: "This week", mega: "Mega trend", hype: "Hype", radar: "Radar",
-        fail: "Could not load today's spark. Check your connection, or open the site.", hint: "Open a stamp to read. Read stamps turn blue." },
-  vi: { full: "Đọc spark đầy đủ →", fullw: "Đọc bản tuần này →", edition: "Số", weekly: "Hằng tuần", frontier: "Tin nóng", people: "Người theo dõi", shift: "Tuần này", mega: "Xu hướng lớn", hype: "Cơn sốt", radar: "Radar",
-        fail: "Không tải được spark hôm nay. Kiểm tra kết nối, hoặc mở trang web.", hint: "Mở một con tem để đọc. Tem đã đọc sẽ chuyển màu xanh." }
+  en: { home: "Open daily spark", full: "Read this spark", fullw: "Read this week", edition: "Edition", weekly: "Weekly", frontier: "Frontier", people: "People", shift: "This week", mega: "Mega trend", hype: "Hype", radar: "Radar",
+        fail: "Could not load today's spark. Check your connection, or open the site.", hint: "Open a stamp to read. Read stamps turn blue.", read: "read" },
+  vi: { home: "Mở daily spark", full: "Đọc spark này", fullw: "Đọc bản tuần này", edition: "Số", weekly: "Hằng tuần", frontier: "Tin nóng", people: "Người theo dõi", shift: "Tuần này", mega: "Xu hướng lớn", hype: "Cơn sốt", radar: "Radar",
+        fail: "Không tải được spark hôm nay. Kiểm tra kết nối, hoặc mở trang web.", hint: "Mở một con tem để đọc. Tem đã đọc sẽ chuyển màu xanh.", read: "đã đọc" }
 };
-var lang = get("ds-nt-lang", "en");
+// language follows the site's Menu > Language setting
+var lang = (function () { try { return JSON.parse(get("ds-lang", '"en"')) === "vi" ? "vi" : "en"; } catch (e) { return "en"; } })();
+var ARROW = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
 var data = null;
 
 function get(k, d) { try { var v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } }
@@ -29,54 +31,60 @@ function fmt(s) { var d = pd(s); return WD[d.getUTCDay()] + " " + d.getUTCDate()
 function short(s) { if (!/^\d{4}-\d{2}-\d{2}$/.test(s || "")) return ""; var d = pd(s); return d.getUTCDate() + " " + MO[d.getUTCMonth()]; }
 function head(t) { var i = t.indexOf(": "); return i > 0 ? t.slice(0, i) : t; }
 
-// stable "random" tilt and offset per stamp, so the poster does not jump on every new tab
-var TILT = [-2, 1.5, -1, 2, -1.5, 1, -1.8, 0.8];
-var DROP = ["0px", "8px", "-4px", "10px", "2px", "-6px", "6px", "-2px"];
-var SIZE = ["", "wide", "", "", "wide", "", "", "wide"];
+// Equal stamps in balanced rows: 1 row up to 5, 2 rows up to 12, then 3. The last row is centered.
+var GAP = 24;
+function layout() {
+  var field = document.getElementById("field"), cards = field.querySelectorAll(".stamp"), n = cards.length;
+  if (!n) return;
+  var avail = field.clientWidth || window.innerWidth - 64, phone = window.innerWidth < 760;
+  var rows = phone ? Math.ceil(n / 2) : n <= 5 ? 1 : n <= 12 ? 2 : 3, cols = Math.ceil(n / rows);
+  var w = Math.max(140, Math.min(232, Math.floor((avail - (cols - 1) * GAP) / cols)));
+  field.style.maxWidth = (cols * w + (cols - 1) * GAP) + "px";
+  var tallest = 0;
+  cards.forEach(function (c) { c.style.setProperty("--w", w + "px"); c.firstChild.style.minHeight = ""; });
+  cards.forEach(function (c) { tallest = Math.max(tallest, c.firstChild.getBoundingClientRect().height); });
+  cards.forEach(function (c) { c.firstChild.style.minHeight = tallest + "px"; });
+}
+window.addEventListener("resize", layout);
 
 function render() {
   var t = T[lang], field = document.getElementById("field");
   document.documentElement.lang = lang;
   document.getElementById("mark").innerHTML = MARK;
   document.getElementById("brand").href = SITE;
+  var home = document.getElementById("home"); home.href = SITE; home.textContent = t.home;
   field.textContent = "";
   if (!data) { field.appendChild(el("p", { class: "status" }, t.fail)); return; }
   var weekly = data.type === "weekly", link = SITE + "#" + data.date, seen = seenMap();
-  document.body.className = weekly ? "weekly" : "daily";
   document.getElementById("date").textContent = fmt(data.date);
   document.getElementById("ed").textContent = weekly ? t.weekly + " · " + data.edition : t.edition + " " + data.edition;
   document.getElementById("headline").textContent = head(L(data.summary));
   var full = document.getElementById("full");
-  full.href = link; full.textContent = weekly ? t.fullw : t.full;
+  full.href = link; full.innerHTML = ""; full.appendChild(document.createTextNode(weekly ? t.fullw : t.full)); full.insertAdjacentHTML("beforeend", ARROW);
+  var read = 0;
 
   var list = data.stamps || (data.headlines || []).map(function (h) { return { t: h.t, src: h.src, url: h.url, kind: weekly ? "shift" : "frontier" }; });
   list.forEach(function (s, i) {
-    var a = el("a", { class: "stamp " + SIZE[i % SIZE.length] + (seen[s.url] ? " seen" : ""), href: s.url, title: L(s.t),
-      style: "--r:" + TILT[i % TILT.length] + "deg;--y:" + DROP[i % DROP.length] });
+    if (seen[s.url]) read++;
+    var a = el("a", { class: "stamp" + (seen[s.url] ? " seen" : ""), href: s.url, title: L(s.t) });
+    var inner = el("span", { class: "in" });
     var meta = el("span", { class: "meta" });
     meta.appendChild(el("span", {}, s.who || s.src || ""));
     meta.appendChild(el("span", {}, short(s.date)));
-    a.appendChild(meta);
-    a.appendChild(el("h2", {}, L(s.t)));
+    inner.appendChild(meta);
+    inner.appendChild(el("h2", {}, L(s.t)));
     var foot = el("span", { class: "foot" });
     foot.appendChild(el("span", {}, s.tag || t[s.kind] || ""));
     foot.appendChild(el("span", { class: "no" }, String(i + 1).padStart(2, "0")));
-    a.appendChild(foot);
+    inner.appendChild(foot);
+    a.appendChild(inner);
     a.addEventListener("click", function () { markSeen(s.url); a.classList.add("seen"); });
     a.addEventListener("auxclick", function () { markSeen(s.url); a.classList.add("seen"); });
     field.appendChild(a);
   });
-  // balanced rows: 2 rows up to 10 stamps, then 3 rows
-  var rows = list.length > 10 ? 3 : 2;
-  field.style.maxWidth = list.length > 4 ? (Math.ceil(list.length / rows) * 280) + "px" : "";
-
-  var seg = document.getElementById("seg");
-  seg.textContent = "";
-  ["en", "vi"].forEach(function (l) {
-    var b = el("button", { type: "button", "aria-pressed": String(lang === l) }, l.toUpperCase());
-    b.addEventListener("click", function () { lang = l; set("ds-nt-lang", l); render(); });
-    seg.appendChild(b);
-  });
+  document.getElementById("ed").textContent += " · " + read + " / " + list.length + " " + t.read;
+  layout();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(layout);
 }
 
 // Google apps panel: plain links with simple generic icons (edit APPS to choose your own).
