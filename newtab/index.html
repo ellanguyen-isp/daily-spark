@@ -7,13 +7,15 @@
 <title>daily spark · new tab</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Instrument+Serif&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="newtab.css">
+<script>/* follow the site's Menu > Appearance setting (same origin, so the same storage) */
+(function () { var t = "auto"; try { t = JSON.parse(localStorage.getItem("ds-theme")) || "auto"; } catch (e) {} var d = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches; document.documentElement.className = "t-" + (t === "dark" || (t !== "light" && d) ? "dark" : "light"); })();</script>
 </head>
 <body>
 <div class="poster">
   <header class="top">
-    <a class="brand" id="brand" href="#"><span class="mark" id="mark"></span><span>daily spark</span></a>
+    <a class="brand" id="brand" href="#" aria-label="daily spark"><span class="mark" id="mark"></span></a>
     <nav class="links">
       <a href="https://mail.google.com/mail/">Gmail</a>
       <a href="https://www.google.com/imghp">Images</a>
@@ -28,7 +30,7 @@
   <footer class="bottom">
     <div class="b-left"><span class="num" id="date"></span><span class="num muted" id="ed"></span></div>
     <div class="b-mid" id="headline"></div>
-    <div class="b-right"><a class="full" id="full" href="#">Read the full spark →</a><div class="seg" id="seg"></div></div>
+    <div class="b-right"><a class="btn ghost" id="home" href="#">Open daily spark</a><a class="btn" id="full" href="#">Read this spark</a></div>
   </footer>
 </div>
 <script src="newtab.js"></script>

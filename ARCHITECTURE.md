@@ -109,23 +109,27 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 | 19:42 daily | Recap reminder (push + email) linking to the recap box |
 | 07:41 Sunday | Weekly edition (replaces the daily): market overview + "what is really possible now" radar. Runbook: `WEEKLY.md` |
 
-## 3.9 Design (final, locked 2026-10-31)
-- Reference: `design/final.html` (interactive, phone + web, EN/VI). Exploration history: `design/mockup.html`.
-- Palette "Petal": background Petal `#e8d9ed`; cards Lace `#f7f4ed` and Bridal Blue `#e9f3ff` (one color per section); accent Sapphire `#426bc2`; text Midnight `#0b1957`. No component uses the page background color.
-- Card layout "Option 1": sections have no frame (title on the page); every point is its own stamp card (scalloped edge).
-- Fonts: Instrument Serif for headlines and the quote only; IBM Plex Sans for all text and all numbers (lining, tabular). One type scale: 11 / 13 / 15 / 21 / 30 / 44.
+## 3.9 Design (design system v1, approved 2026-11-01)
+- Source of truth: the "daily spark" Design System artifact (tokens, principles, logos). Every color, size, space and radius in the site, the new tab and the email comes from it; no one-off values.
+- Themes: Light (page Petal `#e8d9ed`, cards Lace `#f7f4ed` and Bridal Blue `#e9f3ff`, accent Sapphire `#426bc2`, text Midnight `#0b1957`) and Dark (page Midnight `#0b1957`, cards `#17286f` and `#1b2f7c`, accent Lavender `#c7a9e3`, text Lace). The reader picks in Menu > Appearance: Auto (follows the device, default), Light, Dark; saved as `ds-theme`. Daily and weekly use the same theme; the weekly is marked by a "Weekly" tag, not by color.
+- Type: Instrument Serif for headlines and quotes only; IBM Plex Sans for all text and numbers (lining, tabular). Six sizes 11 / 13 / 15 / 21 / 30 / 44, weights 400 and 600 only.
+- Space on a 4px grid (4, 8, 12, 16, 24, 32, 48). Radius: 4 / 12 / 20 / pill. Two shadows (raised, overlay). Stamps have no shadow.
+- Card layout: sections have no frame (title on the page); every point is its own stamp (perforated edge). Sections alternate card colors. No component uses the page background color.
+- Navigation: two top-level tabs, Sparks (home) and Radar. Phone: bottom tab bar on those two screens only. Web: tabs in the header. Language (EN/VI) lives only in the Menu, never in a header.
+- Menu (phone bottom sheet, web popover): Appearance, Reading (swipe / scroll), Language, feedback legend, This device, Other days.
 - Dates: `30 Oct 2026` in content, `Sat 31 Oct 2026` in titles.
-- Home page: title + one-line description; daily sparks as one-line rows (date, summary, edition or Today), all in light beige, newest first. No wordmark in the header.
-- Daily page: translucent top bar (back, date, menu). Menu = reading mode (swipe default / scroll), language EN/VI, feedback legend, other days. Translucent bottom bar with swipe dots.
+- Home (Sparks tab): greeting, Today stamp (chips, title, headlines, button), a "This week" row on Mon to Sat, previous sparks as one-line rows. Radar is not on Home.
+- Edition page: translucent top bar (back, date, menu), translucent bottom bar with section dots.
 - Content depth: Frontier = big picture + 3 to 4 stories (date, original source, type, key points, why it matters) + what to watch; People = 3 items with 4 key points + takeaway; key numbers only for standout items.
-- Feedback per item: 4 icons in one line: Useful, Knew it (raise the bar), Not for me, Go deeper.
-- Chrome new tab (v2.0, 2026-11-01): the extension is a thin shell that frames `<site>/newtab/`, so design changes ship by pushing the site (no reinstall). Page: stamp poster; daily on light purple (Petal), weekly on Midnight; stamps never touch. Top: logo left; Gmail, Images, a Google apps grid (15 app links, generic icons) and an Account circle on the right. Middle: every news item of the latest edition is a stamp (Lace); a stamp turns Sapphire once opened (remembered in the extension). Bottom: date + edition left, headline middle, "Read the full spark" + EN/VI right. Stamps are small and grow with their text, in 2 balanced rows. Daily: every frontier + people item. Weekly: shifts + mega/hype calls + radar changes. Data: `latest.json` `stamps`.
+- Feedback per item: one row at the bottom of each stamp: Useful, Knew it (raise the bar), Not for me, Go deeper, then Note on the right.
+- Chrome new tab (v3, 2026-11-01): the extension is a thin shell that frames `<site>/newtab/`, so design changes ship by pushing the site (no reinstall). Follows the site's Appearance and Language. Top: logo left; Gmail, Images, a Google apps grid and an Account circle on the right. Middle: every news item of the latest edition is an equal-size stamp, arranged in balanced rows (1 row up to 5, 2 rows up to 12, then 3; last row centered); a stamp turns accent once opened. Bottom: date, edition and "read" count left, headline middle, "Open daily spark" (home) and "Read this spark" (that edition) right. Daily: every frontier + people item. Weekly: shifts + mega/hype calls + radar changes. Data: `latest.json` `stamps`.
+- Email: `templates/email.html`, light by default, dark colors for mail apps that support dark mode.
 - Notes: a Note button after the 4 feedback icons opens a text box per item; saved to Supabase `notes` (private) and read by the next run as the strongest signal.
 
 ## 3.11 Weekly edition and radar (added 2026-10-31)
 - Sunday only; the weekly replaces that day's daily. Edition number `W01`, `W02`...; `"type": "weekly"` in the JSON and in `editions/index.json`.
 - Sections: market overview (big picture + 3 to 5 shifts with sources) · mega trend vs hype · radar changes · week in review (private, stripped like "work") · next week's bet.
-- Design: same stamp layout in Midnight blue (bg `#0b1957`, cards `#17286f`, Lace text, lavender accent `#c7a9e3`).
+- Design: same stamp layout and the reader's theme as the daily; marked by a "Weekly" tag and its W number.
 - Home: a weekly shows as the Today card on Sunday; Monday to Saturday a "This week" card sits above Previous sparks; weekly rows carry a "Weekly" tag. A "Radar" link sits under the list.
 - Knowledge base: every Sunday the weekly run ingests what she marked Useful / Go deeper that week, plus mega trends and radar moves, into her private wiki (`ella@llm_wiki`, its own schema). Recaps and work details never go in.
 - Radar: `radar.json` (public), dashboard page `#radar`: stats, filter "only this week's changes", and a progress chart (one row per capability on an Early, Emerging, Ready line; hollow dot + line = where it was before its last move). Click a row: side panel (web) / bottom sheet (phone) at `#radar/<id>` with meaning, limits, evidence and history timeline. Each capability: area, maturity (ready / emerging / early), status (new / moved / stable), what it means for products, where it breaks, 1 to 4 dated sources. Validate with `spark.py radar`.
