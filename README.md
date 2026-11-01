@@ -45,7 +45,7 @@ CLAUDE.md               the Worker's runbook
 5. **Private profile:** in a private repo, create `daily-spark/profile.yaml` (see CLAUDE.md for what the Worker reads).
 6. **Morning run:** in Claude, create a scheduled task at 06:30 your time with the prompt:
    *"Run daily-spark for today. Follow CLAUDE.md in the daily-spark repo."*
-7. **Chrome new tab (optional):** set `SITE` in `extension/newtab.js` to your Pages address, then
+7. **Chrome new tab (optional):** set `SITE` in `newtab/newtab.js` and the iframe address in `extension/newtab.html` to your Pages address, then
    Chrome → Extensions → Developer mode → Load unpacked → pick the `extension` folder.
 
 A guided setup (`/daily-spark setup`) is planned for week 4.
