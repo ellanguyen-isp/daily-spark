@@ -203,7 +203,7 @@ def stamps(E):
         return {"t": it["t"], "src": it.get("src", ""), "url": it["url"], "date": it.get("date", ""),
                 "tag": it.get("tag", ""), "who": who or it.get("who", ""), "kind": kind}
     if kind(E) == "weekly":
-        site = "https://ellanguyen-isp.github.io/daily-spark/"  # community users: your own site
+        site = json.loads((ROOT / "config" / "site.json").read_text()).get("site_url", "").rstrip("/") + "/"
         out = [st(it, "shift") for it in E["market"]["shifts"]]
         out += [{"t": x["t"], "src": x.get("src", ""), "url": x.get("url") or f"{site}#{E['date']}", "date": x.get("date", ""),
                  "tag": "", "who": "", "kind": x["k"]} for x in E.get("trend", [])]

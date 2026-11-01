@@ -60,7 +60,7 @@ Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `e
     This repo: `git add -A && git commit -m "edition <date>" && git push`. Private repo: commit only `daily-spark/`.
 13. **Notify.** Send one email with Gmail to the user (address in `profile.yaml`), subject `daily spark · <d Mon>: <headline>`
     (headline = the summary's part before the colon). HTML body: fill `templates/email.html` exactly (one headline row per frontier story);
-    plain-text body: the same content as plain lines. Link: `<site>#<date>`.
+    plain-text body: the same content as plain lines. Link: `<site>#<date>` (`{{SITE}}` = `site_url` in `config/site.json`).
     Your **final message** is the same short text (it becomes the push notification). If the run failed, the final message
     is one plain line saying what broke and whether an edition was published.
 

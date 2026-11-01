@@ -29,7 +29,7 @@ import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
 TZ = dt.timezone(dt.timedelta(hours=7))  # Asia/Ho_Chi_Minh, no DST
-UA = "daily-spark-fetch/1.0 (+https://github.com/ellanguyen-isp/daily-spark)"
+UA = "daily-spark-fetch/1.0"
 TIMEOUT = 20
 
 

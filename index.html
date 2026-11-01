@@ -284,7 +284,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .mfootbar { border-top: 1px solid var(--p-line); }
 .mfootbar .mcont { display: flex; justify-content: space-between; gap: 12px; padding: 16px 0 24px; font-size: 13px; color: var(--p-muted); }
 
-/* ---------- Home v3 (per Ella's sketch): logo + settings, thick rule, greeting, Today left, one-line rows right ---------- */
+/* ---------- Home v3: logo + settings, thick rule, greeting, Today left, one-line rows right ---------- */
 .shome { flex: 1; overflow-y: auto; }
 .scont { width: min(1100px, 100% - 40px); margin: 0 auto; }
 .snav { position: sticky; top: 0; z-index: 4; background: var(--p-nav); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); padding-top: env(safe-area-inset-top); }
@@ -477,7 +477,7 @@ button, input, textarea { font: inherit; color: inherit; }
   var state = { lang: load("lang", "en"), view: load("view", "swipe"), menu: false, slide: 0, days: [], cur: null, ed: null, fb: load("fb", {}), picked: load("picked", {}), notes: load("notes", {}), noteOpen: null };
   var dev = document.getElementById("device");
   var SITE = { supabase_url: "", supabase_anon_key: "" };
-  fetch("config/site.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : {}; }).then(function (c) { SITE = Object.assign(SITE, c || {}); }).catch(function () {});
+  fetch("config/site.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : {}; }).then(function (c) { SITE = Object.assign(SITE, c || {}); if (SITE.owner && SITE.owner !== OWNER) { OWNER = SITE.owner; if (!state.cur) render(); } }).catch(function () {});
   function wkey() { return load("wkey", ""); }
   function canSync() { return !!(SITE.supabase_url && SITE.supabase_anon_key && wkey()); }
   function sync(table, row) {
@@ -768,14 +768,14 @@ button, input, textarea { font: inherit; color: inherit; }
       c.style.gridRowEnd = "span " + Math.ceil(h / row);
     });
   }
-  var OWNER = "Ella";  /* community users: change to your own name */
+  var OWNER = "";  /* comes from config/site.json "owner" */
   function todayVN() { return new Date(Date.now() + 7 * 3600 * 1000).toISOString().slice(0, 10); }
   function splitHomeHTML() {
     var d0 = state.days[0], rest = state.days.slice(1, 8), today = "";
     var fresh = d0 && d0.date === todayVN();
     var greet = state.lang === "vi"
-      ? (fresh ? "Chào " + OWNER + ", spark hôm nay của bạn đã sẵn sàng." : "Chào " + OWNER + ", đây là spark mới nhất của bạn.")
-      : (fresh ? "Hi " + OWNER + ", your spark for today is ready." : "Hi " + OWNER + ", here is your latest spark.");
+      ? (fresh ? "Chào" + (OWNER ? " " + OWNER : "") + ", spark hôm nay của bạn đã sẵn sàng." : "Chào" + (OWNER ? " " + OWNER : "") + ", đây là spark mới nhất của bạn.")
+      : (fresh ? "Hi" + (OWNER ? " " + OWNER : "") + ", your spark for today is ready." : "Hi" + (OWNER ? " " + OWNER : "") + ", here is your latest spark.");
     if (d0) {
       var sp = splitSummary(L(d0.summary)), lt = state.latest && state.latest.date === d0.date ? state.latest : null;
       var w0 = d0.type === "weekly";

@@ -1,5 +1,5 @@
-// Community users: change SITE to your own daily-spark GitHub Pages address.
-var SITE = "https://ellanguyen-isp.github.io/daily-spark/";
+// The new tab page lives at <site>/newtab/, so the site address is one folder up.
+var SITE = new URL("../", location.href).href;
 
 var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 var WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
