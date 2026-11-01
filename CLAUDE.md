@@ -23,6 +23,7 @@ Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `e
    Clone or pull `ellanguyen-isp/ella-second-brain` next to it (`../ella-second-brain`).
 1. **Candidates.** The fetch robot (GitHub Actions, 05:40 Vietnam) writes `data/candidates/<today>.json`.
    If today's file is missing, run `python3 scripts/fetch.py` yourself (YouTube falls back to RSS without the key).
+   Then look at its `sources` report: for every source with `ok: false` (Substack blocks GitHub's servers, so some feeds fail there), open that feed URL from `config/sources.yaml` yourself and treat posts from the last 2 days as extra `role: people` candidates.
 2. **Ledger.** `python3 scripts/spark.py ledger`: next edition number, recent summaries, and timeless sources used.
    Never reuse a source URL or a timeless source from the last 60 days.
 3. **Context.** Read `../ella-second-brain/daily-spark/profile.yaml` (who she is, current focus, interests),
