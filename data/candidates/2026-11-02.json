@@ -1,0 +1,1411 @@
+{
+ "date": "2026-11-02",
+ "generated_at": "2026-11-02T06:13+07:00",
+ "window_days": 3,
+ "youtube_api": false,
+ "sources": [
+  {
+   "source": "Starter Story",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 4
+  },
+  {
+   "source": "Starter Story Build",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 0
+  },
+  {
+   "source": "Lenny's Podcast",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 2
+  },
+  {
+   "source": "The Skip (Nikhyl Singhal)",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 0
+  },
+  {
+   "source": "YC Root Access",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 0
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 2
+  },
+  {
+   "source": "Y Combinator",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 2
+  },
+  {
+   "source": "Naval",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 0
+  },
+  {
+   "source": "Every",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 1
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 4
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Simon Willison",
+   "ok": true,
+   "via": "rss",
+   "new": 4
+  },
+  {
+   "source": "Every",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Benedict Evans",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Rob Snyder (Physics of Startups)",
+   "ok": null,
+   "note": "no feed; the Worker reads the page"
+  },
+  {
+   "source": "Aakash Gupta newsletter",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Product Talk (Teresa Torres)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "John Cutler",
+   "ok": true,
+   "via": "rss",
+   "new": 1
+  },
+  {
+   "source": "SVPG (Marty Cagan)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Andrew Chen",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "April Dunford",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Jason Cohen",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Gibson Biddle",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Brian Balfour",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Melissa Perri",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Hello China Tech",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Y Combinator blog",
+   "ok": true,
+   "via": "rss",
+   "new": 8
+  },
+  {
+   "source": "Naval",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Linear blog (Karri Saarinen)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "OpenAI news",
+   "ok": true,
+   "via": "rss",
+   "new": 3
+  },
+  {
+   "source": "Google AI blog",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Product Hunt",
+   "ok": true,
+   "via": "rss",
+   "new": 16
+  },
+  {
+   "source": "Anthropic news",
+   "ok": null,
+   "note": "no feed; the Worker reads the page"
+  },
+  {
+   "source": "Hacker News front page",
+   "ok": true,
+   "via": "rss",
+   "new": 27
+  }
+ ],
+ "items": [
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "So I guess everyone uses LLMs to think now",
+   "url": "https://eva.ac/blog/llms/",
+   "published": "2026-11-02",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Mathematics has changed. Let's act like it",
+   "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+   "published": "2026-11-02",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Ask HN: Which TV do you recommend for privacy?",
+   "url": "https://news.ycombinator.com/item?id=50328896",
+   "published": "2026-11-02",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "John Leeson (the voice of K9) has died",
+   "url": "https://www.doctorwhonews.net/2026/11/john_leeson_1943_2026.html",
+   "published": "2026-11-02",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Patrick Stewart taught us what good men do with power",
+   "url": "https://www.vox.com/politics/508526/patrick-stewart-jean-luc-picard-star-trek-liberalism",
+   "published": "2026-11-02",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-rss",
+   "title": "Bro's AI video editor makes $11,200 per month 😱",
+   "url": "https://www.youtube.com/shorts/0t_FAN0dN0A",
+   "published": "2026-11-02",
+   "summary": "Bro’s AI video editor makes $11,200 per month. Meet Vadim. He’s 19 and built Vugola, an AI video editing agent that turns any long-form content into viral clips. about $11,200 in MRR in the last four weeks a few 10,000 signups about 400 paying users built for clippers, content creators, agencies, and long-form brands"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-rss",
+   "title": "How I Built It: $400K/Month iOS App",
+   "url": "https://www.youtube.com/watch?v=hnxn16HtLIk",
+   "published": "2026-11-02",
+   "summary": "Yoni built one of the most popular iOS apps in recent years: Brainrot. In this video, we break down the story behind how he took it from a simple idea to an app that is making an astonishing $400K/month. And, most importantly, we get his thoughts on what’s working right now for building and growing apps in 2026. *120+ Businesses you can start with less than $500:* https://clickhubspot.com/1tva Say hi to Yoni: https://twitter.com/YoniSmolyar Check out Brainrot: https://thebrainrotapp.com/ 🔔 Follow the Second Channel: @StarterStoryBuild 🏁 We're hiring: starterstory.com/jobs Chapters: 0:00 - the ..."
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "86 minutes of paid-growth alpha | Hector Serrano",
+   "url": "https://www.youtube.com/watch?v=KzS5Qs7vSMg",
+   "published": "2026-11-01",
+   "summary": "Hector Serrano runs one of the most innovative and successful paid growth programs in Silicon Valley. As Head of Content at Wispr Flow, a leading AI voice-to-text tool, he built a roster of 50 creators who drive 500 to 600 paid user-generated content (UGC) ads every month. The creators are paid a cut of ad spend, and the best of them earn over $13,000 a month. It’s a playbook the best DTC brands have used for years, now adapted for SaaS. Hector joined Wispr Flow at 19, before the product had PMF, and over the past year, Wispr Flow has grown revenue 30x and raised at a $2 billion valuation. *We..."
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-rss",
+   "title": "Why a 660-ton ball makes Taipei 101 safer",
+   "url": "https://www.youtube.com/shorts/oaRu-RZbYTw",
+   "published": "2026-11-01",
+   "summary": "Why does Taipei 101 hang a 660-ton ball near the top? The ball is 5.5 meters across, built from 41 layers of steel plate, each 12.5 centimeters thick, and the official site puts it at 660 metric tons. It hangs on cables, and when wind pushes the tower one way, the ball swings against it. That's called a tuned mass damper. The official site says its main purpose is to reduce the swaying of the tower during strong winds. Same weight, but free to swing, it protects the building. Idea and structure: Mark Rober's Short \"How To Keep a Skyscraper From Falling Over\". Sources are in the pinned comment...."
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth"
+   ],
+   "via": "rss",
+   "title": "How a 19-year-old intern built the growth engine behind this $2B AI company | Hector Serrano",
+   "url": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
+   "published": "2026-11-01",
+   "summary": "Listen now (88 mins) | Hector Serrano on building Wispr Flow’s paid-UGC machine, hiring young talent over polished resumes, and why the best marketers are “allergic to AI”"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "Quoting Kyle Kingsbury",
+   "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
+   "published": "2026-11-01",
+   "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users? — Kyle Kingsbury , Jepsen results for ParticleDB 1.1.4 Tags: kyle-kingsbury , llms , ai , generative-ai , ai-misuse"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "How We Took Over ChatGPT Accounts",
+   "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
+   "published": "2026-11-01",
+   "summary": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe. It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data. Parameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes its ..."
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-llm 0.1a9",
+   "url": "https://simonwillison.net/2026/Oct/31/datasette-llm/",
+   "published": "2026-11-01",
+   "summary": "Release: datasette-llm 0.1a9 I have some big upgrades to Datasette Agent in the pipeline, but in the meantime here's a tiny user experience improvement to the underlying datasette-llm plugin. It now picks up the default model used by LLM , which means you can start using Datasette Agent without needing to explicitly configure a default model: uvx --with datasette-agent datasette content.db --internal internal.db Previously you would also need to specify a model with -s plugins.datasette-agent.default_model gpt-6-astra . Tags: datasette , llm , datasette-agent"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "agentmash",
+   "url": "https://www.producthunt.com/products/agentmash",
+   "published": "2026-11-01",
+   "summary": "open-source multiplayer AI for teams' coding agents Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Show HN: HackerBooks – HackerTube, but for books mentioned on HN",
+   "url": "https://hackerbooks.org",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "HackerTube: YouTube built from videos recommended by HN",
+   "url": "https://karpathy.bearblog.dev/hacker-tube/",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "The She-Wolves of Jülich",
+   "url": "https://www.historytoday.com/archive/history-matters/she-wolves-julich",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+   "url": "https://github.com/ivankovic/omnidiff",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Proving and improving the Platonic Representation Hypothesis with JEPAs",
+   "url": "https://arxiv.org/abs/2610.39302",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Lenovo's 'encrypted' fingerprint USB is just an unencrypted SD card in a case",
+   "url": "https://www.reddit.com/r/technology/comments/1xl2pr3/lenovos_encrypted_fingerprint_usb_drive_is_just/",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Bidirectional charging during grid outages",
+   "url": "https://www.jefftk.com/p/bidirectional-charging-during-grid-outages",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Novellas with Groff",
+   "url": "https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
+   "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Seoul Viosys begins production of rare-earth-free white light emitter",
+   "url": "https://www.semiconductor-today.com/news_items/2026/oct/seoul-291026.shtml",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Frontier Airlines Likely Breached",
+   "url": "https://www.reddit.com/r/frontierairlines/comments/1xl20e8/psa_email_scam/",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Domain hacks with unusual Unicode characters (2018)",
+   "url": "https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters/",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Landline phones will switch off across Britland in 100 days, no extensions",
+   "url": "https://www.theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "An Italian farmer found some unknown seeds in his attic and planted them",
+   "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-rss",
+   "title": "Bro built a simple app on vacation and it makes $10,000+/month 🤯",
+   "url": "https://www.youtube.com/shorts/oM74DZlgc-k",
+   "published": "2026-11-01",
+   "summary": "Bro built a simple app on vacation and now it makes $10,000+/month. Meet Frederick. His app is a habit tracker in health and fitness. In Gus’s words: “His app is not really special at all.” The playbook is what made it work: Apple Search Ads bidding on big competitor names got him to about $5K/month TikTok ads that remade videos already going viral in his niche took him from $5K to $10K in about a week Now he’s running the same playbook again on app #2 The idea barely matters. Distribution does."
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-rss",
+   "title": "Điều cần phải xảy đến trước khi nhảy việc",
+   "url": "https://www.youtube.com/shorts/pZREBJzsbTY",
+   "published": "2026-11-01",
+   "summary": "[English below] Rời ngành Tài chính, An Trương quyết định dành thời gian nghỉ ngơi trước khi bắt đầu hành trình mới. Khoảng nghỉ ấy không chỉ giúp An tái tạo năng lượng, mà còn là cơ hội để nhìn lại bản thân và tìm cảm hứng cho bước đi tiếp theo. Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - After leaving the finance industry, An Trương took time off before embarking on a new chapter. The break gave An space to recharge, reflect, and rediscover the inspi..."
+  },
+  {
+   "source": "John Cutler",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "product-ops",
+    "systems"
+   ],
+   "via": "rss",
+   "title": "TBM 448: The Software Factory as Identity Defense (and Reinvention)",
+   "url": "https://cutlefish.substack.com/p/tbm-448-the-software-factory-as-identity",
+   "published": "2026-11-01",
+   "summary": "We’re reimagining the future of work one professional silo at a time."
+  },
+  {
+   "source": "Hello China Tech",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "china",
+    "ai",
+    "consumer-tech"
+   ],
+   "via": "rss",
+   "title": "Two Chinese clouds, one IDC report, two first places",
+   "url": "https://hellochinatech.com/p/weekly-recap-2026-11-01",
+   "published": "2026-11-01",
+   "summary": "45.1% or 46.6% from one IDC report, 16m downloads of unnamed datasets, and state money on 88% of 558 investor lists."
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth"
+   ],
+   "via": "rss",
+   "title": "🧠 Community Wisdom: The biggest sources of interruptions for PMs, hiring junior PMs with case studies vs. behavioral interviews, building a product harness for AI-driven development, and more",
+   "url": "https://www.lennysnewsletter.com/p/community-wisdom-the-biggest-sources",
+   "published": "2026-10-31",
+   "summary": "Community Wisdom 304"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "dbreunig/nesformer",
+   "url": "https://simonwillison.net/2026/Oct/30/nesformer/",
+   "published": "2026-10-31",
+   "summary": "dbreunig/nesformer Inspired by qwenputer by Divyansh Agrawal, Drew Breunig baked a working emulator for a Nintendo Entertainment System 6502 CPU into the weights of Qwen3.5-4B. You can now play NES ROMs such as Super Mario Bros (very slowly) running inside Qwen! In a comment on Hacker News Drew reveals the Opus 5.5 prompts he used to build this system: Read this article and any relevant source code: https://divagr.com/blog/qwenputer. Then explore if you could emulate the chip and ram in a Nintendo Entertainment System (as people do today with FPGAs in MISTRs) using this technique. If so, what ..."
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "ernd",
+   "url": "https://www.producthunt.com/products/ernd",
+   "published": "2026-10-31",
+   "summary": "The credit card for the AI stack Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "AwaitIO",
+   "url": "https://www.producthunt.com/products/awaitio",
+   "published": "2026-10-31",
+   "summary": "Write a TypeScript function, get an admin screen Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Pluto Door",
+   "url": "https://www.producthunt.com/products/pluto-door",
+   "published": "2026-10-31",
+   "summary": "SSH client with an AI agent and a desktop for every server Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Agnos",
+   "url": "https://www.producthunt.com/products/agnos",
+   "published": "2026-10-31",
+   "summary": "Clean documents for AI, and see what was removed Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "AC Bridge",
+   "url": "https://www.producthunt.com/products/ac-bridge",
+   "published": "2026-10-31",
+   "summary": "Your smart lights show when Claude Code or Codex needs you. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Godwit",
+   "url": "https://www.producthunt.com/products/godwit",
+   "published": "2026-10-31",
+   "summary": "An open-source, AI-native email client Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Secret Key",
+   "url": "https://www.producthunt.com/products/secret-key",
+   "published": "2026-10-31",
+   "summary": "Let your family unlock your passwords if you can't Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "ChainPoints",
+   "url": "https://www.producthunt.com/products/chainpoints",
+   "published": "2026-10-31",
+   "summary": "Flight Prices in Your Points, on Google Flights Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Copper – A minimal low-level programming language with OOP and generics",
+   "url": "https://tibleiz.net/copper/",
+   "published": "2026-10-31",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "One-minute frequency disturbances from synchronization in power systems",
+   "url": "https://www.nature.com/articles/s41560-026-02144-0",
+   "published": "2026-10-31",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Parchment Paper History: How We Got Paper Perfect for Baking (2019)",
+   "url": "https://tedium.co/2019/11/21/nonstick-parchment-paper-history/",
+   "published": "2026-10-31",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Show HN: I rebuilt my old canvas 3D library as a small WebGL 2 library – phoria2",
+   "url": "https://kevs3d.co.uk/phoria2/",
+   "published": "2026-10-31",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Understanding Email Encryption (2025)",
+   "url": "https://www.fastmail.com/blog/email-encryption/",
+   "published": "2026-10-31",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-rss",
+   "title": "Bro built a $18k MRR app because his dad took 3 days to write one email 👍",
+   "url": "https://www.youtube.com/shorts/bONPJa_ThW4",
+   "published": "2026-10-31",
+   "summary": "Bro got stuck in a hospital bed for two weeks and watched his dad take 3 days to write one email. Kourosh’s dad is “an insane workaholic, on his computer 24/7.” So for two straight weeks it was click, click, click, right next to his hospital bed. At the same time, Kourosh was playing with ChatGPT’s dictation and thought: “I wish I could just give him this dictation absolutely everywhere.” That became Voicy. It’s a speech-to-text app he built for his dad, and it now makes $16K to $20K a month as a side project."
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-rss",
+   "title": "Không tiền, có sáng tạo được không?",
+   "url": "https://www.youtube.com/shorts/0aq-VXEX2iw",
+   "published": "2026-10-31",
+   "summary": "[English below] Làm sáng tạo cần nguồn lực để duy trì, nhưng có nhất thiết phải thương mại hóa sản phẩm mới có thể tạo ra nguồn lực đó? Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - Creating requires resources to sustain, but does monetizing the work itself have to be the only way to secure them? Watch more from EP414 of Vietnam Innovators (English Edition) featuring An Truong available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts ..."
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "aggregation",
+    "strategy"
+   ],
+   "via": "rss",
+   "title": "2026.44: At Long Last…",
+   "url": "https://stratechery.com/2026/at-long-last/",
+   "published": "2026-10-31",
+   "summary": "The best Stratechery content from the week of October 26, 2026 including Anthropic numbers, the end of the Internet as we know it, and autocracies then and now."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How Harsh Vardhan Goenka became founding engineer #1 at Kalpa Labs",
+   "url": "https://www.ycombinator.com/blog/how-harsh-vardhan-goenka-became-founding-engineer-1-at-kalpa-labs/",
+   "published": "2026-10-31",
+   "summary": "From ICPC World Finals to competitive programming clubs to building generalist audio models as the first engineer at a YC startup."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How Dylan Anderson became founding engineer at Adam",
+   "url": "https://www.ycombinator.com/blog/how-dylan-anderson-became-founding-engineer-at-adam/",
+   "published": "2026-10-31",
+   "summary": "Dylan left Minnesota for San Francisco to build AI agents for CAD software as the first engineer at Adam (W25)."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How Andrew HunzekerHesed became Employee #1 at 10x Science",
+   "url": "https://www.ycombinator.com/blog/how-andrew-hunzekerhesed-became-employee-1-at-10x-science/",
+   "published": "2026-10-31",
+   "summary": "A principal engineer left consumer-scale software to build AI-native scientific analysis tools as the founding engineer at 10x Science."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How Max Friedlander became founding operations at Petrarch",
+   "url": "https://www.ycombinator.com/blog/how-max-friedlander-became-founding-operations-at-petrarch/",
+   "published": "2026-10-31",
+   "summary": "A math major who turned down safe internships to lead high-stakes deals at a YC S26 startup supplying data for frontier AI labs."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How David Mount became employee #2 (for the second time) at 10x Science",
+   "url": "https://www.ycombinator.com/blog/how-david-mount-became-employee-2-for-the-second-time-at-10x-science/",
+   "published": "2026-10-31",
+   "summary": "A veteran engineer finds his next act helping scientists discover cures, one amino acid at a time, at YC W26 startup 10x Science."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How Yair Alon went from building Portrait Mode at Google to founding researcher at Poetiq",
+   "url": "https://www.ycombinator.com/blog/how-yair-alon-went-from-building-portrait-mode-at-google-to-founding-researcher-at-poetiq/",
+   "published": "2026-10-31",
+   "summary": "After 10 years at Google Research and DeepMind, Yair Alon joined Poetiq to build an AI that improves itself."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How Varsha Parthasarathy became engineer #1 at Flex — solving a problem she'd experienced",
+   "url": "https://www.ycombinator.com/blog/how-varsha-parthasarathy-became-engineer-1-at-flex-four-months-postpartum-chasing-a-problem-shed-lived/",
+   "published": "2026-10-31",
+   "summary": "From Lyft's self-driving division to fixing HSA/FSA payments, Varsha joined Flex as its first engineer and built from scratch."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How Sherif Amer went from electronics engineer to employee #1 at Indemni",
+   "url": "https://www.ycombinator.com/blog/how-sherif-amer-went-from-electronics-engineer-to-employee-1-at-indemni/",
+   "published": "2026-10-31",
+   "summary": "A layoff, two years of travel, and a self-taught pivot to software led Sherif Amer to become the founding engineer at Indemni."
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Why Design Partners Don't Work",
+   "url": "https://www.youtube.com/shorts/bBoTLUrDFyc",
+   "published": "2026-10-30",
+   "summary": "Why Rob Snyder (Author of The Power of Pull) advises against design partners."
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-rss",
+   "title": "Masterclass: Interview Homework for PMs",
+   "url": "https://www.youtube.com/watch?v=Jz2cFhcohm0",
+   "published": "2026-10-30",
+   "summary": "Most PM take-homes now get read by an AI before a human ever sees them. PM interview coach Sumant Malhotra walks through four real homework decks, two shortlisted and two that shouldn't have been, and shows exactly what separates them. You'll learn the 5 types of PM homework, the 20% most AI decks miss, and a system for acing your next take-home. Complete Deep Dive: https://www.news.aakashg.com/p/pm-take-home-assignment-playbook?utm_source=yt-20261028 Transcript: https://www.aakashg.com/how-to-ace-pm-interview-homework-in-the-age-of-ai-with-sumant-malhotra/ Timestamps 0:00 - Intro 1:29 - Why P..."
+  },
+  {
+   "source": "Y Combinator",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "startups",
+    "startup-school",
+    "ai"
+   ],
+   "via": "youtube-rss",
+   "title": "What Happens When Everyone Can Build Software",
+   "url": "https://www.youtube.com/watch?v=vl7HiMdGfjo",
+   "published": "2026-10-30",
+   "summary": "In this episode of the Lightcone, the hosts sit down with Paul Copplestone, co-founder and CEO of Supabase. Since starting in the YC summer batch of 2020, the company has exploded to 13 million users and over 50 million databases under management. Supabase is now positioning for a future where everyone can write their own software, billions have access to personal databases and agents are driving much of the demand. Apply to Y Combinator: https://www.ycombinator.com/apply Work at a startup: https://www.ycombinator.com/jobs Chapters: 00:00 Intro 01:18 Growth and 4x Revenue 02:35 Three Eras of S..."
+  },
+  {
+   "source": "Y Combinator",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "startups",
+    "startup-school",
+    "ai"
+   ],
+   "via": "youtube-rss",
+   "title": "AI for the Air-Gapped Economy",
+   "url": "https://www.youtube.com/shorts/x21EgQzfZaM",
+   "published": "2026-10-30",
+   "summary": "Some of the most valuable data in the world can never leave the building. Defense contractors, banks, hospitals, and nuclear plants can’t simply send it to a cloud AI API. That creates an opportunity to bring frontier AI inside those walls: on-prem models, deployment tooling, security accreditation, and hardware for the parts of the economy the cloud can’t reach. Apply for the Winter 2027 batch at ycombinator.com/apply."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Making it easier for websites to express AI training preferences",
+   "url": "https://openai.com/index/helping-websites-express-ai-training-preferences",
+   "published": "2026-10-30",
+   "summary": "OpenAI will honor a shared robots.txt signal to help website operators communicate their AI training preferences to participating providers."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Community safety report and new protections for teens",
+   "url": "https://openai.com/index/community-safety-report-and-new-protections-for-teens",
+   "published": "2026-10-30",
+   "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Fair use benefits everyone",
+   "url": "https://openai.com/index/fair-use-benefits-everyone",
+   "published": "2026-10-30",
+   "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Screen Studio 4.0",
+   "url": "https://www.producthunt.com/products/screen-studio",
+   "published": "2026-10-30",
+   "summary": "Glass Loupe, Camera Cutout, Edit by Transcript, and more Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Embage",
+   "url": "https://www.producthunt.com/products/embage",
+   "published": "2026-10-30",
+   "summary": "Build agent for your customers, run workflows, analyzed. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Chorin: Ora et Labora",
+   "url": "https://www.producthunt.com/products/chorin-ora-et-labora",
+   "published": "2026-10-30",
+   "summary": "Build a real medieval abbey, from 1258 to today Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Termy",
+   "url": "https://www.producthunt.com/products/termy-6ded6eb5-533c-4df5-a4f6-94b97ed8ca62",
+   "published": "2026-10-30",
+   "summary": "Your coding agent, in the notch Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Hamdori",
+   "url": "https://www.producthunt.com/products/hamdori",
+   "published": "2026-10-30",
+   "summary": "A tiny 3D hamster that lives on your desktop Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "SKI",
+   "url": "https://www.producthunt.com/products/ski",
+   "published": "2026-10-30",
+   "summary": "Voice-first coding harness Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Hemmed",
+   "url": "https://www.producthunt.com/products/hemmed",
+   "published": "2026-10-30",
+   "summary": "Hide Mac menu bar clutter and pin individual actions Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Nibnib: Image compression with extreme decompression speed",
+   "url": "https://github.com/raphlinus/nibnib",
+   "published": "2026-10-30",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "New 3D thermal invisibility cloak makes objects disappear from infrared cameras",
+   "url": "https://www.sciencedaily.com/releases/2026/10/261025073051.htm",
+   "published": "2026-10-30",
+   "summary": "Comments"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Context Engineering With DSPy",
+   "url": "https://www.youtube.com/watch?v=k1mmJaqQky0",
+   "published": "2026-10-30",
+   "summary": "Subscribe to Every: https://every.to/subscribe?utm_source=livestream&utm_content=dspylive Get Mike Taylor's book Context Engineering with DSPy: https://www.oreilly.com/library/view/context-engineering-with/0642572261603/"
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-rss",
+   "title": "Bắt đầu sản xuất quy mô lớn từ đâu?",
+   "url": "https://www.youtube.com/shorts/AZWTpYpqhy4",
+   "published": "2026-10-30",
+   "summary": "[English below] Trước độ phức tạp của bài toán sản xuất quy mô lớn, Derek Grundy cho rằng, bước đi quan trọng nhất nằm ở việc xác định rõ định vị sản phẩm và lộ trình phát triển. Một kế hoạch kinh doanh rõ ràng & thực tế chính là chiếc cầu nối bền vững nhất để tiếp cận và gắn kết cùng các đối tác sản xuất hàng đầu. Xem phiên bản đầy đủ tập 413 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông Derek Grundy - Chief Operating Officer tại HuaLi Industrial Group's Nike Division. - Facing the sheer comple..."
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-rss",
+   "title": "Quá khứ của sếp An",
+   "url": "https://www.youtube.com/shorts/MXcj6bylri4",
+   "published": "2026-10-30",
+   "summary": "[English below] Trước khi trở thành \"hiện tượng\" với Xin Việc, sếp An từng có những vlog ghi lại khoảnh khắc thời đại học với trung bình 10.000 lượt xem tự nhiên nhưng lại tự tay cất tất cả vào kho lưu trữ, chỉ vì \"máy quay còn rung và âm thanh chưa chuẩn\". Phải chăng rào cản lớn nhất của giai đoạn khởi đầu của mọi nhà sáng tạo không nằm ở nguồn lực hay thuật toán, mà xuất phát từ nỗi sợ đối diện với sự không hoàn hảo của chính mình? Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câ..."
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "aggregation",
+    "strategy"
+   ],
+   "via": "rss",
+   "title": "Sharp Tech on Video: Anthropic’s S-1 and What It Means for Meta and Muse, You Can See Everything, and Brewers!",
+   "url": "https://stratechery.com/2026/sharp-tech-on-video-anthropics-s-1-and-what-it-means-for-meta-and-muse-you-can-see-everything-and-brewers/",
+   "published": "2026-10-30",
+   "summary": "Sharp Tech is, for the first time, available on video. You have three ways to consume it: YouTube, Spotify, and here on Stratechery."
+  },
+  {
+   "source": "Hello China Tech",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "china",
+    "ai",
+    "consumer-tech"
+   ],
+   "via": "rss",
+   "title": "Pony.ai, Waymo and Paying for the Fleet",
+   "url": "https://hellochinatech.com/p/pony-ai-robotaxi-fleet-funding",
+   "published": "2026-10-30",
+   "summary": "China’s Pony.ai is still spending more of its own capital as partner-funded fleets grow, and its filings do not show how the cost of the fleet is split."
+  }
+ ]
+}

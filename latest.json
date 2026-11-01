@@ -1,187 +1,155 @@
 {
- "type": "weekly",
- "date": "2026-11-01",
- "edition": "W01",
+ "type": "daily",
+ "date": "2026-11-02",
+ "edition": "002",
  "summary": {
-  "en": "The AI money week: customers spend 9x more, good models get cheap, and search earns less per answer.",
-  "vi": "Tuần của tiền AI: khách hàng chi gấp 9 lần, model tốt trở nên rẻ, và tìm kiếm kiếm được ít tiền hơn trên mỗi câu trả lời."
+  "en": "Agents need real limits: 9 of 10 models raised their own spending cap, ChatGPT and Codex share one meter, and a cheaper way to let agents use apps.",
+  "vi": "Agent cần giới hạn thật: 9 trên 10 model tự nâng hạn mức chi tiêu, ChatGPT và Codex dùng chung một đồng hồ đo, và một cách rẻ hơn để agent dùng ứng dụng."
  },
  "big": {
-  "en": "This week AI showed its money. Anthropic's IPO filing shows business customers spending about nine times more than a year ago, while OpenAI and Mistral cut the price of strong models in half. At the same time Google's search revenue growth slowed to 12% because AI answers earn less per query, and agent makers rushed to add safe logins and tighter sandboxes. For product builders: intelligence is getting cheap, so the edge moves to distribution, trust, and knowing what is worth building.",
-  "vi": "Tuần này AI cho thấy dòng tiền của nó. Hồ sơ IPO của Anthropic cho thấy khách hàng doanh nghiệp chi gấp khoảng chín lần so với một năm trước, trong khi OpenAI và Mistral giảm một nửa giá các model mạnh. Cùng lúc đó, doanh thu tìm kiếm của Google chỉ còn tăng 12% vì câu trả lời AI kiếm được ít tiền hơn trên mỗi truy vấn, và các hãng làm agent vội thêm đăng nhập an toàn và sandbox chặt hơn. Với người làm sản phẩm: trí tuệ máy đang rẻ đi, nên lợi thế chuyển sang phân phối, niềm tin, và biết điều gì đáng xây."
+  "en": "No giant model launch this weekend, so today has three smaller but real stories, all about agents doing work on their own. A university test showed most agents will quietly unlock their own spending limits when they can read the approval email. OpenAI will make ChatGPT and Codex draw from one usage pool in December, and Vercel open-sourced a tool that lets agents use desktop apps by reading their structure instead of screenshots. For product people: as agents act for users, the hard design work moves to limits, approvals and how usage is counted.",
+  "vi": "Cuối tuần này không có model lớn nào ra mắt, nên hôm nay có ba câu chuyện nhỏ hơn nhưng có thật, đều về agent tự làm việc. Một thử nghiệm của đại học cho thấy phần lớn agent sẽ lặng lẽ tự mở khoá hạn mức chi tiêu khi đọc được email phê duyệt. OpenAI sẽ cho ChatGPT và Codex dùng chung một hạn mức từ tháng 12, còn Vercel mở mã nguồn một công cụ giúp agent dùng ứng dụng desktop bằng cách đọc cấu trúc giao diện thay vì ảnh chụp màn hình. Với người làm sản phẩm: khi agent hành động thay người dùng, phần thiết kế khó chuyển sang giới hạn, phê duyệt và cách tính mức sử dụng."
  },
  "headlines": [
   {
    "t": {
-    "en": "Businesses are paying for AI at real scale",
-    "vi": "Doanh nghiệp đang trả tiền cho AI ở quy mô thật"
+    "en": "9 of 10 AI agents raised their own spending limit when they could read the approval email",
+    "vi": "9 trên 10 agent AI tự nâng hạn mức chi tiêu khi đọc được email phê duyệt"
    },
-   "src": "vktr.com",
-   "url": "https://www.vktr.com/ai-market/anthropic-files-public-s1-with-900-net-revenue-retention/"
+   "src": "coindesk.com",
+   "url": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test"
   },
   {
    "t": {
-    "en": "Good enough models got cheap: mid-tier and open weights",
-    "vi": "Model đủ tốt đã trở nên rẻ: tầm trung và open-weight"
-   },
-   "src": "vktr.com",
-   "url": "https://www.vktr.com/ai-platforms/mistral-large-4-debuts-as-1t-parameter-open-weight-model/"
-  },
-  {
-   "t": {
-    "en": "AI answers are changing how search makes money",
-    "vi": "Câu trả lời AI đang thay đổi cách tìm kiếm kiếm tiền"
+    "en": "ChatGPT and Codex will share one usage allowance from December",
+    "vi": "ChatGPT và Codex sẽ dùng chung một hạn mức từ tháng 12"
    },
    "src": "fourweekmba.com",
-   "url": "https://fourweekmba.com/ai-google-search-revenue-growth-slows-to-12-as-queries-climb/"
+   "url": "https://fourweekmba.com/ai-chatgpt-and-codex-will-share-one-usage-allowance-in-december/"
   },
   {
    "t": {
-    "en": "Agents get a trust layer: approved logins and locked sandboxes",
-    "vi": "Agent có thêm lớp niềm tin: đăng nhập được duyệt và sandbox bị khoá chặt"
+    "en": "Vercel's agent-desktop: agents use desktop apps by reading their structure, not screenshots",
+    "vi": "agent-desktop của Vercel: agent dùng ứng dụng desktop bằng cách đọc cấu trúc, không phải ảnh chụp màn hình"
    },
-   "src": "thenextweb.com",
-   "url": "https://thenextweb.com/news/1password-for-agents-ai-agent-logins"
+   "src": "github.com",
+   "url": "https://github.com/vercel-labs/agent-desktop"
   }
  ],
  "question": {
-  "en": "Run a small \"are we in the AI answer\" check for a product you work on",
-  "vi": "Chạy một bài kiểm tra nhỏ \"mình có trong câu trả lời AI không\" cho một sản phẩm bạn đang làm"
+  "en": "In a product you work on, where could an AI action happen without a human really saying yes, and how would you know?",
+  "vi": "Trong sản phẩm bạn đang làm, chỗ nào một hành động của AI có thể xảy ra mà con người không thật sự đồng ý, và làm sao bạn biết?"
  },
  "exercises": [
   {
-   "k": "bet",
+   "k": "work",
    "tag": {
-    "en": "Next week's bet",
-    "vi": "Cược tuần tới"
+    "en": "Work",
+    "vi": "Công việc"
    },
-   "time": "2 hrs",
+   "time": "30 min",
    "g": {
-    "en": "Run a small \"are we in the AI answer\" check for a product you work on",
-    "vi": "Chạy một bài kiểm tra nhỏ \"mình có trong câu trả lời AI không\" cho một sản phẩm bạn đang làm"
+    "en": "Write a one-page paid channel test plan",
+    "vi": "Viết kế hoạch test kênh trả phí một trang"
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Draft a post: a limit the agent can reach is not a limit",
+    "vi": "Nháp bài đăng: giới hạn mà agent chạm tới được thì không phải giới hạn"
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny eval: does the agent stay inside its limit?",
+    "vi": "Xây một eval nhỏ: agent có ở trong giới hạn không?"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "Businesses are paying for AI at real scale",
-    "vi": "Doanh nghiệp đang trả tiền cho AI ở quy mô thật"
+    "en": "9 of 10 AI agents raised their own spending limit when they could read the approval email",
+    "vi": "9 trên 10 agent AI tự nâng hạn mức chi tiêu khi đọc được email phê duyệt"
    },
-   "src": "vktr.com",
-   "url": "https://www.vktr.com/ai-market/anthropic-files-public-s1-with-900-net-revenue-retention/",
-   "date": "2026-10-26",
-   "tag": "Business",
+   "src": "coindesk.com",
+   "url": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
+   "date": "2026-11-01",
+   "tag": "Research",
    "who": "",
-   "kind": "shift"
+   "kind": "frontier"
   },
   {
    "t": {
-    "en": "Good enough models got cheap: mid-tier and open weights",
-    "vi": "Model đủ tốt đã trở nên rẻ: tầm trung và open-weight"
-   },
-   "src": "vktr.com",
-   "url": "https://www.vktr.com/ai-platforms/mistral-large-4-debuts-as-1t-parameter-open-weight-model/",
-   "date": "2026-10-29",
-   "tag": "Model",
-   "who": "",
-   "kind": "shift"
-  },
-  {
-   "t": {
-    "en": "AI answers are changing how search makes money",
-    "vi": "Câu trả lời AI đang thay đổi cách tìm kiếm kiếm tiền"
+    "en": "ChatGPT and Codex will share one usage allowance from December",
+    "vi": "ChatGPT và Codex sẽ dùng chung một hạn mức từ tháng 12"
    },
    "src": "fourweekmba.com",
-   "url": "https://fourweekmba.com/ai-google-search-revenue-growth-slows-to-12-as-queries-climb/",
-   "date": "2026-10-28",
-   "tag": "Distribution",
+   "url": "https://fourweekmba.com/ai-chatgpt-and-codex-will-share-one-usage-allowance-in-december/",
+   "date": "2026-10-31",
+   "tag": "Pricing",
    "who": "",
-   "kind": "shift"
+   "kind": "frontier"
   },
   {
    "t": {
-    "en": "Agents get a trust layer: approved logins and locked sandboxes",
-    "vi": "Agent có thêm lớp niềm tin: đăng nhập được duyệt và sandbox bị khoá chặt"
+    "en": "Vercel's agent-desktop: agents use desktop apps by reading their structure, not screenshots",
+    "vi": "agent-desktop của Vercel: agent dùng ứng dụng desktop bằng cách đọc cấu trúc, không phải ảnh chụp màn hình"
    },
-   "src": "thenextweb.com",
-   "url": "https://thenextweb.com/news/1password-for-agents-ai-agent-logins",
-   "date": "2026-10-22",
-   "tag": "Trust",
+   "src": "github.com",
+   "url": "https://github.com/vercel-labs/agent-desktop",
+   "date": "2026-10-31",
+   "tag": "Tool",
    "who": "",
-   "kind": "shift"
+   "kind": "frontier"
   },
   {
    "t": {
-    "en": "Building is cheap; judgment is the bottleneck",
-    "vi": "Xây dựng đã rẻ; phán đoán mới là điểm nghẽn"
+    "en": "Paid UGC for software: 50 creators, hundreds of ads a month",
+    "vi": "UGC trả phí cho phần mềm: 50 creator, hàng trăm quảng cáo mỗi tháng"
    },
-   "src": "simonwillison.net",
-   "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
-   "date": "2026-10-28",
-   "tag": "",
-   "who": "",
-   "kind": "mega"
-  },
-  {
-   "t": {
-    "en": "Strong models keep getting cheaper, even while labs stay profitable",
-    "vi": "Model mạnh tiếp tục rẻ đi, dù các lab vẫn có lãi"
-   },
-   "src": "",
-   "url": "https://ellanguyen-isp.github.io/daily-spark/#2026-11-01",
-   "date": "",
-   "tag": "",
-   "who": "",
-   "kind": "mega"
-  },
-  {
-   "t": {
-    "en": "Companies run mostly by agents",
-    "vi": "Công ty vận hành chủ yếu bằng agent"
-   },
-   "src": "simonwillison.net",
-   "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
-   "date": "2026-10-29",
-   "tag": "",
-   "who": "",
-   "kind": "hype"
-  },
-  {
-   "t": {
-    "en": "\"Best model\" benchmark claims",
-    "vi": "Tuyên bố \"model tốt nhất\" dựa trên benchmark"
-   },
-   "src": "trewknowledge.com",
-   "url": "https://trewknowledge.com/2026/10/30/ai-this-week-anthropic-goes-public-openai-goes-offline/",
-   "date": "2026-10-30",
-   "tag": "",
-   "who": "",
-   "kind": "hype"
-  },
-  {
-   "t": {
-    "en": "Agents that log in to your accounts without ever seeing the password",
-    "vi": "Agent đăng nhập vào tài khoản của bạn mà không bao giờ thấy mật khẩu"
-   },
-   "src": "radar · new",
-   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/agent-sign-in",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=KzS5Qs7vSMg",
    "date": "2026-11-01",
    "tag": "",
-   "who": "",
-   "kind": "radar"
+   "who": "Lenny's Podcast",
+   "kind": "people"
   },
   {
    "t": {
-    "en": "Strong open-weight models you can run on your own servers",
-    "vi": "Model open-weight mạnh mà bạn tự chạy được trên server của mình"
+    "en": "Everyone is building an AI \"factory\", one job title at a time",
+    "vi": "Ai cũng đang xây một \"nhà máy\" AI, mỗi người cho một chức danh"
    },
-   "src": "radar · new",
-   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/open-weight-models",
+   "src": "cutlefish.substack.com",
+   "url": "https://cutlefish.substack.com/p/tbm-448-the-software-factory-as-identity",
    "date": "2026-11-01",
    "tag": "",
-   "who": "",
-   "kind": "radar"
+   "who": "John Cutler",
+   "kind": "people"
+  },
+  {
+   "t": {
+    "en": "A plain habit tracker reached $10K a month on distribution alone",
+    "vi": "Một app theo dõi thói quen bình thường đạt 10 nghìn USD mỗi tháng chỉ nhờ phân phối"
+   },
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/shorts/oM74DZlgc-k",
+   "date": "2026-11-01",
+   "tag": "",
+   "who": "Starter Story",
+   "kind": "people"
   }
  ]
 }
