@@ -31,8 +31,13 @@ Shared rules (two repos, privacy, writing rules, no em dash) are in `CLAUDE.md`.
    `python3 scripts/spark.py publish /tmp/weekly.json --private-dir ../ella-second-brain/daily-spark/weekly`.
    It strips `review` from the public copy. Fix any error and run again.
 9. **Check** the page once with Playwright: home (Today card is the weekly), `#<date>`, and `#radar`.
-10. **Commit and push both repos** to `main`: this repo `git add -A && git commit -m "weekly <date>" && git push`; private repo: only `daily-spark/`.
-11. **Notify.** One Gmail email to the user (address in `profile.yaml`), subject `daily spark · weekly <d Mon>: <headline>`.
+10. **Knowledge base (private wiki).** Save the week's best into `../ella-second-brain/ella@llm_wiki/`, following that folder's own `CLAUDE.md` (its schema, section 5 ingest workflow, index and log formats) exactly.
+    - **What:** only items she marked `useful` or `deeper` this week (Supabase feedback after the test cutoff; item ids map to editions: `f0` = `frontier.items[0]`, `p1` = `people[1]`, `t0` = `timeless`, `m0` = weekly `market.shifts[0]`, `h0` = weekly `trend[0]`), plus this weekly's `mega` trends and radar new/moved entries.
+    - **How:** for each marked item, read the original source again, write it as a new raw file `raw/daily-spark/<date>-<slug>.md` (title, url, date, source, the key points, and why she marked it), then ingest it: source page, create or update concept and entity pages, `wiki/index.md`. Mega trends and radar moves update one overview page, `wiki/overviews/ai-capability-radar.md` (create it the first time).
+    - Write **one** log entry for the batch: `## [<date>] ingest | daily spark <edition>: N sources`. If nothing was marked, ingest only the overview and say so in the log.
+    - **Never** put recaps, the week in review, or anything about her job, company or products in the wiki. Never edit existing files in `raw/`.
+11. **Commit and push both repos** to `main`: this repo `git add -A && git commit -m "weekly <date>" && git push`; private repo: only `daily-spark/` and `ella@llm_wiki/`.
+12. **Notify.** One Gmail email to the user (address in `profile.yaml`), subject `daily spark · weekly <d Mon>: <headline>`.
     Body: the week in one line, one line per shift, the bet, and the link `<site>#<date>` plus `<site>#radar`. Plain and short.
     Your **final message** is the same short text. If the run failed, one plain line saying what broke and whether an edition was published.
 
