@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<base target="_top">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>daily spark · new tab</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="newtab.css">
+</head>
+<body>
+<div class="poster">
+  <header class="top">
+    <a class="brand" id="brand" href="#"><span class="mark" id="mark"></span><span>daily spark</span></a>
+    <nav class="links">
+      <a href="https://mail.google.com/mail/">Gmail</a>
+      <a href="https://www.google.com/imghp">Images</a>
+      <button type="button" class="apps" id="appsBtn" aria-label="Google apps" aria-expanded="false" aria-controls="appsPanel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><g fill="currentColor"><circle cx="5" cy="5" r="2"/><circle cx="12" cy="5" r="2"/><circle cx="19" cy="5" r="2"/><circle cx="5" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="19" cy="12" r="2"/><circle cx="5" cy="19" r="2"/><circle cx="12" cy="19" r="2"/><circle cx="19" cy="19" r="2"/></g></svg>
+      </button>
+      <a class="acct" href="https://myaccount.google.com/" aria-label="Google Account">E</a>
+      <div class="panel" id="appsPanel" hidden></div>
+    </nav>
+  </header>
+  <main class="field" id="field"><p class="status" id="status">Loading today's spark…</p></main>
+  <footer class="bottom">
+    <div class="b-left"><span class="num" id="date"></span><span class="num muted" id="ed"></span></div>
+    <div class="b-mid" id="headline"></div>
+    <div class="b-right"><a class="full" id="full" href="#">Read the full spark →</a><div class="seg" id="seg"></div></div>
+  </footer>
+</div>
+<script src="newtab.js"></script>
+</body>
+</html>
