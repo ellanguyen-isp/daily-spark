@@ -66,6 +66,7 @@ Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `e
 
 ## Writing rules
 - Simple, direct English; short sentences. Vietnamese (`vi`) is a natural translation, not word-for-word.
+- **Public sections stay generic.** Everything except `work` (and the weekly `review`) is public. There, never name or hint at her company, products, clients, markets or projects; write "a feature you are working on", not the real thing. Specifics belong only in the private sections.
 - **Never use the em dash character.** Use a colon, comma, or a new sentence.
 - Every story has its date and original source URL. Dates as `YYYY-MM-DD`.
 - `stat` only when the source states a standout number; never invent or round up numbers.

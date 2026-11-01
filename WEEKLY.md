@@ -25,7 +25,7 @@ Shared rules (two repos, privacy, writing rules, no em dash) are in `CLAUDE.md`.
    Run `python3 scripts/spark.py radar` until it passes. In the edition, `radar.note` says in 1 to 2 sentences what changed, and `radar.changes` lists the new and moved entries (`id`, `status`, `e`).
 6. **Week in review (private).** From this week's recaps, picks and feedback: 2 to 4 `wins`, 2 to 4 `stuck` points, and one `pattern`
    (what keeps happening, said kindly and honestly). If there were no recaps this week, say so in `pattern` and keep wins/stuck to what the data shows. Never invent.
-7. **Next week's bet.** One concrete thing to build, test or write next week, tied to her current focus and this week's market.
+7. **Next week's bet** (public: keep it generic, no company, product or market names; see `CLAUDE.md` writing rules). One concrete thing to build, test or write next week, tied to her current focus and this week's market.
    `t` (the bet), `why`, `s` (3 steps), `o` (what she will have), `time` (e.g. `2 hrs`). Small enough to finish in the week.
 8. **Write and publish.** Write the JSON (schema below) to `/tmp/weekly.json`, then
    `python3 scripts/spark.py publish /tmp/weekly.json --private-dir ../ella-second-brain/daily-spark/weekly`.

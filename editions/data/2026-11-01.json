@@ -234,23 +234,23 @@
  "bet": {
   "time": "2 hrs",
   "t": {
-   "en": "Run a small \"are we in the AI answer\" check for your health app in the US",
-   "vi": "Chạy một bài kiểm tra nhỏ \"mình có trong câu trả lời AI không\" cho app sức khoẻ của bạn ở Mỹ"
+   "en": "Run a small \"are we in the AI answer\" check for a product you work on",
+   "vi": "Chạy một bài kiểm tra nhỏ \"mình có trong câu trả lời AI không\" cho một sản phẩm bạn đang làm"
   },
   "why": {
-   "en": "This week showed US users are searching more but clicking less, because AI answers do the picking. When your app is aimed at the US market, knowing which apps ChatGPT, Gemini and Claude recommend is a cheap, early read on distribution. It is also a tiny eval, which feeds your AI evals interest and a post.",
-   "vi": "Tuần này cho thấy người dùng tìm kiếm nhiều hơn nhưng bấm link ít hơn, vì câu trả lời AI chọn giúp họ. Khi app của bạn nhắm tới thị trường Mỹ, biết ChatGPT, Gemini và Claude gợi ý app nào là một cách rẻ để đọc sớm tình hình phân phối. Đây cũng là một bài eval nhỏ, phục vụ mối quan tâm về AI evals của bạn và một bài đăng."
+   "en": "This week showed people are searching more but clicking less, because AI answers do the picking. Knowing which products ChatGPT, Gemini and Claude recommend in your category is a cheap, early read on distribution. It is also a tiny eval, which feeds your AI evals interest and a post.",
+   "vi": "Tuần này cho thấy người dùng tìm kiếm nhiều hơn nhưng bấm vào ít hơn, vì câu trả lời AI đã chọn giúp họ. Biết ChatGPT, Gemini và Claude đang gợi ý sản phẩm nào trong ngành của bạn là một cách rẻ để đọc sớm tín hiệu phân phối. Đây cũng là một bài eval nhỏ, hợp với mối quan tâm về AI eval của bạn và thành một bài viết."
   },
   "s": {
    "en": [
-    "Write 10 questions a US user would ask before choosing a diet or calorie app (30 min)",
-    "Ask each one in ChatGPT, Gemini and Claude; log in a sheet which apps are named, which sources are cited, and whether your app appears (60 min)",
-    "Pick the 3 sources cited most and write a short note or post on what your app should do about them (30 min)"
+    "Write 10 questions a user would ask before choosing a product in your category (30 min)",
+    "Ask each one in ChatGPT, Gemini and Claude; log in a sheet which products are named, which sources are cited, and whether yours appears (60 min)",
+    "Pick the 3 sources cited most and write a short note or post on what your product should do about them (30 min)"
    ],
    "vi": [
-    "Viết 10 câu hỏi mà một người dùng Mỹ sẽ hỏi trước khi chọn app ăn kiêng hoặc đếm calo (30 phút)",
-    "Hỏi từng câu trên ChatGPT, Gemini và Claude; ghi vào một sheet app nào được nhắc, nguồn nào được trích, và app của bạn có xuất hiện không (60 phút)",
-    "Chọn 3 nguồn được trích nhiều nhất và viết một ghi chú hoặc bài đăng ngắn về việc app của bạn nên làm gì với chúng (30 phút)"
+    "Viết 10 câu hỏi một người dùng sẽ hỏi trước khi chọn một sản phẩm trong ngành của bạn (30 phút)",
+    "Hỏi từng câu trên ChatGPT, Gemini và Claude; ghi vào sheet sản phẩm nào được nhắc, nguồn nào được trích, và sản phẩm của bạn có xuất hiện không (60 phút)",
+    "Chọn 3 nguồn được trích nhiều nhất và viết một ghi chú hoặc bài viết ngắn về việc sản phẩm của bạn nên làm gì với chúng (30 phút)"
    ]
   },
   "o": {
