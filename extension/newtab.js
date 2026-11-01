@@ -79,6 +79,47 @@ function render() {
   });
 }
 
+// Google apps panel: plain links with simple generic icons (edit APPS to choose your own).
+var IC = {
+  user: '<circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/>',
+  mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+  drive: '<path d="M8 3h8l6 10-4 7H6l-4-7z"/><path d="M8 3l6 10h8M2 13h12l-4 7"/>',
+  spark: '<path d="M12 2c.6 5 4.9 9.4 10 10-5.1.6-9.4 5-10 10-.6-5-4.9-9.4-10-10 5.1-.6 9.4-5 10-10z"/>',
+  doc: '<path d="M6 2h8l5 5v15H6z"/><path d="M14 2v5h5M9 13h7M9 17h5"/>',
+  sheet: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/>',
+  slide: '<rect x="3" y="5" width="18" height="14" rx="2"/><rect x="7" y="9" width="10" height="6" rx="1"/>',
+  cal: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+  chat: '<path d="M4 5h16v11H9l-5 4z"/>',
+  video: '<rect x="2" y="6" width="13" height="12" rx="2"/><path d="M15 10l7-4v12l-7-4"/>',
+  keep: '<path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3z"/>',
+  photo: '<rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M21 16l-5-5-9 9"/>',
+  map: '<path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>',
+  yt: '<rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z"/>',
+  tr: '<path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c0 3-3 7-7 9M13 21l4-10 4 10M14.5 17h5"/>'
+};
+var APPS = [
+  ["Account", "https://myaccount.google.com/", "user", "#6a5acd"], ["Gmail", "https://mail.google.com/mail/", "mail", "#d93025"], ["Drive", "https://drive.google.com/", "drive", "#1e8e3e"],
+  ["Gemini", "https://gemini.google.com/", "spark", "#5b6ee1"], ["Docs", "https://docs.google.com/document/", "doc", "#4285f4"], ["Sheets", "https://docs.google.com/spreadsheets/", "sheet", "#188038"],
+  ["Slides", "https://docs.google.com/presentation/", "slide", "#f2a600"], ["Calendar", "https://calendar.google.com/", "cal", "#1a73e8"], ["Chat", "https://chat.google.com/", "chat", "#34a853"]
+];
+var MORE = [
+  ["Meet", "https://meet.google.com/", "video", "#00897b"], ["Keep", "https://keep.google.com/", "keep", "#f9ab00"], ["Photos", "https://photos.google.com/", "photo", "#ea4335"],
+  ["Maps", "https://maps.google.com/", "map", "#34a853"], ["YouTube", "https://www.youtube.com/", "yt", "#e53935"], ["Translate", "https://translate.google.com/", "tr", "#4285f4"]
+];
+function appLinks(list) {
+  return list.map(function (a) {
+    return '<a href="' + a[1] + '"><span class="ic" style="background:' + a[3] + '"><svg viewBox="0 0 24 24" aria-hidden="true">' + IC[a[2]] + '</svg></span><span>' + a[0] + '</span></a>';
+  }).join("");
+}
+(function () {
+  var btn = document.getElementById("appsBtn"), panel = document.getElementById("appsPanel");
+  panel.innerHTML = '<div class="fav"><h3>Your favorites</h3><div class="grid">' + appLinks(APPS) + '</div></div><div class="grid more">' + appLinks(MORE) + '</div>';
+  function show(on) { panel.hidden = !on; btn.setAttribute("aria-expanded", String(on)); }
+  btn.addEventListener("click", function (e) { e.stopPropagation(); show(panel.hidden); });
+  document.addEventListener("click", function (e) { if (!panel.hidden && !panel.contains(e.target)) show(false); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") show(false); });
+})();
+
 fetch(SITE + "latest.json", { cache: "no-cache" })
   .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(function (d) { data = d; render(); })
