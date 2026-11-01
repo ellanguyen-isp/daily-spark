@@ -4,11 +4,13 @@
   python3 scripts/spark.py ledger
       What was already sent: recent dates, used source URLs, timeless sources.
 
-  python3 scripts/spark.py publish EDITION.json [--private-dir DIR]
+  python3 scripts/spark.py publish EDITION.json [--private-dir DIR] [--blocklist FILE]
       Validate a full edition (daily, or "type": "weekly"), then:
         - write the public copy (no private "work" / "review" sections) to editions/data/<date>.json
         - rebuild editions/index.json and latest.json
         - if --private-dir is given, write the full edition as Markdown there
+      --blocklist: a private text file, one name per line (company, product, client).
+      Publishing fails if any of them appears in the public copy.
 
   python3 scripts/spark.py radar
       Validate radar.json (the "what's really possible now" page).
@@ -27,6 +29,7 @@ PRIVATE = ("work", "review")  # sections that never reach the public repo
 RADAR = ROOT / "radar.json"
 MATURITY = ("ready", "emerging", "early")
 STATUS = ("new", "moved", "stable")
+TIMELESS_GAP = 60  # days before a timeless source may come back
 
 
 def kind(E):
@@ -62,14 +65,37 @@ def walk_text(o, path="$"):
             yield from walk_text(v, f"{path}[{i}]")
 
 
-def used_urls(exclude_date=None):
+def used_urls():
+    """Each source URL with the date it was first sent (a weekly may repeat a daily's URL later)."""
     urls = {}
     for f in sorted(DATA.glob("*.json")):
-        if f.stem == exclude_date:
-            continue
         for u in re.findall(r'"url":\s*"([^"]+)"', f.read_text()):
-            urls[u] = f.stem
+            urls.setdefault(u, f.stem)
     return urls
+
+
+def days_between(a, b):
+    from datetime import date
+    return (date.fromisoformat(b) - date.fromisoformat(a)).days
+
+
+def recent_timeless(date):
+    """Timeless sources used in the TIMELESS_GAP days before this date."""
+    out = {}
+    for f in DATA.glob("*.json"):
+        if f.stem < date and days_between(f.stem, date) <= TIMELESS_GAP:
+            E = json.loads(f.read_text())
+            if kind(E) == "daily":
+                out[E["timeless"]["src"].strip().lower()] = f.stem
+    return out
+
+
+def check_blocklist(public, path):
+    words = [w.strip() for w in Path(path).read_text().splitlines() if w.strip() and not w.startswith("#")]
+    for where, text in walk_text(public):
+        for w in words:
+            need(not re.search(r"(?<!\w)" + re.escape(w) + r"(?!\w)", text, re.I),
+                 f"{where}: names a private term from the blocklist; keep public sections generic")
 
 
 def no_dash(o):
@@ -192,9 +218,11 @@ def validate(E):
 
     no_dash(E)
 
-    reused = {u: d for u, d in used_urls(E["date"]).items()
-              if u in {x.get("url") for x in F["items"] + E["people"]}}
+    reused = {u: d for u, d in used_urls().items()
+              if d < E["date"] and u in {x.get("url") for x in F["items"] + E["people"]}}
     need(not reused, "already sent before: " + ", ".join(f"{u} ({d})" for u, d in reused.items()))
+    seen = recent_timeless(E["date"]).get(T["src"].strip().lower())
+    need(not seen, f"timeless.src: already used on {seen}; pick another (no repeats within {TIMELESS_GAP} days)")
 
 
 def stamps(E):
@@ -322,12 +350,17 @@ def cmd_ledger(_):
 
 def cmd_publish(a):
     E = json.loads(Path(a.file).read_text())
+    public = {k: v for k, v in E.items() if k not in PRIVATE}
     try:
         validate(E)
+        if a.blocklist:
+            if Path(a.blocklist).exists():
+                check_blocklist(public, a.blocklist)
+            else:
+                print("note: no blocklist at", a.blocklist, "(privacy check skipped)", file=sys.stderr)
     except Invalid as e:
         print("INVALID:", e, file=sys.stderr)
         return 1
-    public = {k: v for k, v in E.items() if k not in PRIVATE}
     DATA.mkdir(parents=True, exist_ok=True)
     (DATA / f"{E['date']}.json").write_text(json.dumps(public, ensure_ascii=False, indent=1))
     eds = rebuild_index()
@@ -358,6 +391,7 @@ def main(argv=None):
     p = sub.add_parser("publish")
     p.add_argument("file")
     p.add_argument("--private-dir")
+    p.add_argument("--blocklist")
     sub.add_parser("radar")
     a = ap.parse_args(argv)
     return {"ledger": cmd_ledger, "publish": cmd_publish, "radar": cmd_radar}[a.cmd](a)

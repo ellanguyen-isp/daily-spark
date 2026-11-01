@@ -31,7 +31,7 @@ Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `e
    and `../ella-second-brain/ella@llm_wiki/wiki/index.md` for long-term interests.
    **Recaps, feedback and picks (Supabase):** if `profile.yaml` has `supabase.url` and `supabase.anon_key`, call
    `curl -s -X POST "$URL/rest/v1/rpc/ds_recent" -H "apikey: $ANON" -H "Authorization: Bearer $ANON" -H "Content-Type: application/json" -d '{"token":"<read_key>","days":7}'`.
-   **Email recaps:** also search Gmail for her replies to "daily spark · recap time" from the last 2 days and treat each reply as a recap.
+   **Email recaps:** also search Gmail for her replies to any "daily spark ·" email from the last 2 days and treat each reply as a recap.
    **Ignore test data:** skip every recap, feedback, pick and note with `created_at` before `2026-10-31T09:30:00Z` (setup tests), and any note whose `item` is `test`.
    Archive each new recap as `../ella-second-brain/daily-spark/recaps/<day>.md` (append if the file exists). Never copy keys or recap text into this repo.
    Use them: **recaps** drive the private work section and the Think questions; **feedback** per item id (f0, p1...) on past editions:
@@ -53,13 +53,14 @@ Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `e
 8. **Think.** Exactly 3 questions. Each connects to something in today's edition (`c` says which). The user answers in her own words.
 9. **Exercises.** Exactly 3, in this order: `work`, `write`, `build`. Each: goal, 3 steps, time (`20 min` style), what she will have at the end.
 10. **Write** the full edition JSON (schema below) to a temp file, then
-    `python3 scripts/spark.py publish /tmp/edition.json --private-dir ../ella-second-brain/daily-spark/editions`.
-    It fails loudly on a missing field, a reused URL, or an em dash. Fix and run again.
+    `python3 scripts/spark.py publish /tmp/edition.json --private-dir ../ella-second-brain/daily-spark/editions --blocklist ../ella-second-brain/daily-spark/blocklist.txt`.
+    It fails loudly on a missing field, a reused URL, a timeless source used in the last 60 days, a private name from the blocklist, or an em dash. Fix and run again.
 11. **Check** the page: open `index.html` locally (Playwright is available) once, look at today's spark, fix anything broken.
 12. **Commit and push both repos** to `main` (pushing is authorised; no pull request).
     This repo: `git add -A && git commit -m "edition <date>" && git push`. Private repo: commit only `daily-spark/`.
 13. **Notify.** Send one email with Gmail to the user (address in `profile.yaml`), subject `daily spark · <d Mon>: <headline>`
-    (headline = the summary's part before the colon). HTML body: fill `templates/email.html` exactly (one headline row per frontier story);
+    (headline = the summary's part before the colon). HTML body: fill `templates/email.html` exactly (one headline row per frontier story;
+    it ends with tonight's 3 recap questions, since there is no separate evening email);
     plain-text body: the same content as plain lines. Link: `<site>#<date>` (`{{SITE}}` = `site_url` in `config/site.json`).
     Your **final message** is the same short text (it becomes the push notification). If the run failed, the final message
     is one plain line saying what broke and whether an edition was published.

@@ -20,7 +20,7 @@ Status: agreed 2026-10-31. Nothing personal ever lives in this repo.
 
 ```
                     +-----------------------------------+
-  06:30 local       |  WORKER (Claude scheduled task)   |
+  06:12 local       |  WORKER (Claude scheduled task)   |
   ----------------> |  1. sync repos                    |
                     |  2. FETCH new items from sources  |
                     |  3. read user context             |
@@ -40,10 +40,11 @@ Status: agreed 2026-10-31. Nothing personal ever lives in this repo.
                       |               +---------------------------------+
                       | read by
         +-------------v-------------+        +----------------------------+
-        | Web page / Chrome new tab | -----> | Supabase (insert-only)     |
-        | recap box + thumbs up/down|        | recaps, feedback, exercise |
-        +---------------------------+        +-------------+--------------+
-                                                           | read next morning
+        | Web page / Chrome new tab | -----> | Supabase (write key only)  |
+        | recap box, feedback, notes|        | recaps, feedback, picks,   |
+        +---------------------------+        | notes                      |
+                                             +-------------+--------------+
+                                                           | read next morning (read key)
                                                            v
                                                          WORKER
 ```
@@ -55,9 +56,10 @@ Lives in the user's **private** repo. This repo ships only examples in `config/`
 
 | File | What it holds |
 |---|---|
-| `profile.yaml` | who I am, role, goals, interests, current focus, context paths (notes to learn interests from) |
-| `sources.yaml` | sources with type (`rss`, `youtube`, `podcast`, `web`), url, tags, priority, check frequency |
-| `settings.yaml` | timezone, schedule, language, notification channels, public site on/off, Supabase project |
+| `profile.yaml` | who I am, role, goals, interests, current focus, email, Supabase read key |
+| `blocklist.txt` | company, product and client names that must never reach the public site (checked by `spark.py publish --blocklist`) |
+
+Public settings live in this repo: `config/site.json` (owner, site_url, languages, Supabase URL and public key) and `config/sources.yaml`.
 
 ### 3.2 Fetch layer (`scripts/fetch.py`)
 - Reads `sources.yaml`, pulls new items from RSS/Atom feeds (Substack, blogs, YouTube channel feeds, podcast feeds).
@@ -82,7 +84,7 @@ Lives in the user's **private** repo. This repo ships only examples in `config/`
 
 | # | Section | Rule | Public page |
 |---|---|---|---|
-| 1 | Frontier | Big product/AI news relevant to the user. Max 1 to 2. Skip if nothing. | yes |
+| 1 | Frontier | Big picture + 2 to 4 product/AI stories. Smaller real stories when nothing big happened; never pad. | yes |
 | 2 | From people you follow | Always. What followed builders published, plus the insight. | yes |
 | 3 | Relevant to your work | Personalized from recaps. | **hidden** (private copy + email only) |
 | 4 | Timeless | One lasting principle or strategy. | yes |
@@ -97,19 +99,19 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 - **Chrome new tab (`extension/`):** small Chrome extension that shows the latest edition on every new tab, read from `latest.json`. Installed with "Load unpacked" (no store needed).
 
 ### 3.7 Interaction (Supabase, free tier)
-- Tables: `recaps`, `feedback` (item thumbs up/down), `exercise_log` (which exercise was picked/done).
-- Row Level Security: the page can **insert only**; nobody can read through the public key. The Worker reads with the service connection.
-- A personal key saved once in the user's browser marks their entries; entries without it are ignored.
-- Community default without Supabase: reply to the email.
+- Tables: `recaps`, `feedback` (useful / knew / notme / deeper per item), `picks` (exercise picked), `notes` (her question on one item). Setup: `supabase/schema.sql`.
+- Row Level Security: the page can only **insert**, and only with the write key (saved once per device in Menu > This device). Nobody can read through the public key.
+- The Worker reads through the `ds_recent` function with the read key from `profile.yaml`.
+- Without Supabase: reply to the morning email; the Worker reads replies as recaps.
 
 ### 3.8 Schedules
 | Time (local) | Task |
 |---|---|
-| 06:12 Monday to Saturday | Morning edition, notify by ~07:00 |
-| 19:42 daily | Recap reminder (push + email) linking to the recap box |
+| 05:40 daily | GitHub Actions fetch robot (`fetch.yml`), no Claude cost |
+| 06:12 Monday to Saturday | Morning edition, notify by ~07:00. The email also carries the recap prompt (no separate evening task since 2026-11-01) |
 | 07:41 Sunday | Weekly edition (replaces the daily): market overview + "what is really possible now" radar. Runbook: `WEEKLY.md` |
 
-## 3.9 Design (design system v1, approved 2026-11-01)
+### 3.9 Design (design system v1, approved 2026-11-01)
 - Source of truth: the "daily spark" Design System artifact (tokens, principles, logos). Every color, size, space and radius in the site, the new tab and the email comes from it; no one-off values.
 - Themes: Light (page Petal `#e8d9ed`, cards Lace `#f7f4ed` and Bridal Blue `#e9f3ff`, accent Sapphire `#426bc2`, text Midnight `#0b1957`) and Dark (page Midnight `#0b1957`, cards `#17286f` and `#1b2f7c`, accent Lavender `#c7a9e3`, text Lace). The reader picks in Menu > Appearance: Auto (follows the device, default), Light, Dark; saved as `ds-theme`. Daily and weekly use the same theme; the weekly is marked by a "Weekly" tag, not by color.
 - Type: Instrument Serif for headlines and quotes only; IBM Plex Sans for all text and numbers (lining, tabular). Six sizes 11 / 13 / 15 / 21 / 30 / 44, weights 400 and 600 only.
@@ -126,7 +128,7 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 - Email: `templates/email.html`, light by default, dark colors for mail apps that support dark mode.
 - Notes: a Note button after the 4 feedback icons opens a text box per item; saved to Supabase `notes` (private) and read by the next run as the strongest signal.
 
-## 3.11 Weekly edition and radar (added 2026-10-31)
+### 3.10 Weekly edition and radar (added 2026-10-31)
 - Sunday only; the weekly replaces that day's daily. Edition number `W01`, `W02`...; `"type": "weekly"` in the JSON and in `editions/index.json`.
 - Sections: market overview (big picture + 3 to 5 shifts with sources) · mega trend vs hype · radar changes · week in review (private, stripped like "work") · next week's bet.
 - Design: same stamp layout and the reader's theme as the daily; marked by a "Weekly" tag and its W number.
@@ -134,7 +136,7 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 - Knowledge base: every Sunday the weekly run ingests what she marked Useful / Go deeper that week, plus mega trends and radar moves, into her private wiki (`ella@llm_wiki`, its own schema). Recaps and work details never go in.
 - Radar: `radar.json` (public), dashboard page `#radar`: stats, filter "only this week's changes", and a progress chart (one row per capability on an Early, Emerging, Ready line; hollow dot + line = where it was before its last move). Click a row: side panel (web) / bottom sheet (phone) at `#radar/<id>` with meaning, limits, evidence and history timeline. Each capability: area, maturity (ready / emerging / early), status (new / moved / stable), what it means for products, where it breaks, 1 to 4 dated sources. Validate with `spark.py radar`.
 
-## 3.10 Source collection (updated 2026-10-31)
+### 3.11 Source collection (updated 2026-10-31)
 - Blogs/newsletters: RSS, fetched directly (25 feeds, most verified).
 - YouTube: YouTube Data API (free key, ~20 quota units/day for 10 channels) as primary; YouTube RSS as fallback (it is often down for hours).
 - Podcasts: podcast RSS feeds for show notes; public transcript archives where they exist (e.g. Lenny's Podcast transcripts on GitHub).
@@ -161,24 +163,25 @@ daily-spark/
 Private side (Ella):
 ```
 ella-second-brain/daily-spark/
-├── profile.yaml, sources.yaml, settings.yaml
+├── profile.yaml, blocklist.txt
 ├── editions/            <- full editions (Markdown)
 ├── recaps/              <- daily recap archive
-├── weekly/
-└── kb/ (radar.md, ideas.md, index.md)
+└── weekly/
+ella@llm_wiki/            <- knowledge base, written by the weekly run
 ```
 
 ## 5. Privacy rules
 1. Nothing personal in this repo: no profile, no recaps, no section 3.
 2. Recaps and feedback go to Supabase (insert-only from the page) and are archived in the private repo.
+   Public sections stay generic; `blocklist.txt` makes publishing fail if a private name slips in.
 3. The Worker reads only the context paths listed in `profile.yaml`.
-4. The public site is unlisted until the user decides to share it.
+4. The site is public. Others follow it (read, new tab, feedback); running your own copy is optional.
 
 ## 6. Build plan
 | Week | Ship |
 |---|---|
 | 1 | Framework, config, fetch layer, morning edition, Pages site, push + email, Chrome new tab |
-| 2 | Supabase: recap box, thumbs up/down, exercise log; 20:00 recap task |
+| 2 | Supabase: recap box, feedback, notes, exercise picks |
 | 3 | Weekly edition, radar, knowledge base |
 | 4 | Polish for community: README, setup skill (`/daily-spark setup`) |
 

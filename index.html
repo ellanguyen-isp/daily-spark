@@ -578,7 +578,7 @@ h1, h2, h3, p { margin: 0; }
         '<h2>' + esc(sp[0]) + '</h2>' + (sp[1] ? '<p>' + esc(sp[1]) + '</p>' : "") +
         (lt ? '<ul>' + lt.headlines.map(function (h) { return '<li><span>' + esc(L(h.t)) + '</span><span>' + esc(h.src) + '</span></li>'; }).join("") + '</ul>' : "") +
         '<span class="btn">' + esc(w0 ? u("readweek") : u("readtoday")) + IC.arrow + '</span></div></a>';
-    } else { today = '<p class="sempty">' + esc(u("none")) + '</p>'; }
+    } else { today = '<p class="sempty">' + esc(state.loaded ? u("none") : u("loading")) + '</p>'; }
     var wk = state.days.filter(function (d) { return d.type === "weekly"; })[0];
     var week = wk && wk !== d0 ? '<a class="swk" href="#' + wk.date + '"><span><span class="wtag">' + esc(u("thisweek")) + '</span><span class="se num">' + esc(shortDate(wk.date)) + ' · ' + esc(wk.edition) + '</span></span>' +
       '<span class="st">' + esc(splitSummary(L(wk.summary))[0]) + '</span></a>' : "";
@@ -586,7 +586,7 @@ h1, h2, h3, p { margin: 0; }
       var w = d.type === "weekly";
       return '<a class="srow" href="#' + d.date + '"><span class="sd num">' + esc(shortDate(d.date)) + '</span><span class="st">' + (w ? '<span class="wtag">' + esc(u("weekly")) + '</span>' : "") + esc(splitSummary(L(d.summary))[0]) +
         '</span><span class="se num">' + esc(d.edition) + '</span></a>';
-    }).join("") : '<p class="sempty">' + esc(u("earlier")) + '</p>';
+    }).join("") : '<p class="sempty">' + esc(state.loaded ? u("earlier") : u("loading")) + '</p>';
     return '<div class="shome"><header class="snav"><div class="scont"><a class="brandmk" href="#" aria-label="daily spark">' + MARK + '</a>' +
       '<div class="right">' + webTabs("sparks") + menuBtn() + '</div></div></header>' +
       '<main class="scont"><section class="sgreet"><p class="lbl">' + esc((OWNER ? u("hi") + " " + OWNER + " · " : "") + longDate(todayVN())) + '</p><h1>' + esc(greet) + '</h1><p>' + esc(u("tagline")) + '</p></section>' +
@@ -752,7 +752,7 @@ h1, h2, h3, p { margin: 0; }
   fetch("editions/index.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : { editions: [] }; })
     .catch(function () { return { editions: [] }; })
     .then(function (idx) {
-      state.days = idx.editions || [];
+      state.days = idx.editions || []; state.loaded = true;
       return fetch("latest.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
     })
     .then(function (lt) { state.latest = lt; route(); });

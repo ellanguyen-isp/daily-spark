@@ -15,10 +15,19 @@ Every morning a robot collects new posts and videos from the sources you choose,
 
 Read it on any device, or as your Chrome new tab. English and Vietnamese.
 
+## Follow along (no setup)
+Most people don't need their own copy. Just read this one:
+- **Read:** https://ellanguyen-isp.github.io/daily-spark/ (a new spark Monday to Saturday, a weekly on Sunday, and the AI radar at `#radar`).
+- **New tab (Chrome):** download this repo as a ZIP, then Chrome → Extensions → Developer mode → Load unpacked → pick the `extension` folder.
+- **Phone:** open the site and use "Add to Home Screen".
+- **Feedback:** open an issue in this repo with what was useful and what wasn't.
+
+Want your own version, with your sources and a private section about your work? See "Set up your own" below.
+
 ## How it works
 ```
 05:40  GitHub Actions  -> scripts/fetch.py  -> data/candidates/<date>.json
-06:30  Claude (scheduled task, runbook in CLAUDE.md) -> editions/data/<date>.json
+06:12  Claude (scheduled task, runbook in CLAUDE.md) -> editions/data/<date>.json
        -> GitHub Pages site + latest.json -> push notification + email
 ```
 Details: [ARCHITECTURE.md](ARCHITECTURE.md). Design: [design/final.html](design/final.html).
@@ -43,9 +52,9 @@ CLAUDE.md               the Worker's runbook
    in your repo: Settings → Secrets and variables → Actions → New secret `YOUTUBE_API_KEY`.
 4. **Site:** Settings → Pages → Deploy from a branch → `main`, folder `/ (root)`.
 5. **Private profile:** in a private repo, create `daily-spark/profile.yaml` (see CLAUDE.md for what the Worker reads).
-6. **Morning run:** in Claude, create a scheduled task at 06:30 your time with the prompt:
+6. **Morning run:** in Claude, create a scheduled task at about 06:15 your time with the prompt:
    *"Run daily-spark for today. Follow CLAUDE.md in the daily-spark repo."*
 7. **Chrome new tab (optional):** set `SITE` in `newtab/newtab.js` and the iframe address in `extension/newtab.html` to your Pages address, then
    Chrome → Extensions → Developer mode → Load unpacked → pick the `extension` folder.
 
-A guided setup (`/daily-spark setup`) is planned for week 4.
+A guided setup will come once a few people ask to run their own.

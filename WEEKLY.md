@@ -28,7 +28,7 @@ Shared rules (two repos, privacy, writing rules, no em dash) are in `CLAUDE.md`.
 7. **Next week's bet** (public: keep it generic, no company, product or market names; see `CLAUDE.md` writing rules). One concrete thing to build, test or write next week, tied to her current focus and this week's market.
    `t` (the bet), `why`, `s` (3 steps), `o` (what she will have), `time` (e.g. `2 hrs`). Small enough to finish in the week.
 8. **Write and publish.** Write the JSON (schema below) to `/tmp/weekly.json`, then
-   `python3 scripts/spark.py publish /tmp/weekly.json --private-dir ../ella-second-brain/daily-spark/weekly`.
+   `python3 scripts/spark.py publish /tmp/weekly.json --private-dir ../ella-second-brain/daily-spark/weekly --blocklist ../ella-second-brain/daily-spark/blocklist.txt`.
    It strips `review` from the public copy. Fix any error and run again.
 9. **Check** the page once with Playwright: home (Today card is the weekly), `#<date>`, and `#radar`.
 10. **Knowledge base (private wiki).** Save the week's best into `../ella-second-brain/ella@llm_wiki/`, following that folder's own `CLAUDE.md` (its schema, section 5 ingest workflow, index and log formats) exactly.
