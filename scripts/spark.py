@@ -203,7 +203,14 @@ def stamps(E):
         return {"t": it["t"], "src": it.get("src", ""), "url": it["url"], "date": it.get("date", ""),
                 "tag": it.get("tag", ""), "who": who or it.get("who", ""), "kind": kind}
     if kind(E) == "weekly":
-        return [st(it, "shift") for it in E["market"]["shifts"]]
+        site = "https://ellanguyen-isp.github.io/daily-spark/"  # community users: your own site
+        out = [st(it, "shift") for it in E["market"]["shifts"]]
+        out += [{"t": x["t"], "src": x.get("src", ""), "url": x.get("url") or f"{site}#{E['date']}", "date": x.get("date", ""),
+                 "tag": "", "who": "", "kind": x["k"]} for x in E.get("trend", [])]
+        caps = {x["id"]: x["cap"] for x in json.loads(RADAR.read_text())["entries"]} if RADAR.exists() else {}
+        out += [{"t": caps.get(c["id"], c["e"]), "src": "radar · " + c["status"], "url": f"{site}#radar/{c['id']}", "date": E["date"], "tag": "", "who": "",
+                 "kind": "radar"} for c in E.get("radar", {}).get("changes", [])]
+        return out
     return [st(it, "frontier") for it in E["frontier"]["items"]] + [st(it, "people") for it in E["people"]]
 
 

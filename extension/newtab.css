@@ -26,13 +26,14 @@ a { color: inherit; }
 .seg button[aria-pressed="true"] { background: var(--cream); color: var(--ink); }
 
 /* the stamp field */
-.field { display: flex; flex-wrap: wrap; justify-content: center; align-content: center; gap: 34px 38px; padding: 10px 0; }
+.field { display: flex; flex-wrap: wrap; justify-content: center; align-content: center; align-items: flex-start; gap: 26px 28px; padding: 10px 0; max-width: 1180px; margin: 0 auto; width: 100%; }
 .status { color: var(--muted); }
-.stamp { --c: var(--lace); --t: var(--ink); position: relative; isolation: isolate; display: grid; grid-template-rows: auto 1fr auto; gap: 10px;
-  width: 210px; min-height: 250px; padding: 18px 16px 14px; margin: 7px; text-decoration: none; color: var(--t);
+.stamp { --c: var(--lace); --t: var(--ink); position: relative; isolation: isolate; display: grid; gap: 8px; align-content: start;
+  width: 172px; padding: 14px 13px 12px; margin: 7px; text-decoration: none; color: var(--t); align-self: flex-start;
   transform: rotate(var(--r, 0deg)) translateY(var(--y, 0)); transition: transform .2s ease; }
-.stamp.wide { width: 270px; min-height: 200px; }
-.stamp.tall { min-height: 300px; }
+.stamp.wide { width: 220px; }
+.stamp { grid-template-columns: minmax(0, 1fr); }
+.stamp > * { min-width: 0; }
 .stamp::before { content: ""; position: absolute; inset: -7px; z-index: -1;
   background:
     radial-gradient(circle at 50% 0, var(--bg) 4.5px, transparent 5px) 0 -1px / 14px 8px repeat-x,
@@ -44,15 +45,17 @@ a { color: inherit; }
 .stamp::after { content: ""; position: absolute; inset: 6px; border: 1px solid currentColor; opacity: .18; pointer-events: none; }
 .stamp:hover, .stamp:focus-visible { transform: rotate(0deg) translateY(-4px) scale(1.03); outline: none; }
 .stamp.seen { --c: var(--blue); --t: var(--cream); }
-.stamp .meta { display: flex; justify-content: space-between; gap: 8px; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; opacity: .75; }
-.stamp h2 { margin: 0; font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: 23px; line-height: 1.1; text-wrap: balance; }
-.stamp .foot { display: flex; justify-content: space-between; align-items: end; gap: 8px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
-.stamp .no { font-family: "Instrument Serif", Georgia, serif; font-size: 30px; line-height: .8; letter-spacing: 0; text-transform: none; opacity: .9; }
+.stamp .meta > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.stamp .meta > span:last-child { white-space: nowrap; }
+.stamp .meta { display: flex; justify-content: space-between; gap: 8px; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; opacity: .75; }
+.stamp h2 { margin: 0 0 6px; font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: 19px; line-height: 1.12; text-wrap: balance; }
+.stamp .foot { display: flex; justify-content: space-between; align-items: end; gap: 8px; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
+.stamp .no { font-family: "Instrument Serif", Georgia, serif; font-size: 24px; line-height: .8; letter-spacing: 0; text-transform: none; opacity: .9; }
 :focus-visible { outline: 2px solid #c7a9e3; outline-offset: 3px; }
 @media (max-width: 760px) {
   .poster { padding: 16px; }
   .bottom { flex-direction: column; align-items: stretch; text-align: left; }
   .b-mid { text-align: left; }
   .b-right { justify-items: start; }
-  .stamp, .stamp.wide { width: 100%; min-height: 0; }
+  .stamp, .stamp.wide { width: 100%; }
 }

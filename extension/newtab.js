@@ -5,9 +5,9 @@ var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", 
 var WD = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 var MARK = '<svg viewBox="320 320 614 614" aria-hidden="true" fill="currentColor"><polygon points="625,332 638,332 657,535 607,557"/><polygon points="607,712 660,688 638,920 626,920"/><polygon points="333,613 632,590 920,613 920,628 646,650 333,628"/><polygon points="371,767 547,645 632,590 881,473 889,487 727,598 646,651 378,780"/></svg>';
 var T = {
-  en: { full: "Read the full spark →", fullw: "Read this week →", edition: "Edition", weekly: "Weekly", frontier: "Frontier", people: "People", shift: "This week",
+  en: { full: "Read the full spark →", fullw: "Read this week →", edition: "Edition", weekly: "Weekly", frontier: "Frontier", people: "People", shift: "This week", mega: "Mega trend", hype: "Hype", radar: "Radar",
         fail: "Could not load today's spark. Check your connection, or open the site.", hint: "Open a stamp to read. Read stamps turn blue." },
-  vi: { full: "Đọc spark đầy đủ →", fullw: "Đọc bản tuần này →", edition: "Số", weekly: "Hằng tuần", frontier: "Tin nóng", people: "Người theo dõi", shift: "Tuần này",
+  vi: { full: "Đọc spark đầy đủ →", fullw: "Đọc bản tuần này →", edition: "Số", weekly: "Hằng tuần", frontier: "Tin nóng", people: "Người theo dõi", shift: "Tuần này", mega: "Xu hướng lớn", hype: "Cơn sốt", radar: "Radar",
         fail: "Không tải được spark hôm nay. Kiểm tra kết nối, hoặc mở trang web.", hint: "Mở một con tem để đọc. Tem đã đọc sẽ chuyển màu xanh." }
 };
 var lang = get("ds-nt-lang", "en");
@@ -31,8 +31,8 @@ function head(t) { var i = t.indexOf(": "); return i > 0 ? t.slice(0, i) : t; }
 
 // stable "random" tilt and offset per stamp, so the poster does not jump on every new tab
 var TILT = [-2.5, 1.8, -1, 2.6, -1.8, 1.2, -2.2, 0.8];
-var DROP = ["0px", "18px", "-10px", "26px", "4px", "-14px", "12px", "-4px"];
-var SIZE = ["", "wide", "tall", "", "wide", "", "tall", "wide"];
+var DROP = ["0px", "14px", "-8px", "20px", "4px", "-10px", "10px", "-4px"];
+var SIZE = ["", "wide", "", "", "wide", "", "", "wide"];
 
 function render() {
   var t = T[lang], field = document.getElementById("field");
@@ -65,6 +65,9 @@ function render() {
     a.addEventListener("auxclick", function () { markSeen(s.url); a.classList.add("seen"); });
     field.appendChild(a);
   });
+  // balanced rows: 2 rows up to 10 stamps, then 3 rows
+  var rows = list.length > 10 ? 3 : 2;
+  field.style.maxWidth = list.length > 4 ? (Math.ceil(list.length / rows) * 262) + "px" : "";
 
   var seg = document.getElementById("seg");
   seg.textContent = "";

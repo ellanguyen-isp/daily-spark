@@ -110,6 +110,78 @@
    "tag": "Trust",
    "who": "",
    "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "Building is cheap; judgment is the bottleneck",
+    "vi": "Xây dựng đã rẻ; phán đoán mới là điểm nghẽn"
+   },
+   "src": "simonwillison.net",
+   "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+   "date": "2026-10-28",
+   "tag": "",
+   "who": "",
+   "kind": "mega"
+  },
+  {
+   "t": {
+    "en": "Strong models keep getting cheaper, even while labs stay profitable",
+    "vi": "Model mạnh tiếp tục rẻ đi, dù các lab vẫn có lãi"
+   },
+   "src": "",
+   "url": "https://ellanguyen-isp.github.io/daily-spark/#2026-11-01",
+   "date": "",
+   "tag": "",
+   "who": "",
+   "kind": "mega"
+  },
+  {
+   "t": {
+    "en": "Companies run mostly by agents",
+    "vi": "Công ty vận hành chủ yếu bằng agent"
+   },
+   "src": "simonwillison.net",
+   "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+   "date": "2026-10-29",
+   "tag": "",
+   "who": "",
+   "kind": "hype"
+  },
+  {
+   "t": {
+    "en": "\"Best model\" benchmark claims",
+    "vi": "Tuyên bố \"model tốt nhất\" dựa trên benchmark"
+   },
+   "src": "trewknowledge.com",
+   "url": "https://trewknowledge.com/2026/10/30/ai-this-week-anthropic-goes-public-openai-goes-offline/",
+   "date": "2026-10-30",
+   "tag": "",
+   "who": "",
+   "kind": "hype"
+  },
+  {
+   "t": {
+    "en": "Agents that log in to your accounts without ever seeing the password",
+    "vi": "Agent đăng nhập vào tài khoản của bạn mà không bao giờ thấy mật khẩu"
+   },
+   "src": "radar · new",
+   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/agent-sign-in",
+   "date": "2026-11-01",
+   "tag": "",
+   "who": "",
+   "kind": "radar"
+  },
+  {
+   "t": {
+    "en": "Strong open-weight models you can run on your own servers",
+    "vi": "Model open-weight mạnh mà bạn tự chạy được trên server của mình"
+   },
+   "src": "radar · new",
+   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/open-weight-models",
+   "date": "2026-11-01",
+   "tag": "",
+   "who": "",
+   "kind": "radar"
   }
  ]
 }

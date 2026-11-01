@@ -119,7 +119,7 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 - Daily page: translucent top bar (back, date, menu). Menu = reading mode (swipe default / scroll), language EN/VI, feedback legend, other days. Translucent bottom bar with swipe dots.
 - Content depth: Frontier = big picture + 3 to 4 stories (date, original source, type, key points, why it matters) + what to watch; People = 3 items with 4 key points + takeaway; key numbers only for standout items.
 - Feedback per item: 4 icons in one line: Useful, Knew it (raise the bar), Not for me, Go deeper.
-- Chrome new tab (v1.1, 2026-11-01): stamp poster on Midnight. Top: logo left, Gmail and Google right. Middle: every news item of the latest edition is a stamp (Lace); a stamp turns Sapphire once opened (remembered in the extension). Bottom: date + edition left, headline middle, "Read the full spark" + EN/VI right. Data: `latest.json` `stamps`.
+- Chrome new tab (v1.1, 2026-11-01): stamp poster on Midnight. Top: logo left, Gmail and Google right. Middle: every news item of the latest edition is a stamp (Lace); a stamp turns Sapphire once opened (remembered in the extension). Bottom: date + edition left, headline middle, "Read the full spark" + EN/VI right. Stamps are small and grow with their text, in 2 balanced rows. Daily: every frontier + people item. Weekly: shifts + mega/hype calls + radar changes. Data: `latest.json` `stamps`.
 - Notes: a Note button after the 4 feedback icons opens a text box per item; saved to Supabase `notes` (private) and read by the next run as the strongest signal.
 
 ## 3.11 Weekly edition and radar (added 2026-10-31)
