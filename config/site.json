@@ -2,5 +2,9 @@
   "owner": "Ella",
   "site_url": "https://ellanguyen-isp.github.io/daily-spark/",
   "supabase_url": "https://lfmtagwcdfolkgbjfsoz.supabase.co",
-  "supabase_anon_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxmbXRhZ3djZGZvbGtnYmpmc296Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM0MzE0MjYsImV4cCI6MjEwOTAwNzQyNn0.VliUeQE0n6qaPmfJhpL1jCUyiG4wTXFIOX2g2XAFqp4"
+  "supabase_anon_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxmbXRhZ3djZGZvbGtnYmpmc296Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM0MzE0MjYsImV4cCI6MjEwOTAwNzQyNn0.VliUeQE0n6qaPmfJhpL1jCUyiG4wTXFIOX2g2XAFqp4",
+  "languages": [
+    "en",
+    "vi"
+  ]
 }

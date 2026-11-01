@@ -824,7 +824,7 @@ button, input, textarea { font: inherit; color: inherit; }
     return state.menu ? '<div class="sheet" role="dialog" aria-label="' + esc(u("menu")) + '">' +
       '<div class="row"><span class="lbl muted">' + esc(u("reading")) + '</span><div class="seg2"><button type="button" data-set="view" data-v="swipe" aria-pressed="' + (state.view === "swipe") + '">' +
       esc(u("swipe")) + '</button><button type="button" data-set="view" data-v="scroll" aria-pressed="' + (state.view === "scroll") + '">' + esc(u("scroll")) + '</button></div></div>' +
-      '<div class="row"><span class="lbl muted">' + esc(u("language")) + '</span>' + langSeg() + '</div>' +
+      ((SITE.languages || ["en", "vi"]).length > 1 ? '<div class="row"><span class="lbl muted">' + esc(u("language")) + '</span>' + langSeg() + '</div>' : "") +
       '<div class="row"><span class="lbl muted">' + esc(u("fbtitle")) + '</span>' + fbKey() + '</div>' +
       '<div class="row"><span class="lbl muted">' + esc(u("device")) + '</span><span class="small">' + esc(wkey() ? u("connected") : u("notConnected")) + '</span>' +
       (wkey() ? '<button type="button" class="iconbtn" id="disc" style="justify-self:start">' + esc(u("disconnect")) + '</button>' :

@@ -21,7 +21,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "editions" / "data"
-LANGS = ("en", "vi")
+LANGS = tuple(json.loads((ROOT / "config" / "site.json").read_text()).get("languages", ["en", "vi"])) if (ROOT / "config" / "site.json").exists() else ("en", "vi")
 FORBIDDEN = "—"  # em dash: house style says never use it
 PRIVATE = ("work", "review")  # sections that never reach the public repo
 RADAR = ROOT / "radar.json"
