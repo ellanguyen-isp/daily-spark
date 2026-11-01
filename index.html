@@ -156,7 +156,7 @@ button, input, textarea { font: inherit; color: inherit; }
 .fb .notebtn[aria-pressed="true"] { background: var(--p-ink); border-color: var(--p-ink); color: var(--p-surface); }
 .weekly .fb .notebtn[aria-pressed="true"] { background: #c7a9e3; border-color: #c7a9e3; color: #0b1957; }
 .notebox { display: grid; gap: 8px; }
-.notebox textarea { width: 100%; min-height: 72px; resize: vertical; border: 1px solid var(--p-line); border-radius: 12px; padding: 10px 12px; background: var(--p-field); color: var(--p-ink); font: inherit; font-size: var(--t-small); }
+.notebox textarea { width: 100%; min-height: 38px; height: 38px; resize: none; overflow: hidden; line-height: 1.45; border: 1px solid var(--p-line); border-radius: 12px; padding: 10px 12px; background: var(--p-field); color: var(--p-ink); font: inherit; font-size: var(--t-small); }
 .notebox .row2 { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
 .notebox .save { margin: 0; }
 .lock { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; border: 1px dashed var(--p-muted); border-radius: 999px; padding: 2px 10px; color: var(--p-muted); width: fit-content; }
@@ -512,7 +512,7 @@ button, input, textarea { font: inherit; color: inherit; }
     return '<div class="fb" role="group" aria-label="Feedback">' + FBK.map(function (k) {
       return '<button type="button" data-fb="' + id + '" data-val="' + k[0] + '" aria-pressed="' + (v === k[0]) + '" aria-label="' + esc(u(k[1])) + '" title="' + esc(u(k[1])) + '">' + ICON[k[0]] + '</button>';
     }).join("") + '<button type="button" class="notebtn" data-note="' + id + '" aria-pressed="' + (!!n || open) + '" aria-expanded="' + open + '" title="' + esc(u("note_ph")) + '">' + NOTEICON + '<span>' + esc(u("note")) + '</span></button></div>' +
-      (open ? '<div class="notebox"><textarea id="note-' + id + '" placeholder="' + esc(u("note_ph")) + '" maxlength="2000">' + esc(n) + '</textarea>' +
+      (open ? '<div class="notebox"><textarea rows="1" class="grow" id="note-' + id + '" placeholder="' + esc(u("note_ph")) + '" maxlength="2000">' + esc(n) + '</textarea>' +
         '<div class="row2"><button type="button" class="save" data-note-save="' + id + '">' + esc(u("save")) + '</button><span class="small" id="note-st-' + id + '"></span></div></div>' : "");
   }
   function fbKey() { return '<div class="fbkey">' + FBK.map(function (k) { return '<span>' + ICON[k[0]] + esc(u(k[1])) + '</span>'; }).join("") + '</div>'; }
@@ -902,6 +902,9 @@ button, input, textarea { font: inherit; color: inherit; }
     dev.querySelectorAll("[data-note]").forEach(function (b) { b.addEventListener("click", function () {
       var k = fbid(b.dataset.note); state.noteOpen = state.noteOpen === k ? null : k; render();
       var ta = document.getElementById("note-" + b.dataset.note); if (ta) ta.focus(); }); });
+    dev.querySelectorAll("textarea.grow").forEach(function (ta) {
+      function fit() { ta.style.height = "auto"; ta.style.height = ta.scrollHeight + 2 + "px"; }
+      ta.addEventListener("input", fit); fit(); });
     dev.querySelectorAll("[data-note-save]").forEach(function (b) { b.addEventListener("click", function () {
       var id = b.dataset.noteSave, body = document.getElementById("note-" + id).value.trim(), st = document.getElementById("note-st-" + id);
       state.notes[fbid(id)] = body; save("notes", state.notes);

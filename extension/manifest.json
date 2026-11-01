@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "daily-spark new tab",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Shows today's daily-spark on every new tab.",
   "chrome_url_overrides": { "newtab": "newtab.html" },
   "host_permissions": ["https://ellanguyen-isp.github.io/*"]

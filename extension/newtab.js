@@ -30,8 +30,8 @@ function short(s) { if (!/^\d{4}-\d{2}-\d{2}$/.test(s || "")) return ""; var d =
 function head(t) { var i = t.indexOf(": "); return i > 0 ? t.slice(0, i) : t; }
 
 // stable "random" tilt and offset per stamp, so the poster does not jump on every new tab
-var TILT = [-2.5, 1.8, -1, 2.6, -1.8, 1.2, -2.2, 0.8];
-var DROP = ["0px", "14px", "-8px", "20px", "4px", "-10px", "10px", "-4px"];
+var TILT = [-2, 1.5, -1, 2, -1.5, 1, -1.8, 0.8];
+var DROP = ["0px", "8px", "-4px", "10px", "2px", "-6px", "6px", "-2px"];
 var SIZE = ["", "wide", "", "", "wide", "", "", "wide"];
 
 function render() {
@@ -42,6 +42,7 @@ function render() {
   field.textContent = "";
   if (!data) { field.appendChild(el("p", { class: "status" }, t.fail)); return; }
   var weekly = data.type === "weekly", link = SITE + "#" + data.date, seen = seenMap();
+  document.body.className = weekly ? "weekly" : "daily";
   document.getElementById("date").textContent = fmt(data.date);
   document.getElementById("ed").textContent = weekly ? t.weekly + " · " + data.edition : t.edition + " " + data.edition;
   document.getElementById("headline").textContent = head(L(data.summary));
@@ -67,7 +68,7 @@ function render() {
   });
   // balanced rows: 2 rows up to 10 stamps, then 3 rows
   var rows = list.length > 10 ? 3 : 2;
-  field.style.maxWidth = list.length > 4 ? (Math.ceil(list.length / rows) * 262) + "px" : "";
+  field.style.maxWidth = list.length > 4 ? (Math.ceil(list.length / rows) * 280) + "px" : "";
 
   var seg = document.getElementById("seg");
   seg.textContent = "";
