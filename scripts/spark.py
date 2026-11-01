@@ -197,6 +197,16 @@ def validate(E):
     need(not reused, "already sent before: " + ", ".join(f"{u} ({d})" for u, d in reused.items()))
 
 
+def stamps(E):
+    """Every news item of an edition, for the Chrome new tab (one stamp each)."""
+    def st(it, kind, who=""):
+        return {"t": it["t"], "src": it.get("src", ""), "url": it["url"], "date": it.get("date", ""),
+                "tag": it.get("tag", ""), "who": who or it.get("who", ""), "kind": kind}
+    if kind(E) == "weekly":
+        return [st(it, "shift") for it in E["market"]["shifts"]]
+    return [st(it, "frontier") for it in E["frontier"]["items"]] + [st(it, "people") for it in E["people"]]
+
+
 def rebuild_index():
     eds = []
     for f in sorted(DATA.glob("*.json"), reverse=True):
@@ -219,6 +229,7 @@ def rebuild_index():
             "question": E["think"][0]["q"],
             "exercises": [{"k": e["k"], "tag": e["tag"], "time": e["time"], "g": e["g"]} for e in E["exercises"]],
         }
+        latest["stamps"] = stamps(E)
         (ROOT / "latest.json").write_text(json.dumps(latest, ensure_ascii=False, indent=1))
     return eds
 

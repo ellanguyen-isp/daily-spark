@@ -10,12 +10,21 @@
 <link rel="stylesheet" href="newtab.css">
 </head>
 <body>
-<main class="wrap">
-  <article class="card" id="card">
-    <div class="head"><span class="wordmark">daily-spark</span><span class="lbl muted num" id="date"></span></div>
-    <p class="small" id="status">Loading today's spark…</p>
-  </article>
-</main>
+<div class="poster">
+  <header class="top">
+    <a class="brand" id="brand" href="#"><span class="mark" id="mark"></span><span>daily spark</span></a>
+    <nav class="links">
+      <a href="https://mail.google.com/mail/" id="gmail">Gmail</a>
+      <a href="https://www.google.com/" id="google">Google</a>
+    </nav>
+  </header>
+  <main class="field" id="field"><p class="status" id="status">Loading today's spark…</p></main>
+  <footer class="bottom">
+    <div class="b-left"><span class="num" id="date"></span><span class="num muted" id="ed"></span></div>
+    <div class="b-mid" id="headline"></div>
+    <div class="b-right"><a class="full" id="full" href="#">Read the full spark →</a><div class="seg" id="seg"></div></div>
+  </footer>
+</div>
 <script src="newtab.js"></script>
 </body>
 </html>

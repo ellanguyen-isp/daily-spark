@@ -1,34 +1,58 @@
-/* Same tokens as the site (Petal palette). */
-:root { --bg: #e8d9ed; --ink: #0b1957; --muted: #5a5683; --line: rgba(11,25,87,.14); --accent: #426bc2; --card: #f7f4ed; --inset: rgba(255,255,255,.66); --chip: rgba(255,255,255,.72); color-scheme: light; }
+/* daily spark new tab: stamp poster. Midnight field, every news item is a stamp.
+   Unread stamps are Lace; a stamp turns Sapphire once you open that news. */
+:root { --bg: #0b1957; --ink: #0b1957; --lace: #f3ecdc; --blue: #3d6fe0; --cream: #f7f4ed; --muted: #b9bde3; color-scheme: dark; }
 * { box-sizing: border-box; }
-html, body { margin: 0; min-height: 100%; }
-body { background: var(--bg); color: var(--ink); font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 15px; line-height: 1.6; font-variant-numeric: lining-nums tabular-nums; }
-.wrap { min-height: 100vh; display: grid; place-items: center; padding: 32px 16px; }
-.card { position: relative; isolation: isolate; width: min(640px, 100%); padding: 26px; display: grid; gap: 18px; margin: 6px; }
-.card::before { content: ""; position: absolute; inset: -6px; z-index: -1; border-radius: 2px;
+html, body { margin: 0; height: 100%; }
+body { background: var(--bg); color: var(--cream); font-family: "IBM Plex Sans", system-ui, sans-serif; font-size: 14px; line-height: 1.5; font-variant-numeric: lining-nums tabular-nums; }
+body::before { content: ""; position: fixed; inset: 0; pointer-events: none; opacity: .07;
+  background-image: radial-gradient(rgba(255,255,255,.9) 1px, transparent 1px); background-size: 3px 3px; }
+.poster { position: relative; min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto; padding: 22px 32px; gap: 18px; }
+a { color: inherit; }
+.top, .bottom { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-family: "Instrument Serif", Georgia, serif; font-style: italic; font-size: 26px; line-height: 1; }
+.mark svg { width: 30px; height: 30px; display: block; color: #c7a9e3; }
+.links { display: flex; gap: 18px; align-items: center; }
+.links a { text-decoration: none; font-size: 14px; color: var(--cream); opacity: .9; }
+.links a:hover { text-decoration: underline; opacity: 1; }
+.bottom { align-items: end; }
+.b-left { display: grid; gap: 2px; min-width: 150px; font-size: 13px; }
+.muted { color: var(--muted); }
+.b-mid { text-align: center; font-family: "Instrument Serif", Georgia, serif; font-size: 22px; line-height: 1.15; max-width: 560px; }
+.b-right { display: grid; justify-items: end; gap: 8px; min-width: 150px; }
+.full { font-weight: 600; text-decoration: none; background: var(--cream); color: var(--ink); border-radius: 999px; padding: 7px 16px; font-size: 13px; }
+.full:hover { background: #fff; }
+.seg { display: inline-flex; border: 1px solid rgba(247,244,237,.25); border-radius: 999px; overflow: hidden; }
+.seg button { border: 0; background: transparent; padding: 2px 10px; cursor: pointer; color: var(--muted); font: inherit; font-size: 11px; }
+.seg button[aria-pressed="true"] { background: var(--cream); color: var(--ink); }
+
+/* the stamp field */
+.field { display: flex; flex-wrap: wrap; justify-content: center; align-content: center; gap: 34px 38px; padding: 10px 0; }
+.status { color: var(--muted); }
+.stamp { --c: var(--lace); --t: var(--ink); position: relative; isolation: isolate; display: grid; grid-template-rows: auto 1fr auto; gap: 10px;
+  width: 210px; min-height: 250px; padding: 18px 16px 14px; margin: 7px; text-decoration: none; color: var(--t);
+  transform: rotate(var(--r, 0deg)) translateY(var(--y, 0)); transition: transform .2s ease; }
+.stamp.wide { width: 270px; min-height: 200px; }
+.stamp.tall { min-height: 300px; }
+.stamp::before { content: ""; position: absolute; inset: -7px; z-index: -1;
   background:
-    radial-gradient(circle at 50% 0, var(--bg) 4px, transparent 4.5px) 0 -1px / 13px 7px repeat-x,
-    radial-gradient(circle at 50% 100%, var(--bg) 4px, transparent 4.5px) 0 calc(100% + 1px) / 13px 7px repeat-x,
-    radial-gradient(circle at 0 50%, var(--bg) 4px, transparent 4.5px) -1px 0 / 7px 13px repeat-y,
-    radial-gradient(circle at 100% 50%, var(--bg) 4px, transparent 4.5px) calc(100% + 1px) 0 / 7px 13px repeat-y,
-    var(--card); }
-.head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-.wordmark { font-family: "Instrument Serif", Georgia, serif; font-size: 28px; line-height: 1; }
-.lbl { font-size: 11px; letter-spacing: .09em; text-transform: uppercase; font-weight: 600; color: var(--accent); }
-.lbl.muted { color: var(--muted); font-weight: 500; }
-.small { font-size: 13px; color: var(--muted); margin: 0; }
-.box { background: var(--inset); border-radius: 12px; padding: 14px 16px; display: grid; gap: 6px; }
-.box p { margin: 0; }
-.heads { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-.heads a { display: flex; justify-content: space-between; gap: 12px; background: var(--inset); border-radius: 10px; padding: 8px 12px; color: var(--ink); text-decoration: none; }
-.heads a:hover { box-shadow: inset 0 0 0 1px var(--accent); }
-.heads span.src { font-size: 12px; color: var(--muted); white-space: nowrap; }
-.btns { display: flex; flex-wrap: wrap; gap: 8px; }
-.btns a { border: 1px solid var(--line); background: var(--chip); color: var(--ink); border-radius: 999px; padding: 6px 12px; font-size: 13px; text-decoration: none; }
-.btns a:hover { border-color: var(--accent); }
-.readfull { color: var(--accent); font-weight: 600; text-decoration: none; }
-.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--chip); }
-.seg button { border: 0; background: transparent; padding: 3px 10px; cursor: pointer; color: var(--muted); font: inherit; font-size: 12px; }
-.seg button[aria-pressed="true"] { background: var(--ink); color: var(--card); }
-.foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    radial-gradient(circle at 50% 0, var(--bg) 4.5px, transparent 5px) 0 -1px / 14px 8px repeat-x,
+    radial-gradient(circle at 50% 100%, var(--bg) 4.5px, transparent 5px) 0 calc(100% + 1px) / 14px 8px repeat-x,
+    radial-gradient(circle at 0 50%, var(--bg) 4.5px, transparent 5px) -1px 0 / 8px 14px repeat-y,
+    radial-gradient(circle at 100% 50%, var(--bg) 4.5px, transparent 5px) calc(100% + 1px) 0 / 8px 14px repeat-y,
+    var(--c);
+  box-shadow: 0 10px 24px rgba(0,0,0,.25); }
+.stamp::after { content: ""; position: absolute; inset: 6px; border: 1px solid currentColor; opacity: .18; pointer-events: none; }
+.stamp:hover, .stamp:focus-visible { transform: rotate(0deg) translateY(-4px) scale(1.03); outline: none; }
+.stamp.seen { --c: var(--blue); --t: var(--cream); }
+.stamp .meta { display: flex; justify-content: space-between; gap: 8px; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; font-weight: 600; opacity: .75; }
+.stamp h2 { margin: 0; font-family: "Instrument Serif", Georgia, serif; font-weight: 400; font-size: 23px; line-height: 1.1; text-wrap: balance; }
+.stamp .foot { display: flex; justify-content: space-between; align-items: end; gap: 8px; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; opacity: .8; }
+.stamp .no { font-family: "Instrument Serif", Georgia, serif; font-size: 30px; line-height: .8; letter-spacing: 0; text-transform: none; opacity: .9; }
+:focus-visible { outline: 2px solid #c7a9e3; outline-offset: 3px; }
+@media (max-width: 760px) {
+  .poster { padding: 16px; }
+  .bottom { flex-direction: column; align-items: stretch; text-align: left; }
+  .b-mid { text-align: left; }
+  .b-right { justify-items: start; }
+  .stamp, .stamp.wide { width: 100%; min-height: 0; }
+}

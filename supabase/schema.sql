@@ -7,10 +7,12 @@
 create table if not exists public.recaps   (id bigserial primary key, day date not null, body text not null check (length(body) <= 4000), created_at timestamptz not null default now());
 create table if not exists public.feedback (id bigserial primary key, day date not null, item text not null check (length(item) <= 20), value text not null check (value in ('useful','knew','notme','deeper','')), created_at timestamptz not null default now());
 create table if not exists public.picks    (id bigserial primary key, day date not null, exercise text not null check (exercise in ('work','write','build','')), created_at timestamptz not null default now());
+create table if not exists public.notes    (id bigserial primary key, day date not null, item text not null check (length(item) <= 20), body text not null check (length(body) <= 2000), created_at timestamptz not null default now());
 
 alter table public.recaps   enable row level security;
 alter table public.feedback enable row level security;
 alter table public.picks    enable row level security;
+alter table public.notes    enable row level security;
 
 create or replace function public.ds_key_ok() returns boolean language sql stable as $$
   select coalesce(current_setting('request.headers', true)::json ->> 'x-ds-key', '') = '__WRITE_KEY__'
@@ -19,9 +21,11 @@ $$;
 drop policy if exists "insert with key" on public.recaps;
 drop policy if exists "insert with key" on public.feedback;
 drop policy if exists "insert with key" on public.picks;
+drop policy if exists "insert with key" on public.notes;
 create policy "insert with key" on public.recaps   for insert to anon with check (public.ds_key_ok());
 create policy "insert with key" on public.feedback for insert to anon with check (public.ds_key_ok());
 create policy "insert with key" on public.picks    for insert to anon with check (public.ds_key_ok());
+create policy "insert with key" on public.notes    for insert to anon with check (public.ds_key_ok());
 -- No select / update / delete policies: the public key cannot read or change anything.
 
 create or replace function public.ds_recent(token text, days int default 7) returns json
@@ -31,7 +35,8 @@ begin
   return json_build_object(
     'recaps',   (select coalesce(json_agg(r order by r.created_at), '[]') from recaps r   where r.created_at > now() - make_interval(days => days)),
     'feedback', (select coalesce(json_agg(f order by f.created_at), '[]') from feedback f where f.created_at > now() - make_interval(days => days)),
-    'picks',    (select coalesce(json_agg(p order by p.created_at), '[]') from picks p    where p.created_at > now() - make_interval(days => days))
+    'picks',    (select coalesce(json_agg(p order by p.created_at), '[]') from picks p    where p.created_at > now() - make_interval(days => days)),
+    'notes',    (select coalesce(json_agg(n order by n.created_at), '[]') from notes n    where n.created_at > now() - make_interval(days => days))
   );
 end $$;
 revoke all on function public.ds_recent(text, int) from public;

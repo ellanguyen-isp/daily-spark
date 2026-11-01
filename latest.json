@@ -61,5 +61,55 @@
     "vi": "Chạy một bài kiểm tra nhỏ \"mình có trong câu trả lời AI không\" cho app sức khoẻ của bạn ở Mỹ"
    }
   }
+ ],
+ "stamps": [
+  {
+   "t": {
+    "en": "Businesses are paying for AI at real scale",
+    "vi": "Doanh nghiệp đang trả tiền cho AI ở quy mô thật"
+   },
+   "src": "vktr.com",
+   "url": "https://www.vktr.com/ai-market/anthropic-files-public-s1-with-900-net-revenue-retention/",
+   "date": "2026-10-26",
+   "tag": "Business",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "Good enough models got cheap: mid-tier and open weights",
+    "vi": "Model đủ tốt đã trở nên rẻ: tầm trung và open-weight"
+   },
+   "src": "vktr.com",
+   "url": "https://www.vktr.com/ai-platforms/mistral-large-4-debuts-as-1t-parameter-open-weight-model/",
+   "date": "2026-10-29",
+   "tag": "Model",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "AI answers are changing how search makes money",
+    "vi": "Câu trả lời AI đang thay đổi cách tìm kiếm kiếm tiền"
+   },
+   "src": "fourweekmba.com",
+   "url": "https://fourweekmba.com/ai-google-search-revenue-growth-slows-to-12-as-queries-climb/",
+   "date": "2026-10-28",
+   "tag": "Distribution",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "Agents get a trust layer: approved logins and locked sandboxes",
+    "vi": "Agent có thêm lớp niềm tin: đăng nhập được duyệt và sandbox bị khoá chặt"
+   },
+   "src": "thenextweb.com",
+   "url": "https://thenextweb.com/news/1password-for-agents-ai-agent-logins",
+   "date": "2026-10-22",
+   "tag": "Trust",
+   "who": "",
+   "kind": "shift"
+  }
  ]
 }

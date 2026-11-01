@@ -152,6 +152,13 @@ button, input, textarea { font: inherit; color: inherit; }
 .fbkey span { display: inline-flex; align-items: center; gap: 6px; }
 .fbkey svg { width: 15px; height: 15px; fill: none; stroke: var(--p-accent); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 .fb button[aria-pressed="true"] { background: var(--p-accent); border-color: var(--p-accent); color: #fff; }
+.fb .notebtn { width: auto; padding: 0 12px 0 10px; gap: 6px; display: inline-flex; font-size: var(--t-small); margin-left: 4px; }
+.fb .notebtn[aria-pressed="true"] { background: var(--p-ink); border-color: var(--p-ink); color: var(--p-surface); }
+.weekly .fb .notebtn[aria-pressed="true"] { background: #c7a9e3; border-color: #c7a9e3; color: #0b1957; }
+.notebox { display: grid; gap: 8px; }
+.notebox textarea { width: 100%; min-height: 72px; resize: vertical; border: 1px solid var(--p-line); border-radius: 12px; padding: 10px 12px; background: var(--p-field); color: var(--p-ink); font: inherit; font-size: var(--t-small); }
+.notebox .row2 { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+.notebox .save { margin: 0; }
 .lock { display: inline-flex; gap: 6px; align-items: center; font-size: 12px; border: 1px dashed var(--p-muted); border-radius: 999px; padding: 2px 10px; color: var(--p-muted); width: fit-content; }
 .quote { font-family: var(--p-display); font-size: 26px; line-height: 1.15; margin: 0; text-wrap: balance; }
 .qs { margin: 0; padding: 0; list-style: none; display: grid; gap: var(--item-gap); counter-reset: q; }
@@ -443,7 +450,7 @@ button, input, textarea { font: inherit; color: inherit; }
       s_frontier: "Frontier", s_people: "From people you follow", s_work: "Relevant to your work", s_timeless: "Timeless", s_think: "Think", s_exercises: "Exercises",
       bigpic: "The big picture", principle: "The principle", points: "Key points", why: "Why it matters", take: "Takeaway for you", apply: "How to apply", example: "Example",
       private: "Private · only in your copy", watch: "What to watch next",
-      fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper",
+      fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper", note: "Note", note_ph: "A question or thought about this story. Tomorrow's spark will follow up.", note_saved: "Saved. Tomorrow's spark will use it.", note_local: "Saved in this browser only. Connect this device in the menu to sync.",
       answer_ph: "Write 2 or 3 lines. Your own words.", pick: "Pick", picked: "Picked", output: "You will have",
       recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today? What did you learn?", save: "Save", saved: "Saved. Tomorrow's spark will use it.", savedLocal: "Saved in this browser only. Connect this device in the menu to sync.", device: "This device", connected: "Connected: your recaps and feedback sync.", notConnected: "Not connected: answers stay in this browser.", keyPh: "Paste your write key", connect: "Connect", disconnect: "Disconnect",
       prev: "Previous", next: "Next", s_market: "Market overview", s_trend: "Mega trend vs hype", s_radar: "Radar", s_review: "Week in review", s_bet: "Next week's bet", mega: "Mega trend", hype: "Hype", weekly: "Weekly", thisweek: "This week", wins: "Wins", stuck: "Where you got stuck", pattern: "The pattern", whybet: "Why this bet", openradar: "Open the full radar →", radar_t: "What's really possible now", ready: "Ready", emerging: "Emerging", early: "Early", st_new: "New", st_moved: "Moved", st_stable: "Stable", breaks: "Where it breaks", meansp: "What it means for products", evid: "Evidence", updated: "Updated", readweek: "Read this week →", weekof: "Week of", radarlink: "Radar: what's really possible now", changes: "Changes this week", steps: "Steps", allcaps: "All", onlych: "Only this week's changes", history: "History", close: "Close", capabilities: "capabilities", tapdot: "Tap a row to see the details and its history.", newmoved: "New or moved this week", sincelbl: "On radar since", areas: "areas", nochange: "No changes this week.", lastwk: "Before", nowlbl: "Now", movelbl: "Moved", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark →", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
@@ -453,7 +460,7 @@ button, input, textarea { font: inherit; color: inherit; }
       s_frontier: "Tin nóng", s_people: "Từ người bạn theo dõi", s_work: "Liên quan đến công việc", s_timeless: "Bất biến", s_think: "Suy ngẫm", s_exercises: "Bài tập",
       bigpic: "Bức tranh lớn", principle: "Nguyên tắc", points: "Ý chính", why: "Vì sao quan trọng", take: "Bài học cho bạn", apply: "Cách áp dụng", example: "Ví dụ",
       private: "Riêng tư · chỉ trong bản của bạn", watch: "Điều cần theo dõi tiếp",
-      fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu",
+      fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu", note: "Ghi chú", note_ph: "Một câu hỏi hay suy nghĩ về tin này. Spark ngày mai sẽ trả lời tiếp.", note_saved: "Đã lưu. Spark ngày mai sẽ dùng nội dung này.", note_local: "Chỉ lưu trong trình duyệt này. Kết nối thiết bị trong menu để đồng bộ.",
       answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.", pick: "Chọn", picked: "Đã chọn", output: "Kết quả",
       recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì thay đổi trong cách bạn nghĩ hoặc làm? Bạn học được gì?", save: "Lưu", saved: "Đã lưu. Spark ngày mai sẽ dùng nội dung này.", savedLocal: "Chỉ lưu trong trình duyệt này. Kết nối thiết bị trong menu để đồng bộ.", device: "Thiết bị này", connected: "Đã kết nối: recap và phản hồi được đồng bộ.", notConnected: "Chưa kết nối: câu trả lời chỉ ở trong trình duyệt này.", keyPh: "Dán write key của bạn", connect: "Kết nối", disconnect: "Ngắt kết nối",
       prev: "Trước", next: "Sau", s_market: "Tổng quan thị trường", s_trend: "Xu hướng lớn và cơn sốt", s_radar: "Radar", s_review: "Nhìn lại tuần", s_bet: "Cược cho tuần tới", mega: "Xu hướng lớn", hype: "Cơn sốt", weekly: "Hằng tuần", thisweek: "Tuần này", wins: "Điều làm tốt", stuck: "Chỗ bạn bị kẹt", pattern: "Quy luật", whybet: "Vì sao chọn cược này", openradar: "Mở toàn bộ radar →", radar_t: "Điều thật sự làm được lúc này", ready: "Sẵn sàng", emerging: "Đang lên", early: "Còn sớm", st_new: "Mới", st_moved: "Thay đổi", st_stable: "Ổn định", breaks: "Chỗ còn yếu", meansp: "Ý nghĩa cho sản phẩm", evid: "Bằng chứng", updated: "Cập nhật", readweek: "Đọc bản tuần này →", weekof: "Tuần", radarlink: "Radar: điều thật sự làm được lúc này", changes: "Thay đổi tuần này", steps: "Các bước", allcaps: "Tất cả", onlych: "Chỉ thay đổi tuần này", history: "Lịch sử", close: "Đóng", capabilities: "năng lực", tapdot: "Chạm vào một dòng để xem chi tiết và lịch sử.", newmoved: "Mới hoặc thay đổi tuần này", sincelbl: "Có trên radar từ", areas: "lĩnh vực", nochange: "Tuần này không có thay đổi.", lastwk: "Trước đó", nowlbl: "Hiện tại", movelbl: "Dịch chuyển", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay →", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
@@ -464,7 +471,7 @@ button, input, textarea { font: inherit; color: inherit; }
   function load(k, d) { try { var v = localStorage.getItem("ds-" + k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } }
   function save(k, v) { try { localStorage.setItem("ds-" + k, JSON.stringify(v)); } catch (e) {} }
 
-  var state = { lang: load("lang", "en"), view: load("view", "swipe"), menu: false, slide: 0, days: [], cur: null, ed: null, fb: load("fb", {}), picked: load("picked", {}) };
+  var state = { lang: load("lang", "en"), view: load("view", "swipe"), menu: false, slide: 0, days: [], cur: null, ed: null, fb: load("fb", {}), picked: load("picked", {}), notes: load("notes", {}), noteOpen: null };
   var dev = document.getElementById("device");
   var SITE = { supabase_url: "", supabase_anon_key: "" };
   fetch("config/site.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : {}; }).then(function (c) { SITE = Object.assign(SITE, c || {}); }).catch(function () {});
@@ -499,11 +506,14 @@ button, input, textarea { font: inherit; color: inherit; }
   };
   var FBK = [["useful", "fb_useful"], ["knew", "fb_knew"], ["notme", "fb_notme"], ["deeper", "fb_deeper"]];
   function fbid(id) { return state.cur + ":" + id; }
+  var NOTEICON = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>';
   function fb(id) {
-    var v = state.fb[fbid(id)] || "";
+    var v = state.fb[fbid(id)] || "", n = state.notes[fbid(id)] || "", open = state.noteOpen === fbid(id);
     return '<div class="fb" role="group" aria-label="Feedback">' + FBK.map(function (k) {
       return '<button type="button" data-fb="' + id + '" data-val="' + k[0] + '" aria-pressed="' + (v === k[0]) + '" aria-label="' + esc(u(k[1])) + '" title="' + esc(u(k[1])) + '">' + ICON[k[0]] + '</button>';
-    }).join("") + "</div>";
+    }).join("") + '<button type="button" class="notebtn" data-note="' + id + '" aria-pressed="' + (!!n || open) + '" aria-expanded="' + open + '" title="' + esc(u("note_ph")) + '">' + NOTEICON + '<span>' + esc(u("note")) + '</span></button></div>' +
+      (open ? '<div class="notebox"><textarea id="note-' + id + '" placeholder="' + esc(u("note_ph")) + '" maxlength="2000">' + esc(n) + '</textarea>' +
+        '<div class="row2"><button type="button" class="save" data-note-save="' + id + '">' + esc(u("save")) + '</button><span class="small" id="note-st-' + id + '"></span></div></div>' : "");
   }
   function fbKey() { return '<div class="fbkey">' + FBK.map(function (k) { return '<span>' + ICON[k[0]] + esc(u(k[1])) + '</span>'; }).join("") + '</div>'; }
   function stat(x) { return x && x.v ? '<div class="stat"><span class="v">' + esc(x.v) + '</span><span class="l">' + esc(L(x.l)) + '</span></div>' : ""; }
@@ -837,6 +847,8 @@ button, input, textarea { font: inherit; color: inherit; }
 
   function render() {
     var rf = document.getElementById("rflow"), rkeep = rf && state.cur === "radar" ? rf.scrollTop : 0;
+    var fl = document.getElementById("flow"), fkeep = fl ? fl.scrollTop : 0, keepCur = state.cur;
+    var skeep = Array.prototype.map.call(dev.querySelectorAll(".slide"), function (x) { return x.scrollTop; });
     var wk = isWeekly();
     dev.className = "device" + (isWeb() ? " web" : "") + (state.cur ? "" : " home-bg") + (wk ? " weekly" : "");
     document.documentElement.lang = state.lang;
@@ -844,6 +856,10 @@ button, input, textarea { font: inherit; color: inherit; }
     dev.innerHTML = '<div class="ds layout-1">' + (state.cur === "radar" ? radarHTML() : state.cur ? dayHTML() : homeHTML()) + '</div>';
     document.title = state.cur === "radar" ? "daily spark · radar" : state.cur ? "daily spark · " + shortDate(state.cur) : "daily spark";
     if (rkeep) { var rf2 = document.getElementById("rflow"); if (rf2) rf2.scrollTop = rkeep; }
+    if (keepCur === state.cur) {
+      var fl2 = document.getElementById("flow"); if (fl2 && fkeep) fl2.scrollTop = fkeep;
+      dev.querySelectorAll(".slide").forEach(function (x, i) { if (skeep[i]) x.scrollTop = skeep[i]; });
+    }
     wire();
     if (!state.cur) { layoutMasonry(); if (document.fonts && document.fonts.ready) document.fonts.ready.then(layoutMasonry); }
   }
@@ -883,6 +899,15 @@ button, input, textarea { font: inherit; color: inherit; }
       sync("feedback", { day: state.cur, item: b.dataset.fb, value: state.fb[id] || "" });
       dev.querySelectorAll('[data-fb="' + b.dataset.fb + '"]').forEach(function (x) { x.setAttribute("aria-pressed", String(state.fb[id] === x.dataset.val)); });
     }); });
+    dev.querySelectorAll("[data-note]").forEach(function (b) { b.addEventListener("click", function () {
+      var k = fbid(b.dataset.note); state.noteOpen = state.noteOpen === k ? null : k; render();
+      var ta = document.getElementById("note-" + b.dataset.note); if (ta) ta.focus(); }); });
+    dev.querySelectorAll("[data-note-save]").forEach(function (b) { b.addEventListener("click", function () {
+      var id = b.dataset.noteSave, body = document.getElementById("note-" + id).value.trim(), st = document.getElementById("note-st-" + id);
+      state.notes[fbid(id)] = body; save("notes", state.notes);
+      var nb = dev.querySelector('[data-note="' + id + '"]'); if (nb) nb.setAttribute("aria-pressed", String(!!body));
+      if (!body) { st.textContent = ""; return; }
+      sync("notes", { day: state.cur, item: id, body: body }).then(function (ok) { st.textContent = ok ? u("note_saved") : u("note_local"); }); }); });
     var sv = document.getElementById("saveRecap");
     if (sv) sv.addEventListener("click", function () {
       var body = document.getElementById("recapBox").value, note = document.getElementById("savedNote");

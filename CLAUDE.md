@@ -32,11 +32,13 @@ Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `e
    **Recaps, feedback and picks (Supabase):** if `profile.yaml` has `supabase.url` and `supabase.anon_key`, call
    `curl -s -X POST "$URL/rest/v1/rpc/ds_recent" -H "apikey: $ANON" -H "Authorization: Bearer $ANON" -H "Content-Type: application/json" -d '{"token":"<read_key>","days":7}'`.
    **Email recaps:** also search Gmail for her replies to "daily spark · recap time" from the last 2 days and treat each reply as a recap.
-   **Ignore test data:** skip every recap, feedback and pick with `created_at` before `2026-10-31T09:30:00Z` (setup tests).
+   **Ignore test data:** skip every recap, feedback, pick and note with `created_at` before `2026-10-31T09:30:00Z` (setup tests).
    Archive each new recap as `../ella-second-brain/daily-spark/recaps/<day>.md` (append if the file exists). Never copy keys or recap text into this repo.
    Use them: **recaps** drive the private work section and the Think questions; **feedback** per item id (f0, p1...) on past editions:
    `useful` = more of that source/topic, `knew` = raise the bar (less basic on that topic), `notme` = less of that source/topic,
    `deeper` = add a follow-up on that story today; **picks** show which exercise type she does, so make that one the strongest.
+   **notes** (`item` + `body`) are her own questions or thoughts on one story: treat each as the strongest signal. Answer or follow up on it today
+   (a frontier follow-up, a people pick, or the private work section), say plainly which note you are answering, and never copy the note text into the public site.
 4. **Frontier (web search allowed).** Search the last 48 hours for big product and AI news that a product builder should know
    (new models, major launches, platform shifts). Combine with `role: frontier` candidates. Pick 2 to 4 stories.
    If nothing is genuinely important, use 2 smaller but real stories and say so in the big picture. Never pad with hype.
