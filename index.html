@@ -430,6 +430,9 @@ button, input, textarea { font: inherit; color: inherit; }
   .prow .ptrack, .prow .pcols { grid-column: 1 / -1; grid-row: 2; }
   .prow.phead .pl { display: none; }
 }
+.iconbtn.homemenu { width: 42px; height: 42px; justify-content: center; padding: 0; font-size: 16px; }
+.shome ~ .sheet { top: calc(76px + env(safe-area-inset-top)); background: rgba(247,244,237,.97); }
+.device.web .shome ~ .sheet { right: max(16px, calc((100% - 1100px) / 2)); }
 </style>
 </head>
 <body>
@@ -792,9 +795,10 @@ button, input, textarea { font: inherit; color: inherit; }
         '</span><span class="se num">' + esc(w ? d.edition : u("edition") + ' ' + d.edition) + '</span></a>';
     }).join("") : '<p class="sempty">' + esc(u("earlier")) + '</p>';
     var radar = '<a class="sradar" href="#radar"><span>' + esc(u("radarlink")) + '</span><span>→</span></a>';
-    return '<div class="shome"><header class="snav"><div class="scont"><a class="brand" href="#" aria-label="daily spark">' + MARK + '<span>daily spark</span></a>' + langSeg() + '</div></header>' +
+    return '<div class="shome"><header class="snav"><div class="scont"><a class="brand" href="#" aria-label="daily spark">' + MARK + '<span>daily spark</span></a>' +
+      '<button type="button" class="iconbtn homemenu" data-menu="1" aria-expanded="' + state.menu + '" aria-label="' + esc(u("menu")) + '">☰</button></div></header>' +
       '<main class="scont"><section class="sgreet"><h1>' + esc(greet) + '</h1><p>' + esc(u("tagline")) + '</p></section>' +
-      '<div class="sgrid">' + today + '<div class="srows">' + week + '<span class="lbl muted">' + esc(u("previous")) + '</span>' + rows + radar + '</div></div></main></div>';
+      '<div class="sgrid">' + today + '<div class="srows">' + week + '<span class="lbl muted">' + esc(u("previous")) + '</span>' + rows + radar + '</div></div></main></div>' + sheetHTML();
   }
   function homeHTML() {
     return splitHomeHTML();
@@ -813,7 +817,11 @@ button, input, textarea { font: inherit; color: inherit; }
       '<a class="iconbtn" href="#" aria-label="' + esc(u("allsparks")) + '" style="text-decoration:none">←' + (web ? " " + esc(u("allsparks")) : "") + '</a>' +
       '<button type="button" class="titlebtn" data-menu="1" aria-expanded="' + state.menu + '"><span class="num">' + esc(web ? longDate(state.cur) : shortDate(state.cur)) + '</span><span class="caret">▼</span></button>' +
       '<button type="button" class="iconbtn" data-menu="1" aria-expanded="' + state.menu + '" aria-label="' + esc(u("menu")) + '">☰</button></div></div>';
-    var sheet = state.menu ? '<div class="sheet" role="dialog" aria-label="' + esc(u("menu")) + '">' +
+    var sheet = sheetHTML();
+    return top + sheet;
+  }
+  function sheetHTML() {
+    return state.menu ? '<div class="sheet" role="dialog" aria-label="' + esc(u("menu")) + '">' +
       '<div class="row"><span class="lbl muted">' + esc(u("reading")) + '</span><div class="seg2"><button type="button" data-set="view" data-v="swipe" aria-pressed="' + (state.view === "swipe") + '">' +
       esc(u("swipe")) + '</button><button type="button" data-set="view" data-v="scroll" aria-pressed="' + (state.view === "scroll") + '">' + esc(u("scroll")) + '</button></div></div>' +
       '<div class="row"><span class="lbl muted">' + esc(u("language")) + '</span>' + langSeg() + '</div>' +
@@ -825,7 +833,6 @@ button, input, textarea { font: inherit; color: inherit; }
       '<div class="row"><span class="lbl muted">' + esc(u("otherdays")) + '</span><ul class="datelist">' + state.days.map(function (d) {
         return '<li><button type="button" data-go-day="' + d.date + '" aria-current="' + (d.date === state.cur) + '"><span class="num">' + esc(longDate(d.date)) + '</span><span>' + (d.type === "weekly" ? '<span class="wtag">' + esc(u("weekly")) + '</span>' : '<span>' + esc(u("edition")) + '</span> ') + '<span class="num">' + esc(d.edition) + '</span></span></button></li>';
       }).join("") + '</ul></div></div>' : "";
-    return top + sheet;
   }
   function dayHTML() {
     var E = state.ed;
