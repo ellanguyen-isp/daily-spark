@@ -1,80 +1,64 @@
 {
- "type": "daily",
- "date": "2026-10-31",
- "edition": "001",
+ "type": "weekly",
+ "date": "2026-11-01",
+ "edition": "W01",
  "summary": {
-  "en": "AI gets real numbers: a profitable frontier lab, a cheaper computer-use model, and software output tripling.",
-  "vi": "AI có những con số thật: một lab hàng đầu có lãi, một model dùng máy tính rẻ hơn, và lượng phần mềm tăng gấp ba."
+  "en": "The AI money week: customers spend 9x more, good models get cheap, and search earns less per answer.",
+  "vi": "Tuần của tiền AI: khách hàng chi gấp 9 lần, model tốt trở nên rẻ, và tìm kiếm kiếm được ít tiền hơn trên mỗi câu trả lời."
  },
  "big": {
-  "en": "This week the AI business showed its numbers. Anthropic's IPO filing shows a frontier lab can be very profitable per sale, OpenAI shipped a cheaper mid-tier model built for using computers, and GitHub reports that software output tripled in under a year because of coding agents. For product people the message is clear: building is getting cheap and abundant, so deciding what is worth building becomes the scarce skill.",
-  "vi": "Tuần này ngành AI công bố những con số thật. Hồ sơ IPO của Anthropic cho thấy một lab hàng đầu có thể lãi rất cao trên mỗi đồng doanh thu, OpenAI ra mắt một model tầm trung rẻ hơn chuyên thao tác máy tính, và GitHub báo cáo lượng phần mềm tăng gấp ba trong chưa đầy một năm nhờ agent viết code. Với người làm sản phẩm, thông điệp rất rõ: xây dựng ngày càng rẻ và dư thừa, nên khả năng quyết định điều gì đáng xây trở thành kỹ năng khan hiếm."
+  "en": "This week AI showed its money. Anthropic's IPO filing shows business customers spending about nine times more than a year ago, while OpenAI and Mistral cut the price of strong models in half. At the same time Google's search revenue growth slowed to 12% because AI answers earn less per query, and agent makers rushed to add safe logins and tighter sandboxes. For product builders: intelligence is getting cheap, so the edge moves to distribution, trust, and knowing what is worth building.",
+  "vi": "Tuần này AI cho thấy dòng tiền của nó. Hồ sơ IPO của Anthropic cho thấy khách hàng doanh nghiệp chi gấp khoảng chín lần so với một năm trước, trong khi OpenAI và Mistral giảm một nửa giá các model mạnh. Cùng lúc đó, doanh thu tìm kiếm của Google chỉ còn tăng 12% vì câu trả lời AI kiếm được ít tiền hơn trên mỗi truy vấn, và các hãng làm agent vội thêm đăng nhập an toàn và sandbox chặt hơn. Với người làm sản phẩm: trí tuệ máy đang rẻ đi, nên lợi thế chuyển sang phân phối, niềm tin, và biết điều gì đáng xây."
  },
  "headlines": [
   {
    "t": {
-    "en": "Anthropic files for IPO: $16.3bn revenue in six months",
-    "vi": "Anthropic nộp hồ sơ IPO: doanh thu 16,3 tỷ USD trong sáu tháng"
+    "en": "Businesses are paying for AI at real scale",
+    "vi": "Doanh nghiệp đang trả tiền cho AI ở quy mô thật"
    },
-   "src": "hellochinatech.com",
-   "url": "https://hellochinatech.com/p/anthropic-s1-zhipu-minimax-margins"
+   "src": "vktr.com",
+   "url": "https://www.vktr.com/ai-market/anthropic-files-public-s1-with-900-net-revenue-retention/"
   },
   {
    "t": {
-    "en": "OpenAI's GPT-6.1 Terra: a cheaper mid-tier model for computer use",
-    "vi": "GPT-6.1 Terra của OpenAI: model tầm trung rẻ hơn cho thao tác máy tính"
+    "en": "Good enough models got cheap: mid-tier and open weights",
+    "vi": "Model đủ tốt đã trở nên rẻ: tầm trung và open-weight"
    },
-   "src": "simonwillison.net",
-   "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
+   "src": "vktr.com",
+   "url": "https://www.vktr.com/ai-platforms/mistral-large-4-debuts-as-1t-parameter-open-weight-model/"
   },
   {
    "t": {
-    "en": "GitHub Octoverse 2026: software output tripled in under a year",
-    "vi": "GitHub Octoverse 2026: lượng phần mềm tăng gấp ba trong chưa đầy một năm"
+    "en": "AI answers are changing how search makes money",
+    "vi": "Câu trả lời AI đang thay đổi cách tìm kiếm kiếm tiền"
    },
-   "src": "simonwillison.net",
-   "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/"
+   "src": "fourweekmba.com",
+   "url": "https://fourweekmba.com/ai-google-search-revenue-growth-slows-to-12-as-queries-climb/"
+  },
+  {
+   "t": {
+    "en": "Agents get a trust layer: approved logins and locked sandboxes",
+    "vi": "Agent có thêm lớp niềm tin: đăng nhập được duyệt và sandbox bị khoá chặt"
+   },
+   "src": "thenextweb.com",
+   "url": "https://thenextweb.com/news/1password-for-agents-ai-agent-logins"
   }
  ],
  "question": {
-  "en": "If building software is three times cheaper, what becomes the scarce skill on your team, and are you practicing it every week?",
-  "vi": "Nếu xây phần mềm rẻ hơn ba lần, kỹ năng nào trở nên khan hiếm trong team bạn, và bạn có luyện nó mỗi tuần không?"
+  "en": "Run a small \"are we in the AI answer\" check for your health app in the US",
+  "vi": "Chạy một bài kiểm tra nhỏ \"mình có trong câu trả lời AI không\" cho app sức khoẻ của bạn ở Mỹ"
  },
  "exercises": [
   {
-   "k": "work",
+   "k": "bet",
    "tag": {
-    "en": "Work",
-    "vi": "Công việc"
+    "en": "Next week's bet",
+    "vi": "Cược tuần tới"
    },
-   "time": "30 min",
+   "time": "2 hrs",
    "g": {
-    "en": "Map the four risks for one feature",
-    "vi": "Vẽ bản đồ bốn rủi ro cho một tính năng"
-   }
-  },
-  {
-   "k": "write",
-   "tag": {
-    "en": "Write",
-    "vi": "Viết"
-   },
-   "time": "20 min",
-   "g": {
-    "en": "Draft a post: software output tripled, taste did not",
-    "vi": "Nháp bài đăng: lượng phần mềm tăng gấp ba, gu thì không"
-   }
-  },
-  {
-   "k": "build",
-   "tag": {
-    "en": "Build",
-    "vi": "Xây"
-   },
-   "time": "45 min",
-   "g": {
-    "en": "Rebuild one screen you admire with an AI tool, using real data",
-    "vi": "Dựng lại một màn hình bạn thích bằng công cụ AI, dùng dữ liệu thật"
+    "en": "Run a small \"are we in the AI answer\" check for your health app in the US",
+    "vi": "Chạy một bài kiểm tra nhỏ \"mình có trong câu trả lời AI không\" cho app sức khoẻ của bạn ở Mỹ"
    }
   }
  ]

@@ -1,0 +1,261 @@
+{
+ "type": "weekly",
+ "date": "2026-11-01",
+ "edition": "W01",
+ "minutes": 9,
+ "summary": {
+  "en": "The AI money week: customers spend 9x more, good models get cheap, and search earns less per answer.",
+  "vi": "Tuần của tiền AI: khách hàng chi gấp 9 lần, model tốt trở nên rẻ, và tìm kiếm kiếm được ít tiền hơn trên mỗi câu trả lời."
+ },
+ "week": {
+  "from": "2026-10-26",
+  "to": "2026-10-31"
+ },
+ "market": {
+  "big": {
+   "en": "This week AI showed its money. Anthropic's IPO filing shows business customers spending about nine times more than a year ago, while OpenAI and Mistral cut the price of strong models in half. At the same time Google's search revenue growth slowed to 12% because AI answers earn less per query, and agent makers rushed to add safe logins and tighter sandboxes. For product builders: intelligence is getting cheap, so the edge moves to distribution, trust, and knowing what is worth building.",
+   "vi": "Tuần này AI cho thấy dòng tiền của nó. Hồ sơ IPO của Anthropic cho thấy khách hàng doanh nghiệp chi gấp khoảng chín lần so với một năm trước, trong khi OpenAI và Mistral giảm một nửa giá các model mạnh. Cùng lúc đó, doanh thu tìm kiếm của Google chỉ còn tăng 12% vì câu trả lời AI kiếm được ít tiền hơn trên mỗi truy vấn, và các hãng làm agent vội thêm đăng nhập an toàn và sandbox chặt hơn. Với người làm sản phẩm: trí tuệ máy đang rẻ đi, nên lợi thế chuyển sang phân phối, niềm tin, và biết điều gì đáng xây."
+  },
+  "shifts": [
+   {
+    "date": "2026-10-26",
+    "src": "vktr.com",
+    "url": "https://www.vktr.com/ai-market/anthropic-files-public-s1-with-900-net-revenue-retention/",
+    "tag": "Business",
+    "t": {
+     "en": "Businesses are paying for AI at real scale",
+     "vi": "Doanh nghiệp đang trả tiền cho AI ở quy mô thật"
+    },
+    "stat": {
+     "v": "~900%",
+     "l": {
+      "en": "net revenue retention at Anthropic: the same customers spend about 9x more than a year ago",
+      "vi": "tỷ lệ giữ chân doanh thu ròng của Anthropic: cùng nhóm khách hàng chi gấp khoảng 9 lần một năm trước"
+     }
+    },
+    "p": {
+     "en": [
+      "More than 11,900 customers pay Anthropic $100,000 or more a year, and about 250 pay $10 million or more",
+      "Revenue for the first half of 2026 was $16.29 billion, up from $1.16 billion a year earlier",
+      "The 900% figure leaves out Claude Pro and Max subscribers, so it is business spend, not consumer hype",
+      "Microsoft's Azure cloud grew 48% in the same week's earnings, another sign the money is real"
+     ],
+     "vi": [
+      "Hơn 11.900 khách hàng trả cho Anthropic từ 100.000 USD mỗi năm trở lên, và khoảng 250 khách trả từ 10 triệu USD",
+      "Doanh thu nửa đầu 2026 là 16,29 tỷ USD, so với 1,16 tỷ USD một năm trước",
+      "Con số 900% không tính người dùng Claude Pro và Max, nên đây là chi tiêu doanh nghiệp, không phải cơn sốt tiêu dùng",
+      "Mảng đám mây Azure của Microsoft tăng 48% trong báo cáo cùng tuần, thêm một dấu hiệu dòng tiền là thật"
+     ]
+    },
+    "w": {
+     "en": "Once a team finds one AI workflow that works, it expands fast. For a studio, the lesson is to land one painful workflow first and let usage grow, instead of selling a broad AI platform.",
+     "vi": "Khi một nhóm tìm được một quy trình AI chạy được, họ mở rộng rất nhanh. Với một studio, bài học là chiếm trước một quy trình gây đau, rồi để mức dùng tự lớn lên, thay vì bán một nền tảng AI chung chung."
+    }
+   },
+   {
+    "date": "2026-10-29",
+    "src": "vktr.com",
+    "url": "https://www.vktr.com/ai-platforms/mistral-large-4-debuts-as-1t-parameter-open-weight-model/",
+    "tag": "Model",
+    "t": {
+     "en": "Good enough models got cheap: mid-tier and open weights",
+     "vi": "Model đủ tốt đã trở nên rẻ: tầm trung và open-weight"
+    },
+    "stat": {
+     "v": "$0.70 / $2.10",
+     "l": {
+      "en": "Mistral Large 4 per million input / output tokens, about half its preview price",
+      "vi": "giá Mistral Large 4 mỗi triệu token đầu vào / đầu ra, khoảng một nửa giá bản preview"
+     }
+    },
+    "p": {
+     "en": [
+      "Mistral released Large 4 weights on Oct 29 under a modified MIT license: 1 trillion parameters and a 1 million token context",
+      "OpenAI's GPT-6.1 Terra launched on Oct 26 at $1 / $5 per million tokens, half the price of GPT-6.1 Sol",
+      "Moonshot says the open-weight Kimi K3.1 Pro weights arrive by Nov 4, also with a 1 million token context",
+      "Hosting providers need a separate commercial license from Mistral, so check the terms before reselling"
+     ],
+     "vi": [
+      "Mistral công bố trọng số Large 4 ngày 29/10 theo giấy phép MIT sửa đổi: 1 nghìn tỷ tham số và ngữ cảnh 1 triệu token",
+      "GPT-6.1 Terra của OpenAI ra mắt ngày 26/10 với giá $1 / $5 mỗi triệu token, bằng nửa giá GPT-6.1 Sol",
+      "Moonshot cho biết trọng số open-weight của Kimi K3.1 Pro sẽ có trước 4/11, cũng với ngữ cảnh 1 triệu token",
+      "Bên cung cấp dịch vụ host cần giấy phép thương mại riêng từ Mistral, nên đọc kỹ điều khoản trước khi bán lại"
+     ]
+    },
+    "w": {
+     "en": "Most product features do not need the top model. Route routine tasks to a cheaper model and keep a small eval set so you can switch in an afternoon when prices move again.",
+     "vi": "Phần lớn tính năng sản phẩm không cần model mạnh nhất. Hãy đưa việc thường ngày sang model rẻ hơn và giữ một bộ eval nhỏ để có thể đổi model trong một buổi chiều khi giá lại thay đổi."
+    }
+   },
+   {
+    "date": "2026-10-28",
+    "src": "fourweekmba.com",
+    "url": "https://fourweekmba.com/ai-google-search-revenue-growth-slows-to-12-as-queries-climb/",
+    "tag": "Distribution",
+    "t": {
+     "en": "AI answers are changing how search makes money",
+     "vi": "Câu trả lời AI đang thay đổi cách tìm kiếm kiếm tiền"
+    },
+    "stat": {
+     "v": "12%",
+     "l": {
+      "en": "Google Search revenue growth in Q3, down from 19.1% in Q1",
+      "vi": "mức tăng doanh thu Google Search quý 3, giảm từ 19,1% ở quý 1"
+     }
+    },
+    "p": {
+     "en": [
+      "Sundar Pichai says query growth is the highest in five years, yet search revenue was flat versus the previous quarter",
+      "Google's business chief named lower monetization in AI Mode as one factor, next to currency effects",
+      "AI Mode passed 1 billion monthly users earlier this year, and Google is now adding more ads to AI answers",
+      "Search now supplies only about a quarter of Alphabet's new revenue, while Cloud supplies most of it"
+     ],
+     "vi": [
+      "Sundar Pichai nói lượng truy vấn tăng nhanh nhất trong năm năm, vậy mà doanh thu tìm kiếm đi ngang so với quý trước",
+      "Giám đốc kinh doanh của Google nêu việc AI Mode kiếm tiền kém hơn là một nguyên nhân, bên cạnh tỷ giá",
+      "AI Mode vượt 1 tỷ người dùng mỗi tháng từ đầu năm, và Google đang thêm quảng cáo vào câu trả lời AI",
+      "Tìm kiếm giờ chỉ đóng góp khoảng một phần tư doanh thu tăng thêm của Alphabet, phần lớn đến từ Cloud"
+     ]
+    },
+    "w": {
+     "en": "People still search more than ever, but they click less and read AI answers. If you are launching in a new market, being named inside AI answers matters as much as ranking in classic search.",
+     "vi": "Người dùng vẫn tìm kiếm nhiều hơn bao giờ hết, nhưng họ bấm vào link ít hơn và đọc câu trả lời AI. Nếu bạn ra mắt ở thị trường mới, được nhắc tên trong câu trả lời AI quan trọng ngang với xếp hạng trên tìm kiếm truyền thống."
+    }
+   },
+   {
+    "date": "2026-10-22",
+    "src": "thenextweb.com",
+    "url": "https://thenextweb.com/news/1password-for-agents-ai-agent-logins",
+    "tag": "Trust",
+    "t": {
+     "en": "Agents get a trust layer: approved logins and locked sandboxes",
+     "vi": "Agent có thêm lớp niềm tin: đăng nhập được duyệt và sandbox bị khoá chặt"
+    },
+    "p": {
+     "en": [
+      "1Password for Agents lets the user approve which login an agent wants and why, then fills it in so the agent never sees the password",
+      "Launch partners include Meta's Muse, ChatGPT Work, Claude Duet, Perplexity and Ramp, rolling out over the coming days",
+      "OpenAI now trains frontier models in an offline copy of the web, after an internal model reached the live internet through a DNS misconfiguration",
+      "That incident paused OpenAI's most capable training runs from Sept 20 to Oct 1"
+     ],
+     "vi": [
+      "1Password for Agents cho người dùng duyệt agent muốn đăng nhập vào đâu và vì sao, rồi tự điền để agent không bao giờ thấy mật khẩu",
+      "Đối tác ra mắt gồm Muse của Meta, ChatGPT Work, Claude Duet, Perplexity và Ramp, triển khai dần trong những ngày tới",
+      "OpenAI giờ huấn luyện model hàng đầu trong một bản sao offline của web, sau khi một model nội bộ vào được internet thật qua lỗi cấu hình DNS",
+      "Sự cố đó khiến OpenAI dừng các đợt huấn luyện mạnh nhất từ 20/9 đến 1/10"
+     ]
+    },
+    "w": {
+     "en": "Trust is becoming a product feature. Any agent feature you design needs a clear ask, approve, act step for logins, payments and sending, and that step is part of the UX, not an afterthought.",
+     "vi": "Niềm tin đang trở thành một tính năng sản phẩm. Mọi tính năng agent bạn thiết kế cần một bước rõ ràng: hỏi, duyệt, rồi làm, cho đăng nhập, thanh toán và gửi đi. Bước đó là một phần của UX, không phải thứ thêm vào sau."
+    }
+   }
+  ]
+ },
+ "trend": [
+  {
+   "k": "mega",
+   "t": {
+    "en": "Building is cheap; judgment is the bottleneck",
+    "vi": "Xây dựng đã rẻ; phán đoán mới là điểm nghẽn"
+   },
+   "e": {
+    "en": "Evidence from several sources at once: GitHub counts 220M merged pull requests a month, triple a year ago, and JetBrains finds 90% of developers use coding agents weekly. When output triples, choosing the right problem and checking quality is the scarce work.",
+    "vi": "Bằng chứng từ nhiều nguồn cùng lúc: GitHub đếm được 220 triệu pull request được merge mỗi tháng, gấp ba năm trước, và JetBrains thấy 90% lập trình viên dùng agent viết code hằng tuần. Khi sản lượng tăng gấp ba, việc chọn đúng vấn đề và kiểm tra chất lượng mới là việc khan hiếm."
+   },
+   "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+   "src": "simonwillison.net",
+   "date": "2026-10-28"
+  },
+  {
+   "k": "mega",
+   "t": {
+    "en": "Strong models keep getting cheaper, even while labs stay profitable",
+    "vi": "Model mạnh tiếp tục rẻ đi, dù các lab vẫn có lãi"
+   },
+   "e": {
+    "en": "Three companies moved the same way in one week: OpenAI's Terra at half price, Mistral cutting Large 4 to about half its preview price, and Anthropic showing gross margins near 85%. High margins plus competition means prices have room to fall further.",
+    "vi": "Ba công ty cùng đi một hướng trong một tuần: Terra của OpenAI rẻ bằng nửa, Mistral giảm giá Large 4 còn khoảng một nửa bản preview, và Anthropic cho thấy biên lợi nhuận gộp gần 85%. Biên lợi nhuận cao cộng với cạnh tranh nghĩa là giá còn nhiều dư địa để giảm."
+   }
+  },
+  {
+   "k": "hype",
+   "t": {
+    "en": "Companies run mostly by agents",
+    "vi": "Công ty vận hành chủ yếu bằng agent"
+   },
+   "e": {
+    "en": "Loud this week, thin evidence. The showcase cases are a handful of tiny teams, one of which says it spends about 30 times its payroll on tokens. Copy the fast bug to fix loop; do not plan headcount around it yet.",
+    "vi": "Rất ồn tuần này, nhưng bằng chứng mỏng. Các ví dụ nổi bật chỉ là vài nhóm rất nhỏ, một trong số đó nói họ chi cho token gấp khoảng 30 lần quỹ lương. Hãy học vòng lặp báo lỗi rồi sửa thật nhanh; đừng lên kế hoạch nhân sự dựa trên nó lúc này."
+   },
+   "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+   "src": "simonwillison.net",
+   "date": "2026-10-29"
+  },
+  {
+   "k": "hype",
+   "t": {
+    "en": "\"Best model\" benchmark claims",
+    "vi": "Tuyên bố \"model tốt nhất\" dựa trên benchmark"
+   },
+   "e": {
+    "en": "Every launch this week quoted its own Terminal-Bench 4.0 score, each one chosen to look best. Vendor numbers are not independent proof. Your own 20 real test cases tell you more than any launch chart.",
+    "vi": "Mỗi bản ra mắt tuần này đều trích điểm Terminal-Bench 4.0 do chính hãng đo, được chọn để trông đẹp nhất. Số liệu của nhà cung cấp không phải bằng chứng độc lập. 20 ca thử thật của chính bạn cho biết nhiều hơn mọi biểu đồ ra mắt."
+   },
+   "url": "https://trewknowledge.com/2026/10/30/ai-this-week-anthropic-goes-public-openai-goes-offline/",
+   "src": "trewknowledge.com",
+   "date": "2026-10-30"
+  }
+ ],
+ "radar": {
+  "note": {
+   "en": "First weekly update. Two capabilities joined the radar: agents that sign in without seeing your password (early) and strong open-weight models you can host yourself (emerging). Coding agents gained fresh proof from GitHub's Octoverse.",
+   "vi": "Bản cập nhật weekly đầu tiên. Hai năng lực mới vào radar: agent đăng nhập mà không thấy mật khẩu của bạn (early) và model open-weight mạnh có thể tự host (emerging). Agent viết code có thêm bằng chứng mới từ Octoverse của GitHub."
+  },
+  "changes": [
+   {
+    "id": "agent-sign-in",
+    "status": "new",
+    "e": {
+     "en": "1Password for Agents launched with partners such as Meta's Muse, ChatGPT Work and Claude Duet. Early: one vendor, still rolling out.",
+     "vi": "1Password for Agents ra mắt với các đối tác như Muse của Meta, ChatGPT Work và Claude Duet. Early: mới một nhà cung cấp, vẫn đang triển khai."
+    }
+   },
+   {
+    "id": "open-weight-models",
+    "status": "new",
+    "e": {
+     "en": "Mistral Large 4 weights are out with a commercial-friendly license and half the preview price. Emerging: still behind top closed models on hard agent work.",
+     "vi": "Trọng số Mistral Large 4 đã được công bố với giấy phép thân thiện cho thương mại và giá bằng nửa bản preview. Emerging: vẫn đi sau model đóng hàng đầu ở việc agent khó."
+    }
+   }
+  ]
+ },
+ "bet": {
+  "time": "2 hrs",
+  "t": {
+   "en": "Run a small \"are we in the AI answer\" check for your health app in the US",
+   "vi": "Chạy một bài kiểm tra nhỏ \"mình có trong câu trả lời AI không\" cho app sức khoẻ của bạn ở Mỹ"
+  },
+  "why": {
+   "en": "This week showed US users are searching more but clicking less, because AI answers do the picking. When your app is aimed at the US market, knowing which apps ChatGPT, Gemini and Claude recommend is a cheap, early read on distribution. It is also a tiny eval, which feeds your AI evals interest and a post.",
+   "vi": "Tuần này cho thấy người dùng tìm kiếm nhiều hơn nhưng bấm link ít hơn, vì câu trả lời AI chọn giúp họ. Khi app của bạn nhắm tới thị trường Mỹ, biết ChatGPT, Gemini và Claude gợi ý app nào là một cách rẻ để đọc sớm tình hình phân phối. Đây cũng là một bài eval nhỏ, phục vụ mối quan tâm về AI evals của bạn và một bài đăng."
+  },
+  "s": {
+   "en": [
+    "Write 10 questions a US user would ask before choosing a diet or calorie app (30 min)",
+    "Ask each one in ChatGPT, Gemini and Claude; log in a sheet which apps are named, which sources are cited, and whether your app appears (60 min)",
+    "Pick the 3 sources cited most and write a short note or post on what your app should do about them (30 min)"
+   ],
+   "vi": [
+    "Viết 10 câu hỏi mà một người dùng Mỹ sẽ hỏi trước khi chọn app ăn kiêng hoặc đếm calo (30 phút)",
+    "Hỏi từng câu trên ChatGPT, Gemini và Claude; ghi vào một sheet app nào được nhắc, nguồn nào được trích, và app của bạn có xuất hiện không (60 phút)",
+    "Chọn 3 nguồn được trích nhiều nhất và viết một ghi chú hoặc bài đăng ngắn về việc app của bạn nên làm gì với chúng (30 phút)"
+   ]
+  },
+  "o": {
+   "en": "A 30-answer baseline sheet you can rerun monthly, a short list of the sources that shape AI recommendations in your category, and one post draft.",
+   "vi": "Một sheet nền gồm 30 câu trả lời mà bạn có thể chạy lại mỗi tháng, một danh sách ngắn các nguồn định hình gợi ý của AI trong mảng của bạn, và một bản nháp bài đăng."
+  }
+ }
+}

@@ -25,6 +25,15 @@
    },
    "evidence": [
     {
+     "date": "2026-10-28",
+     "src": "simonwillison.net",
+     "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/",
+     "note": {
+      "en": "GitHub Octoverse 2026: 220M merged pull requests a month, triple a year ago; commits passed 7.38 billion a month.",
+      "vi": "GitHub Octoverse 2026: 220 triệu pull request được merge mỗi tháng, gấp ba năm trước; số commit vượt 7,38 tỷ mỗi tháng."
+     }
+    },
+    {
      "date": "2026-08-01",
      "src": "blog.jetbrains.com",
      "url": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/",
@@ -480,6 +489,86 @@
      "note": {
       "en": "WWDC26: Apple Foundation Models co-built with Gemini, on-device for personal context, reached through App Intents and Core AI.",
       "vi": "WWDC26: Apple Foundation Models làm cùng Gemini, chạy trên máy cho ngữ cảnh cá nhân, dùng qua App Intents và Core AI."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "emerging",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    }
+   ]
+  },
+  {
+   "id": "agent-sign-in",
+   "area": "Agents",
+   "maturity": "early",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Agents that log in to your accounts without ever seeing the password",
+    "vi": "Agent đăng nhập vào tài khoản của bạn mà không bao giờ thấy mật khẩu"
+   },
+   "means": {
+    "en": "Agents can finally work inside real accounts, with the user approving each login on their own device. Trust and approval become part of the product flow.",
+    "vi": "Agent cuối cùng cũng làm việc được trong tài khoản thật, với người dùng duyệt từng lần đăng nhập trên thiết bị của mình. Niềm tin và bước duyệt trở thành một phần của luồng sản phẩm."
+   },
+   "limit": {
+    "en": "Just launched and partner apps are still rolling out. One vendor so far; wait for real usage before you depend on it.",
+    "vi": "Vừa ra mắt và các app đối tác vẫn đang triển khai dần. Mới có một nhà cung cấp; chờ có người dùng thật rồi hãy phụ thuộc vào nó."
+   },
+   "evidence": [
+    {
+     "date": "2026-10-22",
+     "src": "thenextweb.com",
+     "url": "https://thenextweb.com/news/1password-for-agents-ai-agent-logins",
+     "note": {
+      "en": "1Password for Agents: the user approves which login an agent wants and why, 1Password fills it in, and the agent never receives the secret. Partners include Meta's Muse, ChatGPT Work, Claude Duet, Perplexity and Ramp.",
+      "vi": "1Password for Agents: người dùng duyệt agent muốn đăng nhập vào đâu và vì sao, 1Password tự điền, và agent không bao giờ nhận được mật khẩu. Đối tác gồm Muse của Meta, ChatGPT Work, Claude Duet, Perplexity và Ramp."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-01",
+     "maturity": "early",
+     "note": {
+      "en": "Added to the radar with the first weekly edition.",
+      "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    }
+   ]
+  },
+  {
+   "id": "open-weight-models",
+   "area": "Platforms",
+   "maturity": "emerging",
+   "status": "new",
+   "since": "2026-11-01",
+   "cap": {
+    "en": "Strong open-weight models you can run on your own servers",
+    "vi": "Model open-weight mạnh mà bạn tự chạy được trên server của mình"
+   },
+   "means": {
+    "en": "You can keep data in house and cut cost per call, and you are less locked into one lab's prices.",
+    "vi": "Bạn giữ được dữ liệu trong nhà và giảm chi phí mỗi lần gọi, đồng thời ít bị khoá vào giá của một lab."
+   },
+   "limit": {
+    "en": "Still behind the top closed models on hard agent work, and hosting a 1 trillion parameter model is real engineering. Read the license before you sell it as a service.",
+    "vi": "Vẫn đi sau các model đóng hàng đầu ở việc agent khó, và tự host model 1 nghìn tỷ tham số là việc kỹ thuật thật. Đọc kỹ giấy phép trước khi bán nó như một dịch vụ."
+   },
+   "evidence": [
+    {
+     "date": "2026-10-29",
+     "src": "vktr.com",
+     "url": "https://www.vktr.com/ai-platforms/mistral-large-4-debuts-as-1t-parameter-open-weight-model/",
+     "note": {
+      "en": "Mistral Large 4 weights released under a modified MIT license: 1T parameters, 1M token context, API price cut to $0.70 in / $2.10 out per million tokens.",
+      "vi": "Mistral công bố trọng số Large 4 theo giấy phép MIT sửa đổi: 1 nghìn tỷ tham số, ngữ cảnh 1 triệu token, giá API giảm còn $0,70 đầu vào / $2,10 đầu ra mỗi triệu token."
      }
     }
    ],
