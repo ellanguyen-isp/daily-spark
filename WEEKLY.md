@@ -1,7 +1,7 @@
 # daily-spark: Weekly runbook (Sundays)
 
 The weekly edition replaces the Sunday daily. It zooms out: what moved in the market this week, what is a real trend vs hype,
-what AI can really do now (the radar), what Ella did this week (private), and one bet for next week.
+what AI can really do now (the radar), what you did this week (private), and one bet for next week.
 Shared rules (two repos, privacy, writing rules, no em dash) are in `CLAUDE.md`. Design: `ARCHITECTURE.md` 3.11.
 
 ## The weekly run

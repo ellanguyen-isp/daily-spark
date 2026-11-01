@@ -160,7 +160,7 @@ daily-spark/
 └── supabase/            <- table + security setup (SQL)
 ```
 
-Private side (Ella):
+Private side (example):
 ```
 ella-second-brain/daily-spark/
 ├── profile.yaml, blocklist.txt

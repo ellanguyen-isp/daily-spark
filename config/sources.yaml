@@ -1,4 +1,4 @@
-# daily-spark sources (Ella's list, v1, 2026-10-31)
+# daily-spark sources (v1, 2026-10-31)
 #
 # type:     youtube | rss | person | web
 # role:     people   -> section 2 "From people you follow"
@@ -113,7 +113,7 @@ rss:
   - { name: Brian Balfour, url: "https://brianbalfour.com/essays?format=rss", tags: [growth-loops], role: people, priority: 3, verified: true }
   - { name: Melissa Perri, url: "https://melissaperri.com/blog?format=rss", tags: [product-ops], role: people, priority: 3, verified: true }
 
-  # From Ella's second brain
+  # From the owner's own notes
   - { name: Hello China Tech, url: "https://hellochinatech.com/feed", tags: [china, ai, consumer-tech], role: people, priority: 2, verified: true }
   - { name: Y Combinator blog, url: "https://www.ycombinator.com/blog/rss", tags: [startups], role: people, priority: 2, verified: true }
   - { name: Naval, url: "https://nav.al/feed", tags: [leverage, judgment], role: timeless, priority: 3, verified: true }
