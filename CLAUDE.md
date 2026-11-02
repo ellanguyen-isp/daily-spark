@@ -40,7 +40,7 @@ Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `e
    **notes** (`item` + `body`) are her own questions or thoughts on one story: treat each as the strongest signal. Answer or follow up on it today
    (a frontier follow-up, a people pick, or the private work section), say plainly which note you are answering, and never copy the note text into the public site.
    **free notes** (notes whose `item` is `free`) are random ideas she keeps in mind from the Notes tab. They are **optional context, not tasks**: do not act on them by default.
-   Use at most one, and only when it clearly fits today's stories and her focus; skip them on most days. If several look like versions of the same note (she edits notes), only the latest counts. Never copy their text into the public site.
+   Use at most one, and only when it clearly fits today's stories and her focus; skip them on most days. Each edit or removal is a new row with the same `cid`: only the latest row per `cid` counts, and an empty body means she removed it (rows without a `cid` are older copies; if several look like versions of the same note, only the latest counts). Never copy their text into the public site.
 4. **Frontier (web search allowed).** Search the last 48 hours for big product and AI news that a product builder should know
    (new models, major launches, platform shifts). Combine with `role: frontier` candidates. Pick 2 to 4 stories.
    If nothing is genuinely important, use 2 smaller but real stories and say so in the big picture. Never pad with hype.

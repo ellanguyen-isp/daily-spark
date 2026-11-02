@@ -40,7 +40,7 @@ Status: agreed 2026-10-31. Nothing personal ever lives in this repo.
                       |               +---------------------------------+
                       | read by
         +-------------v-------------+        +----------------------------+
-        | Web page / Chrome new tab | -----> | Supabase (write key only)  |
+        | Web page / Chrome new tab | -----> | Supabase (email sign-in)   |
         | recap box, feedback, notes|        | recaps, feedback, picks,   |
         +---------------------------+        | notes                      |
                                              +-------------+--------------+
@@ -100,7 +100,7 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 
 ### 3.7 Interaction (Supabase, free tier)
 - Tables: `recaps`, `feedback` (useful / knew / notme / deeper per item), `picks` (exercise picked), `notes` (her question on one item). Setup: `supabase/schema.sql`.
-- Row Level Security: the page can only **insert**, and only with the write key (saved once per device in Menu > This device). Nobody can read through the public key.
+- Row Level Security: only the owner's signed-in account (email code or magic link, Menu > This device) can **insert** and **read** rows; the owner email is set in the SQL, not in this repo. No update or delete: an edit or removal is a new row. The public anon key alone can do nothing. Setup: `supabase/schema.sql`; moving from the old write key: `supabase/signin.sql`.
 - The Worker reads through the `ds_recent` function with the read key from `profile.yaml`.
 - Without Supabase: reply to the morning email; the Worker reads replies as recaps.
 
@@ -126,7 +126,7 @@ Data: `editions/data/YYYY-MM-DD.json` is the source of truth; HTML, Markdown and
 - Feedback per item: one row at the bottom of each stamp: Useful, Knew it (raise the bar), Not for me, Go deeper, then Note on the right.
 - Chrome new tab (v3, 2026-11-01): the extension is a thin shell that frames `<site>/newtab/`, so design changes ship by pushing the site (no reinstall). Follows the site's Appearance and Language. Top: logo left; Gmail, Images, a Google apps grid and an Account circle on the right. Middle: every news item of the latest edition is an equal-size stamp, arranged in balanced rows (1 row up to 5, 2 rows up to 12, then 3; last row centered); a stamp turns accent once opened. Bottom: date, edition and "read" count left, headline middle, "Open daily spark" (home) and "Read this spark" (that edition) right. Daily: every frontier + people item. Weekly: shifts + mega/hype calls + radar changes. Data: `latest.json` `stamps`.
 - Email: `templates/email.html`, light by default, dark colors for mail apps that support dark mode.
-- Free notes: a Notes tab (Sparks · Notes · Radar) for quick random ideas. Saved in the browser and synced to Supabase `notes` with `item: "free"`; each note can be edited (an edit syncs as a new version) and previews 3 lines. The morning run treats them as optional context only, never as tasks. The list shows this device's notes only (the site cannot read Supabase).
+- Free notes: a Notes tab (Sparks · Notes · Radar) for quick random ideas. Saved in the browser and synced to Supabase `notes` with `item: "free"`; each note has a `cid` (its creation time); an edit or removal syncs as a new row, the latest row per `cid` wins and an empty body means removed. Signed-in devices pull the list on load, on opening Notes and on returning to the tab, so phone and web show the same notes. Notes previews 3 lines. The morning run treats them as optional context only, never as tasks.
 - Notes: a Note button after the 4 feedback icons opens a text box per item; saved to Supabase `notes` (private) and read by the next run as the strongest signal.
 
 ### 3.10 Weekly edition and radar (added 2026-10-31)
