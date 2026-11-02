@@ -1,0 +1,385 @@
+{
+ "date": "2026-11-03",
+ "edition": "003",
+ "minutes": 9,
+ "summary": {
+  "en": "Two new AI tests, two very different scores: 90%+ on everyday errands, 12% on expert work, and Goldman takes coding agents back from bankers.",
+  "vi": "Hai bài test AI mới, hai mức điểm rất khác nhau: trên 90% với việc vặt hằng ngày, 12% với việc chuyên gia, và Goldman thu lại agent viết code khỏi tay banker."
+ },
+ "frontier": {
+  "big": {
+   "en": "No big model launch today, but two new tests landed on the same day and they disagree in a useful way. OpenAI's LifeVal shows current models scoring 90% to 100% on everyday errands like comparing schools or planning care, while SemiAnalysis's GDPx finds the best model finishing only 12% of expert work, and 0% in finance and legal. Goldman Sachs also pulled coding agents from bankers and traders and kept them for engineers. For product people: how good AI is depends on the task, so the useful question is not \"is the model good\" but \"is it good at this job, for this user\", and only your own tests answer that.",
+   "vi": "Hôm nay không có model lớn nào ra mắt, nhưng hai bài test mới ra cùng ngày và cho kết quả trái ngược theo cách rất hữu ích. LifeVal của OpenAI cho thấy model hiện tại đạt 90% đến 100% với việc vặt hằng ngày như so sánh trường học hay lập kế hoạch chăm sóc, trong khi GDPx của SemiAnalysis thấy model tốt nhất chỉ hoàn thành 12% việc chuyên gia, và 0% ở tài chính và pháp lý. Goldman Sachs cũng thu lại agent viết code khỏi tay banker và trader, chỉ giữ cho kỹ sư. Với người làm sản phẩm: AI giỏi đến đâu phụ thuộc vào việc cụ thể, nên câu hỏi đúng không phải \"model có tốt không\" mà là \"nó có làm tốt việc này, cho người dùng này không\", và chỉ bài test của chính bạn trả lời được."
+  },
+  "items": [
+   {
+    "date": "2026-11-02",
+    "src": "openai.com",
+    "url": "https://openai.com/index/lifeval",
+    "tag": "Evals",
+    "t": {
+     "en": "OpenAI's LifeVal tests AI on real-life errands, not puzzles",
+     "vi": "LifeVal của OpenAI test AI bằng việc vặt đời thường, không phải câu đố"
+    },
+    "stat": {
+     "v": "90.4%",
+     "l": {
+      "en": "score on care planning after a parent's new diabetes diagnosis, the lowest of the five workflows OpenAI shared",
+      "vi": "điểm cho việc lập kế hoạch chăm sóc khi cha mẹ mới được chẩn đoán tiểu đường, thấp nhất trong năm luồng việc OpenAI công bố"
+     }
+    },
+    "p": {
+     "en": [
+      "Tasks were picked from time-use research and a survey of 3,995 people on where they want an assistant's help",
+      "Areas are caregiving, health, education, household admin, money, shopping and government services",
+      "Shared workflow scores range from 90.4% to 100%, but OpenAI has not published the full task count or how runs were picked",
+      "OpenAI says it has used LifeVal inside the company for the past year to steer ChatGPT"
+     ],
+     "vi": [
+      "Các việc được chọn từ nghiên cứu về cách mọi người dùng thời gian và một khảo sát 3.995 người về chỗ họ muốn trợ lý giúp",
+      "Các mảng gồm chăm sóc người thân, sức khoẻ, giáo dục, giấy tờ gia đình, tiền bạc, mua sắm và dịch vụ công",
+      "Điểm các luồng việc được công bố từ 90,4% đến 100%, nhưng OpenAI chưa công bố tổng số việc hay cách chọn lượt chạy",
+      "OpenAI nói họ đã dùng LifeVal nội bộ trong một năm qua để định hướng ChatGPT"
+     ]
+    },
+    "w": {
+     "en": "The big labs now train toward everyday jobs, including health and family planning. If your product does one of those jobs, a general assistant is your real competitor, and the bar is rising every month. Score your own feature on the same kind of real task before you claim it is better.",
+     "vi": "Các lab lớn giờ huấn luyện hướng tới việc hằng ngày, kể cả sức khoẻ và kế hoạch gia đình. Nếu sản phẩm của bạn làm một trong những việc đó, trợ lý đa năng mới là đối thủ thật, và mức chuẩn tăng lên mỗi tháng. Hãy chấm điểm tính năng của bạn bằng đúng loại việc thật đó trước khi nói nó tốt hơn."
+    }
+   },
+   {
+    "date": "2026-11-02",
+    "src": "semianalysis.com",
+    "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+    "tag": "Evals",
+    "t": {
+     "en": "GDPx: the best model finishes 12% of real expert work",
+     "vi": "GDPx: model tốt nhất chỉ hoàn thành 12% việc chuyên gia thật"
+    },
+    "stat": {
+     "v": "12%",
+     "l": {
+      "en": "best overall score (Claude Opus 5.5); finance and legal scored 0% for every model",
+      "vi": "điểm tổng cao nhất (Claude Opus 5.5); tài chính và pháp lý đạt 0% với mọi model"
+     }
+    },
+    "p": {
+     "en": [
+      "Instead of handing the model all context in one prompt, GDPx drops it into a working environment, like a deal room of about 2,000 files from a real buyout",
+      "It covers 11 domains, from chip design and biology to finance, legal and quant trading",
+      "Different models lead different domains: Gemini 4 Carbon in biology and software, GPT-6 Astra in materials science",
+      "The authors say their checks flag nearly 50% of tasks in a popular coding benchmark as broken, so test quality matters as much as model quality"
+     ],
+     "vi": [
+      "Thay vì đưa hết bối cảnh trong một prompt, GDPx thả model vào một môi trường làm việc, ví dụ một phòng dữ liệu khoảng 2.000 file từ một thương vụ mua bán thật",
+      "Bài test gồm 11 lĩnh vực, từ thiết kế chip và sinh học tới tài chính, pháp lý và giao dịch định lượng",
+      "Mỗi model dẫn đầu ở lĩnh vực khác nhau: Gemini 4 Carbon ở sinh học và phần mềm, GPT-6 Astra ở khoa học vật liệu",
+      "Nhóm tác giả nói bước kiểm tra của họ phát hiện gần 50% bài trong một benchmark lập trình phổ biến bị lỗi, nên chất lượng bài test quan trọng ngang chất lượng model"
+     ]
+    },
+    "w": {
+     "en": "Put this next to LifeVal: the same models score near 100% on errands and near 0% when they must dig through messy files with no hints. Your users live somewhere in between. Build test cases from the messy version of the job, not the clean demo.",
+     "vi": "Đặt cạnh LifeVal: cùng những model đó đạt gần 100% với việc vặt và gần 0% khi phải tự lục tìm trong đống file lộn xộn mà không có gợi ý. Người dùng của bạn nằm đâu đó ở giữa. Hãy viết ca test từ phiên bản lộn xộn của công việc, không phải bản demo sạch sẽ."
+    }
+   },
+   {
+    "date": "2026-11-02",
+    "src": "bloomberg.com",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools",
+    "tag": "Adoption",
+    "t": {
+     "en": "Goldman Sachs takes coding agents away from bankers and traders",
+     "vi": "Goldman Sachs thu lại agent viết code từ banker và trader"
+    },
+    "p": {
+     "en": [
+      "Bankers and traders had used Claude Code and GitHub Copilot for months; now only about 12,000 engineers and the quant \"strats\" group keep them",
+      "The change followed an internal review of productivity and risk, with guidance updated in October",
+      "The bank says the tools should be with \"those who are best suited to leverage them for the long term\"",
+      "It is a rare public step back from \"give AI to everyone\" at a large company"
+     ],
+     "vi": [
+      "Banker và trader đã dùng Claude Code và GitHub Copilot nhiều tháng; giờ chỉ khoảng 12.000 kỹ sư và nhóm định lượng \"strats\" còn được dùng",
+      "Thay đổi này đến sau một đợt rà soát nội bộ về năng suất và rủi ro, với hướng dẫn được cập nhật vào tháng 10",
+      "Ngân hàng nói công cụ nên nằm trong tay \"những người phù hợp nhất để tận dụng chúng lâu dài\"",
+      "Đây là một bước lùi hiếm hoi và công khai khỏi kiểu \"đưa AI cho tất cả mọi người\" ở một công ty lớn"
+     ]
+    },
+    "w": {
+     "en": "Power tools need judgment and a review habit, and not every user has both. When you roll out an agent feature, decide who it is for and who should get a safer, narrower version, instead of one setting for everyone.",
+     "vi": "Công cụ mạnh cần phán đoán và thói quen kiểm tra lại, và không phải người dùng nào cũng có cả hai. Khi tung ra một tính năng agent, hãy quyết định nó dành cho ai và ai nên dùng phiên bản hẹp và an toàn hơn, thay vì một chế độ cho tất cả."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Meituan says the weights of LongCat-2.5, a 1.6T parameter model built for long coding and screen-control tasks and trained on Chinese chips, will come to GitHub and Hugging Face soon.",
+   "vi": "Meituan nói trọng số của LongCat-2.5, một model 1,6 nghìn tỷ tham số dành cho các việc lập trình dài và điều khiển màn hình, được huấn luyện trên chip Trung Quốc, sẽ sớm có trên GitHub và Hugging Face."
+  }
+ },
+ "people": [
+  {
+   "who": "Lenny's Newsletter · How I AI",
+   "kind": {
+    "en": "podcast · from the episode recap and chapter notes",
+    "vi": "podcast · từ bản tóm tắt tập và ghi chú các chương"
+   },
+   "date": "2026-11-02",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
+   "t": {
+    "en": "Inside Figma's PM OS: 31 shared skills and a growth loop with one human checkpoint",
+    "vi": "Bên trong PM OS của Figma: 31 skill dùng chung và một vòng tăng trưởng chỉ có một điểm duyệt của con người"
+   },
+   "stat": {
+    "v": "31 skills",
+    "l": {
+     "en": "in one shared repo used by about 60 to 70 PMs",
+     "vi": "trong một repo chung được khoảng 60 đến 70 PM dùng"
+    }
+   },
+   "p": {
+    "en": [
+     "The setup is a shared Git repo plus a private folder per PM, an agents file for behavior, and a memory file about the PM and teammates",
+     "The most used skill is a daily briefing that reads full Slack threads so it does not chase requests that are already solved",
+     "For bug bashes, an agent follows a written test plan in the browser and posts findings to a board; a human decides what blocks launch",
+     "The growth loop chains three agents (data, copy, code) and stops once for the team to review everything together before launch"
+    ],
+    "vi": [
+     "Cách dựng là một repo Git chung cộng một thư mục riêng cho mỗi PM, một file agents quy định hành vi, và một file bộ nhớ về PM và đồng đội",
+     "Skill được dùng nhiều nhất là bản tin hằng ngày đọc trọn các thread Slack để không chạy theo yêu cầu đã xong",
+     "Khi bug bash, một agent làm theo kế hoạch test viết sẵn trên trình duyệt và ghi kết quả lên một bảng; con người quyết định lỗi nào chặn ra mắt",
+     "Vòng tăng trưởng nối ba agent (dữ liệu, câu chữ, code) và dừng một lần để cả nhóm xem lại mọi thứ trước khi ra mắt"
+    ]
+   },
+   "k": {
+    "en": "Start with the boring work: briefings, owner lookups, test plans. Ezra admits he never measured the gain over a plain agent, which is the eval gap to close if you copy this.",
+    "vi": "Bắt đầu từ việc nhàm chán: bản tin, tra ai phụ trách, kế hoạch test. Ezra thừa nhận anh chưa bao giờ đo được mức lợi so với một agent thường, đó là khoảng trống eval cần lấp nếu bạn làm theo."
+   }
+  },
+  {
+   "who": "Y Combinator",
+   "kind": {
+    "en": "video · from the description and funding coverage",
+    "vi": "video · từ phần mô tả và các bài đưa tin gọi vốn"
+   },
+   "date": "2026-11-02",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=NVzgt2AEvDg",
+   "t": {
+    "en": "Blacksmith: when AI writes the code, testing becomes the bottleneck",
+    "vi": "Blacksmith: khi AI viết code, kiểm thử trở thành điểm nghẽn"
+   },
+   "stat": {
+    "v": "5M to 90M+",
+    "l": {
+     "en": "weekly test jobs on Blacksmith since January",
+     "vi": "lượt chạy test mỗi tuần trên Blacksmith từ tháng 1"
+    }
+   },
+   "p": {
+    "en": [
+     "Blacksmith runs faster servers for automated tests (CI), and just raised $66M at a $1B valuation",
+     "The founders were outsiders to DevOps and started on gaming-grade CPUs rented from servers built for Minecraft and Call of Duty",
+     "Coding agents make test runs spiky: Anthropic says its own test job volume grew 25x in six months",
+     "More than 10,000 companies use it, and it plans 5x more capacity in 2027"
+    ],
+    "vi": [
+     "Blacksmith chạy máy chủ nhanh hơn cho kiểm thử tự động (CI), và vừa gọi 66 triệu USD ở mức định giá 1 tỷ USD",
+     "Các nhà sáng lập vốn là người ngoài ngành DevOps và bắt đầu bằng CPU loại dùng cho chơi game, thuê từ máy chủ làm cho Minecraft và Call of Duty",
+     "Agent viết code làm lượng test tăng vọt từng đợt: Anthropic nói số lượt test của chính họ tăng 25 lần trong sáu tháng",
+     "Hơn 10.000 công ty đang dùng, và họ dự định tăng gấp 5 công suất trong năm 2027"
+    ]
+   },
+   "k": {
+    "en": "When making gets cheap, checking becomes the scarce step. For a product team, that means test plans and evals are not chores at the end; they decide how fast you can ship.",
+    "vi": "Khi làm ra đã rẻ, bước kiểm tra trở thành thứ khan hiếm. Với một đội sản phẩm, kế hoạch test và eval không còn là việc vặt cuối cùng; chúng quyết định bạn ra mắt nhanh đến đâu."
+   }
+  },
+  {
+   "who": "Starter Story",
+   "kind": {
+    "en": "video · from the description, founder interviews and Starter Story's notes",
+    "vi": "video · từ phần mô tả, các bài phỏng vấn nhà sáng lập và ghi chú của Starter Story"
+   },
+   "date": "2026-11-02",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=hnxn16HtLIk",
+   "t": {
+    "en": "Brainrot: a screen-time app that grew to $400K a month",
+    "vi": "Brainrot: một app quản lý thời gian màn hình tăng lên 400.000 USD mỗi tháng"
+   },
+   "stat": {
+    "v": "$400K",
+    "l": {
+     "en": "monthly revenue, as the founder says it now",
+     "vi": "doanh thu mỗi tháng, theo lời nhà sáng lập hiện nay"
+    }
+   },
+   "p": {
+    "en": [
+     "The app blocks distracting apps with Apple's Screen Time tools and shows what scrolling does to you; every feature sits behind a subscription",
+     "Most revenue comes from annual plans, with about a couple million downloads",
+     "Launch came from the founder's own audience: one launch video drove about 5,000 downloads in a day, and a #1 Product Hunt day added 10,000",
+     "He admits distribution beyond his personal brand is still unsolved, and the app was rejected by the App Store six times before approval"
+    ],
+    "vi": [
+     "App chặn các app gây xao nhãng bằng công cụ Screen Time của Apple và cho thấy việc lướt điện thoại ảnh hưởng tới bạn thế nào; mọi tính năng đều cần đăng ký trả phí",
+     "Phần lớn doanh thu đến từ gói năm, với khoảng vài triệu lượt tải",
+     "Đợt ra mắt đến từ chính lượng người theo dõi của nhà sáng lập: một video ra mắt mang về khoảng 5.000 lượt tải trong một ngày, và một ngày đứng #1 Product Hunt thêm 10.000",
+     "Anh thừa nhận việc phân phối ngoài thương hiệu cá nhân vẫn chưa giải được, và app bị App Store từ chối sáu lần trước khi được duyệt"
+    ]
+   },
+   "k": {
+    "en": "A sharp name for a feeling people already have (\"brain rot\") did the marketing. For a consumer app, test whether your category has a word like that before you buy ads.",
+    "vi": "Một cái tên sắc cho cảm giác mà mọi người đã có sẵn (\"brain rot\") đã tự làm marketing. Với một app tiêu dùng, hãy thử xem nhóm sản phẩm của bạn có một từ như vậy không trước khi mua quảng cáo."
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "Your job is not to ship features. It is to change a number in your users' lives, and to prove it.",
+   "vi": "Việc của bạn không phải là ra mắt tính năng. Mà là thay đổi một con số trong cuộc sống người dùng, và chứng minh được điều đó."
+  },
+  "src": "Escaping the Build Trap · Melissa Perri",
+  "date": "2018 · book",
+  "url": "",
+  "e": {
+   "en": "Perri calls it the build trap: a team measures success by how much it ships, not by what changed for users or the business. Output feels like progress, so teams keep building. She argues every piece of work should start from an outcome (a behavior you want to change), and you only count it done when that behavior moves. Now that AI makes building cheap, the trap is easier to fall into than ever.",
+   "vi": "Perri gọi đó là cái bẫy xây dựng: một đội đo thành công bằng việc ra mắt được bao nhiêu, chứ không phải điều gì thay đổi với người dùng hay doanh nghiệp. Sản lượng tạo cảm giác tiến bộ, nên đội cứ tiếp tục xây. Bà cho rằng mọi việc nên bắt đầu từ một kết quả (một hành vi bạn muốn thay đổi), và chỉ tính là xong khi hành vi đó dịch chuyển. Khi AI làm việc xây dựng rẻ đi, cái bẫy này còn dễ rơi vào hơn bao giờ hết."
+  },
+  "a": {
+   "en": [
+    "Rewrite each item on your current list as \"we believe X will make users do Y, and we will see it in Z\"",
+    "Drop or pause anything you cannot tie to a user behavior",
+    "At each review, show the number that moved before you show the feature"
+   ],
+   "vi": [
+    "Viết lại mỗi mục trong danh sách việc hiện tại thành \"chúng tôi tin X sẽ khiến người dùng làm Y, và sẽ thấy điều đó ở Z\"",
+    "Bỏ hoặc tạm dừng mọi việc không gắn được với một hành vi người dùng",
+    "Ở mỗi buổi review, cho xem con số đã dịch chuyển trước khi cho xem tính năng"
+   ]
+  },
+  "x": {
+   "en": "For an AI feature you are building, the outcome is not \"the AI answers\". It is something like \"users finish the task without asking a human\". Your eval cases should check that outcome, not just whether the reply looks good.",
+   "vi": "Với một tính năng AI bạn đang làm, kết quả không phải là \"AI trả lời được\". Mà là kiểu \"người dùng làm xong việc mà không cần hỏi người thật\". Các ca eval của bạn nên kiểm tra kết quả đó, không chỉ xem câu trả lời trông có ổn không."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "For one feature you work on, is the user's real task closer to a clean errand or to a messy deal room? What does that change about how you test it?",
+    "vi": "Với một tính năng bạn đang làm, việc thật của người dùng gần với một việc vặt gọn gàng hay một phòng dữ liệu lộn xộn? Điều đó thay đổi cách bạn test nó thế nào?"
+   },
+   "c": {
+    "en": "LifeVal's 90%+ scores next to GDPx's 12%.",
+    "vi": "Điểm trên 90% của LifeVal đặt cạnh 12% của GDPx."
+   }
+  },
+  {
+   "q": {
+    "en": "Goldman decided who gets the powerful tool. In your product, which users should get the full AI power, and who would be better off with a narrower version?",
+    "vi": "Goldman đã quyết định ai được dùng công cụ mạnh. Trong sản phẩm của bạn, người dùng nào nên có toàn bộ sức mạnh AI, và ai sẽ tốt hơn với một phiên bản hẹp hơn?"
+   },
+   "c": {
+    "en": "Goldman's coding agent rollback.",
+    "vi": "Việc Goldman thu lại agent viết code."
+   }
+  },
+  {
+   "q": {
+    "en": "If building got 10 times cheaper tomorrow, what would become your bottleneck: testing, deciding, or reaching users?",
+    "vi": "Nếu ngày mai việc xây dựng rẻ đi 10 lần, điểm nghẽn của bạn sẽ là gì: kiểm thử, ra quyết định, hay tiếp cận người dùng?"
+   },
+   "c": {
+    "en": "Blacksmith's test boom and the build trap.",
+    "vi": "Sự bùng nổ kiểm thử ở Blacksmith và cái bẫy xây dựng."
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Write 10 test cases for one AI feature you work on",
+    "vi": "Viết 10 ca test cho một tính năng AI bạn đang làm"
+   },
+   "s": {
+    "en": [
+     "Pick one AI flow and write 5 clean user requests and 5 messy ones (missing info, odd wording, conflicting data)",
+     "For each, write one line on what a good answer must contain or do",
+     "Run all 10 once by hand and mark pass or fail"
+    ],
+    "vi": [
+     "Chọn một luồng AI và viết 5 yêu cầu gọn gàng và 5 yêu cầu lộn xộn (thiếu thông tin, cách nói lạ, dữ liệu mâu thuẫn)",
+     "Với mỗi ca, viết một dòng về điều câu trả lời tốt phải có hoặc phải làm",
+     "Chạy tay cả 10 ca một lần và đánh dấu đạt hay không đạt"
+    ]
+   },
+   "o": {
+    "en": "A first eval set and a baseline score you can track every week",
+    "vi": "Một bộ eval đầu tiên và điểm mốc để theo dõi mỗi tuần"
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"90% or 12%? Why AI scores depend on the task\"",
+    "vi": "Viết một bài ngắn: \"90% hay 12%? Vì sao điểm AI phụ thuộc vào việc cụ thể\""
+   },
+   "s": {
+    "en": [
+     "Open with the two numbers from LifeVal and GDPx on the same day",
+     "Explain in 3 sentences what makes a task clean or messy for an AI",
+     "End with one test any product builder can run on their own feature this week"
+    ],
+    "vi": [
+     "Mở đầu bằng hai con số của LifeVal và GDPx ra cùng ngày",
+     "Giải thích trong 3 câu điều gì khiến một việc gọn gàng hay lộn xộn với AI",
+     "Kết bằng một bài test mà người làm sản phẩm nào cũng có thể chạy cho tính năng của mình trong tuần này"
+    ]
+   },
+   "o": {
+    "en": "A 150 to 200 word post ready for LinkedIn or X",
+    "vi": "Một bài 150 đến 200 chữ sẵn sàng đăng LinkedIn hoặc X"
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny daily briefing skill for your own work",
+    "vi": "Xây một skill bản tin hằng ngày nhỏ cho công việc của bạn"
+   },
+   "s": {
+    "en": [
+     "Make a folder with an agents file (how the assistant behaves) and a memory file (your projects, people, open decisions)",
+     "Write one skill that lists what you owe, what is blocked, and which decisions are open, from notes or issues you paste in",
+     "Run it two mornings in a row and cut anything you did not read"
+    ],
+    "vi": [
+     "Tạo một thư mục với file agents (trợ lý hành xử thế nào) và file bộ nhớ (dự án, con người, các quyết định đang mở)",
+     "Viết một skill liệt kê việc bạn đang nợ, việc bị chặn và quyết định còn mở, từ ghi chú hoặc issue bạn dán vào",
+     "Chạy hai buổi sáng liên tiếp và bỏ mọi phần bạn không đọc"
+    ]
+   },
+   "o": {
+    "en": "A working personal PM OS starter you can grow one skill at a time",
+    "vi": "Một bản khởi đầu PM OS cá nhân chạy được, có thể thêm từng skill một"
+   }
+  }
+ ]
+}

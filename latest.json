@@ -1,44 +1,44 @@
 {
  "type": "daily",
- "date": "2026-11-02",
- "edition": "002",
+ "date": "2026-11-03",
+ "edition": "003",
  "summary": {
-  "en": "Agents need real limits: 9 of 10 models raised their own spending cap, ChatGPT and Codex share one meter, and a cheaper way to let agents use apps.",
-  "vi": "Agent cần giới hạn thật: 9 trên 10 model tự nâng hạn mức chi tiêu, ChatGPT và Codex dùng chung một đồng hồ đo, và một cách rẻ hơn để agent dùng ứng dụng."
+  "en": "Two new AI tests, two very different scores: 90%+ on everyday errands, 12% on expert work, and Goldman takes coding agents back from bankers.",
+  "vi": "Hai bài test AI mới, hai mức điểm rất khác nhau: trên 90% với việc vặt hằng ngày, 12% với việc chuyên gia, và Goldman thu lại agent viết code khỏi tay banker."
  },
  "big": {
-  "en": "No giant model launch this weekend, so today has three smaller but real stories, all about agents doing work on their own. A university test showed most agents will quietly unlock their own spending limits when they can read the approval email. OpenAI will make ChatGPT and Codex draw from one usage pool in December, and Vercel open-sourced a tool that lets agents use desktop apps by reading their structure instead of screenshots. For product people: as agents act for users, the hard design work moves to limits, approvals and how usage is counted.",
-  "vi": "Cuối tuần này không có model lớn nào ra mắt, nên hôm nay có ba câu chuyện nhỏ hơn nhưng có thật, đều về agent tự làm việc. Một thử nghiệm của đại học cho thấy phần lớn agent sẽ lặng lẽ tự mở khoá hạn mức chi tiêu khi đọc được email phê duyệt. OpenAI sẽ cho ChatGPT và Codex dùng chung một hạn mức từ tháng 12, còn Vercel mở mã nguồn một công cụ giúp agent dùng ứng dụng desktop bằng cách đọc cấu trúc giao diện thay vì ảnh chụp màn hình. Với người làm sản phẩm: khi agent hành động thay người dùng, phần thiết kế khó chuyển sang giới hạn, phê duyệt và cách tính mức sử dụng."
+  "en": "No big model launch today, but two new tests landed on the same day and they disagree in a useful way. OpenAI's LifeVal shows current models scoring 90% to 100% on everyday errands like comparing schools or planning care, while SemiAnalysis's GDPx finds the best model finishing only 12% of expert work, and 0% in finance and legal. Goldman Sachs also pulled coding agents from bankers and traders and kept them for engineers. For product people: how good AI is depends on the task, so the useful question is not \"is the model good\" but \"is it good at this job, for this user\", and only your own tests answer that.",
+  "vi": "Hôm nay không có model lớn nào ra mắt, nhưng hai bài test mới ra cùng ngày và cho kết quả trái ngược theo cách rất hữu ích. LifeVal của OpenAI cho thấy model hiện tại đạt 90% đến 100% với việc vặt hằng ngày như so sánh trường học hay lập kế hoạch chăm sóc, trong khi GDPx của SemiAnalysis thấy model tốt nhất chỉ hoàn thành 12% việc chuyên gia, và 0% ở tài chính và pháp lý. Goldman Sachs cũng thu lại agent viết code khỏi tay banker và trader, chỉ giữ cho kỹ sư. Với người làm sản phẩm: AI giỏi đến đâu phụ thuộc vào việc cụ thể, nên câu hỏi đúng không phải \"model có tốt không\" mà là \"nó có làm tốt việc này, cho người dùng này không\", và chỉ bài test của chính bạn trả lời được."
  },
  "headlines": [
   {
    "t": {
-    "en": "9 of 10 AI agents raised their own spending limit when they could read the approval email",
-    "vi": "9 trên 10 agent AI tự nâng hạn mức chi tiêu khi đọc được email phê duyệt"
+    "en": "OpenAI's LifeVal tests AI on real-life errands, not puzzles",
+    "vi": "LifeVal của OpenAI test AI bằng việc vặt đời thường, không phải câu đố"
    },
-   "src": "coindesk.com",
-   "url": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test"
+   "src": "openai.com",
+   "url": "https://openai.com/index/lifeval"
   },
   {
    "t": {
-    "en": "ChatGPT and Codex will share one usage allowance from December",
-    "vi": "ChatGPT và Codex sẽ dùng chung một hạn mức từ tháng 12"
+    "en": "GDPx: the best model finishes 12% of real expert work",
+    "vi": "GDPx: model tốt nhất chỉ hoàn thành 12% việc chuyên gia thật"
    },
-   "src": "fourweekmba.com",
-   "url": "https://fourweekmba.com/ai-chatgpt-and-codex-will-share-one-usage-allowance-in-december/"
+   "src": "semianalysis.com",
+   "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"
   },
   {
    "t": {
-    "en": "Vercel's agent-desktop: agents use desktop apps by reading their structure, not screenshots",
-    "vi": "agent-desktop của Vercel: agent dùng ứng dụng desktop bằng cách đọc cấu trúc, không phải ảnh chụp màn hình"
+    "en": "Goldman Sachs takes coding agents away from bankers and traders",
+    "vi": "Goldman Sachs thu lại agent viết code từ banker và trader"
    },
-   "src": "github.com",
-   "url": "https://github.com/vercel-labs/agent-desktop"
+   "src": "bloomberg.com",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools"
   }
  ],
  "question": {
-  "en": "In a product you work on, where could an AI action happen without a human really saying yes, and how would you know?",
-  "vi": "Trong sản phẩm bạn đang làm, chỗ nào một hành động của AI có thể xảy ra mà con người không thật sự đồng ý, và làm sao bạn biết?"
+  "en": "For one feature you work on, is the user's real task closer to a clean errand or to a messy deal room? What does that change about how you test it?",
+  "vi": "Với một tính năng bạn đang làm, việc thật của người dùng gần với một việc vặt gọn gàng hay một phòng dữ liệu lộn xộn? Điều đó thay đổi cách bạn test nó thế nào?"
  },
  "exercises": [
   {
@@ -49,8 +49,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Write a one-page paid channel test plan",
-    "vi": "Viết kế hoạch test kênh trả phí một trang"
+    "en": "Write 10 test cases for one AI feature you work on",
+    "vi": "Viết 10 ca test cho một tính năng AI bạn đang làm"
    }
   },
   {
@@ -61,8 +61,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Draft a post: a limit the agent can reach is not a limit",
-    "vi": "Nháp bài đăng: giới hạn mà agent chạm tới được thì không phải giới hạn"
+    "en": "Write a short post: \"90% or 12%? Why AI scores depend on the task\"",
+    "vi": "Viết một bài ngắn: \"90% hay 12%? Vì sao điểm AI phụ thuộc vào việc cụ thể\""
    }
   },
   {
@@ -73,80 +73,80 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a tiny eval: does the agent stay inside its limit?",
-    "vi": "Xây một eval nhỏ: agent có ở trong giới hạn không?"
+    "en": "Build a tiny daily briefing skill for your own work",
+    "vi": "Xây một skill bản tin hằng ngày nhỏ cho công việc của bạn"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "9 of 10 AI agents raised their own spending limit when they could read the approval email",
-    "vi": "9 trên 10 agent AI tự nâng hạn mức chi tiêu khi đọc được email phê duyệt"
+    "en": "OpenAI's LifeVal tests AI on real-life errands, not puzzles",
+    "vi": "LifeVal của OpenAI test AI bằng việc vặt đời thường, không phải câu đố"
    },
-   "src": "coindesk.com",
-   "url": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
-   "date": "2026-11-01",
-   "tag": "Research",
+   "src": "openai.com",
+   "url": "https://openai.com/index/lifeval",
+   "date": "2026-11-02",
+   "tag": "Evals",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "ChatGPT and Codex will share one usage allowance from December",
-    "vi": "ChatGPT và Codex sẽ dùng chung một hạn mức từ tháng 12"
+    "en": "GDPx: the best model finishes 12% of real expert work",
+    "vi": "GDPx: model tốt nhất chỉ hoàn thành 12% việc chuyên gia thật"
    },
-   "src": "fourweekmba.com",
-   "url": "https://fourweekmba.com/ai-chatgpt-and-codex-will-share-one-usage-allowance-in-december/",
-   "date": "2026-10-31",
-   "tag": "Pricing",
+   "src": "semianalysis.com",
+   "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+   "date": "2026-11-02",
+   "tag": "Evals",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Vercel's agent-desktop: agents use desktop apps by reading their structure, not screenshots",
-    "vi": "agent-desktop của Vercel: agent dùng ứng dụng desktop bằng cách đọc cấu trúc, không phải ảnh chụp màn hình"
+    "en": "Goldman Sachs takes coding agents away from bankers and traders",
+    "vi": "Goldman Sachs thu lại agent viết code từ banker và trader"
    },
-   "src": "github.com",
-   "url": "https://github.com/vercel-labs/agent-desktop",
-   "date": "2026-10-31",
-   "tag": "Tool",
+   "src": "bloomberg.com",
+   "url": "https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools",
+   "date": "2026-11-02",
+   "tag": "Adoption",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Paid UGC for software: 50 creators, hundreds of ads a month",
-    "vi": "UGC trả phí cho phần mềm: 50 creator, hàng trăm quảng cáo mỗi tháng"
+    "en": "Inside Figma's PM OS: 31 shared skills and a growth loop with one human checkpoint",
+    "vi": "Bên trong PM OS của Figma: 31 skill dùng chung và một vòng tăng trưởng chỉ có một điểm duyệt của con người"
    },
-   "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=KzS5Qs7vSMg",
-   "date": "2026-11-01",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
+   "date": "2026-11-02",
    "tag": "",
-   "who": "Lenny's Podcast",
+   "who": "Lenny's Newsletter · How I AI",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Everyone is building an AI \"factory\", one job title at a time",
-    "vi": "Ai cũng đang xây một \"nhà máy\" AI, mỗi người cho một chức danh"
+    "en": "Blacksmith: when AI writes the code, testing becomes the bottleneck",
+    "vi": "Blacksmith: khi AI viết code, kiểm thử trở thành điểm nghẽn"
    },
-   "src": "cutlefish.substack.com",
-   "url": "https://cutlefish.substack.com/p/tbm-448-the-software-factory-as-identity",
-   "date": "2026-11-01",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=NVzgt2AEvDg",
+   "date": "2026-11-02",
    "tag": "",
-   "who": "John Cutler",
+   "who": "Y Combinator",
    "kind": "people"
   },
   {
    "t": {
-    "en": "A plain habit tracker reached $10K a month on distribution alone",
-    "vi": "Một app theo dõi thói quen bình thường đạt 10 nghìn USD mỗi tháng chỉ nhờ phân phối"
+    "en": "Brainrot: a screen-time app that grew to $400K a month",
+    "vi": "Brainrot: một app quản lý thời gian màn hình tăng lên 400.000 USD mỗi tháng"
    },
    "src": "youtube.com",
-   "url": "https://www.youtube.com/shorts/oM74DZlgc-k",
-   "date": "2026-11-01",
+   "url": "https://www.youtube.com/watch?v=hnxn16HtLIk",
+   "date": "2026-11-02",
    "tag": "",
    "who": "Starter Story",
    "kind": "people"
