@@ -284,6 +284,24 @@ h1, h2, h3, p { margin: 0; }
 .tl li:not(:last-child)::after { content: ""; position: absolute; left: 4px; top: 16px; bottom: -12px; width: 2px; background: var(--line); }
 .tl .d { color: var(--ink-muted); }
 @media (prefers-reduced-motion: no-preference) { .track, .flow, .shome { scroll-behavior: smooth; } }
+
+/* ---------- Notes tab: free notes for quick ideas (private; synced to Supabase notes with item "free") ---------- */
+.nflow { flex: 1; overflow-y: auto; padding: calc(76px + env(safe-area-inset-top)) 0 calc(96px + env(safe-area-inset-bottom)); }
+.nwrap { width: min(720px, 100% - 32px); margin: 0 auto; display: grid; gap: var(--s5); }
+.nhead { display: grid; gap: var(--s2); }
+.nhead h1 { font-family: var(--display); font-weight: 400; font-size: 44px; line-height: 48px; margin: 0; }
+.nhead p { margin: 0; color: var(--ink-muted); }
+.ncompose { background: var(--bg-card); border-radius: var(--r-lg); padding: var(--s4); display: grid; gap: var(--s3); }
+.ncompose textarea { width: 100%; min-height: 96px; resize: none; overflow: hidden; border: 0; outline: 0; background: transparent; color: var(--ink); font: inherit; font-size: 17px; line-height: 26px; }
+.ncompose textarea::placeholder { color: var(--ink-muted); }
+.ncompose .row2 { display: flex; gap: var(--s3); align-items: center; flex-wrap: wrap; border-top: 1px solid var(--line); padding-top: var(--s3); }
+.ncompose .hint { margin-left: auto; font-size: 13px; color: var(--ink-muted); }
+.nlist { display: grid; gap: var(--s3); }
+.nitem { background: var(--bg-card-past); border-radius: var(--r-md); padding: var(--s3) var(--s4); display: grid; gap: var(--s1); }
+.nitem .meta { display: flex; gap: var(--s3); align-items: center; font-size: 12px; color: var(--ink-muted); }
+.nitem .meta button { margin-left: auto; border: 0; background: transparent; color: var(--ink-muted); font: inherit; font-size: 12px; cursor: pointer; padding: 4px 0; text-decoration: underline; }
+.nitem p { margin: 0; white-space: pre-wrap; font-size: 15px; line-height: 22px; }
+.tabbar.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 </style>
 </head>
 <body>
@@ -304,7 +322,7 @@ h1, h2, h3, p { margin: 0; }
       fb_useful: "Useful", fb_knew: "Knew it", fb_notme: "Not for me", fb_deeper: "Go deeper", note: "Note", note_ph: "A question or thought about this story. Tomorrow's spark will follow up.", note_saved: "Saved. Tomorrow's spark will use it.", note_local: "Saved in this browser only. Connect this device in the menu to sync.",
       answer_ph: "Write 2 or 3 lines. Your own words.", pick: "Pick", picked: "Picked", output: "You will have",
       recap_title: "Tonight's recap", recap_ph: "What changed in how you think or act today? What did you learn?", save: "Save", saved: "Saved. Tomorrow's spark will use it.", savedLocal: "Saved in this browser only. Connect this device in the menu to sync.", device: "This device", connected: "Connected: your recaps and feedback sync.", notConnected: "Not connected: answers stay in this browser.", keyPh: "Paste your write key", connect: "Connect", disconnect: "Disconnect",
-      prev: "Previous", next: "Next", s_market: "Market overview", s_trend: "Mega trend vs hype", s_radar: "Radar", s_review: "Week in review", s_bet: "Next week's bet", mega: "Mega trend", hype: "Hype", weekly: "Weekly", thisweek: "This week", wins: "Wins", stuck: "Where you got stuck", pattern: "The pattern", whybet: "Why this bet", openradar: "Open the full radar", radar_t: "What's really possible now", ready: "Ready", emerging: "Emerging", early: "Early", st_new: "New", st_moved: "Moved", st_stable: "Stable", breaks: "Where it breaks", meansp: "What it means for products", evid: "Evidence", updated: "Updated", readweek: "Read this week", weekof: "Week of", tab_sparks: "Sparks", appearance: "Appearance", auto: "Auto", light: "Light", dark: "Dark", ready_t: "Your spark for today is ready.", latest_t: "Here is your latest spark.", hi: "Hi", changes: "Changes this week", steps: "Steps", allcaps: "All", onlych: "Only this week's changes", history: "History", close: "Close", capabilities: "capabilities", tapdot: "Tap a row to see the details and its history.", newmoved: "New or moved this week", sincelbl: "On radar since", areas: "areas", nochange: "No changes this week.", lastwk: "Before", nowlbl: "Now", movelbl: "Moved", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
+      prev: "Previous", next: "Next", s_market: "Market overview", s_trend: "Mega trend vs hype", s_radar: "Radar", s_review: "Week in review", s_bet: "Next week's bet", mega: "Mega trend", hype: "Hype", weekly: "Weekly", thisweek: "This week", wins: "Wins", stuck: "Where you got stuck", pattern: "The pattern", whybet: "Why this bet", openradar: "Open the full radar", radar_t: "What's really possible now", ready: "Ready", emerging: "Emerging", early: "Early", st_new: "New", st_moved: "Moved", st_stable: "Stable", breaks: "Where it breaks", meansp: "What it means for products", evid: "Evidence", updated: "Updated", readweek: "Read this week", weekof: "Week of", tab_sparks: "Sparks", tab_notes: "Notes", fn_title: "Notes", fn_sub: "A quick space for random ideas and thoughts. Private: never on the public site. Tomorrow\'s spark can pick them up.", fn_ph: "What\'s on your mind?", fn_save: "Save note", fn_hint: "Ctrl or Cmd + Enter to save", fn_saved: "Saved and synced.", fn_local: "Saved in this browser only. Connect this device in the menu to sync.", fn_empty: "No notes yet. Your notes on this device appear here.", fn_del: "Remove", fn_synced: "synced", fn_unsynced: "this browser only", appearance: "Appearance", auto: "Auto", light: "Light", dark: "Dark", ready_t: "Your spark for today is ready.", latest_t: "Here is your latest spark.", hi: "Hi", changes: "Changes this week", steps: "Steps", allcaps: "All", onlych: "Only this week's changes", history: "History", close: "Close", capabilities: "capabilities", tapdot: "Tap a row to see the details and its history.", newmoved: "New or moved this week", sincelbl: "On radar since", areas: "areas", nochange: "No changes this week.", lastwk: "Before", nowlbl: "Now", movelbl: "Moved", slogan: "A daily loop, not just a digest.", latest: "Latest", readtoday: "Read today's spark", previous: "Previous sparks", earlier: "Earlier sparks will appear here, one per day.", footer: "digest, think, build, recap", editions: "editions", loading: "Loading…", none: "No sparks yet. The first one arrives tomorrow at 07:00.", missing: "This spark could not be loaded." },
     vi: { tagline: "Một vòng lặp nhỏ mỗi ngày cho người làm sản phẩm: nắm thị trường, tự suy nghĩ, xây một thứ gì đó, và tổng kết điều đã học.",
       sparks: "Các spark mỗi ngày", today: "Hôm nay", edition: "Số", allsparks: "Tất cả spark", menu: "Menu", reading: "Cách đọc", language: "Ngôn ngữ",
       otherdays: "Ngày khác", swipe: "Vuốt", scroll: "Cuộn", fbtitle: "Biểu tượng phản hồi",
@@ -314,7 +332,7 @@ h1, h2, h3, p { margin: 0; }
       fb_useful: "Hữu ích", fb_knew: "Đã biết", fb_notme: "Không hợp", fb_deeper: "Đào sâu", note: "Ghi chú", note_ph: "Một câu hỏi hay suy nghĩ về tin này. Spark ngày mai sẽ trả lời tiếp.", note_saved: "Đã lưu. Spark ngày mai sẽ dùng nội dung này.", note_local: "Chỉ lưu trong trình duyệt này. Kết nối thiết bị trong menu để đồng bộ.",
       answer_ph: "Viết 2 hoặc 3 dòng, bằng lời của bạn.", pick: "Chọn", picked: "Đã chọn", output: "Kết quả",
       recap_title: "Recap tối nay", recap_ph: "Hôm nay điều gì thay đổi trong cách bạn nghĩ hoặc làm? Bạn học được gì?", save: "Lưu", saved: "Đã lưu. Spark ngày mai sẽ dùng nội dung này.", savedLocal: "Chỉ lưu trong trình duyệt này. Kết nối thiết bị trong menu để đồng bộ.", device: "Thiết bị này", connected: "Đã kết nối: recap và phản hồi được đồng bộ.", notConnected: "Chưa kết nối: câu trả lời chỉ ở trong trình duyệt này.", keyPh: "Dán write key của bạn", connect: "Kết nối", disconnect: "Ngắt kết nối",
-      prev: "Trước", next: "Sau", s_market: "Tổng quan thị trường", s_trend: "Xu hướng lớn và cơn sốt", s_radar: "Radar", s_review: "Nhìn lại tuần", s_bet: "Cược cho tuần tới", mega: "Xu hướng lớn", hype: "Cơn sốt", weekly: "Hằng tuần", thisweek: "Tuần này", wins: "Điều làm tốt", stuck: "Chỗ bạn bị kẹt", pattern: "Quy luật", whybet: "Vì sao chọn cược này", openradar: "Mở toàn bộ radar", radar_t: "Điều thật sự làm được lúc này", ready: "Sẵn sàng", emerging: "Đang lên", early: "Còn sớm", st_new: "Mới", st_moved: "Thay đổi", st_stable: "Ổn định", breaks: "Chỗ còn yếu", meansp: "Ý nghĩa cho sản phẩm", evid: "Bằng chứng", updated: "Cập nhật", readweek: "Đọc bản tuần này", weekof: "Tuần", tab_sparks: "Spark", appearance: "Giao diện", auto: "Tự động", light: "Sáng", dark: "Tối", ready_t: "Spark hôm nay của bạn đã sẵn sàng.", latest_t: "Đây là spark mới nhất của bạn.", hi: "Chào", changes: "Thay đổi tuần này", steps: "Các bước", allcaps: "Tất cả", onlych: "Chỉ thay đổi tuần này", history: "Lịch sử", close: "Đóng", capabilities: "năng lực", tapdot: "Chạm vào một dòng để xem chi tiết và lịch sử.", newmoved: "Mới hoặc thay đổi tuần này", sincelbl: "Có trên radar từ", areas: "lĩnh vực", nochange: "Tuần này không có thay đổi.", lastwk: "Trước đó", nowlbl: "Hiện tại", movelbl: "Dịch chuyển", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
+      prev: "Trước", next: "Sau", s_market: "Tổng quan thị trường", s_trend: "Xu hướng lớn và cơn sốt", s_radar: "Radar", s_review: "Nhìn lại tuần", s_bet: "Cược cho tuần tới", mega: "Xu hướng lớn", hype: "Cơn sốt", weekly: "Hằng tuần", thisweek: "Tuần này", wins: "Điều làm tốt", stuck: "Chỗ bạn bị kẹt", pattern: "Quy luật", whybet: "Vì sao chọn cược này", openradar: "Mở toàn bộ radar", radar_t: "Điều thật sự làm được lúc này", ready: "Sẵn sàng", emerging: "Đang lên", early: "Còn sớm", st_new: "Mới", st_moved: "Thay đổi", st_stable: "Ổn định", breaks: "Chỗ còn yếu", meansp: "Ý nghĩa cho sản phẩm", evid: "Bằng chứng", updated: "Cập nhật", readweek: "Đọc bản tuần này", weekof: "Tuần", tab_sparks: "Spark", tab_notes: "Ghi chú", fn_title: "Ghi chú", fn_sub: "Chỗ ghi nhanh ý tưởng và suy nghĩ. Riêng tư: không bao giờ hiện trên trang công khai. Spark ngày mai có thể dùng đến.", fn_ph: "Bạn đang nghĩ gì?", fn_save: "Lưu ghi chú", fn_hint: "Ctrl hoặc Cmd + Enter để lưu", fn_saved: "Đã lưu và đồng bộ.", fn_local: "Chỉ lưu trong trình duyệt này. Kết nối thiết bị trong menu để đồng bộ.", fn_empty: "Chưa có ghi chú. Ghi chú trên thiết bị này sẽ hiện ở đây.", fn_del: "Xoá", fn_synced: "đã đồng bộ", fn_unsynced: "chỉ trong trình duyệt này", appearance: "Giao diện", auto: "Tự động", light: "Sáng", dark: "Tối", ready_t: "Spark hôm nay của bạn đã sẵn sàng.", latest_t: "Đây là spark mới nhất của bạn.", hi: "Chào", changes: "Thay đổi tuần này", steps: "Các bước", allcaps: "Tất cả", onlych: "Chỉ thay đổi tuần này", history: "Lịch sử", close: "Đóng", capabilities: "năng lực", tapdot: "Chạm vào một dòng để xem chi tiết và lịch sử.", newmoved: "Mới hoặc thay đổi tuần này", sincelbl: "Có trên radar từ", areas: "lĩnh vực", nochange: "Tuần này không có thay đổi.", lastwk: "Trước đó", nowlbl: "Hiện tại", movelbl: "Dịch chuyển", slogan: "Một vòng lặp mỗi ngày, không chỉ là bản tin.", latest: "Mới nhất", readtoday: "Đọc spark hôm nay", previous: "Các spark trước", earlier: "Các spark trước sẽ xuất hiện ở đây, mỗi ngày một bản.", footer: "tiếp nhận, suy ngẫm, xây, tổng kết", editions: "số", loading: "Đang tải…", none: "Chưa có spark nào. Spark đầu tiên đến lúc 07:00 ngày mai.", missing: "Không tải được spark này." }
   };
   var WD = { en: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"], vi: ["Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"] };
   var MO = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -496,6 +514,31 @@ h1, h2, h3, p { margin: 0; }
       '</span><span><i style="background:var(--accent);border-radius:2px;height:2px;width:16px;vertical-align:3px"></i>' + esc(u("movelbl")) + '</span></div>';
     return '<div class="pchart">' + head + rows + legend + '</div>';
   }
+  function freeNotes() { var n = load("freenotes", []); return Array.isArray(n) ? n : []; }
+  function nowStamp(ms) { var d = new Date(ms); return longDate(new Date(ms + 7 * 3600 * 1000).toISOString().slice(0, 10)) + " · " + two(d.getHours()) + ":" + two(d.getMinutes()); }
+  function notesHTML() {
+    var top = '<div class="bar top"><div class="topin"><a class="brandmk" href="#" aria-label="daily spark">' + MARK + '</a>' +
+      (isWeb() ? webTabs("notes") : '<span class="titlebtn">' + esc(u("tab_notes")) + '</span>') + menuBtn() + '</div></div>';
+    var list = freeNotes().slice().reverse();
+    var items = list.length ? list.map(function (n) {
+      return '<div class="nitem"><span class="meta"><span class="num">' + esc(nowStamp(n.t)) + '</span><span>' + esc(n.synced ? u("fn_synced") : u("fn_unsynced")) + '</span>' +
+        '<button type="button" data-fn-del="' + n.t + '">' + esc(u("fn_del")) + '</button></span><p>' + esc(n.body) + '</p></div>';
+    }).join("") : '<p class="sempty">' + esc(u("fn_empty")) + '</p>';
+    return top + '<div class="nflow" id="nflow"><div class="nwrap"><section class="nhead"><h1>' + esc(u("fn_title")) + '</h1><p>' + esc(u("fn_sub")) + '</p></section>' +
+      '<div class="ncompose"><textarea id="fnBox" class="grow" rows="3" maxlength="2000" placeholder="' + esc(u("fn_ph")) + '">' + esc(state.fnDraft || "") + '</textarea>' +
+      '<div class="row2"><button type="button" class="btn sm" id="fnSave">' + esc(u("fn_save")) + '</button><span class="small" id="fnSt"></span>' + (isWeb() ? '<span class="hint">' + esc(u("fn_hint")) + '</span>' : "") + '</div></div>' +
+      '<div class="nlist">' + items + '</div></div></div>' + tabBar("notes") + sheetHTML();
+  }
+  function syncPendingNotes() {
+    if (!canSync()) return;
+    var all = freeNotes(), changed = false;
+    all.forEach(function (n) {
+      if (n.synced) return;
+      sync("notes", { day: n.day, item: "free", body: n.body }).then(function (ok) {
+        if (!ok) return; n.synced = true; changed = true; save("freenotes", all); if (state.cur === "notes") render();
+      });
+    });
+  }
   function radarHTML() {
     var R = state.radar;
     var top = '<div class="bar top"><div class="topin"><a class="brandmk" href="#" aria-label="daily spark">' + MARK + '</a>' +
@@ -547,7 +590,8 @@ h1, h2, h3, p { margin: 0; }
     auto: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>',
     light: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
     dark: '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>',
-    radar: '<svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/></svg>'
+    radar: '<svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6-6"/></svg>',
+    pen: '<svg class="ln" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4z"/><path d="M13.5 6.5l4 4"/></svg>'
   };
   var LOCK = '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true" style="width:14px;height:14px"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>';
   var MARK = '<svg viewBox="320 320 614 614" aria-hidden="true" fill="currentColor"><polygon points="625,332 638,332 657,535 607,557"/><polygon points="607,712 660,688 638,920 626,920"/><polygon points="333,613 632,590 920,613 920,628 646,650 333,628"/><polygon points="371,767 547,645 632,590 881,473 889,487 727,598 646,651 378,780"/></svg>';
@@ -555,10 +599,11 @@ h1, h2, h3, p { margin: 0; }
   function menuBtn() { return '<button type="button" class="iconbtn" data-menu="1" aria-expanded="' + state.menu + '" aria-label="' + esc(u("menu")) + '">' + (state.menu ? IC.close : IC.menu) + '</button>'; }
   /* top-level tabs: header tabs on web, bottom tab bar on phone */
   function webTabs(cur) {
-    return isWeb() ? '<nav class="tabs" aria-label="' + esc(u("menu")) + '"><a href="#" aria-current="' + (cur === "sparks" ? "page" : "false") + '">' + esc(u("tab_sparks")) + '</a><a href="#radar" aria-current="' + (cur === "radar" ? "page" : "false") + '">' + esc(u("s_radar")) + '</a></nav>' : "";
+    return isWeb() ? '<nav class="tabs" aria-label="' + esc(u("menu")) + '"><a href="#" aria-current="' + (cur === "sparks" ? "page" : "false") + '">' + esc(u("tab_sparks")) + '</a><a href="#notes" aria-current="' + (cur === "notes" ? "page" : "false") + '">' + esc(u("tab_notes")) + '</a><a href="#radar" aria-current="' + (cur === "radar" ? "page" : "false") + '">' + esc(u("s_radar")) + '</a></nav>' : "";
   }
   function tabBar(cur) {
-    return '<nav class="tabbar" aria-label="' + esc(u("menu")) + '"><a href="#" aria-current="' + (cur === "sparks" ? "page" : "false") + '">' + MARK + esc(u("tab_sparks")) + '</a>' +
+    return '<nav class="tabbar three" aria-label="' + esc(u("menu")) + '"><a href="#" aria-current="' + (cur === "sparks" ? "page" : "false") + '">' + MARK + esc(u("tab_sparks")) + '</a>' +
+      '<a href="#notes" aria-current="' + (cur === "notes" ? "page" : "false") + '">' + IC.pen + esc(u("tab_notes")) + '</a>' +
       '<a href="#radar" aria-current="' + (cur === "radar" ? "page" : "false") + '">' + IC.radar + esc(u("s_radar")) + '</a></nav>';
   }
 
@@ -645,8 +690,8 @@ h1, h2, h3, p { margin: 0; }
     applyTheme();
     dev.className = "device" + (isWeb() ? " web" : "");
     document.documentElement.lang = state.lang;
-    dev.innerHTML = '<div class="ds">' + (state.cur === "radar" ? radarHTML() : state.cur ? dayHTML() : homeHTML()) + '</div>';
-    document.title = state.cur === "radar" ? "daily spark · radar" : state.cur ? "daily spark · " + shortDate(state.cur) : "daily spark";
+    dev.innerHTML = '<div class="ds">' + (state.cur === "radar" ? radarHTML() : state.cur === "notes" ? notesHTML() : state.cur ? dayHTML() : homeHTML()) + '</div>';
+    document.title = state.cur === "radar" ? "daily spark · radar" : state.cur === "notes" ? "daily spark · notes" : state.cur ? "daily spark · " + shortDate(state.cur) : "daily spark";
     if (rkeep) { var rf2 = document.getElementById("rflow"); if (rf2) rf2.scrollTop = rkeep; }
     if (keepCur === state.cur) {
       var fl2 = document.getElementById("flow"); if (fl2 && fkeep) fl2.scrollTop = fkeep;
@@ -702,6 +747,24 @@ h1, h2, h3, p { margin: 0; }
       var nb = dev.querySelector('[data-note="' + id + '"]'); if (nb) nb.setAttribute("aria-pressed", String(!!body));
       if (!body) { st.textContent = ""; return; }
       sync("notes", { day: state.cur, item: id, body: body }).then(function (ok) { st.textContent = ok ? u("note_saved") : u("note_local"); }); }); });
+    var fnBox = document.getElementById("fnBox");
+    if (fnBox) {
+      var fnSave = function () {
+        var body = fnBox.value.trim(), st = document.getElementById("fnSt"); if (!body) return;
+        var n = { t: Date.now(), day: todayVN(), body: body, synced: false }, all = freeNotes(); all.push(n); save("freenotes", all);
+        state.fnDraft = ""; fnBox.value = "";
+        sync("notes", { day: n.day, item: "free", body: body }).then(function (ok) {
+          if (ok) { n.synced = true; save("freenotes", all); }
+          render(); var st2 = document.getElementById("fnSt"); if (st2) st2.textContent = ok ? u("fn_saved") : u("fn_local");
+          var b2 = document.getElementById("fnBox"); if (b2 && isWeb()) b2.focus();
+        });
+      };
+      document.getElementById("fnSave").addEventListener("click", fnSave);
+      fnBox.addEventListener("input", function () { state.fnDraft = fnBox.value; });
+      fnBox.addEventListener("keydown", function (e) { if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) { e.preventDefault(); fnSave(); } });
+    }
+    dev.querySelectorAll("[data-fn-del]").forEach(function (b) { b.addEventListener("click", function () {
+      var t = +b.dataset.fnDel; save("freenotes", freeNotes().filter(function (n) { return n.t !== t; })); render(); }); });
     var sv = document.getElementById("saveRecap");
     if (sv) sv.addEventListener("click", function () {
       var body = document.getElementById("recapBox").value, note = document.getElementById("savedNote");
@@ -731,6 +794,9 @@ h1, h2, h3, p { margin: 0; }
       fetch("editions/data/" + h + ".json", { cache: "no-cache" }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
         .then(function (E) { if (state.cur === h) { state.ed = E; render(); if (E.type === "weekly" && !state.radar) loadRadar(); } })
         .catch(function () { if (state.cur === h) { state.err = true; render(); } });
+    } else if (h === "notes") {
+      state.cur = "notes"; state.ed = null; state.err = false; render(); syncPendingNotes();
+      if (isWeb()) { var fb0 = document.getElementById("fnBox"); if (fb0) fb0.focus(); }
     } else if (h === "radar" || h.indexOf("radar/") === 0) {
       var sel = h.slice(6) || null, was = state.cur === "radar";
       state.rsel = sel;
