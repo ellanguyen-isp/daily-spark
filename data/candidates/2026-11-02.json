@@ -1,67 +1,67 @@
 {
  "date": "2026-11-02",
- "generated_at": "2026-11-02T06:13+07:00",
+ "generated_at": "2026-11-02T08:46+07:00",
  "window_days": 3,
- "youtube_api": false,
+ "youtube_api": true,
  "sources": [
   {
    "source": "Starter Story",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 4
   },
   {
    "source": "Starter Story Build",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 0
   },
   {
    "source": "Lenny's Podcast",
    "ok": true,
-   "via": "youtube-rss",
-   "new": 2
+   "via": "youtube-api",
+   "new": 1
   },
   {
    "source": "The Skip (Nikhyl Singhal)",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 0
   },
   {
    "source": "YC Root Access",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 0
   },
   {
    "source": "Aakash Gupta (Product Growth)",
    "ok": true,
-   "via": "youtube-rss",
-   "new": 2
+   "via": "youtube-api",
+   "new": 1
   },
   {
    "source": "Y Combinator",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 2
   },
   {
    "source": "Naval",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 0
   },
   {
    "source": "Every",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 1
   },
   {
    "source": "Vietnam Innovators Digest",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 4
   },
   {
@@ -74,7 +74,7 @@
    "source": "Simon Willison",
    "ok": true,
    "via": "rss",
-   "new": 4
+   "new": 5
   },
   {
    "source": "Every",
@@ -113,9 +113,8 @@
   },
   {
    "source": "John Cutler",
-   "ok": true,
-   "via": "rss",
-   "new": 1
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "SVPG (Marty Cagan)",
@@ -125,15 +124,13 @@
   },
   {
    "source": "Andrew Chen",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "April Dunford",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Jason Cohen",
@@ -143,9 +140,8 @@
   },
   {
    "source": "Gibson Biddle",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Brian Balfour",
@@ -187,7 +183,7 @@
    "source": "OpenAI news",
    "ok": true,
    "via": "rss",
-   "new": 3
+   "new": 2
   },
   {
    "source": "Google AI blog",
@@ -199,7 +195,7 @@
    "source": "Product Hunt",
    "ok": true,
    "via": "rss",
-   "new": 16
+   "new": 15
   },
   {
    "source": "Anthropic news",
@@ -215,19 +211,19 @@
  ],
  "items": [
   {
-   "source": "Hacker News front page",
+   "source": "Simon Willison",
    "type": "rss",
    "role": "frontier",
    "priority": 1,
    "tags": [
-    "launches",
-    "ai"
+    "ai-engineering",
+    "agents"
    ],
    "via": "rss",
-   "title": "So I guess everyone uses LLMs to think now",
-   "url": "https://eva.ac/blog/llms/",
+   "title": "If in doubt, delete the uv.lock file",
+   "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
    "published": "2026-11-02",
-   "summary": "Comments"
+   "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it. Running uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories. But... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An examp..."
   },
   {
    "source": "Hacker News front page",
@@ -239,8 +235,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Mathematics has changed. Let's act like it",
-   "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+   "title": "America on Data Centers: listen to 10,000+ city council comments",
+   "url": "https://www.americansentiment.com/datacenters",
    "published": "2026-11-02",
    "summary": "Comments"
   },
@@ -269,8 +265,38 @@
     "ai"
    ],
    "via": "rss",
-   "title": "John Leeson (the voice of K9) has died",
-   "url": "https://www.doctorwhonews.net/2026/11/john_leeson_1943_2026.html",
+   "title": "Mathematics has changed. Let's act like it",
+   "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+   "published": "2026-11-02",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "AI delivers 'zero financial payoff' to most companies, Apollo economist says",
+   "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
+   "published": "2026-11-02",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "OccupySaaS",
+   "url": "https://occupysaas.com/",
    "published": "2026-11-02",
    "summary": "Comments"
   },
@@ -299,9 +325,9 @@
     "founders",
     "case-studies"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Bro's AI video editor makes $11,200 per month 😱",
-   "url": "https://www.youtube.com/shorts/0t_FAN0dN0A",
+   "url": "https://www.youtube.com/watch?v=0t_FAN0dN0A",
    "published": "2026-11-02",
    "summary": "Bro’s AI video editor makes $11,200 per month. Meet Vadim. He’s 19 and built Vugola, an AI video editing agent that turns any long-form content into viral clips. about $11,200 in MRR in the last four weeks a few 10,000 signups about 400 paying users built for clippers, content creators, agencies, and long-form brands"
   },
@@ -315,28 +341,11 @@
     "founders",
     "case-studies"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "How I Built It: $400K/Month iOS App",
    "url": "https://www.youtube.com/watch?v=hnxn16HtLIk",
    "published": "2026-11-02",
-   "summary": "Yoni built one of the most popular iOS apps in recent years: Brainrot. In this video, we break down the story behind how he took it from a simple idea to an app that is making an astonishing $400K/month. And, most importantly, we get his thoughts on what’s working right now for building and growing apps in 2026. *120+ Businesses you can start with less than $500:* https://clickhubspot.com/1tva Say hi to Yoni: https://twitter.com/YoniSmolyar Check out Brainrot: https://thebrainrotapp.com/ 🔔 Follow the Second Channel: @StarterStoryBuild 🏁 We're hiring: starterstory.com/jobs Chapters: 0:00 - the ..."
-  },
-  {
-   "source": "Lenny's Podcast",
-   "type": "youtube",
-   "role": "people",
-   "priority": 1,
-   "tags": [
-    "product",
-    "growth",
-    "career",
-    "ai-products"
-   ],
-   "via": "youtube-rss",
-   "title": "86 minutes of paid-growth alpha | Hector Serrano",
-   "url": "https://www.youtube.com/watch?v=KzS5Qs7vSMg",
-   "published": "2026-11-01",
-   "summary": "Hector Serrano runs one of the most innovative and successful paid growth programs in Silicon Valley. As Head of Content at Wispr Flow, a leading AI voice-to-text tool, he built a roster of 50 creators who drive 500 to 600 paid user-generated content (UGC) ads every month. The creators are paid a cut of ad spend, and the best of them earn over $13,000 a month. It’s a playbook the best DTC brands have used for years, now adapted for SaaS. Hector joined Wispr Flow at 19, before the product had PMF, and over the past year, Wispr Flow has grown revenue 30x and raised at a $2 billion valuation. *We..."
+   "summary": "Yoni built one of the most popular iOS apps in recent years: Brainrot. In this video, we break down the story behind how he took it from a simple idea to an app that is making an astonishing $400K/month. And, most importantly, we get his thoughts on what’s working right now for building and growing apps in 2026. *120+ Businesses you can start with less than $500:* https://clickhubspot.com/1tva Say hi to Yoni: https://twitter.com/YoniSmolyar Check out Brainrot: https://thebrainrotapp.com/ 🔔 Follow the Second Channel: @StarterStoryBuild 🏁 We're hiring: starterstory.com/jobs Chapters: 0:00 - the $400K/month app 0:58 - Meet Yoni 1:27 - Brainrot 2:00 - Yoni’s background 2:30 - Start your own business 3:07 - Building a personal brand 3:38 - Idea behind Brainrot 4:11 - Launch and early traction 4:41 - More growth strategies 5:47 - When to go all-in? 6:29 - Building apps in 2026 9:04 - Yoni’s advice for finding app ideas 10:04 - Tech stack and tools 10:29 - Brainrot demo 11:18 - Final advice This video is an educational case study of this founder’s experience. It is not financial advice and does not guarantee any income or results. Every business is different and your results may vary."
   },
   {
    "source": "Aakash Gupta (Product Growth)",
@@ -349,11 +358,11 @@
     "ai-pm",
     "career"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Why a 660-ton ball makes Taipei 101 safer",
-   "url": "https://www.youtube.com/shorts/oaRu-RZbYTw",
+   "url": "https://www.youtube.com/watch?v=oaRu-RZbYTw",
    "published": "2026-11-01",
-   "summary": "Why does Taipei 101 hang a 660-ton ball near the top? The ball is 5.5 meters across, built from 41 layers of steel plate, each 12.5 centimeters thick, and the official site puts it at 660 metric tons. It hangs on cables, and when wind pushes the tower one way, the ball swings against it. That's called a tuned mass damper. The official site says its main purpose is to reduce the swaying of the tower during strong winds. Same weight, but free to swing, it protects the building. Idea and structure: Mark Rober's Short \"How To Keep a Skyscraper From Falling Over\". Sources are in the pinned comment...."
+   "summary": "Why does Taipei 101 hang a 660-ton ball near the top? The ball is 5.5 meters across, built from 41 layers of steel plate, each 12.5 centimeters thick, and the official site puts it at 660 metric tons. It hangs on cables, and when wind pushes the tower one way, the ball swings against it. That's called a tuned mass damper. The official site says its main purpose is to reduce the swaying of the tower during strong winds. Same weight, but free to swing, it protects the building. Idea and structure: Mark Rober's Short \"How To Keep a Skyscraper From Falling Over\". Sources are in the pinned comment. Photos: Wpcpey (CC BY 4.0), Chaplain iMonk and Richard Bitting (CC BY 2.0), via Wikimedia Commons. Footage: NASA #shorts #science #engineering"
   },
   {
    "source": "Lenny's Newsletter",
@@ -469,21 +478,6 @@
     "ai"
    ],
    "via": "rss",
-   "title": "The She-Wolves of Jülich",
-   "url": "https://www.historytoday.com/archive/history-matters/she-wolves-julich",
-   "published": "2026-11-01",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
    "title": "Show HN: OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
    "url": "https://github.com/ivankovic/omnidiff",
    "published": "2026-11-01",
@@ -501,6 +495,21 @@
    "via": "rss",
    "title": "Proving and improving the Platonic Representation Hypothesis with JEPAs",
    "url": "https://arxiv.org/abs/2610.39302",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "The She-Wolves of Jülich",
+   "url": "https://www.historytoday.com/archive/history-matters/she-wolves-julich",
    "published": "2026-11-01",
    "summary": "Comments"
   },
@@ -544,8 +553,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Novellas with Groff",
-   "url": "https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html",
+   "title": "The AI cost of JavaScript frameworks",
+   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
    "published": "2026-11-01",
    "summary": "Comments"
   },
@@ -559,8 +568,23 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Brazilian Court Sanctions Lawyers for Prompt Injection in Court Filing",
-   "url": "https://jetstream.security/insights/brazilian-court-sanctions-prompt-injection-filing/",
+   "title": "A Chemical Hunger (2021)",
+   "url": "https://slimemoldtimemold.com/2021/07/07/a-chemical-hunger-part-i-mysteries/",
+   "published": "2026-11-01",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Novellas with Groff",
+   "url": "https://movq.de/blog/postings/2026-10-31/0/POSTING-en.html",
    "published": "2026-11-01",
    "summary": "Comments"
   },
@@ -589,8 +613,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "The AI cost of JavaScript frameworks",
-   "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/",
+   "title": "Domain hacks with unusual Unicode characters (2018)",
+   "url": "https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters/",
    "published": "2026-11-01",
    "summary": "Comments"
   },
@@ -610,51 +634,6 @@
    "summary": "Comments"
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Domain hacks with unusual Unicode characters (2018)",
-   "url": "https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters/",
-   "published": "2026-11-01",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Landline phones will switch off across Britland in 100 days, no extensions",
-   "url": "https://www.theregister.com/networks/2026/11/01/landline-phones-will-switch-off-across-britland-in-100-days-no-extensions-openreach/5306673",
-   "published": "2026-11-01",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "An Italian farmer found some unknown seeds in his attic and planted them",
-   "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644/",
-   "published": "2026-11-01",
-   "summary": "Comments"
-  },
-  {
    "source": "Starter Story",
    "type": "youtube",
    "role": "people",
@@ -664,9 +643,9 @@
     "founders",
     "case-studies"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Bro built a simple app on vacation and it makes $10,000+/month 🤯",
-   "url": "https://www.youtube.com/shorts/oM74DZlgc-k",
+   "url": "https://www.youtube.com/watch?v=oM74DZlgc-k",
    "published": "2026-11-01",
    "summary": "Bro built a simple app on vacation and now it makes $10,000+/month. Meet Frederick. His app is a habit tracker in health and fitness. In Gus’s words: “His app is not really special at all.” The playbook is what made it work: Apple Search Ads bidding on big competitor names got him to about $5K/month TikTok ads that remade videos already going viral in his niche took him from $5K to $10K in about a week Now he’s running the same playbook again on app #2 The idea barely matters. Distribution does."
   },
@@ -680,26 +659,11 @@
     "startups",
     "sea"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Điều cần phải xảy đến trước khi nhảy việc",
-   "url": "https://www.youtube.com/shorts/pZREBJzsbTY",
+   "url": "https://www.youtube.com/watch?v=pZREBJzsbTY",
    "published": "2026-11-01",
-   "summary": "[English below] Rời ngành Tài chính, An Trương quyết định dành thời gian nghỉ ngơi trước khi bắt đầu hành trình mới. Khoảng nghỉ ấy không chỉ giúp An tái tạo năng lượng, mà còn là cơ hội để nhìn lại bản thân và tìm cảm hứng cho bước đi tiếp theo. Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - After leaving the finance industry, An Trương took time off before embarking on a new chapter. The break gave An space to recharge, reflect, and rediscover the inspi..."
-  },
-  {
-   "source": "John Cutler",
-   "type": "rss",
-   "role": "people",
-   "priority": 2,
-   "tags": [
-    "product-ops",
-    "systems"
-   ],
-   "via": "rss",
-   "title": "TBM 448: The Software Factory as Identity Defense (and Reinvention)",
-   "url": "https://cutlefish.substack.com/p/tbm-448-the-software-factory-as-identity",
-   "published": "2026-11-01",
-   "summary": "We’re reimagining the future of work one professional silo at a time."
+   "summary": "[English below] Rời ngành Tài chính, An Trương quyết định dành thời gian nghỉ ngơi trước khi bắt đầu hành trình mới. Khoảng nghỉ ấy không chỉ giúp An tái tạo năng lượng, mà còn là cơ hội để nhìn lại bản thân và tìm cảm hứng cho bước đi tiếp theo. Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - After leaving the finance industry, An Trương took time off before embarking on a new chapter. The break gave An space to recharge, reflect, and rediscover the inspiration needed to figure out what comes next. Watch more from EP414 of Vietnam Innovators (English Edition) featuring An Truong available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts channels."
   },
   {
    "source": "Hello China Tech",
@@ -770,10 +734,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "AwaitIO",
-   "url": "https://www.producthunt.com/products/awaitio",
+   "title": "Agnos",
+   "url": "https://www.producthunt.com/products/agnos",
    "published": "2026-10-31",
-   "summary": "Write a TypeScript function, get an admin screen Discussion | Link"
+   "summary": "Clean documents for AI, and see what was removed Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -798,38 +762,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Agnos",
-   "url": "https://www.producthunt.com/products/agnos",
-   "published": "2026-10-31",
-   "summary": "Clean documents for AI, and see what was removed Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
    "title": "AC Bridge",
    "url": "https://www.producthunt.com/products/ac-bridge",
    "published": "2026-10-31",
    "summary": "Your smart lights show when Claude Code or Codex needs you. Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Godwit",
-   "url": "https://www.producthunt.com/products/godwit",
-   "published": "2026-10-31",
-   "summary": "An open-source, AI-native email client Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -854,10 +790,53 @@
     "launches"
    ],
    "via": "rss",
+   "title": "Godwit",
+   "url": "https://www.producthunt.com/products/godwit",
+   "published": "2026-10-31",
+   "summary": "An open-source, AI-native email client Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "AwaitIO",
+   "url": "https://www.producthunt.com/products/awaitio",
+   "published": "2026-10-31",
+   "summary": "Write a TypeScript function, get an admin screen Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
    "title": "ChainPoints",
    "url": "https://www.producthunt.com/products/chainpoints",
    "published": "2026-10-31",
    "summary": "Flight Prices in Your Points, on Google Flights Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Postgres 19 is late, and it's AI's fault",
+   "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+   "published": "2026-10-31",
+   "summary": "Comments"
   },
   {
    "source": "Hacker News front page",
@@ -920,21 +899,6 @@
    "summary": "Comments"
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Understanding Email Encryption (2025)",
-   "url": "https://www.fastmail.com/blog/email-encryption/",
-   "published": "2026-10-31",
-   "summary": "Comments"
-  },
-  {
    "source": "Starter Story",
    "type": "youtube",
    "role": "people",
@@ -944,9 +908,9 @@
     "founders",
     "case-studies"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Bro built a $18k MRR app because his dad took 3 days to write one email 👍",
-   "url": "https://www.youtube.com/shorts/bONPJa_ThW4",
+   "url": "https://www.youtube.com/watch?v=bONPJa_ThW4",
    "published": "2026-10-31",
    "summary": "Bro got stuck in a hospital bed for two weeks and watched his dad take 3 days to write one email. Kourosh’s dad is “an insane workaholic, on his computer 24/7.” So for two straight weeks it was click, click, click, right next to his hospital bed. At the same time, Kourosh was playing with ChatGPT’s dictation and thought: “I wish I could just give him this dictation absolutely everywhere.” That became Voicy. It’s a speech-to-text app he built for his dad, and it now makes $16K to $20K a month as a side project."
   },
@@ -960,11 +924,11 @@
     "startups",
     "sea"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Không tiền, có sáng tạo được không?",
-   "url": "https://www.youtube.com/shorts/0aq-VXEX2iw",
+   "url": "https://www.youtube.com/watch?v=0aq-VXEX2iw",
    "published": "2026-10-31",
-   "summary": "[English below] Làm sáng tạo cần nguồn lực để duy trì, nhưng có nhất thiết phải thương mại hóa sản phẩm mới có thể tạo ra nguồn lực đó? Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - Creating requires resources to sustain, but does monetizing the work itself have to be the only way to secure them? Watch more from EP414 of Vietnam Innovators (English Edition) featuring An Truong available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts ..."
+   "summary": "[English below] Làm sáng tạo cần nguồn lực để duy trì, nhưng có nhất thiết phải thương mại hóa sản phẩm mới có thể tạo ra nguồn lực đó? Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - Creating requires resources to sustain, but does monetizing the work itself have to be the only way to secure them? Watch more from EP414 of Vietnam Innovators (English Edition) featuring An Truong available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts channels."
   },
   {
    "source": "Stratechery (Ben Thompson)",
@@ -1104,30 +1068,13 @@
     "career",
     "ai-products"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Why Design Partners Don't Work",
-   "url": "https://www.youtube.com/shorts/bBoTLUrDFyc",
+   "url": "https://www.youtube.com/watch?v=bBoTLUrDFyc",
    "published": "2026-10-30",
    "summary": "Why Rob Snyder (Author of The Power of Pull) advises against design partners."
   },
   {
-   "source": "Aakash Gupta (Product Growth)",
-   "type": "youtube",
-   "role": "people",
-   "priority": 1,
-   "tags": [
-    "product",
-    "growth",
-    "ai-pm",
-    "career"
-   ],
-   "via": "youtube-rss",
-   "title": "Masterclass: Interview Homework for PMs",
-   "url": "https://www.youtube.com/watch?v=Jz2cFhcohm0",
-   "published": "2026-10-30",
-   "summary": "Most PM take-homes now get read by an AI before a human ever sees them. PM interview coach Sumant Malhotra walks through four real homework decks, two shortlisted and two that shouldn't have been, and shows exactly what separates them. You'll learn the 5 types of PM homework, the 20% most AI decks miss, and a system for acing your next take-home. Complete Deep Dive: https://www.news.aakashg.com/p/pm-take-home-assignment-playbook?utm_source=yt-20261028 Transcript: https://www.aakashg.com/how-to-ace-pm-interview-homework-in-the-age-of-ai-with-sumant-malhotra/ Timestamps 0:00 - Intro 1:29 - Why P..."
-  },
-  {
    "source": "Y Combinator",
    "type": "youtube",
    "role": "people",
@@ -1137,11 +1084,11 @@
     "startup-school",
     "ai"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "What Happens When Everyone Can Build Software",
    "url": "https://www.youtube.com/watch?v=vl7HiMdGfjo",
    "published": "2026-10-30",
-   "summary": "In this episode of the Lightcone, the hosts sit down with Paul Copplestone, co-founder and CEO of Supabase. Since starting in the YC summer batch of 2020, the company has exploded to 13 million users and over 50 million databases under management. Supabase is now positioning for a future where everyone can write their own software, billions have access to personal databases and agents are driving much of the demand. Apply to Y Combinator: https://www.ycombinator.com/apply Work at a startup: https://www.ycombinator.com/jobs Chapters: 00:00 Intro 01:18 Growth and 4x Revenue 02:35 Three Eras of S..."
+   "summary": "In this episode of the Lightcone, the hosts sit down with Paul Copplestone, co-founder and CEO of Supabase. Since starting in the YC summer batch of 2020, the company has exploded to 13 million users and over 50 million databases under management. Supabase is now positioning for a future where everyone can write their own software, billions have access to personal databases and agents are driving much of the demand. Apply to Y Combinator: https://www.ycombinator.com/apply Work at a startup: https://www.ycombinator.com/jobs Chapters: 00:00 Intro 01:18 Growth and 4x Revenue 02:35 Three Eras of Supabase 04:34 “Builders” vs. Traditional Devs 08:42 Personalized Apps 12:12 Personal Databases & Data Ownership 15:56 Scaling to Billions 17:58 AI Adoption At Supabase 19:58 Lessons Learned Along The Way 27:29 Building For Personal Agents, Dogfooding 30:01 Agent-First Design and Evals 38:42 The Future Of Coding 42:36 Opening Up More Entrepreneurship + Outro"
   },
   {
    "source": "Y Combinator",
@@ -1153,9 +1100,9 @@
     "startup-school",
     "ai"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "AI for the Air-Gapped Economy",
-   "url": "https://www.youtube.com/shorts/x21EgQzfZaM",
+   "url": "https://www.youtube.com/watch?v=x21EgQzfZaM",
    "published": "2026-10-30",
    "summary": "Some of the most valuable data in the world can never leave the building. Defense contractors, banks, hospitals, and nuclear plants can’t simply send it to a cloud AI API. That creates an opportunity to bring frontier AI inside those walls: on-prem models, deployment tooling, security accreditation, and hardware for the parts of the economy the cloud can’t reach. Apply for the Winter 2027 batch at ycombinator.com/apply."
   },
@@ -1188,34 +1135,6 @@
    "summary": "OpenAI is strengthening violence prevention in ChatGPT with expanded safeguards, earlier interventions, and a new commitment to public safety reporting."
   },
   {
-   "source": "OpenAI news",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "ai-models"
-   ],
-   "via": "rss",
-   "title": "Fair use benefits everyone",
-   "url": "https://openai.com/index/fair-use-benefits-everyone",
-   "published": "2026-10-30",
-   "summary": "OpenAI shares excerpts from court briefs by creators, academics, accessibility advocates, and legal experts, among others, on how fair use supports AI training and innovation."
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Screen Studio 4.0",
-   "url": "https://www.producthunt.com/products/screen-studio",
-   "published": "2026-10-30",
-   "summary": "Glass Loupe, Camera Cutout, Edit by Transcript, and more Discussion | Link"
-  },
-  {
    "source": "Product Hunt",
    "type": "rss",
    "role": "frontier",
@@ -1238,10 +1157,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Chorin: Ora et Labora",
-   "url": "https://www.producthunt.com/products/chorin-ora-et-labora",
+   "title": "Screen Studio 4.0",
+   "url": "https://www.producthunt.com/products/screen-studio",
    "published": "2026-10-30",
-   "summary": "Build a real medieval abbey, from 1258 to today Discussion | Link"
+   "summary": "Glass Loupe, Camera Cutout, Edit by Transcript, and more Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1280,10 +1199,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "SKI",
-   "url": "https://www.producthunt.com/products/ski",
+   "title": "Chorin: Ora et Labora",
+   "url": "https://www.producthunt.com/products/chorin-ora-et-labora",
    "published": "2026-10-30",
-   "summary": "Voice-first coding harness Discussion | Link"
+   "summary": "Build a real medieval abbey, from 1258 to today Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1294,10 +1213,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Hemmed",
-   "url": "https://www.producthunt.com/products/hemmed",
+   "title": "SKI",
+   "url": "https://www.producthunt.com/products/ski",
    "published": "2026-10-30",
-   "summary": "Hide Mac menu bar clutter and pin individual actions Discussion | Link"
+   "summary": "Voice-first coding harness Discussion | Link"
   },
   {
    "source": "Hacker News front page",
@@ -1311,6 +1230,21 @@
    "via": "rss",
    "title": "Nibnib: Image compression with extreme decompression speed",
    "url": "https://github.com/raphlinus/nibnib",
+   "published": "2026-10-30",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Keeping Up Appearances – The women taking over the funeral industry",
+   "url": "https://lareviewofbooks.org/article/death-industry-mortuary-programs-women-andie-eisen-quarterly/",
    "published": "2026-10-30",
    "summary": "Comments"
   },
@@ -1338,7 +1272,7 @@
     "ai-native-work",
     "ai-products"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Context Engineering With DSPy",
    "url": "https://www.youtube.com/watch?v=k1mmJaqQky0",
    "published": "2026-10-30",
@@ -1354,11 +1288,11 @@
     "startups",
     "sea"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Bắt đầu sản xuất quy mô lớn từ đâu?",
-   "url": "https://www.youtube.com/shorts/AZWTpYpqhy4",
+   "url": "https://www.youtube.com/watch?v=AZWTpYpqhy4",
    "published": "2026-10-30",
-   "summary": "[English below] Trước độ phức tạp của bài toán sản xuất quy mô lớn, Derek Grundy cho rằng, bước đi quan trọng nhất nằm ở việc xác định rõ định vị sản phẩm và lộ trình phát triển. Một kế hoạch kinh doanh rõ ràng & thực tế chính là chiếc cầu nối bền vững nhất để tiếp cận và gắn kết cùng các đối tác sản xuất hàng đầu. Xem phiên bản đầy đủ tập 413 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông Derek Grundy - Chief Operating Officer tại HuaLi Industrial Group's Nike Division. - Facing the sheer comple..."
+   "summary": "[English below] Trước độ phức tạp của bài toán sản xuất quy mô lớn, Derek Grundy cho rằng, bước đi quan trọng nhất nằm ở việc xác định rõ định vị sản phẩm và lộ trình phát triển. Một kế hoạch kinh doanh rõ ràng & thực tế chính là chiếc cầu nối bền vững nhất để tiếp cận và gắn kết cùng các đối tác sản xuất hàng đầu. Xem phiên bản đầy đủ tập 413 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông Derek Grundy - Chief Operating Officer tại HuaLi Industrial Group's Nike Division. - Facing the sheer complexity of large-scale manufacturing, Derek Grundy emphasizes that an entrepreneur's critical first step is doing the groundwork: clearly defining unique value propositions and growth milestones. A sharp, well-structured business plan remains the most reliable bridge to engaging and aligning with tier-1 manufacturing partners. Watch more from EP413 of Vietnam Innovators (English Edition) featuring Mr. Derek Grundy - Chief Operating Officer at HuaLi Industrial Group's Nike Division, available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts channels."
   },
   {
    "source": "Vietnam Innovators Digest",
@@ -1370,11 +1304,11 @@
     "startups",
     "sea"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Quá khứ của sếp An",
-   "url": "https://www.youtube.com/shorts/MXcj6bylri4",
+   "url": "https://www.youtube.com/watch?v=MXcj6bylri4",
    "published": "2026-10-30",
-   "summary": "[English below] Trước khi trở thành \"hiện tượng\" với Xin Việc, sếp An từng có những vlog ghi lại khoảnh khắc thời đại học với trung bình 10.000 lượt xem tự nhiên nhưng lại tự tay cất tất cả vào kho lưu trữ, chỉ vì \"máy quay còn rung và âm thanh chưa chuẩn\". Phải chăng rào cản lớn nhất của giai đoạn khởi đầu của mọi nhà sáng tạo không nằm ở nguồn lực hay thuật toán, mà xuất phát từ nỗi sợ đối diện với sự không hoàn hảo của chính mình? Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câ..."
+   "summary": "[English below] Trước khi trở thành \"hiện tượng\" với Xin Việc, sếp An từng có những vlog ghi lại khoảnh khắc thời đại học với trung bình 10.000 lượt xem tự nhiên nhưng lại tự tay cất tất cả vào kho lưu trữ, chỉ vì \"máy quay còn rung và âm thanh chưa chuẩn\". Phải chăng rào cản lớn nhất của giai đoạn khởi đầu của mọi nhà sáng tạo không nằm ở nguồn lực hay thuật toán, mà xuất phát từ nỗi sợ đối diện với sự không hoàn hảo của chính mình? Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - Before Xin Viec became a media phenomenon, An Truong had already built a dedicated audience with college vlogs averaging 10,000 organic views, yet chose to archive them all over unsteady framing and unpolished sound. Perhaps the most daunting barrier when starting out has never been about gear or algorithms, but the fear of confronting our own early imperfections. Watch more from EP414 of Vietnam Innovators (English Edition) featuring An Truong available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts channels."
   },
   {
    "source": "Stratechery (Ben Thompson)",
