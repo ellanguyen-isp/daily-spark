@@ -39,8 +39,8 @@ Read only `daily-spark/` and `ella@llm_wiki/` in the private repo. Never read `e
    `deeper` = add a follow-up on that story today; **picks** show which exercise type she does, so make that one the strongest.
    **notes** (`item` + `body`) are her own questions or thoughts on one story: treat each as the strongest signal. Answer or follow up on it today
    (a frontier follow-up, a people pick, or the private work section), say plainly which note you are answering, and never copy the note text into the public site.
-   **free notes** (notes whose `item` is `free`) are random ideas and thoughts from the Notes tab, not tied to a story. Read them as interest and intent signals:
-   pick up one or two in today's private work section, a Think question or an exercise when they fit, and never copy their text into the public site.
+   **free notes** (notes whose `item` is `free`) are random ideas she keeps in mind from the Notes tab. They are **optional context, not tasks**: do not act on them by default.
+   Use at most one, and only when it clearly fits today's stories and her focus; skip them on most days. If several look like versions of the same note (she edits notes), only the latest counts. Never copy their text into the public site.
 4. **Frontier (web search allowed).** Search the last 48 hours for big product and AI news that a product builder should know
    (new models, major launches, platform shifts). Combine with `role: frontier` candidates. Pick 2 to 4 stories.
    If nothing is genuinely important, use 2 smaller but real stories and say so in the big picture. Never pad with hype.
