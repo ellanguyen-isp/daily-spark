@@ -1,0 +1,371 @@
+{
+ "date": "2026-11-04",
+ "edition": "004",
+ "minutes": 9,
+ "summary": {
+  "en": "Assistants become the front door: Siri opens to every app, ChatGPT reaches 1.2B weekly users, and Postman shows how fast trust breaks when a tool installs itself.",
+  "vi": "Trợ lý AI thành cửa chính: Siri mở cho mọi app, ChatGPT đạt 1,2 tỷ người dùng mỗi tuần, và Postman cho thấy niềm tin vỡ nhanh thế nào khi một công cụ tự cài vào máy."
+ },
+ "frontier": {
+  "big": {
+   "en": "No new frontier model today, but the place where users start their tasks is moving. Apple opened Siri AI to every app in its 27.3 betas, and OpenAI says ChatGPT now has 1.2 billion weekly users and about one fifth of Google's search volume. At the same time, a Postman update quietly added itself to developers' Claude Code and Codex setups, and people noticed fast. For product people: your feature may soon be used through an assistant, not your own screen, so expose clear actions, and never act inside a user's tools without asking.",
+   "vi": "Hôm nay không có model mới lớn, nhưng nơi người dùng bắt đầu công việc đang dịch chuyển. Apple mở Siri AI cho mọi app trong bản beta 27.3, còn OpenAI nói ChatGPT đã có 1,2 tỷ người dùng mỗi tuần và lượng tìm kiếm bằng khoảng một phần năm Google. Cùng lúc, một bản cập nhật của Postman lặng lẽ tự gắn vào Claude Code và Codex của lập trình viên, và cộng đồng phát hiện rất nhanh. Với người làm sản phẩm: tính năng của bạn có thể sớm được dùng qua trợ lý chứ không qua màn hình của bạn, nên hãy mở ra các hành động rõ ràng, và đừng bao giờ tự làm gì trong công cụ của người dùng khi chưa hỏi."
+  },
+  "items": [
+   {
+    "date": "2026-11-03",
+    "src": "developer.apple.com",
+    "url": "https://developer.apple.com/news/?id=gdk2umrf",
+    "tag": "Platform",
+    "t": {
+     "en": "Apple opens Siri AI to every app",
+     "vi": "Apple mở Siri AI cho mọi ứng dụng"
+    },
+    "p": {
+     "en": [
+      "Apps describe what they can do with App Intents, and Siri can then act on them using personal context and what is on screen",
+      "Developers can build \"skills\" that chain several steps into one spoken request; Siri can also pull app content from the Spotlight index",
+      "It is in developer betas now, reaches customers in a few months, and App Store submissions open in spring",
+      "Limits: not in the EU on iPhone, not for users under 13, six languages today with Vietnamese listed as coming soon, and terms are still unpublished"
+     ],
+     "vi": [
+      "App mô tả việc mình làm được bằng App Intents, rồi Siri có thể thực hiện chúng dựa trên ngữ cảnh cá nhân và những gì đang hiện trên màn hình",
+      "Lập trình viên có thể tạo \"skill\" nối nhiều bước thành một câu lệnh nói; Siri cũng lấy được nội dung app từ chỉ mục Spotlight",
+      "Hiện mới có trong bản beta cho lập trình viên, đến tay người dùng sau vài tháng, và App Store nhận bài nộp từ mùa xuân",
+      "Giới hạn: chưa có ở EU trên iPhone, không cho người dưới 13 tuổi, hiện có sáu ngôn ngữ và tiếng Việt nằm trong danh sách sắp có, điều khoản chưa công bố"
+     ]
+    },
+    "w": {
+     "en": "For a consumer app, the most used screen may become Siri, not your home screen. Decide now which 3 actions a user would say out loud, because the apps that are ready in spring will be the ones Siri reaches for first.",
+     "vi": "Với app tiêu dùng, màn hình được dùng nhiều nhất có thể sẽ là Siri chứ không phải màn hình chính của bạn. Hãy chọn ngay 3 hành động người dùng sẽ nói thành lời, vì app nào sẵn sàng vào mùa xuân sẽ được Siri gọi trước."
+    }
+   },
+   {
+    "date": "2026-11-03",
+    "src": "bigtechnology.com",
+    "url": "https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20",
+    "tag": "Distribution",
+    "t": {
+     "en": "ChatGPT reaches 1.2B weekly users and about a fifth of Google's searches",
+     "vi": "ChatGPT đạt 1,2 tỷ người dùng mỗi tuần và khoảng một phần năm lượng tìm kiếm của Google"
+    },
+    "stat": {
+     "v": "1.2B",
+     "l": {
+      "en": "weekly users, up from 1 billion about two months earlier, per ChatGPT's consumer lead",
+      "vi": "người dùng mỗi tuần, tăng từ 1 tỷ khoảng hai tháng trước, theo trưởng sản phẩm tiêu dùng của ChatGPT"
+     }
+    },
+    "p": {
+     "en": [
+      "Adam Fry said ChatGPT's search-like queries are \"roughly one-fifth the volume of queries of Google\"",
+      "Voice is now a habit: 250 million weekly users across dictation and voice mode, and 1.5 billion images made each week",
+      "OpenAI plans to merge the Chat and Work modes because users found choosing a mode \"too much to understand\"",
+      "The hard part is guessing intent: a quick reply or a long agent task, with no toggle to tell"
+     ],
+     "vi": [
+      "Adam Fry nói các truy vấn kiểu tìm kiếm trên ChatGPT \"bằng khoảng một phần năm lượng truy vấn của Google\"",
+      "Giọng nói đã thành thói quen: 250 triệu người dùng mỗi tuần qua đọc chính tả và chế độ giọng nói, và 1,5 tỷ ảnh được tạo mỗi tuần",
+      "OpenAI định gộp chế độ Chat và Work vì người dùng thấy việc chọn chế độ \"quá khó hiểu\"",
+      "Phần khó là đoán ý định: trả lời nhanh hay một việc agent dài, mà không còn nút gạt để báo"
+     ]
+    },
+    "w": {
+     "en": "Two lessons in one. First, many of your users already ask ChatGPT before they open your app, so check what it says about your category. Second, even OpenAI is removing mode switches: if your AI feature asks users to pick a mode or model, test whether it can guess instead.",
+     "vi": "Hai bài học trong một. Một, nhiều người dùng của bạn đã hỏi ChatGPT trước khi mở app, nên hãy xem nó nói gì về lĩnh vực của bạn. Hai, ngay cả OpenAI cũng bỏ nút chuyển chế độ: nếu tính năng AI của bạn bắt người dùng chọn chế độ hay model, hãy thử xem nó có tự đoán được không."
+    }
+   },
+   {
+    "date": "2026-10-25",
+    "src": "github.com",
+    "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+    "tag": "Trust",
+    "t": {
+     "en": "Postman quietly installed itself into Claude Code and Codex",
+     "vi": "Postman lặng lẽ tự cài vào Claude Code và Codex"
+    },
+    "p": {
+     "en": [
+      "A user report says a desktop update added Postman plugins to Codex and Claude Code, a CLI, and a remote MCP connection, logged as an \"auto-existing-upgrade\"",
+      "A startup hook runs on every agent session and tells the agent to load Postman's skill before most API work",
+      "The installer also wrote the trust approval for its own hook, which the reporter calls self-approval",
+      "The reporter does not claim data was sent anywhere; the issue reached the top of Hacker News this week with no Postman reply on it yet"
+     ],
+     "vi": [
+      "Một báo cáo của người dùng nói bản cập nhật desktop đã thêm plugin Postman vào Codex và Claude Code, một công cụ dòng lệnh, và một kết nối MCP từ xa, được ghi log là \"auto-existing-upgrade\"",
+      "Một hook khởi động chạy ở mọi phiên agent và bảo agent nạp skill của Postman trước hầu hết việc liên quan đến API",
+      "Trình cài đặt còn tự ghi phê duyệt tin cậy cho chính hook của nó, điều người báo cáo gọi là tự phê duyệt",
+      "Người báo cáo không nói dữ liệu đã bị gửi đi; issue này lên đầu Hacker News tuần này và Postman chưa trả lời trên đó"
+     ]
+    },
+    "w": {
+     "en": "Agent setups are the new home screen, and every tool wants a spot. The rule that keeps trust is simple: ask before you add anything to a user's tools, and make it easy to see and remove. Growth from silent installs costs more than it brings.",
+     "vi": "Bộ cài đặt agent là màn hình chính mới, và công cụ nào cũng muốn có chỗ. Quy tắc giữ niềm tin rất đơn giản: hỏi trước khi thêm bất cứ thứ gì vào công cụ của người dùng, và làm cho nó dễ thấy, dễ gỡ. Tăng trưởng nhờ cài lén tốn nhiều hơn những gì nó mang lại."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Anthropic released FlashProve, an open-source way to prove that an answer came from specific model weights. It still costs a lot of extra compute, but it points to a future where you can check which model really served your users.",
+   "vi": "Anthropic công bố FlashProve, cách mã nguồn mở để chứng minh một câu trả lời đến từ đúng bộ trọng số model nào đó. Nó vẫn tốn nhiều tính toán thêm, nhưng cho thấy tương lai bạn có thể kiểm tra model nào thật sự đã phục vụ người dùng của mình."
+  }
+ },
+ "people": [
+  {
+   "who": "Lenny's Podcast",
+   "kind": {
+    "en": "88 min podcast · from the show notes",
+    "vi": "podcast 88 phút · dựa trên ghi chú tập"
+   },
+   "date": "2026-11-01",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
+   "t": {
+    "en": "Wispr Flow's paid creator machine: 50 creators, hundreds of ads a month",
+    "vi": "Cỗ máy creator trả phí của Wispr Flow: 50 creator, hàng trăm quảng cáo mỗi tháng"
+   },
+   "stat": {
+    "v": "500 to 600",
+    "l": {
+     "en": "paid user-generated ads a month from a roster of 50 creators",
+     "vi": "quảng cáo do người dùng tạo mỗi tháng từ nhóm 50 creator"
+    }
+   },
+   "p": {
+    "en": [
+     "Creators are paid a cut of the ad spend on their videos, so the best ones earn over $13,000 a month and have a reason to keep making winners",
+     "It is the playbook direct-to-consumer brands have used for years, applied to a software product",
+     "Hector Serrano joined at 19, before product-market fit; Wispr Flow grew revenue 30x in a year and raised at a $2B valuation",
+     "His hiring view: the best marketers are \"allergic to AI\" in their content, and YouTube is the most underrated growth channel for software"
+    ],
+    "vi": [
+     "Creator được trả theo phần trăm tiền quảng cáo chạy trên video của họ, nên người giỏi nhất kiếm hơn 13.000 USD mỗi tháng và có lý do để tiếp tục làm video thắng",
+     "Đây là cách các thương hiệu bán thẳng cho người tiêu dùng đã dùng nhiều năm, giờ áp dụng cho sản phẩm phần mềm",
+     "Hector Serrano vào công ty lúc 19 tuổi, trước khi có product-market fit; Wispr Flow tăng doanh thu 30 lần trong một năm và gọi vốn ở mức định giá 2 tỷ USD",
+     "Quan điểm tuyển người của anh: marketer giỏi nhất \"dị ứng với AI\" trong nội dung, và YouTube là kênh tăng trưởng bị đánh giá thấp nhất cho phần mềm"
+    ]
+   },
+   "k": {
+    "en": "Paying creators per result turns ads into a test engine: many cheap videos, and money follows the ones that work. You can start with 3 creators and one clear hook, not 50.",
+    "vi": "Trả creator theo kết quả biến quảng cáo thành cỗ máy thử nghiệm: nhiều video rẻ, và tiền chạy theo video hiệu quả. Bạn có thể bắt đầu với 3 creator và một hook rõ ràng, không cần 50."
+   }
+  },
+  {
+   "who": "Product Talk · All Things Product",
+   "kind": {
+    "en": "podcast · from the show notes and key takeaways",
+    "vi": "podcast · dựa trên ghi chú tập và ý chính"
+   },
+   "date": "2026-11-03",
+   "src": "producttalk.org",
+   "url": "https://www.producttalk.org/what-ai-changes-all-things-product-podcast-with-teresa-torres-petra-wille/",
+   "t": {
+    "en": "Teresa Torres and Petra Wille: AI mostly exposes what was already broken",
+    "vi": "Teresa Torres và Petra Wille: AI chủ yếu phơi ra những gì vốn đã hỏng"
+   },
+   "p": {
+    "en": [
+     "Teams drowning in untested AI-written code usually never had automated testing; AI just made the gap visible",
+     "Scrum may fade, but planning, aligning, reviewing and measuring stay; agent \"plans and loops\" are rituals with new names",
+     "\"Delivery is free, so skip discovery\" leaves you unable to learn why something failed, because story-based interviews are about the customer's past, not your product",
+     "Teresa argues AI is not killing SaaS: losing focus on the core product and raising too much money are self-inflicted; what really shifts is hyper-personalized software"
+    ],
+    "vi": [
+     "Những đội ngập trong code AI viết mà không được test thường vốn chưa bao giờ có test tự động; AI chỉ làm lỗ hổng lộ ra",
+     "Scrum có thể phai đi, nhưng việc lập kế hoạch, thống nhất, review và đo lường vẫn còn; \"plan và loop\" của agent là nghi thức với tên mới",
+     "\"Giao hàng miễn phí rồi nên bỏ discovery\" khiến bạn không học được vì sao thứ gì đó thất bại, vì phỏng vấn theo câu chuyện là về quá khứ của khách hàng, không phải về sản phẩm của bạn",
+     "Teresa cho rằng AI không giết SaaS: mất tập trung vào sản phẩm lõi và gọi vốn quá nhiều là vết thương tự gây; điều thật sự thay đổi là phần mềm cá nhân hóa sâu"
+    ]
+   },
+   "k": {
+    "en": "Before blaming or praising AI for a team problem, ask: was this already true without AI? Most of the fix is still basic process, done every week.",
+    "vi": "Trước khi đổ lỗi hay khen AI về một vấn đề của đội, hãy hỏi: chuyện này có đúng cả khi không có AI không? Phần lớn cách sửa vẫn là quy trình cơ bản, làm đều mỗi tuần."
+   }
+  },
+  {
+   "who": "Hello China Tech",
+   "kind": {
+    "en": "article · from the free part of the post",
+    "vi": "bài viết · dựa trên phần miễn phí của bài"
+   },
+   "date": "2026-11-03",
+   "src": "hellochinatech.com",
+   "url": "https://hellochinatech.com/p/china-ai-layoff-rules",
+   "t": {
+    "en": "China puts a price on AI layoffs, so companies cut hiring instead",
+    "vi": "Trung Quốc đặt giá cho việc sa thải vì AI, nên doanh nghiệp cắt tuyển dụng thay vào đó"
+   },
+   "stat": {
+    "v": "Rmb 260,000",
+    "l": {
+     "en": "damages (about $38,000) a Hangzhou company owed a worker it dismissed because AI could do his job",
+     "vi": "tiền bồi thường (khoảng 38.000 USD) một công ty ở Hàng Châu phải trả cho nhân viên bị cho nghỉ vì AI làm được việc của anh"
+    }
+   },
+   "p": {
+    "en": [
+     "The worker checked a large language model's answers; an arbitration panel and two courts found the AI-based dismissal unlawful",
+     "A new State Council document (October 24) asks firms to warn workers before big AI rollouts and help them move roles, but sets no hiring level",
+     "So firms cut where there is no one to complain: contractors, people not replaced when they leave, and graduates never hired",
+     "Hiring data in China and the US both show weaker demand for junior workers, driven by fewer hires rather than more firings"
+    ],
+    "vi": [
+     "Người này kiểm tra câu trả lời của một mô hình ngôn ngữ lớn; hội đồng trọng tài và hai tòa án đều cho rằng việc cho nghỉ vì AI là trái luật",
+     "Một văn bản mới của Quốc vụ viện (24/10) khuyến khích doanh nghiệp báo trước cho nhân viên khi triển khai AI lớn và giúp họ chuyển vai trò, nhưng không đặt mức tuyển dụng nào",
+     "Vì vậy doanh nghiệp cắt ở chỗ không ai khiếu nại: nhân viên hợp đồng, vị trí không thay khi có người nghỉ, và sinh viên mới ra trường không được tuyển",
+     "Số liệu tuyển dụng ở Trung Quốc và Mỹ đều cho thấy nhu cầu với người mới đi làm yếu đi, do tuyển ít hơn chứ không phải sa thải nhiều hơn"
+    ]
+   },
+   "k": {
+    "en": "The AI job shift shows up first as jobs that are never posted, not as layoffs. If you are early in your career, build proof of work that a hiring manager cannot get from a model.",
+    "vi": "Thay đổi việc làm vì AI xuất hiện trước hết ở những vị trí không bao giờ được đăng tuyển, chứ không phải ở sa thải. Nếu bạn mới đi làm, hãy xây bằng chứng công việc mà nhà tuyển dụng không lấy được từ một model."
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "Talk about their life instead of your idea. Ask about specifics in the past instead of opinions about the future.",
+   "vi": "Hãy nói về cuộc sống của họ thay vì ý tưởng của bạn. Hỏi về chi tiết cụ thể trong quá khứ thay vì ý kiến về tương lai."
+  },
+  "src": "The Mom Test · Rob Fitzpatrick",
+  "date": "2013 · book",
+  "url": "",
+  "e": {
+   "en": "Fitzpatrick's point is that everyone, even your mom, will lie to you to be nice when you ask \"would you use this?\". Compliments and promises about the future are cheap. What people already did is expensive and true: how they handled the problem last time, what they paid, what they tried and gave up. Today's podcast makes the same point for the AI era: building got cheap, but learning why people act still needs these conversations.",
+   "vi": "Ý của Fitzpatrick là ai cũng sẽ nói dối bạn cho lịch sự, kể cả mẹ bạn, khi bạn hỏi \"bạn có dùng cái này không?\". Lời khen và lời hứa về tương lai thì rẻ. Những gì người ta đã làm thì đắt và thật: lần trước họ xử lý vấn đề thế nào, họ đã trả bao nhiêu, đã thử gì rồi bỏ. Podcast hôm nay nói cùng ý đó cho thời AI: xây dựng đã rẻ, nhưng hiểu vì sao người ta hành động vẫn cần những cuộc trò chuyện này."
+  },
+  "a": {
+   "en": [
+    "Replace \"would you use...\" with \"tell me about the last time you...\"",
+    "When you hear a compliment, steer back to facts: \"what did you do about it then?\"",
+    "End each talk with a small commitment test: a follow-up call, a trial, an intro, or money"
+   ],
+   "vi": [
+    "Thay \"bạn có dùng...\" bằng \"kể tôi nghe lần gần nhất bạn...\"",
+    "Khi nghe lời khen, kéo về sự thật: \"lúc đó bạn đã làm gì?\"",
+    "Kết thúc mỗi cuộc trò chuyện bằng một phép thử cam kết nhỏ: một cuộc gọi tiếp, một lần dùng thử, một lời giới thiệu, hoặc tiền"
+   ]
+  },
+  "x": {
+   "en": "Before writing ad hooks for an app in a new market, talk to 3 target users and ask \"walk me through what you ate yesterday and how you decided\". Their exact words are often better hooks than anything you write.",
+   "vi": "Trước khi viết hook quảng cáo cho một app ở thị trường mới, hãy nói chuyện với 3 người dùng mục tiêu và hỏi \"kể tôi nghe hôm qua bạn ăn gì và bạn quyết định thế nào\". Chính lời họ nói thường là hook tốt hơn bất cứ thứ gì bạn tự viết."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "If a user could only reach your product by voice through an assistant, which one action would they ask for first, and is it easy to do today?",
+    "vi": "Nếu người dùng chỉ có thể dùng sản phẩm của bạn bằng giọng nói qua trợ lý, họ sẽ yêu cầu hành động nào đầu tiên, và hôm nay việc đó có dễ làm không?"
+   },
+   "c": {
+    "en": "Siri opening to every app, and ChatGPT's 250M weekly voice users.",
+    "vi": "Siri mở cho mọi app, và 250 triệu người dùng giọng nói mỗi tuần của ChatGPT."
+   }
+  },
+  {
+   "q": {
+    "en": "Think of one problem your team blames on AI or speed. Would it still be there without AI?",
+    "vi": "Nghĩ về một vấn đề đội bạn đổ cho AI hoặc tốc độ. Nếu không có AI, nó có còn đó không?"
+   },
+   "c": {
+    "en": "Teresa Torres: AI exposes what was already broken.",
+    "vi": "Teresa Torres: AI phơi ra những gì vốn đã hỏng."
+   }
+  },
+  {
+   "q": {
+    "en": "Where does your product take an action for the user without asking? Would they be surprised if they found out?",
+    "vi": "Sản phẩm của bạn làm hành động nào thay người dùng mà không hỏi? Họ có bất ngờ nếu phát hiện ra không?"
+   },
+   "c": {
+    "en": "Postman's silent install and self-approved hook.",
+    "vi": "Việc Postman tự cài lặng lẽ và tự phê duyệt hook."
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Map your feature to an assistant: 3 voice actions and what each returns",
+    "vi": "Ánh xạ tính năng của bạn sang trợ lý: 3 hành động giọng nói và kết quả trả về"
+   },
+   "s": {
+    "en": [
+     "Pick one feature you are working on and write the 3 sentences a user would say to an assistant to use it",
+     "For each, write what the app must know (inputs) and what it should answer or do (output)",
+     "Ask ChatGPT the same 3 sentences and mark where your product is clearly better, equal, or worse"
+    ],
+    "vi": [
+     "Chọn một tính năng bạn đang làm và viết 3 câu người dùng sẽ nói với trợ lý để dùng nó",
+     "Với mỗi câu, ghi app cần biết gì (đầu vào) và nên trả lời hay làm gì (đầu ra)",
+     "Hỏi ChatGPT đúng 3 câu đó và đánh dấu chỗ sản phẩm của bạn hơn rõ, ngang bằng, hoặc kém hơn"
+    ]
+   },
+   "o": {
+    "en": "A one-page voice action map you can bring to planning",
+    "vi": "Một bản đồ hành động giọng nói một trang để mang vào buổi lên kế hoạch"
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"Ask before you install: the new trust rule for AI tools\"",
+    "vi": "Viết một bài ngắn: \"Hỏi trước khi cài: quy tắc niềm tin mới cho công cụ AI\""
+   },
+   "s": {
+    "en": [
+     "Open with what Postman's update did, in two plain sentences, without claiming more than the report says",
+     "Explain why agent setups are the new home screen and why every tool wants a spot there",
+     "End with 3 rules any product team can adopt: ask first, show what was added, make removal one click"
+    ],
+    "vi": [
+     "Mở đầu bằng việc bản cập nhật Postman đã làm, trong hai câu đơn giản, không nói quá những gì báo cáo nêu",
+     "Giải thích vì sao bộ cài đặt agent là màn hình chính mới và vì sao công cụ nào cũng muốn có chỗ ở đó",
+     "Kết bằng 3 quy tắc đội sản phẩm nào cũng áp dụng được: hỏi trước, cho thấy đã thêm gì, gỡ chỉ bằng một cú bấm"
+    ]
+   },
+   "o": {
+    "en": "A 150 to 200 word post ready for LinkedIn or X",
+    "vi": "Một bài 150 đến 200 chữ sẵn sàng đăng LinkedIn hoặc X"
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny UGC hook tester",
+    "vi": "Xây một công cụ nhỏ thử hook UGC"
+   },
+   "s": {
+    "en": [
+     "Collect 10 real user phrases about a problem (reviews, forum posts, or your interview notes)",
+     "Ask an AI tool to turn each into a 5-second video hook, and add a simple page where you rate each hook from 1 to 5",
+     "Keep the top 3 and write which real phrase each came from"
+    ],
+    "vi": [
+     "Thu thập 10 câu nói thật của người dùng về một vấn đề (đánh giá, bài trên diễn đàn, hoặc ghi chú phỏng vấn)",
+     "Nhờ một công cụ AI biến mỗi câu thành hook video 5 giây, và thêm một trang đơn giản để bạn chấm mỗi hook từ 1 đến 5",
+     "Giữ lại 3 hook tốt nhất và ghi rõ mỗi hook đến từ câu nói thật nào"
+    ]
+   },
+   "o": {
+    "en": "A small working tool and 3 tested hooks grounded in real user words",
+    "vi": "Một công cụ nhỏ chạy được và 3 hook đã chấm điểm, dựa trên lời thật của người dùng"
+   }
+  }
+ ]
+}

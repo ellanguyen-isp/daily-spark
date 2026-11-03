@@ -1,44 +1,44 @@
 {
  "type": "daily",
- "date": "2026-11-03",
- "edition": "003",
+ "date": "2026-11-04",
+ "edition": "004",
  "summary": {
-  "en": "Two new AI tests, two very different scores: 90%+ on everyday errands, 12% on expert work, and Goldman takes coding agents back from bankers.",
-  "vi": "Hai bài test AI mới, hai mức điểm rất khác nhau: trên 90% với việc vặt hằng ngày, 12% với việc chuyên gia, và Goldman thu lại agent viết code khỏi tay banker."
+  "en": "Assistants become the front door: Siri opens to every app, ChatGPT reaches 1.2B weekly users, and Postman shows how fast trust breaks when a tool installs itself.",
+  "vi": "Trợ lý AI thành cửa chính: Siri mở cho mọi app, ChatGPT đạt 1,2 tỷ người dùng mỗi tuần, và Postman cho thấy niềm tin vỡ nhanh thế nào khi một công cụ tự cài vào máy."
  },
  "big": {
-  "en": "No big model launch today, but two new tests landed on the same day and they disagree in a useful way. OpenAI's LifeVal shows current models scoring 90% to 100% on everyday errands like comparing schools or planning care, while SemiAnalysis's GDPx finds the best model finishing only 12% of expert work, and 0% in finance and legal. Goldman Sachs also pulled coding agents from bankers and traders and kept them for engineers. For product people: how good AI is depends on the task, so the useful question is not \"is the model good\" but \"is it good at this job, for this user\", and only your own tests answer that.",
-  "vi": "Hôm nay không có model lớn nào ra mắt, nhưng hai bài test mới ra cùng ngày và cho kết quả trái ngược theo cách rất hữu ích. LifeVal của OpenAI cho thấy model hiện tại đạt 90% đến 100% với việc vặt hằng ngày như so sánh trường học hay lập kế hoạch chăm sóc, trong khi GDPx của SemiAnalysis thấy model tốt nhất chỉ hoàn thành 12% việc chuyên gia, và 0% ở tài chính và pháp lý. Goldman Sachs cũng thu lại agent viết code khỏi tay banker và trader, chỉ giữ cho kỹ sư. Với người làm sản phẩm: AI giỏi đến đâu phụ thuộc vào việc cụ thể, nên câu hỏi đúng không phải \"model có tốt không\" mà là \"nó có làm tốt việc này, cho người dùng này không\", và chỉ bài test của chính bạn trả lời được."
+  "en": "No new frontier model today, but the place where users start their tasks is moving. Apple opened Siri AI to every app in its 27.3 betas, and OpenAI says ChatGPT now has 1.2 billion weekly users and about one fifth of Google's search volume. At the same time, a Postman update quietly added itself to developers' Claude Code and Codex setups, and people noticed fast. For product people: your feature may soon be used through an assistant, not your own screen, so expose clear actions, and never act inside a user's tools without asking.",
+  "vi": "Hôm nay không có model mới lớn, nhưng nơi người dùng bắt đầu công việc đang dịch chuyển. Apple mở Siri AI cho mọi app trong bản beta 27.3, còn OpenAI nói ChatGPT đã có 1,2 tỷ người dùng mỗi tuần và lượng tìm kiếm bằng khoảng một phần năm Google. Cùng lúc, một bản cập nhật của Postman lặng lẽ tự gắn vào Claude Code và Codex của lập trình viên, và cộng đồng phát hiện rất nhanh. Với người làm sản phẩm: tính năng của bạn có thể sớm được dùng qua trợ lý chứ không qua màn hình của bạn, nên hãy mở ra các hành động rõ ràng, và đừng bao giờ tự làm gì trong công cụ của người dùng khi chưa hỏi."
  },
  "headlines": [
   {
    "t": {
-    "en": "OpenAI's LifeVal tests AI on real-life errands, not puzzles",
-    "vi": "LifeVal của OpenAI test AI bằng việc vặt đời thường, không phải câu đố"
+    "en": "Apple opens Siri AI to every app",
+    "vi": "Apple mở Siri AI cho mọi ứng dụng"
    },
-   "src": "openai.com",
-   "url": "https://openai.com/index/lifeval"
+   "src": "developer.apple.com",
+   "url": "https://developer.apple.com/news/?id=gdk2umrf"
   },
   {
    "t": {
-    "en": "GDPx: the best model finishes 12% of real expert work",
-    "vi": "GDPx: model tốt nhất chỉ hoàn thành 12% việc chuyên gia thật"
+    "en": "ChatGPT reaches 1.2B weekly users and about a fifth of Google's searches",
+    "vi": "ChatGPT đạt 1,2 tỷ người dùng mỗi tuần và khoảng một phần năm lượng tìm kiếm của Google"
    },
-   "src": "semianalysis.com",
-   "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"
+   "src": "bigtechnology.com",
+   "url": "https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20"
   },
   {
    "t": {
-    "en": "Goldman Sachs takes coding agents away from bankers and traders",
-    "vi": "Goldman Sachs thu lại agent viết code từ banker và trader"
+    "en": "Postman quietly installed itself into Claude Code and Codex",
+    "vi": "Postman lặng lẽ tự cài vào Claude Code và Codex"
    },
-   "src": "bloomberg.com",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools"
+   "src": "github.com",
+   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370"
   }
  ],
  "question": {
-  "en": "For one feature you work on, is the user's real task closer to a clean errand or to a messy deal room? What does that change about how you test it?",
-  "vi": "Với một tính năng bạn đang làm, việc thật của người dùng gần với một việc vặt gọn gàng hay một phòng dữ liệu lộn xộn? Điều đó thay đổi cách bạn test nó thế nào?"
+  "en": "If a user could only reach your product by voice through an assistant, which one action would they ask for first, and is it easy to do today?",
+  "vi": "Nếu người dùng chỉ có thể dùng sản phẩm của bạn bằng giọng nói qua trợ lý, họ sẽ yêu cầu hành động nào đầu tiên, và hôm nay việc đó có dễ làm không?"
  },
  "exercises": [
   {
@@ -49,8 +49,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Write 10 test cases for one AI feature you work on",
-    "vi": "Viết 10 ca test cho một tính năng AI bạn đang làm"
+    "en": "Map your feature to an assistant: 3 voice actions and what each returns",
+    "vi": "Ánh xạ tính năng của bạn sang trợ lý: 3 hành động giọng nói và kết quả trả về"
    }
   },
   {
@@ -61,8 +61,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Write a short post: \"90% or 12%? Why AI scores depend on the task\"",
-    "vi": "Viết một bài ngắn: \"90% hay 12%? Vì sao điểm AI phụ thuộc vào việc cụ thể\""
+    "en": "Write a short post: \"Ask before you install: the new trust rule for AI tools\"",
+    "vi": "Viết một bài ngắn: \"Hỏi trước khi cài: quy tắc niềm tin mới cho công cụ AI\""
    }
   },
   {
@@ -73,82 +73,82 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a tiny daily briefing skill for your own work",
-    "vi": "Xây một skill bản tin hằng ngày nhỏ cho công việc của bạn"
+    "en": "Build a tiny UGC hook tester",
+    "vi": "Xây một công cụ nhỏ thử hook UGC"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "OpenAI's LifeVal tests AI on real-life errands, not puzzles",
-    "vi": "LifeVal của OpenAI test AI bằng việc vặt đời thường, không phải câu đố"
+    "en": "Apple opens Siri AI to every app",
+    "vi": "Apple mở Siri AI cho mọi ứng dụng"
    },
-   "src": "openai.com",
-   "url": "https://openai.com/index/lifeval",
-   "date": "2026-11-02",
-   "tag": "Evals",
+   "src": "developer.apple.com",
+   "url": "https://developer.apple.com/news/?id=gdk2umrf",
+   "date": "2026-11-03",
+   "tag": "Platform",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "GDPx: the best model finishes 12% of real expert work",
-    "vi": "GDPx: model tốt nhất chỉ hoàn thành 12% việc chuyên gia thật"
+    "en": "ChatGPT reaches 1.2B weekly users and about a fifth of Google's searches",
+    "vi": "ChatGPT đạt 1,2 tỷ người dùng mỗi tuần và khoảng một phần năm lượng tìm kiếm của Google"
    },
-   "src": "semianalysis.com",
-   "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
-   "date": "2026-11-02",
-   "tag": "Evals",
+   "src": "bigtechnology.com",
+   "url": "https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20",
+   "date": "2026-11-03",
+   "tag": "Distribution",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Goldman Sachs takes coding agents away from bankers and traders",
-    "vi": "Goldman Sachs thu lại agent viết code từ banker và trader"
+    "en": "Postman quietly installed itself into Claude Code and Codex",
+    "vi": "Postman lặng lẽ tự cài vào Claude Code và Codex"
    },
-   "src": "bloomberg.com",
-   "url": "https://www.bloomberg.com/news/articles/2026-11-02/goldman-restricts-traders-and-bankers-from-using-some-ai-tools",
-   "date": "2026-11-02",
-   "tag": "Adoption",
+   "src": "github.com",
+   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+   "date": "2026-10-25",
+   "tag": "Trust",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Inside Figma's PM OS: 31 shared skills and a growth loop with one human checkpoint",
-    "vi": "Bên trong PM OS của Figma: 31 skill dùng chung và một vòng tăng trưởng chỉ có một điểm duyệt của con người"
+    "en": "Wispr Flow's paid creator machine: 50 creators, hundreds of ads a month",
+    "vi": "Cỗ máy creator trả phí của Wispr Flow: 50 creator, hàng trăm quảng cáo mỗi tháng"
    },
    "src": "lennysnewsletter.com",
-   "url": "https://www.lennysnewsletter.com/p/how-figmas-pms-actually-use-ai-every",
-   "date": "2026-11-02",
+   "url": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
+   "date": "2026-11-01",
    "tag": "",
-   "who": "Lenny's Newsletter · How I AI",
+   "who": "Lenny's Podcast",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Blacksmith: when AI writes the code, testing becomes the bottleneck",
-    "vi": "Blacksmith: khi AI viết code, kiểm thử trở thành điểm nghẽn"
+    "en": "Teresa Torres and Petra Wille: AI mostly exposes what was already broken",
+    "vi": "Teresa Torres và Petra Wille: AI chủ yếu phơi ra những gì vốn đã hỏng"
    },
-   "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=NVzgt2AEvDg",
-   "date": "2026-11-02",
+   "src": "producttalk.org",
+   "url": "https://www.producttalk.org/what-ai-changes-all-things-product-podcast-with-teresa-torres-petra-wille/",
+   "date": "2026-11-03",
    "tag": "",
-   "who": "Y Combinator",
+   "who": "Product Talk · All Things Product",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Brainrot: a screen-time app that grew to $400K a month",
-    "vi": "Brainrot: một app quản lý thời gian màn hình tăng lên 400.000 USD mỗi tháng"
+    "en": "China puts a price on AI layoffs, so companies cut hiring instead",
+    "vi": "Trung Quốc đặt giá cho việc sa thải vì AI, nên doanh nghiệp cắt tuyển dụng thay vào đó"
    },
-   "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=hnxn16HtLIk",
-   "date": "2026-11-02",
+   "src": "hellochinatech.com",
+   "url": "https://hellochinatech.com/p/china-ai-layoff-rules",
+   "date": "2026-11-03",
    "tag": "",
-   "who": "Starter Story",
+   "who": "Hello China Tech",
    "kind": "people"
   }
  ]
