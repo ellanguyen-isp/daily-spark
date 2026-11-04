@@ -1,44 +1,36 @@
 {
  "type": "daily",
- "date": "2026-11-04",
- "edition": "004",
+ "date": "2026-11-05",
+ "edition": "005",
  "summary": {
-  "en": "Assistants become the front door: Siri opens to every app, ChatGPT reaches 1.2B weekly users, and Postman shows how fast trust breaks when a tool installs itself.",
-  "vi": "Trợ lý AI thành cửa chính: Siri mở cho mọi app, ChatGPT đạt 1,2 tỷ người dùng mỗi tuần, và Postman cho thấy niềm tin vỡ nhanh thế nào khi một công cụ tự cài vào máy."
+  "en": "Every AI feature is a feature you keep rebuilding: an open model nearly matches the top closed ones, Claude's API starts holding your conversation, and voters make compute a scarce resource.",
+  "vi": "Mỗi tính năng AI là tính năng bạn sẽ phải xây lại mãi: một model mở gần bằng các model đóng hàng đầu, API của Claude bắt đầu giữ hội thoại giúp bạn, và cử tri biến sức tính toán thành tài nguyên khan hiếm."
  },
  "big": {
-  "en": "No new frontier model today, but the place where users start their tasks is moving. Apple opened Siri AI to every app in its 27.3 betas, and OpenAI says ChatGPT now has 1.2 billion weekly users and about one fifth of Google's search volume. At the same time, a Postman update quietly added itself to developers' Claude Code and Codex setups, and people noticed fast. For product people: your feature may soon be used through an assistant, not your own screen, so expose clear actions, and never act inside a user's tools without asking.",
-  "vi": "Hôm nay không có model mới lớn, nhưng nơi người dùng bắt đầu công việc đang dịch chuyển. Apple mở Siri AI cho mọi app trong bản beta 27.3, còn OpenAI nói ChatGPT đã có 1,2 tỷ người dùng mỗi tuần và lượng tìm kiếm bằng khoảng một phần năm Google. Cùng lúc, một bản cập nhật của Postman lặng lẽ tự gắn vào Claude Code và Codex của lập trình viên, và cộng đồng phát hiện rất nhanh. Với người làm sản phẩm: tính năng của bạn có thể sớm được dùng qua trợ lý chứ không qua màn hình của bạn, nên hãy mở ra các hành động rõ ràng, và đừng bao giờ tự làm gì trong công cụ của người dùng khi chưa hỏi."
+  "en": "Two quieter but real shifts today. Moonshot put the weights of Kimi K3.1 Pro online: an open model that scores within a few points of Claude Opus 5.5 on several agent tests, at a much lower API price. And Anthropic's API can now keep a conversation on its side, so agents send only the new turn. Meanwhile US voters backed almost every local measure against new data centers, which suggests AI compute may stay costly for longer. For product people: the model under your feature will keep changing and so will its cost, so plan for swapping models and measuring quality every time you do.",
+  "vi": "Hôm nay có hai thay đổi nhỏ hơn nhưng có thật. Moonshot đưa trọng số Kimi K3.1 Pro lên mạng: một model mở chỉ kém Claude Opus 5.5 vài điểm ở nhiều bài test agent, với giá API thấp hơn nhiều. Và API của Anthropic giờ có thể giữ hội thoại ở phía họ, nên agent chỉ cần gửi lượt mới. Cùng lúc, cử tri Mỹ ủng hộ gần như mọi đề xuất địa phương chống xây trung tâm dữ liệu mới, cho thấy sức tính toán cho AI có thể còn đắt lâu hơn. Với người làm sản phẩm: model bên dưới tính năng của bạn sẽ còn thay đổi, chi phí cũng vậy, nên hãy chuẩn bị để đổi model và đo chất lượng mỗi lần đổi."
  },
  "headlines": [
   {
    "t": {
-    "en": "Apple opens Siri AI to every app",
-    "vi": "Apple mở Siri AI cho mọi ứng dụng"
+    "en": "Kimi K3.1 Pro weights are out: an open model close to the frontier",
+    "vi": "Kimi K3.1 Pro công bố trọng số: một model mở sát nhóm dẫn đầu"
    },
-   "src": "developer.apple.com",
-   "url": "https://developer.apple.com/news/?id=gdk2umrf"
+   "src": "huggingface.co",
+   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
   },
   {
    "t": {
-    "en": "ChatGPT reaches 1.2B weekly users and about a fifth of Google's searches",
-    "vi": "ChatGPT đạt 1,2 tỷ người dùng mỗi tuần và khoảng một phần năm lượng tìm kiếm của Google"
+    "en": "Claude's API can now hold an agent's conversation for you",
+    "vi": "API của Claude giờ có thể giữ hội thoại của agent giúp bạn"
    },
-   "src": "bigtechnology.com",
-   "url": "https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20"
-  },
-  {
-   "t": {
-    "en": "Postman quietly installed itself into Claude Code and Codex",
-    "vi": "Postman lặng lẽ tự cài vào Claude Code và Codex"
-   },
-   "src": "github.com",
-   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370"
+   "src": "platform.claude.com",
+   "url": "https://platform.claude.com/docs/en/build-with-claude/message-threads"
   }
  ],
  "question": {
-  "en": "If a user could only reach your product by voice through an assistant, which one action would they ask for first, and is it easy to do today?",
-  "vi": "Nếu người dùng chỉ có thể dùng sản phẩm của bạn bằng giọng nói qua trợ lý, họ sẽ yêu cầu hành động nào đầu tiên, và hôm nay việc đó có dễ làm không?"
+  "en": "In a feature you are working on, what could change without any code change (a doc, a prompt, a model) and quietly make it worse? How would you find out?",
+  "vi": "Trong một tính năng bạn đang làm, điều gì có thể thay đổi mà không cần sửa code (một tài liệu, một prompt, một model) và lặng lẽ làm nó tệ đi? Bạn sẽ phát hiện bằng cách nào?"
  },
  "exercises": [
   {
@@ -49,8 +41,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Map your feature to an assistant: 3 voice actions and what each returns",
-    "vi": "Ánh xạ tính năng của bạn sang trợ lý: 3 hành động giọng nói và kết quả trả về"
+    "en": "Write a drift map for one AI feature",
+    "vi": "Viết bản đồ drift cho một tính năng AI"
    }
   },
   {
@@ -61,8 +53,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Write a short post: \"Ask before you install: the new trust rule for AI tools\"",
-    "vi": "Viết một bài ngắn: \"Hỏi trước khi cài: quy tắc niềm tin mới cho công cụ AI\""
+    "en": "Write a short post: \"Every AI feature is a feature you keep rebuilding\"",
+    "vi": "Viết một bài ngắn: \"Mỗi tính năng AI là tính năng bạn sẽ phải xây lại mãi\""
    }
   },
   {
@@ -73,82 +65,70 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a tiny UGC hook tester",
-    "vi": "Xây một công cụ nhỏ thử hook UGC"
+    "en": "Build a tiny two-model comparison runner",
+    "vi": "Xây một công cụ nhỏ so sánh hai model"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "Apple opens Siri AI to every app",
-    "vi": "Apple mở Siri AI cho mọi ứng dụng"
+    "en": "Kimi K3.1 Pro weights are out: an open model close to the frontier",
+    "vi": "Kimi K3.1 Pro công bố trọng số: một model mở sát nhóm dẫn đầu"
    },
-   "src": "developer.apple.com",
-   "url": "https://developer.apple.com/news/?id=gdk2umrf",
-   "date": "2026-11-03",
+   "src": "huggingface.co",
+   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+   "date": "2026-11-04",
+   "tag": "Model",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "Claude's API can now hold an agent's conversation for you",
+    "vi": "API của Claude giờ có thể giữ hội thoại của agent giúp bạn"
+   },
+   "src": "platform.claude.com",
+   "url": "https://platform.claude.com/docs/en/build-with-claude/message-threads",
+   "date": "2026-11-02",
    "tag": "Platform",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "ChatGPT reaches 1.2B weekly users and about a fifth of Google's searches",
-    "vi": "ChatGPT đạt 1,2 tỷ người dùng mỗi tuần và khoảng một phần năm lượng tìm kiếm của Google"
+    "en": "Salesforce's AI lead: every AI feature is one you will keep rebuilding",
+    "vi": "Trưởng nhóm AI của Salesforce: mỗi tính năng AI là tính năng bạn sẽ phải xây lại mãi"
    },
-   "src": "bigtechnology.com",
-   "url": "https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20",
+   "src": "news.aakashg.com",
+   "url": "https://www.news.aakashg.com/p/salesforce-ai-native-product-team",
    "date": "2026-11-03",
-   "tag": "Distribution",
-   "who": "",
-   "kind": "frontier"
+   "tag": "",
+   "who": "Aakash Gupta (Product Growth)",
+   "kind": "people"
   },
   {
    "t": {
-    "en": "Postman quietly installed itself into Claude Code and Codex",
-    "vi": "Postman lặng lẽ tự cài vào Claude Code và Codex"
-   },
-   "src": "github.com",
-   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
-   "date": "2026-10-25",
-   "tag": "Trust",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "Wispr Flow's paid creator machine: 50 creators, hundreds of ads a month",
-    "vi": "Cỗ máy creator trả phí của Wispr Flow: 50 creator, hàng trăm quảng cáo mỗi tháng"
+    "en": "Four personal agents, nine real tasks, no single winner",
+    "vi": "Bốn agent cá nhân, chín việc thật, không có người thắng duy nhất"
    },
    "src": "lennysnewsletter.com",
-   "url": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
-   "date": "2026-11-01",
+   "url": "https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet",
+   "date": "2026-11-02",
    "tag": "",
-   "who": "Lenny's Podcast",
+   "who": "Lenny's Podcast · How I AI (Claire Vo)",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Teresa Torres and Petra Wille: AI mostly exposes what was already broken",
-    "vi": "Teresa Torres và Petra Wille: AI chủ yếu phơi ra những gì vốn đã hỏng"
+    "en": "AI on the ballot: if voters keep blocking data centers, compute stays scarce",
+    "vi": "AI trên lá phiếu: nếu cử tri tiếp tục chặn trung tâm dữ liệu, sức tính toán sẽ còn khan hiếm"
    },
-   "src": "producttalk.org",
-   "url": "https://www.producttalk.org/what-ai-changes-all-things-product-podcast-with-teresa-torres-petra-wille/",
-   "date": "2026-11-03",
+   "src": "stratechery.com",
+   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
+   "date": "2026-11-04",
    "tag": "",
-   "who": "Product Talk · All Things Product",
-   "kind": "people"
-  },
-  {
-   "t": {
-    "en": "China puts a price on AI layoffs, so companies cut hiring instead",
-    "vi": "Trung Quốc đặt giá cho việc sa thải vì AI, nên doanh nghiệp cắt tuyển dụng thay vào đó"
-   },
-   "src": "hellochinatech.com",
-   "url": "https://hellochinatech.com/p/china-ai-layoff-rules",
-   "date": "2026-11-03",
-   "tag": "",
-   "who": "Hello China Tech",
+   "who": "Stratechery (Ben Thompson)",
    "kind": "people"
   }
  ]

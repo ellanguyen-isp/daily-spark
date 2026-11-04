@@ -1,6 +1,16 @@
 {
  "editions": [
   {
+   "date": "2026-11-05",
+   "edition": "005",
+   "type": "daily",
+   "summary": {
+    "en": "Every AI feature is a feature you keep rebuilding: an open model nearly matches the top closed ones, Claude's API starts holding your conversation, and voters make compute a scarce resource.",
+    "vi": "Mỗi tính năng AI là tính năng bạn sẽ phải xây lại mãi: một model mở gần bằng các model đóng hàng đầu, API của Claude bắt đầu giữ hội thoại giúp bạn, và cử tri biến sức tính toán thành tài nguyên khan hiếm."
+   },
+   "minutes": 9
+  },
+  {
    "date": "2026-11-04",
    "edition": "004",
    "type": "daily",

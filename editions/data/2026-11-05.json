@@ -1,0 +1,350 @@
+{
+ "date": "2026-11-05",
+ "edition": "005",
+ "minutes": 9,
+ "summary": {
+  "en": "Every AI feature is a feature you keep rebuilding: an open model nearly matches the top closed ones, Claude's API starts holding your conversation, and voters make compute a scarce resource.",
+  "vi": "Mỗi tính năng AI là tính năng bạn sẽ phải xây lại mãi: một model mở gần bằng các model đóng hàng đầu, API của Claude bắt đầu giữ hội thoại giúp bạn, và cử tri biến sức tính toán thành tài nguyên khan hiếm."
+ },
+ "frontier": {
+  "big": {
+   "en": "Two quieter but real shifts today. Moonshot put the weights of Kimi K3.1 Pro online: an open model that scores within a few points of Claude Opus 5.5 on several agent tests, at a much lower API price. And Anthropic's API can now keep a conversation on its side, so agents send only the new turn. Meanwhile US voters backed almost every local measure against new data centers, which suggests AI compute may stay costly for longer. For product people: the model under your feature will keep changing and so will its cost, so plan for swapping models and measuring quality every time you do.",
+   "vi": "Hôm nay có hai thay đổi nhỏ hơn nhưng có thật. Moonshot đưa trọng số Kimi K3.1 Pro lên mạng: một model mở chỉ kém Claude Opus 5.5 vài điểm ở nhiều bài test agent, với giá API thấp hơn nhiều. Và API của Anthropic giờ có thể giữ hội thoại ở phía họ, nên agent chỉ cần gửi lượt mới. Cùng lúc, cử tri Mỹ ủng hộ gần như mọi đề xuất địa phương chống xây trung tâm dữ liệu mới, cho thấy sức tính toán cho AI có thể còn đắt lâu hơn. Với người làm sản phẩm: model bên dưới tính năng của bạn sẽ còn thay đổi, chi phí cũng vậy, nên hãy chuẩn bị để đổi model và đo chất lượng mỗi lần đổi."
+  },
+  "items": [
+   {
+    "date": "2026-11-04",
+    "src": "huggingface.co",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+    "tag": "Model",
+    "t": {
+     "en": "Kimi K3.1 Pro weights are out: an open model close to the frontier",
+     "vi": "Kimi K3.1 Pro công bố trọng số: một model mở sát nhóm dẫn đầu"
+    },
+    "stat": {
+     "v": "$2 / $10",
+     "l": {
+      "en": "per million input / output tokens on Moonshot's API, 33% below the previous Kimi K3",
+      "vi": "cho mỗi triệu token đầu vào / đầu ra trên API của Moonshot, thấp hơn 33% so với Kimi K3 trước đó"
+     }
+    },
+    "p": {
+     "en": [
+      "A 2.8 trillion parameter mixture-of-experts model (104B active), 1M token context, text and image input; the API launched on 2026-10-23 and the weights followed this week",
+      "Artificial Analysis ranks it 4th on its Intelligence Index at 55, against 58 for Claude Opus 5.5; on Terminal-Bench 4.0 Moonshot reports 65.7% vs 66.4% for Opus 5.5",
+      "It is not ahead everywhere: Moonshot's own table shows it far behind on Program Bench (31.5 vs 65.0), and independent hallucination tests show a smaller gain than Moonshot claims",
+      "Moonshot removed cyber training data from the open version on purpose, so it stays below the frontier on exploit tasks"
+     ],
+     "vi": [
+      "Model mixture-of-experts 2,8 nghìn tỷ tham số (104 tỷ tham số hoạt động), ngữ cảnh 1 triệu token, nhận chữ và ảnh; API ra mắt ngày 2026-10-23 và trọng số được công bố tuần này",
+      "Artificial Analysis xếp nó thứ 4 trên chỉ số Intelligence Index với 55 điểm, so với 58 của Claude Opus 5.5; trên Terminal-Bench 4.0, Moonshot báo 65,7% so với 66,4% của Opus 5.5",
+      "Nó không dẫn ở mọi mặt: chính bảng của Moonshot cho thấy nó kém xa ở Program Bench (31,5 so với 65,0), và các bài test ảo giác độc lập cho thấy mức cải thiện nhỏ hơn Moonshot nói",
+      "Moonshot cố ý bỏ dữ liệu huấn luyện về an ninh mạng khỏi bản mở, nên nó vẫn dưới nhóm dẫn đầu ở các bài khai thác lỗ hổng"
+     ]
+    },
+    "w": {
+     "en": "Near-frontier quality is now something you can self-host or buy cheaply. That makes the model a swappable part of your product, not a fixed choice. The teams that win are the ones with an eval set ready, so they can test a cheaper model in an afternoon instead of guessing.",
+     "vi": "Chất lượng gần nhóm dẫn đầu giờ có thể tự chạy hoặc mua với giá rẻ. Điều đó biến model thành một bộ phận có thể thay trong sản phẩm, không còn là lựa chọn cố định. Đội thắng là đội có sẵn bộ eval, để thử một model rẻ hơn trong một buổi chiều thay vì đoán."
+    }
+   },
+   {
+    "date": "2026-11-02",
+    "src": "platform.claude.com",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/message-threads",
+    "tag": "Platform",
+    "t": {
+     "en": "Claude's API can now hold an agent's conversation for you",
+     "vi": "API của Claude giờ có thể giữ hội thoại của agent giúp bạn"
+    },
+    "p": {
+     "en": [
+      "With message threads (public beta), you send the full conversation once, then only the new turn plus the previous response's id; the server rebuilds the rest",
+      "The goal is speed: smaller requests and a lower, steadier time to first token in long agent loops; price and rate limits do not change",
+      "A thread is best effort: it expires 5 minutes after its last request, and an expired thread returns a 404 that does not say why",
+      "Threads are not eligible for zero data retention, so they are not for every product; the docs tell you to resend the full conversation when a thread is gone"
+     ],
+     "vi": [
+      "Với message threads (beta công khai), bạn gửi toàn bộ hội thoại một lần, rồi chỉ gửi lượt mới cùng id của câu trả lời trước; máy chủ tự dựng lại phần còn lại",
+      "Mục tiêu là tốc độ: yêu cầu nhỏ hơn và thời gian ra token đầu tiên thấp, ổn định hơn trong các vòng lặp agent dài; giá và giới hạn tốc độ không đổi",
+      "Thread chỉ là cố gắng tốt nhất: nó hết hạn 5 phút sau yêu cầu cuối, và thread hết hạn trả về lỗi 404 mà không nói lý do",
+      "Thread không áp dụng được chế độ không lưu dữ liệu, nên không hợp với mọi sản phẩm; tài liệu bảo bạn gửi lại toàn bộ hội thoại khi thread mất"
+     ]
+    },
+    "w": {
+     "en": "Speed is part of the product: Claire Vo's agent test below shows users drop agents that go quiet. But treat the thread as a cache, not your record. Keep your own copy of every conversation, because that copy is also what you need for evals and for debugging a bad answer later.",
+     "vi": "Tốc độ là một phần của sản phẩm: bài test agent của Claire Vo bên dưới cho thấy người dùng bỏ agent nào im lặng quá lâu. Nhưng hãy coi thread là bộ nhớ đệm, không phải hồ sơ của bạn. Hãy tự giữ bản sao mọi hội thoại, vì bản sao đó cũng là thứ bạn cần cho eval và để tìm lỗi một câu trả lời tệ sau này."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Meta bought Conductor, a startup whose app runs several AI coding agents in parallel; its founders join Meta Superintelligence Labs and terms were not disclosed. Tools that manage many agents at once are becoming something big labs want to own.",
+   "vi": "Meta mua Conductor, startup có ứng dụng chạy nhiều agent viết code AI song song; các nhà sáng lập gia nhập Meta Superintelligence Labs và giá trị thương vụ không được công bố. Công cụ quản lý nhiều agent cùng lúc đang thành thứ các phòng lab lớn muốn sở hữu."
+  }
+ },
+ "people": [
+  {
+   "who": "Aakash Gupta (Product Growth)",
+   "kind": {
+    "en": "podcast · from the episode write-up",
+    "vi": "podcast · dựa trên bài viết tóm tắt tập"
+   },
+   "date": "2026-11-03",
+   "src": "news.aakashg.com",
+   "url": "https://www.news.aakashg.com/p/salesforce-ai-native-product-team",
+   "t": {
+    "en": "Salesforce's AI lead: every AI feature is one you will keep rebuilding",
+    "vi": "Trưởng nhóm AI của Salesforce: mỗi tính năng AI là tính năng bạn sẽ phải xây lại mãi"
+   },
+   "stat": {
+    "v": "700",
+    "l": {
+     "en": "people whose way of working Jayesh Govindarajan rebuilt around agents",
+     "vi": "người được Jayesh Govindarajan thay đổi cách làm việc xoay quanh agent"
+    }
+   },
+   "p": {
+    "en": [
+     "He replaces the linear software lifecycle with an \"ADLC\": observe, build, test, evaluate, deploy, then repeat, because each new model means reworking (often simplifying) the agent",
+     "The real enemy is drift: someone edits the refund policy doc, the code stays the same, and the agent starts approving refunds that are too big",
+     "Decide which answers must be deterministic (one pipeline number, never two), and be eval first: define how you grade the agent before you trust it; generic evals do not cut it",
+     "What he screens PMs for: agency, an agent-native habit (do it by hand a few times, then teach an agent), skepticism, craft, and the ability to say what good looks like"
+    ],
+    "vi": [
+     "Ông thay vòng đời phát triển phần mềm tuyến tính bằng \"ADLC\": quan sát, xây, test, đánh giá, triển khai, rồi lặp lại, vì mỗi model mới đều buộc phải làm lại (thường là đơn giản hóa) agent",
+     "Kẻ thù thật sự là drift: ai đó sửa tài liệu chính sách hoàn tiền, code vẫn như cũ, và agent bắt đầu duyệt hoàn tiền quá lớn",
+     "Quyết định câu trả lời nào phải cố định (chỉ một con số pipeline, không bao giờ hai), và đặt eval lên trước: định cách chấm agent trước khi tin nó; eval chung chung không đủ",
+     "Những gì ông tìm ở PM: tự chủ, thói quen làm việc với agent (làm tay vài lần rồi dạy agent làm), hoài nghi, sự tỉ mỉ, và khả năng nói rõ thế nào là tốt"
+    ]
+   },
+   "k": {
+    "en": "Budget for evals and monitoring before you budget for the build. A cheap model swap or a doc edit can quietly break a working feature.",
+    "vi": "Hãy dành ngân sách cho eval và giám sát trước khi dành cho việc xây. Một lần đổi model rẻ hay sửa tài liệu có thể lặng lẽ làm hỏng một tính năng đang chạy tốt."
+   }
+  },
+  {
+   "who": "Lenny's Podcast · How I AI (Claire Vo)",
+   "kind": {
+    "en": "podcast · from the show notes and takeaways",
+    "vi": "podcast · dựa trên ghi chú tập và ý chính"
+   },
+   "date": "2026-11-02",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet",
+   "t": {
+    "en": "Four personal agents, nine real tasks, no single winner",
+    "vi": "Bốn agent cá nhân, chín việc thật, không có người thắng duy nhất"
+   },
+   "stat": {
+    "v": "93%",
+    "l": {
+     "en": "overall score for Grok Bot, the best all-round agent in Claire's test",
+     "vi": "điểm tổng của Grok Bot, agent toàn diện nhất trong bài test của Claire"
+    }
+   },
+   "p": {
+    "en": [
+     "Claire Vo tested Grok Bot, Dot, Meta's Muse and Claude Duet on Slack replies, inbox triage, coding, video, Figma, family projects and shopping",
+     "Speed shapes trust: Muse finished first on 4 of 9 tasks, and when an agent disappears for minutes, users lose context and stop wanting to use it",
+     "Asking too often costs trust too: Claude Duet asked for approval 4 times, the others once, so it felt like something to supervise, not trust",
+     "Her audit found the agents had different connectors and skills, so part of the gap was setup, not intelligence; she now uses Grok Bot for work and Muse for personal life"
+    ],
+    "vi": [
+     "Claire Vo thử Grok Bot, Dot, Muse của Meta và Claude Duet với việc trả lời Slack, phân loại hộp thư, viết code, video, Figma, việc gia đình và mua sắm",
+     "Tốc độ quyết định niềm tin: Muse về nhất 4 trên 9 việc, và khi một agent biến mất vài phút, người dùng mất mạch và không muốn dùng nữa",
+     "Hỏi quá nhiều cũng làm mất niềm tin: Claude Duet xin duyệt 4 lần, các agent khác chỉ 1 lần, nên nó giống thứ phải giám sát hơn là để tin",
+     "Kiểm tra của cô cho thấy các agent có kết nối và skill khác nhau, nên một phần khoảng cách là do cài đặt chứ không do trí tuệ; giờ cô dùng Grok Bot cho công việc và Muse cho đời sống cá nhân"
+    ]
+   },
+   "k": {
+    "en": "When you compare AI tools or models, give them the same tools and context first, or you are testing your setup, not the product.",
+    "vi": "Khi so sánh công cụ hay model AI, hãy cho chúng cùng công cụ và ngữ cảnh trước, nếu không bạn đang test cách cài đặt của mình chứ không phải sản phẩm."
+   }
+  },
+  {
+   "who": "Stratechery (Ben Thompson)",
+   "kind": {
+    "en": "article · read in full",
+    "vi": "bài viết · đã đọc toàn bộ"
+   },
+   "date": "2026-11-04",
+   "src": "stratechery.com",
+   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
+   "t": {
+    "en": "AI on the ballot: if voters keep blocking data centers, compute stays scarce",
+    "vi": "AI trên lá phiếu: nếu cử tri tiếp tục chặn trung tâm dữ liệu, sức tính toán sẽ còn khan hiếm"
+   },
+   "stat": {
+    "v": "25%+",
+    "l": {
+     "en": "of planned US data center capacity by 2030 sits in Texas, whose new governor pledged a construction moratorium",
+     "vi": "công suất trung tâm dữ liệu dự kiến của Mỹ đến 2030 nằm ở Texas, nơi thống đốc mới cam kết tạm dừng xây dựng"
+    }
+   },
+   "p": {
+    "en": [
+     "Nearly every local ballot measure against data centers won or is winning, and both parties ran ads against them: Thompson argues the main limit on AI is now political",
+     "Unlike factory closures in the globalization era, building data centers needs local permission, so people who had no say before now do",
+     "If building stays hard, AI keeps real marginal costs for a long time: no free AI wave like the free web services of Web 2.0",
+     "His likely winners: hyperscalers with existing sites, frontier labs, and on-device AI (Apple); likely losers: neoclouds and startups that need cheap compute"
+    ],
+    "vi": [
+     "Gần như mọi đề xuất địa phương chống trung tâm dữ liệu đã thắng hoặc đang thắng, và cả hai đảng đều chạy quảng cáo chống chúng: Thompson cho rằng giới hạn chính của AI giờ là chính trị",
+     "Khác với việc đóng nhà máy thời toàn cầu hóa, xây trung tâm dữ liệu cần địa phương cho phép, nên những người trước đây không có tiếng nói giờ đã có",
+     "Nếu khó xây, AI sẽ còn chi phí biên thật trong thời gian dài: không có làn sóng AI miễn phí như các dịch vụ web miễn phí thời Web 2.0",
+     "Bên có thể thắng theo ông: các hyperscaler có sẵn địa điểm, các phòng lab hàng đầu, và AI chạy trên thiết bị (Apple); bên có thể thua: các neocloud và startup cần sức tính toán rẻ"
+    ]
+   },
+   "k": {
+    "en": "Do not price an AI feature assuming tokens will be nearly free next year. Know your AI cost per active user now.",
+    "vi": "Đừng định giá tính năng AI với giả định năm sau token gần như miễn phí. Hãy biết chi phí AI trên mỗi người dùng hoạt động ngay từ bây giờ."
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "The only way to win is to learn faster than anyone else.",
+   "vi": "Cách duy nhất để thắng là học nhanh hơn bất kỳ ai."
+  },
+  "src": "The Lean Startup · Eric Ries",
+  "date": "2011 · book",
+  "url": "",
+  "e": {
+   "en": "Ries describes a product as a series of experiments run in a build, measure, learn loop. The unit of progress is validated learning: something you now know is true because real behavior showed it, not because the team agreed. Today's Salesforce story is the same loop for AI: observe, build, test, evaluate, deploy, repeat. The difference is that the ground moves under you too: the model, the docs and the cost change, so the measuring step can never stop.",
+   "vi": "Ries mô tả sản phẩm là một chuỗi thí nghiệm chạy trong vòng lặp xây, đo, học. Đơn vị tiến bộ là bài học đã được kiểm chứng: điều bạn biết là đúng vì hành vi thật đã cho thấy, không phải vì cả đội đồng ý. Câu chuyện Salesforce hôm nay là cùng vòng lặp đó cho AI: quan sát, xây, test, đánh giá, triển khai, lặp lại. Khác biệt là mặt đất dưới chân bạn cũng chuyển động: model, tài liệu và chi phí đều thay đổi, nên bước đo không bao giờ được dừng."
+  },
+  "a": {
+   "en": [
+    "Before building, write the one thing you expect to learn and the number that would prove you wrong",
+    "Measure what users did, not what they said; a small real test beats a big survey",
+    "For AI features, add a fourth step to the loop: re-measure every time the model, prompt or source data changes"
+   ],
+   "vi": [
+    "Trước khi xây, viết ra một điều bạn muốn học và con số sẽ chứng minh bạn sai",
+    "Đo những gì người dùng đã làm, không phải những gì họ nói; một thử nghiệm thật nhỏ tốt hơn một khảo sát lớn",
+    "Với tính năng AI, thêm bước thứ tư vào vòng lặp: đo lại mỗi khi model, prompt hay dữ liệu nguồn thay đổi"
+   ]
+  },
+  "x": {
+   "en": "For an AI flow you are testing, write one sentence before your next change: \"If we switch to the cheaper model, at least 9 of our 10 test cases should still pass.\" Then run it. Whatever the score, you have learned something real.",
+   "vi": "Với một luồng AI bạn đang test, viết một câu trước lần thay đổi tới: \"Nếu đổi sang model rẻ hơn, ít nhất 9 trên 10 case test vẫn phải đạt.\" Rồi chạy thử. Dù điểm ra sao, bạn cũng đã học được điều có thật."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "In a feature you are working on, what could change without any code change (a doc, a prompt, a model) and quietly make it worse? How would you find out?",
+    "vi": "Trong một tính năng bạn đang làm, điều gì có thể thay đổi mà không cần sửa code (một tài liệu, một prompt, một model) và lặng lẽ làm nó tệ đi? Bạn sẽ phát hiện bằng cách nào?"
+   },
+   "c": {
+    "en": "Salesforce's ADLC and the refund drift example.",
+    "vi": "ADLC của Salesforce và ví dụ drift về hoàn tiền."
+   }
+  },
+  {
+   "q": {
+    "en": "When does your product ask the user for permission or input? Which of those asks build trust, and which only slow them down?",
+    "vi": "Khi nào sản phẩm của bạn hỏi người dùng xin phép hay xin thông tin? Lần hỏi nào xây niềm tin, lần nào chỉ làm họ chậm lại?"
+   },
+   "c": {
+    "en": "Claire Vo's test: Claude Duet asked 4 times, the others once.",
+    "vi": "Bài test của Claire Vo: Claude Duet hỏi 4 lần, các agent khác 1 lần."
+   }
+  },
+  {
+   "q": {
+    "en": "If AI costs stayed where they are for three more years, which feature would you build differently?",
+    "vi": "Nếu chi phí AI giữ nguyên như bây giờ thêm ba năm nữa, bạn sẽ xây tính năng nào theo cách khác?"
+   },
+   "c": {
+    "en": "Stratechery on data centers losing at the ballot box.",
+    "vi": "Stratechery về việc trung tâm dữ liệu thua trên lá phiếu."
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Write a drift map for one AI feature",
+    "vi": "Viết bản đồ drift cho một tính năng AI"
+   },
+   "s": {
+    "en": [
+     "Pick one AI feature you are working on and list everything its answers depend on: prompt, model and version, docs or data it reads, tools it calls",
+     "For each, write who can change it and how you would notice if a change made answers worse",
+     "Pick the riskiest one and write a rerun rule: \"when X changes, we run these test cases before release\""
+    ],
+    "vi": [
+     "Chọn một tính năng AI bạn đang làm và liệt kê mọi thứ câu trả lời của nó phụ thuộc: prompt, model và phiên bản, tài liệu hay dữ liệu nó đọc, công cụ nó gọi",
+     "Với mỗi thứ, ghi ai có thể thay đổi nó và bạn sẽ nhận ra bằng cách nào nếu thay đổi đó làm câu trả lời tệ đi",
+     "Chọn thứ rủi ro nhất và viết quy tắc chạy lại: \"khi X thay đổi, chúng ta chạy các case test này trước khi phát hành\""
+    ]
+   },
+   "o": {
+    "en": "A one-page drift map and one rerun rule to share with your team",
+    "vi": "Một bản đồ drift một trang và một quy tắc chạy lại để chia sẻ với đội"
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"Every AI feature is a feature you keep rebuilding\"",
+    "vi": "Viết một bài ngắn: \"Mỗi tính năng AI là tính năng bạn sẽ phải xây lại mãi\""
+   },
+   "s": {
+    "en": [
+     "Open with the refund example in two plain sentences: the doc changed, the code did not, the refunds got too big",
+     "Add today's proof that the ground keeps moving: an open model near the top at a lower price, and compute that may stay costly",
+     "End with your own 3-step habit for AI features: list what it depends on, keep a small test set, rerun it on every change"
+    ],
+    "vi": [
+     "Mở đầu bằng ví dụ hoàn tiền trong hai câu đơn giản: tài liệu đổi, code không đổi, tiền hoàn trả quá lớn",
+     "Thêm bằng chứng hôm nay rằng mặt đất luôn chuyển động: một model mở gần đỉnh với giá thấp hơn, và sức tính toán có thể còn đắt",
+     "Kết bằng thói quen 3 bước của riêng bạn cho tính năng AI: liệt kê phụ thuộc, giữ một bộ test nhỏ, chạy lại mỗi khi có thay đổi"
+    ]
+   },
+   "o": {
+    "en": "A 150 to 200 word post ready for LinkedIn or X",
+    "vi": "Một bài 150 đến 200 chữ sẵn sàng đăng LinkedIn hoặc X"
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny two-model comparison runner",
+    "vi": "Xây một công cụ nhỏ so sánh hai model"
+   },
+   "s": {
+    "en": [
+     "Write 10 test inputs for one task (for example, summarize a support ticket) with a one-line pass rule for each",
+     "Ask an AI coding tool to build a script that sends each input to two models (one top model, one cheaper or open model), saves both answers, and logs time and cost",
+     "Score both against your pass rules and write one line: is the cheaper model good enough for this task?"
+    ],
+    "vi": [
+     "Viết 10 đầu vào test cho một việc (ví dụ tóm tắt một ticket hỗ trợ) với một quy tắc đạt một dòng cho mỗi đầu vào",
+     "Nhờ công cụ viết code AI xây một script gửi mỗi đầu vào tới hai model (một model hàng đầu, một model rẻ hơn hoặc model mở), lưu cả hai câu trả lời, và ghi lại thời gian và chi phí",
+     "Chấm cả hai theo quy tắc đạt và viết một dòng: model rẻ hơn có đủ tốt cho việc này không?"
+    ]
+   },
+   "o": {
+    "en": "A reusable script and a score table you can rerun whenever a new model ships",
+    "vi": "Một script dùng lại được và một bảng điểm để chạy lại mỗi khi có model mới"
+   }
+  }
+ ]
+}
