@@ -1,70 +1,80 @@
 {
  "date": "2026-11-04",
- "generated_at": "2026-11-04T06:13+07:00",
+ "generated_at": "2026-11-04T09:40+07:00",
  "window_days": 3,
- "youtube_api": false,
+ "youtube_api": true,
  "sources": [
   {
    "source": "Starter Story",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
   },
   {
    "source": "Starter Story Build",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "Lenny's Podcast",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "The Skip (Nikhyl Singhal)",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "YC Root Access",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "Aakash Gupta (Product Growth)",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 1
   },
   {
    "source": "Y Combinator",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 1
   },
   {
    "source": "Naval",
-   "ok": false,
-   "error": "rss: HTTP Error 500: Internal Server Error"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "Every",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
   },
   {
    "source": "Vietnam Innovators Digest",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
   },
   {
    "source": "Lenny's Newsletter",
    "ok": true,
    "via": "rss",
-   "new": 3
+   "new": 2
   },
   {
    "source": "Simon Willison",
    "ok": true,
    "via": "rss",
-   "new": 8
+   "new": 7
   },
   {
    "source": "Every",
@@ -87,7 +97,7 @@
    "source": "Aakash Gupta newsletter",
    "ok": true,
    "via": "rss",
-   "new": 0
+   "new": 1
   },
   {
    "source": "Stratechery (Ben Thompson)",
@@ -99,13 +109,12 @@
    "source": "Product Talk (Teresa Torres)",
    "ok": true,
    "via": "rss",
-   "new": 1
+   "new": 0
   },
   {
    "source": "John Cutler",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "SVPG (Marty Cagan)",
@@ -115,15 +124,13 @@
   },
   {
    "source": "Andrew Chen",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "April Dunford",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Jason Cohen",
@@ -133,9 +140,8 @@
   },
   {
    "source": "Gibson Biddle",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Brian Balfour",
@@ -153,7 +159,7 @@
    "source": "Hello China Tech",
    "ok": true,
    "via": "rss",
-   "new": 3
+   "new": 2
   },
   {
    "source": "Y Combinator blog",
@@ -200,10 +206,27 @@
    "source": "Hacker News front page",
    "ok": true,
    "via": "rss",
-   "new": 30
+   "new": 29
   }
  ],
  "items": [
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "What an AI-Native Product Team Actually Looks Like at Salesforce",
+   "url": "https://www.youtube.com/watch?v=_jBa_YEobGI",
+   "published": "2026-11-04",
+   "summary": "Jayesh Govindarajan runs the 700-person org behind Salesforce AI and Agentforce. He breaks down what an AI native company looks like layer by layer, from the tools his teams live in to how the product trio is converging. He also defines the ADLC, the agent development life cycle that replaces the SDLC once your software is an agent. Full Writeup: https://www.news.aakashg.com/p/salesforce-ai-native-product-team Transcript: https://www.aakashg.com/how-to-build-an-ai-native-company-with-salesforce-ai-head-jayesh-govindarajan/ Timestamps 02:19 - Inside Salesforce's AI org and how agentic coding changed it 07:33 - Ads 09:30 - How to pick and roll out AI tools 12:56 - Headless Salesforce inside Claude 15:14 - Getting ground truth from probabilistic AI 19:22 - Why Slack is the AI native work hub 21:25 - Ads 24:51 - Prototyping with customers inside Slack 25:45 - The future of the product trio 34:15 - The two AI PM skills and how to hire for them 38:00 - ADLC vs SDLC 46:36 - Roadmapping with forward deployed teams 52:29 - Biggest mistakes in AI transformations 🏆 Thanks to our sponsors 1. Fingerprint: Identify good and bad visitors with industry-leading accuracy - https://fingerprint.com/?u..."
+  },
   {
    "source": "Hacker News front page",
    "type": "rss",
@@ -214,8 +237,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
-   "url": "https://arxiv.org/abs/2605.29713",
+   "title": "The Internals of PostgreSQL",
+   "url": "https://www.interdb.jp/pg/index.html",
    "published": "2026-11-04",
    "summary": "Comments"
   },
@@ -244,36 +267,6 @@
     "ai"
    ],
    "via": "rss",
-   "title": "The Internals of PostgreSQL",
-   "url": "https://www.interdb.jp/pg/index.html",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "macOS 27 does not support CoreStorage volumes",
-   "url": "https://wadetregaskis.com/macos-27-golden-gate-does-not-actually-support-corestorage-or-hfs-volumes/",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
    "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
    "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
    "published": "2026-11-04",
@@ -289,8 +282,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
-   "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+   "title": "The Little Book of Generative AI Foundations: An Intuitive Mathematical Primer",
+   "url": "https://arxiv.org/abs/2605.29713",
    "published": "2026-11-04",
    "summary": "Comments"
   },
@@ -319,23 +312,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Introduction to Programming in ATS",
-   "url": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Preparing for the Flipper One Kickstarter and opening pre-orders",
-   "url": "https://flipper.net/pages/flipper-one",
+   "title": "Giant Canyon on Mars Is Still Tectonically Active Today",
+   "url": "https://lamont.columbia.edu/news/giant-canyon-mars-still-tectonically-active-today",
    "published": "2026-11-04",
    "summary": "Comments"
   },
@@ -364,8 +342,23 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Ashby (YC W19) Is Hiring EMs",
-   "url": "https://www.ashbyhq.com/careers?ashby_jid=695b1ce6-c375-4fad-94ef-61b50a3fbd28&utm_source=hn",
+   "title": "Introduction to Programming in ATS",
+   "url": "https://ats-lang.sourceforge.net/DOCUMENT/INT2PROGINATS/HTML/book1.html",
+   "published": "2026-11-04",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "How I use AI (Oct 2026)",
+   "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
    "published": "2026-11-04",
    "summary": "Comments"
   },
@@ -394,10 +387,102 @@
     "ai"
    ],
    "via": "rss",
-   "title": "How I use AI (Oct 2026)",
-   "url": "https://ben.stolovitz.com/posts/how-use-ai-oct-2026/",
+   "title": "Ashby (YC W19) Is Hiring EMs",
+   "url": "https://www.ashbyhq.com/careers?ashby_jid=695b1ce6-c375-4fad-94ef-61b50a3fbd28&utm_source=hn",
    "published": "2026-11-04",
    "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Preparing for the Flipper One Kickstarter and opening pre-orders",
+   "url": "https://flipper.net/pages/flipper-one",
+   "published": "2026-11-04",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "Bro runs 20 TikTok accounts for his $10K/month app 🤯",
+   "url": "https://www.youtube.com/watch?v=Vwb-uzanOO0",
+   "published": "2026-11-04",
+   "summary": "Meet An. He built Flame, a daily ritual app for couples. 250K downloads. 58M organic views. $3K → $10K MRR in under 8 months. The engine isn’t ads. It’s hardware. 4-5 physical phones sitting on a rack 3-5 TikTok accounts per phone 15-20 accounts posting daily A spreadsheet tracking every account’s warm-up phase, health, and hook performance At peak, 150 pieces of content a day to test ONE hook"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Writing automation workshop with Mike Taylor at Every Think Week",
+   "url": "https://www.youtube.com/watch?v=D7pWsEhsaFk",
+   "published": "2026-11-04",
+   "summary": ""
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Writing automation workshop with Mike Taylor at Every Think Week",
+   "url": "https://www.youtube.com/watch?v=n-Y9kcUUvo0",
+   "published": "2026-11-04",
+   "summary": ""
+  },
+  {
+   "source": "Aakash Gupta newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "product",
+    "ai-pm"
+   ],
+   "via": "rss",
+   "title": "What an AI-Native Product Team Actually Looks Like at Salesforce",
+   "url": "https://www.news.aakashg.com/p/salesforce-ai-native-product-team",
+   "published": "2026-11-04",
+   "summary": "Salesforce AI's Jayesh Govindarajan, who runs the Agentforce org, on the ADLC behind an AI-native product team and what Salesforce looks for when hiring PMs."
+  },
+  {
+   "source": "Y Combinator",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "startups",
+    "startup-school",
+    "ai"
+   ],
+   "via": "youtube-api",
+   "title": "Engineers Make Great Founders",
+   "url": "https://www.youtube.com/watch?v=lqdc1MeyIfs",
+   "published": "2026-11-03",
+   "summary": "A lot of what makes a great engineer also makes a great founder. Before starting Layers and BootLoop, Shivani Patel and Chris Markus worked at SpaceX, where they learned to take ideas from zero to one, solve hard problems, and own the outcome."
   },
   {
    "source": "Lenny's Newsletter",
@@ -539,10 +624,10 @@
     "ai-models"
    ],
    "via": "rss",
-   "title": "Preparing our next security sprint to harden OpenAI",
-   "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
+   "title": "Rewarding defenders with bigger bug bounties",
+   "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
    "published": "2026-11-03",
-   "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
+   "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
   },
   {
    "source": "OpenAI news",
@@ -553,10 +638,10 @@
     "ai-models"
    ],
    "via": "rss",
-   "title": "Rewarding defenders with bigger bug bounties",
-   "url": "https://openai.com/index/rewarding-defenders-with-bigger-bug-bounties",
+   "title": "Preparing our next security sprint to harden OpenAI",
+   "url": "https://openai.com/index/preparing-our-next-security-sprint-to-harden-openai",
    "published": "2026-11-03",
-   "summary": "OpenAI is raising Security Bug Bounty rewards and introducing report quality, loyalty, and priority campaign bonuses for independent security researchers."
+   "summary": "OpenAI is preparing its next internal security sprint with Cathedral Systems to test and strengthen its defenses using AI."
   },
   {
    "source": "Google AI blog",
@@ -581,38 +666,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "People Search by Context.dev",
-   "url": "https://www.producthunt.com/products/context-dev",
-   "published": "2026-11-03",
-   "summary": "People Search API: Find People by Role, Company & Location Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
    "title": "LifeVal",
    "url": "https://www.producthunt.com/products/openai",
    "published": "2026-11-03",
    "summary": "OpenAI's benchmark for everyday life tasks with AI Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Flockbay",
-   "url": "https://www.producthunt.com/products/flockbay",
-   "published": "2026-11-03",
-   "summary": "Free AI game maker built on Godot Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -637,38 +694,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "One Roof",
-   "url": "https://www.producthunt.com/products/one-roof",
-   "published": "2026-11-03",
-   "summary": "A new way to build with agents. You stay in charge. Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
    "title": "nana",
    "url": "https://www.producthunt.com/products/nana-2",
    "published": "2026-11-03",
    "summary": "One terminal for every coding agent, on Windows Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Prism",
-   "url": "https://www.producthunt.com/products/prism-40",
-   "published": "2026-11-03",
-   "summary": "Cursor for hardware engineering Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -693,6 +722,34 @@
     "launches"
    ],
    "via": "rss",
+   "title": "One Roof",
+   "url": "https://www.producthunt.com/products/one-roof",
+   "published": "2026-11-03",
+   "summary": "A new way to build with agents. You stay in charge. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Brink",
+   "url": "https://www.producthunt.com/products/brink-2",
+   "published": "2026-11-03",
+   "summary": "Turn your MacBook trackpad's edges into controls Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
    "title": "NEXUPIRA",
    "url": "https://www.producthunt.com/products/nexupira",
    "published": "2026-11-03",
@@ -707,10 +764,24 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Oreja de Van Gogh",
-   "url": "https://www.producthunt.com/products/oreja-de-van-gogh",
+   "title": "Flockbay",
+   "url": "https://www.producthunt.com/products/flockbay",
    "published": "2026-11-03",
-   "summary": "pause Apple Music while ChatGPT speaks Discussion | Link"
+   "summary": "Free AI game maker built on Godot Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "People Search by Context.dev",
+   "url": "https://www.producthunt.com/products/context-dev",
+   "published": "2026-11-03",
+   "summary": "People Search API: Find People by Role, Company & Location Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -735,20 +806,6 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Calendarly",
-   "url": "https://www.producthunt.com/products/calendarly-calendar-on-lock-screen",
-   "published": "2026-11-03",
-   "summary": "Your calendar and tasks, right on your iPhone Lock Screen Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
    "title": "LidCommit",
    "url": "https://www.producthunt.com/products/lidcommit",
    "published": "2026-11-03",
@@ -763,10 +820,38 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Brink",
-   "url": "https://www.producthunt.com/products/brink-2",
+   "title": "Calendarly",
+   "url": "https://www.producthunt.com/products/calendarly-calendar-on-lock-screen",
    "published": "2026-11-03",
-   "summary": "Turn your MacBook trackpad's edges into controls Discussion | Link"
+   "summary": "Your calendar and tasks, right on your iPhone Lock Screen Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Prism",
+   "url": "https://www.producthunt.com/products/prism-40",
+   "published": "2026-11-03",
+   "summary": "Cursor for hardware engineering Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Oreja de Van Gogh",
+   "url": "https://www.producthunt.com/products/oreja-de-van-gogh",
+   "published": "2026-11-03",
+   "summary": "pause Apple Music while ChatGPT speaks Discussion | Link"
   },
   {
    "source": "Hacker News front page",
@@ -808,8 +893,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
-   "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+   "title": "Microsoft fixes a Windows 11 annoyance as PC revenue declines",
+   "url": "https://arstechnica.com/gadgets/2026/10/windows-11-gets-right-click-menu-improvements-as-pc-revenue-slides/",
    "published": "2026-11-03",
    "summary": "Comments"
   },
@@ -823,23 +908,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Mac at Any Scale",
-   "url": "https://namespace.so/blog/mac-at-any-scale",
-   "published": "2026-11-03",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Writing seen in PHerc. 306B, for the first time in 2000 years",
-   "url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
+   "title": "There is no posttraining data commons",
+   "url": "https://openathena.ai/blog/there-is-no-posttraining-data-commons/",
    "published": "2026-11-03",
    "summary": "Comments"
   },
@@ -868,7 +938,22 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Union Types and Option Types",
+   "title": "The 'Astra can read and write weights to improve Qwen' post is misleading",
+   "url": "https://honnibal.dev/blog/astra-read-write-misleading",
+   "published": "2026-11-03",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Union Types and Option Types (2025)",
    "url": "https://tibleiz.net/blog/2025-03-16-union-types-and-option-types.html",
    "published": "2026-11-03",
    "summary": "Comments"
@@ -883,8 +968,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Kalshi and its co-founders face felony charges for violating Utah gambling laws",
-   "url": "https://arstechnica.com/tech-policy/2026/10/trump-admin-sues-utah-to-save-kalshi-from-the-states-total-ban-on-gambling/",
+   "title": "Writing seen in PHerc. 306B, for the first time in 2000 years",
+   "url": "https://scrollprize.substack.com/p/writing-seen-in-pherc-306b-for-the",
    "published": "2026-11-03",
    "summary": "Comments"
   },
@@ -898,8 +983,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "USDB: Scaling Storage for Next-Generation Recommender Systems at ByteDance",
-   "url": "https://arxiv.org/abs/2611.02618",
+   "title": "Mac at any scale",
+   "url": "https://namespace.so/blog/mac-at-any-scale",
    "published": "2026-11-03",
    "summary": "Comments"
   },
@@ -913,25 +998,73 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Google will turn off search for schools that reject AI",
-   "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+   "title": "Practice speaking Japanese with real YouTube videos, graded line by line",
+   "url": "https://jivx.com/yt",
    "published": "2026-11-03",
    "summary": "Comments"
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
    "tags": [
-    "launches",
-    "ai"
+    "indie-business",
+    "founders",
+    "case-studies"
    ],
-   "via": "rss",
-   "title": "Gitbook Breached",
-   "url": "https://news.ycombinator.com/item?id=50354336",
+   "via": "youtube-api",
+   "title": "Bro's website made $30K in 4 weeks with 2,500 subscribers 👀",
+   "url": "https://www.youtube.com/watch?v=cVDebUMJw4w",
    "published": "2026-11-03",
-   "summary": "Comments"
+   "summary": "Bro’s website made $30K in 4 weeks with 2,500 paying subscribers. Meet Jake. He built ExcelExercises.com, a site that teaches Excel through hands-on exercises instead of boring videos. The model is dead simple: A few free lessons up front Then a hard paywall About 50,000 visitors in 4 weeks About 2,500 active paying subscribers A little over $30K in revenue"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Every Think Week: Monologue HARDWARE?!",
+   "url": "https://www.youtube.com/watch?v=bbgdpt0XZ8c",
+   "published": "2026-11-03",
+   "summary": ""
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Bí quyết giữ chân nhân tài Gen Z",
+   "url": "https://www.youtube.com/watch?v=vnMDV8naJJ8",
+   "published": "2026-11-03",
+   "summary": "Theo chị Thơm Trần, việc Gen Z nhảy việc sau vài tháng không đơn thuần là sự \"thiếu kiên nhẫn\" hay \"bốc đồng\", mà là một phản ứng hoàn toàn có logic. Bí quyết để giữ chân nhóm nhân tài này không nằm ở việc yêu cầu họ phải \"gồng mình chịu khó\", mà là khiến cho họ cảm thấy được ý nghĩa đằng sau mỗi công việc. Khi thấy được tác động thực tế từ những gì họ làm và kết nối được mục tiêu cá nhân với bức tranh chung của tổ chức, sự cam kết sẽ không còn là áp lực chịu đựng, mà trở thành nguồn động lực tự thân bền bỉ. Xem phiên bản đầy đủ của tập 125 podcast Vietnam Innovators (Tiếng Việt) trên các kênh Youtube, Spotify hoặc Apple Podcasts của Vietnam Innovators Digest, để lắng nghe trọn vẹn chia sẻ từ khách mời Thơm Trần - CEO & Founder khơii."
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Chi tiền tỷ cho đào tạo, tại sao doanh nghiệp vẫn mất người? | Ms. Thơm Trần | EP 125",
+   "url": "https://www.youtube.com/watch?v=lRI-VjdN11w",
+   "published": "2026-11-03",
+   "summary": "Đừng quên đăng ký theo dõi Vietnam Innovators Digest nhé: https://www.youtube.com/c/vietnaminnovatorsdigest Xem trọn bộ playlist tại đây: https://www.youtube.com/playlist?list=PLKj-kMezX0d1b-YppvkQAsV2tJI1WA_WL Host: Hương Giang Khách mời: Chị Thơm Trần - CEO & Founder khơii Chi tiền tỷ cho các khóa đào tạo, liên tục điều chỉnh chính sách lương thưởng, nhưng vì sao nhân sự cốt cán vẫn âm thầm kiệt sức và làn sóng rời đi dường như chưa từng dừng lại? Nếu vấn đề thực sự không nằm ở kỹ năng hay đãi ngộ, điều gì đang bẻ gãy sự gắn kết giữa con người và tổ chức? Tập phát sóng tuần này của Vietnam Innovators (tiếng Việt) cùng host Hương Giang gặp gỡ chị Thơm Trần - Founder & CEO khơii - đơn vị đồng hành cùng các cá nhân, nhà lãnh đạo và doanh nghiệp nhằm phát triển năng lực tự lãnh đạo (self-leadership) và chuyển hóa tổ chức từ bên trong ra bên ngoài. Với hơn 13 năm kinh nghiệm ở các vị trí quản lý và lãnh đạo cấp cao tại Unilever, Lazada, Karavan.vn,… kết hợp cùng lăng kính tâm lý học hành vi, chị Thơm Trần sẽ bóc tách những \"điểm mù\" vô hình đang âm thầm diễn ra chốn công sở, từ đó gợi mở những giải pháp giúp các lãnh đạo doanh nghiệp giải quyết vấn đề từ gốc rễ, biến một môi trường là..."
   },
   {
    "source": "Stratechery (Ben Thompson)",
@@ -947,36 +1080,6 @@
    "url": "https://stratechery.com/2026/apple-earnings-memory-problems-the-hardware-company-regression/",
    "published": "2026-11-03",
    "summary": "Apple's earnings suggest that the company's hardware business is doing better than ever, even in the face of memory challenges. Does the software story help or hurt?"
-  },
-  {
-   "source": "Product Talk (Teresa Torres)",
-   "type": "rss",
-   "role": "people",
-   "priority": 2,
-   "tags": [
-    "discovery"
-   ],
-   "via": "rss",
-   "title": "What AI Changes - All Things Product Podcast with Teresa Torres & Petra Wille",
-   "url": "https://www.producttalk.org/what-ai-changes-all-things-product-podcast-with-teresa-torres-petra-wille/",
-   "published": "2026-11-03",
-   "summary": "Listen to this episode on: Spotify | Apple Podcasts Everyone’s shouting that AI changes everything. Teresa Torres wrote a LinkedIn “screed” arguing the opposite — and this episode is the debate she and Petra wanted to have about it. Petra Wille and Teresa Torres work through the"
-  },
-  {
-   "source": "Hello China Tech",
-   "type": "rss",
-   "role": "people",
-   "priority": 2,
-   "tags": [
-    "china",
-    "ai",
-    "consumer-tech"
-   ],
-   "via": "rss",
-   "title": "China's AI Job Rules Guard the Exit",
-   "url": "https://hellochinatech.com/p/china-ai-layoff-rules",
-   "published": "2026-11-03",
-   "summary": "China has put a price on AI dismissals, while hiring studies in China and the US show weaker demand for junior workers."
   },
   {
    "source": "Lenny's Newsletter",
@@ -1060,10 +1163,10 @@
     "ai-models"
    ],
    "via": "rss",
-   "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-   "url": "https://openai.com/index/dan-driscoll-joins-openai",
+   "title": "Qodo builds context into AI code review with Codex",
+   "url": "https://openai.com/index/qodo-codex-plugin",
    "published": "2026-11-02",
-   "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies."
+   "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
   },
   {
    "source": "OpenAI news",
@@ -1074,24 +1177,10 @@
     "ai-models"
    ],
    "via": "rss",
-   "title": "Qodo builds context into AI code review with Codex",
-   "url": "https://openai.com/index/qodo-codex-plugin",
+   "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
+   "url": "https://openai.com/index/dan-driscoll-joins-openai",
    "published": "2026-11-02",
-   "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Infino AI",
-   "url": "https://www.producthunt.com/products/infino-ai",
-   "published": "2026-11-02",
-   "summary": "Search, vectors and SQL over one Parquet copy, for agents Discussion | Link"
+   "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies."
   },
   {
    "source": "Product Hunt",
@@ -1116,10 +1205,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "asklog",
-   "url": "https://www.producthunt.com/products/asklog",
+   "title": "MachineMail",
+   "url": "https://www.producthunt.com/products/machinemail",
    "published": "2026-11-02",
-   "summary": "Give your coding agents a boss. Answer it from your phone. Discussion | Link"
+   "summary": "Email inboxes for humans and bots Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1144,10 +1233,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "MachineMail",
-   "url": "https://www.producthunt.com/products/machinemail",
+   "title": "Beaquaro Studio",
+   "url": "https://www.producthunt.com/products/beaquaro-studio",
    "published": "2026-11-02",
-   "summary": "Email inboxes for humans and bots Discussion | Link"
+   "summary": "Write once, post everywhere. Your link in bio, too. Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1158,10 +1247,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Beaquaro Studio",
-   "url": "https://www.producthunt.com/products/beaquaro-studio",
+   "title": "asklog",
+   "url": "https://www.producthunt.com/products/asklog",
    "published": "2026-11-02",
-   "summary": "Write once, post everywhere. Your link in bio, too. Discussion | Link"
+   "summary": "Give your coding agents a boss. Answer it from your phone. Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1186,24 +1275,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Remote Gaze",
-   "url": "https://www.producthunt.com/products/remote-gaze",
+   "title": "Infino AI",
+   "url": "https://www.producthunt.com/products/infino-ai",
    "published": "2026-11-02",
-   "summary": "Your Mac on your iPad and iPhone with no in-between server Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "HoldTalk",
-   "url": "https://www.producthunt.com/products/holdtalk",
-   "published": "2026-11-02",
-   "summary": "Hold fn, speak, and the text appears in any Mac app Discussion | Link"
+   "summary": "Search, vectors and SQL over one Parquet copy, for agents Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1228,10 +1303,24 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Xmind 2027",
-   "url": "https://www.producthunt.com/products/xmind",
+   "title": "HoldTalk",
+   "url": "https://www.producthunt.com/products/holdtalk",
    "published": "2026-11-02",
-   "summary": "Your mind map is now an AI thinking partner Discussion | Link"
+   "summary": "Hold fn, speak, and the text appears in any Mac app Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Remote Gaze",
+   "url": "https://www.producthunt.com/products/remote-gaze",
+   "published": "2026-11-02",
+   "summary": "Your Mac on your iPad and iPhone with no in-between server Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1246,6 +1335,34 @@
    "url": "https://www.producthunt.com/products/help-381",
    "published": "2026-11-02",
    "summary": "The app designed for targeted and transparent help Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Xmind 2027",
+   "url": "https://www.producthunt.com/products/xmind",
+   "published": "2026-11-02",
+   "summary": "Your mind map is now an AI thinking partner Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Friday Work",
+   "url": "https://www.producthunt.com/products/friday-work",
+   "published": "2026-11-02",
+   "summary": "When Claude hits its limit, your task keeps going Discussion | Link"
   },
   {
    "source": "Hacker News front page",
@@ -1317,10 +1434,41 @@
     "ai"
    ],
    "via": "rss",
+   "title": "Killing what can't be handled – putting a spaghetti demon to eternal rest",
+   "url": "https://themaister.net/blog/2026/10/29/killing-what-cant-be-handled-putting-a-spaghetti-demon-to-eternal-rest/",
+   "published": "2026-11-02",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
    "title": "Antimony: CAD Software Evolved from Lisp Machines and Not Drafting Tables (2015)",
    "url": "https://www.mattkeeter.com/projects/antimony/3/",
    "published": "2026-11-02",
    "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "Bro's AI video editor makes $11,200 per month 😱",
+   "url": "https://www.youtube.com/watch?v=0t_FAN0dN0A",
+   "published": "2026-11-02",
+   "summary": "Bro’s AI video editor makes $11,200 per month. Meet Vadim. He’s 19 and built Vugola, an AI video editing agent that turns any long-form content into viral clips. about $11,200 in MRR in the last four weeks a few 10,000 signups about 400 paying users built for clippers, content creators, agencies, and long-form brands"
   },
   {
    "source": "Stratechery (Ben Thompson)",
@@ -1354,21 +1502,6 @@
    "summary": "A Rmb 23,760 procurement notice and 2,000 reported partners show how Tencent is trying to reach enterprise customers."
   },
   {
-   "source": "Lenny's Newsletter",
-   "type": "rss",
-   "role": "people",
-   "priority": 1,
-   "tags": [
-    "product",
-    "growth"
-   ],
-   "via": "rss",
-   "title": "How a 19-year-old intern built the growth engine behind this $2B AI company | Hector Serrano",
-   "url": "https://www.lennysnewsletter.com/p/how-a-19-year-old-intern-built-the",
-   "published": "2026-11-01",
-   "summary": "Listen now (88 mins) | Hector Serrano on building Wispr Flow’s paid-UGC machine, hiring young talent over polished resumes, and why the best marketers are “allergic to AI”"
-  },
-  {
    "source": "Simon Willison",
    "type": "rss",
    "role": "frontier",
@@ -1382,35 +1515,6 @@
    "url": "https://simonwillison.net/2026/Nov/1/kyle-kingsbury/",
    "published": "2026-11-01",
    "summary": "More broadly, the use of LLMs erodes trust in documentation, in software, and in the organizations which produce them. Perhaps engineers will begin to treat any new software project with suspicion—the signals we used to rely on as markers of a mature system are now easier to counterfeit. [...] In the age of LLMs, what can maintainers do to ensure correct software and accurate documentation? Having done that work, how can they demonstrate its quality to users? — Kyle Kingsbury , Jepsen results for ParticleDB 1.1.4 Tags: kyle-kingsbury , llms , ai , generative-ai , ai-misuse"
-  },
-  {
-   "source": "Simon Willison",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "ai-engineering",
-    "agents"
-   ],
-   "via": "rss",
-   "title": "How We Took Over ChatGPT Accounts",
-   "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/",
-   "published": "2026-11-01",
-   "summary": "How We Took Over ChatGPT Accounts Parameter Labs describe an exploit they found against ChatGPT's implementation of the artifacts pattern (OpenAI used to call this \"Canvas\" but it looks like the latest revision is called HTML previews ), where interactive custom HTML apps are displayed in a sandboxed iframe. It's important that HTML in these stays tightly sandboxed to avoid untrusted code interacting with OpenAI APIs and accessing private data. Parameter found quite a complex attack chain. OpenAI use the MathLive JavaScript library as part of their graph support, and that library includes its ..."
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Wavefunction",
-   "url": "https://www.producthunt.com/products/wavefunction",
-   "published": "2026-11-01",
-   "summary": "A minimal, open-source coding agent for your Mac Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1436,10 +1540,26 @@
     "ai"
    ],
    "via": "rss",
-   "title": "We're Training a Figma-Fluent Editing Model",
+   "title": "We're training a Figma-fluent editing model",
    "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/",
    "published": "2026-11-01",
    "summary": "Comments"
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Điều cần phải xảy đến trước khi nhảy việc",
+   "url": "https://www.youtube.com/watch?v=pZREBJzsbTY",
+   "published": "2026-11-01",
+   "summary": "[English below] Rời ngành Tài chính, An Trương quyết định dành thời gian nghỉ ngơi trước khi bắt đầu hành trình mới. Khoảng nghỉ ấy không chỉ giúp An tái tạo năng lượng, mà còn là cơ hội để nhìn lại bản thân và tìm cảm hứng cho bước đi tiếp theo. Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - After leaving the finance industry, An Trương took time off before embarking on a new chapter. The break gave An space to recharge, reflect, and rediscover the inspiration needed to figure out what comes next. Watch more from EP414 of Vietnam Innovators (English Edition) featuring An Truong available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts channels."
   },
   {
    "source": "Hello China Tech",
