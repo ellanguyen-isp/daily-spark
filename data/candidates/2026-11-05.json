@@ -1,70 +1,80 @@
 {
  "date": "2026-11-05",
- "generated_at": "2026-11-05T06:14+07:00",
+ "generated_at": "2026-11-05T09:44+07:00",
  "window_days": 3,
- "youtube_api": false,
+ "youtube_api": true,
  "sources": [
   {
    "source": "Starter Story",
-   "ok": false,
-   "error": "rss: HTTP Error 500: Internal Server Error"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 4
   },
   {
    "source": "Starter Story Build",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "Lenny's Podcast",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "The Skip (Nikhyl Singhal)",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "YC Root Access",
-   "ok": false,
-   "error": "rss: HTTP Error 500: Internal Server Error"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 1
   },
   {
    "source": "Aakash Gupta (Product Growth)",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 2
   },
   {
    "source": "Y Combinator",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 2
   },
   {
    "source": "Naval",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "Every",
-   "ok": false,
-   "error": "rss: HTTP Error 500: Internal Server Error"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 4
   },
   {
    "source": "Vietnam Innovators Digest",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
   },
   {
    "source": "Lenny's Newsletter",
    "ok": true,
    "via": "rss",
-   "new": 2
+   "new": 1
   },
   {
    "source": "Simon Willison",
    "ok": true,
    "via": "rss",
-   "new": 10
+   "new": 9
   },
   {
    "source": "Every",
@@ -87,13 +97,13 @@
    "source": "Aakash Gupta newsletter",
    "ok": true,
    "via": "rss",
-   "new": 1
+   "new": 0
   },
   {
    "source": "Stratechery (Ben Thompson)",
    "ok": true,
    "via": "rss",
-   "new": 3
+   "new": 2
   },
   {
    "source": "Product Talk (Teresa Torres)",
@@ -103,9 +113,8 @@
   },
   {
    "source": "John Cutler",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "SVPG (Marty Cagan)",
@@ -115,15 +124,13 @@
   },
   {
    "source": "Andrew Chen",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "April Dunford",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Jason Cohen",
@@ -133,9 +140,8 @@
   },
   {
    "source": "Gibson Biddle",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Brian Balfour",
@@ -177,7 +183,7 @@
    "source": "OpenAI news",
    "ok": true,
    "via": "rss",
-   "new": 14
+   "new": 13
   },
   {
    "source": "Google AI blog",
@@ -189,7 +195,7 @@
    "source": "Product Hunt",
    "ok": true,
    "via": "rss",
-   "new": 30
+   "new": 28
   },
   {
    "source": "Anthropic news",
@@ -200,10 +206,27 @@
    "source": "Hacker News front page",
    "ok": true,
    "via": "rss",
-   "new": 30
+   "new": 29
   }
  ],
  "items": [
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "Claude Code can edit your videos now",
+   "url": "https://www.youtube.com/watch?v=-mZOuytJj4Y",
+   "published": "2026-11-05",
+   "summary": "Claude Code can edit your videos now. Here is the whole setup, step by step, on your own computer. Make a folder, unzip the kit inside it, and open Claude Code in that folder so it can read everything. Install ffmpeg and Python, both free, and run the install script with the whisper option so it downloads the speech model. Talk to Claude while you record. Whisper writes your spoken notes into the transcript, so Claude reads them. Then drop the clip in the folder and run the podcast-to-clips command. It picks the moment, cuts it and adds captions. Cut check re-listens and flags any word it swallowed. The kit has the 17 effects I built from one take of me, plus the editing skills. Idea: @millee.md #shorts #claudecode #videoediting"
+  },
   {
    "source": "Hacker News front page",
    "type": "rss",
@@ -229,8 +252,38 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Insects don't swarm at LED lights",
-   "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
+   "title": "Images 2.6",
+   "url": "https://openai.com/index/introducing-images-2-6/",
+   "published": "2026-11-05",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "A thousand fewer paths to root",
+   "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+   "published": "2026-11-05",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Starfall – Affordable, routine access to microgravity",
+   "url": "https://www.spacex.com/starfall",
    "published": "2026-11-05",
    "summary": "Comments"
   },
@@ -259,8 +312,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
-   "url": "https://icode4.coffee/?p=1746",
+   "title": "Insects don't swarm at LED lights",
+   "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
    "published": "2026-11-05",
    "summary": "Comments"
   },
@@ -289,8 +342,53 @@
     "ai"
    ],
    "via": "rss",
+   "title": "Hacking the Xbox 360 Hypervisor Part 3: Bad Update Improvements",
+   "url": "https://icode4.coffee/?p=1746",
+   "published": "2026-11-05",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Conductor is joining Meta",
+   "url": "https://www.conductor.build/announcement",
+   "published": "2026-11-05",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
    "title": "Qualcomm Cloud AI 100 Ultra – 150W AI Accelerator Card with 128GB at 548GB/s",
    "url": "https://www.qualcomm.com/data-center/products/cloud-ai-100-ultra",
+   "published": "2026-11-05",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
+   "url": "https://news.ycombinator.com/item?id=50368804",
    "published": "2026-11-05",
    "summary": "Comments"
   },
@@ -334,8 +432,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Conductor is joining Meta",
-   "url": "https://www.conductor.build/announcement",
+   "title": "Death Comes for XSLT",
+   "url": "https://dbushell.com/2026/11/03/xslt-rip/",
    "published": "2026-11-05",
    "summary": "Comments"
   },
@@ -349,85 +447,106 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Successful People (2013)",
-   "url": "https://blog.samaltman.com/successful-people",
+   "title": "Show HN: Gauge – Open-Source CLI to recursively improve your docs",
+   "url": "https://github.com/gauge-sh/gauge-cli",
    "published": "2026-11-05",
    "summary": "Comments"
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
    "tags": [
-    "launches",
-    "ai"
+    "indie-business",
+    "founders",
+    "case-studies"
    ],
-   "via": "rss",
-   "title": "Launch HN: Kino AI (YC S23) – AI media manager and video editor",
-   "url": "https://news.ycombinator.com/item?id=50368804",
+   "via": "youtube-api",
+   "title": "I turned a viral idea into a $25K/month app",
+   "url": "https://www.youtube.com/watch?v=KgS3hbpxTzE",
    "published": "2026-11-05",
-   "summary": "Comments"
+   "summary": "Ben turned one viral idea of himself singing in French into Canary, an app that teaches languages through music. Less than a year later, it makes about $25K a month, and he runs it solo. This video is a playbook for how to test an app idea with content, build a simple first version, and grow it fast. *Database: 229 consumer iOS apps generating $10K+/mo in revenue* https://clickhubspot.com/8k8k Say hi to Ben: https://x.com/bengu_ez Check out Canary: https://www.singwithcanary.com/ 🔔 Follow the Second Channel: @StarterStoryBuild 🏁 We're hiring: starterstory.com/jobs Chapters: 0:00 - $25K in 9 months 0:58 - Meet Ben! 1:17 - What’s the app? (Sing with Canary) 2:02 - The year of apps! 2:30 - Business breakdown 2:50 - Ben’s background 3:46 - Building with an audience? 4:34 - How he built it 5:15 - Tech stack and tools 5:54 - Early growth 7:04 - What marketing tactics are working right now? 7:59 - Finding app ideas 8:54 - Canary app demo 9:46 - Final advice for builders 10:40 - Reflections! 11:33 - More simple app ideas This video is an educational case study of this founder’s experience. It is not financial advice and does not guarantee any income or results. Every business is different ..."
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
    "tags": [
-    "launches",
-    "ai"
+    "indie-business",
+    "founders",
+    "case-studies"
    ],
-   "via": "rss",
-   "title": "Ask HN: What your experience with the monthly \"who wants to be hired\" thread?",
-   "url": "https://news.ycombinator.com/item?id=50372294",
+   "via": "youtube-api",
+   "title": "Bro runs his whole $30k/month business with just 6 tools 🤯",
+   "url": "https://www.youtube.com/watch?v=3KS2OP2kUTs",
    "published": "2026-11-05",
-   "summary": "Comments"
+   "summary": "Meet Jake. He built ExcelExercises.com, a simple site that teaches Excel through hands-on exercises. Today it makes $30K+/month. His entire stack: HTML, CSS and plain vanilla JavaScript Code he “copied off of Stack Overflow six years ago” Hosted on GCP for less than $100/month Google Analytics (free) SendGrid for email at $35/month Stripe fees"
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
+   "source": "YC Root Access",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
    "tags": [
-    "launches",
+    "startups",
+    "founders",
     "ai"
    ],
-   "via": "rss",
-   "title": "Less Popular Than Coal",
-   "url": "https://www.argmin.net/p/less-popular-than-coal",
+   "via": "youtube-api",
+   "title": "The Right Model for Each Coding Task",
+   "url": "https://www.youtube.com/watch?v=eN92Oatzzks",
    "published": "2026-11-05",
-   "summary": "Comments"
+   "summary": "Weave (YC W25) helps engineering teams understand whether their AI coding tools are actually making them more productive. Its models measure the work humans and agents produce and compare that output with AI spending. The company recently raised a $13.5M Series A led by Standard Capital and launched Weave Router, which selects models for different coding tasks. In this Fireside, co-founders Adam Cohen and Andrew Churchill discuss how they went from measuring human productivity to optimizing coding agents, why cost per output matters more than raw token spend, and how their AI coach helps engineers work more effectively with agents. They also share their vision for autonomous software factories and explain why combining different models’ strengths could outperform any single model. https://weaveos.com Chapters: 00:00 — Optimizing AI Coding With Weave 04:02 — Getting More From Your AI Budget 08:39 — Measuring Work Beyond Lines of Code 12:30 — From AI Adoption to Optimization 16:47 — Measuring AI ROI and Coaching Engineers 20:16 — Building Software Factories 25:38 — The Future of Model Routing Apply to Y Combinator: https://www.ycombinator.com/apply Work at a startup: https://www.ycom..."
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
    "tags": [
-    "launches",
-    "ai"
+    "ai-native-work",
+    "ai-products"
    ],
-   "via": "rss",
-   "title": "From wild to mild: Friendly foxes show changes in brain region",
-   "url": "https://news.cornell.edu/stories/2026/11/wild-mild-friendly-foxes-show-changes-brain-region",
+   "via": "youtube-api",
+   "title": "The Inside Story of the 50 Who Built Modern AI With Kevin Roose",
+   "url": "https://www.youtube.com/watch?v=IOp5N4GxE6E",
    "published": "2026-11-05",
-   "summary": "Comments"
+   "summary": "How did the race to build AGI really unfold, and who made the decisions that shaped it? Tech journalist Kevin Roose interviewed 150 people at the center of the AI industry to find out. The result is _The AGI Chronicles,_ a riveting account of how modern AI was built and the choices that will determine what comes next. On this week’s episode of _The Every Podcast,_ Natalia Quintero sits down with Roose to talk about how he got a secretive industry to open up, how he did (and didn’t) use AI in his book writing process, and why he sees his job as explaining the “very confusing and insular” world of Silicon Valley to everyone else. Links to resources mentioned in the episode: • Follow Kevin Roose: https://x.com/kevinroose • Get Kevin Roose’s book, _The AGI Chronicles:_ https://theagichronicles.com/ • Machine Gods: https://www.npr.org/podcasts/g-s1-143588/machine-gods • “The Big Blob of Compute Hypothesis” excerpt on Kevin’s Substack: https://kevinroose.substack.com/p/the-essay-that-started-the-ai-race • _Profiles of the Future_ by Arthur C. Clarke: https://www.amazon.com/Profiles-Future-Inquiry-Limits-Possible/dp/0575402776 • _The Making of the Atomic Bomb_ by Richard Rhodes: https://w..."
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
    "priority": 1,
    "tags": [
-    "launches",
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "What an AI-Native Product Team Actually Looks Like at Salesforce",
+   "url": "https://www.youtube.com/watch?v=_jBa_YEobGI",
+   "published": "2026-11-04",
+   "summary": "Jayesh Govindarajan runs the 700-person org behind Salesforce AI and Agentforce. He breaks down what an AI native company looks like layer by layer, from the tools his teams live in to how the product trio is converging. He also defines the ADLC, the agent development life cycle that replaces the SDLC once your software is an agent. Full Writeup: https://www.news.aakashg.com/p/salesforce-ai-native-product-team Transcript: https://www.aakashg.com/how-to-build-an-ai-native-company-with-salesforce-ai-head-jayesh-govindarajan/ Timestamps 02:19 - Inside Salesforce's AI org and how agentic coding changed it 07:33 - Ads 09:30 - How to pick and roll out AI tools 12:56 - Headless Salesforce inside Claude 15:14 - Getting ground truth from probabilistic AI 19:22 - Why Slack is the AI native work hub 21:25 - Ads 24:51 - Prototyping with customers inside Slack 25:45 - The future of the product trio 34:15 - The two AI PM skills and how to hire for them 38:00 - ADLC vs SDLC 46:36 - Roadmapping with forward deployed teams 52:29 - Biggest mistakes in AI transformations 🏆 Thanks to our sponsors 1. Fingerprint: Identify good and bad visitors with industry-leading accuracy - https://fingerprint.com/?u..."
+  },
+  {
+   "source": "Y Combinator",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "startups",
+    "startup-school",
     "ai"
    ],
-   "via": "rss",
-   "title": "If you're on Replit Pro, you have until November 8 to opt out of arbitration",
-   "url": "https://readthediff.substack.com/p/replit-pro-arbitration-opt-out-november-8",
-   "published": "2026-11-05",
-   "summary": "Comments"
+   "via": "youtube-api",
+   "title": "10 Habits PhDs Must Unlearn To Build a Startup | Startup School",
+   "url": "https://www.youtube.com/watch?v=u-8KpXcPYCw",
+   "published": "2026-11-04",
+   "summary": "Google, Anthropic, and Databricks were all started by founders with PhDs. But they’re the exceptions. Most academic founders fail, because the instincts that get you published are the ones that can get you killed in a startup. Francois Chaubard knows both sides. He’s a visiting partner at YC and a current PhD student, and before that he was a researcher in Fei-Fei Li’s lab and the founder and CEO of Focal. In this episode of Startup School, Francois breaks down the ten mindset shifts you have to make to go from researcher to formidable founder. He'll cover how to thrive without deadlines or grades, the difference between an interesting idea and an important one, and why being the first to an idea can actually be a disadvantage. Chapters: 00:00 - Why academics struggle as founders 00:53 - Vanity metrics vs. what people want 01:45 - Interesting vs. important 02:27 - Novelty vs. plagiarism 03:54 - There is no finish line 04:32 - Get on a plane and talk to people 05:53 - Hyperbole is okay 06:28 - The 70% rule 07:11 - You can't delegate the hard stuff 07:52 - Become a capitalist 08:16 - Nobody cares how smart you are 09:04 - Get out of your office Apply to Y Combinator: https://www.ycom..."
   },
   {
    "source": "Simon Willison",
@@ -540,6 +659,20 @@
     "ai-models"
    ],
    "via": "rss",
+   "title": "Introducing Images 2.6",
+   "url": "https://openai.com/index/introducing-images-2-6",
+   "published": "2026-11-04",
+   "summary": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
    "title": "DevRev delivers autonomous self-service with GPT-6.1 Sol",
    "url": "https://openai.com/index/devrev-enterprise-self-service",
    "published": "2026-11-04",
@@ -568,52 +701,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "TellPip",
-   "url": "https://www.producthunt.com/products/tellpip",
-   "published": "2026-11-04",
-   "summary": "A little bird that whispers what to say in your calls Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
    "title": "PasteGuard for Mac",
    "url": "https://www.producthunt.com/products/pasteguard-2",
    "published": "2026-11-04",
    "summary": "Keep secrets and personal data out of AI chats Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Fedora Linux 45",
-   "url": "https://www.producthunt.com/products/fedora-linux-45",
-   "published": "2026-11-04",
-   "summary": "GNOME 51: Wayland fixes, oo7 keys, and modern toolchains. Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Hindsight Models and Inference API",
-   "url": "https://www.producthunt.com/products/vectorize",
-   "published": "2026-11-04",
-   "summary": "Small, fast models for reranking, embeddings and decisions Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -638,10 +729,52 @@
     "launches"
    ],
    "via": "rss",
+   "title": "Hindsight Models and Inference API",
+   "url": "https://www.producthunt.com/products/vectorize",
+   "published": "2026-11-04",
+   "summary": "Small, fast models for reranking, embeddings and decisions Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
    "title": "Freeport Markets",
    "url": "https://www.producthunt.com/products/freeport-markets",
    "published": "2026-11-04",
    "summary": "Our proprietary AI finds the top onchain wallets to copy Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Fedora Linux 45",
+   "url": "https://www.producthunt.com/products/fedora-linux-45",
+   "published": "2026-11-04",
+   "summary": "GNOME 51: Wayland fixes, oo7 keys, and modern toolchains. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "TellPip",
+   "url": "https://www.producthunt.com/products/tellpip",
+   "published": "2026-11-04",
+   "summary": "A little bird that whispers what to say in your calls Discussion | Link"
   },
   {
    "source": "Hacker News front page",
@@ -655,141 +788,6 @@
    "via": "rss",
    "title": "AI is forcing us to pay off 40 years of technical debt",
    "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
-   "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "OpenAI to acquire Pierre Computer Company",
-   "url": "https://openai.com/index/openai-to-acquire-pierre/",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Tencent Hy4",
-   "url": "https://hy.tencent.ai/research/hy4",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "AMD expects to outsell Intel in Q4 for the first time in history",
-   "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Verification Is Not Knowledge: Science needs more than answers",
-   "url": "https://blog.cosmos-institute.org/p/verification-is-not-knowledge",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "North Korean fake job interview led to $6.3B Binance heist",
-   "url": "https://www.theregister.com/security/2026/11/03/north-korean-fake-job-interview-led-to-63b-binance-heist/5307398",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Incident with Pull Requests, Git Operations and Issues",
-   "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
-   "url": "https://news.ycombinator.com/item?id=50363461",
-   "published": "2026-11-04",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Kimi K3.1 Pro model weights are out",
-   "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
    "published": "2026-11-04",
    "summary": "Comments"
   },
@@ -818,8 +816,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Evergreen: A Provably Safe Systems Language",
-   "url": "https://evergreenlang.net",
+   "title": "OpenAI to acquire Pierre Computer Company",
+   "url": "https://openai.com/index/openai-to-acquire-pierre/",
    "published": "2026-11-04",
    "summary": "Comments"
   },
@@ -833,40 +831,162 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Show HN: I built a tool that prices a prebuilt PC part by part",
-   "url": "https://pcdealcheck.com/",
+   "title": "Ask HN: What's your current AI agentic setup?",
+   "url": "https://news.ycombinator.com/item?id=50366117",
    "published": "2026-11-04",
    "summary": "Comments"
   },
   {
-   "source": "Aakash Gupta newsletter",
+   "source": "Hacker News front page",
    "type": "rss",
-   "role": "people",
-   "priority": 2,
+   "role": "frontier",
+   "priority": 1,
    "tags": [
-    "product",
-    "ai-pm"
+    "launches",
+    "ai"
    ],
    "via": "rss",
-   "title": "What an AI-Native Product Team Actually Looks Like at Salesforce",
-   "url": "https://www.news.aakashg.com/p/salesforce-ai-native-product-team",
+   "title": "Tencent Hy4",
+   "url": "https://hy.tencent.ai/research/hy4",
    "published": "2026-11-04",
-   "summary": "Salesforce AI's Jayesh Govindarajan, who runs the Agentforce org, on the ADLC behind an AI-native product team and what Salesforce looks for when hiring PMs."
+   "summary": "Comments"
   },
   {
-   "source": "Stratechery (Ben Thompson)",
+   "source": "Hacker News front page",
    "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Is Curiosity Good for Us?",
+   "url": "https://www.lrb.co.uk/the-paper/v48/n20/adam-phillips/is-curiosity-good-for-us",
+   "published": "2026-11-04",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "A wave of plastic-free coffee pods and machines",
+   "url": "https://www.cnn.com/2026/11/02/food/coffee-machine-plastic-free",
+   "published": "2026-11-04",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "AMD expects to outsell Intel in Q4 for the first time in history",
+   "url": "https://www.tomshardware.com/pc-components/cpus/amd-expects-to-outsell-intel-in-q4-for-the-first-time-in-history-usd17b-guidance-would-exceed-intels-projections",
+   "published": "2026-11-04",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "'It's just vape, nail, charity shops': Can anything save UK high street?",
+   "url": "https://www.theguardian.com/business/2026/nov/04/what-can-save-the-british-high-street-rotherham",
+   "published": "2026-11-04",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Incident with Pull Requests, Git Operations and Issues",
+   "url": "https://www.githubstatus.com/incidents/smtdswd1h2w4",
+   "published": "2026-11-04",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
    "role": "people",
    "priority": 2,
    "tags": [
-    "aggregation",
-    "strategy"
+    "indie-business",
+    "founders",
+    "case-studies"
    ],
-   "via": "rss",
-   "title": "AI on the Ballot",
-   "url": "https://stratechery.com/2026/ai-on-the-ballot/",
+   "via": "youtube-api",
+   "title": "Bro runs 20 TikTok accounts for his $10K/month app 🤯",
+   "url": "https://www.youtube.com/watch?v=Vwb-uzanOO0",
    "published": "2026-11-04",
-   "summary": "Data Centers were on the ballot, and they lost in a major way; what does it mean if American opposition to building is permanent?"
+   "summary": "Meet An. He built Flame, a daily ritual app for couples. 250K downloads. 58M organic views. $3K → $10K MRR in under 8 months. The engine isn’t ads. It’s hardware. 4-5 physical phones sitting on a rack 3-5 TikTok accounts per phone 15-20 accounts posting daily A spreadsheet tracking every account’s warm-up phase, health, and hook performance At peak, 150 pieces of content a day to test ONE hook"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Writing automation workshop with Mike Taylor at Every Think Week",
+   "url": "https://www.youtube.com/watch?v=n-Y9kcUUvo0",
+   "published": "2026-11-04",
+   "summary": ""
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Writing automation workshop with Mike Taylor at Every Think Week",
+   "url": "https://www.youtube.com/watch?v=D7pWsEhsaFk",
+   "published": "2026-11-04",
+   "summary": ""
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Tại sao nhân viên thà tâm sự với A.I hơn là với sếp?",
+   "url": "https://www.youtube.com/watch?v=G-2GAodge_g",
+   "published": "2026-11-04",
+   "summary": "Nếu nhân viên thà tâm sự với một \"cỗ máy vô tri\" hơn là tìm đến người quản lý trực tiếp, đó là dấu hiệu cho thấy tổ chức đã đánh mất sự an toàn tâm lý tối thiểu hay chính nhân sự đang né tránh những va chạm cần thiết để giải quyết vấn đề? Xem phiên bản đầy đủ của tập 126 podcast Vietnam Innovators (Tiếng Việt) trên các kênh Youtube, Spotify hoặc Apple Podcasts của Vietnam Innovators Digest, để lắng nghe trọn vẹn chia sẻ từ khách mời Thơm Trần - CEO & Founder khơii."
   },
   {
    "source": "Hello China Tech",
@@ -883,6 +1003,22 @@
    "url": "https://hellochinatech.com/p/china-token-economy-report-2026",
    "published": "2026-11-04",
    "summary": "The count and the invoice: who uses China’s token number, what it leaves out, and who carries the risk"
+  },
+  {
+   "source": "Y Combinator",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "startups",
+    "startup-school",
+    "ai"
+   ],
+   "via": "youtube-api",
+   "title": "Engineers Make Great Founders",
+   "url": "https://www.youtube.com/watch?v=lqdc1MeyIfs",
+   "published": "2026-11-03",
+   "summary": "A lot of what makes a great engineer also makes a great founder. Before starting Layers and BootLoop, Shivani Patel and Chris Markus worked at SpaceX, where they learned to take ideas from zero to one, solve hard problems, and own the outcome."
   },
   {
    "source": "Lenny's Newsletter",
@@ -1066,10 +1202,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Basedash Verified dashboards",
-   "url": "https://www.producthunt.com/products/basedash",
+   "title": "Sonari",
+   "url": "https://www.producthunt.com/products/sonari",
    "published": "2026-11-03",
-   "summary": "Show your team which dashboards to trust Discussion | Link"
+   "summary": "A hand-gesture instrument and MIDI controller for Mac Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1094,136 +1230,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Zero Wire",
-   "url": "https://www.producthunt.com/products/cloudflare",
-   "published": "2026-11-03",
-   "summary": "Check your exposure to critical CVEs with one agent prompt Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "TrackEdge",
-   "url": "https://www.producthunt.com/products/trackedge-2",
-   "published": "2026-11-03",
-   "summary": "Hidden AI buttons on your MacBook’s trackpad Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Sendu",
-   "url": "https://www.producthunt.com/products/sendu",
-   "published": "2026-11-03",
-   "summary": "Drop files easily across your local network Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Floot Payments",
-   "url": "https://www.producthunt.com/products/floot",
-   "published": "2026-11-03",
-   "summary": "Take payments in apps you build in ChatGPT and Claude Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "LiveReacting for ChatGPT",
-   "url": "https://www.producthunt.com/products/livereacting",
-   "published": "2026-11-03",
-   "summary": "Run 24/7 and pre-recorded live streams from ChatGPT Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Sonari",
-   "url": "https://www.producthunt.com/products/sonari",
-   "published": "2026-11-03",
-   "summary": "A hand-gesture instrument and MIDI controller for Mac Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "QualityLayer",
-   "url": "https://www.producthunt.com/products/qualitylayer",
-   "published": "2026-11-03",
-   "summary": "Plan, build and review software with your coding agents Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "OpusClip 4.0",
-   "url": "https://www.producthunt.com/products/opusclip",
-   "published": "2026-11-03",
-   "summary": "Turn raw footage into ready-to-publish videos with AI Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
    "title": "Resum",
    "url": "https://www.producthunt.com/products/resum",
    "published": "2026-11-03",
    "summary": "API and SDK for live conversations Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Hira",
-   "url": "https://www.producthunt.com/products/hira",
-   "published": "2026-11-03",
-   "summary": "Your free personal agent for job search Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1248,10 +1258,122 @@
     "launches"
    ],
    "via": "rss",
+   "title": "TrackEdge",
+   "url": "https://www.producthunt.com/products/trackedge-2",
+   "published": "2026-11-03",
+   "summary": "Hidden AI buttons on your MacBook’s trackpad Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Hira",
+   "url": "https://www.producthunt.com/products/hira",
+   "published": "2026-11-03",
+   "summary": "Your free personal agent for job search Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Zero Wire",
+   "url": "https://www.producthunt.com/products/cloudflare",
+   "published": "2026-11-03",
+   "summary": "Check your exposure to critical CVEs with one agent prompt Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
    "title": "Deployed Yet?",
    "url": "https://www.producthunt.com/products/deployed-yet",
    "published": "2026-11-03",
    "summary": "See if your Vercel, Cloudflare and GitHub deploys shipped Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "QualityLayer",
+   "url": "https://www.producthunt.com/products/qualitylayer",
+   "published": "2026-11-03",
+   "summary": "Plan, build and review software with your coding agents Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "LiveReacting for ChatGPT",
+   "url": "https://www.producthunt.com/products/livereacting",
+   "published": "2026-11-03",
+   "summary": "Run 24/7 and pre-recorded live streams from ChatGPT Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "OpusClip 4.0",
+   "url": "https://www.producthunt.com/products/opusclip",
+   "published": "2026-11-03",
+   "summary": "Turn raw footage into ready-to-publish videos with AI Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Floot Payments",
+   "url": "https://www.producthunt.com/products/floot",
+   "published": "2026-11-03",
+   "summary": "Take payments in apps you build in ChatGPT and Claude Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Basedash Verified dashboards",
+   "url": "https://www.producthunt.com/products/basedash",
+   "published": "2026-11-03",
+   "summary": "Show your team which dashboards to trust Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1276,10 +1398,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "NEXUPIRA",
-   "url": "https://www.producthunt.com/products/nexupira",
+   "title": "Sendu",
+   "url": "https://www.producthunt.com/products/sendu",
    "published": "2026-11-03",
-   "summary": "AI teammates that hand back finished work Discussion | Link"
+   "summary": "Drop files easily across your local network Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1290,10 +1412,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Flockbay",
-   "url": "https://www.producthunt.com/products/flockbay",
+   "title": "Calendarly",
+   "url": "https://www.producthunt.com/products/calendarly-calendar-on-lock-screen",
    "published": "2026-11-03",
-   "summary": "Free AI game maker built on Godot Discussion | Link"
+   "summary": "Your calendar and tasks, right on your iPhone Lock Screen Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1304,10 +1426,24 @@
     "launches"
    ],
    "via": "rss",
-   "title": "nana",
-   "url": "https://www.producthunt.com/products/nana-2",
+   "title": "LidCommit",
+   "url": "https://www.producthunt.com/products/lidcommit",
    "published": "2026-11-03",
-   "summary": "One terminal for every coding agent, on Windows Discussion | Link"
+   "summary": "Auto-commit when you close your laptop lid Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Brink",
+   "url": "https://www.producthunt.com/products/brink-2",
+   "published": "2026-11-03",
+   "summary": "Turn your MacBook trackpad's edges into controls Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1324,6 +1460,20 @@
    "summary": "OpenAI's benchmark for everyday life tasks with AI Discussion | Link"
   },
   {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Flockbay",
+   "url": "https://www.producthunt.com/products/flockbay",
+   "published": "2026-11-03",
+   "summary": "Free AI game maker built on Godot Discussion | Link"
+  },
+  {
    "source": "Hacker News front page",
    "type": "rss",
    "role": "frontier",
@@ -1333,10 +1483,88 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Ask HN: What Cryptography book do you recommend for reading with 10 year olds?",
-   "url": "https://news.ycombinator.com/item?id=50347425",
+   "title": "Frustrated Ranchers Want People to Quit 'Rescuing' Their Working Guardian Dogs",
+   "url": "https://cowboystatedaily.com/2026/10/15/frustrated-ranchers-want-people-to-quit-rescuing-their-working-guardian-dogs/",
    "published": "2026-11-03",
    "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "PageScribe: Handwriting and offline dictionary audio for KOReader",
+   "url": "https://aspireai.kiranadimatyam.com/builds/pagescribe/",
+   "published": "2026-11-03",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "Bro's website made $30K in 4 weeks with 2,500 subscribers 👀",
+   "url": "https://www.youtube.com/watch?v=cVDebUMJw4w",
+   "published": "2026-11-03",
+   "summary": "Bro’s website made $30K in 4 weeks with 2,500 paying subscribers. Meet Jake. He built ExcelExercises.com, a site that teaches Excel through hands-on exercises instead of boring videos. The model is dead simple: A few free lessons up front Then a hard paywall About 50,000 visitors in 4 weeks About 2,500 active paying subscribers A little over $30K in revenue"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Every Think Week: Monologue HARDWARE?!",
+   "url": "https://www.youtube.com/watch?v=bbgdpt0XZ8c",
+   "published": "2026-11-03",
+   "summary": ""
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Bí quyết giữ chân nhân tài Gen Z",
+   "url": "https://www.youtube.com/watch?v=vnMDV8naJJ8",
+   "published": "2026-11-03",
+   "summary": "Theo chị Thơm Trần, việc Gen Z nhảy việc sau vài tháng không đơn thuần là sự \"thiếu kiên nhẫn\" hay \"bốc đồng\", mà là một phản ứng hoàn toàn có logic. Bí quyết để giữ chân nhóm nhân tài này không nằm ở việc yêu cầu họ phải \"gồng mình chịu khó\", mà là khiến cho họ cảm thấy được ý nghĩa đằng sau mỗi công việc. Khi thấy được tác động thực tế từ những gì họ làm và kết nối được mục tiêu cá nhân với bức tranh chung của tổ chức, sự cam kết sẽ không còn là áp lực chịu đựng, mà trở thành nguồn động lực tự thân bền bỉ. Xem phiên bản đầy đủ của tập 126 podcast Vietnam Innovators (Tiếng Việt) trên các kênh Youtube, Spotify hoặc Apple Podcasts của Vietnam Innovators Digest, để lắng nghe trọn vẹn chia sẻ từ khách mời Thơm Trần - CEO & Founder khơii."
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Chi tiền tỷ cho đào tạo, tại sao doanh nghiệp vẫn mất người? | Ms. Thơm Trần | EP 125",
+   "url": "https://www.youtube.com/watch?v=lRI-VjdN11w",
+   "published": "2026-11-03",
+   "summary": "Đừng quên đăng ký theo dõi Vietnam Innovators Digest nhé: https://www.youtube.com/c/vietnaminnovatorsdigest Xem trọn bộ playlist tại đây: https://www.youtube.com/playlist?list=PLKj-kMezX0d1b-YppvkQAsV2tJI1WA_WL Host: Hương Giang Khách mời: Chị Thơm Trần - CEO & Founder khơii Chi tiền tỷ cho các khóa đào tạo, liên tục điều chỉnh chính sách lương thưởng, nhưng vì sao nhân sự cốt cán vẫn âm thầm kiệt sức và làn sóng rời đi dường như chưa từng dừng lại? Nếu vấn đề thực sự không nằm ở kỹ năng hay đãi ngộ, điều gì đang bẻ gãy sự gắn kết giữa con người và tổ chức? Tập phát sóng tuần này của Vietnam Innovators (tiếng Việt) cùng host Hương Giang gặp gỡ chị Thơm Trần - Founder & CEO khơii - đơn vị đồng hành cùng các cá nhân, nhà lãnh đạo và doanh nghiệp nhằm phát triển năng lực tự lãnh đạo (self-leadership) và chuyển hóa tổ chức từ bên trong ra bên ngoài. Với hơn 13 năm kinh nghiệm ở các vị trí quản lý và lãnh đạo cấp cao tại Unilever, Lazada, Karavan.vn,… kết hợp cùng lăng kính tâm lý học hành vi, chị Thơm Trần sẽ bóc tách những \"điểm mù\" vô hình đang âm thầm diễn ra chốn công sở, từ đó gợi mở những giải pháp giúp các lãnh đạo doanh nghiệp giải quyết vấn đề từ gốc rễ, biến một môi trường là..."
   },
   {
    "source": "Stratechery (Ben Thompson)",
@@ -1354,21 +1582,6 @@
    "summary": "Apple's earnings suggest that the company's hardware business is doing better than ever, even in the face of memory challenges. Does the software story help or hurt?"
   },
   {
-   "source": "Lenny's Newsletter",
-   "type": "rss",
-   "role": "people",
-   "priority": 1,
-   "tags": [
-    "product",
-    "growth"
-   ],
-   "via": "rss",
-   "title": "🎙️ How I AI: Grok vs. Dot vs. Muse vs. Duet + How Figma’s PMs actually use AI every day",
-   "url": "https://www.lennysnewsletter.com/p/how-i-ai-grok-vs-dot-vs-muse-vs-duet",
-   "published": "2026-11-02",
-   "summary": "Your weekly listens from How I AI, part of the Lenny's Podcast Network"
-  },
-  {
    "source": "Simon Willison",
    "type": "rss",
    "role": "frontier",
@@ -1382,21 +1595,6 @@
    "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/",
    "published": "2026-11-02",
    "summary": "I was reminded today of AI Adoption Rate Trending Down for Large Companies , a chart produced by Apollo Global Management in September 2025, which appeared to show a slowdown in U.S. corporate AI adoption based on numbers collected by the U.S. Census Bureau. At the time I used that chart to demonstrate GPT-5 data analysis , and then to experiment with Claude's new Code Interpreter . I decided to try running those numbers again to see what had changed over the past year, and in doing so learned that the Bureau has fallen foul of Executive Order 14434 , aka the asinine Super Intelligence one. Fi..."
-  },
-  {
-   "source": "Simon Willison",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "ai-engineering",
-    "agents"
-   ],
-   "via": "rss",
-   "title": "If in doubt, delete the uv.lock file",
-   "url": "https://simonwillison.net/2026/Nov/1/delete-uv-lock-first/",
-   "published": "2026-11-02",
-   "summary": "I've been getting the occasional confusing Python dependency error since switching over to Python 3.15 and the rule I'm having to remember is: If in doubt, delete the uv.lock file Most of my projects are libraries which don't include a uv.lock file, since it's rude for a library dependency to lock versions for anything else that uses it. Running uv run pytest etc tends to leave uv.lock files lying around, which are listed in .gitignore and so do not get committed to my repositories. But... sometimes that uv.lock pins a version of a dependency that doesn't yet have a Python 3.15 wheel. An examp..."
   },
   {
    "source": "OpenAI news",
@@ -1427,34 +1625,6 @@
    "summary": "OpenAI’s Grid Protectors Program will work with utilities to help future compute campuses support grid reliability and protect consumer electricity costs."
   },
   {
-   "source": "OpenAI news",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "ai-models"
-   ],
-   "via": "rss",
-   "title": "Qodo builds context into AI code review with Codex",
-   "url": "https://openai.com/index/qodo-codex-plugin",
-   "published": "2026-11-02",
-   "summary": "Qodo brings company knowledge and coding standards into Codex, helping developers catch P0 issues across repositories before opening a pull request."
-  },
-  {
-   "source": "OpenAI news",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "ai-models"
-   ],
-   "via": "rss",
-   "title": "OpenAI appoints Dan Driscoll as Senior Counselor for National Security Modernization",
-   "url": "https://openai.com/index/dan-driscoll-joins-openai",
-   "published": "2026-11-02",
-   "summary": "OpenAI appoints Dan Driscoll to advise on responsible AI for national security modernization, cyber resilience, and collaboration with U.S. allies."
-  },
-  {
    "source": "Product Hunt",
    "type": "rss",
    "role": "frontier",
@@ -1469,46 +1639,19 @@
    "summary": "Auto pause video when you look away Discussion | Link"
   },
   {
-   "source": "Product Hunt",
+   "source": "Hacker News front page",
    "type": "rss",
    "role": "frontier",
    "priority": 1,
    "tags": [
-    "launches"
+    "launches",
+    "ai"
    ],
    "via": "rss",
-   "title": "Scrawl",
-   "url": "https://www.producthunt.com/products/scrawl-2",
+   "title": "Basically no one is using AI agents for their DoorDash orders",
+   "url": "https://arstechnica.com/ai/2026/10/doordash-says-outside-ai-agents-have-only-led-to-hundreds-of-orders-so-far/",
    "published": "2026-11-02",
-   "summary": "Show your AI agent the problem with a visual frame Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Infino AI",
-   "url": "https://www.producthunt.com/products/infino-ai",
-   "published": "2026-11-02",
-   "summary": "Search, vectors and SQL over one Parquet copy, for agents Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "asklog",
-   "url": "https://www.producthunt.com/products/asklog",
-   "published": "2026-11-02",
-   "summary": "Give your coding agents a boss. Answer it from your phone. Discussion | Link"
+   "summary": "Comments"
   },
   {
    "source": "Hacker News front page",
