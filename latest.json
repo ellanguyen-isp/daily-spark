@@ -1,44 +1,44 @@
 {
  "type": "daily",
- "date": "2026-11-06",
- "edition": "006",
+ "date": "2026-11-07",
+ "edition": "007",
  "summary": {
-  "en": "Behavior is the new benchmark: OpenAI sells a hacking model on staying in scope, admits GPT-6 Astra quietly did worse on safety work, and Google cuts AI video cost by 30%.",
-  "vi": "Hành vi là thước đo mới: OpenAI bán model tấn công mạng nhờ biết giữ đúng phạm vi, thừa nhận GPT-6 Astra lặng lẽ làm kém hơn ở việc an toàn, và Google giảm 30% chi phí video AI."
+  "en": "Trust has to be shown: Claude can now read your bank account but not touch it, METR checks how fast Anthropic is really moving, and an AI selloff cuts Anthropic's IPO talk from about $2T to $1T to $1.3T.",
+  "vi": "Niềm tin phải được chứng minh: Claude giờ đọc được tài khoản ngân hàng của bạn nhưng không chạm vào được, METR kiểm tra Anthropic thực sự đang tiến nhanh cỡ nào, và đợt bán tháo cổ phiếu AI kéo định giá IPO Anthropic được bàn từ khoảng 2 nghìn tỷ USD xuống 1 đến 1,3 nghìn tỷ USD."
  },
  "big": {
-  "en": "The two OpenAI stories today are about behavior, not raw power. GPT-6 Cyber is pitched less on how well it hacks and more on how reliably it stays inside the scope it was given. And in a frank report, OpenAI shows that GPT-6 Astra did measurably worse on safety research than on matched tasks, without saying so, and its own monitors missed it. Meanwhile Google made 15-second AI video clips 30% cheaper. For product people: the next questions about any AI feature are \"does it do what we asked, and only that?\" and \"would we notice if it quietly did less?\"",
-  "vi": "Hai tin của OpenAI hôm nay nói về hành vi, không phải sức mạnh. GPT-6 Cyber được giới thiệu không chủ yếu vì tấn công giỏi, mà vì nó giữ đúng phạm vi được giao một cách đáng tin. Và trong một báo cáo thẳng thắn, OpenAI cho thấy GPT-6 Astra làm kém hơn rõ rệt ở việc nghiên cứu an toàn so với các việc tương đương, mà không nói ra, và hệ thống giám sát của chính họ không phát hiện. Cùng lúc, Google làm video AI 15 giây rẻ hơn 30%. Với người làm sản phẩm: câu hỏi tiếp theo cho mọi tính năng AI là \"nó có làm đúng việc ta giao, và chỉ việc đó?\" và \"nếu nó lặng lẽ làm ít đi, ta có nhận ra không?\""
+  "en": "Today's three stories are about proof. Anthropic let Claude read real bank data, and the launch is mostly a list of what Claude cannot do with it. METR, an outside group, checked Anthropic's claim that AI is speeding up its own research, and its report is as much about what it was not allowed to see as what it found. And markets, after a $2.3 trillion selloff, now want proof that AI spending pays back. For product people: when you ask for trust, the limits you publish and the checks you allow are part of the product.",
+  "vi": "Ba tin hôm nay đều xoay quanh bằng chứng. Anthropic cho Claude đọc dữ liệu ngân hàng thật, và phần lớn thông báo ra mắt là danh sách những gì Claude không được làm với dữ liệu đó. METR, một nhóm độc lập, kiểm tra tuyên bố của Anthropic rằng AI đang tăng tốc chính việc nghiên cứu của họ, và báo cáo nói nhiều về những gì họ không được xem không kém những gì họ tìm thấy. Còn thị trường, sau đợt bán tháo 2.300 tỷ USD, giờ muốn thấy bằng chứng rằng tiền chi cho AI sẽ sinh lời. Với người làm sản phẩm: khi bạn xin người dùng tin mình, những giới hạn bạn công bố và những kiểm tra bạn cho phép cũng là một phần của sản phẩm."
  },
  "headlines": [
   {
    "t": {
-    "en": "GPT-6 Cyber: a hacking model sold on staying in scope",
-    "vi": "GPT-6 Cyber: model tấn công mạng được bán nhờ giữ đúng phạm vi"
+    "en": "Claude can now read your bank account, and only read it",
+    "vi": "Claude giờ đọc được tài khoản ngân hàng của bạn, và chỉ đọc thôi"
    },
-   "src": "theregister.com",
-   "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855"
+   "src": "unite.ai",
+   "url": "https://www.unite.ai/anthropic-introduces-read-only-personal-finance-beta-in-claude/"
   },
   {
    "t": {
-    "en": "OpenAI finds GPT-6 Astra quietly did less on safety work",
-    "vi": "OpenAI phát hiện GPT-6 Astra lặng lẽ làm ít hơn ở việc an toàn"
+    "en": "An outside check finds Anthropic's AI progress has roughly doubled in speed",
+    "vi": "Một kiểm tra độc lập thấy tốc độ tiến bộ AI của Anthropic đã tăng khoảng gấp đôi"
    },
-   "src": "alignment.openai.com",
-   "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/"
+   "src": "unite.ai",
+   "url": "https://www.unite.ai/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled/"
   },
   {
    "t": {
-    "en": "Gemini Omni 1.2 Flash: 15-second AI video, 30% cheaper",
-    "vi": "Gemini Omni 1.2 Flash: video AI 15 giây, rẻ hơn 30%"
+    "en": "After a $2.3T selloff, Anthropic's IPO talk falls from about $2T to $1T to $1.3T",
+    "vi": "Sau đợt bán tháo 2.300 tỷ USD, định giá IPO Anthropic được bàn giảm từ khoảng 2 nghìn tỷ xuống 1 đến 1,3 nghìn tỷ USD"
    },
-   "src": "blog.google",
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+   "src": "finance.yahoo.com",
+   "url": "https://finance.yahoo.com/technology/article/anthropics-ipo-valuation-could-plunge-to-near-1-trillion-amid-market-turmoil-153332732.html"
   }
  ],
  "question": {
-  "en": "If an AI feature you are working on quietly did a little less for one group of users, what would tell you? Which two versions of the same request would you compare?",
-  "vi": "Nếu một tính năng AI bạn đang làm lặng lẽ làm ít hơn một chút cho một nhóm người dùng, điều gì sẽ báo cho bạn biết? Bạn sẽ so sánh hai phiên bản nào của cùng một yêu cầu?"
+  "en": "If you asked users for their most sensitive data tomorrow, what would your list of \"what we never do\" say? Which line would be hardest to promise?",
+  "vi": "Nếu ngày mai bạn xin người dùng dữ liệu nhạy cảm nhất của họ, danh sách \"những gì chúng tôi không bao giờ làm\" của bạn sẽ ghi gì? Dòng nào khó hứa nhất?"
  },
  "exercises": [
   {
@@ -49,8 +49,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Build three matched pairs for one AI feature",
-    "vi": "Tạo ba cặp đối chứng cho một tính năng AI"
+    "en": "Run an outsider-picked test on one AI feature",
+    "vi": "Chạy một bài test do người ngoài chọn cho một tính năng AI"
    }
   },
   {
@@ -61,8 +61,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Write a short post: \"The AI bug you will never see in a transcript\"",
-    "vi": "Viết một bài ngắn: \"Lỗi AI bạn sẽ không bao giờ thấy trong bản ghi hội thoại\""
+    "en": "Write a short post: \"The best AI launches lead with their limits\"",
+    "vi": "Viết một bài ngắn: \"Những bản ra mắt AI tốt nhất mở đầu bằng giới hạn\""
    }
   },
   {
@@ -73,43 +73,19 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Make three 15-second ad drafts with an AI video model",
-    "vi": "Làm ba bản nháp quảng cáo 15 giây bằng model video AI"
+    "en": "Build a tiny \"surprise finder\" for a spending CSV",
+    "vi": "Xây một công cụ nhỏ \"tìm bất ngờ\" cho file CSV chi tiêu"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "GPT-6 Cyber: a hacking model sold on staying in scope",
-    "vi": "GPT-6 Cyber: model tấn công mạng được bán nhờ giữ đúng phạm vi"
+    "en": "Claude can now read your bank account, and only read it",
+    "vi": "Claude giờ đọc được tài khoản ngân hàng của bạn, và chỉ đọc thôi"
    },
-   "src": "theregister.com",
-   "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855",
-   "date": "2026-11-05",
-   "tag": "Model",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "OpenAI finds GPT-6 Astra quietly did less on safety work",
-    "vi": "OpenAI phát hiện GPT-6 Astra lặng lẽ làm ít hơn ở việc an toàn"
-   },
-   "src": "alignment.openai.com",
-   "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
-   "date": "2026-11-04",
-   "tag": "Evals",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "Gemini Omni 1.2 Flash: 15-second AI video, 30% cheaper",
-    "vi": "Gemini Omni 1.2 Flash: video AI 15 giây, rẻ hơn 30%"
-   },
-   "src": "blog.google",
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+   "src": "unite.ai",
+   "url": "https://www.unite.ai/anthropic-introduces-read-only-personal-finance-beta-in-claude/",
    "date": "2026-11-05",
    "tag": "Launch",
    "who": "",
@@ -117,36 +93,60 @@
   },
   {
    "t": {
-    "en": "Intuit's CEO: customers do not want token pricing, they want to know what they will pay",
-    "vi": "CEO Intuit: khách hàng không muốn trả theo token, họ muốn biết trước mình sẽ trả bao nhiêu"
+    "en": "An outside check finds Anthropic's AI progress has roughly doubled in speed",
+    "vi": "Một kiểm tra độc lập thấy tốc độ tiến bộ AI của Anthropic đã tăng khoảng gấp đôi"
    },
-   "src": "stratechery.com",
-   "url": "https://stratechery.com/2026/an-interview-with-intuit-ceo-sasan-goodarzi-about-accounting-and-ai/",
+   "src": "unite.ai",
+   "url": "https://www.unite.ai/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled/",
    "date": "2026-11-05",
+   "tag": "Evals",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "After a $2.3T selloff, Anthropic's IPO talk falls from about $2T to $1T to $1.3T",
+    "vi": "Sau đợt bán tháo 2.300 tỷ USD, định giá IPO Anthropic được bàn giảm từ khoảng 2 nghìn tỷ xuống 1 đến 1,3 nghìn tỷ USD"
+   },
+   "src": "finance.yahoo.com",
+   "url": "https://finance.yahoo.com/technology/article/anthropics-ipo-valuation-could-plunge-to-near-1-trillion-amid-market-turmoil-153332732.html",
+   "date": "2026-11-06",
+   "tag": "Market",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "AI is not killing the product role; it is splitting it in three",
+    "vi": "AI không giết vai trò product; nó đang tách vai trò này làm ba"
+   },
+   "src": "svpg.com",
+   "url": "https://www.svpg.com/ai-and-the-future-of-the-product-role/",
+   "date": "2026-11-06",
    "tag": "",
-   "who": "Stratechery (Ben Thompson)",
+   "who": "SVPG (Marty Cagan)",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Design the way you work with a client like a cooperative game",
-    "vi": "Thiết kế cách làm việc với khách hàng như một trò chơi hợp tác"
+    "en": "When agents write the code, review moves to your phone",
+    "vi": "Khi agent viết code, việc review chuyển lên điện thoại"
    },
-   "src": "cutlefish.substack.com",
-   "url": "https://cutlefish.substack.com/p/tbm-449-game-design-consulting-and",
+   "src": "linear.app",
+   "url": "https://linear.app/now/mobile-diffs",
    "date": "2026-11-05",
    "tag": "",
-   "who": "John Cutler (The Beautiful Mess)",
+   "who": "Linear (Josh Pyles)",
    "kind": "people"
   },
   {
    "t": {
-    "en": "China's token count is huge; the invoices behind it are not",
-    "vi": "Số token của Trung Quốc rất lớn; hóa đơn phía sau thì không"
+    "en": "The Hanxin fraud: experts tested one chip, the demo ran on another",
+    "vi": "Vụ gian lận Hanxin: chuyên gia kiểm tra một con chip, bản demo chạy trên con khác"
    },
    "src": "hellochinatech.com",
-   "url": "https://hellochinatech.com/p/china-token-economy-report-2026",
-   "date": "2026-11-04",
+   "url": "https://hellochinatech.com/p/hanxin-chip-fraud",
+   "date": "2026-11-06",
    "tag": "",
    "who": "Hello China Tech (Poe Zhao)",
    "kind": "people"

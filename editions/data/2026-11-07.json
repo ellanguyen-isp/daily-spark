@@ -1,0 +1,378 @@
+{
+ "date": "2026-11-07",
+ "edition": "007",
+ "minutes": 9,
+ "summary": {
+  "en": "Trust has to be shown: Claude can now read your bank account but not touch it, METR checks how fast Anthropic is really moving, and an AI selloff cuts Anthropic's IPO talk from about $2T to $1T to $1.3T.",
+  "vi": "Niềm tin phải được chứng minh: Claude giờ đọc được tài khoản ngân hàng của bạn nhưng không chạm vào được, METR kiểm tra Anthropic thực sự đang tiến nhanh cỡ nào, và đợt bán tháo cổ phiếu AI kéo định giá IPO Anthropic được bàn từ khoảng 2 nghìn tỷ USD xuống 1 đến 1,3 nghìn tỷ USD."
+ },
+ "frontier": {
+  "big": {
+   "en": "Today's three stories are about proof. Anthropic let Claude read real bank data, and the launch is mostly a list of what Claude cannot do with it. METR, an outside group, checked Anthropic's claim that AI is speeding up its own research, and its report is as much about what it was not allowed to see as what it found. And markets, after a $2.3 trillion selloff, now want proof that AI spending pays back. For product people: when you ask for trust, the limits you publish and the checks you allow are part of the product.",
+   "vi": "Ba tin hôm nay đều xoay quanh bằng chứng. Anthropic cho Claude đọc dữ liệu ngân hàng thật, và phần lớn thông báo ra mắt là danh sách những gì Claude không được làm với dữ liệu đó. METR, một nhóm độc lập, kiểm tra tuyên bố của Anthropic rằng AI đang tăng tốc chính việc nghiên cứu của họ, và báo cáo nói nhiều về những gì họ không được xem không kém những gì họ tìm thấy. Còn thị trường, sau đợt bán tháo 2.300 tỷ USD, giờ muốn thấy bằng chứng rằng tiền chi cho AI sẽ sinh lời. Với người làm sản phẩm: khi bạn xin người dùng tin mình, những giới hạn bạn công bố và những kiểm tra bạn cho phép cũng là một phần của sản phẩm."
+  },
+  "items": [
+   {
+    "date": "2026-11-05",
+    "src": "unite.ai",
+    "url": "https://www.unite.ai/anthropic-introduces-read-only-personal-finance-beta-in-claude/",
+    "tag": "Launch",
+    "t": {
+     "en": "Claude can now read your bank account, and only read it",
+     "vi": "Claude giờ đọc được tài khoản ngân hàng của bạn, và chỉ đọc thôi"
+    },
+    "stat": {
+     "v": "24 months",
+     "l": {
+      "en": "of transaction history Claude can read, from up to 16 linked US banks",
+      "vi": "lịch sử giao dịch Claude có thể đọc, từ tối đa 16 ngân hàng Mỹ được liên kết"
+     }
+    },
+    "p": {
+     "en": [
+      "A beta for US Pro, Max and Ultra users: link accounts through Plaid, then ask about spending, bills and odd charges, or build a dashboard of cash flow and subscriptions",
+      "Read-only by design: Claude cannot move, manage or invest money, never sees the bank password, and is not built to give investment advice",
+      "The privacy rules are specific: these chats are not used for training, not saved to memory, and linked accounts do not work in scheduled tasks or coding tools",
+      "It also states the gaps out loud: shared links can expose bank data, and unlinking a bank does not erase numbers already in a chat"
+     ],
+     "vi": [
+      "Bản beta cho người dùng Pro, Max và Ultra ở Mỹ: liên kết tài khoản qua Plaid, rồi hỏi về chi tiêu, hóa đơn và các khoản phí lạ, hoặc dựng dashboard dòng tiền và các gói đăng ký",
+      "Chỉ đọc ngay từ thiết kế: Claude không thể chuyển, quản lý hay đầu tư tiền, không bao giờ thấy mật khẩu ngân hàng, và không được làm ra để tư vấn đầu tư",
+      "Quy tắc quyền riêng tư rất cụ thể: các cuộc chat này không dùng để huấn luyện, không lưu vào bộ nhớ, và tài khoản đã liên kết không dùng được trong tác vụ hẹn giờ hay công cụ lập trình",
+      "Nó cũng nói thẳng các lỗ hổng: link chia sẻ có thể làm lộ dữ liệu ngân hàng, và hủy liên kết không xóa những con số đã nằm trong cuộc chat"
+     ]
+    },
+    "w": {
+     "en": "For sensitive data (money, health, identity), the trust page is part of the feature. A short, honest list of what the AI cannot do, and where your data does not go, often does more for sign-ups than a longer list of what it can do.",
+     "vi": "Với dữ liệu nhạy cảm (tiền, sức khỏe, danh tính), trang về niềm tin là một phần của tính năng. Một danh sách ngắn, trung thực về những gì AI không làm được, và dữ liệu của bạn không đi đâu, thường giúp tăng đăng ký hơn một danh sách dài những gì nó làm được."
+    }
+   },
+   {
+    "date": "2026-11-05",
+    "src": "unite.ai",
+    "url": "https://www.unite.ai/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled/",
+    "tag": "Evals",
+    "t": {
+     "en": "An outside check finds Anthropic's AI progress has roughly doubled in speed",
+     "vi": "Một kiểm tra độc lập thấy tốc độ tiến bộ AI của Anthropic đã tăng khoảng gấp đôi"
+    },
+    "stat": {
+     "v": "1.9x",
+     "l": {
+      "en": "faster growth in Anthropic's benchmark scores since October 2025 (95% range: 1.5x to 2.8x)",
+      "vi": "tốc độ tăng điểm benchmark của Anthropic nhanh hơn kể từ tháng 10/2025 (khoảng tin cậy 95%: 1,5 đến 2,8 lần)"
+     }
+    },
+    "p": {
+     "en": [
+      "METR judged that AI use likely explains most of the speedup, mainly by helping researchers; AI cannot yet do the most important training work on its own",
+      "Staff in informal polls reported about 12x uplift from the best internal model, but METR warns those answers took little effort and may not be typical",
+      "The limits are the lesson: Anthropic could approve requests and redact, and the redactions removed most of the evidence METR found most informative",
+      "The benchmarks lean on well-defined, easy-to-grade tasks, and the newest model scored above 50% on all 15 of them, so the test itself is running out of room"
+     ],
+     "vi": [
+      "METR đánh giá việc dùng AI có lẽ giải thích phần lớn mức tăng tốc, chủ yếu bằng cách giúp nhà nghiên cứu; AI chưa tự làm được phần huấn luyện quan trọng nhất",
+      "Nhân viên trong các khảo sát không chính thức báo mức hỗ trợ khoảng 12 lần từ model nội bộ tốt nhất, nhưng METR cảnh báo các câu trả lời đó làm vội và có thể không đại diện",
+      "Bài học nằm ở giới hạn: Anthropic được duyệt yêu cầu và che bớt thông tin, và phần bị che chứa hầu hết bằng chứng mà METR thấy có giá trị nhất",
+      "Các benchmark nghiêng về việc rõ ràng, dễ chấm, và model mới nhất đã vượt 50% trên cả 15 bài, nên chính bài test đang hết chỗ để đo"
+     ]
+    },
+    "w": {
+     "en": "An eval is only as strong as who picks the samples and what the checker is allowed to see. When someone shows you an AI result, yours or a vendor's, ask: who chose the cases, and what was left out?",
+     "vi": "Một bài eval chỉ mạnh bằng việc ai chọn mẫu và người kiểm tra được xem những gì. Khi ai đó cho bạn xem kết quả AI, của bạn hay của nhà cung cấp, hãy hỏi: ai chọn các case, và cái gì bị bỏ ra ngoài?"
+    }
+   },
+   {
+    "date": "2026-11-06",
+    "src": "finance.yahoo.com",
+    "url": "https://finance.yahoo.com/technology/article/anthropics-ipo-valuation-could-plunge-to-near-1-trillion-amid-market-turmoil-153332732.html",
+    "tag": "Market",
+    "t": {
+     "en": "After a $2.3T selloff, Anthropic's IPO talk falls from about $2T to $1T to $1.3T",
+     "vi": "Sau đợt bán tháo 2.300 tỷ USD, định giá IPO Anthropic được bàn giảm từ khoảng 2 nghìn tỷ xuống 1 đến 1,3 nghìn tỷ USD"
+    },
+    "stat": {
+     "v": "$2.3T",
+     "l": {
+      "en": "wiped from stocks in the Thursday, November 5 selloff",
+      "vi": "bị xóa khỏi thị trường cổ phiếu trong đợt bán tháo thứ Năm, 5/11"
+     }
+    },
+    "p": {
+     "en": [
+      "Last month buyers talked about roughly $2T for Anthropic's IPO; after the selloff, reports from Bloomberg and the WSJ put it at $1T to $1.3T",
+      "The trigger was politics: after the US midterms, investors worry about how a new Congress will treat AI and data center buildout, as voters push back on jobs and local impact",
+      "Anthropic filed its S-1 publicly and amended it this week; prediction markets now give about 50% odds of an IPO before December 1, down from about 80%",
+      "The question has moved from \"how big can AI get\" to \"who pays back the spending, and when\", which is the same question every AI feature will face"
+     ],
+     "vi": [
+      "Tháng trước, người mua bàn mức khoảng 2 nghìn tỷ USD cho IPO của Anthropic; sau đợt bán tháo, Bloomberg và WSJ đưa tin mức 1 đến 1,3 nghìn tỷ USD",
+      "Nguyên nhân là chính trị: sau bầu cử giữa kỳ ở Mỹ, nhà đầu tư lo Quốc hội mới sẽ đối xử với AI và việc xây trung tâm dữ liệu ra sao, khi cử tri phản đối vì việc làm và ảnh hưởng địa phương",
+      "Anthropic đã nộp hồ sơ S-1 công khai và sửa lại trong tuần này; thị trường dự đoán giờ cho khoảng 50% khả năng IPO trước 1/12, giảm từ khoảng 80%",
+      "Câu hỏi đã chuyển từ \"AI lớn được tới đâu\" sang \"ai trả lại khoản chi, và khi nào\", cũng chính là câu hỏi mọi tính năng AI sẽ gặp"
+     ]
+    },
+    "w": {
+     "en": "Expect more pressure on AI vendors to show revenue, which can mean price changes and tighter limits. Keep the model behind your feature easy to swap, and know your cost per useful answer, not just per token.",
+     "vi": "Hãy chờ đợi áp lực lớn hơn lên các nhà cung cấp AI phải chứng minh doanh thu, có thể dẫn tới đổi giá và siết giới hạn. Giữ model đứng sau tính năng của bạn dễ thay thế, và biết chi phí cho mỗi câu trả lời hữu ích, không chỉ cho mỗi token."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Airbnb says it will launch an AI travel agent in the first half of 2027 that answers with maps, photos and side-by-side comparisons, not just chat, and can change bookings during a stay. Watch whether \"AI that shows, not only tells\" becomes the default for consumer agents.",
+   "vi": "Airbnb nói sẽ ra mắt một AI đại lý du lịch trong nửa đầu 2027, trả lời bằng bản đồ, ảnh và bảng so sánh, không chỉ bằng chat, và có thể đổi đặt phòng ngay trong chuyến đi. Hãy xem \"AI cho bạn thấy, không chỉ kể\" có trở thành chuẩn mặc định cho agent tiêu dùng không."
+  }
+ },
+ "people": [
+  {
+   "who": "SVPG (Marty Cagan)",
+   "kind": {
+    "en": "keynote essay · read in full",
+    "vi": "bài viết từ keynote · đã đọc toàn bộ"
+   },
+   "date": "2026-11-06",
+   "src": "svpg.com",
+   "url": "https://www.svpg.com/ai-and-the-future-of-the-product-role/",
+   "t": {
+    "en": "AI is not killing the product role; it is splitting it in three",
+    "vi": "AI không giết vai trò product; nó đang tách vai trò này làm ba"
+   },
+   "p": {
+    "en": [
+     "People argue \"the PM role is dead\" vs \"most important role\" because they mean different jobs, set by the company's operating model",
+     "Feature-team PMs (shipping a given solution) and product owners (running the backlog) are the most exposed: AI software factories automate the delivery work they coordinate",
+     "Empowered PMs, who are given a problem and an outcome, are in high demand, because deciding what to build is now the bottleneck, not building it",
+     "For AI products, he puts the PM at the center of evals: the PM defines what \"good enough\" output looks like"
+    ],
+    "vi": [
+     "Người ta cãi nhau \"vai trò PM đã chết\" hay \"là vai trò quan trọng nhất\" vì họ nói về những công việc khác nhau, do mô hình vận hành của công ty quyết định",
+     "PM của feature team (giao một giải pháp có sẵn) và product owner (quản lý backlog) chịu rủi ro nhất: các \"nhà máy phần mềm\" AI tự động hóa chính việc giao hàng mà họ điều phối",
+     "PM được trao quyền, nhận một vấn đề và một kết quả cần đạt, đang rất được săn đón, vì quyết định xây gì giờ mới là nút thắt, không phải việc xây",
+     "Với sản phẩm AI, ông đặt PM vào trung tâm của eval: PM là người định nghĩa đầu ra thế nào là \"đủ tốt\""
+    ]
+   },
+   "k": {
+    "en": "Check which of the three jobs you mostly do this month. If it is coordination, move one hour a week to discovery or evals.",
+    "vi": "Hãy xem tháng này bạn chủ yếu làm công việc nào trong ba loại. Nếu là điều phối, chuyển một giờ mỗi tuần sang khám phá hoặc eval."
+   }
+  },
+  {
+   "who": "Linear (Josh Pyles)",
+   "kind": {
+    "en": "launch post · read in full",
+    "vi": "bài ra mắt · đã đọc toàn bộ"
+   },
+   "date": "2026-11-05",
+   "src": "linear.app",
+   "url": "https://linear.app/now/mobile-diffs",
+   "t": {
+    "en": "When agents write the code, review moves to your phone",
+    "vi": "Khi agent viết code, việc review chuyển lên điện thoại"
+   },
+   "p": {
+    "en": [
+     "The reason: coding agents keep working while you are away, so human review became Linear's internal bottleneck, and they built Diffs, now on iOS and Android",
+     "Guided Reviews split a pull request into sections and start with what the change does and why, so a big change can be checked one piece at a time",
+     "Each review sits next to the issue or bug report that started it, and you can send a fix back to the agent from the same screen",
+     "Their Android lead sends an idea to an agent from the app, reviews its pull request on his phone, and passes another model's review notes back to it"
+    ],
+    "vi": [
+     "Lý do: agent lập trình vẫn làm việc khi bạn đi vắng, nên việc review của con người thành nút thắt trong nội bộ Linear, và họ làm ra Diffs, giờ có trên iOS và Android",
+     "Guided Reviews chia một pull request thành từng phần, bắt đầu bằng việc thay đổi này làm gì và tại sao, để một thay đổi lớn được kiểm tra từng phần một",
+     "Mỗi review nằm cạnh issue hoặc báo lỗi đã khởi đầu nó, và bạn có thể gửi yêu cầu sửa lại cho agent ngay trên cùng màn hình",
+     "Trưởng nhóm Android của họ gửi ý tưởng cho agent từ app, review pull request trên điện thoại, và chuyển ghi chú review của một model khác lại cho agent"
+    ]
+   },
+   "k": {
+    "en": "When AI produces the work, design for the review step: start with \"what changed and why\", and keep the original request in view.",
+    "vi": "Khi AI làm ra sản phẩm, hãy thiết kế cho bước review: bắt đầu bằng \"đã đổi gì và vì sao\", và luôn để yêu cầu gốc trong tầm mắt."
+   }
+  },
+  {
+   "who": "Hello China Tech (Poe Zhao)",
+   "kind": {
+    "en": "article · read in full",
+    "vi": "bài viết · đã đọc toàn bộ"
+   },
+   "date": "2026-11-06",
+   "src": "hellochinatech.com",
+   "url": "https://hellochinatech.com/p/hanxin-chip-fraud",
+   "t": {
+    "en": "The Hanxin fraud: experts tested one chip, the demo ran on another",
+    "vi": "Vụ gian lận Hanxin: chuyên gia kiểm tra một con chip, bản demo chạy trên con khác"
+   },
+   "stat": {
+    "v": "208 vs 144",
+    "l": {
+     "en": "pins on the chip the experts appraised vs the re-marked chip used in the 2003 demo",
+     "vi": "chân trên con chip chuyên gia thẩm định so với con chip bị khắc lại dùng trong buổi demo năm 2003"
+    }
+   },
+   "p": {
+    "en": [
+     "In 2003 a university team showed China's \"first\" DSP chip; a 2006 investigation found the demo used a different, re-marked chip, arranged in advance",
+     "The panel only saw the samples the team gave them; one minister later said no one had imagined a chip's markings could be ground off and replaced",
+     "It took an anonymous post in 2006 to start the probe; the lead was removed, his projects were cancelled and the funds were ordered returned",
+     "His \"Shipping Chip Test\": who supplied the sample, is it the thing that actually ships, and is the tester independent of the person making the claim?"
+    ],
+    "vi": [
+     "Năm 2003, một nhóm đại học ra mắt chip DSP \"đầu tiên\" của Trung Quốc; cuộc điều tra năm 2006 phát hiện buổi demo dùng một con chip khác, bị khắc lại nhãn, đã sắp đặt trước",
+     "Hội đồng chỉ được xem mẫu do nhóm đưa; một bộ trưởng sau đó nói không ai nghĩ có người mài nhãn chip rồi khắc lại",
+     "Phải đến một bài đăng ẩn danh năm 2006 mới khởi động cuộc điều tra; người đứng đầu bị cách chức, các dự án bị hủy và phải hoàn trả tiền",
+     "\"Bài test con chip được giao\" của tác giả: ai cung cấp mẫu, đó có phải thứ thực sự được giao cho khách, và người kiểm tra có độc lập với người đưa ra tuyên bố không?"
+    ]
+   },
+   "k": {
+    "en": "Use the same three questions on any AI demo or eval, including your own: who picked the samples, is it the version that ships, who checked it?",
+    "vi": "Dùng đúng ba câu hỏi đó cho mọi bản demo hay eval AI, kể cả của bạn: ai chọn mẫu, đó có phải bản sẽ ra mắt, ai kiểm tra?"
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "People do not want your product. They want to get a job done, and a job statement should describe that progress without naming any solution.",
+   "vi": "Người ta không muốn sản phẩm của bạn. Họ muốn hoàn thành một việc, và một câu mô tả việc cần làm nên tả sự tiến bộ đó mà không nhắc tới giải pháp nào."
+  },
+  "src": "The Jobs To Be Done Playbook · Jim Kalbach",
+  "date": "2020 · book",
+  "url": "",
+  "e": {
+   "en": "This is the core idea of the playbook. Kalbach turns Jobs To Be Done into a working tool: write the job as a verb plus an object (\"keep my spending under control\"), keep it free of any product or feature, then map the steps and the moments where people struggle. Today's finance launch shows why it matters: the job is not \"see my transactions\", it is \"stop being surprised by money\". That is why spotting duplicate charges and rising bills is the pitch, not the dashboard.",
+   "vi": "Đây là ý cốt lõi của cuốn sách. Kalbach biến Jobs To Be Done thành công cụ làm việc: viết việc cần làm bằng một động từ cộng một đối tượng (\"kiểm soát chi tiêu của tôi\"), không nhắc tới sản phẩm hay tính năng nào, rồi vẽ ra các bước và những lúc người dùng gặp khó. Bản ra mắt tài chính hôm nay cho thấy lý do: việc cần làm không phải \"xem giao dịch của tôi\", mà là \"không bị bất ngờ về tiền nữa\". Vì thế điểm bán là phát hiện phí trùng và hóa đơn tăng, không phải cái dashboard."
+  },
+  "a": {
+   "en": [
+    "Rewrite your feature's goal as one job statement: a verb, an object, and no product words",
+    "List the 4 to 6 steps people go through to get that job done today, and mark the step where they struggle most",
+    "Judge any new AI idea by one question: does it remove that struggle, or just add a new screen?"
+   ],
+   "vi": [
+    "Viết lại mục tiêu tính năng của bạn thành một câu việc cần làm: một động từ, một đối tượng, và không có từ nào về sản phẩm",
+    "Liệt kê 4 đến 6 bước người dùng đang trải qua để làm xong việc đó hôm nay, và đánh dấu bước họ gặp khó nhất",
+    "Đánh giá mọi ý tưởng AI mới bằng một câu hỏi: nó xóa được chỗ khó đó, hay chỉ thêm một màn hình mới?"
+   ]
+  },
+  "x": {
+   "en": "For a health or diet app entering a new market, \"log my meals\" is a task, not the job. The job might be \"feel sure I am eating right without thinking about it all day\". Ask five users about the last time they felt unsure, and the struggling step will tell you which feature to build first.",
+   "vi": "Với một app sức khỏe hay ăn kiêng đang vào thị trường mới, \"ghi lại bữa ăn\" là một tác vụ, không phải việc cần làm. Việc cần làm có thể là \"yên tâm mình đang ăn đúng mà không phải nghĩ về nó cả ngày\". Hỏi năm người dùng về lần gần nhất họ thấy không chắc chắn, và bước gặp khó sẽ cho bạn biết nên xây tính năng nào trước."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "If you asked users for their most sensitive data tomorrow, what would your list of \"what we never do\" say? Which line would be hardest to promise?",
+    "vi": "Nếu ngày mai bạn xin người dùng dữ liệu nhạy cảm nhất của họ, danh sách \"những gì chúng tôi không bao giờ làm\" của bạn sẽ ghi gì? Dòng nào khó hứa nhất?"
+   },
+   "c": {
+    "en": "Claude Personal Finance leads with what it cannot do.",
+    "vi": "Claude Personal Finance mở đầu bằng những gì nó không làm được."
+   }
+  },
+  {
+   "q": {
+    "en": "Think of the last AI result you trusted. Who picked the cases, was it the version that ships, and who checked it?",
+    "vi": "Nghĩ về kết quả AI gần nhất bạn đã tin. Ai chọn các case, đó có phải bản sẽ ra mắt, và ai đã kiểm tra?"
+   },
+   "c": {
+    "en": "The Hanxin chip swap and METR's redacted review.",
+    "vi": "Vụ tráo chip Hanxin và bản đánh giá bị che bớt của METR."
+   }
+  },
+  {
+   "q": {
+    "en": "Which of Cagan's three jobs did you spend most of this week on? What would you stop doing to make room for the other one?",
+    "vi": "Tuần này bạn dành nhiều thời gian nhất cho công việc nào trong ba loại của Cagan? Bạn sẽ bỏ việc gì để có chỗ cho loại còn lại?"
+   },
+   "c": {
+    "en": "Marty Cagan on how AI splits the product role.",
+    "vi": "Marty Cagan về cách AI tách vai trò product."
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Run an outsider-picked test on one AI feature",
+    "vi": "Chạy một bài test do người ngoài chọn cho một tính năng AI"
+   },
+   "s": {
+    "en": [
+     "Ask a teammate who did not build the feature to pick 5 real requests from logs or support chats",
+     "Run them on the exact version that is live today and score each with the same checklist",
+     "Write one line on top of the results: who picked the cases, which version, and the date"
+    ],
+    "vi": [
+     "Nhờ một đồng nghiệp không tham gia xây tính năng chọn 5 yêu cầu thật từ log hoặc chat hỗ trợ",
+     "Chạy chúng trên đúng phiên bản đang chạy thật hôm nay và chấm từng cái bằng cùng một danh sách kiểm tra",
+     "Viết một dòng trên đầu kết quả: ai chọn case, phiên bản nào, và ngày"
+    ]
+   },
+   "o": {
+    "en": "Five scored cases you did not choose, and an honest read on how the live feature performs",
+    "vi": "Năm case đã chấm điểm mà bạn không tự chọn, và một nhận định trung thực về tính năng đang chạy thật"
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"The best AI launches lead with their limits\"",
+    "vi": "Viết một bài ngắn: \"Những bản ra mắt AI tốt nhất mở đầu bằng giới hạn\""
+   },
+   "s": {
+    "en": [
+     "Open with the Claude finance launch in two plain sentences: it reads your bank data, and it cannot move a cent",
+     "Add the Hanxin story as the opposite case: a demo that hid what was really being tested",
+     "End with the three questions you now ask any AI demo, and invite readers to add a fourth"
+    ],
+    "vi": [
+     "Mở đầu bằng bản ra mắt tài chính của Claude trong hai câu đơn giản: nó đọc dữ liệu ngân hàng của bạn, và không thể chuyển một xu",
+     "Thêm câu chuyện Hanxin như trường hợp ngược lại: một bản demo giấu đi thứ thực sự được kiểm tra",
+     "Kết bằng ba câu hỏi bạn giờ dùng cho mọi demo AI, và mời người đọc thêm câu thứ tư"
+    ]
+   },
+   "o": {
+    "en": "A 150 to 200 word post ready for LinkedIn or X",
+    "vi": "Một bài 150 đến 200 chữ sẵn sàng đăng LinkedIn hoặc X"
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny \"surprise finder\" for a spending CSV",
+    "vi": "Xây một công cụ nhỏ \"tìm bất ngờ\" cho file CSV chi tiêu"
+   },
+   "s": {
+    "en": [
+     "Export one month of your own transactions as a CSV (or make 50 fake rows) and remove anything private",
+     "Ask an AI coding tool to build a one-page app that flags duplicate charges, new subscriptions and bills that went up",
+     "Write the app's \"what this never does\" line first, for example \"runs only on your device, sends nothing\", and make the code keep that promise"
+    ],
+    "vi": [
+     "Xuất một tháng giao dịch của bạn thành file CSV (hoặc tạo 50 dòng giả) và xóa mọi thông tin riêng tư",
+     "Nhờ một công cụ AI lập trình xây app một trang đánh dấu phí trùng, gói đăng ký mới và hóa đơn tăng giá",
+     "Viết trước dòng \"những gì app này không bao giờ làm\", ví dụ \"chỉ chạy trên máy bạn, không gửi gì đi\", rồi làm cho code giữ đúng lời hứa đó"
+    ]
+   },
+   "o": {
+    "en": "A working one-page tool and a first feel for designing an AI feature around a data promise",
+    "vi": "Một công cụ một trang chạy được và cảm nhận đầu tiên về việc thiết kế tính năng AI quanh một lời hứa về dữ liệu"
+   }
+  }
+ ]
+}
