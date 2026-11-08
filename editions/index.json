@@ -1,6 +1,16 @@
 {
  "editions": [
   {
+   "date": "2026-11-08",
+   "edition": "W02",
+   "type": "weekly",
+   "summary": {
+    "en": "The AI bill arrives: companies cap and self-host their AI spend, assistants become the front door, and voters make compute political.",
+    "vi": "Hoá đơn AI đã đến: các công ty giới hạn và tự host chi phí AI, trợ lý trở thành cửa chính, và cử tri biến hạ tầng tính toán thành chuyện chính trị."
+   },
+   "minutes": 10
+  },
+  {
    "date": "2026-11-07",
    "edition": "007",
    "type": "daily",

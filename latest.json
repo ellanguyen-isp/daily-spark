@@ -1,155 +1,199 @@
 {
- "type": "daily",
- "date": "2026-11-07",
- "edition": "007",
+ "type": "weekly",
+ "date": "2026-11-08",
+ "edition": "W02",
  "summary": {
-  "en": "Trust has to be shown: Claude can now read your bank account but not touch it, METR checks how fast Anthropic is really moving, and an AI selloff cuts Anthropic's IPO talk from about $2T to $1T to $1.3T.",
-  "vi": "Niềm tin phải được chứng minh: Claude giờ đọc được tài khoản ngân hàng của bạn nhưng không chạm vào được, METR kiểm tra Anthropic thực sự đang tiến nhanh cỡ nào, và đợt bán tháo cổ phiếu AI kéo định giá IPO Anthropic được bàn từ khoảng 2 nghìn tỷ USD xuống 1 đến 1,3 nghìn tỷ USD."
+  "en": "The AI bill arrives: companies cap and self-host their AI spend, assistants become the front door, and voters make compute political.",
+  "vi": "Hoá đơn AI đã đến: các công ty giới hạn và tự host chi phí AI, trợ lý trở thành cửa chính, và cử tri biến hạ tầng tính toán thành chuyện chính trị."
  },
  "big": {
-  "en": "Today's three stories are about proof. Anthropic let Claude read real bank data, and the launch is mostly a list of what Claude cannot do with it. METR, an outside group, checked Anthropic's claim that AI is speeding up its own research, and its report is as much about what it was not allowed to see as what it found. And markets, after a $2.3 trillion selloff, now want proof that AI spending pays back. For product people: when you ask for trust, the limits you publish and the checks you allow are part of the product.",
-  "vi": "Ba tin hôm nay đều xoay quanh bằng chứng. Anthropic cho Claude đọc dữ liệu ngân hàng thật, và phần lớn thông báo ra mắt là danh sách những gì Claude không được làm với dữ liệu đó. METR, một nhóm độc lập, kiểm tra tuyên bố của Anthropic rằng AI đang tăng tốc chính việc nghiên cứu của họ, và báo cáo nói nhiều về những gì họ không được xem không kém những gì họ tìm thấy. Còn thị trường, sau đợt bán tháo 2.300 tỷ USD, giờ muốn thấy bằng chứng rằng tiền chi cho AI sẽ sinh lời. Với người làm sản phẩm: khi bạn xin người dùng tin mình, những giới hạn bạn công bố và những kiểm tra bạn cho phép cũng là một phần của sản phẩm."
+  "en": "Last week the story was that AI money is real. This week the bill arrived: Apple cut its engineers' daily AI caps, Goldman took coding agents back from bankers, and Revolut moved 2,000 engineers to a self-hosted open model at about a tenth of the cost. At the same time assistants became the front door (Siri opens to every app, ChatGPT reaches 1.2B weekly users), labs started selling behavior and outside checks instead of scores, and voters turned data centers into a political fight that knocked $2.3T off tech stocks in one day. For product builders: cost per task, trust you can show, and being reachable from an assistant are now product decisions, not engineering details.",
+  "vi": "Tuần trước, câu chuyện là tiền AI là thật. Tuần này hoá đơn đã đến: Apple giảm hạn mức AI mỗi ngày của kỹ sư, Goldman thu lại agent viết code từ nhân viên ngân hàng, và Revolut chuyển 2.000 kỹ sư sang một model mở tự host với chi phí khoảng một phần mười. Cùng lúc, trợ lý trở thành cửa chính (Siri mở cho mọi app, ChatGPT đạt 1,2 tỷ người dùng mỗi tuần), các lab bắt đầu bán hành vi và kiểm chứng từ bên ngoài thay vì điểm số, và cử tri biến trung tâm dữ liệu thành một cuộc chiến chính trị khiến cổ phiếu công nghệ mất 2.300 tỷ USD trong một ngày. Với người làm sản phẩm: chi phí mỗi việc, niềm tin có thể chứng minh, và việc trợ lý gọi được sản phẩm của bạn giờ là quyết định sản phẩm, không còn là chi tiết kỹ thuật."
  },
  "headlines": [
   {
    "t": {
-    "en": "Claude can now read your bank account, and only read it",
-    "vi": "Claude giờ đọc được tài khoản ngân hàng của bạn, và chỉ đọc thôi"
+    "en": "The AI bill arrives: companies cap, route and self-host",
+    "vi": "Hoá đơn AI đã đến: các công ty giới hạn, phân luồng và tự host"
    },
-   "src": "unite.ai",
-   "url": "https://www.unite.ai/anthropic-introduces-read-only-personal-finance-beta-in-claude/"
+   "src": "theregister.com",
+   "url": "https://www.theregister.com/a/5307345"
   },
   {
    "t": {
-    "en": "An outside check finds Anthropic's AI progress has roughly doubled in speed",
-    "vi": "Một kiểm tra độc lập thấy tốc độ tiến bộ AI của Anthropic đã tăng khoảng gấp đôi"
+    "en": "Assistants become the front door, but habits still go straight to the app",
+    "vi": "Trợ lý trở thành cửa chính, nhưng thói quen vẫn đi thẳng vào app"
    },
-   "src": "unite.ai",
-   "url": "https://www.unite.ai/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled/"
+   "src": "developer.apple.com",
+   "url": "https://developer.apple.com/news/?id=gdk2umrf"
   },
   {
    "t": {
-    "en": "After a $2.3T selloff, Anthropic's IPO talk falls from about $2T to $1T to $1.3T",
-    "vi": "Sau đợt bán tháo 2.300 tỷ USD, định giá IPO Anthropic được bàn giảm từ khoảng 2 nghìn tỷ xuống 1 đến 1,3 nghìn tỷ USD"
+    "en": "Labs now sell behavior and outside checks, not just scores",
+    "vi": "Các lab giờ bán hành vi và kiểm chứng từ bên ngoài, không chỉ điểm số"
    },
-   "src": "finance.yahoo.com",
-   "url": "https://finance.yahoo.com/technology/article/anthropics-ipo-valuation-could-plunge-to-near-1-trillion-amid-market-turmoil-153332732.html"
+   "src": "theregister.com",
+   "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855"
+  },
+  {
+   "t": {
+    "en": "Compute turns political, and AI money gets nervous",
+    "vi": "Hạ tầng tính toán thành chuyện chính trị, và tiền AI bắt đầu lo lắng"
+   },
+   "src": "pcgamer.com",
+   "url": "https://www.pcgamer.com/gaming-industry/data-centers-were-some-of-the-biggest-losers-in-last-nights-us-midterm-elections/"
   }
  ],
  "question": {
-  "en": "If you asked users for their most sensitive data tomorrow, what would your list of \"what we never do\" say? Which line would be hardest to promise?",
-  "vi": "Nếu ngày mai bạn xin người dùng dữ liệu nhạy cảm nhất của họ, danh sách \"những gì chúng tôi không bao giờ làm\" của bạn sẽ ghi gì? Dòng nào khó hứa nhất?"
+  "en": "Build a 20-case test set for one AI feature you work on, and run it on a cheap model and a top model",
+  "vi": "Làm một bộ 20 tình huống test cho một tính năng AI bạn đang làm, rồi chạy nó trên một model rẻ và một model hàng đầu"
  },
  "exercises": [
   {
-   "k": "work",
+   "k": "bet",
    "tag": {
-    "en": "Work",
-    "vi": "Công việc"
+    "en": "Next week's bet",
+    "vi": "Cược tuần tới"
    },
-   "time": "30 min",
+   "time": "2 hrs",
    "g": {
-    "en": "Run an outsider-picked test on one AI feature",
-    "vi": "Chạy một bài test do người ngoài chọn cho một tính năng AI"
-   }
-  },
-  {
-   "k": "write",
-   "tag": {
-    "en": "Write",
-    "vi": "Viết"
-   },
-   "time": "20 min",
-   "g": {
-    "en": "Write a short post: \"The best AI launches lead with their limits\"",
-    "vi": "Viết một bài ngắn: \"Những bản ra mắt AI tốt nhất mở đầu bằng giới hạn\""
-   }
-  },
-  {
-   "k": "build",
-   "tag": {
-    "en": "Build",
-    "vi": "Xây"
-   },
-   "time": "45 min",
-   "g": {
-    "en": "Build a tiny \"surprise finder\" for a spending CSV",
-    "vi": "Xây một công cụ nhỏ \"tìm bất ngờ\" cho file CSV chi tiêu"
+    "en": "Build a 20-case test set for one AI feature you work on, and run it on a cheap model and a top model",
+    "vi": "Làm một bộ 20 tình huống test cho một tính năng AI bạn đang làm, rồi chạy nó trên một model rẻ và một model hàng đầu"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "Claude can now read your bank account, and only read it",
-    "vi": "Claude giờ đọc được tài khoản ngân hàng của bạn, và chỉ đọc thôi"
+    "en": "The AI bill arrives: companies cap, route and self-host",
+    "vi": "Hoá đơn AI đã đến: các công ty giới hạn, phân luồng và tự host"
    },
-   "src": "unite.ai",
-   "url": "https://www.unite.ai/anthropic-introduces-read-only-personal-finance-beta-in-claude/",
-   "date": "2026-11-05",
-   "tag": "Launch",
+   "src": "theregister.com",
+   "url": "https://www.theregister.com/a/5307345",
+   "date": "2026-11-03",
+   "tag": "Cost",
    "who": "",
-   "kind": "frontier"
+   "kind": "shift"
   },
   {
    "t": {
-    "en": "An outside check finds Anthropic's AI progress has roughly doubled in speed",
-    "vi": "Một kiểm tra độc lập thấy tốc độ tiến bộ AI của Anthropic đã tăng khoảng gấp đôi"
+    "en": "Assistants become the front door, but habits still go straight to the app",
+    "vi": "Trợ lý trở thành cửa chính, nhưng thói quen vẫn đi thẳng vào app"
+   },
+   "src": "developer.apple.com",
+   "url": "https://developer.apple.com/news/?id=gdk2umrf",
+   "date": "2026-11-03",
+   "tag": "Distribution",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "Labs now sell behavior and outside checks, not just scores",
+    "vi": "Các lab giờ bán hành vi và kiểm chứng từ bên ngoài, không chỉ điểm số"
+   },
+   "src": "theregister.com",
+   "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855",
+   "date": "2026-11-05",
+   "tag": "Trust",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "Compute turns political, and AI money gets nervous",
+    "vi": "Hạ tầng tính toán thành chuyện chính trị, và tiền AI bắt đầu lo lắng"
+   },
+   "src": "pcgamer.com",
+   "url": "https://www.pcgamer.com/gaming-industry/data-centers-were-some-of-the-biggest-losers-in-last-nights-us-midterm-elections/",
+   "date": "2026-11-04",
+   "tag": "Market",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "AI spend is managed like cloud spend: budgets, caps and routing",
+    "vi": "Chi phí AI được quản lý như chi phí cloud: ngân sách, hạn mức và phân luồng"
+   },
+   "src": "9to5mac.com",
+   "url": "https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/",
+   "date": "2026-11-04",
+   "tag": "",
+   "who": "",
+   "kind": "mega"
+  },
+  {
+   "t": {
+    "en": "Evals move from leaderboards to your own real tasks",
+    "vi": "Eval chuyển từ bảng xếp hạng sang chính những việc thật của bạn"
+   },
+   "src": "semianalysis.com",
+   "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+   "date": "2026-11-02",
+   "tag": "",
+   "who": "",
+   "kind": "mega"
+  },
+  {
+   "t": {
+    "en": "Consumer agents that book and buy for you",
+    "vi": "Agent tiêu dùng tự đặt và mua hàng giúp bạn"
+   },
+   "src": "nrn.com",
+   "url": "https://www.nrn.com/restaurant-technology/uber-eats-sees-little-traffic-from-ai-agents",
+   "date": "2026-11-04",
+   "tag": "",
+   "who": "",
+   "kind": "hype"
+  },
+  {
+   "t": {
+    "en": "\"AI is about to build itself\" headlines",
+    "vi": "Những tiêu đề \"AI sắp tự xây chính nó\""
    },
    "src": "unite.ai",
    "url": "https://www.unite.ai/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled/",
    "date": "2026-11-05",
-   "tag": "Evals",
+   "tag": "",
    "who": "",
-   "kind": "frontier"
+   "kind": "hype"
   },
   {
    "t": {
-    "en": "After a $2.3T selloff, Anthropic's IPO talk falls from about $2T to $1T to $1.3T",
-    "vi": "Sau đợt bán tháo 2.300 tỷ USD, định giá IPO Anthropic được bàn giảm từ khoảng 2 nghìn tỷ xuống 1 đến 1,3 nghìn tỷ USD"
+    "en": "Strong open-weight models you can run on your own servers",
+    "vi": "Model open-weight mạnh mà bạn tự chạy được trên server của mình"
    },
-   "src": "finance.yahoo.com",
-   "url": "https://finance.yahoo.com/technology/article/anthropics-ipo-valuation-could-plunge-to-near-1-trillion-amid-market-turmoil-153332732.html",
-   "date": "2026-11-06",
-   "tag": "Market",
+   "src": "radar · moved",
+   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/open-weight-models",
+   "date": "2026-11-08",
+   "tag": "",
    "who": "",
-   "kind": "frontier"
+   "kind": "radar"
   },
   {
    "t": {
-    "en": "AI is not killing the product role; it is splitting it in three",
-    "vi": "AI không giết vai trò product; nó đang tách vai trò này làm ba"
+    "en": "AI that finds, proves and drafts fixes for security bugs at scale",
+    "vi": "AI tìm, chứng minh và soạn bản vá cho lỗi bảo mật ở quy mô lớn"
    },
-   "src": "svpg.com",
-   "url": "https://www.svpg.com/ai-and-the-future-of-the-product-role/",
-   "date": "2026-11-06",
+   "src": "radar · new",
+   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/ai-bug-finding",
+   "date": "2026-11-08",
    "tag": "",
-   "who": "SVPG (Marty Cagan)",
-   "kind": "people"
+   "who": "",
+   "kind": "radar"
   },
   {
    "t": {
-    "en": "When agents write the code, review moves to your phone",
-    "vi": "Khi agent viết code, việc review chuyển lên điện thoại"
+    "en": "Consumer agents that order, book and pay for you in other companies' apps",
+    "vi": "Agent tiêu dùng tự đặt món, đặt xe và trả tiền giúp bạn trong app của công ty khác"
    },
-   "src": "linear.app",
-   "url": "https://linear.app/now/mobile-diffs",
-   "date": "2026-11-05",
+   "src": "radar · new",
+   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/agent-shopping",
+   "date": "2026-11-08",
    "tag": "",
-   "who": "Linear (Josh Pyles)",
-   "kind": "people"
-  },
-  {
-   "t": {
-    "en": "The Hanxin fraud: experts tested one chip, the demo ran on another",
-    "vi": "Vụ gian lận Hanxin: chuyên gia kiểm tra một con chip, bản demo chạy trên con khác"
-   },
-   "src": "hellochinatech.com",
-   "url": "https://hellochinatech.com/p/hanxin-chip-fraud",
-   "date": "2026-11-06",
-   "tag": "",
-   "who": "Hello China Tech (Poe Zhao)",
-   "kind": "people"
+   "who": "",
+   "kind": "radar"
   }
  ]
 }

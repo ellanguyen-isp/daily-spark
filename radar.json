@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-08",
  "intro": {
   "en": "What AI can really do for products right now, with proof. Ready = you can ship it today. Emerging = works, but test it hard first. Early = real demos, not yet safe to build a business on. The weekly edition updates this page every Sunday.",
   "vi": "AI thật sự làm được gì cho sản phẩm ngay lúc này, kèm bằng chứng. Ready = có thể ra mắt ngay hôm nay. Emerging = chạy được, nhưng phải thử kỹ trước. Early = có demo thật, nhưng chưa nên xây cả một doanh nghiệp trên nó. Bản weekly cập nhật trang này mỗi Chủ nhật."
@@ -9,7 +9,7 @@
    "id": "coding-agents",
    "area": "Build",
    "maturity": "ready",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Coding agents as the default way to write software",
@@ -58,7 +58,7 @@
    "id": "vibe-prototypes",
    "area": "Build",
    "maturity": "ready",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Non-coders building fun, working apps and games by prompting",
@@ -98,7 +98,7 @@
    "id": "computer-use",
    "area": "Agents",
    "maturity": "emerging",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "AI that uses a computer like a person: clicks, types, fills forms",
@@ -138,7 +138,7 @@
    "id": "background-agents",
    "area": "Agents",
    "maturity": "emerging",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Agents that keep working for hours or days after you close the laptop",
@@ -153,6 +153,15 @@
     "vi": "Phần khó là quyền hạn và lưu tiến độ. Model thông minh hơn không cứu được agent quên mất việc nó đã làm."
    },
    "evidence": [
+    {
+     "date": "2026-11-04",
+     "src": "perplexity.ai",
+     "url": "https://www.perplexity.ai/hub/blog/teammates-are-agents-for-complex-ongoing-work",
+     "note": {
+      "en": "Perplexity Teammates: agents that own ongoing work, watch for changes, keep memory across projects and join Slack channels; web first, for Max subscribers.",
+      "vi": "Perplexity Teammates: agent nhận việc lâu dài, tự theo dõi thay đổi, nhớ qua nhiều dự án và tham gia kênh Slack; có trên web trước, cho người dùng Max."
+     }
+    },
     {
      "date": "2026-10-08",
      "src": "andrew.ooo",
@@ -187,7 +196,7 @@
    "id": "ai-coworkers",
    "area": "Agents",
    "maturity": "early",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "AI coworkers with their own email, calendar and team role",
@@ -227,7 +236,7 @@
    "id": "agent-run-teams",
    "area": "Agents",
    "maturity": "early",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Products built and shipped mostly by swarms of agents",
@@ -267,7 +276,7 @@
    "id": "memory",
    "area": "Assistants",
    "maturity": "emerging",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Assistants that remember you across weeks and projects",
@@ -307,7 +316,7 @@
    "id": "voice-agents",
    "area": "Interfaces",
    "maturity": "ready",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Voice agents that think, look things up and act while you talk",
@@ -347,7 +356,7 @@
    "id": "live-translation",
    "area": "Interfaces",
    "maturity": "ready",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Live speech translation, cheap enough for any app",
@@ -387,7 +396,7 @@
    "id": "video-with-sound",
    "area": "Media",
    "maturity": "ready",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Short video with matching sound from one prompt",
@@ -402,6 +411,15 @@
     "vi": "Clip ngắn thì ổn; câu chuyện dài vẫn bị lệch. Khuôn mặt, bàn tay và chi tiết thương hiệu cần người kiểm tra."
    },
    "evidence": [
+    {
+     "date": "2026-11-05",
+     "src": "blog.google",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+     "note": {
+      "en": "Gemini Omni 1.2 Flash: clips up to 15 seconds (from 10) and 30% cheaper, at $0.07 per second of 720p video.",
+      "vi": "Gemini Omni 1.2 Flash: clip dài đến 15 giây (từ 10 giây) và rẻ hơn 30%, còn $0,07 mỗi giây video 720p."
+     }
+    },
     {
      "date": "2025-09-30",
      "src": "entagl.com",
@@ -427,7 +445,7 @@
    "id": "apps-in-chat",
    "area": "Distribution",
    "maturity": "emerging",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Your product running inside ChatGPT and Claude",
@@ -442,6 +460,15 @@
     "vi": "Việc cài đặt vẫn rườm rà với người dùng thường và khó được tìm thấy. Coi đây là kênh để thử, đừng coi là ngôi nhà duy nhất."
    },
    "evidence": [
+    {
+     "date": "2026-11-03",
+     "src": "developer.apple.com",
+     "url": "https://developer.apple.com/news/?id=gdk2umrf",
+     "note": {
+      "en": "Apple opens Siri AI to every app through App Intents: Siri can act inside apps using personal context. Developer beta now, App Store submissions in spring.",
+      "vi": "Apple mở Siri AI cho mọi app qua App Intents: Siri có thể thao tác trong app dựa trên ngữ cảnh cá nhân. Đang ở bản beta cho lập trình viên, nộp lên App Store từ mùa xuân."
+     }
+    },
     {
      "date": "2026-07-29",
      "src": "simonwillison.net",
@@ -467,7 +494,7 @@
    "id": "on-device",
    "area": "Platforms",
    "maturity": "emerging",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Private AI that runs on the phone, built into the OS",
@@ -507,7 +534,7 @@
    "id": "agent-sign-in",
    "area": "Agents",
    "maturity": "early",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Agents that log in to your accounts without ever seeing the password",
@@ -546,8 +573,8 @@
   {
    "id": "open-weight-models",
    "area": "Platforms",
-   "maturity": "emerging",
-   "status": "new",
+   "maturity": "ready",
+   "status": "moved",
    "since": "2026-11-01",
    "cap": {
     "en": "Strong open-weight models you can run on your own servers",
@@ -558,10 +585,28 @@
     "vi": "Bạn giữ được dữ liệu trong nhà và giảm chi phí mỗi lần gọi, đồng thời ít bị khoá vào giá của một lab."
    },
    "limit": {
-    "en": "Still behind the top closed models on hard agent work, and hosting a 1 trillion parameter model is real engineering. Read the license before you sell it as a service.",
-    "vi": "Vẫn đi sau các model đóng hàng đầu ở việc agent khó, và tự host model 1 nghìn tỷ tham số là việc kỹ thuật thật. Đọc kỹ giấy phép trước khi bán nó như một dịch vụ."
+    "en": "Hosting is real engineering (Revolut used 56 GPUs and heavy tuning), many open models are text-only so images still route to a closed model, and licenses differ. Start with one high-volume task, not everything.",
+    "vi": "Tự host là việc kỹ thuật thật (Revolut dùng 56 GPU và tinh chỉnh nhiều), nhiều model mở chỉ đọc chữ nên ảnh vẫn phải chuyển sang model đóng, và giấy phép mỗi nơi một khác. Bắt đầu với một việc có khối lượng lớn, đừng chuyển tất cả."
    },
    "evidence": [
+    {
+     "date": "2026-11-03",
+     "src": "theregister.com",
+     "url": "https://www.theregister.com/a/5307345",
+     "note": {
+      "en": "Revolut made self-hosted GLM the default coding model for about 2,000 engineers on 56 B200 GPUs, at about $0.30 per million tokens, roughly a tenth of Claude Code or Codex (company figures).",
+      "vi": "Revolut đưa GLM tự host thành model viết code mặc định cho khoảng 2.000 kỹ sư trên 56 GPU B200, giá khoảng $0,30 mỗi triệu token, bằng khoảng một phần mười Claude Code hay Codex (số liệu của công ty)."
+     }
+    },
+    {
+     "date": "2026-11-04",
+     "src": "huggingface.co",
+     "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
+     "note": {
+      "en": "Kimi K3.1 Pro weights released: Artificial Analysis ranks it 4th on its Intelligence Index (55 vs 58 for Claude Opus 5.5), though it still trails on some agent coding tests.",
+      "vi": "Trọng số Kimi K3.1 Pro được công bố: Artificial Analysis xếp nó thứ 4 trên Intelligence Index (55, so với 58 của Claude Opus 5.5), dù vẫn đi sau ở một số bài test agent viết code."
+     }
+    },
     {
      "date": "2026-10-29",
      "src": "vktr.com",
@@ -579,6 +624,94 @@
      "note": {
       "en": "Added to the radar with the first weekly edition.",
       "vi": "Được thêm vào radar ở bản weekly đầu tiên."
+     }
+    },
+    {
+     "date": "2026-11-08",
+     "maturity": "ready",
+     "note": {
+      "en": "Moved to ready: a large company runs one in production for about 2,000 engineers, and an independent index puts Kimi K3.1 Pro close to the top closed models.",
+      "vi": "Chuyển sang ready: một công ty lớn chạy model mở trong thực tế cho khoảng 2.000 kỹ sư, và một bảng xếp hạng độc lập đặt Kimi K3.1 Pro sát các model đóng hàng đầu."
+     }
+    }
+   ]
+  },
+  {
+   "id": "agent-shopping",
+   "area": "Agents",
+   "maturity": "early",
+   "status": "new",
+   "since": "2026-11-08",
+   "cap": {
+    "en": "Consumer agents that order, book and pay for you in other companies' apps",
+    "vi": "Agent tiêu dùng tự đặt món, đặt xe và trả tiền giúp bạn trong app của công ty khác"
+   },
+   "means": {
+    "en": "In theory a user never opens your app: an assistant does the job for them. That would change who owns the customer and how you get found.",
+    "vi": "Về lý thuyết, người dùng không cần mở app của bạn: trợ lý làm thay. Khi đó ai nắm khách hàng và cách bạn được tìm thấy sẽ thay đổi."
+   },
+   "limit": {
+    "en": "It works in demos, but almost nobody uses it yet. For habits that take 90 seconds in an app, an agent is not faster. Watch it, do not plan revenue on it.",
+    "vi": "Chạy được trong demo, nhưng gần như chưa ai dùng. Với thói quen chỉ mất 90 giây trong app, agent không nhanh hơn. Hãy theo dõi, đừng tính doanh thu dựa vào nó."
+   },
+   "evidence": [
+    {
+     "date": "2026-11-04",
+     "src": "nrn.com",
+     "url": "https://www.nrn.com/restaurant-technology/uber-eats-sees-little-traffic-from-ai-agents",
+     "note": {
+      "en": "Uber: out of about 320 million trips and orders in one week, AI agents placed about 500 food orders and booked 4 rides. Its CFO called it very early and very limited traction.",
+      "vi": "Uber: trong khoảng 320 triệu chuyến xe và đơn hàng một tuần, agent AI đặt khoảng 500 đơn đồ ăn và 4 chuyến xe. Giám đốc tài chính gọi đó là sức kéo còn rất sớm và rất hạn chế."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-08",
+     "maturity": "early",
+     "note": {
+      "en": "Added: agents can now order and pay inside other apps, but the first real usage numbers are tiny.",
+      "vi": "Được thêm: agent giờ đã đặt hàng và trả tiền được trong app khác, nhưng số liệu sử dụng thật đầu tiên rất nhỏ."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ai-bug-finding",
+   "area": "Build",
+   "maturity": "emerging",
+   "status": "new",
+   "since": "2026-11-08",
+   "cap": {
+    "en": "AI that finds, proves and drafts fixes for security bugs at scale",
+    "vi": "AI tìm, chứng minh và soạn bản vá cho lỗi bảo mật ở quy mô lớn"
+   },
+   "means": {
+    "en": "Finding a serious bug now costs about the price of a laptop, for attackers and defenders alike. Security review of your own product can run every week, not once a year.",
+    "vi": "Tìm một lỗi nghiêm trọng giờ tốn khoảng giá một chiếc laptop, cho cả bên tấn công lẫn bên phòng thủ. Việc rà bảo mật sản phẩm của bạn có thể chạy mỗi tuần, không phải mỗi năm một lần."
+   },
+   "limit": {
+    "en": "The strongest tools are gated to vetted teams, humans still check every report, and early patches made needless changes. Fixing is now the slow part.",
+    "vi": "Công cụ mạnh nhất chỉ mở cho các nhóm đã được thẩm định, con người vẫn kiểm tra mọi báo cáo, và các bản vá đầu tiên có chỗ sửa thừa. Giờ phần chậm là sửa lỗi."
+   },
+   "evidence": [
+    {
+     "date": "2026-11-05",
+     "src": "csoonline.com",
+     "url": "https://www.csoonline.com/article/4245265/openai-built-an-ai-pipeline-to-find-exploit-and-patch-linux-flaws.html",
+     "note": {
+      "en": "OpenAI's pipeline built working exploits for 948 distinct Linux kernel flaws for about $1.21 million in API credits (about $1,279 each); 61 were already patched upstream during the campaign.",
+      "vi": "Quy trình của OpenAI tạo được exploit chạy thật cho 948 lỗi khác nhau trong nhân Linux với khoảng 1,21 triệu USD tiền API (khoảng 1.279 USD mỗi lỗi); 61 lỗi đã được vá chính thức ngay trong đợt chạy."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-08",
+     "maturity": "emerging",
+     "note": {
+      "en": "Added: a lab found hundreds of real kernel bugs at low cost, and maintainers began merging fixes.",
+      "vi": "Được thêm: một lab tìm ra hàng trăm lỗi nhân thật với chi phí thấp, và người bảo trì bắt đầu nhận bản vá."
      }
     }
    ]
