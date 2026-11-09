@@ -1,0 +1,371 @@
+{
+ "date": "2026-11-10",
+ "edition": "008",
+ "minutes": 9,
+ "summary": {
+  "en": "Capable is not the same as done: Claude Fable 5.2 arrives but Anthropic still says start with Opus 5.5, a real-user test finds the best coding agent fully finishes 26.4% of tasks, and DeepSeek's agent harness hits 1.54M daily users.",
+  "vi": "Giỏi chưa có nghĩa là xong việc: Claude Fable 5.2 ra mắt nhưng chính Anthropic vẫn khuyên bắt đầu với Opus 5.5, một bài test trên yêu cầu thật cho thấy agent lập trình tốt nhất chỉ hoàn thành trọn vẹn 26,4% việc, và bộ khung agent của DeepSeek đạt 1,54 triệu người dùng mỗi ngày."
+ },
+ "frontier": {
+  "big": {
+   "en": "The biggest launch today is Claude Fable 5.2, and the most useful line in it is Anthropic telling most people to keep using a cheaper model. A new test built from real user sessions shows why: the best coding agent met 69.9% of the checks but fully finished only 26.4% of tasks. Meanwhile DeepSeek's agent harness grew from 271,000 to 1.54M daily users in five weeks, and about 60% of them have added a plugin of their own. For product people: the question is no longer \"which model is smartest\" but \"which job does it fully finish, for whom, on real cases\".",
+   "vi": "Tin lớn nhất hôm nay là Claude Fable 5.2, và câu hữu ích nhất trong đó là việc Anthropic khuyên phần lớn người dùng cứ tiếp tục dùng một model rẻ hơn. Một bài test mới dựng từ các phiên làm việc thật của người dùng cho thấy lý do: agent lập trình tốt nhất đạt 69,9% số tiêu chí nhưng chỉ hoàn thành trọn vẹn 26,4% số việc. Trong khi đó bộ khung agent của DeepSeek tăng từ 271.000 lên 1,54 triệu người dùng mỗi ngày trong năm tuần, và khoảng 60% trong số đó đã tự thêm plugin. Với người làm sản phẩm: câu hỏi không còn là \"model nào thông minh nhất\" mà là \"nó làm trọn việc nào, cho ai, trên case thật\"."
+  },
+  "items": [
+   {
+    "date": "2026-11-09",
+    "src": "techcrunch.com",
+    "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+    "tag": "Model",
+    "t": {
+     "en": "Claude Fable 5.2 is out, and Anthropic says most work should still start on Opus 5.5",
+     "vi": "Claude Fable 5.2 ra mắt, và Anthropic nói phần lớn công việc vẫn nên bắt đầu với Opus 5.5"
+    },
+    "stat": {
+     "v": "55%",
+     "l": {
+      "en": "fewer safety blocks than Fable 5.1, with responses up to 30% faster",
+      "vi": "ít lần bị chặn vì an toàn hơn Fable 5.1, và phản hồi nhanh hơn tới 30%"
+     }
+    },
+    "p": {
+     "en": [
+      "Fable 5.2 and Mythos 5.2 share one underlying model: Fable is public on every platform with cyber and biology safeguards; Mythos drops them and is only for verified security and life-science teams",
+      "Anthropic points Fable at \"the most ambitious, open-ended technical work\" and suggests Opus 5.5 for most coding and knowledge tasks; on Pro plans Fable can use up to 50% of weekly limits",
+      "Input price drops from $10 to $8 per million tokens, but the bigger product change is fewer false refusals: about 55% fewer blocks than 5.1",
+      "A warning for anyone testing AI: both models say they suspect they are being evaluated more often than any recent Claude, which Anthropic says makes real-world behavior harder to judge"
+     ],
+     "vi": [
+      "Fable 5.2 và Mythos 5.2 dùng chung một model gốc: Fable mở cho mọi nền tảng, có lớp bảo vệ về an ninh mạng và sinh học; Mythos bỏ các lớp đó và chỉ dành cho đội bảo mật và khoa học sự sống đã được xác minh",
+      "Anthropic hướng Fable vào \"những việc kỹ thuật tham vọng, mở nhất\" và gợi ý Opus 5.5 cho phần lớn việc lập trình và công việc tri thức; ở gói Pro, Fable có thể dùng tới 50% hạn mức tuần",
+      "Giá đầu vào giảm từ 10 USD xuống 8 USD mỗi triệu token, nhưng thay đổi lớn hơn về sản phẩm là ít từ chối nhầm hơn: khoảng 55% ít lần bị chặn hơn bản 5.1",
+      "Một lời cảnh báo cho ai đang test AI: cả hai model nói rằng chúng nghi mình đang bị đánh giá thường xuyên hơn mọi bản Claude gần đây, và Anthropic nói điều này khiến hành vi ngoài đời thật khó đánh giá hơn"
+     ]
+    },
+    "w": {
+     "en": "Do not switch your feature to the newest model by default. Route: keep the cheaper model for routine requests, try the new one only on the cases it fails, and judge it on your own real cases, written to look like real use, not like a test.",
+     "vi": "Đừng mặc định chuyển tính năng của bạn sang model mới nhất. Hãy phân luồng: giữ model rẻ hơn cho yêu cầu thường ngày, chỉ thử model mới trên những case model cũ làm hỏng, và đánh giá nó bằng case thật của bạn, viết sao cho giống cách dùng thật, không giống bài kiểm tra."
+    }
+   },
+   {
+    "date": "2026-11-01",
+    "src": "aiweekly.co",
+    "url": "https://aiweekly.co/alerts/co-design-bench-top-coding-agent-completes-just-264-of-real-user-tasks",
+    "tag": "Evals",
+    "t": {
+     "en": "Built from real user sessions, a new test finds the best coding agent fully finishes only 26.4% of tasks",
+     "vi": "Dựng từ phiên làm việc thật của người dùng, một bài test mới cho thấy agent lập trình tốt nhất chỉ hoàn thành trọn vẹn 26,4% số việc"
+    },
+    "stat": {
+     "v": "26.4%",
+     "l": {
+      "en": "of tasks fully completed by the best of 10 coding agents, even though it passed 69.9% of individual checks",
+      "vi": "số việc được hoàn thành trọn vẹn bởi agent tốt nhất trong 10 agent lập trình, dù nó vượt 69,9% số tiêu chí riêng lẻ"
+     }
+    },
+    "p": {
+     "en": [
+      "Co-Design Bench has 273 tasks drawn from 37,463 real queries across 26,314 user coding sessions, not made-up prompts",
+      "Experts wrote 2,331 acceptance checks the agent never sees, and a task only counts as done when all of its checks pass together",
+      "The gap between 69.9% of checks and 26.4% of tasks is the whole lesson: partial credit hides how often a user walks away with something unfinished",
+      "Scores drop further on repository edits that mix three or four kinds of change, which is what real requests often look like"
+     ],
+     "vi": [
+      "Co-Design Bench có 273 việc lấy từ 37.463 yêu cầu thật trong 26.314 phiên lập trình của người dùng, không phải prompt dựng sẵn",
+      "Chuyên gia viết 2.331 tiêu chí nghiệm thu mà agent không bao giờ thấy, và một việc chỉ được tính là xong khi tất cả tiêu chí của nó cùng đạt",
+      "Khoảng cách giữa 69,9% tiêu chí và 26,4% số việc chính là bài học: chấm điểm từng phần che đi việc người dùng thường xuyên ra về với một thứ còn dở dang",
+      "Điểm còn giảm thêm với những chỉnh sửa repo trộn ba hoặc bốn loại thay đổi, mà yêu cầu thật thường trông như vậy"
+     ]
+    },
+    "w": {
+     "en": "Report two numbers for any AI feature: the share of checks passed and the share of requests fully done. The second one is what your user feels.",
+     "vi": "Hãy báo hai con số cho mọi tính năng AI: tỷ lệ tiêu chí đạt và tỷ lệ yêu cầu được làm trọn. Con số thứ hai mới là thứ người dùng cảm nhận."
+    }
+   },
+   {
+    "date": "2026-11-06",
+    "src": "yicaiglobal.com",
+    "url": "https://www.yicaiglobal.com/news/deepseek-harness-releases-dau-data-for-first-time-topping-15-million",
+    "tag": "Agents",
+    "t": {
+     "en": "DeepSeek's open-source agent harness reaches 1.54M daily users, and most of them add their own plugins",
+     "vi": "Bộ khung agent mã nguồn mở của DeepSeek đạt 1,54 triệu người dùng mỗi ngày, và phần lớn tự thêm plugin của mình"
+    },
+    "stat": {
+     "v": "1.54M",
+     "l": {
+      "en": "daily active users in the week ended Nov 4, up from 271,000 in the week ended Sept 30",
+      "vi": "người dùng hoạt động mỗi ngày trong tuần kết thúc 4/11, tăng từ 271.000 trong tuần kết thúc 30/9"
+     }
+    },
+    "p": {
+     "en": [
+      "DeepSeek Harness is a framework around the model that helps agents carry out longer, more complex tasks; this is the first time DeepSeek shared usage numbers",
+      "About 35,000 third-party plugins exist, and about 60% of users have created or installed at least one, so customization is the normal path, not a power-user extra",
+      "Usage is heavy: about 92 trillion tokens a day, and DeepSeek is preparing a support program for plugin authors",
+      "Its next idea is a \"super-agent\" that persists across sessions, keeps context, and moves several tasks forward at once without them getting in each other's way"
+     ],
+     "vi": [
+      "DeepSeek Harness là một bộ khung bọc quanh model, giúp agent làm những việc dài và phức tạp hơn; đây là lần đầu DeepSeek công bố số liệu sử dụng",
+      "Có khoảng 35.000 plugin bên thứ ba, và khoảng 60% người dùng đã tạo hoặc cài ít nhất một cái, nên tùy biến là con đường bình thường, không phải thứ chỉ dành cho người dùng chuyên sâu",
+      "Mức dùng rất lớn: khoảng 92 nghìn tỷ token mỗi ngày, và DeepSeek đang chuẩn bị chương trình hỗ trợ người viết plugin",
+      "Ý tưởng tiếp theo là một \"siêu agent\" tồn tại liên tục qua các phiên, giữ ngữ cảnh, và đẩy nhiều việc cùng lúc mà không giẫm chân nhau"
+     ]
+    },
+    "w": {
+     "en": "The harness around the model (tools, memory, plugins) is becoming the product people choose. When you plan an AI feature, ask what users will want to plug in themselves, not only what the model can answer.",
+     "vi": "Bộ khung quanh model (công cụ, bộ nhớ, plugin) đang trở thành sản phẩm mà người ta chọn. Khi lên kế hoạch cho một tính năng AI, hãy hỏi người dùng sẽ muốn tự gắn thêm gì, không chỉ hỏi model trả lời được gì."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Anthropic reportedly agreed a $3.4B deal for gas generators that produce 1.7 gigawatts, taking over existing orders (reported by the Financial Times, not confirmed by the companies). Watch whether AI labs owning their own power becomes normal, and whether it shows up in prices and usage limits.",
+   "vi": "Anthropic được cho là đã chốt thỏa thuận 3,4 tỷ USD mua máy phát chạy khí đốt với công suất 1,7 gigawatt, bằng cách nhận lại các đơn hàng có sẵn (theo Financial Times, các công ty chưa xác nhận). Hãy xem việc các phòng lab AI tự sở hữu nguồn điện có trở thành bình thường không, và có ảnh hưởng tới giá và hạn mức sử dụng không."
+  }
+ },
+ "people": [
+  {
+   "who": "Lenny's Podcast",
+   "kind": {
+    "en": "59 min · from show notes and written recaps",
+    "vi": "59 phút · từ ghi chú tập và bài tóm tắt"
+   },
+   "date": "2026-11-08",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=qGf2Yvan4Wg",
+   "t": {
+    "en": "Gemini's head of product: plan 60% on what works now, 40% on what almost works",
+    "vi": "Trưởng sản phẩm Gemini: dành 60% kế hoạch cho thứ đã chạy, 40% cho thứ gần chạy được"
+   },
+   "p": {
+    "en": [
+     "Tulsee Doshi's 60-20-20 split: 60% on what works now, 20% on what works imperfectly with a visible path, 20% on what shows early promise; she calls the numbers flexible guidance, not a rule",
+     "She argues the model itself has a user experience: whether it asks, admits it is unsure, or just goes ahead is a product decision, not only an engineering one",
+     "Model work is not just engineering; she compares it to a potions class, where you mix, taste and adjust",
+     "Her case for why PMs matter more now: someone has to arbitrate between needs that conflict, and the episode walks through writing a first eval and judging a model's \"vibes\" next to the numbers"
+    ],
+    "vi": [
+     "Cách chia 60-20-20 của Tulsee Doshi: 60% cho thứ đã chạy được, 20% cho thứ chạy chưa hoàn hảo nhưng thấy rõ đường đi, 20% cho thứ mới có tín hiệu ban đầu; bà gọi các con số này là hướng dẫn linh hoạt, không phải luật",
+     "Bà cho rằng bản thân model cũng có trải nghiệm người dùng: việc nó hỏi lại, thừa nhận không chắc, hay cứ thế làm là một quyết định sản phẩm, không chỉ là kỹ thuật",
+     "Làm model không chỉ là kỹ thuật; bà so sánh nó với lớp học pha chế độc dược, nơi bạn trộn, nếm và chỉnh",
+     "Lý do PM quan trọng hơn bây giờ: phải có người phân xử giữa các nhu cầu mâu thuẫn, và tập này đi qua cách viết eval đầu tiên và cách đánh giá \"cảm giác\" của model bên cạnh các con số"
+    ]
+   },
+   "k": {
+    "en": "Before your next AI roadmap, sort it into three piles: works now, almost works, early promise. If the first pile is not most of it, you are betting too much on the next model.",
+    "vi": "Trước lộ trình AI tiếp theo, hãy chia nó thành ba nhóm: đã chạy, gần chạy, mới có tín hiệu. Nếu nhóm đầu không chiếm phần lớn, bạn đang đặt cược quá nhiều vào model kế tiếp."
+   }
+  },
+  {
+   "who": "John Cutler",
+   "kind": {
+    "en": "essay · read in full",
+    "vi": "bài viết · đã đọc toàn bộ"
+   },
+   "date": "2026-11-07",
+   "src": "cutlefish.substack.com",
+   "url": "https://cutlefish.substack.com/p/tbm-450-the-loss-of-positive-friction",
+   "t": {
+    "en": "When AI removes a bottleneck, it can also remove the pause where good decisions happened",
+    "vi": "Khi AI gỡ một nút thắt, nó cũng có thể gỡ luôn khoảng dừng nơi quyết định tốt được sinh ra"
+   },
+   "p": {
+    "en": [
+     "A constraint can limit and enable at the same time: his slow contractor is frustrating, but the wait has led to better decisions about what he really needs",
+     "\"The bottleneck moved\" is too simple: the slow ROI doc, the pairing session and six rounds of doc review were drudgery, but they were also where the team asked \"is this worth it?\"",
+     "Going from a customer call transcript to deployed code in an hour is magic, yet it skips questions like \"is that what they actually meant?\"",
+     "Working alone with your own agents makes team friction feel quaint, so you have to make space for it on purpose"
+    ],
+    "vi": [
+     "Một ràng buộc có thể vừa giới hạn vừa hỗ trợ: anh thợ xây chậm chạp của ông gây bực, nhưng thời gian chờ lại dẫn tới quyết định tốt hơn về thứ ông thật sự cần",
+     "\"Nút thắt đã dời chỗ\" là cách nói quá đơn giản: tài liệu ROI chậm chạp, buổi pair và sáu vòng góp ý tài liệu là việc nhàm, nhưng cũng là nơi cả nhóm hỏi \"việc này có đáng không?\"",
+     "Đi từ bản ghi cuộc gọi khách hàng tới code đã chạy trong một giờ là phép màu, nhưng nó bỏ qua những câu như \"họ thật sự muốn nói vậy à?\"",
+     "Làm việc một mình với dàn agent của riêng mình khiến ma sát trong nhóm trông lỗi thời, nên bạn phải chủ động tạo chỗ cho nó"
+    ]
+   },
+   "k": {
+    "en": "Keep the speed, but add back one short, deliberate pause before anything ships: one other person asks \"is this what they meant?\"",
+    "vi": "Giữ tốc độ, nhưng thêm lại một khoảng dừng ngắn có chủ đích trước khi bất cứ thứ gì được ra mắt: một người khác hỏi \"đây có đúng là điều họ muốn nói không?\""
+   }
+  },
+  {
+   "who": "Claire Vo (How I AI)",
+   "kind": {
+    "en": "25 min · from show notes",
+    "vi": "25 phút · từ ghi chú tập"
+   },
+   "date": "2026-11-09",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
+   "t": {
+    "en": "Two days building with Fable 5.2: strong at video and geometry, still not trusted with web design",
+    "vi": "Hai ngày xây đồ với Fable 5.2: mạnh ở video và hình học, vẫn chưa được tin giao thiết kế web"
+   },
+   "p": {
+    "en": [
+     "From one tweet and a brand book, it made an animated marketing video that does not look like slides",
+     "It passed a geometry test she says every other model failed: assembly steps for flat-pack furniture from blurry floor photos, with no manual",
+     "It handled a real re-architecture of a production data pipeline, but she still would not let it design a website on its own",
+     "Her takeaway is routing, not replacing: she now decides per task whether it goes to Fable 5.2 or Opus 5.5"
+    ],
+    "vi": [
+     "Từ một tweet và một bộ nhận diện thương hiệu, nó làm ra một video marketing có hoạt hình mà không trông như slide",
+     "Nó vượt một bài test hình học mà theo cô mọi model khác đều trượt: hướng dẫn lắp đồ nội thất tháo rời từ ảnh chụp sàn nhà bị mờ, không có sách hướng dẫn",
+     "Nó xử lý được một lần thiết kế lại thật của một pipeline dữ liệu đang chạy, nhưng cô vẫn không để nó tự thiết kế website",
+     "Kết luận của cô là phân luồng, không phải thay thế: giờ cô quyết định theo từng việc xem giao cho Fable 5.2 hay Opus 5.5"
+    ]
+   },
+   "k": {
+    "en": "Test a new model on the two or three jobs you actually do, then write down where it wins and where it does not. That list is your routing rule.",
+    "vi": "Hãy test model mới trên hai ba việc bạn thật sự làm, rồi ghi lại chỗ nó thắng và chỗ không. Danh sách đó chính là quy tắc phân luồng của bạn."
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "Do things that don't scale: at the start, do the work by hand so you learn what \"done\" really means.",
+   "vi": "Làm những việc không mở rộng được: lúc đầu, hãy tự tay làm để hiểu \"xong\" thật sự nghĩa là gì."
+  },
+  "src": "Do Things That Don't Scale · Paul Graham",
+  "date": "2013 · essay",
+  "url": "https://paulgraham.com/ds.html",
+  "e": {
+   "en": "Paul Graham's advice to founders is to recruit users one by one and to serve the first ones far better than any process could, even if it looks inefficient. The point is not the manual work itself; it is what you learn from being that close to each user. With AI, the tempting move is to automate from day one. But today's stories show the gap between \"mostly right\" and \"fully done\" is wide, and you only see that gap by looking at real cases yourself, one at a time.",
+   "vi": "Lời khuyên của Paul Graham cho founder là tìm từng người dùng một và phục vụ những người đầu tiên tốt hơn hẳn mọi quy trình, dù trông kém hiệu quả. Điểm chính không phải là việc làm tay, mà là những gì bạn học được khi ở gần từng người dùng như vậy. Với AI, nước đi hấp dẫn là tự động hóa ngay từ ngày đầu. Nhưng các tin hôm nay cho thấy khoảng cách giữa \"gần đúng\" và \"làm trọn\" rất lớn, và bạn chỉ thấy khoảng cách đó khi tự xem từng case thật, từng cái một."
+  },
+  "a": {
+   "en": [
+    "Before automating a step with AI, do it by hand for 5 to 10 real users and write down what \"done\" meant for each",
+    "Read 10 real outputs of your AI feature yourself every week, not just the dashboard score",
+    "Pick your first users for a new market one by one, and talk to each before and after they try the product"
+   ],
+   "vi": [
+    "Trước khi tự động hóa một bước bằng AI, hãy tự làm tay cho 5 đến 10 người dùng thật và ghi lại \"xong\" nghĩa là gì với từng người",
+    "Mỗi tuần tự đọc 10 kết quả thật của tính năng AI, không chỉ nhìn điểm trên dashboard",
+    "Chọn từng người dùng đầu tiên cho một thị trường mới, và nói chuyện với từng người trước và sau khi họ dùng thử"
+   ]
+  },
+  "x": {
+   "en": "Take a feature you are working on for a new market. Before you tune any prompt or automate any follow-up, personally handle the first 10 users: watch them use it, send each a short personal note, and write down where the AI answer was \"mostly right\" but not enough. Those notes become your first real eval cases.",
+   "vi": "Lấy một tính năng bạn đang làm cho một thị trường mới. Trước khi chỉnh prompt hay tự động hóa bước chăm sóc nào, hãy tự mình lo cho 10 người dùng đầu tiên: xem họ dùng, gửi mỗi người một lời nhắn ngắn, và ghi lại chỗ câu trả lời AI \"gần đúng\" nhưng chưa đủ. Những ghi chú đó trở thành các case eval thật đầu tiên của bạn."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "In the AI feature you know best, what share of requests is fully done, not just mostly right? How would you find out this week?",
+    "vi": "Trong tính năng AI bạn hiểu rõ nhất, bao nhiêu phần trăm yêu cầu được làm trọn, chứ không chỉ gần đúng? Tuần này bạn sẽ tìm ra bằng cách nào?"
+   },
+   "c": {
+    "en": "Co-Design Bench: 69.9% of checks, 26.4% of tasks",
+    "vi": "Co-Design Bench: 69,9% tiêu chí, 26,4% số việc"
+   }
+  },
+  {
+   "q": {
+    "en": "Which friction in your team's process felt slow but actually caught a wrong idea? Is it still there now that building is faster?",
+    "vi": "Ma sát nào trong quy trình của nhóm bạn từng thấy chậm nhưng thật ra đã bắt được một ý tưởng sai? Nó còn đó không khi việc xây đã nhanh hơn?"
+   },
+   "c": {
+    "en": "John Cutler on positive friction",
+    "vi": "John Cutler về ma sát tích cực"
+   }
+  },
+  {
+   "q": {
+    "en": "If you split your current plan into works now, almost works and early promise, which pile is biggest? Is that the split you want?",
+    "vi": "Nếu chia kế hoạch hiện tại thành đã chạy, gần chạy và mới có tín hiệu, nhóm nào lớn nhất? Đó có phải cách chia bạn muốn không?"
+   },
+   "c": {
+    "en": "Tulsee Doshi's 60-20-20 and Anthropic's \"start with Opus 5.5\"",
+    "vi": "60-20-20 của Tulsee Doshi và lời khuyên \"bắt đầu với Opus 5.5\" của Anthropic"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Score one AI feature on \"fully done\", not partial credit",
+    "vi": "Chấm một tính năng AI theo \"làm trọn\", không chấm điểm từng phần"
+   },
+   "s": {
+    "en": [
+     "Pull 10 real requests the feature handled recently",
+     "For each, write 2 to 4 checks a user would need to call it done",
+     "Mark each request fully done or not, and write one line on what was missing for the ones that were not"
+    ],
+    "vi": [
+     "Lấy 10 yêu cầu thật mà tính năng đã xử lý gần đây",
+     "Với mỗi yêu cầu, viết 2 đến 4 tiêu chí người dùng cần để coi là xong",
+     "Đánh dấu từng yêu cầu làm trọn hay chưa, và viết một dòng về phần còn thiếu cho những yêu cầu chưa trọn"
+    ]
+   },
+   "o": {
+    "en": "Two numbers (checks passed, requests fully done) and a short list of what \"almost done\" usually misses.",
+    "vi": "Hai con số (tiêu chí đạt, yêu cầu làm trọn) và một danh sách ngắn về thứ mà \"gần xong\" hay bỏ sót."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"70% right is not 70% done\"",
+    "vi": "Viết một bài ngắn: \"Đúng 70% không có nghĩa là xong 70%\""
+   },
+   "s": {
+    "en": [
+     "Open with the Co-Design Bench gap: 69.9% of checks passed, 26.4% of tasks fully done",
+     "Add one example from your own work where an AI output looked mostly right but a user still could not use it",
+     "End with one habit: report both numbers, and add one human pause before shipping"
+    ],
+    "vi": [
+     "Mở đầu bằng khoảng cách của Co-Design Bench: 69,9% tiêu chí đạt, 26,4% số việc làm trọn",
+     "Thêm một ví dụ từ công việc của bạn khi kết quả AI trông gần đúng nhưng người dùng vẫn không dùng được",
+     "Kết bằng một thói quen: báo cả hai con số, và thêm một khoảng dừng có người xem trước khi ra mắt"
+    ]
+   },
+   "o": {
+    "en": "A 150 to 200 word post ready to share, with one real example from your work.",
+    "vi": "Một bài 150 đến 200 chữ sẵn sàng chia sẻ, có một ví dụ thật từ công việc của bạn."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny model router with a log",
+    "vi": "Xây một bộ phân luồng model nhỏ có ghi log"
+   },
+   "s": {
+    "en": [
+     "Write a small script that sends a request to a cheaper model first and checks the answer against 2 or 3 simple rules (length, required fields, a keyword)",
+     "If a rule fails, resend the same request to a stronger model",
+     "Log each request: which model answered, which rule failed, and the cost; run it on 10 real-looking requests"
+    ],
+    "vi": [
+     "Viết một script nhỏ gửi yêu cầu tới model rẻ hơn trước và kiểm tra câu trả lời theo 2 hoặc 3 quy tắc đơn giản (độ dài, trường bắt buộc, một từ khóa)",
+     "Nếu một quy tắc không đạt, gửi lại đúng yêu cầu đó cho model mạnh hơn",
+     "Ghi log từng yêu cầu: model nào trả lời, quy tắc nào trượt, và chi phí; chạy trên 10 yêu cầu trông giống thật"
+    ]
+   },
+   "o": {
+    "en": "A working router and a log that shows how often the strong model is really needed.",
+    "vi": "Một bộ phân luồng chạy được và một file log cho thấy model mạnh thật sự cần tới thường xuyên đến mức nào."
+   }
+  }
+ ]
+}

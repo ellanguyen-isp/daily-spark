@@ -1,199 +1,155 @@
 {
- "type": "weekly",
- "date": "2026-11-08",
- "edition": "W02",
+ "type": "daily",
+ "date": "2026-11-10",
+ "edition": "008",
  "summary": {
-  "en": "The AI bill arrives: companies cap and self-host their AI spend, assistants become the front door, and voters make compute political.",
-  "vi": "Hoá đơn AI đã đến: các công ty giới hạn và tự host chi phí AI, trợ lý trở thành cửa chính, và cử tri biến hạ tầng tính toán thành chuyện chính trị."
+  "en": "Capable is not the same as done: Claude Fable 5.2 arrives but Anthropic still says start with Opus 5.5, a real-user test finds the best coding agent fully finishes 26.4% of tasks, and DeepSeek's agent harness hits 1.54M daily users.",
+  "vi": "Giỏi chưa có nghĩa là xong việc: Claude Fable 5.2 ra mắt nhưng chính Anthropic vẫn khuyên bắt đầu với Opus 5.5, một bài test trên yêu cầu thật cho thấy agent lập trình tốt nhất chỉ hoàn thành trọn vẹn 26,4% việc, và bộ khung agent của DeepSeek đạt 1,54 triệu người dùng mỗi ngày."
  },
  "big": {
-  "en": "Last week the story was that AI money is real. This week the bill arrived: Apple cut its engineers' daily AI caps, Goldman took coding agents back from bankers, and Revolut moved 2,000 engineers to a self-hosted open model at about a tenth of the cost. At the same time assistants became the front door (Siri opens to every app, ChatGPT reaches 1.2B weekly users), labs started selling behavior and outside checks instead of scores, and voters turned data centers into a political fight that knocked $2.3T off tech stocks in one day. For product builders: cost per task, trust you can show, and being reachable from an assistant are now product decisions, not engineering details.",
-  "vi": "Tuần trước, câu chuyện là tiền AI là thật. Tuần này hoá đơn đã đến: Apple giảm hạn mức AI mỗi ngày của kỹ sư, Goldman thu lại agent viết code từ nhân viên ngân hàng, và Revolut chuyển 2.000 kỹ sư sang một model mở tự host với chi phí khoảng một phần mười. Cùng lúc, trợ lý trở thành cửa chính (Siri mở cho mọi app, ChatGPT đạt 1,2 tỷ người dùng mỗi tuần), các lab bắt đầu bán hành vi và kiểm chứng từ bên ngoài thay vì điểm số, và cử tri biến trung tâm dữ liệu thành một cuộc chiến chính trị khiến cổ phiếu công nghệ mất 2.300 tỷ USD trong một ngày. Với người làm sản phẩm: chi phí mỗi việc, niềm tin có thể chứng minh, và việc trợ lý gọi được sản phẩm của bạn giờ là quyết định sản phẩm, không còn là chi tiết kỹ thuật."
+  "en": "The biggest launch today is Claude Fable 5.2, and the most useful line in it is Anthropic telling most people to keep using a cheaper model. A new test built from real user sessions shows why: the best coding agent met 69.9% of the checks but fully finished only 26.4% of tasks. Meanwhile DeepSeek's agent harness grew from 271,000 to 1.54M daily users in five weeks, and about 60% of them have added a plugin of their own. For product people: the question is no longer \"which model is smartest\" but \"which job does it fully finish, for whom, on real cases\".",
+  "vi": "Tin lớn nhất hôm nay là Claude Fable 5.2, và câu hữu ích nhất trong đó là việc Anthropic khuyên phần lớn người dùng cứ tiếp tục dùng một model rẻ hơn. Một bài test mới dựng từ các phiên làm việc thật của người dùng cho thấy lý do: agent lập trình tốt nhất đạt 69,9% số tiêu chí nhưng chỉ hoàn thành trọn vẹn 26,4% số việc. Trong khi đó bộ khung agent của DeepSeek tăng từ 271.000 lên 1,54 triệu người dùng mỗi ngày trong năm tuần, và khoảng 60% trong số đó đã tự thêm plugin. Với người làm sản phẩm: câu hỏi không còn là \"model nào thông minh nhất\" mà là \"nó làm trọn việc nào, cho ai, trên case thật\"."
  },
  "headlines": [
   {
    "t": {
-    "en": "The AI bill arrives: companies cap, route and self-host",
-    "vi": "Hoá đơn AI đã đến: các công ty giới hạn, phân luồng và tự host"
+    "en": "Claude Fable 5.2 is out, and Anthropic says most work should still start on Opus 5.5",
+    "vi": "Claude Fable 5.2 ra mắt, và Anthropic nói phần lớn công việc vẫn nên bắt đầu với Opus 5.5"
    },
-   "src": "theregister.com",
-   "url": "https://www.theregister.com/a/5307345"
+   "src": "techcrunch.com",
+   "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
   },
   {
    "t": {
-    "en": "Assistants become the front door, but habits still go straight to the app",
-    "vi": "Trợ lý trở thành cửa chính, nhưng thói quen vẫn đi thẳng vào app"
+    "en": "Built from real user sessions, a new test finds the best coding agent fully finishes only 26.4% of tasks",
+    "vi": "Dựng từ phiên làm việc thật của người dùng, một bài test mới cho thấy agent lập trình tốt nhất chỉ hoàn thành trọn vẹn 26,4% số việc"
    },
-   "src": "developer.apple.com",
-   "url": "https://developer.apple.com/news/?id=gdk2umrf"
+   "src": "aiweekly.co",
+   "url": "https://aiweekly.co/alerts/co-design-bench-top-coding-agent-completes-just-264-of-real-user-tasks"
   },
   {
    "t": {
-    "en": "Labs now sell behavior and outside checks, not just scores",
-    "vi": "Các lab giờ bán hành vi và kiểm chứng từ bên ngoài, không chỉ điểm số"
+    "en": "DeepSeek's open-source agent harness reaches 1.54M daily users, and most of them add their own plugins",
+    "vi": "Bộ khung agent mã nguồn mở của DeepSeek đạt 1,54 triệu người dùng mỗi ngày, và phần lớn tự thêm plugin của mình"
    },
-   "src": "theregister.com",
-   "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855"
-  },
-  {
-   "t": {
-    "en": "Compute turns political, and AI money gets nervous",
-    "vi": "Hạ tầng tính toán thành chuyện chính trị, và tiền AI bắt đầu lo lắng"
-   },
-   "src": "pcgamer.com",
-   "url": "https://www.pcgamer.com/gaming-industry/data-centers-were-some-of-the-biggest-losers-in-last-nights-us-midterm-elections/"
+   "src": "yicaiglobal.com",
+   "url": "https://www.yicaiglobal.com/news/deepseek-harness-releases-dau-data-for-first-time-topping-15-million"
   }
  ],
  "question": {
-  "en": "Build a 20-case test set for one AI feature you work on, and run it on a cheap model and a top model",
-  "vi": "Làm một bộ 20 tình huống test cho một tính năng AI bạn đang làm, rồi chạy nó trên một model rẻ và một model hàng đầu"
+  "en": "In the AI feature you know best, what share of requests is fully done, not just mostly right? How would you find out this week?",
+  "vi": "Trong tính năng AI bạn hiểu rõ nhất, bao nhiêu phần trăm yêu cầu được làm trọn, chứ không chỉ gần đúng? Tuần này bạn sẽ tìm ra bằng cách nào?"
  },
  "exercises": [
   {
-   "k": "bet",
+   "k": "work",
    "tag": {
-    "en": "Next week's bet",
-    "vi": "Cược tuần tới"
+    "en": "Work",
+    "vi": "Công việc"
    },
-   "time": "2 hrs",
+   "time": "30 min",
    "g": {
-    "en": "Build a 20-case test set for one AI feature you work on, and run it on a cheap model and a top model",
-    "vi": "Làm một bộ 20 tình huống test cho một tính năng AI bạn đang làm, rồi chạy nó trên một model rẻ và một model hàng đầu"
+    "en": "Score one AI feature on \"fully done\", not partial credit",
+    "vi": "Chấm một tính năng AI theo \"làm trọn\", không chấm điểm từng phần"
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"70% right is not 70% done\"",
+    "vi": "Viết một bài ngắn: \"Đúng 70% không có nghĩa là xong 70%\""
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny model router with a log",
+    "vi": "Xây một bộ phân luồng model nhỏ có ghi log"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "The AI bill arrives: companies cap, route and self-host",
-    "vi": "Hoá đơn AI đã đến: các công ty giới hạn, phân luồng và tự host"
+    "en": "Claude Fable 5.2 is out, and Anthropic says most work should still start on Opus 5.5",
+    "vi": "Claude Fable 5.2 ra mắt, và Anthropic nói phần lớn công việc vẫn nên bắt đầu với Opus 5.5"
    },
-   "src": "theregister.com",
-   "url": "https://www.theregister.com/a/5307345",
-   "date": "2026-11-03",
-   "tag": "Cost",
+   "src": "techcrunch.com",
+   "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
+   "date": "2026-11-09",
+   "tag": "Model",
    "who": "",
-   "kind": "shift"
+   "kind": "frontier"
   },
   {
    "t": {
-    "en": "Assistants become the front door, but habits still go straight to the app",
-    "vi": "Trợ lý trở thành cửa chính, nhưng thói quen vẫn đi thẳng vào app"
+    "en": "Built from real user sessions, a new test finds the best coding agent fully finishes only 26.4% of tasks",
+    "vi": "Dựng từ phiên làm việc thật của người dùng, một bài test mới cho thấy agent lập trình tốt nhất chỉ hoàn thành trọn vẹn 26,4% số việc"
    },
-   "src": "developer.apple.com",
-   "url": "https://developer.apple.com/news/?id=gdk2umrf",
-   "date": "2026-11-03",
-   "tag": "Distribution",
+   "src": "aiweekly.co",
+   "url": "https://aiweekly.co/alerts/co-design-bench-top-coding-agent-completes-just-264-of-real-user-tasks",
+   "date": "2026-11-01",
+   "tag": "Evals",
    "who": "",
-   "kind": "shift"
+   "kind": "frontier"
   },
   {
    "t": {
-    "en": "Labs now sell behavior and outside checks, not just scores",
-    "vi": "Các lab giờ bán hành vi và kiểm chứng từ bên ngoài, không chỉ điểm số"
+    "en": "DeepSeek's open-source agent harness reaches 1.54M daily users, and most of them add their own plugins",
+    "vi": "Bộ khung agent mã nguồn mở của DeepSeek đạt 1,54 triệu người dùng mỗi ngày, và phần lớn tự thêm plugin của mình"
    },
-   "src": "theregister.com",
-   "url": "https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855",
-   "date": "2026-11-05",
-   "tag": "Trust",
+   "src": "yicaiglobal.com",
+   "url": "https://www.yicaiglobal.com/news/deepseek-harness-releases-dau-data-for-first-time-topping-15-million",
+   "date": "2026-11-06",
+   "tag": "Agents",
    "who": "",
-   "kind": "shift"
+   "kind": "frontier"
   },
   {
    "t": {
-    "en": "Compute turns political, and AI money gets nervous",
-    "vi": "Hạ tầng tính toán thành chuyện chính trị, và tiền AI bắt đầu lo lắng"
+    "en": "Gemini's head of product: plan 60% on what works now, 40% on what almost works",
+    "vi": "Trưởng sản phẩm Gemini: dành 60% kế hoạch cho thứ đã chạy, 40% cho thứ gần chạy được"
    },
-   "src": "pcgamer.com",
-   "url": "https://www.pcgamer.com/gaming-industry/data-centers-were-some-of-the-biggest-losers-in-last-nights-us-midterm-elections/",
-   "date": "2026-11-04",
-   "tag": "Market",
-   "who": "",
-   "kind": "shift"
-  },
-  {
-   "t": {
-    "en": "AI spend is managed like cloud spend: budgets, caps and routing",
-    "vi": "Chi phí AI được quản lý như chi phí cloud: ngân sách, hạn mức và phân luồng"
-   },
-   "src": "9to5mac.com",
-   "url": "https://9to5mac.com/2026/11/04/report-apple-reduces-employees-ai-token-allowances-as-ternus-moves-to-cut-costs/",
-   "date": "2026-11-04",
-   "tag": "",
-   "who": "",
-   "kind": "mega"
-  },
-  {
-   "t": {
-    "en": "Evals move from leaderboards to your own real tasks",
-    "vi": "Eval chuyển từ bảng xếp hạng sang chính những việc thật của bạn"
-   },
-   "src": "semianalysis.com",
-   "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
-   "date": "2026-11-02",
-   "tag": "",
-   "who": "",
-   "kind": "mega"
-  },
-  {
-   "t": {
-    "en": "Consumer agents that book and buy for you",
-    "vi": "Agent tiêu dùng tự đặt và mua hàng giúp bạn"
-   },
-   "src": "nrn.com",
-   "url": "https://www.nrn.com/restaurant-technology/uber-eats-sees-little-traffic-from-ai-agents",
-   "date": "2026-11-04",
-   "tag": "",
-   "who": "",
-   "kind": "hype"
-  },
-  {
-   "t": {
-    "en": "\"AI is about to build itself\" headlines",
-    "vi": "Những tiêu đề \"AI sắp tự xây chính nó\""
-   },
-   "src": "unite.ai",
-   "url": "https://www.unite.ai/metr-estimates-anthropics-model-capability-growth-has-nearly-doubled/",
-   "date": "2026-11-05",
-   "tag": "",
-   "who": "",
-   "kind": "hype"
-  },
-  {
-   "t": {
-    "en": "Strong open-weight models you can run on your own servers",
-    "vi": "Model open-weight mạnh mà bạn tự chạy được trên server của mình"
-   },
-   "src": "radar · moved",
-   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/open-weight-models",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=qGf2Yvan4Wg",
    "date": "2026-11-08",
    "tag": "",
-   "who": "",
-   "kind": "radar"
+   "who": "Lenny's Podcast",
+   "kind": "people"
   },
   {
    "t": {
-    "en": "AI that finds, proves and drafts fixes for security bugs at scale",
-    "vi": "AI tìm, chứng minh và soạn bản vá cho lỗi bảo mật ở quy mô lớn"
+    "en": "When AI removes a bottleneck, it can also remove the pause where good decisions happened",
+    "vi": "Khi AI gỡ một nút thắt, nó cũng có thể gỡ luôn khoảng dừng nơi quyết định tốt được sinh ra"
    },
-   "src": "radar · new",
-   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/ai-bug-finding",
-   "date": "2026-11-08",
+   "src": "cutlefish.substack.com",
+   "url": "https://cutlefish.substack.com/p/tbm-450-the-loss-of-positive-friction",
+   "date": "2026-11-07",
    "tag": "",
-   "who": "",
-   "kind": "radar"
+   "who": "John Cutler",
+   "kind": "people"
   },
   {
    "t": {
-    "en": "Consumer agents that order, book and pay for you in other companies' apps",
-    "vi": "Agent tiêu dùng tự đặt món, đặt xe và trả tiền giúp bạn trong app của công ty khác"
+    "en": "Two days building with Fable 5.2: strong at video and geometry, still not trusted with web design",
+    "vi": "Hai ngày xây đồ với Fable 5.2: mạnh ở video và hình học, vẫn chưa được tin giao thiết kế web"
    },
-   "src": "radar · new",
-   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/agent-shopping",
-   "date": "2026-11-08",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
+   "date": "2026-11-09",
    "tag": "",
-   "who": "",
-   "kind": "radar"
+   "who": "Claire Vo (How I AI)",
+   "kind": "people"
   }
  ]
 }

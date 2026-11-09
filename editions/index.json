@@ -1,6 +1,16 @@
 {
  "editions": [
   {
+   "date": "2026-11-10",
+   "edition": "008",
+   "type": "daily",
+   "summary": {
+    "en": "Capable is not the same as done: Claude Fable 5.2 arrives but Anthropic still says start with Opus 5.5, a real-user test finds the best coding agent fully finishes 26.4% of tasks, and DeepSeek's agent harness hits 1.54M daily users.",
+    "vi": "Giỏi chưa có nghĩa là xong việc: Claude Fable 5.2 ra mắt nhưng chính Anthropic vẫn khuyên bắt đầu với Opus 5.5, một bài test trên yêu cầu thật cho thấy agent lập trình tốt nhất chỉ hoàn thành trọn vẹn 26,4% việc, và bộ khung agent của DeepSeek đạt 1,54 triệu người dùng mỗi ngày."
+   },
+   "minutes": 9
+  },
+  {
    "date": "2026-11-08",
    "edition": "W02",
    "type": "weekly",
