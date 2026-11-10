@@ -1,0 +1,385 @@
+{
+ "date": "2026-11-11",
+ "edition": "009",
+ "minutes": 9,
+ "summary": {
+  "en": "Being found, being honest, being trusted: ChatGPT lets businesses claim their own profile, Gemini 4 Carbon opens with fewer unsupported claims but more made-up facts, and Oura pays $625M for AI with doctors behind it.",
+  "vi": "Được tìm thấy, được trung thực, được tin: ChatGPT cho doanh nghiệp nhận hồ sơ của mình, Gemini 4 Carbon mở ra với ít khẳng định thiếu căn cứ hơn nhưng bịa thông tin nhiều hơn, và Oura trả 625 triệu USD cho AI có bác sĩ đứng sau."
+ },
+ "frontier": {
+  "big": {
+   "en": "Three moves today are about trust, not raw power. ChatGPT now lets businesses claim a profile and run their own agent inside its answers, so how an assistant describes your product is becoming something you manage, organic and paid. Gemini 4 Carbon opened to developers and shows why one quality score is not enough: Google says unsupported claims fell by about half, while an independent test found made-up answers rose from 4% to 11%. And in consumer health, Oura is paying $625M to put doctors behind its AI advice.",
+   "vi": "Ba chuyển động hôm nay xoay quanh niềm tin, không phải sức mạnh thuần túy. ChatGPT giờ cho doanh nghiệp nhận hồ sơ và chạy agent riêng ngay trong câu trả lời, nên cách một trợ lý mô tả sản phẩm của bạn đang trở thành thứ bạn phải quản lý, cả miễn phí lẫn trả tiền. Gemini 4 Carbon mở cho lập trình viên và cho thấy vì sao một điểm chất lượng là không đủ: Google nói khẳng định thiếu căn cứ giảm khoảng một nửa, trong khi một bài test độc lập thấy tỷ lệ bịa câu trả lời tăng từ 4% lên 11%. Còn ở mảng sức khỏe tiêu dùng, Oura trả 625 triệu USD để đặt bác sĩ phía sau lời khuyên của AI."
+  },
+  "items": [
+   {
+    "date": "2026-11-10",
+    "src": "investing.com (Reuters)",
+    "url": "https://www.investing.com/news/stock-market-news/openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-ecommerce-firms-5016475",
+    "tag": "Platform",
+    "t": {
+     "en": "ChatGPT lets businesses claim their profile and put their own agent in front of shoppers",
+     "vi": "ChatGPT cho doanh nghiệp nhận hồ sơ và đặt agent riêng trước mặt người mua"
+    },
+    "p": {
+     "en": [
+      "In a new Business Hub, verified businesses update their details and add product feeds with price and availability; profiles can be claimed wherever ChatGPT is available",
+      "Business Agents start with eligible US e-commerce and online-service businesses: the shopper chooses to open a separate, labeled chat with the business; Shopify stores can connect directly",
+      "Businesses see aggregated mentions, views, clicks and recurring \"discovery topics\", only above set thresholds; OpenAI says it does not share users' chats with them",
+      "Businesses can also pay to make their agent the destination of a ChatGPT ad, so being described by an assistant now has an organic side and a paid side"
+     ],
+     "vi": [
+      "Trong Business Hub mới, doanh nghiệp đã xác minh có thể cập nhật thông tin và thêm danh mục sản phẩm kèm giá và tình trạng còn hàng; hồ sơ có thể được nhận ở mọi nơi ChatGPT hoạt động",
+      "Business Agents bắt đầu với các doanh nghiệp thương mại điện tử và dịch vụ online đủ điều kiện ở Mỹ: người mua tự chọn mở một cuộc chat riêng, có gắn nhãn, với doanh nghiệp; cửa hàng Shopify có thể kết nối trực tiếp",
+      "Doanh nghiệp thấy số lần được nhắc tới, lượt xem, lượt bấm và các \"chủ đề khám phá\" lặp lại ở dạng tổng hợp, chỉ khi vượt ngưỡng; OpenAI nói không chia sẻ cuộc chat của người dùng cho họ",
+      "Doanh nghiệp cũng có thể trả tiền để agent của mình là điểm đến của quảng cáo ChatGPT, nên việc được trợ lý mô tả giờ có cả phần tự nhiên lẫn phần trả phí"
+     ]
+    },
+    "w": {
+     "en": "Your product now has a second front page inside an assistant. If you do not fill it, the assistant still describes you, using whatever it found.",
+     "vi": "Sản phẩm của bạn giờ có thêm một trang chủ thứ hai bên trong trợ lý. Nếu bạn không lo phần đó, trợ lý vẫn mô tả bạn, bằng bất cứ thứ gì nó tìm được."
+    }
+   },
+   {
+    "date": "2026-11-10",
+    "src": "superpowerdaily.com",
+    "url": "https://superpowerdaily.com/posts/google-opens-gemini-4-carbon-to-developers-with-api-prices-set-to-double-in-december",
+    "tag": "Model",
+    "t": {
+     "en": "Gemini 4 Carbon opens to developers, with fewer unsupported claims but more made-up facts",
+     "vi": "Gemini 4 Carbon mở cho lập trình viên, ít khẳng định thiếu căn cứ hơn nhưng bịa thông tin nhiều hơn"
+    },
+    "stat": {
+     "v": "4% to 11%",
+     "l": {
+      "en": "hallucination rate on Artificial Analysis's AA-Omniscience test, Argon to Carbon",
+      "vi": "tỷ lệ bịa thông tin trên bài test AA-Omniscience của Artificial Analysis, từ Argon sang Carbon"
+     }
+    },
+    "p": {
+     "en": [
+      "Carbon is now on the paid Gemini API and AI Studio at $2 input and $10 output per million tokens until November 30, then $4 and $20; the cyber version stays in Google's Fairwind program",
+      "Google's own tests say it cuts unsupported claims about 2x versus Argon, overreach by 26% and under-service by 29%",
+      "Artificial Analysis, testing on its own, ranks Carbon first (59 on its Intelligence Index) yet finds it makes up answers more often than Argon did",
+      "The lesson for anyone running evals: \"honest about missing evidence\" and \"right on the facts\" are different metrics, and one can improve while the other gets worse"
+     ],
+     "vi": [
+      "Carbon giờ có trên Gemini API trả phí và AI Studio với giá 2 USD đầu vào và 10 USD đầu ra mỗi triệu token tới hết 30/11, sau đó là 4 và 20 USD; bản chuyên về an ninh mạng vẫn nằm trong chương trình Fairwind của Google",
+      "Theo test nội bộ của Google, nó giảm khẳng định thiếu căn cứ khoảng 2 lần so với Argon, giảm làm quá yêu cầu 26% và làm thiếu yêu cầu 29%",
+      "Artificial Analysis, tự test độc lập, xếp Carbon đứng đầu (59 điểm trên Intelligence Index) nhưng thấy nó bịa câu trả lời thường xuyên hơn Argon",
+      "Bài học cho ai đang chạy eval: \"trung thực khi thiếu bằng chứng\" và \"đúng về sự thật\" là hai chỉ số khác nhau, một cái có thể tốt lên trong khi cái kia tệ đi"
+     ]
+    },
+    "w": {
+     "en": "A single quality score can rise while the failure your users hate most gets worse. Track failure types separately.",
+     "vi": "Một điểm chất lượng có thể tăng trong khi lỗi người dùng ghét nhất lại tệ hơn. Hãy theo dõi riêng từng loại lỗi."
+    }
+   },
+   {
+    "date": "2026-11-10",
+    "src": "techcrunch.com",
+    "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+    "tag": "Health",
+    "t": {
+     "en": "Oura buys an AI-plus-doctors care startup for $625M",
+     "vi": "Oura mua một startup chăm sóc sức khỏe kết hợp AI và bác sĩ với giá 625 triệu USD"
+    },
+    "stat": {
+     "v": "153%",
+     "l": {
+      "en": "Oura's revenue growth last quarter, to $533M",
+      "vi": "mức tăng doanh thu quý vừa rồi của Oura, lên 533 triệu USD"
+     }
+    },
+    "p": {
+     "en": [
+      "Counsel pairs a medical AI chat with licensed physicians you can message when needed; it has run inside the Oura app since June",
+      "Oura plans to expand from prevention into acute, specialty and chronic care; Counsel's CEO becomes Oura's chief clinical AI officer",
+      "Oura postponed its IPO, citing an uncertain market, and is buying growth instead; Counsel had raised about $36M",
+      "For consumer health apps, the bar is moving from \"show me my data\" to \"tell me what to do, with a doctor behind it\""
+     ],
+     "vi": [
+      "Counsel kết hợp chat với AI y khoa và bác sĩ có giấy phép mà bạn có thể nhắn khi cần; dịch vụ này đã chạy trong app Oura từ tháng 6",
+      "Oura dự định mở rộng từ phòng bệnh sang chăm sóc cấp tính, chuyên khoa và bệnh mãn tính; CEO của Counsel trở thành giám đốc AI lâm sàng của Oura",
+      "Oura đã hoãn IPO vì thị trường bất ổn, và chọn mua tăng trưởng thay vào đó; Counsel từng gọi vốn khoảng 36 triệu USD",
+      "Với app sức khỏe tiêu dùng, chuẩn đang chuyển từ \"cho tôi xem dữ liệu\" sang \"bảo tôi nên làm gì, có bác sĩ đứng sau\""
+     ]
+    },
+    "w": {
+     "en": "In health, AI advice earns trust when a human can step in. Plan where that human sits before you add more AI.",
+     "vi": "Trong sức khỏe, lời khuyên của AI được tin khi có con người có thể vào cuộc. Hãy tính trước người đó đứng ở đâu trước khi thêm AI."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Fireworks AI, a company that runs AI models for other businesses, disclosed a second intrusion: an attacker reached its development machines through a third-party cloud provider and got billing data plus some customers' unfinished model weights and datasets (The Hacker News, 2026-11-10). Watch whether teams start asking every AI vendor in their stack what data it holds and for how long.",
+   "vi": "Fireworks AI, công ty chạy model AI cho doanh nghiệp khác, công bố vụ xâm nhập thứ hai: kẻ tấn công vào được máy phát triển qua một nhà cung cấp cloud bên thứ ba và lấy được dữ liệu thanh toán cùng một phần model chưa hoàn thiện và dữ liệu của một số khách hàng (The Hacker News, 2026-11-10). Hãy xem liệu các đội có bắt đầu hỏi mọi nhà cung cấp AI trong hệ thống của mình rằng họ giữ dữ liệu gì và trong bao lâu."
+  }
+ },
+ "people": [
+  {
+   "who": "Lenny's Newsletter",
+   "kind": {
+    "en": "article · from the free part (ending is paywalled)",
+    "vi": "bài viết · từ phần đọc miễn phí (phần cuối cần trả phí)"
+   },
+   "date": "2026-11-10",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+   "t": {
+    "en": "PM openings hit a near four-year high, and \"LLM\" is now the top skill in PM job posts",
+    "vi": "Số vị trí PM mở cao nhất gần bốn năm, và \"LLM\" giờ là kỹ năng được nhắc nhiều nhất trong tin tuyển PM"
+   },
+   "stat": {
+    "v": "75%",
+    "l": {
+     "en": "rise in open PM roles since the March 2023 low",
+     "vi": "mức tăng vị trí PM đang mở so với đáy tháng 3/2023"
+    }
+   },
+   "p": {
+    "en": [
+     "PM's share of tech hiring grew from 16% in 2021 to 21%, the only core role to grow; but actual PM hiring is flat while openings rise, so each role is harder to win",
+     "Engineering openings grew only 2.5% in the past year; product design openings are at a record low of about 1,900, and user research hiring fell 66% since 2022",
+     "\"LLM\" passed SQL, Jira and Python as the most-mentioned PM skill; Claude is the third most-mentioned term and evals is in the top 10",
+     "Only 14% of open tech roles are remote, and Bay Area roles now outnumber remote ones worldwide"
+    ],
+    "vi": [
+     "Tỷ trọng PM trong tuyển dụng công nghệ tăng từ 16% năm 2021 lên 21%, là vai trò cốt lõi duy nhất tăng; nhưng số PM thực sự được tuyển đi ngang trong khi vị trí mở tăng, nên mỗi vị trí khó giành hơn",
+     "Vị trí kỹ sư mở chỉ tăng 2,5% trong năm qua; vị trí product design ở mức thấp kỷ lục khoảng 1.900, và tuyển user research giảm 66% so với 2022",
+     "\"LLM\" đã vượt SQL, Jira và Python để thành kỹ năng PM được nhắc nhiều nhất; Claude đứng thứ ba và evals nằm trong top 10",
+     "Chỉ 14% vị trí công nghệ đang mở cho làm từ xa, và số vị trí ở Bay Area giờ nhiều hơn số vị trí remote trên toàn thế giới"
+    ]
+   },
+   "k": {
+    "en": "Evals and hands-on AI work are now a hiring signal for PMs. Show them in public work, not only as a line on a CV.",
+    "vi": "Evals và kinh nghiệm làm AI thực tế giờ là tín hiệu tuyển dụng cho PM. Hãy thể hiện chúng qua sản phẩm công khai, không chỉ một dòng trong CV."
+   }
+  },
+  {
+   "who": "Starter Story",
+   "kind": {
+    "en": "17 min · from a written episode recap",
+    "vi": "17 phút · từ bài tóm tắt tập"
+   },
+   "date": "2026-11-08",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=X2T92MVx7xs",
+   "t": {
+    "en": "30+ apps, 8 that made money, about $1M in six years: one solo founder's portfolio of small bets",
+    "vi": "Hơn 30 app, 8 app có doanh thu, khoảng 1 triệu USD trong sáu năm: danh mục cược nhỏ của một founder làm một mình"
+   },
+   "stat": {
+    "v": "8 of 30+",
+    "l": {
+     "en": "apps that ever earned revenue",
+     "vi": "số app từng có doanh thu"
+    }
+   },
+   "p": {
+    "en": [
+     "Sanskar Tiwari made $0 for two years; his wins were one-job apps sold inside existing marketplaces (Chrome extensions and Google Workspace add-ons), so he borrowed distribution",
+     "New ideas came from adjacent asks: an AI add-on for Sheets led to one for Slides after a user wanted a pitch deck, then one for Forms",
+     "He now validates with a simple pre-order page that promises delivery in 10 to 30 days, and admits he skipped this for years because he got lost in building",
+     "His biggest regret: sticking with one thing when it was not working; his advice is to \"put more buy buttons on the internet\""
+    ],
+    "vi": [
+     "Sanskar Tiwari không kiếm được đồng nào trong hai năm; các app thành công đều làm một việc và bán trong chợ ứng dụng có sẵn (tiện ích Chrome và add-on Google Workspace), tức là mượn kênh phân phối",
+     "Ý tưởng mới đến từ nhu cầu liền kề: add-on AI cho Sheets dẫn tới add-on cho Slides khi một người dùng cần pitch deck, rồi tới Forms",
+     "Giờ anh kiểm chứng bằng một trang đặt trước đơn giản hứa giao trong 10 đến 30 ngày, và thừa nhận đã bỏ qua bước này nhiều năm vì mải xây",
+     "Điều anh hối tiếc nhất: bám một thứ khi nó không chạy; lời khuyên của anh là \"đặt thêm nhiều nút mua lên internet\""
+    ]
+   },
+   "k": {
+    "en": "Count your buy buttons. A bet that never asks for money has not really been tested.",
+    "vi": "Hãy đếm số nút mua của bạn. Một canh bạc chưa từng hỏi tiền thì chưa thật sự được kiểm chứng."
+   }
+  },
+  {
+   "who": "Hello China Tech (Poe Zhao)",
+   "kind": {
+    "en": "article · full read",
+    "vi": "bài viết · đã đọc toàn bộ"
+   },
+   "date": "2026-11-10",
+   "src": "hellochinatech.com",
+   "url": "https://hellochinatech.com/p/china-ai-app-rankings",
+   "t": {
+    "en": "Qwen is second by users, DeepSeek second by use: the ranking depends on what you count",
+    "vi": "Qwen đứng thứ hai về người dùng, DeepSeek thứ hai về mức dùng: thứ hạng tùy vào bạn đếm cái gì"
+   },
+   "stat": {
+    "v": "66 vs 18",
+    "l": {
+     "en": "monthly sessions per user, DeepSeek vs Qwen (September, QuestMobile)",
+     "vi": "số phiên mỗi người mỗi tháng, DeepSeek so với Qwen (tháng 9, QuestMobile)"
+    }
+   },
+   "p": {
+    "en": [
+     "Qwen has 158M monthly users at 18 sessions each; DeepSeek has 123M at 66, so roughly 8.1B total sessions against 2.8B",
+     "When an average rises, ask who left: Yuanbao lost 25% of monthly users while its total sessions moved less than 1%",
+     "Read the level after a push: Qwen's daily users jumped from under 10M to 73.5M in a February campaign, then fell back to about 31M",
+     "Know who is counting: the data is device tracking, shows no revenue, and cannot be fully reproduced"
+    ],
+    "vi": [
+     "Qwen có 158 triệu người dùng tháng với 18 phiên mỗi người; DeepSeek có 123 triệu với 66 phiên, tức khoảng 8,1 tỷ phiên so với 2,8 tỷ",
+     "Khi con số trung bình tăng, hãy hỏi ai đã rời đi: Yuanbao mất 25% người dùng tháng trong khi tổng số phiên thay đổi chưa tới 1%",
+     "Đọc mức sau đợt đẩy: người dùng ngày của Qwen tăng từ dưới 10 triệu lên 73,5 triệu trong đợt khuyến mãi tháng 2, rồi rơi về khoảng 31 triệu",
+     "Biết ai đang đếm: dữ liệu đến từ theo dõi thiết bị, không có doanh thu, và không thể tái tạo hoàn toàn"
+    ]
+   },
+   "k": {
+    "en": "Reach, use and revenue are three different numbers. Pick the one that matches your question before you celebrate.",
+    "vi": "Độ phủ, mức dùng và doanh thu là ba con số khác nhau. Hãy chọn con số khớp với câu hỏi của bạn trước khi ăn mừng."
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "Productize yourself: find the work only you can do, then put it in a form that works without you.",
+   "vi": "Biến bản thân thành sản phẩm: tìm việc chỉ bạn làm được, rồi đóng gói nó thành dạng vẫn chạy khi không có bạn."
+  },
+  "src": "The Almanack of Naval Ravikant · Eric Jorgenson",
+  "date": "2020 · book",
+  "url": "",
+  "e": {
+   "en": "Naval's idea has three parts. Specific knowledge is what you learn by following your real curiosity: it feels like play to you and looks like work to others, so it is hard to copy. Leverage, like code and media, lets that knowledge reach people while you sleep. Accountability means putting your name on it. Today's job data fits: PM openings are up but hiring is flat, and \"LLM\" and evals now lead job posts, so the people who stand out show their specific knowledge in public, the way one founder gave every small app its own video channel.",
+   "vi": "Ý tưởng của Naval có ba phần. Kiến thức đặc thù là thứ bạn học được khi theo đuổi sự tò mò thật của mình: với bạn nó như chơi, với người khác nó như làm việc, nên khó bị sao chép. Đòn bẩy, như code và nội dung, giúp kiến thức đó đến với người khác cả khi bạn ngủ. Trách nhiệm nghĩa là đặt tên mình lên nó. Dữ liệu tuyển dụng hôm nay khớp với điều này: vị trí PM tăng nhưng số người được tuyển đi ngang, và \"LLM\" cùng evals dẫn đầu tin tuyển, nên người nổi bật là người thể hiện kiến thức đặc thù một cách công khai, như một founder cho mỗi app nhỏ một kênh video riêng."
+  },
+  "a": {
+   "en": [
+    "Write down the topic you keep reading about even when no one asks you to; that is your likely specific knowledge",
+    "Turn one piece of it into leverage this month: a template, a short tool, or a post others can reuse",
+    "Put your name on it and share it where people who hire for that skill will see it"
+   ],
+   "vi": [
+    "Ghi lại chủ đề bạn cứ đọc mãi dù không ai yêu cầu; đó có thể là kiến thức đặc thù của bạn",
+    "Biến một phần của nó thành đòn bẩy trong tháng này: một template, một công cụ nhỏ, hoặc một bài viết người khác dùng lại được",
+    "Đặt tên mình lên đó và chia sẻ ở nơi những người tuyển kỹ năng này sẽ thấy"
+   ]
+  },
+  "x": {
+   "en": "You already measure AI features at work. Take the method, not the product: write a short public guide on \"three failure labels every AI feature eval should count\", with a made-up example. It is specific knowledge, it is reusable, and it has your name on it.",
+   "vi": "Bạn đã đo lường tính năng AI trong công việc. Hãy lấy phương pháp, không lấy sản phẩm: viết một hướng dẫn công khai ngắn về \"ba nhãn lỗi mà mọi eval cho tính năng AI nên đếm\", với một ví dụ giả định. Đó là kiến thức đặc thù, dùng lại được, và có tên bạn trên đó."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "If a user asked an assistant about the product you work on today, what would it say? What would you want it to say?",
+    "vi": "Nếu một người dùng hỏi trợ lý AI về sản phẩm bạn đang làm, nó sẽ nói gì? Bạn muốn nó nói gì?"
+   },
+   "c": {
+    "en": "Businesses in ChatGPT: profiles, agents and ads",
+    "vi": "Businesses in ChatGPT: hồ sơ, agent và quảng cáo"
+   }
+  },
+  {
+   "q": {
+    "en": "Which failure in your AI feature would you miss if you tracked only one quality number?",
+    "vi": "Lỗi nào trong tính năng AI của bạn sẽ bị bỏ sót nếu bạn chỉ theo dõi một con số chất lượng?"
+   },
+   "c": {
+    "en": "Gemini 4 Carbon: fewer unsupported claims, hallucinations up from 4% to 11%",
+    "vi": "Gemini 4 Carbon: ít khẳng định thiếu căn cứ hơn, bịa thông tin tăng từ 4% lên 11%"
+   }
+  },
+  {
+   "q": {
+    "en": "What did you learn at work this month that you could show in public, so the right people would see it?",
+    "vi": "Tháng này bạn học được gì trong công việc mà có thể chia sẻ công khai, để đúng người nhìn thấy?"
+   },
+   "c": {
+    "en": "Lenny's job market report and Naval's \"productize yourself\"",
+    "vi": "Báo cáo thị trường việc làm của Lenny và \"biến bản thân thành sản phẩm\" của Naval"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "See how AI assistants describe a product you work on",
+    "vi": "Xem các trợ lý AI mô tả sản phẩm bạn đang làm thế nào"
+   },
+   "s": {
+    "en": [
+     "Write 8 questions a real buyer in your target market would ask, without naming your product",
+     "Ask ChatGPT and one other assistant; note whether your product appears, what is wrong, and which sources are cited",
+     "List 3 fixes: facts to correct on your own pages, a profile to claim, or a page to write"
+    ],
+    "vi": [
+     "Viết 8 câu hỏi mà một người mua thật ở thị trường mục tiêu sẽ hỏi, không nêu tên sản phẩm",
+     "Hỏi ChatGPT và một trợ lý khác; ghi lại sản phẩm có xuất hiện không, sai ở đâu, và nguồn nào được trích",
+     "Liệt kê 3 việc cần sửa: thông tin cần chỉnh trên trang của bạn, hồ sơ cần nhận, hoặc trang cần viết"
+    ]
+   },
+   "o": {
+    "en": "A one-page picture of how assistants see your product, with 3 concrete fixes.",
+    "vi": "Một trang mô tả cách trợ lý nhìn sản phẩm của bạn, kèm 3 việc cụ thể cần sửa."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Draft a short post: \"Users, use or revenue: which number are you celebrating?\"",
+    "vi": "Viết nháp một bài ngắn: \"Người dùng, mức dùng hay doanh thu: bạn đang ăn mừng con số nào?\""
+   },
+   "s": {
+    "en": [
+     "Open with the Qwen and DeepSeek example: second place either way, depending on what you count",
+     "Pick two of the five checks (multiply users by sessions, ask who left, read the level after a push) and explain each in one line",
+     "End with one question your readers can ask about their own dashboard tomorrow"
+    ],
+    "vi": [
+     "Mở bài bằng ví dụ Qwen và DeepSeek: cả hai đều đứng thứ hai, tùy bạn đếm cái gì",
+     "Chọn hai trong năm cách kiểm tra (nhân người dùng với số phiên, hỏi ai đã rời đi, đọc mức sau đợt đẩy) và giải thích mỗi cách trong một dòng",
+     "Kết bằng một câu hỏi mà người đọc có thể hỏi về dashboard của chính họ ngày mai"
+    ]
+   },
+   "o": {
+    "en": "A 150 to 200 word post ready to share.",
+    "vi": "Một bài 150 đến 200 chữ sẵn sàng để đăng."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Put one real buy button on the internet for a small idea",
+    "vi": "Đặt một nút mua thật lên internet cho một ý tưởng nhỏ"
+   },
+   "s": {
+    "en": [
+     "Pick one idea that does one job, and write its promise in one sentence with a price",
+     "Use an AI coding tool to build a one-page pre-order or paid-waitlist page that says it ships in 10 to 30 days",
+     "Share it with 5 people who have the problem, and count clicks on the button"
+    ],
+    "vi": [
+     "Chọn một ý tưởng làm đúng một việc, và viết lời hứa của nó trong một câu kèm giá",
+     "Dùng công cụ AI viết code để dựng một trang đặt trước hoặc danh sách chờ có trả phí, ghi rõ sẽ giao trong 10 đến 30 ngày",
+     "Gửi cho 5 người đang gặp vấn đề đó, và đếm số lần bấm nút"
+    ]
+   },
+   "o": {
+    "en": "A live page with a price, a delivery date and a first click count.",
+    "vi": "Một trang đang chạy với giá, ngày giao và số lần bấm đầu tiên."
+   }
+  }
+ ]
+}

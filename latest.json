@@ -1,44 +1,44 @@
 {
  "type": "daily",
- "date": "2026-11-10",
- "edition": "008",
+ "date": "2026-11-11",
+ "edition": "009",
  "summary": {
-  "en": "Capable is not the same as done: Claude Fable 5.2 arrives but Anthropic still says start with Opus 5.5, a real-user test finds the best coding agent fully finishes 26.4% of tasks, and DeepSeek's agent harness hits 1.54M daily users.",
-  "vi": "Giỏi chưa có nghĩa là xong việc: Claude Fable 5.2 ra mắt nhưng chính Anthropic vẫn khuyên bắt đầu với Opus 5.5, một bài test trên yêu cầu thật cho thấy agent lập trình tốt nhất chỉ hoàn thành trọn vẹn 26,4% việc, và bộ khung agent của DeepSeek đạt 1,54 triệu người dùng mỗi ngày."
+  "en": "Being found, being honest, being trusted: ChatGPT lets businesses claim their own profile, Gemini 4 Carbon opens with fewer unsupported claims but more made-up facts, and Oura pays $625M for AI with doctors behind it.",
+  "vi": "Được tìm thấy, được trung thực, được tin: ChatGPT cho doanh nghiệp nhận hồ sơ của mình, Gemini 4 Carbon mở ra với ít khẳng định thiếu căn cứ hơn nhưng bịa thông tin nhiều hơn, và Oura trả 625 triệu USD cho AI có bác sĩ đứng sau."
  },
  "big": {
-  "en": "The biggest launch today is Claude Fable 5.2, and the most useful line in it is Anthropic telling most people to keep using a cheaper model. A new test built from real user sessions shows why: the best coding agent met 69.9% of the checks but fully finished only 26.4% of tasks. Meanwhile DeepSeek's agent harness grew from 271,000 to 1.54M daily users in five weeks, and about 60% of them have added a plugin of their own. For product people: the question is no longer \"which model is smartest\" but \"which job does it fully finish, for whom, on real cases\".",
-  "vi": "Tin lớn nhất hôm nay là Claude Fable 5.2, và câu hữu ích nhất trong đó là việc Anthropic khuyên phần lớn người dùng cứ tiếp tục dùng một model rẻ hơn. Một bài test mới dựng từ các phiên làm việc thật của người dùng cho thấy lý do: agent lập trình tốt nhất đạt 69,9% số tiêu chí nhưng chỉ hoàn thành trọn vẹn 26,4% số việc. Trong khi đó bộ khung agent của DeepSeek tăng từ 271.000 lên 1,54 triệu người dùng mỗi ngày trong năm tuần, và khoảng 60% trong số đó đã tự thêm plugin. Với người làm sản phẩm: câu hỏi không còn là \"model nào thông minh nhất\" mà là \"nó làm trọn việc nào, cho ai, trên case thật\"."
+  "en": "Three moves today are about trust, not raw power. ChatGPT now lets businesses claim a profile and run their own agent inside its answers, so how an assistant describes your product is becoming something you manage, organic and paid. Gemini 4 Carbon opened to developers and shows why one quality score is not enough: Google says unsupported claims fell by about half, while an independent test found made-up answers rose from 4% to 11%. And in consumer health, Oura is paying $625M to put doctors behind its AI advice.",
+  "vi": "Ba chuyển động hôm nay xoay quanh niềm tin, không phải sức mạnh thuần túy. ChatGPT giờ cho doanh nghiệp nhận hồ sơ và chạy agent riêng ngay trong câu trả lời, nên cách một trợ lý mô tả sản phẩm của bạn đang trở thành thứ bạn phải quản lý, cả miễn phí lẫn trả tiền. Gemini 4 Carbon mở cho lập trình viên và cho thấy vì sao một điểm chất lượng là không đủ: Google nói khẳng định thiếu căn cứ giảm khoảng một nửa, trong khi một bài test độc lập thấy tỷ lệ bịa câu trả lời tăng từ 4% lên 11%. Còn ở mảng sức khỏe tiêu dùng, Oura trả 625 triệu USD để đặt bác sĩ phía sau lời khuyên của AI."
  },
  "headlines": [
   {
    "t": {
-    "en": "Claude Fable 5.2 is out, and Anthropic says most work should still start on Opus 5.5",
-    "vi": "Claude Fable 5.2 ra mắt, và Anthropic nói phần lớn công việc vẫn nên bắt đầu với Opus 5.5"
+    "en": "ChatGPT lets businesses claim their profile and put their own agent in front of shoppers",
+    "vi": "ChatGPT cho doanh nghiệp nhận hồ sơ và đặt agent riêng trước mặt người mua"
+   },
+   "src": "investing.com (Reuters)",
+   "url": "https://www.investing.com/news/stock-market-news/openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-ecommerce-firms-5016475"
+  },
+  {
+   "t": {
+    "en": "Gemini 4 Carbon opens to developers, with fewer unsupported claims but more made-up facts",
+    "vi": "Gemini 4 Carbon mở cho lập trình viên, ít khẳng định thiếu căn cứ hơn nhưng bịa thông tin nhiều hơn"
+   },
+   "src": "superpowerdaily.com",
+   "url": "https://superpowerdaily.com/posts/google-opens-gemini-4-carbon-to-developers-with-api-prices-set-to-double-in-december"
+  },
+  {
+   "t": {
+    "en": "Oura buys an AI-plus-doctors care startup for $625M",
+    "vi": "Oura mua một startup chăm sóc sức khỏe kết hợp AI và bác sĩ với giá 625 triệu USD"
    },
    "src": "techcrunch.com",
-   "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/"
-  },
-  {
-   "t": {
-    "en": "Built from real user sessions, a new test finds the best coding agent fully finishes only 26.4% of tasks",
-    "vi": "Dựng từ phiên làm việc thật của người dùng, một bài test mới cho thấy agent lập trình tốt nhất chỉ hoàn thành trọn vẹn 26,4% số việc"
-   },
-   "src": "aiweekly.co",
-   "url": "https://aiweekly.co/alerts/co-design-bench-top-coding-agent-completes-just-264-of-real-user-tasks"
-  },
-  {
-   "t": {
-    "en": "DeepSeek's open-source agent harness reaches 1.54M daily users, and most of them add their own plugins",
-    "vi": "Bộ khung agent mã nguồn mở của DeepSeek đạt 1,54 triệu người dùng mỗi ngày, và phần lớn tự thêm plugin của mình"
-   },
-   "src": "yicaiglobal.com",
-   "url": "https://www.yicaiglobal.com/news/deepseek-harness-releases-dau-data-for-first-time-topping-15-million"
+   "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/"
   }
  ],
  "question": {
-  "en": "In the AI feature you know best, what share of requests is fully done, not just mostly right? How would you find out this week?",
-  "vi": "Trong tính năng AI bạn hiểu rõ nhất, bao nhiêu phần trăm yêu cầu được làm trọn, chứ không chỉ gần đúng? Tuần này bạn sẽ tìm ra bằng cách nào?"
+  "en": "If a user asked an assistant about the product you work on today, what would it say? What would you want it to say?",
+  "vi": "Nếu một người dùng hỏi trợ lý AI về sản phẩm bạn đang làm, nó sẽ nói gì? Bạn muốn nó nói gì?"
  },
  "exercises": [
   {
@@ -49,8 +49,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Score one AI feature on \"fully done\", not partial credit",
-    "vi": "Chấm một tính năng AI theo \"làm trọn\", không chấm điểm từng phần"
+    "en": "See how AI assistants describe a product you work on",
+    "vi": "Xem các trợ lý AI mô tả sản phẩm bạn đang làm thế nào"
    }
   },
   {
@@ -61,8 +61,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Write a short post: \"70% right is not 70% done\"",
-    "vi": "Viết một bài ngắn: \"Đúng 70% không có nghĩa là xong 70%\""
+    "en": "Draft a short post: \"Users, use or revenue: which number are you celebrating?\"",
+    "vi": "Viết nháp một bài ngắn: \"Người dùng, mức dùng hay doanh thu: bạn đang ăn mừng con số nào?\""
    }
   },
   {
@@ -73,82 +73,82 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a tiny model router with a log",
-    "vi": "Xây một bộ phân luồng model nhỏ có ghi log"
+    "en": "Put one real buy button on the internet for a small idea",
+    "vi": "Đặt một nút mua thật lên internet cho một ý tưởng nhỏ"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "Claude Fable 5.2 is out, and Anthropic says most work should still start on Opus 5.5",
-    "vi": "Claude Fable 5.2 ra mắt, và Anthropic nói phần lớn công việc vẫn nên bắt đầu với Opus 5.5"
+    "en": "ChatGPT lets businesses claim their profile and put their own agent in front of shoppers",
+    "vi": "ChatGPT cho doanh nghiệp nhận hồ sơ và đặt agent riêng trước mặt người mua"
    },
-   "src": "techcrunch.com",
-   "url": "https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/",
-   "date": "2026-11-09",
+   "src": "investing.com (Reuters)",
+   "url": "https://www.investing.com/news/stock-market-news/openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-ecommerce-firms-5016475",
+   "date": "2026-11-10",
+   "tag": "Platform",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "Gemini 4 Carbon opens to developers, with fewer unsupported claims but more made-up facts",
+    "vi": "Gemini 4 Carbon mở cho lập trình viên, ít khẳng định thiếu căn cứ hơn nhưng bịa thông tin nhiều hơn"
+   },
+   "src": "superpowerdaily.com",
+   "url": "https://superpowerdaily.com/posts/google-opens-gemini-4-carbon-to-developers-with-api-prices-set-to-double-in-december",
+   "date": "2026-11-10",
    "tag": "Model",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Built from real user sessions, a new test finds the best coding agent fully finishes only 26.4% of tasks",
-    "vi": "Dựng từ phiên làm việc thật của người dùng, một bài test mới cho thấy agent lập trình tốt nhất chỉ hoàn thành trọn vẹn 26,4% số việc"
+    "en": "Oura buys an AI-plus-doctors care startup for $625M",
+    "vi": "Oura mua một startup chăm sóc sức khỏe kết hợp AI và bác sĩ với giá 625 triệu USD"
    },
-   "src": "aiweekly.co",
-   "url": "https://aiweekly.co/alerts/co-design-bench-top-coding-agent-completes-just-264-of-real-user-tasks",
-   "date": "2026-11-01",
-   "tag": "Evals",
+   "src": "techcrunch.com",
+   "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+   "date": "2026-11-10",
+   "tag": "Health",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "DeepSeek's open-source agent harness reaches 1.54M daily users, and most of them add their own plugins",
-    "vi": "Bộ khung agent mã nguồn mở của DeepSeek đạt 1,54 triệu người dùng mỗi ngày, và phần lớn tự thêm plugin của mình"
-   },
-   "src": "yicaiglobal.com",
-   "url": "https://www.yicaiglobal.com/news/deepseek-harness-releases-dau-data-for-first-time-topping-15-million",
-   "date": "2026-11-06",
-   "tag": "Agents",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "Gemini's head of product: plan 60% on what works now, 40% on what almost works",
-    "vi": "Trưởng sản phẩm Gemini: dành 60% kế hoạch cho thứ đã chạy, 40% cho thứ gần chạy được"
-   },
-   "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=qGf2Yvan4Wg",
-   "date": "2026-11-08",
-   "tag": "",
-   "who": "Lenny's Podcast",
-   "kind": "people"
-  },
-  {
-   "t": {
-    "en": "When AI removes a bottleneck, it can also remove the pause where good decisions happened",
-    "vi": "Khi AI gỡ một nút thắt, nó cũng có thể gỡ luôn khoảng dừng nơi quyết định tốt được sinh ra"
-   },
-   "src": "cutlefish.substack.com",
-   "url": "https://cutlefish.substack.com/p/tbm-450-the-loss-of-positive-friction",
-   "date": "2026-11-07",
-   "tag": "",
-   "who": "John Cutler",
-   "kind": "people"
-  },
-  {
-   "t": {
-    "en": "Two days building with Fable 5.2: strong at video and geometry, still not trusted with web design",
-    "vi": "Hai ngày xây đồ với Fable 5.2: mạnh ở video và hình học, vẫn chưa được tin giao thiết kế web"
+    "en": "PM openings hit a near four-year high, and \"LLM\" is now the top skill in PM job posts",
+    "vi": "Số vị trí PM mở cao nhất gần bốn năm, và \"LLM\" giờ là kỹ năng được nhắc nhiều nhất trong tin tuyển PM"
    },
    "src": "lennysnewsletter.com",
-   "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
-   "date": "2026-11-09",
+   "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
+   "date": "2026-11-10",
    "tag": "",
-   "who": "Claire Vo (How I AI)",
+   "who": "Lenny's Newsletter",
+   "kind": "people"
+  },
+  {
+   "t": {
+    "en": "30+ apps, 8 that made money, about $1M in six years: one solo founder's portfolio of small bets",
+    "vi": "Hơn 30 app, 8 app có doanh thu, khoảng 1 triệu USD trong sáu năm: danh mục cược nhỏ của một founder làm một mình"
+   },
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=X2T92MVx7xs",
+   "date": "2026-11-08",
+   "tag": "",
+   "who": "Starter Story",
+   "kind": "people"
+  },
+  {
+   "t": {
+    "en": "Qwen is second by users, DeepSeek second by use: the ranking depends on what you count",
+    "vi": "Qwen đứng thứ hai về người dùng, DeepSeek thứ hai về mức dùng: thứ hạng tùy vào bạn đếm cái gì"
+   },
+   "src": "hellochinatech.com",
+   "url": "https://hellochinatech.com/p/china-ai-app-rankings",
+   "date": "2026-11-10",
+   "tag": "",
+   "who": "Hello China Tech (Poe Zhao)",
    "kind": "people"
   }
  ]
