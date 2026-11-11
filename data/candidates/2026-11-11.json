@@ -1,80 +1,80 @@
 {
  "date": "2026-11-11",
- "generated_at": "2026-11-11T06:13+07:00",
+ "generated_at": "2026-11-11T09:13+07:00",
  "window_days": 3,
- "youtube_api": false,
+ "youtube_api": true,
  "sources": [
   {
    "source": "Starter Story",
    "ok": true,
-   "via": "youtube-rss",
-   "new": 4
+   "via": "youtube-api",
+   "new": 3
   },
   {
    "source": "Starter Story Build",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 0
   },
   {
    "source": "Lenny's Podcast",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 1
   },
   {
    "source": "The Skip (Nikhyl Singhal)",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 0
   },
   {
    "source": "YC Root Access",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 1
   },
   {
    "source": "Aakash Gupta (Product Growth)",
    "ok": true,
-   "via": "youtube-rss",
-   "new": 2
+   "via": "youtube-api",
+   "new": 3
   },
   {
    "source": "Y Combinator",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 1
   },
   {
    "source": "Naval",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 0
   },
   {
    "source": "Every",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 3
   },
   {
    "source": "Vietnam Innovators Digest",
    "ok": true,
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "new": 2
   },
   {
    "source": "Lenny's Newsletter",
    "ok": true,
    "via": "rss",
-   "new": 4
+   "new": 3
   },
   {
    "source": "Simon Willison",
    "ok": true,
    "via": "rss",
-   "new": 10
+   "new": 9
   },
   {
    "source": "Every",
@@ -97,7 +97,7 @@
    "source": "Aakash Gupta newsletter",
    "ok": true,
    "via": "rss",
-   "new": 0
+   "new": 1
   },
   {
    "source": "Stratechery (Ben Thompson)",
@@ -113,9 +113,8 @@
   },
   {
    "source": "John Cutler",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "SVPG (Marty Cagan)",
@@ -125,15 +124,13 @@
   },
   {
    "source": "Andrew Chen",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "April Dunford",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Jason Cohen",
@@ -143,9 +140,8 @@
   },
   {
    "source": "Gibson Biddle",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Brian Balfour",
@@ -163,7 +159,7 @@
    "source": "Hello China Tech",
    "ok": true,
    "via": "rss",
-   "new": 3
+   "new": 2
   },
   {
    "source": "Y Combinator blog",
@@ -187,7 +183,7 @@
    "source": "OpenAI news",
    "ok": true,
    "via": "rss",
-   "new": 8
+   "new": 9
   },
   {
    "source": "Google AI blog",
@@ -199,7 +195,7 @@
    "source": "Product Hunt",
    "ok": true,
    "via": "rss",
-   "new": 28
+   "new": 27
   },
   {
    "source": "Anthropic news",
@@ -210,10 +206,41 @@
    "source": "Hacker News front page",
    "ok": true,
    "via": "rss",
-   "new": 28
+   "new": 29
   }
  ],
  "items": [
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Gilbert + Tobin rethinks the business of law with AI",
+   "url": "https://openai.com/index/gilbert-tobin-sam-nickless",
+   "published": "2026-11-12",
+   "summary": "A conversation with Sam Nickless, Partner and Chief Executive Officer at Gilbert + Tobin."
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "Can SaaS survive the AI era?",
+   "url": "https://www.youtube.com/watch?v=vPBUYcJIk1c",
+   "published": "2026-11-11",
+   "summary": "Linda Tong is the CEO of Webflow, one of the first companies the frontier labs went after once ChatGPT and Claude could build websites. She walks through how Webflow competes with them and how she'd judge which SaaS companies survive AI. She also answers for Webflow's $4 billion valuation, then shows how her PMs build and how Webflow hires them. Full Writeup: https://www.news.aakashg.com/p/can-saas-survive-the-ai-era Transcript: https://www.aakashg.com/can-saas-survive-the-ai-era-webflow-ceo-linda-tong/ Timestamps 0:00 - Intro 2:02 - How Webflow competes with ChatGPT and Claude site builders 9:24 - Ads 12:27 - Why Webflow chose to build for marketing teams 19:48 - Which SaaS companies will survive AI 26:10 - Are 2x to 3x SaaS multiples justified? 29:24 - Salesforce going headless and the MapQuest analogy 33:50 - Webflow's $4B valuation and its agentic marketing bet 41:28 - Did Webflow's growth slow, and will it raise again? 45:16 - How Webflow's PMs build now, starting with a PR 55:29 - Why product teams are now half a pizza 57:53 - Why Webflow doesn't hire AI PMs, and how to keep up with AI 1:02:48 - Inside Webflow's PM interview and its final working session 🏆 Thanks to our spons..."
+  },
   {
    "source": "Simon Willison",
    "type": "rss",
@@ -253,8 +280,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Toyota brand Scion is back and it's going to sell a kei truck in America",
-   "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
+   "title": "After 7 months, Glasswing overwelms maintainers with underwhelming findings",
+   "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
    "published": "2026-11-11",
    "summary": "Comments"
   },
@@ -268,8 +295,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "After 7 Months, Glasswing Overwelms Maintainers with Underwhelming Findings",
-   "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
+   "title": "Scion is back and is going to sell a kei truck in America",
+   "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
    "published": "2026-11-11",
    "summary": "Comments"
   },
@@ -313,8 +340,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Val Town is winding down",
-   "url": "https://blog.val.town/winding-down",
+   "title": "Starlink Mini 2",
+   "url": "https://starlink.com/mini-2",
    "published": "2026-11-11",
    "summary": "Comments"
   },
@@ -328,8 +355,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Sherman Anti-Trust Act (1890)",
-   "url": "https://www.archives.gov/milestone-documents/sherman-anti-trust-act",
+   "title": "Val Town is winding down",
+   "url": "https://blog.val.town/winding-down",
    "published": "2026-11-11",
    "summary": "Comments"
   },
@@ -358,8 +385,23 @@
     "ai"
    ],
    "via": "rss",
-   "title": "rVPN – stealth VPN with end-to-end encryption",
-   "url": "https://rvpn.org/",
+   "title": "The DRAM interface and the PHY (why a DDR3+ interface must be tuned at boot)",
+   "url": "https://github.com/enjoy-digital/litedram/blob/master/doc/manual/03_dram_interface.md",
+   "published": "2026-11-11",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "A great old-timey game-programming hack (2013)",
+   "url": "https://blog.moertel.com/posts/2013-12-14-great-old-timey-game-programming-hack.html",
    "published": "2026-11-11",
    "summary": "Comments"
   },
@@ -403,6 +445,21 @@
     "ai"
    ],
    "via": "rss",
+   "title": "$30M Raised to Redo the CPU",
+   "url": "https://tendrils.co/blog/2026-11-10/30m-raised",
+   "published": "2026-11-11",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
    "title": "A comprehensive study of how fingerprintable users are",
    "url": "https://fingerprinting.study/",
    "published": "2026-11-11",
@@ -418,8 +475,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "An Open Field Guide to Inference Engineering",
-   "url": "https://docs.modelplane.ai/guides/inference-guide",
+   "title": "AI is an information gateway. Audiences still don't want it making their news",
+   "url": "https://www.niemanlab.org/2026/11/ai-is-becoming-an-information-gateway-audiences-still-dont-want-it-making-their-news/",
    "published": "2026-11-11",
    "summary": "Comments"
   },
@@ -433,8 +490,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Apple has new Mac app coming to make running local AI models easy",
-   "url": "https://9to5mac.com/2026/11/10/apple-has-new-mac-app-coming-to-make-running-local-ai-models-easy/",
+   "title": "Sherman Anti-Trust Act (1890)",
+   "url": "https://www.archives.gov/milestone-documents/sherman-anti-trust-act",
    "published": "2026-11-11",
    "summary": "Comments"
   },
@@ -448,8 +505,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Claude Whiteboards, Claude Sheets, and Claude Data",
-   "url": "https://claude.com/resources/articles/sheets-whiteboards-data",
+   "title": "Research taste in history: the importance of learning Babylonian math",
+   "url": "https://resobscura.substack.com/p/research-taste-in-history-the-importance",
    "published": "2026-11-11",
    "summary": "Comments"
   },
@@ -463,11 +520,26 @@
     "founders",
     "case-studies"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "$30M founder reveals the ideas he’d bet on again if he had to start over 🤯",
-   "url": "https://www.youtube.com/shorts/6_TYneN_OkQ",
+   "url": "https://www.youtube.com/watch?v=6_TYneN_OkQ",
    "published": "2026-11-11",
    "summary": "$30M SaaS founder reveals 3 biz ideas with massive potential 🤯 Will doesn’t chase “new ideas.” He studies what’s already working… then adds a unique twist no one else thought of. It’s all about: Spotting gaps competitors ignore Making it ridiculously easy for customers to say yes Executing better and faster than anyone else Most people overcomplicate. He keeps it simple… and profitable."
+  },
+  {
+   "source": "Aakash Gupta newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "product",
+    "ai-pm"
+   ],
+   "via": "rss",
+   "title": "How to Survive AI as a SaaS Company",
+   "url": "https://www.news.aakashg.com/p/can-saas-survive-the-ai-era",
+   "published": "2026-11-11",
+   "summary": "Webflow CEO Linda Tong on the three bets keeping SaaS alive in the AI era, with market data on which software investors still reward."
   },
   {
    "source": "Aakash Gupta (Product Growth)",
@@ -480,26 +552,11 @@
     "ai-pm",
     "career"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Antarctica's biggest land animal is a midge",
-   "url": "https://www.youtube.com/shorts/EvQVi3dBgeA",
+   "url": "https://www.youtube.com/watch?v=EvQVi3dBgeA",
    "published": "2026-11-10",
    "summary": "Antarctica's biggest land animal is smaller than a grain of rice. It is a wingless midge, Belgica antarctica, at most 6 millimeters long. Larvae winter at minus 2 to minus 10 Celsius, dry out by up to about 70 percent of their body water, then freeze solid and survive down to around minus 20. Idea from Cleo Abram's Antarctica Short. Photos: Igor Gvozdovskyy and Julien Renoult (CC BY 4.0). Footage: NASA."
-  },
-  {
-   "source": "Lenny's Newsletter",
-   "type": "rss",
-   "role": "people",
-   "priority": 1,
-   "tags": [
-    "product",
-    "growth"
-   ],
-   "via": "rss",
-   "title": "State of the tech job market: late 2026",
-   "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
-   "published": "2026-11-10",
-   "summary": "PMs are winning, engineers are plateauing, designers are hurting, and the biggest AI hiring boom isn’t in software"
   },
   {
    "source": "Simon Willison",
@@ -683,122 +740,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Obsiva",
-   "url": "https://www.producthunt.com/products/obsiva",
-   "published": "2026-11-10",
-   "summary": "Turn site pics + voice notes into a PDF inspection report Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Tokens by UI Colors",
-   "url": "https://www.producthunt.com/products/tokens-by-ui-colors",
-   "published": "2026-11-10",
-   "summary": "Build your product’s visual language with design tokens Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Seldon",
-   "url": "https://www.producthunt.com/products/seldon",
-   "published": "2026-11-10",
-   "summary": "Behavioral QA agents that use your product like customers do Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "ZUS",
-   "url": "https://www.producthunt.com/products/zus-2",
-   "published": "2026-11-10",
-   "summary": "AI-native IDE: agents code with human review Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Ember",
-   "url": "https://www.producthunt.com/products/ember-117",
-   "published": "2026-11-10",
-   "summary": "Free, open-source Slack you host on Cloudflare in one click Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "MoreFrame",
-   "url": "https://www.producthunt.com/products/moreframe",
-   "published": "2026-11-10",
-   "summary": "Dual-screen recording and editing for Mac and Windows Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Inspo by Context.dev",
-   "url": "https://www.producthunt.com/products/context-dev",
-   "published": "2026-11-10",
-   "summary": "Real website inspiration for your coding agent Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
    "title": "MuJoCo 4",
    "url": "https://www.producthunt.com/products/google",
    "published": "2026-11-10",
    "summary": "A physics engine for robots with its own studio Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "AppuBot",
-   "url": "https://www.producthunt.com/products/appubot",
-   "published": "2026-11-10",
-   "summary": "Grok Bot alternative that runs on your AI, completely free Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -823,24 +768,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "openring",
-   "url": "https://www.producthunt.com/products/openring",
+   "title": "Inspo by Context.dev",
+   "url": "https://www.producthunt.com/products/context-dev",
    "published": "2026-11-10",
-   "summary": "Open-source voice AI agents with no platform fee Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Dover Startup Jobs",
-   "url": "https://www.producthunt.com/products/dover",
-   "published": "2026-11-10",
-   "summary": "Where great startups meet great candidates Discussion | Link"
+   "summary": "Real website inspiration for your coding agent Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -865,10 +796,150 @@
     "launches"
    ],
    "via": "rss",
+   "title": "MoreFrame",
+   "url": "https://www.producthunt.com/products/moreframe",
+   "published": "2026-11-10",
+   "summary": "Dual-screen recording and editing for Mac and Windows Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "openring",
+   "url": "https://www.producthunt.com/products/openring",
+   "published": "2026-11-10",
+   "summary": "Open-source voice AI agents with no platform fee Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "ZUS",
+   "url": "https://www.producthunt.com/products/zus-2",
+   "published": "2026-11-10",
+   "summary": "AI-native IDE: agents code with human review Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
    "title": "Kumiko",
    "url": "https://www.producthunt.com/products/kumiko-2",
    "published": "2026-11-10",
    "summary": "AI window manager for ultrawide and big-screen Macs Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Seldon",
+   "url": "https://www.producthunt.com/products/seldon",
+   "published": "2026-11-10",
+   "summary": "Behavioral QA agents that use your product like customers do Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "AppuBot",
+   "url": "https://www.producthunt.com/products/appubot",
+   "published": "2026-11-10",
+   "summary": "Grok Bot alternative that runs on your AI, completely free Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Tokens by UI Colors",
+   "url": "https://www.producthunt.com/products/tokens-by-ui-colors",
+   "published": "2026-11-10",
+   "summary": "Build your product’s visual language with design tokens Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Obsiva",
+   "url": "https://www.producthunt.com/products/obsiva",
+   "published": "2026-11-10",
+   "summary": "Turn site pics + voice notes into a PDF inspection report Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Dover Startup Jobs",
+   "url": "https://www.producthunt.com/products/dover",
+   "published": "2026-11-10",
+   "summary": "Where great startups meet great candidates Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Ember",
+   "url": "https://www.producthunt.com/products/ember-117",
+   "published": "2026-11-10",
+   "summary": "Free, open-source Slack you host on Cloudflare in one click Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Willder",
+   "url": "https://www.producthunt.com/products/willder-with-will-wield-the-wilder",
+   "published": "2026-11-10",
+   "summary": "The context layer that syncs your apps, agents and teams Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -911,20 +982,6 @@
    "url": "https://www.producthunt.com/products/almanzor",
    "published": "2026-11-10",
    "summary": "Ask AI + MCP server for your docs, with cited answers Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Willder",
-   "url": "https://www.producthunt.com/products/willder-with-will-wield-the-wilder",
-   "published": "2026-11-10",
-   "summary": "The context layer that syncs your apps, agents and teams Discussion | Link"
   },
   {
    "source": "Hacker News front page",
@@ -981,8 +1038,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Ableton Live 13",
-   "url": "https://www.ableton.com/en/live/",
+   "title": "Ergodic Literature",
+   "url": "https://en.wikipedia.org/wiki/Ergodic_literature",
    "published": "2026-11-10",
    "summary": "Comments"
   },
@@ -1011,38 +1068,23 @@
     "ai"
    ],
    "via": "rss",
+   "title": "Ableton Live 13",
+   "url": "https://www.ableton.com/en/live/",
+   "published": "2026-11-10",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
    "title": "Show HN: Valencia, Spain in Sim City/Isometric View",
    "url": "https://tinyvalencia.com/",
-   "published": "2026-11-10",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Blender 5.3 released with Gaussian Splat support",
-   "url": "https://www.blender.org/download/releases/5-3/",
-   "published": "2026-11-10",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "What's new in the .NET 11 runtime",
-   "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
    "published": "2026-11-10",
    "summary": "Comments"
   },
@@ -1071,8 +1113,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "What constant surveillance is doing to children and parents",
-   "url": "https://www.theatlantic.com/magazine/2026/12/location-tracking-apps-parental-surveillance/689031/",
+   "title": "Show HN: Aircad – Professional drafting and 3D modeling in the browser",
+   "url": "https://aircad.com",
    "published": "2026-11-10",
    "summary": "Comments"
   },
@@ -1086,8 +1128,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "M John Harrison becomes first science fiction author to win the Booker",
-   "url": "https://www.theguardian.com/books/2026/nov/09/m-john-harrison-the-end-of-everything-wins-2026-booker-prize",
+   "title": "What's new in the .NET 11 runtime",
+   "url": "https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime",
    "published": "2026-11-10",
    "summary": "Comments"
   },
@@ -1101,8 +1143,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Queens Public Library under ransomware attack",
-   "url": "https://connect.queenslibrary.org/",
+   "title": "Blender 5.3 released with Gaussian Splat support",
+   "url": "https://www.blender.org/download/releases/5-3/",
    "published": "2026-11-10",
    "summary": "Comments"
   },
@@ -1116,9 +1158,9 @@
     "founders",
     "case-studies"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Bro built a $25K/month app that teaches you languages with songs 🤯",
-   "url": "https://www.youtube.com/shorts/u-99UMy0FSg",
+   "url": "https://www.youtube.com/watch?v=u-99UMy0FSg",
    "published": "2026-11-10",
    "summary": "Bro built a $25K/month app without writing a single line of code. Meet Ben. He built Canary, an app where you learn a language with songs you love, train with AI, and practice with people. He launched it 9 months ago. It was his first app, and he had never coded a single line in his life."
   },
@@ -1132,11 +1174,11 @@
     "founders",
     "ai"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "How Solve Intelligence Is Building the Future of AI Patent Law",
    "url": "https://www.youtube.com/watch?v=27H7XzGx8F8",
    "published": "2026-11-10",
-   "summary": "Solve Intelligence (S23) builds AI software for patent attorneys. More than 700 IP teams use it, including firms like Perkins Coie and DLA Piper and in-house teams at Intel and Siemens. At YC x London, co-founders Chris, Angus, and Sanj sat down with YC Managing Partner Diana Hu to talk about applying to YC with an idea that was two weeks old, reaching millions in revenue with no salesperson and no sales background, and how AI is changing the future of law. Chapters: 00:00 - A two-week-old idea 02:39 - What were your chances of getting into YC? 04:27 - Leaving a quant job 06:55 - Why patents? ..."
+   "summary": "Solve Intelligence (S23) builds AI software for patent attorneys. More than 700 IP teams use it, including firms like Perkins Coie and DLA Piper and in-house teams at Intel and Siemens. At YC x London, co-founders Chris, Angus, and Sanj sat down with YC Managing Partner Diana Hu to talk about applying to YC with an idea that was two weeks old, reaching millions in revenue with no salesperson and no sales background, and how AI is changing the future of law. Chapters: 00:00 - A two-week-old idea 02:39 - What were your chances of getting into YC? 04:27 - Leaving a quant job 06:55 - Why patents? 08:48 - What San Francisco changed 10:54 - Millions in revenue with no salespeople 12:57 - Why not just use ChatGPT? 15:50 - 12 people to 70 in a year 17:42 - Excited or afraid of the next model? 19:26 - Why they moved back to London 22:06 - Advice to your younger self 24:42 - Q&A: how to learn sales 26:07 - The first customer, and the refund 28:53 - Their biggest mistake 30:05 - Taking ownership at an early startup"
   },
   {
    "source": "Every",
@@ -1147,7 +1189,7 @@
     "ai-native-work",
     "ai-products"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "LIVE Vibe Check: Gemini 4 Carbon",
    "url": "https://www.youtube.com/watch?v=G8rzzawst4s",
    "published": "2026-11-10",
@@ -1162,7 +1204,7 @@
     "ai-native-work",
     "ai-products"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Fable 5.2 Vibe Check",
    "url": "https://www.youtube.com/watch?v=VkvCrIc3jfU",
    "published": "2026-11-10",
@@ -1177,7 +1219,7 @@
     "ai-native-work",
     "ai-products"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "We Tested Fable 5.2 Early. It’s a BEAST.",
    "url": "https://www.youtube.com/watch?v=GHSXnRIbLw4",
    "published": "2026-11-10",
@@ -1213,22 +1255,6 @@
    "summary": "Listen to this episode on: Spotify | Apple Podcasts In one of their most philosophical episodes yet, Petra Wille and Teresa Torres turn product thinking on the discovery practice itself. If you treat the continuous discovery habits as a product — and the organizations that buy training as the customer —"
   },
   {
-   "source": "Hello China Tech",
-   "type": "rss",
-   "role": "people",
-   "priority": 2,
-   "tags": [
-    "china",
-    "ai",
-    "consumer-tech"
-   ],
-   "via": "rss",
-   "title": "How to Read China’s AI App Numbers",
-   "url": "https://hellochinatech.com/p/china-ai-app-rankings",
-   "published": "2026-11-10",
-   "summary": "Qwen is second among China’s standalone AI apps by monthly users, DeepSeek by total sessions, and five checks explain the gap."
-  },
-  {
    "source": "Linear blog (Karri Saarinen)",
    "type": "rss",
    "role": "people",
@@ -1253,9 +1279,9 @@
     "ai-pm",
     "career"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "How to make faceless reels with Claude Code, in five steps",
-   "url": "https://www.youtube.com/shorts/I2I2GFc0g-k",
+   "url": "https://www.youtube.com/watch?v=I2I2GFc0g-k",
    "published": "2026-11-09",
    "summary": "How to make faceless reels with Claude Code, in five steps. One. Open my reel skill in Claude Code. Two. Tell it the topic and the reel you want to copy. Three. Give it one source file, because every number on screen has to be in it. Four. Let it work. It writes the script, records the voiceover, builds every scene, adds the captions, and checks each number against the source before I see it. Five. I watch it once, then post it. Then I make the next one. Idea: @adilet.fndr #shorts #claudecode #reels"
   },
@@ -1385,10 +1411,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Lottie AI",
-   "url": "https://www.producthunt.com/products/lottiefiles",
+   "title": "CollaboTokyo",
+   "url": "https://www.producthunt.com/products/collabotokyo",
    "published": "2026-11-09",
-   "summary": "Editable vector animations from a text prompt Discussion | Link"
+   "summary": "Explore a virtual Tokyo to network, market, and collaborate Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1403,6 +1429,20 @@
    "url": "https://www.producthunt.com/products/wipecraft",
    "published": "2026-11-09",
    "summary": "Mac System Data cleaner with on-device AI mode Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "LotusQ",
+   "url": "https://www.producthunt.com/products/lotusq",
+   "published": "2026-11-09",
+   "summary": "Talk instead of type, in any app Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1441,24 +1481,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "CollaboTokyo",
-   "url": "https://www.producthunt.com/products/collabotokyo",
+   "title": "Lottie AI",
+   "url": "https://www.producthunt.com/products/lottiefiles",
    "published": "2026-11-09",
-   "summary": "Explore a virtual Tokyo to network, market, and collaborate Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "LotusQ",
-   "url": "https://www.producthunt.com/products/lotusq",
-   "published": "2026-11-09",
-   "summary": "Talk instead of type, in any app Discussion | Link"
+   "summary": "Editable vector animations from a text prompt Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1498,25 +1524,9 @@
     "founders",
     "case-studies"
    ],
-   "via": "youtube-rss",
-   "title": "How I Made $1M Building 30 Micro-Apps",
-   "url": "https://www.youtube.com/watch?v=X2T92MVx7xs",
-   "published": "2026-11-09",
-   "summary": "Over the past few years, Sanskar has built over 30 products and he just hit $1 million in revenue. In this episode, he shares his exact process for finding product ideas, the marketing strategies that helped him generate $1M, and how he does it all by himself. This is a masterclass in how to build a portfolio of tiny bets! *Side project ideas you can build with your 9-5:* https://clickhubspot.com/83ig Say hi to Sanskar: https://www.instagram.com/sanskarr.tiwari/ & https://twitter.com/IndianAppGuy Check out his projects: https://www.sanskartiwari.io/ 🔔 Follow the Second Channel: @StarterStoryBu..."
-  },
-  {
-   "source": "Starter Story",
-   "type": "youtube",
-   "role": "people",
-   "priority": 2,
-   "tags": [
-    "indie-business",
-    "founders",
-    "case-studies"
-   ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Founder of the $400K/month Brainrot app reveals his entire tech stack 🤯",
-   "url": "https://www.youtube.com/shorts/lOCkO1THhH4",
+   "url": "https://www.youtube.com/watch?v=lOCkO1THhH4",
    "published": "2026-11-09",
    "summary": "Yoni launched Brainrot in summer 2025. It’s a gamified screen time app with a digital pet brain that rots the more you scroll. It has gone from about $10K/month to about $400K/month, with a couple million downloads."
   },
@@ -1562,9 +1572,9 @@
     "career",
     "ai-products"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Why 0 Followers Are Better Than 100k Followers",
-   "url": "https://www.youtube.com/shorts/3rueWsTpuq0",
+   "url": "https://www.youtube.com/watch?v=3rueWsTpuq0",
    "published": "2026-11-08",
    "summary": "Why 0 Followers Are Better Than 100k Followers"
   },
@@ -1578,11 +1588,11 @@
     "startup-school",
     "ai"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Is AI Now Good Enough To Cure Cancer? | YC Paper Club",
    "url": "https://www.youtube.com/watch?v=-XL2gClQ2gg",
    "published": "2026-11-08",
-   "summary": "This week’s Paper Club is all about AI for biology. The cost of sequencing has collapsed, which means biology now generates more data than anyone can mine, and the models are finally catching up. We cover how falling sequencing costs are turning cancer care into a per-patient data problem, what it takes to model a cell rather than a molecule, what a language model trained on DNA actually learns, and why in-context learning showed up in a genome model that nobody trained for it. Chapters: 00:00 - Is the Turing test solved? A live experiment 03:22 - Why now is the best time for AI Bio 08:26 - Al..."
+   "summary": "This week’s Paper Club is all about AI for biology. The cost of sequencing has collapsed, which means biology now generates more data than anyone can mine, and the models are finally catching up. We cover how falling sequencing costs are turning cancer care into a per-patient data problem, what it takes to model a cell rather than a molecule, what a language model trained on DNA actually learns, and why in-context learning showed up in a genome model that nobody trained for it. Chapters: 00:00 - Is the Turing test solved? A live experiment 03:22 - Why now is the best time for AI Bio 08:26 - Alfredo Gonzalez: cancer as a data problem 29:50 - Yusuf Roohani: virtual cells and autonomous research 51:47 - Garyk Brixi: what a model learns from DNA 1:09:57 - Divya Nori: few-shot prompting for biological design Apply to Y Combinator: https://www.ycombinator.com/apply Work at a startup: https://www.ycombinator.com/jobs"
   },
   {
    "source": "Lenny's Newsletter",
@@ -1600,21 +1610,6 @@
    "summary": "Listen now (59 mins) | Tulsee Doshi on building Google’s frontier models, why evals and vibes both matter, and her 60-20-20 framework for shipping ahead of the curve"
   },
   {
-   "source": "Simon Willison",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "ai-engineering",
-    "agents"
-   ],
-   "via": "rss",
-   "title": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages",
-   "url": "https://simonwillison.net/2026/Nov/7/link-rel-next/",
-   "published": "2026-11-08",
-   "summary": "datasette #3046: Don't serve link: rel=next HTTP headers to Firefox for HTML pages I was looking at the Firefox network panel today when I noticed that requests to a Datasette table page were triggering an HTTP prefetch to the next page of rows in that table. This was happening because Datasette pages serve an HTTP link header like this: link: <https://latest.datasette.io/fixtures/compound_three_primary_keys?_next=a%2Cd%2Cv>; rel=\"next\" This is bad. A tiny fraction of the visitors to one of those pages will click the \"next\" link, which means for everyone else their browser is fetching unnecess..."
-  },
-  {
    "source": "Product Hunt",
    "type": "rss",
    "role": "frontier",
@@ -1629,20 +1624,6 @@
    "summary": "Read PDFs and EPUBs on iPhone Duo Discussion | Link"
   },
   {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Coffee",
-   "url": "https://www.producthunt.com/products/coffee-9",
-   "published": "2026-11-08",
-   "summary": "A quiet Markdown editor for Mac, with sums in your notes Discussion | Link"
-  },
-  {
    "source": "Hacker News front page",
    "type": "rss",
    "role": "frontier",
@@ -1652,8 +1633,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Stable URLs for 42,000 Huts and Peaks",
-   "url": "https://peter-hoffmann.com/2026/stable-urls-for-huts-and-peaks.html",
+   "title": "Pinot Noir: inside the criminal gangs making fake wine",
+   "url": "https://www.economist.com/interactive/2026/11/06/pinot-noir-inside-the-criminal-gangs-making-fake-wine",
    "published": "2026-11-08",
    "summary": "Comments"
   },
@@ -1667,8 +1648,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "NetBSD 11 desktop on a Raspberry Pi 4",
-   "url": "https://neongd.com/articles/netbsd11-rpi4.gmi",
+   "title": "Simon Winchester has died",
+   "url": "https://www.nytimes.com/2026/11/04/obituaries/simon-winchester-dead.html",
    "published": "2026-11-08",
    "summary": "Comments"
   },
@@ -1682,11 +1663,11 @@
     "startups",
     "sea"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Biết nhiều nghề hay giỏi một nghề?",
-   "url": "https://www.youtube.com/shorts/F5ntQ0pRfkE",
+   "url": "https://www.youtube.com/watch?v=F5ntQ0pRfkE",
    "published": "2026-11-08",
-   "summary": "[English below] Trong một môi trường biến động liên tục, sự nhạy bén của một người đa nhiệm hay chiều sâu của một chuyên gia sẽ làm nên sự bền bỉ cho hành trình sự nghiệp? Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - In a rapidly shifting landscape, does long-term resilience belong to the versatile adaptability of the generalist, or the concentrated depth of the specialist? Watch more from EP414 of Vietnam Innovators (English Edition) featuring An Truon..."
+   "summary": "[English below] Trong một môi trường biến động liên tục, sự nhạy bén của một người đa nhiệm hay chiều sâu của một chuyên gia sẽ làm nên sự bền bỉ cho hành trình sự nghiệp? Xem phiên bản đầy đủ tập 414 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn câu chuyện của An Trương. - In a rapidly shifting landscape, does long-term resilience belong to the versatile adaptability of the generalist, or the concentrated depth of the specialist? Watch more from EP414 of Vietnam Innovators (English Edition) featuring An Truong available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts channels."
   },
   {
    "source": "Vietnam Innovators Digest",
@@ -1698,11 +1679,11 @@
     "startups",
     "sea"
    ],
-   "via": "youtube-rss",
+   "via": "youtube-api",
    "title": "Kịch bản kém khả quan nhất cho kinh tế Việt Nam",
-   "url": "https://www.youtube.com/shorts/xDDIuaZuk0w",
+   "url": "https://www.youtube.com/watch?v=xDDIuaZuk0w",
    "published": "2026-11-08",
-   "summary": "[English below] Trong kịch bản xấu nhất, khi hạ tầng chậm tiến độ và dòng vốn ngoại trễ nhịp, liệu nền kinh tế Việt Nam có nguy cơ rơi vào suy thoái sâu hay vẫn giữ được một \"vùng đệm an toàn\" vững chắc? Xem phiên bản đầy đủ tập 415 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông Michael Kokalari - Chief Economist tại VinaCapital. - In the worst-case scenario, even if infrastructure projects are delayed and foreign capital arrives later than anticipated, is Vietnam’s economy at risk of a deep cont..."
+   "summary": "[English below] Trong kịch bản xấu nhất, khi hạ tầng chậm tiến độ và dòng vốn ngoại trễ nhịp, liệu nền kinh tế Việt Nam có nguy cơ rơi vào suy thoái sâu hay vẫn giữ được một \"vùng đệm an toàn\" vững chắc? Xem phiên bản đầy đủ tập 415 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông Michael Kokalari - Chief Economist tại VinaCapital. - In the worst-case scenario, even if infrastructure projects are delayed and foreign capital arrives later than anticipated, is Vietnam’s economy at risk of a deep contraction, or does a strong safety buffer remain? Watch more from EP415 of Vietnam Innovators (English Edition) featuring Mr. Michael Kokalari, available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts channels."
   },
   {
    "source": "Hello China Tech",
