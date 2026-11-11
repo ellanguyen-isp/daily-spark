@@ -1,44 +1,36 @@
 {
  "type": "daily",
- "date": "2026-11-11",
- "edition": "009",
+ "date": "2026-11-12",
+ "edition": "010",
  "summary": {
-  "en": "Being found, being honest, being trusted: ChatGPT lets businesses claim their own profile, Gemini 4 Carbon opens with fewer unsupported claims but more made-up facts, and Oura pays $625M for AI with doctors behind it.",
-  "vi": "Được tìm thấy, được trung thực, được tin: ChatGPT cho doanh nghiệp nhận hồ sơ của mình, Gemini 4 Carbon mở ra với ít khẳng định thiếu căn cứ hơn nhưng bịa thông tin nhiều hơn, và Oura trả 625 triệu USD cho AI có bác sĩ đứng sau."
+  "en": "Who gets to decide: Google sells an AI that picks from fixed options and says how sure it is, United blocks AI agents from booking for travelers, and Webflow's CEO bets on the work AI is bad at.",
+  "vi": "Ai được quyết định: Google bán một AI chọn trong các phương án cố định và cho biết nó chắc đến đâu, United chặn AI agent đặt vé thay hành khách, và CEO Webflow đặt cược vào phần việc AI làm kém."
  },
  "big": {
-  "en": "Three moves today are about trust, not raw power. ChatGPT now lets businesses claim a profile and run their own agent inside its answers, so how an assistant describes your product is becoming something you manage, organic and paid. Gemini 4 Carbon opened to developers and shows why one quality score is not enough: Google says unsupported claims fell by about half, while an independent test found made-up answers rose from 4% to 11%. And in consumer health, Oura is paying $625M to put doctors behind its AI advice.",
-  "vi": "Ba chuyển động hôm nay xoay quanh niềm tin, không phải sức mạnh thuần túy. ChatGPT giờ cho doanh nghiệp nhận hồ sơ và chạy agent riêng ngay trong câu trả lời, nên cách một trợ lý mô tả sản phẩm của bạn đang trở thành thứ bạn phải quản lý, cả miễn phí lẫn trả tiền. Gemini 4 Carbon mở cho lập trình viên và cho thấy vì sao một điểm chất lượng là không đủ: Google nói khẳng định thiếu căn cứ giảm khoảng một nửa, trong khi một bài test độc lập thấy tỷ lệ bịa câu trả lời tăng từ 4% lên 11%. Còn ở mảng sức khỏe tiêu dùng, Oura trả 625 triệu USD để đặt bác sĩ phía sau lời khuyên của AI."
+  "en": "A quieter news day, so two smaller but real stories, and they share one question: who decides. Google's new Decisions API turns a model into a fast judge that chooses from your list and tells you how sure it is, so code can hand the unsure cases to a person. United goes the other way and says outside AI agents may not book or act for its travelers at all. For product people, the design work is now deciding where the model decides, where the user decides, and which outside agents you let in.",
+  "vi": "Hôm nay ít tin lớn, nên đây là hai tin nhỏ hơn nhưng có thật, và cùng chung một câu hỏi: ai là người quyết định. Decisions API mới của Google biến model thành một người chấm nhanh, chọn trong danh sách của bạn và cho biết nó chắc đến đâu, để code chuyển các trường hợp chưa chắc cho con người. United đi theo hướng ngược lại và tuyên bố AI agent bên ngoài không được đặt vé hay làm thay hành khách. Với người làm sản phẩm, việc thiết kế giờ là quyết định chỗ nào model quyết, chỗ nào người dùng quyết, và agent bên ngoài nào được phép vào."
  },
  "headlines": [
   {
    "t": {
-    "en": "ChatGPT lets businesses claim their profile and put their own agent in front of shoppers",
-    "vi": "ChatGPT cho doanh nghiệp nhận hồ sơ và đặt agent riêng trước mặt người mua"
+    "en": "Google's Decisions API: an AI that picks from your options and says how sure it is",
+    "vi": "Decisions API của Google: AI chọn trong các phương án của bạn và cho biết nó chắc đến đâu"
    },
-   "src": "investing.com (Reuters)",
-   "url": "https://www.investing.com/news/stock-market-news/openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-ecommerce-firms-5016475"
+   "src": "blog.google",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
   },
   {
    "t": {
-    "en": "Gemini 4 Carbon opens to developers, with fewer unsupported claims but more made-up facts",
-    "vi": "Gemini 4 Carbon mở cho lập trình viên, ít khẳng định thiếu căn cứ hơn nhưng bịa thông tin nhiều hơn"
+    "en": "United Airlines bans AI agents from booking flights for travelers",
+    "vi": "United Airlines cấm AI agent đặt vé máy bay thay hành khách"
    },
-   "src": "superpowerdaily.com",
-   "url": "https://superpowerdaily.com/posts/google-opens-gemini-4-carbon-to-developers-with-api-prices-set-to-double-in-december"
-  },
-  {
-   "t": {
-    "en": "Oura buys an AI-plus-doctors care startup for $625M",
-    "vi": "Oura mua một startup chăm sóc sức khỏe kết hợp AI và bác sĩ với giá 625 triệu USD"
-   },
-   "src": "techcrunch.com",
-   "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/"
+   "src": "cbsnews.com",
+   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
   }
  ],
  "question": {
-  "en": "If a user asked an assistant about the product you work on today, what would it say? What would you want it to say?",
-  "vi": "Nếu một người dùng hỏi trợ lý AI về sản phẩm bạn đang làm, nó sẽ nói gì? Bạn muốn nó nói gì?"
+  "en": "Which decision in a feature you work on is really a choice from a fixed list? How sure should the system be before it acts alone?",
+  "vi": "Quyết định nào trong một tính năng bạn đang làm thật ra là chọn từ một danh sách cố định? Hệ thống cần chắc đến đâu trước khi tự hành động?"
  },
  "exercises": [
   {
@@ -49,8 +41,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "See how AI assistants describe a product you work on",
-    "vi": "Xem các trợ lý AI mô tả sản phẩm bạn đang làm thế nào"
+    "en": "Find the hidden choices inside one AI feature",
+    "vi": "Tìm những lựa chọn ẩn bên trong một tính năng AI"
    }
   },
   {
@@ -61,8 +53,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Draft a short post: \"Users, use or revenue: which number are you celebrating?\"",
-    "vi": "Viết nháp một bài ngắn: \"Người dùng, mức dùng hay doanh thu: bạn đang ăn mừng con số nào?\""
+    "en": "Write a short post: \"The best feature of an AI tutor is a refusal\"",
+    "vi": "Viết một bài ngắn: \"Tính năng hay nhất của một gia sư AI là một lời từ chối\""
    }
   },
   {
@@ -73,82 +65,70 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Put one real buy button on the internet for a small idea",
-    "vi": "Đặt một nút mua thật lên internet cho một ý tưởng nhỏ"
+    "en": "Build a tiny router that says how sure it is",
+    "vi": "Xây một bộ điều hướng nhỏ biết nói nó chắc đến đâu"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "ChatGPT lets businesses claim their profile and put their own agent in front of shoppers",
-    "vi": "ChatGPT cho doanh nghiệp nhận hồ sơ và đặt agent riêng trước mặt người mua"
+    "en": "Google's Decisions API: an AI that picks from your options and says how sure it is",
+    "vi": "Decisions API của Google: AI chọn trong các phương án của bạn và cho biết nó chắc đến đâu"
    },
-   "src": "investing.com (Reuters)",
-   "url": "https://www.investing.com/news/stock-market-news/openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-ecommerce-firms-5016475",
-   "date": "2026-11-10",
-   "tag": "Platform",
+   "src": "blog.google",
+   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "date": "2026-11-11",
+   "tag": "API",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Gemini 4 Carbon opens to developers, with fewer unsupported claims but more made-up facts",
-    "vi": "Gemini 4 Carbon mở cho lập trình viên, ít khẳng định thiếu căn cứ hơn nhưng bịa thông tin nhiều hơn"
+    "en": "United Airlines bans AI agents from booking flights for travelers",
+    "vi": "United Airlines cấm AI agent đặt vé máy bay thay hành khách"
    },
-   "src": "superpowerdaily.com",
-   "url": "https://superpowerdaily.com/posts/google-opens-gemini-4-carbon-to-developers-with-api-prices-set-to-double-in-december",
-   "date": "2026-11-10",
-   "tag": "Model",
+   "src": "cbsnews.com",
+   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+   "date": "2026-11-11",
+   "tag": "Agents",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Oura buys an AI-plus-doctors care startup for $625M",
-    "vi": "Oura mua một startup chăm sóc sức khỏe kết hợp AI và bác sĩ với giá 625 triệu USD"
-   },
-   "src": "techcrunch.com",
-   "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
-   "date": "2026-11-10",
-   "tag": "Health",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "PM openings hit a near four-year high, and \"LLM\" is now the top skill in PM job posts",
-    "vi": "Số vị trí PM mở cao nhất gần bốn năm, và \"LLM\" giờ là kỹ năng được nhắc nhiều nhất trong tin tuyển PM"
+    "en": "After a 1,000-day Duolingo streak, a founder builds the tutor he wanted, in languages he never wrote",
+    "vi": "Sau chuỗi 1.000 ngày Duolingo, một founder tự xây gia sư mình cần, bằng những ngôn ngữ anh chưa từng viết"
    },
    "src": "lennysnewsletter.com",
-   "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late",
-   "date": "2026-11-10",
+   "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
+   "date": "2026-11-09",
    "tag": "",
-   "who": "Lenny's Newsletter",
+   "who": "Lenny's Newsletter · How I AI",
    "kind": "people"
   },
   {
    "t": {
-    "en": "30+ apps, 8 that made money, about $1M in six years: one solo founder's portfolio of small bets",
-    "vi": "Hơn 30 app, 8 app có doanh thu, khoảng 1 triệu USD trong sáu năm: danh mục cược nhỏ của một founder làm một mình"
+    "en": "Webflow's CEO on surviving AI: own the work AI is bad at, and a buyer the labs won't serve",
+    "vi": "CEO Webflow về cách sống sót trước AI: nắm phần việc AI làm kém, và nhóm khách hàng mà các lab AI không phục vụ"
    },
-   "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=X2T92MVx7xs",
-   "date": "2026-11-08",
+   "src": "news.aakashg.com",
+   "url": "https://www.news.aakashg.com/p/can-saas-survive-the-ai-era",
+   "date": "2026-11-10",
    "tag": "",
-   "who": "Starter Story",
+   "who": "Aakash Gupta (Product Growth)",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Qwen is second by users, DeepSeek second by use: the ranking depends on what you count",
-    "vi": "Qwen đứng thứ hai về người dùng, DeepSeek thứ hai về mức dùng: thứ hạng tùy vào bạn đếm cái gì"
+    "en": "Teresa Torres tests her own method against the four product risks",
+    "vi": "Teresa Torres kiểm tra chính phương pháp của mình qua bốn rủi ro sản phẩm"
    },
-   "src": "hellochinatech.com",
-   "url": "https://hellochinatech.com/p/china-ai-app-rankings",
+   "src": "producttalk.org",
+   "url": "https://www.producttalk.org/discovery-the-4-risks-all-things-product-podcast-with-teresa-torres-petra-wille/",
    "date": "2026-11-10",
    "tag": "",
-   "who": "Hello China Tech (Poe Zhao)",
+   "who": "Product Talk (Teresa Torres)",
    "kind": "people"
   }
  ]

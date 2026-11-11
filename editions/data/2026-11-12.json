@@ -1,0 +1,343 @@
+{
+ "date": "2026-11-12",
+ "edition": "010",
+ "minutes": 9,
+ "summary": {
+  "en": "Who gets to decide: Google sells an AI that picks from fixed options and says how sure it is, United blocks AI agents from booking for travelers, and Webflow's CEO bets on the work AI is bad at.",
+  "vi": "Ai được quyết định: Google bán một AI chọn trong các phương án cố định và cho biết nó chắc đến đâu, United chặn AI agent đặt vé thay hành khách, và CEO Webflow đặt cược vào phần việc AI làm kém."
+ },
+ "frontier": {
+  "big": {
+   "en": "A quieter news day, so two smaller but real stories, and they share one question: who decides. Google's new Decisions API turns a model into a fast judge that chooses from your list and tells you how sure it is, so code can hand the unsure cases to a person. United goes the other way and says outside AI agents may not book or act for its travelers at all. For product people, the design work is now deciding where the model decides, where the user decides, and which outside agents you let in.",
+   "vi": "Hôm nay ít tin lớn, nên đây là hai tin nhỏ hơn nhưng có thật, và cùng chung một câu hỏi: ai là người quyết định. Decisions API mới của Google biến model thành một người chấm nhanh, chọn trong danh sách của bạn và cho biết nó chắc đến đâu, để code chuyển các trường hợp chưa chắc cho con người. United đi theo hướng ngược lại và tuyên bố AI agent bên ngoài không được đặt vé hay làm thay hành khách. Với người làm sản phẩm, việc thiết kế giờ là quyết định chỗ nào model quyết, chỗ nào người dùng quyết, và agent bên ngoài nào được phép vào."
+  },
+  "items": [
+   {
+    "date": "2026-11-11",
+    "src": "blog.google",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+    "tag": "API",
+    "t": {
+     "en": "Google's Decisions API: an AI that picks from your options and says how sure it is",
+     "vi": "Decisions API của Google: AI chọn trong các phương án của bạn và cho biết nó chắc đến đâu"
+    },
+    "stat": {
+     "v": "1,000",
+     "l": {
+      "en": "independent questions scored in one request",
+      "vi": "câu hỏi độc lập được chấm trong một lần gọi"
+     }
+    },
+    "p": {
+     "en": [
+      "Gemini Decision 1 does not write text: it scores fixed options in one pass and returns probabilities plus a 0 to 1 confidence, for yes or no, a choice of 2 to 255 options, or a rubric grade",
+      "It costs $0.10 per million input tokens with free output, the shared input is billed once per request, and median compute is 50 to 100 ms, nearly flat from 1 to 100 questions",
+      "Google already uses it inside its own products: routing queries in Gemini Notebook (up to 40% lower latency on everyday queries) and a safety check on MCP tools in Search",
+      "Simon Willison notes it is almost the same as Jev and OpenAI's decision model at the same price; in his quick test Gemini gave graded answers like 0.92 where the others said a flat 1.0 or 0.0"
+     ],
+     "vi": [
+      "Gemini Decision 1 không viết chữ: nó chấm các phương án cố định trong một lượt và trả về xác suất cùng độ tin cậy từ 0 đến 1, cho câu có hoặc không, chọn 1 trong 2 đến 255 phương án, hoặc chấm theo thang tiêu chí",
+      "Giá 0,10 USD mỗi triệu token đầu vào, đầu ra miễn phí, phần đầu vào chung chỉ tính một lần mỗi lần gọi, và thời gian tính trung vị 50 đến 100 ms, gần như không đổi từ 1 đến 100 câu hỏi",
+      "Google đã dùng nó trong sản phẩm của mình: điều hướng câu hỏi trong Gemini Notebook (độ trễ giảm tới 40% với câu hỏi thường ngày) và làm lớp kiểm tra an toàn cho công cụ MCP trong Search",
+      "Simon Willison nhận xét nó gần giống Jev và model ra quyết định của OpenAI, cùng mức giá; trong bài test nhanh của anh, Gemini trả lời có mức độ như 0,92 trong khi hai bên kia chỉ nói 1,0 hoặc 0,0"
+     ]
+    },
+    "w": {
+     "en": "Many AI features are really a choice, not a paragraph. A confidence score per choice lets you decide in code when a human should look.",
+     "vi": "Nhiều tính năng AI thật ra là một lựa chọn, không phải một đoạn văn. Có độ tin cậy cho từng lựa chọn, bạn có thể quyết định ngay trong code khi nào cần con người xem lại."
+    }
+   },
+   {
+    "date": "2026-11-11",
+    "src": "cbsnews.com",
+    "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+    "tag": "Agents",
+    "t": {
+     "en": "United Airlines bans AI agents from booking flights for travelers",
+     "vi": "United Airlines cấm AI agent đặt vé máy bay thay hành khách"
+    },
+    "p": {
+     "en": [
+      "United bars \"unauthorized, third-party personal AI agents\" on its own site and, indirectly, through travel agencies and aggregators, and is updating its booking and ticketing policies",
+      "Its reasons: sharing account logins with an AI assistant exposes data, agents can make purchases, account changes or spend miles the traveler did not mean, and agent check-in could break federal rules such as confirming in person what is in your bag",
+      "Aviation analyst Henry Harteveldt reads it as control and cost: every search costs an airline money, and United wants to avoid a flood of bot searches; fares stay on Kayak, Hopper and Google Flights",
+      "Southwest made the opposite bet and opened its flight inventory to ChatGPT users, so companies are now picking sides on agents"
+     ],
+     "vi": [
+      "United cấm \"AI agent cá nhân của bên thứ ba khi chưa được phép\" trên trang của mình và, gián tiếp, qua đại lý du lịch và trang tổng hợp vé, đồng thời cập nhật chính sách đặt vé và xuất vé",
+      "Lý do họ nêu: đưa thông tin đăng nhập cho trợ lý AI làm lộ dữ liệu, agent có thể mua, đổi tài khoản hoặc tiêu dặm bay ngoài ý hành khách, và để agent làm thủ tục có thể vi phạm quy định liên bang như việc tự xác nhận đồ trong hành lý",
+      "Chuyên gia hàng không Henry Harteveldt cho rằng đây là chuyện kiểm soát và chi phí: mỗi lượt tìm kiếm đều tốn tiền của hãng, và United muốn tránh làn sóng tìm kiếm từ bot; giá vé vẫn có trên Kayak, Hopper và Google Flights",
+      "Southwest chọn hướng ngược lại và mở dữ liệu chuyến bay cho người dùng ChatGPT, nên các công ty giờ đang chọn phe với agent"
+     ]
+    },
+    "w": {
+     "en": "An agent that acts for your user is a new kind of user. Decide what it may do in your product, and what still needs the human, before it shows up.",
+     "vi": "Một agent hành động thay người dùng là một kiểu người dùng mới. Hãy quyết định nó được làm gì trong sản phẩm của bạn, và việc gì vẫn cần chính người dùng, trước khi nó xuất hiện."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Anthropic launched its IPO roadshow for a Nasdaq listing under the ticker ANT, with a price range of $70 to $78 and 825 million shares, about $64.4B at the top of the range; the SEC registration is not yet effective (Anthropic, 2026-11-11). Watch the pricing: it is the first time public investors put a price on a frontier AI lab.",
+   "vi": "Anthropic bắt đầu roadshow IPO để niêm yết trên Nasdaq với mã ANT, khoảng giá 70 đến 78 USD và 825 triệu cổ phiếu, khoảng 64,4 tỷ USD ở mức giá cao nhất; đăng ký với SEC chưa có hiệu lực (Anthropic, 2026-11-11). Hãy theo dõi giá chốt: đây là lần đầu nhà đầu tư đại chúng định giá một phòng lab AI hàng đầu."
+  }
+ },
+ "people": [
+  {
+   "who": "Lenny's Newsletter · How I AI",
+   "kind": {
+    "en": "podcast · from show notes and a written episode recap",
+    "vi": "podcast · từ ghi chú tập và bản tóm tắt tập"
+   },
+   "date": "2026-11-09",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
+   "t": {
+    "en": "After a 1,000-day Duolingo streak, a founder builds the tutor he wanted, in languages he never wrote",
+    "vi": "Sau chuỗi 1.000 ngày Duolingo, một founder tự xây gia sư mình cần, bằng những ngôn ngữ anh chưa từng viết"
+   },
+   "stat": {
+    "v": "$3 to $5",
+    "l": {
+     "en": "his reported cost per 30-minute voice session",
+     "vi": "chi phí anh tự báo cho mỗi buổi nói 30 phút"
+    }
+   },
+   "p": {
+    "en": [
+     "He still could not hold a Norwegian conversation after 1,000 days, so he built a voice tutor that corrects you mid-conversation and will not switch to English, even when you ask",
+     "Codex wrote native Swift and Kotlin he had never used; his part was the problem, the experience, and rejecting weak output",
+     "Taste can be written down: the first design came out dark, and he fixed it by naming light mode, warm colors and gradients; host Claire Vo's brief is user and problem, the central interaction, references plus things to avoid",
+     "He runs his 25-person company with role agents and a second agent that checks the first; the caveats: very broad permissions, and no measured learning results yet"
+    ],
+    "vi": [
+     "Sau 1.000 ngày anh vẫn không nói chuyện được bằng tiếng Na Uy, nên anh xây một gia sư giọng nói sửa lỗi ngay trong cuộc trò chuyện và không chịu chuyển sang tiếng Anh, kể cả khi bạn xin",
+     "Codex viết code Swift và Kotlin gốc mà anh chưa từng dùng; phần của anh là vấn đề, trải nghiệm, và việc loại bỏ kết quả kém",
+     "Gu có thể viết ra được: bản thiết kế đầu ra màu tối, và anh sửa bằng cách nêu rõ chế độ sáng, màu ấm và gradient; brief của host Claire Vo gồm người dùng và vấn đề, tương tác trung tâm, mẫu tham khảo cùng những thứ cần tránh",
+     "Anh điều hành công ty 25 người bằng các agent theo vai trò và một agent thứ hai kiểm tra agent thứ nhất; lưu ý: quyền truy cập rất rộng, và chưa có số đo về hiệu quả học"
+    ]
+   },
+   "k": {
+    "en": "The best feature here is a refusal: the \"no English\" rule is the product. Know the one rule your product should never break.",
+    "vi": "Tính năng hay nhất ở đây là một lời từ chối: quy tắc \"không tiếng Anh\" chính là sản phẩm. Hãy biết một quy tắc mà sản phẩm của bạn không bao giờ được phá."
+   }
+  },
+  {
+   "who": "Aakash Gupta (Product Growth)",
+   "kind": {
+    "en": "67 min podcast · from the written episode deep dive",
+    "vi": "podcast 67 phút · từ bài phân tích chi tiết của tập"
+   },
+   "date": "2026-11-10",
+   "src": "news.aakashg.com",
+   "url": "https://www.news.aakashg.com/p/can-saas-survive-the-ai-era",
+   "t": {
+    "en": "Webflow's CEO on surviving AI: own the work AI is bad at, and a buyer the labs won't serve",
+    "vi": "CEO Webflow về cách sống sót trước AI: nắm phần việc AI làm kém, và nhóm khách hàng mà các lab AI không phục vụ"
+   },
+   "stat": {
+    "v": "34% vs 11%",
+    "l": {
+     "en": "median growth of public software companies valued above 15x revenue vs under 5x",
+     "vi": "tăng trưởng trung vị của công ty phần mềm niêm yết được định giá trên 15 lần doanh thu so với dưới 5 lần"
+    }
+   },
+   "p": {
+    "en": [
+     "Bet 1: AI is good at first versions, so Webflow focuses on what happens after a site goes live; \"boomerang\" customers come back after trying AI-first builders",
+     "Bet 2: narrow the buyer: map jobs to job titles, pick the job many titles share, then list what AI labs won't build, such as governance and collaboration",
+     "Bet 3: treat AI as a channel: users start in ChatGPT's site builder and move the site into Webflow; the number Linda Tong watches most is publish rate",
+     "Team: PMs build the first prototype in code, funded areas are \"half-pizza teams\" of 2 to 3 engineers, a designer and a PM, and there is no separate AI PM title"
+    ],
+    "vi": [
+     "Cược 1: AI giỏi làm bản đầu tiên, nên Webflow tập trung vào những gì xảy ra sau khi trang web chạy thật; khách hàng \"boomerang\" quay lại sau khi thử các công cụ dựng web bằng AI",
+     "Cược 2: thu hẹp người mua: nối công việc với chức danh, chọn công việc mà nhiều chức danh cùng làm, rồi liệt kê những gì các lab AI sẽ không xây, như quản trị và cộng tác",
+     "Cược 3: coi AI là một kênh: người dùng bắt đầu bằng công cụ dựng web của ChatGPT rồi chuyển trang sang Webflow; con số Linda Tong theo dõi nhiều nhất là tỷ lệ xuất bản",
+     "Đội ngũ: PM tự làm prototype đầu tiên bằng code, các mảng được cấp vốn là \"đội nửa pizza\" gồm 2 đến 3 kỹ sư, một designer và một PM, và không có chức danh AI PM riêng"
+    ]
+   },
+   "k": {
+    "en": "When a general AI can do the first step, win by owning the step after it.",
+    "vi": "Khi một AI phổ thông làm được bước đầu, hãy thắng bằng cách nắm bước tiếp theo."
+   }
+  },
+  {
+   "who": "Product Talk (Teresa Torres)",
+   "kind": {
+    "en": "14 min podcast · from show notes (transcript is paywalled)",
+    "vi": "podcast 14 phút · từ ghi chú tập (bản ghi cần trả phí)"
+   },
+   "date": "2026-11-10",
+   "src": "producttalk.org",
+   "url": "https://www.producttalk.org/discovery-the-4-risks-all-things-product-podcast-with-teresa-torres-petra-wille/",
+   "t": {
+    "en": "Teresa Torres tests her own method against the four product risks",
+    "vi": "Teresa Torres kiểm tra chính phương pháp của mình qua bốn rủi ro sản phẩm"
+   },
+   "p": {
+    "en": [
+     "She treats continuous discovery as a product, with companies as the customer, and checks it against desirability, usability, feasibility and viability",
+     "It is viable, since companies pay for it; it breaks on willingness: protecting the time in busy weeks and getting real access to customers",
+     "Boards reward predictable results and executives are rewarded for sounding certain, so adoption rarely survives a leadership change or fast growth",
+     "Her possible reframe: treat those limits as fixed and shape the method to fit them; Petra Wille adds that even partial adoption is worth it, because once seen, it \"cannot be unseen\""
+    ],
+    "vi": [
+     "Cô coi continuous discovery là một sản phẩm, với khách hàng là các công ty, và kiểm tra nó qua bốn rủi ro: mong muốn, dễ dùng, khả thi và bền vững về kinh doanh",
+     "Về kinh doanh thì ổn, vì công ty sẵn sàng trả tiền; nó gãy ở sự sẵn lòng: giữ thời gian trong những tuần bận và được tiếp cận khách hàng thật",
+     "Hội đồng quản trị thưởng cho kết quả dễ đoán còn lãnh đạo được thưởng khi tỏ ra chắc chắn, nên việc áp dụng hiếm khi sống sót qua thay đổi lãnh đạo hay giai đoạn tăng trưởng nhanh",
+     "Cách nhìn lại cô đề xuất: coi những giới hạn đó là cố định và chỉnh phương pháp cho vừa; Petra Wille nói thêm rằng áp dụng một phần vẫn đáng, vì đã thấy rồi thì \"không thể không thấy\""
+    ]
+   },
+   "k": {
+    "en": "Run the four risks on your own way of working, not just on your features.",
+    "vi": "Hãy chạy bốn rủi ro trên chính cách bạn làm việc, không chỉ trên tính năng."
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "The best problems often hide behind work so tedious that most people's minds refuse to look at it.",
+   "vi": "Những vấn đề đáng giá nhất thường nấp sau phần việc tẻ nhạt đến mức đầu óc đa số người từ chối nhìn vào."
+  },
+  "src": "Schlep Blindness · Paul Graham",
+  "date": "2012 · essay",
+  "url": "http://paulgraham.com/schlep.html",
+  "e": {
+   "en": "Paul Graham calls tedious, unpleasant work a \"schlep\". His point is that we do not just avoid schleps, we stop seeing the ideas behind them: Stripe worked because online payments were a schlep so painful that most founders never even considered fixing them. Today's stories are full of schleps. Letting AI agents act for users means logins, accidental purchases and federal rules, which is why United simply said no. Webflow is betting on governance and the work after a site goes live, the dull parts AI labs do not want.",
+   "vi": "Paul Graham gọi những việc tẻ nhạt, khó chịu là \"schlep\". Ý của ông là ta không chỉ né schlep, mà còn không nhìn thấy ý tưởng nằm sau nó: Stripe thành công vì thanh toán online là một schlep đau đến mức đa số founder không hề nghĩ tới chuyện sửa. Các tin hôm nay đầy schlep. Cho AI agent hành động thay người dùng nghĩa là xử lý đăng nhập, mua nhầm và luật liên bang, nên United chọn nói không. Webflow đặt cược vào quản trị và phần việc sau khi trang web chạy thật, những phần nhàm chán mà các lab AI không muốn làm."
+  },
+  "a": {
+   "en": [
+    "When an idea makes you sigh, write down why: the sigh often marks the hard part others also avoid",
+    "In any AI feature, list the dull parts (edge cases, cleanup, handing off to a human) and ask which one users would pay to never think about",
+    "Before dropping an idea as \"too messy\", spend 30 minutes sketching the smallest version of the mess you could handle by hand"
+   ],
+   "vi": [
+    "Khi một ý tưởng làm bạn thở dài, hãy ghi lại vì sao: tiếng thở dài thường đánh dấu phần khó mà người khác cũng né",
+    "Với bất kỳ tính năng AI nào, liệt kê những phần nhàm chán (trường hợp biên, dọn dữ liệu, chuyển cho con người) và hỏi người dùng sẽ trả tiền để không bao giờ phải nghĩ tới phần nào",
+    "Trước khi bỏ một ý tưởng vì \"quá rối\", dành 30 phút phác ra phiên bản nhỏ nhất của mớ rối đó mà bạn có thể tự tay xử lý"
+   ]
+  },
+  "x": {
+   "en": "In a feature you are working on, the eval cases nobody wants to label are a schlep. Labeling 20 of them by hand this week is the kind of dull work that gives you something competitors skipped.",
+   "vi": "Trong một tính năng bạn đang làm, những case eval không ai muốn gắn nhãn chính là schlep. Tự tay gắn nhãn 20 case trong tuần này là loại việc nhàm chán mang lại cho bạn thứ mà đối thủ đã bỏ qua."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "Which decision in a feature you work on is really a choice from a fixed list? How sure should the system be before it acts alone?",
+    "vi": "Quyết định nào trong một tính năng bạn đang làm thật ra là chọn từ một danh sách cố định? Hệ thống cần chắc đến đâu trước khi tự hành động?"
+   },
+   "c": {
+    "en": "Gemini Decisions API: choices with confidence",
+    "vi": "Gemini Decisions API: lựa chọn kèm độ tin cậy"
+   }
+  },
+  {
+   "q": {
+    "en": "If an outside AI agent tried to act for your user inside your product, what would you allow, and what would you block?",
+    "vi": "Nếu một AI agent bên ngoài cố hành động thay người dùng trong sản phẩm của bạn, bạn sẽ cho phép gì, và chặn gì?"
+   },
+   "c": {
+    "en": "United bans AI agents from booking",
+    "vi": "United cấm AI agent đặt vé"
+   }
+  },
+  {
+   "q": {
+    "en": "What is the one rule your product should never break, even when the user asks it to?",
+    "vi": "Quy tắc nào sản phẩm của bạn không bao giờ được phá, kể cả khi người dùng yêu cầu?"
+   },
+   "c": {
+    "en": "The tutor that refuses to speak English",
+    "vi": "Gia sư không chịu nói tiếng Anh"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Find the hidden choices inside one AI feature",
+    "vi": "Tìm những lựa chọn ẩn bên trong một tính năng AI"
+   },
+   "s": {
+    "en": [
+     "List every place the feature picks from a set: route, label, accept or reject, which answer to show",
+     "For each, write the options and what happens today when the system is unsure",
+     "Pick the riskiest one and set a simple rule: below what confidence does a person decide?"
+    ],
+    "vi": [
+     "Liệt kê mọi chỗ tính năng chọn từ một tập: điều hướng, gắn nhãn, chấp nhận hay từ chối, hiện câu trả lời nào",
+     "Với mỗi chỗ, ghi các phương án và điều gì đang xảy ra khi hệ thống chưa chắc",
+     "Chọn chỗ rủi ro nhất và đặt một quy tắc đơn giản: dưới mức tin cậy nào thì con người quyết định?"
+    ]
+   },
+   "o": {
+    "en": "A one-page map of the feature's decisions, with one human-handoff rule.",
+    "vi": "Một bản đồ một trang về các quyết định của tính năng, kèm một quy tắc chuyển cho con người."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"The best feature of an AI tutor is a refusal\"",
+    "vi": "Viết một bài ngắn: \"Tính năng hay nhất của một gia sư AI là một lời từ chối\""
+   },
+   "s": {
+    "en": [
+     "Open with the 1,000-day streak story in two sentences",
+     "Explain why the \"no English\" rule makes the product, not just the model",
+     "End with a question: what should your product refuse to do?"
+    ],
+    "vi": [
+     "Mở đầu bằng câu chuyện chuỗi 1.000 ngày trong hai câu",
+     "Giải thích vì sao quy tắc \"không tiếng Anh\" làm nên sản phẩm, chứ không chỉ model",
+     "Kết bằng một câu hỏi: sản phẩm của bạn nên từ chối làm gì?"
+    ]
+   },
+   "o": {
+    "en": "A 150-word post ready to share.",
+    "vi": "Một bài 150 chữ sẵn sàng chia sẻ."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny router that says how sure it is",
+    "vi": "Xây một bộ điều hướng nhỏ biết nói nó chắc đến đâu"
+   },
+   "s": {
+    "en": [
+     "Write 10 sample user messages and 3 categories they should go to",
+     "Ask any model to pick one category and give a confidence from 0 to 1, as JSON, and save the results in a table",
+     "Mark which answers are wrong and check whether the wrong ones have lower confidence"
+    ],
+    "vi": [
+     "Viết 10 tin nhắn mẫu của người dùng và 3 nhóm mà chúng nên được chuyển tới",
+     "Yêu cầu một model bất kỳ chọn một nhóm và cho độ tin cậy từ 0 đến 1, dạng JSON, rồi lưu kết quả vào bảng",
+     "Đánh dấu câu trả lời sai và xem các câu sai có độ tin cậy thấp hơn không"
+    ]
+   },
+   "o": {
+    "en": "A small router script and a table showing whether confidence predicts mistakes.",
+    "vi": "Một script điều hướng nhỏ và một bảng cho thấy độ tin cậy có báo trước lỗi hay không."
+   }
+  }
+ ]
+}
