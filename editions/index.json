@@ -1,6 +1,16 @@
 {
  "editions": [
   {
+   "date": "2026-11-13",
+   "edition": "011",
+   "type": "daily",
+   "summary": {
+    "en": "Cost per finished job: Google's Gemini 4 Hydrogen costs more per token but less per task, Anthropic finds that personal agents working together do worse than one shared agent, and Nvidia's founder CEO resigns overnight.",
+    "vi": "Chi phí cho mỗi việc làm xong: Gemini 4 Hydrogen của Google đắt hơn theo token nhưng rẻ hơn theo tác vụ, Anthropic thấy các agent cá nhân làm việc cùng nhau kém hơn một agent dùng chung, và CEO sáng lập Nvidia từ chức chỉ sau một đêm."
+   },
+   "minutes": 9
+  },
+  {
    "date": "2026-11-12",
    "edition": "010",
    "type": "daily",

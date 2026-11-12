@@ -1,36 +1,44 @@
 {
  "type": "daily",
- "date": "2026-11-12",
- "edition": "010",
+ "date": "2026-11-13",
+ "edition": "011",
  "summary": {
-  "en": "Who gets to decide: Google sells an AI that picks from fixed options and says how sure it is, United blocks AI agents from booking for travelers, and Webflow's CEO bets on the work AI is bad at.",
-  "vi": "Ai được quyết định: Google bán một AI chọn trong các phương án cố định và cho biết nó chắc đến đâu, United chặn AI agent đặt vé thay hành khách, và CEO Webflow đặt cược vào phần việc AI làm kém."
+  "en": "Cost per finished job: Google's Gemini 4 Hydrogen costs more per token but less per task, Anthropic finds that personal agents working together do worse than one shared agent, and Nvidia's founder CEO resigns overnight.",
+  "vi": "Chi phí cho mỗi việc làm xong: Gemini 4 Hydrogen của Google đắt hơn theo token nhưng rẻ hơn theo tác vụ, Anthropic thấy các agent cá nhân làm việc cùng nhau kém hơn một agent dùng chung, và CEO sáng lập Nvidia từ chức chỉ sau một đêm."
  },
  "big": {
-  "en": "A quieter news day, so two smaller but real stories, and they share one question: who decides. Google's new Decisions API turns a model into a fast judge that chooses from your list and tells you how sure it is, so code can hand the unsure cases to a person. United goes the other way and says outside AI agents may not book or act for its travelers at all. For product people, the design work is now deciding where the model decides, where the user decides, and which outside agents you let in.",
-  "vi": "Hôm nay ít tin lớn, nên đây là hai tin nhỏ hơn nhưng có thật, và cùng chung một câu hỏi: ai là người quyết định. Decisions API mới của Google biến model thành một người chấm nhanh, chọn trong danh sách của bạn và cho biết nó chắc đến đâu, để code chuyển các trường hợp chưa chắc cho con người. United đi theo hướng ngược lại và tuyên bố AI agent bên ngoài không được đặt vé hay làm thay hành khách. Với người làm sản phẩm, việc thiết kế giờ là quyết định chỗ nào model quyết, chỗ nào người dùng quyết, và agent bên ngoài nào được phép vào."
+  "en": "Today's stories are about what an AI job really costs, and who it depends on. Google ships Gemini 4 Hydrogen, a fast model for doing work that is pricier per token but cheaper per finished task, plus a tool that mixes a strong and a cheap model in one session. Anthropic researchers show that when each user sends their own agent, the group ends up worse than with one shared agent, and agents make up claims about each other. And Nvidia, the company almost every AI product runs on, loses its founder CEO with no warning. For product people: measure cost and quality per finished job, test agents as a group, and know what you would switch to if a supplier changed.",
+  "vi": "Các tin hôm nay xoay quanh chuyện một việc AI thật sự tốn bao nhiêu, và nó phụ thuộc vào ai. Google ra mắt Gemini 4 Hydrogen, một model nhanh để làm việc, đắt hơn theo token nhưng rẻ hơn cho mỗi tác vụ hoàn thành, kèm một công cụ trộn model mạnh và model rẻ trong cùng một phiên. Nhóm nghiên cứu của Anthropic cho thấy khi mỗi người dùng cử agent riêng, kết quả chung lại tệ hơn so với một agent dùng chung, và các agent còn bịa chuyện về nhau. Còn Nvidia, công ty mà gần như mọi sản phẩm AI đều chạy trên đó, mất CEO sáng lập mà không hề báo trước. Với người làm sản phẩm: hãy đo chi phí và chất lượng trên mỗi việc làm xong, kiểm thử agent theo nhóm, và biết mình sẽ chuyển sang đâu nếu một nhà cung cấp thay đổi."
  },
  "headlines": [
   {
    "t": {
-    "en": "Google's Decisions API: an AI that picks from your options and says how sure it is",
-    "vi": "Decisions API của Google: AI chọn trong các phương án của bạn và cho biết nó chắc đến đâu"
+    "en": "Gemini 4 Hydrogen: Google's new everyday model for agents costs more per token, less per task",
+    "vi": "Gemini 4 Hydrogen: model hằng ngày mới của Google cho agent, đắt hơn theo token nhưng rẻ hơn theo tác vụ"
    },
    "src": "blog.google",
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
   },
   {
    "t": {
-    "en": "United Airlines bans AI agents from booking flights for travelers",
-    "vi": "United Airlines cấm AI agent đặt vé máy bay thay hành khách"
+    "en": "Worse together: when every user sends their own agent, the group does worse than with one shared agent",
+    "vi": "Cùng nhau lại tệ hơn: khi mỗi người dùng cử agent riêng, cả nhóm làm kém hơn so với một agent dùng chung"
    },
-   "src": "cbsnews.com",
-   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/"
+   "src": "alignment.anthropic.com",
+   "url": "https://alignment.anthropic.com/2026/worse-together/"
+  },
+  {
+   "t": {
+    "en": "Nvidia's Jensen Huang resigns effective immediately; the CFO steps in as interim CEO",
+    "vi": "Jensen Huang của Nvidia từ chức ngay lập tức; giám đốc tài chính tạm giữ vị trí CEO"
+   },
+   "src": "sec.gov",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
   }
  ],
  "question": {
-  "en": "Which decision in a feature you work on is really a choice from a fixed list? How sure should the system be before it acts alone?",
-  "vi": "Quyết định nào trong một tính năng bạn đang làm thật ra là chọn từ một danh sách cố định? Hệ thống cần chắc đến đâu trước khi tự hành động?"
+  "en": "If you priced an AI feature you work on per finished task instead of per call, which step would turn out to be the most expensive, and why?",
+  "vi": "Nếu bạn tính giá một tính năng AI bạn đang làm theo mỗi tác vụ hoàn thành thay vì mỗi lần gọi, bước nào sẽ hóa ra tốn kém nhất, và vì sao?"
  },
  "exercises": [
   {
@@ -41,8 +49,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Find the hidden choices inside one AI feature",
-    "vi": "Tìm những lựa chọn ẩn bên trong một tính năng AI"
+    "en": "Price one AI feature per finished task and decide if it is default alive",
+    "vi": "Tính giá một tính năng AI theo mỗi tác vụ hoàn thành và xem nó có đang mặc định sống không"
    }
   },
   {
@@ -53,8 +61,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Write a short post: \"The best feature of an AI tutor is a refusal\"",
-    "vi": "Viết một bài ngắn: \"Tính năng hay nhất của một gia sư AI là một lời từ chối\""
+    "en": "Write a short post: \"Stop reading every launch post. Keep one fixed test.\"",
+    "vi": "Viết một bài ngắn: \"Đừng đọc mọi bài ra mắt. Hãy giữ một bài test cố định.\""
    }
   },
   {
@@ -65,31 +73,31 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a tiny router that says how sure it is",
-    "vi": "Xây một bộ điều hướng nhỏ biết nói nó chắc đến đâu"
+    "en": "Build a tiny two-model router and see if it beats one strong model on cost",
+    "vi": "Dựng một bộ chia việc nhỏ giữa hai model và xem nó có rẻ hơn một model mạnh không"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "Google's Decisions API: an AI that picks from your options and says how sure it is",
-    "vi": "Decisions API của Google: AI chọn trong các phương án của bạn và cho biết nó chắc đến đâu"
+    "en": "Gemini 4 Hydrogen: Google's new everyday model for agents costs more per token, less per task",
+    "vi": "Gemini 4 Hydrogen: model hằng ngày mới của Google cho agent, đắt hơn theo token nhưng rẻ hơn theo tác vụ"
    },
    "src": "blog.google",
-   "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
-   "date": "2026-11-11",
-   "tag": "API",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "date": "2026-11-12",
+   "tag": "Model",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "United Airlines bans AI agents from booking flights for travelers",
-    "vi": "United Airlines cấm AI agent đặt vé máy bay thay hành khách"
+    "en": "Worse together: when every user sends their own agent, the group does worse than with one shared agent",
+    "vi": "Cùng nhau lại tệ hơn: khi mỗi người dùng cử agent riêng, cả nhóm làm kém hơn so với một agent dùng chung"
    },
-   "src": "cbsnews.com",
-   "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+   "src": "alignment.anthropic.com",
+   "url": "https://alignment.anthropic.com/2026/worse-together/",
    "date": "2026-11-11",
    "tag": "Agents",
    "who": "",
@@ -97,38 +105,50 @@
   },
   {
    "t": {
-    "en": "After a 1,000-day Duolingo streak, a founder builds the tutor he wanted, in languages he never wrote",
-    "vi": "Sau chuỗi 1.000 ngày Duolingo, một founder tự xây gia sư mình cần, bằng những ngôn ngữ anh chưa từng viết"
+    "en": "Nvidia's Jensen Huang resigns effective immediately; the CFO steps in as interim CEO",
+    "vi": "Jensen Huang của Nvidia từ chức ngay lập tức; giám đốc tài chính tạm giữ vị trí CEO"
    },
-   "src": "lennysnewsletter.com",
-   "url": "https://www.lennysnewsletter.com/p/how-i-ai-how-this-founder-built-a",
-   "date": "2026-11-09",
+   "src": "sec.gov",
+   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+   "date": "2026-11-12",
+   "tag": "Industry",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "Three PMs who took AI jobs this year test four pieces of popular career advice",
+    "vi": "Ba PM nhận việc AI trong năm nay thử bốn lời khuyên nghề nghiệp đang phổ biến"
+   },
+   "src": "theskip.substack.com",
+   "url": "https://theskip.substack.com/p/how-to-stay-current-get-hired-and",
+   "date": "2026-11-12",
    "tag": "",
-   "who": "Lenny's Newsletter · How I AI",
+   "who": "The Skip (Nikhyl Singhal)",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Webflow's CEO on surviving AI: own the work AI is bad at, and a buyer the labs won't serve",
-    "vi": "CEO Webflow về cách sống sót trước AI: nắm phần việc AI làm kém, và nhóm khách hàng mà các lab AI không phục vụ"
+    "en": "Roblox's CEO: when AI lets anyone make a game, finding the right one becomes the product",
+    "vi": "CEO Roblox: khi AI cho ai cũng làm được game, việc tìm đúng game trở thành sản phẩm"
    },
-   "src": "news.aakashg.com",
-   "url": "https://www.news.aakashg.com/p/can-saas-survive-the-ai-era",
-   "date": "2026-11-10",
+   "src": "stratechery.com",
+   "url": "https://stratechery.com/2026/an-interview-with-roblox-ceo-david-baszucki-about-aggregating-play/",
+   "date": "2026-11-12",
    "tag": "",
-   "who": "Aakash Gupta (Product Growth)",
+   "who": "Stratechery (Ben Thompson)",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Teresa Torres tests her own method against the four product risks",
-    "vi": "Teresa Torres kiểm tra chính phương pháp của mình qua bốn rủi ro sản phẩm"
+    "en": "Why the same all-hands speech makes one person uneasy and another shrug",
+    "vi": "Vì sao cùng một bài phát biểu toàn công ty lại làm người này bất an còn người kia chỉ nhún vai"
    },
-   "src": "producttalk.org",
-   "url": "https://www.producttalk.org/discovery-the-4-risks-all-things-product-podcast-with-teresa-torres-petra-wille/",
-   "date": "2026-11-10",
+   "src": "cutlefish.substack.com",
+   "url": "https://cutlefish.substack.com/p/tbm-451-what-we-learn-to-notice-and",
+   "date": "2026-11-12",
    "tag": "",
-   "who": "Product Talk (Teresa Torres)",
+   "who": "John Cutler (The Beautiful Mess)",
    "kind": "people"
   }
  ]

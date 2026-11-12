@@ -1,0 +1,371 @@
+{
+ "date": "2026-11-13",
+ "edition": "011",
+ "minutes": 9,
+ "summary": {
+  "en": "Cost per finished job: Google's Gemini 4 Hydrogen costs more per token but less per task, Anthropic finds that personal agents working together do worse than one shared agent, and Nvidia's founder CEO resigns overnight.",
+  "vi": "Chi phí cho mỗi việc làm xong: Gemini 4 Hydrogen của Google đắt hơn theo token nhưng rẻ hơn theo tác vụ, Anthropic thấy các agent cá nhân làm việc cùng nhau kém hơn một agent dùng chung, và CEO sáng lập Nvidia từ chức chỉ sau một đêm."
+ },
+ "frontier": {
+  "big": {
+   "en": "Today's stories are about what an AI job really costs, and who it depends on. Google ships Gemini 4 Hydrogen, a fast model for doing work that is pricier per token but cheaper per finished task, plus a tool that mixes a strong and a cheap model in one session. Anthropic researchers show that when each user sends their own agent, the group ends up worse than with one shared agent, and agents make up claims about each other. And Nvidia, the company almost every AI product runs on, loses its founder CEO with no warning. For product people: measure cost and quality per finished job, test agents as a group, and know what you would switch to if a supplier changed.",
+   "vi": "Các tin hôm nay xoay quanh chuyện một việc AI thật sự tốn bao nhiêu, và nó phụ thuộc vào ai. Google ra mắt Gemini 4 Hydrogen, một model nhanh để làm việc, đắt hơn theo token nhưng rẻ hơn cho mỗi tác vụ hoàn thành, kèm một công cụ trộn model mạnh và model rẻ trong cùng một phiên. Nhóm nghiên cứu của Anthropic cho thấy khi mỗi người dùng cử agent riêng, kết quả chung lại tệ hơn so với một agent dùng chung, và các agent còn bịa chuyện về nhau. Còn Nvidia, công ty mà gần như mọi sản phẩm AI đều chạy trên đó, mất CEO sáng lập mà không hề báo trước. Với người làm sản phẩm: hãy đo chi phí và chất lượng trên mỗi việc làm xong, kiểm thử agent theo nhóm, và biết mình sẽ chuyển sang đâu nếu một nhà cung cấp thay đổi."
+  },
+  "items": [
+   {
+    "date": "2026-11-12",
+    "src": "blog.google",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "tag": "Model",
+    "t": {
+     "en": "Gemini 4 Hydrogen: Google's new everyday model for agents costs more per token, less per task",
+     "vi": "Gemini 4 Hydrogen: model hằng ngày mới của Google cho agent, đắt hơn theo token nhưng rẻ hơn theo tác vụ"
+    },
+    "stat": {
+     "v": "57% vs 18.2%",
+     "l": {
+      "en": "Terminal-Bench tasks completed, Hydrogen vs Gemini 3.8 Flash (Google's numbers)",
+      "vi": "tỷ lệ tác vụ Terminal-Bench hoàn thành, Hydrogen so với Gemini 3.8 Flash (số liệu của Google)"
+     }
+    },
+    "p": {
+     "en": [
+      "Google calls it its \"daily driver for agentic workflows\": a fast model for doing, while Gemini 4 Carbon and Argon handle long, deep reasoning; it scores 51 on the Artificial Analysis Intelligence Index, just above Argon's 50",
+      "It costs $1.50 per million input tokens and $7.50 per million output, twice Flash's current intro price, yet Artificial Analysis estimates $1.87 per benchmark task at high thinking versus $7.77 for Flash, because it finishes faster",
+      "A new Orchestrator in Antigravity switches between Carbon and Hydrogen in one session: Carbon plans and coordinates, Hydrogen runs worker and checker agents, for near-Carbon success with 24% less quota and 19% faster",
+      "It ships to everyone at once, including Google Search and free Gemini app users; Google reports up to 81% less overreach in agent tasks, but most numbers are Google's own, and it still trails Claude Sonnet 5.5 (63.9%) on Google's Terminal-Bench chart"
+     ],
+     "vi": [
+      "Google gọi nó là \"model dùng hằng ngày cho quy trình agent\": một model nhanh để làm việc, còn Gemini 4 Carbon và Argon lo phần suy luận dài và sâu; nó đạt 51 điểm trên Artificial Analysis Intelligence Index, nhỉnh hơn mức 50 của Argon",
+      "Giá 1,50 USD mỗi triệu token đầu vào và 7,50 USD mỗi triệu token đầu ra, gấp đôi giá khuyến mãi hiện tại của Flash, nhưng Artificial Analysis ước tính 1,87 USD cho mỗi tác vụ benchmark ở mức suy nghĩ cao, so với 7,77 USD của Flash, vì nó làm xong nhanh hơn",
+      "Orchestrator mới trong Antigravity chuyển qua lại giữa Carbon và Hydrogen trong cùng một phiên: Carbon lên kế hoạch và điều phối, Hydrogen chạy các agent làm việc và kiểm tra, đạt tỷ lệ thành công gần bằng Carbon mà tốn ít hơn 24% hạn mức và nhanh hơn 19%",
+      "Nó đến tay mọi người cùng lúc, kể cả Google Search và người dùng Gemini miễn phí; Google báo cáo agent \"làm quá phần được giao\" giảm tới 81%, nhưng phần lớn số liệu do chính Google đưa ra, và trên biểu đồ Terminal-Bench của Google nó vẫn đứng sau Claude Sonnet 5.5 (63,9%)"
+     ]
+    },
+    "w": {
+     "en": "Price per token is the wrong number for agents. Price per finished task is the one that hits your margin, and pairing a strong planner with a cheaper worker is becoming the default design.",
+     "vi": "Giá mỗi token là con số sai khi nói về agent. Giá cho mỗi tác vụ hoàn thành mới là thứ ảnh hưởng đến biên lợi nhuận, và ghép một model mạnh để lên kế hoạch với một model rẻ hơn để làm đang trở thành cách thiết kế mặc định."
+    }
+   },
+   {
+    "date": "2026-11-11",
+    "src": "alignment.anthropic.com",
+    "url": "https://alignment.anthropic.com/2026/worse-together/",
+    "tag": "Agents",
+    "t": {
+     "en": "Worse together: when every user sends their own agent, the group does worse than with one shared agent",
+     "vi": "Cùng nhau lại tệ hơn: khi mỗi người dùng cử agent riêng, cả nhóm làm kém hơn so với một agent dùng chung"
+    },
+    "stat": {
+     "v": "88 vs 44",
+     "l": {
+      "en": "group score, one shared agent vs a team of personal agents, Claude Opus 5 on a group booking task",
+      "vi": "điểm của nhóm, một agent dùng chung so với một đội agent cá nhân, Claude Opus 5 trong bài đặt chỗ theo nhóm"
+     }
+    },
+    "p": {
+     "en": [
+      "Anthropic Fellows tested four shared situations (a team API budget, a clinic calendar, a group food or travel order, a code merge queue) with frontier models from Anthropic, OpenAI and Alibaba; one coordinator beat a team of talking personal agents in all four",
+      "The cause was ordinary: the agent placing the order often checked out before reading all its messages, so a user's key request reached it in 94 to 99% of runs but was in its context at checkout in only 47 to 67%",
+      "Agents filled gaps with guesses: 53 to 58% of team runs had at least one unsupported claim about another person, versus 17 to 20% for a single agent, and GPT and Qwen agents cancelled other users' jobs 3.9 to 7.1 times per run",
+      "Simple guards helped: blocking checkout until all messages are read fixed 62 to 73% of failed runs; the authors' advice is to score agent behavior, not only the group result, and three of the environments are released as MAMUBench"
+     ],
+     "vi": [
+      "Nhóm Anthropic Fellows thử bốn tình huống dùng chung (ngân sách API của cả nhóm, lịch của một phòng khám, đơn đặt đồ ăn hoặc chuyến đi chung, hàng đợi merge code) với các model hàng đầu của Anthropic, OpenAI và Alibaba; một agent điều phối chung thắng đội agent cá nhân có trò chuyện với nhau ở cả bốn bài",
+      "Nguyên nhân rất bình thường: agent đặt đơn thường thanh toán trước khi đọc hết tin nhắn, nên yêu cầu quan trọng của người dùng đến được nó trong 94 đến 99% lần chạy nhưng chỉ còn nằm trong ngữ cảnh lúc thanh toán ở 47 đến 67%",
+      "Agent tự lấp chỗ trống bằng phỏng đoán: 53 đến 58% lần chạy theo đội có ít nhất một khẳng định không có căn cứ về người khác, so với 17 đến 20% khi chỉ có một agent, và agent của GPT và Qwen hủy việc của người dùng khác 3,9 đến 7,1 lần mỗi lần chạy",
+      "Những chốt chặn đơn giản có tác dụng: chặn thanh toán cho đến khi đọc hết tin nhắn đã sửa được 62 đến 73% lần chạy hỏng; lời khuyên của nhóm tác giả là chấm cả hành vi của agent, không chỉ kết quả chung, và ba môi trường đã được công bố thành bộ MAMUBench"
+     ]
+    },
+    "w": {
+     "en": "If your product lets several people's agents touch one shared thing, test them together. Single-agent evals will not show the race conditions, the made-up claims, or the work one agent undoes for another.",
+     "vi": "Nếu sản phẩm của bạn cho agent của nhiều người cùng chạm vào một thứ dùng chung, hãy kiểm thử chúng cùng nhau. Eval cho từng agent riêng lẻ sẽ không cho thấy tranh chấp thứ tự, những khẳng định bịa ra, hay việc agent này xóa công sức của agent kia."
+    }
+   },
+   {
+    "date": "2026-11-12",
+    "src": "sec.gov",
+    "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+    "tag": "Industry",
+    "t": {
+     "en": "Nvidia's Jensen Huang resigns effective immediately; the CFO steps in as interim CEO",
+     "vi": "Jensen Huang của Nvidia từ chức ngay lập tức; giám đốc tài chính tạm giữ vị trí CEO"
+    },
+    "p": {
+     "en": [
+      "Nvidia's board said on Nov 12 that Huang resigned as CEO, president and board member, effective immediately; CFO Colette Kress is interim CEO and keeps the CFO job, and Harvey Jones becomes the company's first-ever board chair",
+      "It moved in four days: on Nov 8 Huang told staff he had an affair and the board opened an independent investigation amid reports of a foreign intelligence effort aimed at him; per CBS, those intelligence ties are reported, not established",
+      "The board says customer commitments and the product roadmap will continue without interruption, and Q3 results are still set for Nov 17",
+      "A founder who was the face of the product for over 30 years left in a week, and the board is searching inside and outside for a successor"
+     ],
+     "vi": [
+      "Hội đồng quản trị Nvidia thông báo ngày 12/11 rằng Huang từ chức CEO, president và thành viên hội đồng, có hiệu lực ngay; giám đốc tài chính Colette Kress làm CEO tạm thời và vẫn giữ vai trò tài chính, còn Harvey Jones trở thành chủ tịch hội đồng đầu tiên của công ty",
+      "Mọi chuyện diễn ra trong bốn ngày: ngày 8/11 Huang nói với nhân viên rằng ông ngoại tình, và hội đồng mở cuộc điều tra độc lập giữa các tin về một nỗ lực tình báo nước ngoài nhắm vào ông; theo CBS, các mối liên hệ tình báo này mới là tin đồn, chưa được xác nhận",
+      "Hội đồng cho biết các cam kết với khách hàng và lộ trình sản phẩm vẫn tiếp tục không gián đoạn, và kết quả quý 3 vẫn công bố ngày 17/11",
+      "Một nhà sáng lập là gương mặt của sản phẩm suốt hơn 30 năm đã rời đi trong một tuần, và hội đồng đang tìm người kế nhiệm cả bên trong lẫn bên ngoài"
+     ]
+    },
+    "w": {
+     "en": "Almost every AI feature sits on a short chain of a few companies. A shock at one link is a reason to know which model or provider you could switch to within a week.",
+     "vi": "Gần như mọi tính năng AI đều nằm trên một chuỗi ngắn gồm vài công ty. Một cú sốc ở một mắt xích là lý do để biết bạn có thể chuyển sang model hay nhà cung cấp nào trong vòng một tuần."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Nvidia reports Q3 results on Nov 17, the first numbers under interim CEO Colette Kress, and Anthropic's shares are expected to start trading on Nasdaq around Nov 19. Together they are the next real read on how steady the AI supply chain is.",
+   "vi": "Nvidia công bố kết quả quý 3 vào ngày 17/11, những con số đầu tiên dưới thời CEO tạm thời Colette Kress, và cổ phiếu Anthropic dự kiến bắt đầu giao dịch trên Nasdaq khoảng ngày 19/11. Hai sự kiện này là phép đo thật tiếp theo về độ vững của chuỗi cung ứng AI."
+  }
+ },
+ "people": [
+  {
+   "who": "The Skip (Nikhyl Singhal)",
+   "kind": {
+    "en": "54 min podcast · from the written episode recap",
+    "vi": "podcast 54 phút · từ bài tóm tắt tập"
+   },
+   "date": "2026-11-12",
+   "src": "theskip.substack.com",
+   "url": "https://theskip.substack.com/p/how-to-stay-current-get-hired-and",
+   "t": {
+    "en": "Three PMs who took AI jobs this year test four pieces of popular career advice",
+    "vi": "Ba PM nhận việc AI trong năm nay thử bốn lời khuyên nghề nghiệp đang phổ biến"
+   },
+   "p": {
+    "en": [
+     "Staying current is a system, not a feed: Hemal Shah (OpenAI, now Google Cloud) keeps different go-to people for different questions and runs every new model on one fixed task of his own",
+     "Dana Ingraham (Harvey) hires for first-principles product thinking over tools, and warns that prototyping tools pull junior PMs into cosmetic changes that drift from the problem",
+     "Hemal's three skills: historian (why things are the way they are), technologist (explain hard things simply), anthropologist (learn a field like law well enough to explain it to model builders)",
+     "JZ Zhang (Laurel) looks for companies with data competitors cannot get, and suggests forward-deployed or AI-ops roles even without the PM title, since AI-native teams need fewer PMs who each do more"
+    ],
+    "vi": [
+     "Cập nhật kiến thức là một hệ thống, không phải một bảng tin: Hemal Shah (từng ở OpenAI, nay ở Google Cloud) có những người quen để hỏi cho từng loại câu hỏi, và chạy mọi model mới trên một bài test cố định của riêng anh",
+     "Dana Ingraham (Harvey) tuyển người có tư duy sản phẩm từ gốc rễ hơn là giỏi công cụ, và cảnh báo công cụ làm prototype dễ kéo PM mới vào các chỉnh sửa bề ngoài, xa dần vấn đề thật",
+     "Ba kỹ năng theo Hemal: nhà sử học (hiểu vì sao mọi thứ như hiện nay), nhà công nghệ (giải thích điều khó một cách đơn giản), nhà nhân học (hiểu một lĩnh vực như luật đủ sâu để giải thích cho người xây model)",
+     "JZ Zhang (Laurel) tìm những công ty có dữ liệu mà đối thủ không có được, và gợi ý các vai trò forward-deployed hoặc AI-ops dù không có chức danh PM, vì đội AI-native cần ít PM hơn nhưng mỗi người làm nhiều hơn"
+    ]
+   },
+   "k": {
+    "en": "Keep one personal test and run every new model on it. It tells you more than reading every launch post.",
+    "vi": "Giữ một bài test của riêng bạn và chạy mọi model mới trên đó. Nó cho bạn biết nhiều hơn việc đọc mọi bài ra mắt."
+   }
+  },
+  {
+   "who": "Stratechery (Ben Thompson)",
+   "kind": {
+    "en": "interview · from the full transcript",
+    "vi": "phỏng vấn · từ bản ghi đầy đủ"
+   },
+   "date": "2026-11-12",
+   "src": "stratechery.com",
+   "url": "https://stratechery.com/2026/an-interview-with-roblox-ceo-david-baszucki-about-aggregating-play/",
+   "t": {
+    "en": "Roblox's CEO: when AI lets anyone make a game, finding the right one becomes the product",
+    "vi": "CEO Roblox: khi AI cho ai cũng làm được game, việc tìm đúng game trở thành sản phẩm"
+   },
+   "stat": {
+    "v": "100M+",
+    "l": {
+     "en": "people coming to Roblox every day, per David Baszucki",
+     "vi": "người vào Roblox mỗi ngày, theo David Baszucki"
+    }
+   },
+   "p": {
+    "en": [
+     "Baszucki calls AI a \"paintbrush accelerator\", not a replacement: Roblox Build lets people describe a game on a phone and keep changing it, with thousands of games published, though it is not live in the US yet",
+     "A game harness must handle art, 3D objects, avatars, missions and code, so Roblox routes each task across frontier models, open-source models and its own, like its Cube model for 3D assets",
+     "More games make discovery harder, so Roblox optimizes for long-term retention, measuring what each user and game pair adds, not short-term engagement",
+     "Thompson reads this as a move from platform to aggregator that owns demand; two of the top 20 games are described as \"made by AI\", and these are company claims, not checked numbers"
+    ],
+    "vi": [
+     "Baszucki gọi AI là \"cây cọ giúp vẽ nhanh hơn\", không phải thứ thay thế: Roblox Build cho người dùng mô tả một game trên điện thoại rồi tiếp tục chỉnh sửa, đã có hàng nghìn game được xuất bản, dù chưa chạy ở Mỹ",
+     "Bộ khung làm game phải lo cả hình ảnh, vật thể 3D, avatar, nhiệm vụ và code, nên Roblox chia từng việc cho model hàng đầu, model mã nguồn mở và model riêng của mình, như model Cube để tạo vật thể 3D",
+     "Càng nhiều game thì càng khó tìm, nên Roblox tối ưu cho việc giữ chân lâu dài, đo xem mỗi cặp người dùng và game đóng góp gì, chứ không chạy theo mức tương tác ngắn hạn",
+     "Thompson cho rằng đây là bước chuyển từ nền tảng sang aggregator nắm giữ nhu cầu; hai trong 20 game hàng đầu được mô tả là \"do AI làm\", và đây là tuyên bố của công ty, chưa được kiểm chứng"
+    ]
+   },
+   "k": {
+    "en": "When AI makes supply cheap, the scarce thing is helping each person find the right one, and the metric that matters is long-term retention.",
+    "vi": "Khi AI làm nguồn cung trở nên rẻ, thứ khan hiếm là giúp mỗi người tìm đúng thứ họ cần, và con số quan trọng là giữ chân lâu dài."
+   }
+  },
+  {
+   "who": "John Cutler (The Beautiful Mess)",
+   "kind": {
+    "en": "5 min read · from the full post",
+    "vi": "đọc 5 phút · từ toàn bộ bài viết"
+   },
+   "date": "2026-11-12",
+   "src": "cutlefish.substack.com",
+   "url": "https://cutlefish.substack.com/p/tbm-451-what-we-learn-to-notice-and",
+   "t": {
+    "en": "Why the same all-hands speech makes one person uneasy and another shrug",
+    "vi": "Vì sao cùng một bài phát biểu toàn công ty lại làm người này bất an còn người kia chỉ nhún vai"
+   },
+   "p": {
+    "en": [
+     "When a leader says \"we put customers first\", some check it against incentives and decisions and grow uneasy, some hear an aspiration, and some hear a known political ritual",
+     "The real difference may not be who notices the gap, but what the gap means to them, how uncomfortable it feels, and whether they feel they must act",
+     "Cutler offers upbringing as one possible lens, and stresses it is only one: people raised where words and actions did not match may guard their own sense of what is real",
+     "So resistance may protect someone's sense of reality, impatience may be a learned need for momentum, and indifference may be a sharp read of how organizations work; trouble starts when we turn guesses about motives into judgments of character"
+    ],
+    "vi": [
+     "Khi lãnh đạo nói \"chúng ta đặt khách hàng lên đầu\", có người đối chiếu với cơ chế thưởng và các quyết định rồi thấy bất an, có người nghe như một mong muốn, và có người nghe như một nghi thức chính trị quen thuộc",
+     "Khác biệt thật có thể không nằm ở việc ai nhận ra khoảng cách, mà ở chỗ khoảng cách đó có ý nghĩa gì với họ, họ khó chịu đến đâu, và họ có thấy mình phải hành động không",
+     "Cutler đưa ra cách lớn lên như một góc nhìn có thể có, và nhấn mạnh đó chỉ là một góc nhìn: người lớn lên ở nơi lời nói và hành động không khớp có thể rất giữ gìn cảm nhận của riêng mình về sự thật",
+     "Vì vậy sự phản đối có thể đang bảo vệ cảm nhận về sự thật của ai đó, sự sốt ruột có thể là nhu cầu giữ đà đã học được, và sự thờ ơ có thể là một cách hiểu sâu về cách tổ chức vận hành; rắc rối bắt đầu khi ta biến phỏng đoán về động cơ thành phán xét về con người"
+    ]
+   },
+   "k": {
+    "en": "Before you judge a teammate's reaction, ask what it might be protecting.",
+    "vi": "Trước khi đánh giá phản ứng của một đồng đội, hãy hỏi phản ứng đó có thể đang bảo vệ điều gì."
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "Assuming their expenses remain constant and their revenue growth is what it has been over the last several months, do they make it to profitability on the money they have left?",
+   "vi": "Giả sử chi phí giữ nguyên và doanh thu tiếp tục tăng như mấy tháng qua, liệu họ có đạt lợi nhuận trước khi tiêu hết số tiền còn lại?"
+  },
+  "src": "Default Alive or Default Dead? · Paul Graham",
+  "date": "2015 · essay",
+  "url": "https://www.paulgraham.com/aord.html",
+  "e": {
+   "en": "Paul Graham asks founders one blunt question: if nothing changes, do you live or die? A company that will reach profit on its current path is \"default alive\"; one that needs a rescue is \"default dead\". He warns about the \"fatal pinch\": default dead, slow growth, and not enough time to fix it, and he says to ask early, before you need the answer. The same test now applies to single AI features. Gemini 4 Hydrogen shows why: the price per token went up, but the cost per finished task went down. A feature is only alive if the cost of each finished job stays below what that job is worth as usage grows.",
+   "vi": "Paul Graham đặt cho founder một câu hỏi thẳng: nếu không có gì thay đổi, bạn sống hay chết? Công ty sẽ có lãi nếu cứ đi tiếp con đường hiện tại là \"mặc định sống\"; công ty cần được cứu là \"mặc định chết\". Ông cảnh báo về \"thế kẹt chết người\": mặc định chết, tăng trưởng chậm, và không đủ thời gian để sửa, nên hãy hỏi sớm, trước khi bạn buộc phải biết câu trả lời. Phép thử này giờ áp dụng được cho từng tính năng AI. Gemini 4 Hydrogen cho thấy lý do: giá mỗi token tăng, nhưng chi phí cho mỗi tác vụ hoàn thành lại giảm. Một tính năng chỉ sống khi chi phí của mỗi việc làm xong vẫn thấp hơn giá trị của việc đó khi lượng dùng tăng lên."
+  },
+  "a": {
+   "en": [
+    "For any AI feature, write two numbers side by side: cost per finished task (retries included) and what one finished task is worth; if cost grows faster than value as usage grows, it is default dead",
+    "Ask the question while you still have time to act, not when the bill arrives: the fatal pinch is a bad path plus slow growth plus no time",
+    "Keep a written plan B that does not depend on a price cut or a new model from your provider"
+   ],
+   "vi": [
+    "Với mỗi tính năng AI, viết hai con số cạnh nhau: chi phí cho mỗi tác vụ hoàn thành (tính cả lần chạy lại) và giá trị của một tác vụ hoàn thành; nếu chi phí tăng nhanh hơn giá trị khi lượng dùng tăng, tính năng đó đang mặc định chết",
+    "Hãy hỏi khi bạn vẫn còn thời gian để hành động, đừng đợi đến lúc nhận hóa đơn: thế kẹt chết người là đường đi sai cộng với tăng trưởng chậm và hết thời gian",
+    "Giữ một kế hoạch B bằng văn bản, không phụ thuộc vào việc nhà cung cấp giảm giá hay ra model mới"
+   ]
+  },
+  "x": {
+   "en": "In a feature you are working on, take last month's AI cost and usage growth and answer in one line: at today's prices, does each new user make the feature healthier or weaker?",
+   "vi": "Với một tính năng bạn đang làm, lấy chi phí AI và mức tăng lượng dùng của tháng trước rồi trả lời trong một dòng: với giá hiện tại, mỗi người dùng mới làm tính năng khỏe hơn hay yếu đi?"
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "If you priced an AI feature you work on per finished task instead of per call, which step would turn out to be the most expensive, and why?",
+    "vi": "Nếu bạn tính giá một tính năng AI bạn đang làm theo mỗi tác vụ hoàn thành thay vì mỗi lần gọi, bước nào sẽ hóa ra tốn kém nhất, và vì sao?"
+   },
+   "c": {
+    "en": "Gemini 4 Hydrogen: cost per task, not per token",
+    "vi": "Gemini 4 Hydrogen: chi phí theo tác vụ, không theo token"
+   }
+  },
+  {
+   "q": {
+    "en": "Where in your product could two people's agents, or one agent and one person, touch the same thing? What would go wrong first?",
+    "vi": "Ở đâu trong sản phẩm của bạn mà agent của hai người, hoặc một agent và một người, có thể cùng chạm vào một thứ? Điều gì sẽ hỏng trước tiên?"
+   },
+   "c": {
+    "en": "Worse together: personal agents in a group",
+    "vi": "Cùng nhau lại tệ hơn: agent cá nhân trong một nhóm"
+   }
+  },
+  {
+   "q": {
+    "en": "What is your one fixed test for new models, and what would it tell you that a launch post cannot?",
+    "vi": "Bài test cố định của bạn cho model mới là gì, và nó cho bạn biết điều gì mà một bài ra mắt không thể?"
+   },
+   "c": {
+    "en": "The Skip: staying current with one fixed test",
+    "vi": "The Skip: cập nhật bằng một bài test cố định"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Price one AI feature per finished task and decide if it is default alive",
+    "vi": "Tính giá một tính năng AI theo mỗi tác vụ hoàn thành và xem nó có đang mặc định sống không"
+   },
+   "s": {
+    "en": [
+     "Pick one AI feature and define \"finished\" in one sentence from the user's side",
+     "From logs or a quick run of 10 real tasks, add up the calls and tokens per finished task, retries included",
+     "Compare that cost with what one finished task is worth, and mark the feature default alive or default dead"
+    ],
+    "vi": [
+     "Chọn một tính năng AI và định nghĩa \"làm xong\" trong một câu, từ góc nhìn người dùng",
+     "Từ log hoặc một lượt chạy nhanh 10 tác vụ thật, cộng số lần gọi và số token cho mỗi tác vụ hoàn thành, tính cả lần chạy lại",
+     "So sánh chi phí đó với giá trị của một tác vụ hoàn thành, rồi đánh dấu tính năng là mặc định sống hay mặc định chết"
+    ]
+   },
+   "o": {
+    "en": "One line with the cost per finished task, its value, and a default alive or dead verdict.",
+    "vi": "Một dòng ghi chi phí cho mỗi tác vụ hoàn thành, giá trị của nó, và kết luận mặc định sống hay chết."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"Stop reading every launch post. Keep one fixed test.\"",
+    "vi": "Viết một bài ngắn: \"Đừng đọc mọi bài ra mắt. Hãy giữ một bài test cố định.\""
+   },
+   "s": {
+    "en": [
+     "Open with today's launch: a new model, a page of benchmark claims, most of them the maker's own",
+     "Explain the fixed-test idea in two sentences and describe your own test, without naming your work",
+     "End by asking readers what their one test is"
+    ],
+    "vi": [
+     "Mở đầu bằng bản ra mắt hôm nay: một model mới, cả trang số liệu benchmark, phần lớn do chính hãng đưa ra",
+     "Giải thích ý tưởng bài test cố định trong hai câu và mô tả bài test của riêng bạn, không nêu tên công việc",
+     "Kết thúc bằng câu hỏi bài test của người đọc là gì"
+    ]
+   },
+   "o": {
+    "en": "A 150-word post ready to share.",
+    "vi": "Một bài 150 chữ sẵn sàng để chia sẻ."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny two-model router and see if it beats one strong model on cost",
+    "vi": "Dựng một bộ chia việc nhỏ giữa hai model và xem nó có rẻ hơn một model mạnh không"
+   },
+   "s": {
+    "en": [
+     "Pick 10 real tasks and run each on a cheap model that also returns a 0 to 1 confidence",
+     "Send every task below your threshold (start at 0.7) to a strong model",
+     "Compare quality and total cost against running all 10 on the strong model alone"
+    ],
+    "vi": [
+     "Chọn 10 tác vụ thật và chạy từng cái trên một model rẻ, yêu cầu nó trả thêm độ tin cậy từ 0 đến 1",
+     "Chuyển mọi tác vụ dưới ngưỡng của bạn (bắt đầu từ 0,7) sang một model mạnh",
+     "So sánh chất lượng và tổng chi phí với việc chạy cả 10 tác vụ chỉ trên model mạnh"
+    ]
+   },
+   "o": {
+    "en": "A small script and a two-row table: routed vs strong-only, in quality and cost.",
+    "vi": "Một script nhỏ và một bảng hai dòng: chia việc so với chỉ dùng model mạnh, theo chất lượng và chi phí."
+   }
+  }
+ ]
+}
