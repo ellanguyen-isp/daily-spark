@@ -1,44 +1,44 @@
 {
  "type": "daily",
- "date": "2026-11-13",
- "edition": "011",
+ "date": "2026-11-14",
+ "edition": "012",
  "summary": {
-  "en": "Cost per finished job: Google's Gemini 4 Hydrogen costs more per token but less per task, Anthropic finds that personal agents working together do worse than one shared agent, and Nvidia's founder CEO resigns overnight.",
-  "vi": "Chi phí cho mỗi việc làm xong: Gemini 4 Hydrogen của Google đắt hơn theo token nhưng rẻ hơn theo tác vụ, Anthropic thấy các agent cá nhân làm việc cùng nhau kém hơn một agent dùng chung, và CEO sáng lập Nvidia từ chức chỉ sau một đêm."
+  "en": "Trust in steps: ChatGPT lets agents pay but makes you approve every purchase, OpenAI folds its robotics team into its general models, and a Microsoft outage of more than 18 hours takes Copilot down with email.",
+  "vi": "Trao niềm tin từng bước: ChatGPT cho agent trả tiền nhưng bắt bạn duyệt từng lần mua, OpenAI gộp đội robot vào các model đa năng, và sự cố Microsoft kéo dài hơn 18 giờ khiến Copilot sập cùng email."
  },
  "big": {
-  "en": "Today's stories are about what an AI job really costs, and who it depends on. Google ships Gemini 4 Hydrogen, a fast model for doing work that is pricier per token but cheaper per finished task, plus a tool that mixes a strong and a cheap model in one session. Anthropic researchers show that when each user sends their own agent, the group ends up worse than with one shared agent, and agents make up claims about each other. And Nvidia, the company almost every AI product runs on, loses its founder CEO with no warning. For product people: measure cost and quality per finished job, test agents as a group, and know what you would switch to if a supplier changed.",
-  "vi": "Các tin hôm nay xoay quanh chuyện một việc AI thật sự tốn bao nhiêu, và nó phụ thuộc vào ai. Google ra mắt Gemini 4 Hydrogen, một model nhanh để làm việc, đắt hơn theo token nhưng rẻ hơn cho mỗi tác vụ hoàn thành, kèm một công cụ trộn model mạnh và model rẻ trong cùng một phiên. Nhóm nghiên cứu của Anthropic cho thấy khi mỗi người dùng cử agent riêng, kết quả chung lại tệ hơn so với một agent dùng chung, và các agent còn bịa chuyện về nhau. Còn Nvidia, công ty mà gần như mọi sản phẩm AI đều chạy trên đó, mất CEO sáng lập mà không hề báo trước. Với người làm sản phẩm: hãy đo chi phí và chất lượng trên mỗi việc làm xong, kiểm thử agent theo nhóm, và biết mình sẽ chuyển sang đâu nếu một nhà cung cấp thay đổi."
+  "en": "Today's stories are about how much we let AI do, and what it still leans on. OpenAI now lets its agents pay for things, but a person checks and taps every single purchase. OpenAI also folds its robotics team into its main research, because its general model now beats specialized robot models in simulation. And a Microsoft outage of more than 18 hours took Copilot down along with email and chat. For product people: hand over trust in steps, ask which custom AI parts a general model will replace, and plan for the day your provider goes down.",
+  "vi": "Các tin hôm nay xoay quanh chuyện ta để AI làm đến đâu, và nó vẫn đang dựa vào cái gì. OpenAI giờ cho agent của mình trả tiền mua hàng, nhưng mỗi lần mua đều phải có người kiểm tra và bấm duyệt. OpenAI cũng gộp đội robot vào bộ phận nghiên cứu chính, vì model đa năng của họ giờ đã vượt các model robot chuyên biệt trong mô phỏng. Còn sự cố Microsoft kéo dài hơn 18 giờ đã kéo Copilot sập theo email và chat. Với người làm sản phẩm: hãy trao niềm tin từng bước, tự hỏi phần AI tự làm nào sẽ bị model đa năng thay thế, và chuẩn bị cho ngày nhà cung cấp của bạn ngừng chạy."
  },
  "headlines": [
   {
    "t": {
-    "en": "Gemini 4 Hydrogen: Google's new everyday model for agents costs more per token, less per task",
-    "vi": "Gemini 4 Hydrogen: model hằng ngày mới của Google cho agent, đắt hơn theo token nhưng rẻ hơn theo tác vụ"
+    "en": "ChatGPT Wallet: OpenAI's agents can now buy things for you, after you approve each purchase",
+    "vi": "ChatGPT Wallet: agent của OpenAI giờ có thể mua hàng giúp bạn, sau khi bạn duyệt từng lần mua"
    },
-   "src": "blog.google",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+   "src": "openai.com",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet/"
   },
   {
    "t": {
-    "en": "Worse together: when every user sends their own agent, the group does worse than with one shared agent",
-    "vi": "Cùng nhau lại tệ hơn: khi mỗi người dùng cử agent riêng, cả nhóm làm kém hơn so với một agent dùng chung"
+    "en": "OpenAI breaks up its standalone robotics team because its general model now runs robots better",
+    "vi": "OpenAI giải tán đội robot riêng vì model đa năng của họ giờ điều khiển robot tốt hơn"
    },
-   "src": "alignment.anthropic.com",
-   "url": "https://alignment.anthropic.com/2026/worse-together/"
+   "src": "fortune.com",
+   "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
   },
   {
    "t": {
-    "en": "Nvidia's Jensen Huang resigns effective immediately; the CFO steps in as interim CEO",
-    "vi": "Jensen Huang của Nvidia từ chức ngay lập tức; giám đốc tài chính tạm giữ vị trí CEO"
+    "en": "A Microsoft 365 outage runs into a second day and takes Copilot down with Outlook and Teams",
+    "vi": "Sự cố Microsoft 365 kéo sang ngày thứ hai, khiến Copilot sập cùng Outlook và Teams"
    },
-   "src": "sec.gov",
-   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm"
+   "src": "windowscentral.com",
+   "url": "https://www.windowscentral.com/microsoft/azure/microsoft-365-outlook-teams-onedrive-and-copilot-are-all-down-right-now"
   }
  ],
  "question": {
-  "en": "If you priced an AI feature you work on per finished task instead of per call, which step would turn out to be the most expensive, and why?",
-  "vi": "Nếu bạn tính giá một tính năng AI bạn đang làm theo mỗi tác vụ hoàn thành thay vì mỗi lần gọi, bước nào sẽ hóa ra tốn kém nhất, và vì sao?"
+  "en": "If an agent did one action in your product for a user, which step should always need the user's own tap, and which could become a rule later?",
+  "vi": "Nếu một agent làm một hành động trong sản phẩm của bạn thay người dùng, bước nào luôn cần chính người dùng bấm duyệt, và bước nào có thể thành quy tắc về sau?"
  },
  "exercises": [
   {
@@ -49,8 +49,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Price one AI feature per finished task and decide if it is default alive",
-    "vi": "Tính giá một tính năng AI theo mỗi tác vụ hoàn thành và xem nó có đang mặc định sống không"
+    "en": "Put one AI feature's actions on a trust ladder",
+    "vi": "Đặt các hành động của một tính năng AI lên bậc thang niềm tin"
    }
   },
   {
@@ -61,8 +61,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Write a short post: \"Stop reading every launch post. Keep one fixed test.\"",
-    "vi": "Viết một bài ngắn: \"Đừng đọc mọi bài ra mắt. Hãy giữ một bài test cố định.\""
+    "en": "Write a short post: \"The agent can pay. You still press the button.\"",
+    "vi": "Viết một bài ngắn: \"Agent có thể trả tiền. Bạn vẫn là người bấm nút.\""
    }
   },
   {
@@ -73,82 +73,70 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a tiny two-model router and see if it beats one strong model on cost",
-    "vi": "Dựng một bộ chia việc nhỏ giữa hai model và xem nó có rẻ hơn một model mạnh không"
+    "en": "Make one AI call survive a provider outage",
+    "vi": "Giúp một lệnh gọi AI sống sót khi nhà cung cấp ngừng chạy"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "Gemini 4 Hydrogen: Google's new everyday model for agents costs more per token, less per task",
-    "vi": "Gemini 4 Hydrogen: model hằng ngày mới của Google cho agent, đắt hơn theo token nhưng rẻ hơn theo tác vụ"
+    "en": "ChatGPT Wallet: OpenAI's agents can now buy things for you, after you approve each purchase",
+    "vi": "ChatGPT Wallet: agent của OpenAI giờ có thể mua hàng giúp bạn, sau khi bạn duyệt từng lần mua"
    },
-   "src": "blog.google",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
-   "date": "2026-11-12",
-   "tag": "Model",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "Worse together: when every user sends their own agent, the group does worse than with one shared agent",
-    "vi": "Cùng nhau lại tệ hơn: khi mỗi người dùng cử agent riêng, cả nhóm làm kém hơn so với một agent dùng chung"
-   },
-   "src": "alignment.anthropic.com",
-   "url": "https://alignment.anthropic.com/2026/worse-together/",
-   "date": "2026-11-11",
+   "src": "openai.com",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+   "date": "2026-11-13",
    "tag": "Agents",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Nvidia's Jensen Huang resigns effective immediately; the CFO steps in as interim CEO",
-    "vi": "Jensen Huang của Nvidia từ chức ngay lập tức; giám đốc tài chính tạm giữ vị trí CEO"
+    "en": "OpenAI breaks up its standalone robotics team because its general model now runs robots better",
+    "vi": "OpenAI giải tán đội robot riêng vì model đa năng của họ giờ điều khiển robot tốt hơn"
    },
-   "src": "sec.gov",
-   "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
-   "date": "2026-11-12",
+   "src": "fortune.com",
+   "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+   "date": "2026-11-13",
    "tag": "Industry",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Three PMs who took AI jobs this year test four pieces of popular career advice",
-    "vi": "Ba PM nhận việc AI trong năm nay thử bốn lời khuyên nghề nghiệp đang phổ biến"
+    "en": "A Microsoft 365 outage runs into a second day and takes Copilot down with Outlook and Teams",
+    "vi": "Sự cố Microsoft 365 kéo sang ngày thứ hai, khiến Copilot sập cùng Outlook và Teams"
    },
-   "src": "theskip.substack.com",
-   "url": "https://theskip.substack.com/p/how-to-stay-current-get-hired-and",
-   "date": "2026-11-12",
+   "src": "windowscentral.com",
+   "url": "https://www.windowscentral.com/microsoft/azure/microsoft-365-outlook-teams-onedrive-and-copilot-are-all-down-right-now",
+   "date": "2026-11-13",
+   "tag": "Platform",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "A parent builds his family's AI brain from plain Markdown files",
+    "vi": "Một người cha xây \"bộ não AI\" cho gia đình từ các file Markdown đơn giản"
+   },
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
+   "date": "2026-11-11",
    "tag": "",
-   "who": "The Skip (Nikhyl Singhal)",
+   "who": "How I AI (Claire Vo) · Lenny's Newsletter",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Roblox's CEO: when AI lets anyone make a game, finding the right one becomes the product",
-    "vi": "CEO Roblox: khi AI cho ai cũng làm được game, việc tìm đúng game trở thành sản phẩm"
+    "en": "A job search agent that prepares everything and ships nothing you did not approve",
+    "vi": "Một agent tìm việc chuẩn bị mọi thứ nhưng không gửi gì bạn chưa duyệt"
    },
-   "src": "stratechery.com",
-   "url": "https://stratechery.com/2026/an-interview-with-roblox-ceo-david-baszucki-about-aggregating-play/",
-   "date": "2026-11-12",
+   "src": "news.aakashg.com",
+   "url": "https://www.news.aakashg.com/p/job-search-agent",
+   "date": "2026-11-13",
    "tag": "",
-   "who": "Stratechery (Ben Thompson)",
-   "kind": "people"
-  },
-  {
-   "t": {
-    "en": "Why the same all-hands speech makes one person uneasy and another shrug",
-    "vi": "Vì sao cùng một bài phát biểu toàn công ty lại làm người này bất an còn người kia chỉ nhún vai"
-   },
-   "src": "cutlefish.substack.com",
-   "url": "https://cutlefish.substack.com/p/tbm-451-what-we-learn-to-notice-and",
-   "date": "2026-11-12",
-   "tag": "",
-   "who": "John Cutler (The Beautiful Mess)",
+   "who": "Aakash Gupta (Product Growth)",
    "kind": "people"
   }
  ]

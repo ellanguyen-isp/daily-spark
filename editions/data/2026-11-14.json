@@ -1,0 +1,332 @@
+{
+ "date": "2026-11-14",
+ "edition": "012",
+ "minutes": 9,
+ "summary": {
+  "en": "Trust in steps: ChatGPT lets agents pay but makes you approve every purchase, OpenAI folds its robotics team into its general models, and a Microsoft outage of more than 18 hours takes Copilot down with email.",
+  "vi": "Trao niềm tin từng bước: ChatGPT cho agent trả tiền nhưng bắt bạn duyệt từng lần mua, OpenAI gộp đội robot vào các model đa năng, và sự cố Microsoft kéo dài hơn 18 giờ khiến Copilot sập cùng email."
+ },
+ "frontier": {
+  "big": {
+   "en": "Today's stories are about how much we let AI do, and what it still leans on. OpenAI now lets its agents pay for things, but a person checks and taps every single purchase. OpenAI also folds its robotics team into its main research, because its general model now beats specialized robot models in simulation. And a Microsoft outage of more than 18 hours took Copilot down along with email and chat. For product people: hand over trust in steps, ask which custom AI parts a general model will replace, and plan for the day your provider goes down.",
+   "vi": "Các tin hôm nay xoay quanh chuyện ta để AI làm đến đâu, và nó vẫn đang dựa vào cái gì. OpenAI giờ cho agent của mình trả tiền mua hàng, nhưng mỗi lần mua đều phải có người kiểm tra và bấm duyệt. OpenAI cũng gộp đội robot vào bộ phận nghiên cứu chính, vì model đa năng của họ giờ đã vượt các model robot chuyên biệt trong mô phỏng. Còn sự cố Microsoft kéo dài hơn 18 giờ đã kéo Copilot sập theo email và chat. Với người làm sản phẩm: hãy trao niềm tin từng bước, tự hỏi phần AI tự làm nào sẽ bị model đa năng thay thế, và chuẩn bị cho ngày nhà cung cấp của bạn ngừng chạy."
+  },
+  "items": [
+   {
+    "date": "2026-11-13",
+    "src": "openai.com",
+    "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+    "tag": "Agents",
+    "t": {
+     "en": "ChatGPT Wallet: OpenAI's agents can now buy things for you, after you approve each purchase",
+     "vi": "ChatGPT Wallet: agent của OpenAI giờ có thể mua hàng giúp bạn, sau khi bạn duyệt từng lần mua"
+    },
+    "p": {
+     "en": [
+      "A limited rollout to US ChatGPT Pro users aged 18 or older with a US Visa, Mastercard or Amex card, used through dots, the personal agents OpenAI introduced on Sept 29",
+      "The agent never sees the card: the payment network issues a token for that one transaction, and the merchant only gets what it needs to ship, like address and contact",
+      "Before checkout you review the items, the total and the card, then approve with Face ID or a fingerprint; each approval leaves a record, and card rewards and dispute rights still apply",
+      "Spending limits and rules by category or time period come later; a Commerce Partner Playbook helps stores accept agent orders, while Amazon still blocks agents and pushes its own Alexa"
+     ],
+     "vi": [
+      "Đang mở giới hạn cho người dùng ChatGPT Pro tại Mỹ từ 18 tuổi, có thẻ Visa, Mastercard hoặc Amex phát hành tại Mỹ, dùng qua dots, các agent cá nhân OpenAI ra mắt ngày 29/9",
+      "Agent không bao giờ thấy số thẻ: mạng thanh toán cấp một mã token chỉ dùng cho đúng giao dịch đó, còn cửa hàng chỉ nhận thông tin cần để giao hàng như địa chỉ và liên lạc",
+      "Trước khi thanh toán, bạn xem lại món hàng, tổng tiền và thẻ, rồi duyệt bằng Face ID hoặc vân tay; mỗi lần duyệt đều để lại bản ghi, và điểm thưởng thẻ cùng quyền khiếu nại vẫn giữ nguyên",
+      "Hạn mức chi tiêu và quy tắc theo loại hàng hoặc khoảng thời gian sẽ có sau; bộ Commerce Partner Playbook giúp cửa hàng nhận đơn từ agent, trong khi Amazon vẫn chặn agent và đẩy Alexa của riêng mình"
+     ]
+    },
+    "w": {
+     "en": "Agent payments start with a human tap on every purchase, and looser rules only come later. If your product lets an agent act for users, design the approval step and the record first, then relax them once trust is earned.",
+     "vi": "Thanh toán qua agent bắt đầu bằng một cú chạm của con người cho mỗi lần mua, quy tắc thoáng hơn chỉ đến sau. Nếu sản phẩm của bạn cho agent hành động thay người dùng, hãy thiết kế bước duyệt và bản ghi trước, rồi nới dần khi đã có niềm tin."
+    }
+   },
+   {
+    "date": "2026-11-13",
+    "src": "fortune.com",
+    "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
+    "tag": "Industry",
+    "t": {
+     "en": "OpenAI breaks up its standalone robotics team because its general model now runs robots better",
+     "vi": "OpenAI giải tán đội robot riêng vì model đa năng của họ giờ điều khiển robot tốt hơn"
+    },
+    "stat": {
+     "v": "74.8% vs 51.0%",
+     "l": {
+      "en": "success on a simulated manipulation benchmark, a GPT-6 Astra agent vs the best specialized robot model (Nvidia study)",
+      "vi": "tỷ lệ thành công trên một bài kiểm tra thao tác mô phỏng, agent dùng GPT-6 Astra so với model robot chuyên biệt tốt nhất (nghiên cứu của Nvidia)"
+     }
+    },
+    "p": {
+     "en": [
+      "OpenAI confirmed the move to Fortune: robotics research joins the main research team under Mark Chen, and applied robotics and hardware join the Applied group under Greg Brockman",
+      "The reason: general models like GPT-6 Astra can be pointed straight at robots, and researchers saw surprising results; early this year OpenAI still thought the path ran through video models like Sora",
+      "It also fits a cost squeeze: OpenAI dropped Sora to free compute and reportedly posted $10.9 billion in operating losses last quarter, yet still targets a humanoid robot demo in 2027",
+      "Not settled: experts note large models are slow and run in the cloud, so small onboard models still matter, and robot companies collect real-world data that labs do not have"
+     ],
+     "vi": [
+      "OpenAI xác nhận với Fortune: mảng nghiên cứu robot nhập vào đội nghiên cứu chính dưới quyền Mark Chen, còn mảng robot ứng dụng và phần cứng nhập vào nhóm Applied dưới quyền Greg Brockman",
+      "Lý do: các model đa năng như GPT-6 Astra có thể dùng thẳng cho robot, và các nhà nghiên cứu thấy kết quả bất ngờ; đầu năm nay OpenAI vẫn nghĩ con đường đi qua các model video như Sora",
+      "Việc này cũng khớp với áp lực chi phí: OpenAI đã bỏ Sora để giải phóng năng lực tính toán và được cho là lỗ hoạt động 10,9 tỷ USD trong quý gần nhất, nhưng vẫn nhắm buổi trình diễn robot hình người vào năm 2027",
+      "Chưa ngã ngũ: các chuyên gia lưu ý model lớn chạy chậm và nằm trên đám mây, nên model nhỏ chạy trên máy vẫn quan trọng, và các công ty robot có dữ liệu thực tế mà phòng lab không có"
+     ]
+    },
+    "w": {
+     "en": "When a general model beats the specialist, the advantage moves to data from real use and to what runs fast on the device. Ask which custom AI part you built a better general model could replace next year.",
+     "vi": "Khi model đa năng thắng model chuyên biệt, lợi thế chuyển sang dữ liệu từ việc dùng thật và những gì chạy nhanh ngay trên thiết bị. Hãy tự hỏi phần AI tự xây nào của bạn có thể bị một model đa năng tốt hơn thay thế vào năm sau."
+    }
+   },
+   {
+    "date": "2026-11-13",
+    "src": "windowscentral.com",
+    "url": "https://www.windowscentral.com/microsoft/azure/microsoft-365-outlook-teams-onedrive-and-copilot-are-all-down-right-now",
+    "tag": "Platform",
+    "t": {
+     "en": "A Microsoft 365 outage runs into a second day and takes Copilot down with Outlook and Teams",
+     "vi": "Sự cố Microsoft 365 kéo sang ngày thứ hai, khiến Copilot sập cùng Outlook và Teams"
+    },
+    "stat": {
+     "v": "~130,000",
+     "l": {
+      "en": "Downdetector reports at the peak of the outage",
+      "vi": "lượt báo lỗi trên Downdetector lúc sự cố đỉnh điểm"
+     }
+    },
+    "p": {
+     "en": [
+      "Problems started on Nov 12 and lasted over 18 hours, hitting Outlook, Teams, OneDrive, Copilot and Azure; by the morning of Nov 13 (US time) reports had fallen below 10,000",
+      "The cause is not confirmed; Microsoft's Charles Lamanna said there is no sign of an attack, and a detailed report may take weeks",
+      "Microsoft kept a 48-hour email timeout window so delayed messages would not be lost: a small design choice that protected users while everything else was down",
+      "Copilot had no separate path: when the platform under it failed, the AI assistant failed too, in the middle of a working day"
+     ],
+     "vi": [
+      "Sự cố bắt đầu ngày 12/11 và kéo dài hơn 18 giờ, ảnh hưởng Outlook, Teams, OneDrive, Copilot và Azure; đến sáng 13/11 (giờ Mỹ) số báo lỗi giảm xuống dưới 10.000",
+      "Nguyên nhân chưa được xác nhận; Charles Lamanna của Microsoft nói không có dấu hiệu bị tấn công, và báo cáo chi tiết có thể mất vài tuần",
+      "Microsoft giữ thời gian chờ email 48 giờ để thư bị trễ không bị mất: một lựa chọn thiết kế nhỏ nhưng bảo vệ người dùng khi mọi thứ khác đều ngừng",
+      "Copilot không có đường chạy riêng: khi nền tảng bên dưới hỏng, trợ lý AI cũng hỏng theo, ngay giữa ngày làm việc"
+     ]
+    },
+    "w": {
+     "en": "Your AI feature is only as reliable as the platform under it. Decide now what users see when the model or the provider is down, and whether a second provider is worth the cost.",
+     "vi": "Tính năng AI của bạn chỉ ổn định bằng nền tảng bên dưới nó. Hãy quyết định ngay từ bây giờ người dùng sẽ thấy gì khi model hoặc nhà cung cấp ngừng chạy, và có đáng trả thêm cho một nhà cung cấp thứ hai không."
+    }
+   }
+  ],
+  "watch": {
+   "en": "OpenAI says spending limits and pre-approved rules for agent purchases come later; watch which stores open up to agents and whether Amazon keeps blocking them. Microsoft's root-cause report is expected in the coming weeks, and Nvidia reports Q3 results on Nov 17.",
+   "vi": "OpenAI cho biết hạn mức chi tiêu và quy tắc duyệt trước cho việc mua qua agent sẽ đến sau; hãy theo dõi cửa hàng nào mở cửa cho agent và Amazon có tiếp tục chặn không. Báo cáo nguyên nhân sự cố của Microsoft dự kiến có trong vài tuần tới, và Nvidia công bố kết quả quý 3 vào ngày 17/11."
+  }
+ },
+ "people": [
+  {
+   "who": "How I AI (Claire Vo) · Lenny's Newsletter",
+   "date": "2026-11-11",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
+   "kind": {
+    "en": "34 min video · from show notes and a partial transcript",
+    "vi": "video 34 phút · từ ghi chú tập và một phần bản ghi"
+   },
+   "t": {
+    "en": "A parent builds his family's AI brain from plain Markdown files",
+    "vi": "Một người cha xây \"bộ não AI\" cho gia đình từ các file Markdown đơn giản"
+   },
+   "p": {
+    "en": [
+     "Scott Farrar, a math educator and parent, was tired of AI chats that drift and forget, so he keeps household facts in a folder of Markdown files that Claude Code reads and writes, viewed in Obsidian",
+     "His trust test: he wanted to \"know exactly what it knows about me so I could trust the advice it gives back\"; every appliance and serial number is saved, so a new chat about the fridge finds the warranty",
+     "Sharing is a real choice: a GitHub repo gives version control, but a Dropbox folder is easier for the whole family; a wall display shows top tasks, trips and recent wins",
+     "For kids he flips the tutor: the AI should draw out what the student already knows and keep them doing the thinking, not hand over answers"
+    ],
+    "vi": [
+     "Scott Farrar, một nhà giáo dạy toán và là phụ huynh, chán những cuộc chat AI cứ lan man rồi quên, nên anh lưu thông tin trong nhà vào một thư mục file Markdown mà Claude Code đọc và ghi, xem bằng Obsidian",
+     "Phép thử niềm tin của anh: anh muốn \"biết chính xác nó biết gì về mình để có thể tin lời khuyên nó đưa ra\"; mọi thiết bị và số serial đều được lưu, nên một cuộc chat mới về cái tủ lạnh vẫn tìm ra thông tin bảo hành",
+     "Chia sẻ là một lựa chọn thật sự: repo GitHub có quản lý phiên bản, nhưng thư mục Dropbox dễ dùng hơn cho cả nhà; một màn hình treo tường hiển thị việc ưu tiên, chuyến đi sắp tới và những việc vừa làm xong",
+     "Với trẻ em, anh đảo vai gia sư: AI nên khơi ra điều học sinh đã biết và giữ các em tự suy nghĩ, chứ không đưa sẵn đáp án"
+    ]
+   },
+   "k": {
+    "en": "Memory you can read beats memory you have to trust. When users can see and edit what an AI knows about them, they trust its advice more.",
+    "vi": "Bộ nhớ bạn đọc được tốt hơn bộ nhớ bạn phải tin mù quáng. Khi người dùng thấy và sửa được những gì AI biết về họ, họ tin lời khuyên của nó hơn."
+   }
+  },
+  {
+   "who": "Aakash Gupta (Product Growth)",
+   "date": "2026-11-13",
+   "src": "news.aakashg.com",
+   "url": "https://www.news.aakashg.com/p/job-search-agent",
+   "kind": {
+    "en": "paid newsletter post · from the readable part of the article",
+    "vi": "bài newsletter trả phí · từ phần đọc được của bài"
+   },
+   "t": {
+    "en": "A job search agent that prepares everything and ships nothing you did not approve",
+    "vi": "Một agent tìm việc chuẩn bị mọi thứ nhưng không gửi gì bạn chưa duyệt"
+   },
+   "p": {
+    "en": [
+     "Each morning it finds a role that just went live at a target company, tailors a resume and a work sample, drafts notes to people there, and preps interview material",
+     "It applies through company sites, not job boards, to avoid account bans and spam, and fills forms in the user's own browser only after approval; the demo stops right before Submit",
+     "The design rule is the split: the agent does the slow preparation, the person sends every message that carries their name",
+     "Read it as a product pitch: it sells for $49, version 1 has over 2,000 monthly users, and the claim of 3 hours cut to under 30 minutes is not broken down"
+    ],
+    "vi": [
+     "Mỗi sáng nó tìm một vị trí vừa đăng ở công ty mục tiêu, chỉnh CV và một sản phẩm mẫu cho đúng vị trí, soạn lời nhắn cho người ở đó, và chuẩn bị tài liệu phỏng vấn",
+     "Nó nộp qua trang của công ty chứ không qua các trang việc làm, để tránh bị khóa tài khoản và tránh spam, và chỉ điền đơn trong trình duyệt của chính người dùng sau khi được duyệt; bản demo dừng ngay trước nút Submit",
+     "Nguyên tắc thiết kế là chia việc: agent làm phần chuẩn bị chậm, còn con người tự gửi mọi tin nhắn mang tên mình",
+     "Hãy đọc nó như một bài chào hàng: sản phẩm bán 49 USD, phiên bản 1 có hơn 2.000 người dùng mỗi tháng, và tuyên bố rút 3 giờ xuống dưới 30 phút không được giải thích chi tiết"
+    ]
+   },
+   "k": {
+    "en": "The best agent features split the work by who owns the result: the agent prepares, the person signs.",
+    "vi": "Tính năng agent tốt nhất chia việc theo người chịu trách nhiệm kết quả: agent chuẩn bị, con người ký tên."
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "Live in the future, then build what's missing.",
+   "vi": "Hãy sống trong tương lai, rồi xây thứ còn thiếu."
+  },
+  "src": "How to Get Startup Ideas · Paul Graham",
+  "date": "2012 · essay",
+  "url": "https://paulgraham.com/startupideas.html",
+  "e": {
+   "en": "Paul Graham says the best ideas share three things: the founders want it themselves, they can build it themselves, and few others see it as worth doing. Good ideas are noticed, not brainstormed: if you live at the edge of what is changing, the gaps show up on their own. Ideas made up to sound good, which he calls \"sitcom\" ideas, seem plausible but nobody needs them. Today's people pieces fit: a parent built the household memory he wanted, and a newsletter writer turned his own job search method into an agent. Agents that can pay are the future arriving now, and what is missing around them is trust, limits and clear records.",
+   "vi": "Paul Graham cho rằng ý tưởng tốt nhất có ba điểm chung: người sáng lập tự muốn có nó, tự xây được nó, và ít người khác thấy nó đáng làm. Ý tưởng tốt đến từ việc nhận ra, không phải từ việc ngồi nghĩ: nếu bạn sống ở rìa của những gì đang thay đổi, các khoảng trống sẽ tự lộ ra. Những ý tưởng bịa ra cho nghe hay, ông gọi là ý tưởng \"phim sitcom\", nghe có lý nhưng không ai cần. Các bài hôm nay đúng như vậy: một người cha xây bộ nhớ gia đình mà chính anh cần, và một người viết newsletter biến cách tìm việc của mình thành một agent. Agent biết trả tiền là tương lai đang đến, và thứ còn thiếu quanh nó là niềm tin, giới hạn và bản ghi rõ ràng."
+  },
+  "a": {
+   "en": [
+    "Keep a \"what's missing\" note this week: every time a tool annoys you, write one line about it",
+    "Check any idea against the three tests: do you want it, can you build it, do few others see it",
+    "Use the newest tools in your own life first (an agent that can buy, a memory folder) so you live a few months ahead of your users"
+   ],
+   "vi": [
+    "Giữ một ghi chú \"thứ còn thiếu\" trong tuần này: mỗi lần một công cụ làm bạn bực, viết một dòng về nó",
+    "Kiểm tra mọi ý tưởng bằng ba câu hỏi: bạn có muốn nó không, bạn có xây được không, có ít người thấy nó không",
+    "Dùng công cụ mới nhất cho chính cuộc sống của bạn trước (một agent biết mua hàng, một thư mục bộ nhớ) để bạn sống trước người dùng vài tháng"
+   ]
+  },
+  "x": {
+   "en": "Example: once agents can buy for people, a feature you are working on may soon be used by an agent, not a person. Live that future for one hour: ask an agent to finish your product's main task for you and write down every place it gets stuck. That list is what's missing.",
+   "vi": "Ví dụ: khi agent có thể mua hàng thay người, một tính năng bạn đang làm có thể sớm được dùng bởi agent chứ không phải con người. Hãy sống trong tương lai đó một giờ: nhờ một agent hoàn thành việc chính trong sản phẩm của bạn và ghi lại mọi chỗ nó bị kẹt. Danh sách đó chính là thứ còn thiếu."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "If an agent did one action in your product for a user, which step should always need the user's own tap, and which could become a rule later?",
+    "vi": "Nếu một agent làm một hành động trong sản phẩm của bạn thay người dùng, bước nào luôn cần chính người dùng bấm duyệt, và bước nào có thể thành quy tắc về sau?"
+   },
+   "c": {
+    "en": "ChatGPT Wallet: approve every purchase first, rules later",
+    "vi": "ChatGPT Wallet: duyệt từng lần mua trước, quy tắc để sau"
+   }
+  },
+  {
+   "q": {
+    "en": "Which custom AI part you built would a better general model replace next year? What would you still own after that?",
+    "vi": "Phần AI tự xây nào của bạn sẽ bị một model đa năng tốt hơn thay thế vào năm sau? Sau đó bạn vẫn còn nắm giữ điều gì?"
+   },
+   "c": {
+    "en": "OpenAI folds robotics into its general models",
+    "vi": "OpenAI gộp mảng robot vào các model đa năng"
+   }
+  },
+  {
+   "q": {
+    "en": "What does your product know about a user that the user cannot see? Would showing it make them trust the advice more, or less?",
+    "vi": "Sản phẩm của bạn biết gì về người dùng mà họ không nhìn thấy? Cho họ xem điều đó sẽ làm họ tin lời khuyên hơn, hay kém đi?"
+   },
+   "c": {
+    "en": "How I AI: a family brain you can read",
+    "vi": "How I AI: bộ não gia đình mà bạn đọc được"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Put one AI feature's actions on a trust ladder",
+    "vi": "Đặt các hành động của một tính năng AI lên bậc thang niềm tin"
+   },
+   "s": {
+    "en": [
+     "List every action the AI takes for a user in one feature",
+     "Label each action read, draft, or act",
+     "For each act, choose approve every time, approve by rule, or no approval, and name the record the user sees"
+    ],
+    "vi": [
+     "Liệt kê mọi hành động AI làm thay người dùng trong một tính năng",
+     "Gắn nhãn cho từng hành động: đọc, soạn nháp, hay hành động",
+     "Với mỗi hành động, chọn duyệt mỗi lần, duyệt theo quy tắc, hoặc không cần duyệt, và ghi rõ bản ghi người dùng sẽ thấy"
+    ]
+   },
+   "o": {
+    "en": "A one-page table: action, approval level, record.",
+    "vi": "Một bảng một trang: hành động, mức duyệt, bản ghi."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"The agent can pay. You still press the button.\"",
+    "vi": "Viết một bài ngắn: \"Agent có thể trả tiền. Bạn vẫn là người bấm nút.\""
+   },
+   "s": {
+    "en": [
+     "Open with today's launch: agents can buy for you, but you approve every purchase with Face ID",
+     "Explain the trust ladder in two or three sentences, with one example from a feature you work on, without naming it",
+     "End by asking readers which action they would never hand to an agent"
+    ],
+    "vi": [
+     "Mở đầu bằng bản ra mắt hôm nay: agent có thể mua hàng giúp bạn, nhưng bạn duyệt từng lần mua bằng Face ID",
+     "Giải thích bậc thang niềm tin trong hai hoặc ba câu, kèm một ví dụ từ tính năng bạn đang làm, không nêu tên",
+     "Kết thúc bằng câu hỏi: hành động nào người đọc sẽ không bao giờ giao cho agent"
+    ]
+   },
+   "o": {
+    "en": "A 150-word post ready to share.",
+    "vi": "Một bài 150 chữ sẵn sàng để chia sẻ."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Make one AI call survive a provider outage",
+    "vi": "Giúp một lệnh gọi AI sống sót khi nhà cung cấp ngừng chạy"
+   },
+   "s": {
+    "en": [
+     "Wrap one AI call in a function with a timeout, for example 20 seconds",
+     "On an error or timeout, retry once on a second provider or a cheaper model, and log which path ran",
+     "If both fail, return a clear message to the user; test it by giving the first provider a bad key"
+    ],
+    "vi": [
+     "Bọc một lệnh gọi AI trong một hàm có giới hạn thời gian, ví dụ 20 giây",
+     "Khi lỗi hoặc quá giờ, thử lại một lần với nhà cung cấp thứ hai hoặc một model rẻ hơn, và ghi log đường nào đã chạy",
+     "Nếu cả hai đều hỏng, trả về một thông báo rõ ràng cho người dùng; kiểm tra bằng cách đưa khóa sai cho nhà cung cấp đầu tiên"
+    ]
+   },
+   "o": {
+    "en": "A small function with a fallback path, and a log that shows it worked.",
+    "vi": "Một hàm nhỏ có đường dự phòng, và một log cho thấy nó đã chạy đúng."
+   }
+  }
+ ]
+}
