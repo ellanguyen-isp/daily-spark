@@ -1,70 +1,80 @@
 {
  "date": "2026-11-14",
- "generated_at": "2026-11-14T06:20+07:00",
+ "generated_at": "2026-11-14T09:40+07:00",
  "window_days": 3,
- "youtube_api": false,
+ "youtube_api": true,
  "sources": [
   {
    "source": "Starter Story",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 4
   },
   {
    "source": "Starter Story Build",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "Lenny's Podcast",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "The Skip (Nikhyl Singhal)",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 1
   },
   {
    "source": "YC Root Access",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
   },
   {
    "source": "Aakash Gupta (Product Growth)",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 4
   },
   {
    "source": "Y Combinator",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 1
   },
   {
    "source": "Naval",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
   },
   {
    "source": "Every",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
   },
   {
    "source": "Vietnam Innovators Digest",
-   "ok": false,
-   "error": "rss: HTTP Error 404: Not Found"
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
   },
   {
    "source": "Lenny's Newsletter",
    "ok": true,
    "via": "rss",
-   "new": 1
+   "new": 0
   },
   {
    "source": "Simon Willison",
    "ok": true,
    "via": "rss",
-   "new": 6
+   "new": 8
   },
   {
    "source": "Every",
@@ -103,9 +113,8 @@
   },
   {
    "source": "John Cutler",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "SVPG (Marty Cagan)",
@@ -115,15 +124,13 @@
   },
   {
    "source": "Andrew Chen",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "April Dunford",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Jason Cohen",
@@ -133,9 +140,8 @@
   },
   {
    "source": "Gibson Biddle",
-   "ok": true,
-   "via": "rss",
-   "new": 0
+   "ok": false,
+   "error": "HTTP Error 403: Forbidden"
   },
   {
    "source": "Brian Balfour",
@@ -189,7 +195,7 @@
    "source": "Product Hunt",
    "ok": true,
    "via": "rss",
-   "new": 29
+   "new": 28
   },
   {
    "source": "Anthropic news",
@@ -205,6 +211,70 @@
  ],
  "items": [
   {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "Build a Claude Code Agent That Talks to Your Churned Customers",
+   "url": "https://www.youtube.com/watch?v=JpyhPePe150",
+   "published": "2026-11-14",
+   "summary": "Greg Greiner ran product at Bolt. Now he's co-founder and CEO of Woven, and in this episode he builds an AI research agent in Claude Code that emails every customer who drops off your funnel, then adds an eval loop live so the agent can reply without you. He also explains why one PM can now run a team that ships like 25 engineers. Full Writeup: https://www.news.aakashg.com/p/ai-customer-research Transcript: https://www.aakashg.com/how-to-talk-to-every-one-of-your-customers-with-ai/ Timestamps 0:00 - Intro 1:36 - What AI research on every drop-off can tell you 6:32 - How to build your own research agent in Claude Code 7:00 - Ads 8:52 - Demo: an agent that emails customers who drop off 12:29 - Why email beats in-app chat, and 20% to 40% reply rates 16:03 - The four emails to send across the customer journey 24:15 - Adding an eval loop to the agent, live 31:23 - What Woven adds, and when to talk to customers yourself 35:46 - The full AI research agenda for a PM 40:28 - Why one PM can now run a team that ships like 25 engineers 45:45 - AI for your team vs AI for your customers 52:03 - Inside an AI-native startup, from whiteboard to PRD 🏆 Thanks to our sponsors: 1. Jira Product Discover..."
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "What happens the moment the Sun disappears",
+   "url": "https://www.youtube.com/watch?v=QJ0IIXjo1Kg",
+   "published": "2026-11-14",
+   "summary": "If the Sun disappeared, Earth would carry on for 8 minutes and 20 seconds. Sunlight and gravity both take that long to reach us. Then it goes dark and Earth leaves its orbit. Idea from Cleo Abram's Short. Sun footage: NASA SDO. Imagery: NASA. What would you do in those 8 minutes?"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-cluster-map 0.19",
+   "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+   "published": "2026-11-14",
+   "summary": "Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a map of power plants owned by California's PG&E , also demonstrating Datasette's recently redesigned facets : Tags: datasette , geospatial , openstreetmap"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-leaflet 0.3",
+   "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
+   "published": "2026-11-14",
+   "summary": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy. datasette-leaflet is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on it. It now sets the referrer policy on the tile requests themselves to strict-origin-when-cross-origin , passing the host but not the full path to the page. Tags: leaflet , datasette , openstreetmap"
+  },
+  {
    "source": "Hacker News front page",
    "type": "rss",
    "role": "frontier",
@@ -214,8 +284,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "FAA Issues National Ground Stop",
-   "url": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11132026&advn=111",
+   "title": "FAA lifted National Ground Stop at 0119Z",
+   "url": "https://www.fly.faa.gov/adv/adv_otherdis?adv_date=11142026&advn=5",
    "published": "2026-11-14",
    "summary": "Comments"
   },
@@ -229,68 +299,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
-   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
-   "published": "2026-11-14",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Claude Meetings",
-   "url": "https://claude.com/resources/articles/claude-meetings",
-   "published": "2026-11-14",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
-   "url": "https://orcasairband.com/",
-   "published": "2026-11-14",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "FM-1 Workbench",
-   "url": "https://open.m-vave.com/fm1-workbench",
-   "published": "2026-11-14",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "After 600 experiments, here's what I discovered about JEPA world models",
-   "url": "https://haddyalchaer.com/jepa",
+   "title": "FAA issues national ground stop",
+   "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
    "published": "2026-11-14",
    "summary": "Comments"
   },
@@ -319,8 +329,173 @@
     "ai"
    ],
    "via": "rss",
+   "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+   "url": "https://orcasairband.com/",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "What Happened to 3Com?",
+   "url": "https://dfarq.homeip.net/what-happened-to-3com/",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Amtrak booking system experiencing major issues amid nationwide FAA ground stop",
+   "url": "https://www.fox5dc.com/news/amtrak-outage-ticket-booking-faa-ground-stop-november-13-2026",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Anthropic Upgrades Claude Code Projects to Run Parallel AI Workers Hands-Free",
+   "url": "https://alphasignal.ai/news/anthropic-upgrades-claude-code-projects-to-run-parallel-ai-workers-hands-free",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Ukraine knocks out 36% of Russia's oil refining capacity in under two weeks",
+   "url": "https://english.nv.ua/nation/thirteen-day-drone-blitz-paralyzes-36-of-moscow-s-oil-50658616.html",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "FM-1 Workbench",
+   "url": "https://open.m-vave.com/fm1-workbench",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
    "title": "Found: A protein that drives ageing without unleashing inflammation",
    "url": "https://www.nature.com/articles/d41586-026-03638-3",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop",
+   "url": "https://grounds.top/",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "After 600 experiments, here's what I discovered about JEPA world models",
+   "url": "https://haddyalchaer.com/jepa",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Elephants Found to Be Increasingly Isolated Leading to Fractured Social Networks",
+   "url": "https://today.ucsd.edu/story/elephants-found-to-be-increasingly-isolated-leading-to-fractured-social-networks",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
+   "url": "https://unsloth.ai/docs/models/qwen3.8",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth",
+   "url": "https://atg.science/careers",
    "published": "2026-11-14",
    "summary": "Comments"
   },
@@ -349,8 +524,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Autonomous (YC F25) is hiring MTS to build AI agents that manage your wealth",
-   "url": "https://atg.science/careers",
+   "title": "How Not to Build a Music Player",
+   "url": "https://alichraghi.github.io/blog/how-not-to-build-a-music-player/",
    "published": "2026-11-14",
    "summary": "Comments"
   },
@@ -409,6 +584,36 @@
     "ai"
    ],
    "via": "rss",
+   "title": "Lying to Zed to get its remote server running on FreeBSD",
+   "url": "https://hayzam.com/blog/03-lying-to-zeds-remote-editor/",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "$11.4M in Nvidia hardware vanishes during shipment from CA to TX",
+   "url": "https://www.freightwaves.com/news/11-4-million-in-nvidia-hardware-vanishes-during-shipment-from-california-to-texas",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
    "title": "All US airports are currently ground stopped",
    "url": "https://twitter.com/flightradar24/status/2121347654714077605",
    "published": "2026-11-14",
@@ -424,8 +629,8 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Big tech is here to let us down",
-   "url": "https://blog.jsweeting.me/big-tech-is-here-to-let-us-down",
+   "title": "Nvidia director sold nearly $1B in stock weeks before the Jensen Huang scandal",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-director-sold-nearly-1b-160000846.html",
    "published": "2026-11-14",
    "summary": "Comments"
   },
@@ -439,7 +644,7 @@
     "ai"
    ],
    "via": "rss",
-   "title": "Models can now transmit viruses in weight-space",
+   "title": "Weight Space Misfolding",
    "url": "https://www.alphaxiv.org/abs/2611.weight-space-misfolding",
    "published": "2026-11-14",
    "summary": "Comments"
@@ -460,94 +665,50 @@
    "summary": "Comments"
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
    "tags": [
-    "launches",
-    "ai"
+    "indie-business",
+    "founders",
+    "case-studies"
    ],
-   "via": "rss",
-   "title": "It Takes 16 Clicks for a Student to Open a PowerPoint on an iPad",
-   "url": "https://www.reddit.com/r/Teachers/comments/1xuup7a/technology_sucks_it_literally_takes_16_clicks_for/",
+   "via": "youtube-api",
+   "title": "Bro built 30+ apps and recently crossed $1M in total revenue 😱",
+   "url": "https://www.youtube.com/watch?v=5ZzxDQXm1dk",
    "published": "2026-11-14",
-   "summary": "Comments"
+   "summary": "Bro built 30+ apps and 8 of them make money. Meet Sanskar. He’s from Bangalore, India, and a few years ago he was working the night shift at a call center. Now he runs 8 revenue-making products by himself. Zero people on the team. “I have built 30 plus products out of which eight ended up making revenue.”"
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
    "tags": [
-    "launches",
-    "ai"
+    "ai-native-work",
+    "ai-products"
    ],
-   "via": "rss",
-   "title": "FAA issues nationwide ground stop due to \"extraordinary circumstances\"",
-   "url": "https://www.axios.com/2026/11/13/faa-nationwide-ground-stop",
+   "via": "youtube-api",
+   "title": "Your Next Software Builder Already Works for You",
+   "url": "https://www.youtube.com/watch?v=Q-IcEcSXN1I",
    "published": "2026-11-14",
-   "summary": "Comments"
+   "summary": "Thesis: 2027 is made possible by our founding partners, Lovable and Notion. Lovable is the fastest way to turn ideas into software people love: https://link.lovable.dev/every Notion is the collaborative AI workspace where teams and agents work side by side: https://www.notion.com/?utm_source=youtube&utm_campaign=thesis-2027&utm_content=every-261113-video What changes inside a company when building software is no longer limited to engineers? At Thesis: 2027, Lovable’s Lauren Rhode and Nursa’s Curtis Anderson join Every’s Brian Dell to explore how people closest to a problem can build their own solutions—and how leaders can turn that freedom into software their teams actually use. Subscribe to Every (free for 14 days): https://every.to/youtube-every-offer?utm_source=youtube&utm_campaign=thesis2027&utm_content=thesistalkwheneveryonebuilds Timestamps: 00:00 Beyond vibe coding 02:59 Nursa’s first AI-built product 06:36 What happens when all 160 employees build 11:46 Leadership, guardrails, and hiring for AI 19:33 Keeping quality high when everyone can build 25:35 Overcoming resistance to AI"
   },
   {
-   "source": "Hacker News front page",
+   "source": "Aakash Gupta newsletter",
    "type": "rss",
-   "role": "frontier",
-   "priority": 1,
+   "role": "people",
+   "priority": 2,
    "tags": [
-    "launches",
-    "ai"
+    "product",
+    "ai-pm"
    ],
    "via": "rss",
-   "title": "No AI Slop: A Manifesto",
-   "url": "https://www.slopmanifesto.com/",
+   "title": "How to Build an AI Customer Research Agent in Claude Code",
+   "url": "https://www.news.aakashg.com/p/ai-customer-research",
    "published": "2026-11-14",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "OpenAI disbands its robotics team as its general models start running robots",
-   "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
-   "published": "2026-11-14",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Concurrent Shell Command Queues",
-   "url": "https://emmer.dev/blog/concurrent-shell-command-queues/",
-   "published": "2026-11-14",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Microsoft outage gives customers a crash course in dependence on Redmond",
-   "url": "https://www.theregister.com/saas/2026/11/13/microsoft-outage-gives-customers-a-crash-course-in-dependence-on-redmond/5309805",
-   "published": "2026-11-14",
-   "summary": "Comments"
+   "summary": "Build an AI agent in Claude Code that emails every customer who drops off, plus the eval loop that keeps it safe. The free GitHub project is included."
   },
   {
    "source": "Stratechery (Ben Thompson)",
@@ -563,6 +724,23 @@
    "url": "https://stratechery.com/2026/the-end-of-jensen/",
    "published": "2026-11-14",
    "summary": "The best Stratechery content from the week of November 9, 2026, including the shocking demise of Jensen Huang; enterprise, consumer and Intel; and professional basketbal."
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "What if you dove into the Sun?",
+   "url": "https://www.youtube.com/watch?v=Z6vP530xjEs",
+   "published": "2026-11-13",
+   "summary": "What if you dove into the Sun? The photosphere is about 5,500 Celsius and about 400 kilometers thick, hotter than the roughly 3,640 Celsius where carbon turns to gas. The convection zone below it reaches up to 2 million degrees, light can take up to 170,000 years to cross the radiative zone, and the core tops 15 million degrees. Idea: Cleo Abram. Sources: NASA Sun facts and the NASA Marshall solar interior page. Footage: NASA SDO, Storyblocks. Depth and temperature between the NASA figures are approximate. Which layer would stop you first? Sources, in order of the dive: Photosphere about 5,500 C (10,000 F), about 250 miles (400 km) thick; the convection zone drops below 2 million C; about 170,000 years from the core to the top of the convection zone; the core tops 15 million C; hydrogen is fused into helium: NASA, science.nasa.gov/sun/facts Convection zone from about 200,000 km deep to the surface, 2,000,000 C at its base; radiative zone from 25 percent to 70 percent of the way to the surface; core 175,000 km from the centre: NASA Marshall, solarscience.msfc.nasa.gov/interior.shtml The depth and temperature counter moves between those NASA numbers, so the digits in between are appr..."
   },
   {
    "source": "Simon Willison",
@@ -592,6 +770,20 @@
    "url": "https://openai.com/index/introducing-chatgpt-wallet",
    "published": "2026-11-13",
    "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+   "url": "https://openai.com/business/customer-stories/shield",
+   "published": "2026-11-13",
+   "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment."
   },
   {
    "source": "OpenAI news",
@@ -644,10 +836,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "StockRip",
-   "url": "https://www.producthunt.com/products/stockrip",
+   "title": "Replicate",
+   "url": "https://www.producthunt.com/products/replicate-10",
    "published": "2026-11-13",
-   "summary": "Trading cards, literally digital cards with tokenized stocks Discussion | Link"
+   "summary": "Turn Webflow/Framer app into a Claude/Codex project for free Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -658,10 +850,24 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Replicate",
-   "url": "https://www.producthunt.com/products/replicate-10",
+   "title": "Pocket Studio for Supabase",
+   "url": "https://www.producthunt.com/products/pocket-studio-for-supabase",
    "published": "2026-11-13",
-   "summary": "Turn Webflow/Framer app into a Claude/Codex project for free Discussion | Link"
+   "summary": "Supabase dashboard & SQL editor for Android Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Paxper",
+   "url": "https://www.producthunt.com/products/paxper",
+   "published": "2026-11-13",
+   "summary": "Create cloud infrastructure visually and review every change Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -700,6 +906,20 @@
     "launches"
    ],
    "via": "rss",
+   "title": "GAtrends",
+   "url": "https://www.producthunt.com/products/gatrends",
+   "published": "2026-11-13",
+   "summary": "Spike alerts for your keywords in Telegram, Claude, ChatGPT Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
    "title": "Expo Simulators",
    "url": "https://www.producthunt.com/products/expo",
    "published": "2026-11-13",
@@ -714,38 +934,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Paxper",
-   "url": "https://www.producthunt.com/products/paxper",
+   "title": "StockRip",
+   "url": "https://www.producthunt.com/products/stockrip",
    "published": "2026-11-13",
-   "summary": "Create cloud infrastructure visually and review every change Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Pocket Studio for Supabase",
-   "url": "https://www.producthunt.com/products/pocket-studio-for-supabase",
-   "published": "2026-11-13",
-   "summary": "Supabase dashboard & SQL editor for Android Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "GAtrends",
-   "url": "https://www.producthunt.com/products/gatrends",
-   "published": "2026-11-13",
-   "summary": "Spike alerts for your keywords in Telegram, Claude, ChatGPT Discussion | Link"
+   "summary": "Trading cards, literally digital cards with tokenized stocks Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -836,64 +1028,68 @@
    "summary": "Comments"
   },
   {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Lonewolf 0.3 – A standalone XMPP server written in Rust",
-   "url": "https://github.com/lonewolf-im/lonewolf/releases/tag/v0.3.0",
-   "published": "2026-11-13",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "CERN Built the Large Hadron Collider's Next-Gen Magnets",
-   "url": "https://spectrum.ieee.org/large-hadron-collider-superconducting-magnets",
-   "published": "2026-11-13",
-   "summary": "Comments"
-  },
-  {
-   "source": "Hacker News front page",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches",
-    "ai"
-   ],
-   "via": "rss",
-   "title": "Apify Security Incident",
-   "url": "https://status.apify.com/incidents/sxd1dj5j6749",
-   "published": "2026-11-13",
-   "summary": "Comments"
-  },
-  {
-   "source": "Aakash Gupta newsletter",
-   "type": "rss",
+   "source": "Starter Story",
+   "type": "youtube",
    "role": "people",
    "priority": 2,
    "tags": [
-    "product",
-    "ai-pm"
+    "indie-business",
+    "founders",
+    "case-studies"
    ],
-   "via": "rss",
-   "title": "I spent months building you an automated job search agent",
-   "url": "https://www.news.aakashg.com/p/job-search-agent",
+   "via": "youtube-api",
+   "title": "Dude makes $77K/month solo. He never checks his phone before noon 😱",
+   "url": "https://www.youtube.com/watch?v=WrzC51pbEpo",
    "published": "2026-11-13",
-   "summary": "It finds your best roles every morning and applies on your go."
+   "summary": "Dude makes $77k a month BUT doesn’t check his phone until noon. No emails No socials No notifications just 4-6 hours of deep work every single morning he’s built 35 startups and says most people lose before they even start not because they’re not good enough but because they’re distracted"
+  },
+  {
+   "source": "YC Root Access",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups",
+    "founders",
+    "ai"
+   ],
+   "via": "youtube-api",
+   "title": "How Intelligence Measures the Frontier",
+   "url": "https://www.youtube.com/watch?v=EWmqL-63tyM",
+   "published": "2026-11-13",
+   "summary": "Intelligence (YC S25), the creators of DesignArena, measures how well AI models handle creative work. It turns people’s choices and edits while creating websites, images, and videos into feedback that helps AI labs improve their models. The platform has over seven million users across 192 countries, and the company reached a $60 million annualized run rate in about a year. In this episode of Founder Firesides, founder and CEO Grace Li joins YC’s Ankit Gupta to discuss how AI-generated games led to Design Arena, her vision for a marketplace of AI models, and building a high-trust team of fast learners. She also shares why “an idiot in motion will always go farther than a genius at rest.” https://www.designarena.ai Chapters: 00:00 — How Design Arena Works 03:21 — From AI Games to Creative Benchmarks 06:43 — Measuring Human Taste at Scale 09:56 — A Marketplace for Specialized AI 13:52 — The Small Team Behind a $60M Run Rate 17:04 — Hiring Fast Learners and Taking Action 20:56 — Handling Rejection and Living in the Future Apply to Y Combinator: https://www.ycombinator.com/apply Work at a startup: https://www.ycombinator.com/jobs"
+  },
+  {
+   "source": "YC Root Access",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups",
+    "founders",
+    "ai"
+   ],
+   "via": "youtube-api",
+   "title": "Creating A New Universal Standard For Refueling Spacecraft",
+   "url": "https://www.youtube.com/watch?v=WkbEMw9EQYs",
+   "published": "2026-11-13",
+   "summary": "Spaceium (S24) is building fully automated refueling stations in orbit so spacecraft can keep working instead of being discarded when they run out of fuel. Today, the company is announcing OpenPort, an open-standard refueling interface for spacecraft. For just $1, companies can license Spaceium's tech to build their own ports. In this episode of Founder Firesides, co-founders Ashi Dissanayake and Reza Fetanat discuss why their business is selling fuel, not ports, and how they use AI, in-house manufacturing, and repeated testing to build space hardware faster and more cheaply. They also share their journey from a laundry room to their first mission in orbit, plus plans for a xenon fuel-transfer test outside the International Space Station in 2027 and their first refueling station launch in 2028. https://spaceium.com Chapters: 00:00 — Why Spacecraft Need In-Space Refueling 03:36 — How OpenPort Works 07:07 — Why They’re Licensing OpenPort for $1 10:17 — From First Flight to a Refueling Station 13:52 — Building Space Hardware Like a Software Startup 17:11 — From a Laundry Room to Orbit 20:50 — First-Mission Lessons and the Future of Refueling Apply to Y Combinator: https://www.ycombina..."
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Cách một kỹ sư tiết kiệm 20.000 USD mỗi tháng",
+   "url": "https://www.youtube.com/watch?v=gTXYKCcjxbE",
+   "published": "2026-11-13",
+   "summary": "[English below] Tại HP, một kỹ sư phát triển phần mềm sử dụng máy trạm di động chuyên dụng đã giúp công ty tiết kiệm tới 20.000 USD chi phí dịch vụ điện toán đám mây mỗi tháng. Con số này chứng minh một thực tế: chi phí mua thiết bị ban đầu trở nên rất nhỏ bé khi đặt cạnh khả năng giải phóng doanh nghiệp khỏi áp lực chi phí xử lý trên điện toán đám mây. Xem phiên bản đầy đủ tập 416 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông David McQuarrie - Chủ tịch Điều hành Thương mại HP toàn cầu. - At HP, an engineer running workloads on a mobile workstation cuts cloud computing expenses by $20,000 a month. Upfront capital investments in hardware quickly pay for themselves when measured against recurring operational cloud spend. Watch more from EP 416 of Vietnam Innovators (English Edition) featuring Mr. David McQuarrie - Chief Commercial Officer at HP, available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts channels."
   },
   {
    "source": "Stratechery (Ben Thompson)",
@@ -925,6 +1121,39 @@
    "url": "https://hellochinatech.com/p/smic-q3-minority-interest",
    "published": "2026-11-13",
    "summary": "Two minority-interest lines in SMIC's Q3 filings show how Chinese state funds finance subsidiary fabs, take a third of profit, and exit in shares."
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "What happens if you don't put your phone in airplane mode?",
+   "url": "https://www.youtube.com/watch?v=xatZiS6wASI",
+   "published": "2026-11-12",
+   "summary": "What happens on a flight if you don't put your phone in airplane mode? In the US, 5G phones use 3.7 to 3.98 GHz and the radar altimeter that measures height above the ground works at 4.2 to 4.4 GHz, a gap of 220 MHz. In Europe the phone band is 3.4 to 3.8 GHz, a gap of 400 MHz. EASA leaves it to each airline to decide whether devices can stay on. Idea: Mark Rober, his Short \"What happens if you don't use Airplane mode?\". Sources: FAA radio altimeter rule and the FCC Upper C-band order (Federal Register, July 31, 2026), EU Decision 2019/235, EASA. The 3D scene is a diagram, not to scale. Sound effects: Storyblocks. Airplane mode on every flight? Yes or no. Sources (the video shows the US and European gaps; the FCC step is written context only): Radar altimeter band 4.2-4.4 GHz, US 5G Lower C-band 3.70-3.98 GHz, Upper C-band 3.98-4.2 GHz, and the FAA's wording that an altimeter under interference can give \"inaccurate altitude information\": FAA final rule \"Requirements for Interference-Tolerant Radio Altimeter Systems\" (Federal Register, July 31, 2026): https://www.federalregister.gov/documents/2026/07/31/2026-15585/requirements-for-interference-tolerant-radio-altimeter-systems FCC or..."
+  },
+  {
+   "source": "Y Combinator",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "startups",
+    "startup-school",
+    "ai"
+   ],
+   "via": "youtube-api",
+   "title": "Inside Theranos with ex-Employee Tyler Shultz",
+   "url": "https://www.youtube.com/watch?v=iXWSYlAX5Lg",
+   "published": "2026-11-12",
+   "summary": "With Theranos and Elizabeth Holmes back in the conversation, we’re revisiting one of the most remarkable firsthand accounts of what actually happened inside the company. Tyler Shultz joined Theranos fresh out of Stanford as a true believer in its mission. His grandfather, former Secretary of State George Shultz, sat on the company’s board, and Elizabeth Holmes had become a mentor and even a presence at family gatherings. But once Tyler began working directly with Theranos’s technology, he discovered that the reality inside the lab looked very different from what the company was telling the world. On The Social Radars, Tyler sat down with Jessica Livingston and Carolynn Levy to tell the full story of how he went from employee to whistleblower: the failed blood tests and red flags he uncovered, the culture of fear that kept employees silent, his attempts to raise concerns internally and with regulators, and the extraordinary legal pressure he faced after speaking to The Wall Street Journal. This episode was originally recorded on December 4, 2024. 00:00 — Tyler Shultz’s Theranos Story 01:53 — Meeting Elizabeth Holmes 04:24 — The First Red Flags 08:03 — Theranos Launch Day 11:20 — Ins..."
   },
   {
    "source": "Simon Willison",
@@ -1051,20 +1280,6 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Trainn MCP",
-   "url": "https://www.producthunt.com/products/trainn",
-   "published": "2026-11-12",
-   "summary": "Create product videos and courses from any AI chat Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
    "title": "Aven App Agent",
    "url": "https://www.producthunt.com/products/aven-app-agent",
    "published": "2026-11-12",
@@ -1079,10 +1294,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Marqly 7.0",
-   "url": "https://www.producthunt.com/products/marqly",
+   "title": "Trainn MCP",
+   "url": "https://www.producthunt.com/products/trainn",
    "published": "2026-11-12",
-   "summary": "Bookmarks you can query to find the things you saved Discussion | Link"
+   "summary": "Create product videos and courses from any AI chat Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1107,38 +1322,10 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Crossfade",
-   "url": "https://www.producthunt.com/products/crossfade",
-   "published": "2026-11-12",
-   "summary": "Let your coding agent design in your open Figma file Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
    "title": "LeaseWire",
    "url": "https://www.producthunt.com/products/leasewire",
    "published": "2026-11-12",
    "summary": "Lease abstraction, wired to your model. Discussion | Link"
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Sluice",
-   "url": "https://www.producthunt.com/products/sluice-2",
-   "published": "2026-11-12",
-   "summary": "Room to build on your Mac, even with 20 agents at once Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1163,10 +1350,24 @@
     "launches"
    ],
    "via": "rss",
-   "title": "Skysoon",
-   "url": "https://www.producthunt.com/products/skysoon",
+   "title": "Crossfade",
+   "url": "https://www.producthunt.com/products/crossfade",
    "published": "2026-11-12",
-   "summary": "Beautiful weather timelines and countdowns to what's next. Discussion | Link"
+   "summary": "Let your coding agent design in your open Figma file Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Marqly 7.0",
+   "url": "https://www.producthunt.com/products/marqly",
+   "published": "2026-11-12",
+   "summary": "Bookmarks you can query to find the things you saved Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1181,6 +1382,48 @@
    "url": "https://www.producthunt.com/products/infinite-drive",
    "published": "2026-11-12",
    "summary": "A cloud drive you stream to give your laptop infinite space Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Sluice",
+   "url": "https://www.producthunt.com/products/sluice-2",
+   "published": "2026-11-12",
+   "summary": "Room to build on your Mac, even with 20 agents at once Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Foxpit",
+   "url": "https://www.producthunt.com/products/foxpit",
+   "published": "2026-11-12",
+   "summary": "Run Claude Code, Codex & OpenCode as one AI team Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Grok Bot 1.0",
+   "url": "https://www.producthunt.com/products/grok",
+   "published": "2026-11-12",
+   "summary": "Bots work together alongside your team Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1211,18 +1454,83 @@
    "summary": "The MCP server for identity verification and fraud checks Discussion | Link"
   },
   {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
    "tags": [
-    "launches"
+    "indie-business",
+    "founders",
+    "case-studies"
    ],
-   "via": "rss",
-   "title": "Foxpit",
-   "url": "https://www.producthunt.com/products/foxpit",
+   "via": "youtube-api",
+   "title": "$30k/mo SaaS founder doubled his monthly price and growth exploded 👀",
+   "url": "https://www.youtube.com/watch?v=WpZepwYjwLM",
    "published": "2026-11-12",
-   "summary": "Run Claude Code, Codex & OpenCode as one AI team Discussion | Link"
+   "summary": "Meet this guy Jake. He built Excel Exercises, a dead simple website that teaches Excel through hands-on exercises. It makes $30K+/month. When he started running paid ads, his average LTV to CAC ratio looked like a healthy 3 to 1. But the business wasn’t growing as fast as he thought it should."
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "I made $100K in 3 months with this AI wrapper",
+   "url": "https://www.youtube.com/watch?v=P3RVeg8YCg0",
+   "published": "2026-11-12",
+   "summary": "Bogdan turned his own eBook side hustle into GetEbook, an AI tool that writes a full eBook in under 10 minutes. Over the past few months, he's made over $100K with this app. This video is a playbook for turning a simple idea into an app that makes money. *Get the AI playbook (50+ AI app ideas making millions):* https://clickhubspot.com/x4x2 Say hi to Bogdan: https://x.com/bogdan_ai Check out his app: https://getebook.ai/ 🔔 Follow the Second Channel: @StarterStoryBuild 🏁 We're hiring: starterstory.com/jobs Chapters: 0:00 - zero to $100K in 4 months 0:53 - Meet Bogdan! 1:29 - What’s the app? 2:24 - More AI App ideas! 2:55 - “just an AI wrapper” 3:12 - Numbers behind the business 4:00 - Founder background 4:47 - Finding the idea 5:31 - Is this AI slop? 6:38 - Building the app 7:54 - Tech stack 8:23 - Growth and marketing 10:15 - Profitability with ads 11:04 - App demo 12:08 - Final advice 12:55 - Reflections: a simple AI wrapper! 13:42 - More AI app ideas This video is an educational case study of this founder’s experience. It is not financial advice and does not guarantee any income or results. Every business is different and your results may vary."
+  },
+  {
+   "source": "The Skip (Nikhyl Singhal)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "product-leadership",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "How to Stay Current, Get Hired, and Last in AI",
+   "url": "https://www.youtube.com/watch?v=EzzydrPdpDo",
+   "published": "2026-11-12",
+   "summary": "In this episode, I sit down in person with three of my closest friends in The Skip Community, each of whom took on an AI role recently: Dana Ingraham, who runs core product at Harvey after seven years at Airbnb, Hemal Shah, who moved from OpenAI to Google Cloud, and Jiaona \"JZ\" Zhang, CPO of Laurel and formerly of Webflow. We get into the common product career advice they push back on, from needing to be “AI-pilled” to land an AI job, to following everything to stay current, to judging a company by its valuation, and what they do instead. We also talk about how they manage all-consuming jobs with young families at home, and why JZ says AI \"literally makes us able to do all the things.\" Key topics: • Why Dana disagrees that you need to be \"AI-pilled\" to get an AI job, and what she hires for instead • Hemal's three skills of a great PM today: historian, technologist, and anthropologist • Why curiosity and adapting to change as the traits that matter even more now • Staying current through \"people curation\" instead of consuming everything • Choosing a company by its data, distribution, people, and willingness to change • Why JZ recommends forward-deployed and AI operations roles over ..."
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Khi nào doanh nghiệp cần tích hợp Edge AI?",
+   "url": "https://www.youtube.com/watch?v=j5j8lhJNsJQ",
+   "published": "2026-11-12",
+   "summary": "[English below] Doanh nghiệp sẽ đánh mất những lợi thế gì nếu tiếp tục đứng ngoài cuộc đua nâng cấp phần cứng làm việc chỉ vì chờ đợi một \"thời điểm hoàn hảo\"? Xem phiên bản đầy đủ tập 416 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông David McQuarrie - Chủ tịch Điều hành Thương mại HP toàn cầu. - What advantages do businesses lose when they sit out the hardware race, just waiting for the “perfect time”? Watch more from EP 416 of Vietnam Innovators (English Edition) featuring Mr. David McQuarrie - Chief Commercial Officer at HP, available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts channel."
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Beyond The Cloud: How Edge AI Is Redefining Data Privacy | David McQuarrie | EP 416",
+   "url": "https://www.youtube.com/watch?v=rrx3f93N5tg",
+   "published": "2026-11-12",
+   "summary": "Don’t forget to subscribe: https://www.youtube.com/@vietnaminnovatorsdigest Check full playlist here: https://www.youtube.com/playlist?list=PLKj-kMezX0d3fFGEY7vdUvHHYS8Dg1CCJ Host: Hao Tran Guest: Mr. David McQuarrie, Chief Commercial Officer at HP Ever since the boom of AI, businesses worldwide have raced to integrate the technology to boost productivity. Yet, mounting cloud operating costs and persistent risks of data leakage leave many leaders hesitant when it comes to real-world deployment. In this week’s episode of Vietnam Innovators (English edition), host Hao Tran sits down with Mr. David McQuarrie, Chief Commercial Officer at HP, to explore the inevitable shift of AI from the cloud to the edge (Edge AI / AI PCs) - a defining trend reshaping how enterprises safeguard data sovereignty and maximize return on investment (ROI). Rather than viewing AI as a threat to the workforce, David considers it a powerful equalizer that democratizes competitiveness, redesigns end-to-end workflows, and empowers small and medium-sized enterprises (SMEs) to achieve meaningful breakthroughs. Coupled with sharp observations on Vietnam’s dynamic economic growth and digital ambitions, this conversa..."
   },
   {
    "source": "Hello China Tech",
@@ -1239,21 +1547,6 @@
    "url": "https://hellochinatech.com/p/biomap-hong-kong-ipo",
    "published": "2026-11-12",
    "summary": "China's BioMap, co-founded by Baidu's Robin Li, ties most of its Sanofi deal value to drug progress, and I expect IPO investors to ask how much revenue depends on it."
-  },
-  {
-   "source": "Lenny's Newsletter",
-   "type": "rss",
-   "role": "people",
-   "priority": 1,
-   "tags": [
-    "product",
-    "growth"
-   ],
-   "via": "rss",
-   "title": "Claude Code + Obsidian: My family’s AI brain | Scott Farrar",
-   "url": "https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
-   "published": "2026-11-11",
-   "summary": "Watch now (34 mins) | 🎙️ Scott Farrar walks through the Claude Code and Obsidian system he built to track appliances, chase insurance quotes, and keep household projects moving"
   },
   {
    "source": "Simon Willison",
@@ -1285,20 +1578,6 @@
    "summary": "More than 20,000 veterans and transitioning service members have claimed a free year of ChatGPT Plus. See how they use it to prepare for civilian careers."
   },
   {
-   "source": "OpenAI news",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "ai-models"
-   ],
-   "via": "rss",
-   "title": "JioStar’s chief architect on AI discovery at 500M-user scale",
-   "url": "https://openai.com/index/jiostar-vijay-seshadri",
-   "published": "2026-11-11",
-   "summary": "JioStar’s Vijay Seshadri explains AI discovery at 500M-user scale. Read his lessons on evals, guardrails, and taking AI into production."
-  },
-  {
    "source": "Google AI blog",
    "type": "rss",
    "role": "frontier",
@@ -1325,20 +1604,6 @@
    "url": "https://blog.google/company-news/outreach-and-initiatives/arts-culture/esther-mahlangu/",
    "published": "2026-11-11",
    "summary": "A new online archive of Esther Mahlangu’s life and art is now on Google Arts & Culture."
-  },
-  {
-   "source": "Product Hunt",
-   "type": "rss",
-   "role": "frontier",
-   "priority": 1,
-   "tags": [
-    "launches"
-   ],
-   "via": "rss",
-   "title": "Google Pixel Tag",
-   "url": "https://www.producthunt.com/products/google",
-   "published": "2026-11-11",
-   "summary": "Google’s $30 Android-ready tracking tag Discussion | Link"
   },
   {
    "source": "Product Hunt",
@@ -1395,6 +1660,52 @@
    "url": "https://www.producthunt.com/products/l",
    "published": "2026-11-11",
    "summary": "Edit your website like Figma! Discussion | Link"
+  },
+  {
+   "source": "YC Root Access",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups",
+    "founders",
+    "ai"
+   ],
+   "via": "youtube-api",
+   "title": "How Model ML Is Building the AI Operating System For Finance",
+   "url": "https://www.youtube.com/watch?v=zIlVzGJZZ5E",
+   "published": "2026-11-11",
+   "summary": "Model ML (W24) is building the AI operating system for financial services, used by the largest banks, asset managers, and consulting firms in the world. Eighteen months after coming out of stealth, they’ve gone from 10 people to 200 across eight offices, and they’re still adding about 20 a week. At YC x London, co-founder and CEO Chaz Englander sat down with YC’s Gustaf Alströmer to talk about why agent harnesses couldn’t work with Excel until February, how to get investors to tell you the truth about why they passed, and why he thinks every founder in Europe is being insufficiently ambitious. Apply to Y Combinator: https://www.ycombinator.com/apply Work at a startup: https://www.ycombinator.com/jobs Chapters: 00:00 - Nine to nine, seven days a week 02:09 - Starting Fat Lama 04:43 - \"You're still doing full-time entrepreneurship?\" 06:55 - The first month at YC 08:38 - Why founders become lifelong friends 09:56 - What he took from Fat Lama 11:29 - The idea they'd been building for themselves 14:05 - What the product actually does 16:25 - How it changes the work 17:45 - Why February changed everything 19:31 - Why banks won't bet on one model 20:29 - What investors are actually bettin..."
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "A New Vision for Human Work After Automation",
+   "url": "https://www.youtube.com/watch?v=WstNofgQF5Q",
+   "published": "2026-11-11",
+   "summary": "Thesis: 2027 is made possible by our founding partners, Lovable and Notion. Lovable is the fastest way to turn ideas into software people love: https://link.lovable.dev/every Notion is the collaborative AI workspace where teams and agents work side by side: https://www.notion.com/?utm_source=youtube&utm_campaign=thesis-2027&utm_content=every-261111-video What does great human work look like after automation? It’s a question we try to answer every day at Every, and the one we built our conference, Thesis, around. In his closing keynote, *Dan Shipper* argues that as AI makes intelligence cheap and widely available, what matters most is human perspective. It’s your “non-consensus” point of view, plus your responsibility for a particular corner of the world, that helps you spot the insight no one else would. On this week’s episode of The Every Podcast, we’re sharing Dan’s full talk at Thesis: 2027. Dan explains why benchmark charts make the future of work look bleaker than it is, why picking the right idea still takes a human, and how we should really measure AI models. Subscribe to Every (free for 14 days): https://every.to/youtube-every-offer?utm_source=podcast&utm_medium=audio&utm_c..."
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "LIVE Vibe Check: Gemini 4 Carbon",
+   "url": "https://www.youtube.com/watch?v=G8rzzawst4s",
+   "published": "2026-11-11",
+   "summary": "[2-4 sentence video summary] Every is the most AI-native startup on the internet. Through ideas, software and education, subscribers get the tools to work at the frontier of AI. Start your free trial today: https://every.to/subscribe?utm_source=youtube Follow Every: https://x.com/every Follow Dan Shipper: https://x.com/danshipper Timestamps: 00:00 TKTK Links:"
   },
   {
    "source": "Stratechery (Ben Thompson)",
