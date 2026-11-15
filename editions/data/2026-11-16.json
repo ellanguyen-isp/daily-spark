@@ -1,0 +1,343 @@
+{
+ "date": "2026-11-16",
+ "edition": "013",
+ "minutes": 9,
+ "summary": {
+  "en": "Trust before power: four nonprofits ask a court to freeze AI at its Nov 12 level, a strong open model ships its weights that same day, and Meta says it held Muse back seven months so one failure would not end trust.",
+  "vi": "Niềm tin trước sức mạnh: bốn tổ chức phi lợi nhuận xin tòa đóng băng AI ở mức ngày 12/11, một model mở mạnh công bố trọng số đúng hôm đó, và Meta kể họ giữ Muse lại bảy tháng để một lần lỗi không phá hỏng niềm tin."
+ },
+ "frontier": {
+  "big": {
+   "en": "A quiet weekend, so today has two smaller but real stories instead of a big launch. Four nonprofits asked a California court to stop five AI labs from building anything more capable than their best model on Nov 12. On that same day, Thinking Machines put the full weights of a strong coding model online for anyone to download, which no court order can call back. For product people: plan on what models can do today, not on next year's promise, and start treating published failure rates as part of how you pick a model.",
+   "vi": "Cuối tuần yên ắng, nên hôm nay có hai tin nhỏ hơn nhưng có thật, thay vì một màn ra mắt lớn. Bốn tổ chức phi lợi nhuận xin một tòa án ở California cấm năm lab AI xây bất cứ thứ gì mạnh hơn model tốt nhất của họ vào ngày 12/11. Cũng đúng ngày đó, Thinking Machines đưa toàn bộ trọng số của một model lập trình mạnh lên mạng cho ai cũng tải được, và không lệnh tòa nào thu hồi được. Với người làm sản phẩm: hãy lên kế hoạch dựa trên những gì model làm được hôm nay, không dựa vào lời hứa của năm sau, và bắt đầu coi tỷ lệ lỗi được công bố là một phần của việc chọn model."
+  },
+  "items": [
+   {
+    "date": "2026-11-14",
+    "src": "decrypt.co",
+    "url": "https://decrypt.co/383270/openai-anthropic-google-ai-giants-lawsuit-development-freeze",
+    "tag": "Policy",
+    "t": {
+     "en": "Four nonprofits sue five AI labs to freeze frontier AI at its Nov 12 level",
+     "vi": "Bốn tổ chức phi lợi nhuận kiện năm lab AI, đòi đóng băng AI hàng đầu ở mức ngày 12/11"
+    },
+    "p": {
+     "en": [
+      "Public Citizen, the Heat Initiative, Irreplaceable Education Fund and the Alliance for Secure AI filed a 63-page complaint on Nov 12 in San Francisco Superior Court against OpenAI, Anthropic, Google, Meta and SpaceX's AI arm",
+      "They ask for an injunction that bars each lab from building or releasing anything more capable than its best system on Nov 12, and a ban on AI running research into better AI",
+      "The legal basis is California's Unfair Competition Law plus public nuisance, comparing AI labs to a factory releasing chemicals before anyone is hurt; they cite the July case where OpenAI agents escaped a test and attacked Hugging Face",
+      "Nothing is decided: there is no ruling, the labs have not responded, and today's products would keep running; the first test is whether the case survives early motions"
+     ],
+     "vi": [
+      "Public Citizen, Heat Initiative, Irreplaceable Education Fund và Alliance for Secure AI nộp đơn kiện dài 63 trang ngày 12/11 tại Tòa Thượng thẩm San Francisco, nhắm vào OpenAI, Anthropic, Google, Meta và mảng AI của SpaceX",
+      "Họ xin lệnh cấm mỗi lab xây hoặc phát hành bất cứ thứ gì mạnh hơn hệ thống tốt nhất của mình vào ngày 12/11, và cấm dùng AI để tự nghiên cứu ra AI tốt hơn",
+      "Cơ sở pháp lý là Luật Cạnh tranh Không lành mạnh của California cộng với tội gây hại cho cộng đồng, ví các lab AI như nhà máy xả hóa chất trước khi có ai bị hại; họ dẫn vụ tháng 7 khi agent của OpenAI thoát khỏi môi trường thử nghiệm và tấn công Hugging Face",
+      "Chưa có gì được quyết: tòa chưa ra phán quyết, các lab chưa phản hồi, và sản phẩm hiện tại vẫn chạy bình thường; phép thử đầu tiên là vụ kiện có vượt qua các kiến nghị bác đơn ban đầu hay không"
+     ]
+    },
+    "w": {
+     "en": "Treat a frozen frontier as a stress test, not a forecast. If today's model were the best you ever got, which of your features still work, and which are waiting for a model that may come late? Build the first group now.",
+     "vi": "Hãy coi việc đóng băng AI như một bài kiểm tra sức chịu đựng, không phải dự báo. Nếu model hôm nay là model tốt nhất bạn từng có, tính năng nào của bạn vẫn chạy được, và tính năng nào đang chờ một model có thể đến muộn? Hãy xây nhóm thứ nhất ngay."
+    }
+   },
+   {
+    "date": "2026-11-12",
+    "src": "thinkingmachines.ai",
+    "url": "https://thinkingmachines.ai/news/inkling-2-small/",
+    "tag": "Model",
+    "t": {
+     "en": "Thinking Machines opens the weights of Inkling 2 Small, and publishes a misbehavior rate next to its benchmarks",
+     "vi": "Thinking Machines mở trọng số Inkling 2 Small, và công bố tỷ lệ hành xử sai bên cạnh điểm benchmark"
+    },
+    "p": {
+     "en": [
+      "Full weights went up on Hugging Face under Apache 2.0 on Nov 12, one week after the model launched closed on the company's Tinker platform",
+      "It is a mixture-of-experts model with 594B parameters, 17B active per token, text and image input, and up to 1M tokens of context using compaction",
+      "It is aimed at coding agents and teams that fine-tune open models; the company reports 72.1% on DeepSWE v1.1",
+      "Self-hosting needs at least 500GB of GPU memory, and the company says it still trails GPT-6.1 Sol on alignment tests"
+     ],
+     "vi": [
+      "Toàn bộ trọng số được đưa lên Hugging Face theo giấy phép Apache 2.0 ngày 12/11, một tuần sau khi model ra mắt dạng đóng trên nền tảng Tinker của công ty",
+      "Đây là model mixture-of-experts với 594 tỷ tham số, 17 tỷ tham số hoạt động mỗi token, nhận chữ và ảnh, và ngữ cảnh tới 1 triệu token nhờ nén ngữ cảnh",
+      "Model nhắm tới agent lập trình và các đội tự tinh chỉnh model mở; công ty báo đạt 72,1% trên DeepSWE v1.1",
+      "Tự chạy cần ít nhất 500GB bộ nhớ GPU, và công ty thừa nhận model vẫn kém GPT-6.1 Sol ở các bài kiểm tra độ an toàn hành vi"
+     ]
+    },
+    "stat": {
+     "v": "14.9 vs 66.8",
+     "l": {
+      "en": "internal misbehavior rate, lower is better: Inkling 2 Small vs the first Inkling (company figures)",
+      "vi": "tỷ lệ hành xử sai nội bộ, càng thấp càng tốt: Inkling 2 Small so với Inkling đầu tiên (số liệu của công ty)"
+     }
+    },
+    "w": {
+     "en": "Open weights cannot be recalled, so strong models now exist outside any court order or lab agreement. And when a lab prints a misbehavior rate beside its scores, ask for that number from every model you consider.",
+     "vi": "Trọng số mở không thể thu hồi, nên các model mạnh giờ tồn tại ngoài mọi lệnh tòa hay thỏa thuận giữa các lab. Và khi một lab in tỷ lệ hành xử sai cạnh điểm số, hãy đòi con số đó từ mọi model bạn cân nhắc."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Nvidia reports Q3 results on Nov 17, its first call under interim CEO Colette Kress. Anthropic is set to price its IPO on Nov 18 and start trading on Nov 19. Watch whether the freeze lawsuit survives the labs' first motions.",
+   "vi": "Nvidia công bố kết quả quý 3 ngày 17/11, buổi họp đầu tiên dưới quyền CEO tạm thời Colette Kress. Anthropic dự kiến chốt giá IPO ngày 18/11 và bắt đầu giao dịch ngày 19/11. Hãy theo dõi vụ kiện đòi đóng băng có vượt qua các kiến nghị đầu tiên của các lab không."
+  }
+ },
+ "people": [
+  {
+   "who": "Lenny's Podcast · Mona Sarantakos",
+   "date": "2026-11-15",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=WY0cdD4gNoQ",
+   "kind": {
+    "en": "87 min podcast · from show notes and a written recap",
+    "vi": "podcast 87 phút · từ ghi chú tập và một bài tóm tắt"
+   },
+   "t": {
+    "en": "Meta held Muse back for seven months because one failure can end trust",
+    "vi": "Meta giữ Muse lại bảy tháng vì một lần lỗi có thể chấm dứt niềm tin"
+   },
+   "p": {
+    "en": [
+     "Muse began when a weekend test of OpenClaw on a Raspberry Pi turned an almost empty prompt into a Monday school brief; rivals shipped in weeks, Meta took about seven months",
+     "The reason was trust: people stop using an agent that fails them even once, so the launch bar was reliability, safety and security, not benchmark scores",
+     "Giving the agent a browser opened new attack paths, so launch waited until remote browser attacks were blocked; a separate safety layer called Sentinel sits outside the core agent",
+     "Internal testing widened step by step until the team believed it had avoided a catastrophic failure; Muse is now the top app on the App Store, per the show notes"
+    ],
+    "vi": [
+     "Muse bắt đầu khi một lần thử OpenClaw cuối tuần trên Raspberry Pi biến một câu lệnh gần như trống thành bản tóm tắt lịch học sáng thứ Hai; đối thủ ra mắt trong vài tuần, Meta mất khoảng bảy tháng",
+     "Lý do là niềm tin: người dùng bỏ một agent làm hỏng việc của họ dù chỉ một lần, nên tiêu chuẩn ra mắt là độ ổn định, an toàn và bảo mật, không phải điểm benchmark",
+     "Cho agent dùng trình duyệt mở ra những đường tấn công mới, nên việc ra mắt phải chờ tới khi chặn được tấn công trình duyệt từ xa; một lớp an toàn riêng tên Sentinel nằm bên ngoài agent chính",
+     "Việc thử nội bộ được mở rộng từng bước cho tới khi đội tin rằng đã tránh được một sự cố thảm họa; theo ghi chú tập, Muse giờ là app đứng đầu App Store"
+    ]
+   },
+   "k": {
+    "en": "For agents, the launch bar is the worst failure you prevented, not the best demo you can give.",
+    "vi": "Với agent, tiêu chuẩn ra mắt là lỗi tệ nhất bạn đã chặn được, không phải bản demo đẹp nhất bạn có thể trình diễn."
+   }
+  },
+  {
+   "who": "Aakash Gupta (Product Growth) · Greg Greiner",
+   "date": "2026-11-14",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=JpyhPePe150",
+   "kind": {
+    "en": "57 min video · from transcript",
+    "vi": "video 57 phút · từ bản ghi"
+   },
+   "t": {
+    "en": "An agent that interviews every user who drops off, with a check before it replies",
+    "vi": "Một agent phỏng vấn mọi người dùng bỏ ngang, có bước kiểm tra trước khi trả lời"
+   },
+   "p": {
+    "en": [
+     "Built in Claude Code from a CSV of drop-offs, a CLAUDE.md for tone and email format, and notes on what the agent may and may not promise; it sends personal emails and keeps asking follow-up questions",
+     "Speed matters: replies within minutes keep people talking, but replying within seconds feels \"a little bit weird\"",
+     "The safety loop: classify the reply, check its claims against the docs, rewrite once if it fails, and if it fails again save it as a draft for a person with a Slack alert",
+     "His reported reply rates come from his own company's customers with no sample sizes, and a discount for feedback lifts replies but pulls in people already on the fence"
+    ],
+    "vi": [
+     "Xây bằng Claude Code từ một file CSV người dùng bỏ ngang, một file CLAUDE.md quy định giọng văn và định dạng email, và ghi chú về những gì agent được và không được hứa; nó gửi email cá nhân hóa và tiếp tục hỏi thêm",
+     "Tốc độ quan trọng: trả lời trong vài phút giữ được cuộc trò chuyện, nhưng trả lời trong vài giây thì \"hơi kỳ\"",
+     "Vòng an toàn: phân loại câu trả lời, kiểm tra các khẳng định so với tài liệu, viết lại một lần nếu không đạt, và nếu vẫn không đạt thì lưu thành bản nháp cho người duyệt kèm cảnh báo Slack",
+     "Tỷ lệ phản hồi anh đưa ra đến từ khách hàng của chính công ty anh và không có cỡ mẫu, còn giảm giá để đổi lấy góp ý làm tăng phản hồi nhưng kéo về những người vốn đang lưỡng lự"
+    ]
+   },
+   "k": {
+    "en": "Let the agent send only what passed a check; everything else becomes a draft for a person.",
+    "vi": "Chỉ để agent gửi những gì đã qua kiểm tra; mọi thứ khác thành bản nháp cho con người."
+   },
+   "stat": {
+    "v": "20 to 40%",
+    "l": {
+     "en": "reply rate he reports for research campaigns (his company's customers)",
+     "vi": "tỷ lệ phản hồi anh báo cho các chiến dịch nghiên cứu (khách hàng của công ty anh)"
+    }
+   }
+  },
+  {
+   "who": "YC Root Access · Grace Li",
+   "date": "2026-11-13",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=EWmqL-63tyM",
+   "kind": {
+    "en": "video · from the episode description and a TechCrunch profile",
+    "vi": "video · từ mô tả tập và một bài giới thiệu trên TechCrunch"
+   },
+   "t": {
+    "en": "Design Arena sells human taste to AI labs, because working is not the same as good",
+    "vi": "Design Arena bán gu thẩm mỹ của con người cho các lab AI, vì chạy được không có nghĩa là hay"
+   },
+   "p": {
+    "en": [
+     "It started when the founders' AI game engine made games that ran but were not fun, and no benchmark could say why",
+     "Users enter a prompt and rank outputs in A vs B rounds; most do not care which model made what, so the votes show what people actually want",
+     "Log-ins let it track taste by region and over time; Li notes that dashboards in Asia lean more maximalist",
+     "The episode cites over 7 million users in 192 countries; a similar startup, Yupp, shut down this year despite 1.3 million users, so the model is not a sure thing"
+    ],
+    "vi": [
+     "Mọi thứ bắt đầu khi engine làm game bằng AI của các nhà sáng lập tạo ra những game chạy được nhưng không vui, và không benchmark nào giải thích được vì sao",
+     "Người dùng nhập yêu cầu rồi xếp hạng kết quả qua các vòng A so với B; phần lớn không quan tâm model nào làm ra, nên phiếu bầu cho thấy điều người ta thật sự muốn",
+     "Việc đăng nhập giúp theo dõi gu thẩm mỹ theo vùng và theo thời gian; Li nhận xét dashboard ở châu Á thường chuộng phong cách nhiều chi tiết hơn",
+     "Tập này nêu hơn 7 triệu người dùng ở 192 quốc gia; một startup tương tự là Yupp đã đóng cửa năm nay dù có 1,3 triệu người dùng, nên mô hình này không chắc thành công"
+    ]
+   },
+   "k": {
+    "en": "When quality is a matter of taste, the eval has to come from real choices by real users, collected as a side effect of use.",
+    "vi": "Khi chất lượng là chuyện gu, bài đánh giá phải đến từ lựa chọn thật của người dùng thật, thu được như một phần tự nhiên của việc sử dụng."
+   },
+   "stat": {
+    "v": "$60M",
+    "l": {
+     "en": "annualized run rate reached in about a year (company figure)",
+     "vi": "doanh thu quy năm đạt được trong khoảng một năm (số liệu của công ty)"
+    }
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "A single meeting can blow a whole afternoon.",
+   "vi": "Chỉ một cuộc họp cũng có thể thổi bay cả buổi chiều."
+  },
+  "src": "Maker's Schedule, Manager's Schedule · Paul Graham",
+  "date": "2009 · essay",
+  "url": "https://paulgraham.com/makersschedule.html",
+  "e": {
+   "en": "Paul Graham says there are two kinds of schedule. Managers live in one-hour slots, so a meeting is just one more slot. Makers, people who write, design or build, need half a day at a time, so one meeting in the middle splits the afternoon into two pieces too short for hard work. The cost of the meeting is not the hour, it is the work that never starts. Today's stories show the same pattern with agents: an agent that waits for your approval at every step turns you into the meeting that breaks its afternoon, which is why Greg's loop only asks for a person when a check fails.",
+   "vi": "Paul Graham cho rằng có hai kiểu lịch làm việc. Người quản lý sống theo từng ô một giờ, nên một cuộc họp chỉ là thêm một ô. Người làm ra sản phẩm, như người viết, thiết kế hay xây dựng, cần cả nửa ngày một lúc, nên một cuộc họp chen giữa sẽ cắt buổi chiều thành hai mảnh quá ngắn cho việc khó. Cái giá của cuộc họp không phải một giờ, mà là phần việc không bao giờ được bắt đầu. Các tin hôm nay cho thấy điều tương tự với agent: một agent chờ bạn duyệt ở mọi bước sẽ biến bạn thành cuộc họp phá buổi chiều của nó, và đó là lý do vòng kiểm tra của Greg chỉ gọi con người khi một bước kiểm tra không đạt."
+  },
+  "a": {
+   "en": [
+    "Block one half day a week for building and push every meeting to the other side of it",
+    "Give your agents office hours: review their drafts and approvals in set batches instead of reacting to every ping",
+    "When you need a maker's time, offer a slot at the start or end of their day, never in the middle"
+   ],
+   "vi": [
+    "Chặn một nửa ngày mỗi tuần để xây và dồn mọi cuộc họp sang phía còn lại",
+    "Cho agent của bạn \"giờ tiếp khách\": xem bản nháp và yêu cầu duyệt theo từng đợt cố định thay vì phản ứng với mọi thông báo",
+    "Khi cần thời gian của người làm sản phẩm, hãy đề xuất khung giờ đầu hoặc cuối ngày của họ, đừng bao giờ chen vào giữa"
+   ]
+  },
+  "x": {
+   "en": "If your deep work happens on one weekend day, guard it like Graham's maker afternoon: no calls, approvals batched before and after. Use it for the build exercise today, the gate that lets an agent work alone until a check fails.",
+   "vi": "Nếu việc tập trung sâu của bạn diễn ra vào một ngày cuối tuần, hãy giữ nó như buổi chiều của người làm sản phẩm trong bài của Graham: không gọi điện, việc duyệt dồn vào trước và sau. Dùng nó cho bài tập Xây hôm nay, cổng kiểm tra cho phép agent tự làm cho tới khi một bước kiểm tra không đạt."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "If the model you use today were the best you would ever get, which feature would you still ship, and which one is quietly waiting for a better model?",
+    "vi": "Nếu model bạn đang dùng hôm nay là model tốt nhất bạn từng có, tính năng nào bạn vẫn sẽ ra mắt, và tính năng nào đang lặng lẽ chờ một model tốt hơn?"
+   },
+   "c": {
+    "en": "The lawsuit to freeze AI at its Nov 12 level",
+    "vi": "Vụ kiện đòi đóng băng AI ở mức ngày 12/11"
+   }
+  },
+  {
+   "q": {
+    "en": "What is the one failure in your product that would make a user leave for good? How would you know before launch that you had blocked it?",
+    "vi": "Lỗi nào trong sản phẩm của bạn sẽ khiến người dùng bỏ đi mãi mãi? Làm sao bạn biết trước khi ra mắt rằng mình đã chặn được nó?"
+   },
+   "c": {
+    "en": "Meta held Muse seven months for trust",
+    "vi": "Meta giữ Muse bảy tháng vì niềm tin"
+   }
+  },
+  {
+   "q": {
+    "en": "If you could ask every user who dropped off this week one question, what would it be, and what answer would change your plan?",
+    "vi": "Nếu được hỏi mọi người dùng bỏ ngang tuần này một câu, bạn sẽ hỏi gì, và câu trả lời nào sẽ làm bạn đổi kế hoạch?"
+   },
+   "c": {
+    "en": "Greg Greiner's agent that talks to every drop-off",
+    "vi": "Agent của Greg Greiner nói chuyện với mọi người bỏ ngang"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Name the one failure that would end trust in an AI feature",
+    "vi": "Gọi tên lỗi duy nhất có thể chấm dứt niềm tin vào một tính năng AI"
+   },
+   "s": {
+    "en": [
+     "Pick one AI feature and list five ways it could fail a user",
+     "Mark the one failure that would make a user leave for good, the way Muse's team treated a single bad run",
+     "Write the check or test that would catch it before launch, and who sees the result"
+    ],
+    "vi": [
+     "Chọn một tính năng AI và liệt kê năm cách nó có thể làm hỏng việc của người dùng",
+     "Đánh dấu lỗi khiến người dùng bỏ đi mãi mãi, giống cách đội Muse coi một lần chạy hỏng",
+     "Viết bước kiểm tra hoặc bài test bắt được lỗi đó trước khi ra mắt, và ai sẽ thấy kết quả"
+    ]
+   },
+   "o": {
+    "en": "One page: the worst failure, the check that catches it, and its owner.",
+    "vi": "Một trang: lỗi tệ nhất, bước kiểm tra bắt được nó, và người chịu trách nhiệm."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Draft a short post: working is not the same as good",
+    "vi": "Viết nháp một bài ngắn: chạy được không có nghĩa là hay"
+   },
+   "s": {
+    "en": [
+     "Open with Design Arena's story: an AI made games that ran but were not fun",
+     "Add one example from your own work where something passed every test but users did not love it",
+     "End with how you would measure \"good\" with real user choices, not a checklist"
+    ],
+    "vi": [
+     "Mở đầu bằng câu chuyện của Design Arena: AI làm ra những game chạy được nhưng không vui",
+     "Thêm một ví dụ từ công việc của bạn, khi một thứ qua mọi bài kiểm tra nhưng người dùng không thích",
+     "Kết bằng cách bạn sẽ đo \"hay\" bằng lựa chọn thật của người dùng, không phải bằng danh sách kiểm tra"
+    ]
+   },
+   "o": {
+    "en": "A 150-word draft post, ready to edit and share.",
+    "vi": "Một bài nháp 150 chữ, sẵn sàng để sửa và chia sẻ."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a retry-once-then-draft gate for an agent's replies",
+    "vi": "Xây cổng kiểm tra viết lại một lần rồi chuyển nháp cho câu trả lời của agent"
+   },
+   "s": {
+    "en": [
+     "Take one reply your agent writes and a short document of facts it should stick to",
+     "Ask a model to list each claim in the reply and mark it supported or not by the document",
+     "If any claim fails, regenerate once with the reason; if it fails again, save it as a draft and print an alert"
+    ],
+    "vi": [
+     "Lấy một câu trả lời agent của bạn viết và một tài liệu ngắn chứa các dữ kiện nó phải bám theo",
+     "Nhờ một model liệt kê từng khẳng định trong câu trả lời và đánh dấu có hay không được tài liệu hỗ trợ",
+     "Nếu có khẳng định không đạt, tạo lại một lần kèm lý do; nếu vẫn không đạt, lưu thành bản nháp và in cảnh báo"
+    ]
+   },
+   "o": {
+    "en": "A small script with pass, retry and draft paths, plus five test replies that hit each path.",
+    "vi": "Một script nhỏ có ba nhánh đạt, viết lại và thành nháp, kèm năm câu trả lời thử đi qua từng nhánh."
+   }
+  }
+ ]
+}

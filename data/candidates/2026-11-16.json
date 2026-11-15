@@ -1,0 +1,1461 @@
+{
+ "date": "2026-11-16",
+ "generated_at": "2026-11-16T06:13+07:00",
+ "window_days": 3,
+ "youtube_api": false,
+ "sources": [
+  {
+   "source": "Starter Story",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 4
+  },
+  {
+   "source": "Starter Story Build",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 1
+  },
+  {
+   "source": "Lenny's Podcast",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 1
+  },
+  {
+   "source": "The Skip (Nikhyl Singhal)",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 0
+  },
+  {
+   "source": "YC Root Access",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 1
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 2
+  },
+  {
+   "source": "Y Combinator",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 1
+  },
+  {
+   "source": "Naval",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 0
+  },
+  {
+   "source": "Every",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 15
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "ok": true,
+   "via": "youtube-rss",
+   "new": 3
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Simon Willison",
+   "ok": true,
+   "via": "rss",
+   "new": 4
+  },
+  {
+   "source": "Every",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Benedict Evans",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Rob Snyder (Physics of Startups)",
+   "ok": null,
+   "note": "no feed; the Worker reads the page"
+  },
+  {
+   "source": "Aakash Gupta newsletter",
+   "ok": true,
+   "via": "rss",
+   "new": 1
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Product Talk (Teresa Torres)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "John Cutler",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "SVPG (Marty Cagan)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Andrew Chen",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "April Dunford",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Jason Cohen",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Gibson Biddle",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Brian Balfour",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Melissa Perri",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Hello China Tech",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Y Combinator blog",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Naval",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Linear blog (Karri Saarinen)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "OpenAI news",
+   "ok": true,
+   "via": "rss",
+   "new": 4
+  },
+  {
+   "source": "Google AI blog",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Product Hunt",
+   "ok": true,
+   "via": "rss",
+   "new": 16
+  },
+  {
+   "source": "Anthropic news",
+   "ok": null,
+   "note": "no feed; the Worker reads the page"
+  },
+  {
+   "source": "Hacker News front page",
+   "ok": true,
+   "via": "rss",
+   "new": 24
+  }
+ ],
+ "items": [
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "A step toward defining the Standard Model on a lattice",
+   "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+   "published": "2026-11-16",
+   "summary": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Our new blog for science",
+   "url": "https://openai.com/index/our-new-blog-for-science",
+   "published": "2026-11-16",
+   "summary": "The OpenAI science blog shares new findings, practical methods, and firsthand accounts from researchers using AI to advance scientific discovery."
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Old Bitly Links Are Being Hijacked",
+   "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "A short explainer on how El Niño works [video]",
+   "url": "https://www.youtube.com/watch?v=7_JF3etiAv8",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Protomaps: Self-hosting map tiles has gotten cheap and easy",
+   "url": "https://bruceroettgers.eu/blog/protomaps/",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Your Agent Will Pick the Hackable One",
+   "url": "https://geoffstearns.com/blog/your-agent-will-pick-the-hackable-one/",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "'Birdbrain' Is a Misnomer. Crows Make Decisions Faster Than We Can",
+   "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "WebGL Flight Simulator with seed generated terrain",
+   "url": "https://baron.by.dai.studio/",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Handwriting, as a Font",
+   "url": "https://ductus.sorenblank.com",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Eclipse Mosquitto – An open source MQTT broker",
+   "url": "https://github.com/eclipse-mosquitto/mosquitto",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Microsoft 365 outage leads to chlorine gas poisoning of 15 hotel guests",
+   "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Clice v1.0 Released: Welcome to Modern C++",
+   "url": "https://ykiko.me/en/articles/2105384023094834022/",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Vulcan rocket fails during return-to-flight launch, 40 Amazon satellites lost",
+   "url": "https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Boeing-Lockheed rocket fails mid-flight, destroys payload of Amazon satellites",
+   "url": "https://www.reuters.com/business/aerospace-defense/us-rocket-fails-after-launch-payload-amazon-internet-satellites-destroyed-2026-11-15/",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Ask HN: Stripe closed us after one $1,500 invoice and never asked for evidence",
+   "url": "https://news.ycombinator.com/item?id=50510042",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Do House members' stock trades beat the market? A test of 8,900 trades",
+   "url": "https://arkanumdata.com/research/house-trades",
+   "published": "2026-11-16",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-rss",
+   "title": "Bro's ebook AI wrapper has generated $130,000 in 4 months 🤯",
+   "url": "https://www.youtube.com/shorts/3krH3l9Bj40",
+   "published": "2026-11-16",
+   "summary": "Bro’s ebook AI wrapper made $130,000 in 4 months. Meet Bogdan. He built GetEbook.ai, a tool that writes a full ebook in under 10 minutes. He has a computer science degree but never knew how to code. “We got over 130,000 in revenue over the four months.” The numbers straight from his Stripe: $130K+ in revenue in 4 months 1,700+ paying customers Around 5,000 signups Subscriptions start at $29/month, plus one-time credit packs and tutorials on top"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-rss",
+   "title": "I built this app on the side for fun. It just hit $100K",
+   "url": "https://www.youtube.com/watch?v=B7b_2LaWOzs",
+   "published": "2026-11-16",
+   "summary": "Kris has been a software engineer for 25 years. But on the side he launched his first mobile app, a peptide tracker, that already made over $100K in 1 year. But this isn't another story about a guy going viral. It’s about how he grew his app slowly and methodically with SEO. This video is a tactical playbook for how to grow an app without going viral in 2026. *iOS App Ideas Database:* https://clickhubspot.com/w1tp Say hi to Kris: https://twitter.com/KrisRChase Check out PeptIQ: https://peptiq.io/ 🔔 Follow the Second Channel: @StarterStoryBuild 🏁 We're hiring: starterstory.com/jobs Chapters: 0:..."
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "We Test AI for a Living. Pick One Tool and Go Deep",
+   "url": "https://www.youtube.com/shorts/4TRMLUGngDw",
+   "published": "2026-11-16",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-14-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Gemini 4 Carbon vs Fable Describing the Same Raspberry Jelly",
+   "url": "https://www.youtube.com/shorts/e-703GDpDGQ",
+   "published": "2026-11-16",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-13-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Gemini 4 Carbon Found the Same Reader Groups We Did",
+   "url": "https://www.youtube.com/shorts/jdTMH3F02jw",
+   "published": "2026-11-16",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-12-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "He Runs a Committee of AI Models on a Mac Mini",
+   "url": "https://www.youtube.com/shorts/e2BfemgTimg",
+   "published": "2026-11-16",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-11-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Great Design Ideas, Unreliable Builds. Gemini 4 Carbon Tested.",
+   "url": "https://www.youtube.com/shorts/z_mGVnQPNo0",
+   "published": "2026-11-16",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-10-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Gemini 4 Carbon Became His Second Choice for Coding",
+   "url": "https://www.youtube.com/shorts/FlkdN-3Vc7I",
+   "published": "2026-11-16",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-09-youtube"
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos",
+   "url": "https://www.youtube.com/watch?v=WY0cdD4gNoQ",
+   "published": "2026-11-15",
+   "summary": "Muse is the #1 app in the App Store and arguably the fastest-growing AI consumer product of all time. Mona Sarantakos has led product on it since day one. She’s VP of Product at Meta Superintelligence Labs and a 10-year Meta veteran with over 20 years of experience as a PM. This is her first podcast interview. *We discuss:* 1. How a weekend with OpenClaw on a Raspberry Pi turned into Muse 2. Why Muse waited seven months to launch, despite getting started before most of its competitors 3. How Nat Friedman, Alex Wang, and Mark Zuckerberg each left their imprint on the product 4. How the team use..."
+  },
+  {
+   "source": "Y Combinator",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "startups",
+    "startup-school",
+    "ai"
+   ],
+   "via": "youtube-rss",
+   "title": "The Rise Of AI Coworkers",
+   "url": "https://www.youtube.com/watch?v=y1-9yeYLJUo",
+   "published": "2026-11-15",
+   "summary": "Lauren Tan and Roman Ugarte join this episode of the Lightcone to go in deep on how they built and deployed Grok Bot. They explain how automated tests and codebase guardrails help agents check their own work, why bots should earn broader access over time, and why faster and cheaper execution makes direction and clear goal setting even more important. Apply to Y Combinator: https://www.ycombinator.com/apply Work at a startup: https://www.ycombinator.com/jobs Try Grok Bot here: https://bit.ly/4tj7bpv Chapters: 00:00 — Intro 03:36 — Giving Bots Real Jobs 06:49 — One Bot or a Team of Specialists 1..."
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth"
+   ],
+   "via": "rss",
+   "title": "Meta’s Muse: How we launched the most successful consumer product this year | Mona Sarantakos",
+   "url": "https://www.lennysnewsletter.com/p/metas-muse-how-we-launched-the-most",
+   "published": "2026-11-15",
+   "summary": "Listen now | Mona Sarantakos on going from a weekend with OpenClaw to shipping the fastest-growing consumer AI product in history"
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth"
+   ],
+   "via": "rss",
+   "title": "🧠 Community Wisdom: When you become the bottleneck for your AI agents, the PULL framework for PMs, product growth vs. growth marketing, boosting feedback response rates, and more",
+   "url": "https://www.lennysnewsletter.com/p/community-wisdom-when-you-become",
+   "published": "2026-11-15",
+   "summary": "Community Wisdom 305"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-llm 0.1a11",
+   "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/",
+   "published": "2026-11-15",
+   "summary": "Release: datasette-llm 0.1a11 datasette-llm is the intermediate plugin for Datasette that supports configuring LLMs for use with other Datasette plugins. This release adds support for OpenAI-compatible endpoints, so you can configure Datasette to use an LLM hosted anywhere that talks the OpenAI pseudo-standard web protocol. This means that if you're running local models with LM Studio or Ollama or llama.cpp (which just hit v1.0.0 ) you can run Datasette via uvx like this: wget https://datasette.io/content.db uvx --with datasette-agent datasette \\ --root --secret 1 \\ -s plugins.datasette-llm.de..."
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-vega 0.7",
+   "url": "https://simonwillison.net/2026/Nov/14/datasette-vega/",
+   "published": "2026-11-15",
+   "summary": "Release: datasette-vega 0.7 A new release of Datasette's longest untouched plugin, for rendering charts (using Vega-Lite ) against data in a table or custom query. The last release was in July 2018! I finally bumped it for compatibility with the latest Datasette alphas, plus some cosmetic tweaks to make it work better with Datasette Lite . (Datasette Lite just gained the ability to run JavaScript plugins like this! I'll write more about that soon.) Since it works with Datasette Lite, the live demo in the README now links to this demo on Datasette Lite . Tags: datasette , visualisation , datase..."
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Canvas by AgentGrid.io",
+   "url": "https://www.producthunt.com/products/agentgrid-io",
+   "published": "2026-11-15",
+   "summary": "Agentic Design Canvas - A visual way to collaborate with AI Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "GotEmail",
+   "url": "https://www.producthunt.com/products/gotemail",
+   "published": "2026-11-15",
+   "summary": "Fast, native and smart email for Mac and iPhone Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Perit Marketplace",
+   "url": "https://www.producthunt.com/products/perit-marketplace",
+   "published": "2026-11-15",
+   "summary": "Sell your data and RL tasks to frontier AI labs Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "HuntMonitor",
+   "url": "https://www.producthunt.com/products/huntmonitor",
+   "published": "2026-11-15",
+   "summary": "Watch today's hunt live: points, speed, rank moves Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "The MacBook Pro's OLED PWM problem",
+   "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+   "published": "2026-11-15",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+   "url": "https://prog21.dadgum.com/116.html",
+   "published": "2026-11-15",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Emacs Is My Browser",
+   "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+   "published": "2026-11-15",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Understanding Positional Embeddings in Modern LLMs",
+   "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "published": "2026-11-15",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "All AI-generated code should be Open Source",
+   "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
+   "published": "2026-11-15",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Why did some Apollo missions carry a grenade launcher? (2019)",
+   "url": "https://space.stackexchange.com/questions/37775",
+   "published": "2026-11-15",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "A NES emulator written in Odin",
+   "url": "https://lucypero.com/lucynes.html",
+   "published": "2026-11-15",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "SpaceX catches the Starship to end Flight 15",
+   "url": "https://www.spacex.com/launches/starship-flight-15",
+   "published": "2026-11-15",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-rss",
+   "title": "This dude accidentally built a better duolingo it now makes $25K/month 🐦",
+   "url": "https://www.youtube.com/shorts/oiWxIAxRmzw",
+   "published": "2026-11-15",
+   "summary": "This is Ben. He built Canary, an app where you learn a language through songs you love. It was his first app, he had never coded a line, and he launched it 9 months ago. The idea came straight from his own followers: A lot of them were using Duolingo but weren’t really learning anything He’d ask them to say something in French and they’d blank The only thing they could remember: “Voulez vous coucher avec moi?” Not because they wanted to sleep with him. They just remembered the lyrics of a song."
+  },
+  {
+   "source": "Starter Story Build",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "building",
+    "ai-tools",
+    "side-projects"
+   ],
+   "via": "youtube-rss",
+   "title": "My Apps Make $8K/Month: This is Marketing Playbook",
+   "url": "https://www.youtube.com/watch?v=oRDEBx_kDvk",
+   "published": "2026-11-15",
+   "summary": "Max is a solo developer who’s built multiple successful apps. But just a few months ago, he stopped building and started MARKETING his apps. But, he didn’t dance on TikTok or try to go viral. Instead, he implemented a slow and BORING strategy that today has grown 3 apps to $8K MRR. This video is a no-BS playbook for marketing your app consistently, without waiting for a viral moment. *Get our Mobile App Growth Cheat Sheet:* https://clickhubspot.com/j93n Say hi to Max: https://twitter.com/maks6361 Chapters: 0:00 - Slow, boring marketing 0:54 - Welcome BACK AGAIN, Max! 1:52 - By the end of the v..."
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Gemini 4 Carbon Built Our Podcast Intro From Space to Brooklyn",
+   "url": "https://www.youtube.com/shorts/yErTWMroGDo",
+   "published": "2026-11-15",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-08-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Gemini 4 Carbon Didn't Pick the Same Hotel as Other Models",
+   "url": "https://www.youtube.com/shorts/bvjmXxO7f_M",
+   "published": "2026-11-15",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-07-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Gemini 4 Carbon Can Build a Working Game. A Fun One Is Harder.",
+   "url": "https://www.youtube.com/shorts/ppJYKn1aS60",
+   "published": "2026-11-15",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-06-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "We Asked Gemini 4 Carbon to Mix an Audio Track",
+   "url": "https://www.youtube.com/shorts/ISUbpZWKmtE",
+   "published": "2026-11-15",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-05-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Gemini 4 Carbon Finished More Tickets But Took 4.5 Hours",
+   "url": "https://www.youtube.com/shorts/E6LbtZq-pgY",
+   "published": "2026-11-15",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-04-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Does More Reasoning Make a Better App Icon?",
+   "url": "https://www.youtube.com/shorts/2iL1PLwUz1g",
+   "published": "2026-11-15",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-03-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Gemini 4 Carbon Turned a Gear List Into a 3D Studio",
+   "url": "https://www.youtube.com/shorts/-nN8Ii5r87Q",
+   "published": "2026-11-15",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-02-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "Gemini 4 Carbon Found the Bug Other AI Models Missed",
+   "url": "https://www.youtube.com/shorts/K4i2W5FYiTk",
+   "published": "2026-11-15",
+   "summary": "Read the full vibe check: https://every.to/vibe-check/vibe-check-gemini-4-carbon-doesn-t-know-when-to-stop?utm_source=youtube&utm_campaign=vibecheck-gemini-4-carbon&utm_content=every-carbon-short-01-youtube"
+  },
+  {
+   "source": "Every",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "ai-native-work",
+    "ai-products"
+   ],
+   "via": "youtube-rss",
+   "title": "The Problem With Written AI Trading Tests",
+   "url": "https://www.youtube.com/shorts/yrmb2IkiLLg",
+   "published": "2026-11-15",
+   "summary": "read the full vibe check: https://every.to/vibe-check/fable-5-2?utm_source=youtube&utm_campaign=vibecheck-fable-5-2&utm_content=every-fable-5-2-short-13"
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-rss",
+   "title": "Lợi ích bảo mật của Edge AI",
+   "url": "https://www.youtube.com/shorts/HBw4O7VYZhc",
+   "published": "2026-11-15",
+   "summary": "[English below] Theo ông David McQuarrie, công nghệ AI tích hợp trực tiếp trên thiết bị (AI at the Edge) sẽ giúp giải quyết triệt để sự nghi ngại của doanh nghiệp trong việc mở cửa cho AI. Khi toàn bộ quá trình tính toán chỉ diễn ra giữa con chip NPU và màn tính người dùng, sự bảo mật sẽ được đảm bảo tuyệt đối về mặt kỹ thuật. Xem phiên bản đầy đủ tập 416 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông David McQuarrie - Chủ tịch Điều hành Thương mại HP toàn cầu. - According to Mr. David McQuarrie,..."
+  },
+  {
+   "source": "Hello China Tech",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "china",
+    "ai",
+    "consumer-tech"
+   ],
+   "via": "rss",
+   "title": "China's AI bill: Jensen's exit, SMIC's 34%, and T-Head's IPO",
+   "url": "https://hellochinatech.com/p/chinas-ai-bill-jensens-exit-smics",
+   "published": "2026-11-15",
+   "summary": "$3.19bn in Q3 chip revenue, a 50/50 Tencent staff split, and a 64.9% robot test: who pays for China's AI buildout."
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-rss",
+   "title": "Build a Claude Code Agent That Talks to Your Churned Customers",
+   "url": "https://www.youtube.com/watch?v=JpyhPePe150",
+   "published": "2026-11-14",
+   "summary": "Greg Greiner ran product at Bolt. Now he's co-founder and CEO of Woven, and in this episode he builds an AI research agent in Claude Code that emails every customer who drops off your funnel, then adds an eval loop live so the agent can reply without you. He also explains why one PM can now run a team that ships like 25 engineers. Full Writeup: https://www.news.aakashg.com/p/ai-customer-research Transcript: https://www.aakashg.com/how-to-talk-to-every-one-of-your-customers-with-ai/ Timestamps 0:00 - Intro 1:36 - What AI research on every drop-off can tell you 6:32 - How to build your own resea..."
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-rss",
+   "title": "What happens the moment the Sun disappears",
+   "url": "https://www.youtube.com/shorts/QJ0IIXjo1Kg",
+   "published": "2026-11-14",
+   "summary": "If the Sun disappeared, Earth would carry on for 8 minutes and 20 seconds. Sunlight and gravity both take that long to reach us. Then it goes dark and Earth leaves its orbit. Idea from Cleo Abram's Short. Sun footage: NASA SDO. Imagery: NASA. What would you do in those 8 minutes?"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-cluster-map 0.19",
+   "url": "https://simonwillison.net/2026/Nov/13/datasette-cluster-map/",
+   "published": "2026-11-14",
+   "summary": "Release: datasette-cluster-map 0.19 One of the oldest Datasette plugins, and still one of my favorites. It now works with Datasette 1.0a42, and depends on the new datasette-leaflet to ensure OpenStreetMap tiles are requested with a referrer header. Here's a map of power plants owned by California's PG&E , also demonstrating Datasette's recently redesigned facets : Tags: datasette , geospatial , openstreetmap"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-leaflet 0.3",
+   "url": "https://simonwillison.net/2026/Nov/13/datasette-leaflet/",
+   "published": "2026-11-14",
+   "summary": "Release: datasette-leaflet 0.3 OpenStreetMap have a very reasonable policy that hits to their hosted tile server should send a referrer header . Datasette table pages used the Referrer-Policy: no-referrer HTTP header, causing plugins that loaded tiles from OpenStreetMap to violate that policy. datasette-leaflet is the plugin that loads a bundled Leaflet so other Datasette plugins can depend on it. It now sets the referrer policy on the tile requests themselves to strict-origin-when-cross-origin , passing the host but not the full path to the page. Tags: leaflet , datasette , openstreetmap"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Rakazo",
+   "url": "https://www.producthunt.com/products/rakazo",
+   "published": "2026-11-14",
+   "summary": "The open source Grok Bot alternative you actually own Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Privacyboard",
+   "url": "https://www.producthunt.com/products/privacyboard",
+   "published": "2026-11-14",
+   "summary": "Privacy compliance on autopilot Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Remindly",
+   "url": "https://www.producthunt.com/products/remindly-6",
+   "published": "2026-11-14",
+   "summary": "Notes that remind you, on iPhone, iPad, Mac and web Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "ByteAsk Cloud Agents",
+   "url": "https://www.producthunt.com/products/byteask-cloud-agents",
+   "published": "2026-11-14",
+   "summary": "Find the fix in big codebases. Ship it from Slack. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Thunder",
+   "url": "https://www.producthunt.com/products/thunder-3",
+   "published": "2026-11-14",
+   "summary": "A blazing-fast, persistent, key-value AI workload database Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Keylogger Detection and Containment [pdf]",
+   "url": "https://www.cs.vu.nl/~ast/Theses/ortolani-thesis.pdf",
+   "published": "2026-11-14",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-rss",
+   "title": "Bro built 30+ apps and recently crossed $1M in total revenue 😱",
+   "url": "https://www.youtube.com/shorts/5ZzxDQXm1dk",
+   "published": "2026-11-14",
+   "summary": "Bro built 30+ apps and 8 of them make money. Meet Sanskar. He’s from Bangalore, India, and a few years ago he was working the night shift at a call center. Now he runs 8 revenue-making products by himself. Zero people on the team. “I have built 30 plus products out of which eight ended up making revenue.”"
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-rss",
+   "title": "Nên chọn Cloud AI hay Edge AI?",
+   "url": "https://www.youtube.com/shorts/iXs7Gc5aFQ8",
+   "published": "2026-11-14",
+   "summary": "[English below] Trong giai đoạn đầu của làn sóng AI, điện toán đám mây được xem như giải pháp cho mọi bài toán. Tuy nhiên, tương tự như quá trình chuyển dịch lịch sử từ hệ thống máy tính lớn (mainframe) sang mô hình máy khách - máy chủ (client - server), AI đang bước vào giai đoạn tái phân bổ hạ tầng. Những tác vụ mang tính đặc thù ngành như ngân hàng hay y tế đòi hỏi các mô hình chuyên biệt, chạy cục bộ để tối ưu về độ trễ, chi phí và tính kiểm soát. Xem phiên bản đầy đủ tập 416 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắn..."
+  },
+  {
+   "source": "Aakash Gupta newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "product",
+    "ai-pm"
+   ],
+   "via": "rss",
+   "title": "How to Build an AI Customer Research Agent in Claude Code",
+   "url": "https://www.news.aakashg.com/p/ai-customer-research",
+   "published": "2026-11-14",
+   "summary": "Build an AI agent in Claude Code that emails every customer who drops off, plus the eval loop that keeps it safe. The free GitHub project is included."
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "aggregation",
+    "strategy"
+   ],
+   "via": "rss",
+   "title": "2026.46: The End of Jensen",
+   "url": "https://stratechery.com/2026/the-end-of-jensen/",
+   "published": "2026-11-14",
+   "summary": "The best Stratechery content from the week of November 9, 2026, including the shocking demise of Jensen Huang; enterprise, consumer and Intel; and professional basketbal."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Introducing ChatGPT Wallet",
+   "url": "https://openai.com/index/introducing-chatgpt-wallet",
+   "published": "2026-11-13",
+   "summary": "Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Shield helps technicians hand off legacy portal work with OpenAI",
+   "url": "https://openai.com/business/customer-stories/shield",
+   "published": "2026-11-13",
+   "summary": "Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment."
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Emayler",
+   "url": "https://www.producthunt.com/products/emayler",
+   "published": "2026-11-13",
+   "summary": "Custom email on your domain, minus the headache Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "CodeMesh",
+   "url": "https://www.producthunt.com/products/codemesh-2",
+   "published": "2026-11-13",
+   "summary": "Cut AI coding costs by 90% Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Tacie",
+   "url": "https://www.producthunt.com/products/tacie",
+   "published": "2026-11-13",
+   "summary": "Meeting notes on your Mac, with no bot in the call Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Tabletop by Google Labs",
+   "url": "https://www.producthunt.com/products/google-labs",
+   "published": "2026-11-13",
+   "summary": "Build interactive group experiences with AI. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Businesses in ChatGPT",
+   "url": "https://www.producthunt.com/products/openai",
+   "published": "2026-11-13",
+   "summary": "Help customers discover your business through ChatGPT Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Blender 5.3",
+   "url": "https://www.producthunt.com/products/blender",
+   "published": "2026-11-13",
+   "summary": "3D Gaussian splats, now native to Blender Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Pocket Studio for Supabase",
+   "url": "https://www.producthunt.com/products/pocket-studio-for-supabase",
+   "published": "2026-11-13",
+   "summary": "Supabase dashboard & SQL editor for Android Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "What thousands of conversations look like inside a language model",
+   "url": "https://operator0x.com/field-notes/qwen-conversation-state-space/",
+   "published": "2026-11-13",
+   "summary": "Comments"
+  },
+  {
+   "source": "YC Root Access",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups",
+    "founders",
+    "ai"
+   ],
+   "via": "youtube-rss",
+   "title": "How Intelligence Measures the Frontier",
+   "url": "https://www.youtube.com/watch?v=EWmqL-63tyM",
+   "published": "2026-11-13",
+   "summary": "Intelligence (YC S25), the creators of DesignArena, measures how well AI models handle creative work. It turns people’s choices and edits while creating websites, images, and videos into feedback that helps AI labs improve their models. The platform has over seven million users across 192 countries, and the company reached a $60 million annualized run rate in about a year. In this episode of Founder Firesides, founder and CEO Grace Li joins YC’s Ankit Gupta to discuss how AI-generated games led to Design Arena, her vision for a marketplace of AI models, and building a high-trust team of fast l..."
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-rss",
+   "title": "Cách một kỹ sư tiết kiệm 20.000 USD mỗi tháng",
+   "url": "https://www.youtube.com/shorts/gTXYKCcjxbE",
+   "published": "2026-11-13",
+   "summary": "[English below] Tại HP, một kỹ sư phát triển phần mềm sử dụng máy trạm di động chuyên dụng đã giúp công ty tiết kiệm tới 20.000 USD chi phí dịch vụ điện toán đám mây mỗi tháng. Con số này chứng minh một thực tế: chi phí mua thiết bị ban đầu trở nên rất nhỏ bé khi đặt cạnh khả năng giải phóng doanh nghiệp khỏi áp lực chi phí xử lý trên điện toán đám mây. Xem phiên bản đầy đủ tập 416 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông David McQuarrie - Chủ tịch Điều hành Thương mại HP toàn cầu. - At HP,..."
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "aggregation",
+    "strategy"
+   ],
+   "via": "rss",
+   "title": "Sharp Tech on Video: Nvidia After Jensen Huang, Ominous News for American AI, D.C. Gets Its Revenge",
+   "url": "https://stratechery.com/2026/sharp-tech-on-video-nvidia-after-jensen-huang-ominous-news-for-american-ai-d-c-gets-its-revenge/",
+   "published": "2026-11-13",
+   "summary": "Sharp Tech is, for the first time, available on video. You have three ways to consume it: YouTube, Spotify, and here on Stratechery"
+  },
+  {
+   "source": "Hello China Tech",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "china",
+    "ai",
+    "consumer-tech"
+   ],
+   "via": "rss",
+   "title": "SMIC Pays Its Partners in Shares",
+   "url": "https://hellochinatech.com/p/smic-q3-minority-interest",
+   "published": "2026-11-13",
+   "summary": "Two minority-interest lines in SMIC's Q3 filings show how Chinese state funds finance subsidiary fabs, take a third of profit, and exit in shares."
+  }
+ ]
+}
