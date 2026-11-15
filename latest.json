@@ -1,143 +1,187 @@
 {
- "type": "daily",
- "date": "2026-11-14",
- "edition": "012",
+ "type": "weekly",
+ "date": "2026-11-15",
+ "edition": "W03",
  "summary": {
-  "en": "Trust in steps: ChatGPT lets agents pay but makes you approve every purchase, OpenAI folds its robotics team into its general models, and a Microsoft outage of more than 18 hours takes Copilot down with email.",
-  "vi": "Trao niềm tin từng bước: ChatGPT cho agent trả tiền nhưng bắt bạn duyệt từng lần mua, OpenAI gộp đội robot vào các model đa năng, và sự cố Microsoft kéo dài hơn 18 giờ khiến Copilot sập cùng email."
+  "en": "Trust in steps: agents get approval taps, IDs and blocks, the price that counts is per finished job, and one weak supplier can take your AI down.",
+  "vi": "Niềm tin từng bước: agent phải được duyệt, có danh tính hoặc bị chặn, cái giá đáng tính là giá mỗi việc làm xong, và một nhà cung cấp yếu có thể kéo AI của bạn sập theo."
  },
  "big": {
-  "en": "Today's stories are about how much we let AI do, and what it still leans on. OpenAI now lets its agents pay for things, but a person checks and taps every single purchase. OpenAI also folds its robotics team into its main research, because its general model now beats specialized robot models in simulation. And a Microsoft outage of more than 18 hours took Copilot down along with email and chat. For product people: hand over trust in steps, ask which custom AI parts a general model will replace, and plan for the day your provider goes down.",
-  "vi": "Các tin hôm nay xoay quanh chuyện ta để AI làm đến đâu, và nó vẫn đang dựa vào cái gì. OpenAI giờ cho agent của mình trả tiền mua hàng, nhưng mỗi lần mua đều phải có người kiểm tra và bấm duyệt. OpenAI cũng gộp đội robot vào bộ phận nghiên cứu chính, vì model đa năng của họ giờ đã vượt các model robot chuyên biệt trong mô phỏng. Còn sự cố Microsoft kéo dài hơn 18 giờ đã kéo Copilot sập theo email và chat. Với người làm sản phẩm: hãy trao niềm tin từng bước, tự hỏi phần AI tự làm nào sẽ bị model đa năng thay thế, và chuẩn bị cho ngày nhà cung cấp của bạn ngừng chạy."
+  "en": "Last week the AI bill arrived. This week the question was how much to let AI do, and on whose terms. OpenAI let its agents pay but made people approve every purchase, United blocked outside agents, and an open standard for agent identity launched with 11 backers. New models from Anthropic and Google came with a quieter message: judge them by cost and quality per finished job, because a real-user test found the best coding agent fully finishes only 26.4% of tasks. And a Microsoft outage of more than 18 hours, a breach that reached another company's AI chats, and Nvidia's surprise CEO exit showed how much every AI product leans on a few suppliers. For product builders: hand over trust in steps, measure the finished job, and know your fallback.",
+  "vi": "Tuần trước, hoá đơn AI đã đến. Tuần này, câu hỏi là nên để AI làm đến đâu, và theo điều kiện của ai. OpenAI cho agent trả tiền nhưng bắt người dùng duyệt từng lần mua, United chặn agent bên ngoài, và một chuẩn mở về danh tính agent ra mắt với 11 bên ủng hộ. Các model mới của Anthropic và Google đi kèm một thông điệp nhẹ nhàng hơn: hãy đánh giá chúng bằng chi phí và chất lượng trên mỗi việc làm xong, vì một bài test từ người dùng thật cho thấy agent viết code tốt nhất chỉ làm xong trọn vẹn 26,4% việc. Còn sự cố Microsoft kéo dài hơn 18 giờ, một vụ tấn công lan tới đoạn chat AI của công ty khác, và việc CEO Nvidia bất ngờ rời đi cho thấy mọi sản phẩm AI phụ thuộc vào vài nhà cung cấp đến mức nào. Với người làm sản phẩm: trao niềm tin từng bước, đo việc làm xong, và biết phương án dự phòng của mình."
  },
  "headlines": [
   {
    "t": {
-    "en": "ChatGPT Wallet: OpenAI's agents can now buy things for you, after you approve each purchase",
-    "vi": "ChatGPT Wallet: agent của OpenAI giờ có thể mua hàng giúp bạn, sau khi bạn duyệt từng lần mua"
+    "en": "Agents get gates: approve every step, prove who you are, or stay out",
+    "vi": "Agent gặp cổng kiểm soát: duyệt từng bước, chứng minh mình là ai, hoặc đứng ngoài"
    },
-   "src": "openai.com",
-   "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+   "src": "linuxfoundation.org",
+   "url": "https://www.linuxfoundation.org/press/linux-foundation-welcomes-agent-name-service-to-bring-verifiable-identity-and-discovery-to-ai-agents"
   },
   {
    "t": {
-    "en": "OpenAI breaks up its standalone robotics team because its general model now runs robots better",
-    "vi": "OpenAI giải tán đội robot riêng vì model đa năng của họ giờ điều khiển robot tốt hơn"
+    "en": "The price that counts is per finished job, not per token or per score",
+    "vi": "Cái giá đáng tính là giá mỗi việc làm xong, không phải mỗi token hay mỗi điểm số"
    },
-   "src": "fortune.com",
-   "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+   "src": "blog.google",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
   },
   {
    "t": {
-    "en": "A Microsoft 365 outage runs into a second day and takes Copilot down with Outlook and Teams",
-    "vi": "Sự cố Microsoft 365 kéo sang ngày thứ hai, khiến Copilot sập cùng Outlook và Teams"
+    "en": "Assistants become a storefront you have to manage",
+    "vi": "Trợ lý trở thành mặt tiền cửa hàng mà bạn phải tự quản lý"
    },
-   "src": "windowscentral.com",
-   "url": "https://www.windowscentral.com/microsoft/azure/microsoft-365-outlook-teams-onedrive-and-copilot-are-all-down-right-now"
+   "src": "investing.com (Reuters)",
+   "url": "https://www.investing.com/news/stock-market-news/openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-ecommerce-firms-5016475"
+  },
+  {
+   "t": {
+    "en": "The AI stack is only as strong as its weakest supplier",
+    "vi": "Hệ thống AI chỉ mạnh bằng nhà cung cấp yếu nhất của nó"
+   },
+   "src": "esecurityplanet.com",
+   "url": "https://www.esecurityplanet.com/threats/news-fireworks-ai-second-breach-notion-chat-transcripts/"
   }
  ],
  "question": {
-  "en": "If an agent did one action in your product for a user, which step should always need the user's own tap, and which could become a rule later?",
-  "vi": "Nếu một agent làm một hành động trong sản phẩm của bạn thay người dùng, bước nào luôn cần chính người dùng bấm duyệt, và bước nào có thể thành quy tắc về sau?"
+  "en": "Draw a trust ladder for one AI feature and test its hand-off rule on 20 real cases",
+  "vi": "Vẽ một chiếc thang niềm tin cho một tính năng AI và thử quy tắc chuyển cho người trên 20 tình huống thật"
  },
  "exercises": [
   {
-   "k": "work",
+   "k": "bet",
    "tag": {
-    "en": "Work",
-    "vi": "Công việc"
+    "en": "Next week's bet",
+    "vi": "Cược tuần tới"
    },
-   "time": "30 min",
+   "time": "2 hrs",
    "g": {
-    "en": "Put one AI feature's actions on a trust ladder",
-    "vi": "Đặt các hành động của một tính năng AI lên bậc thang niềm tin"
-   }
-  },
-  {
-   "k": "write",
-   "tag": {
-    "en": "Write",
-    "vi": "Viết"
-   },
-   "time": "20 min",
-   "g": {
-    "en": "Write a short post: \"The agent can pay. You still press the button.\"",
-    "vi": "Viết một bài ngắn: \"Agent có thể trả tiền. Bạn vẫn là người bấm nút.\""
-   }
-  },
-  {
-   "k": "build",
-   "tag": {
-    "en": "Build",
-    "vi": "Xây"
-   },
-   "time": "45 min",
-   "g": {
-    "en": "Make one AI call survive a provider outage",
-    "vi": "Giúp một lệnh gọi AI sống sót khi nhà cung cấp ngừng chạy"
+    "en": "Draw a trust ladder for one AI feature and test its hand-off rule on 20 real cases",
+    "vi": "Vẽ một chiếc thang niềm tin cho một tính năng AI và thử quy tắc chuyển cho người trên 20 tình huống thật"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "ChatGPT Wallet: OpenAI's agents can now buy things for you, after you approve each purchase",
-    "vi": "ChatGPT Wallet: agent của OpenAI giờ có thể mua hàng giúp bạn, sau khi bạn duyệt từng lần mua"
+    "en": "Agents get gates: approve every step, prove who you are, or stay out",
+    "vi": "Agent gặp cổng kiểm soát: duyệt từng bước, chứng minh mình là ai, hoặc đứng ngoài"
+   },
+   "src": "linuxfoundation.org",
+   "url": "https://www.linuxfoundation.org/press/linux-foundation-welcomes-agent-name-service-to-bring-verifiable-identity-and-discovery-to-ai-agents",
+   "date": "2026-11-10",
+   "tag": "Trust",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "The price that counts is per finished job, not per token or per score",
+    "vi": "Cái giá đáng tính là giá mỗi việc làm xong, không phải mỗi token hay mỗi điểm số"
+   },
+   "src": "blog.google",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "date": "2026-11-12",
+   "tag": "Cost",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "Assistants become a storefront you have to manage",
+    "vi": "Trợ lý trở thành mặt tiền cửa hàng mà bạn phải tự quản lý"
+   },
+   "src": "investing.com (Reuters)",
+   "url": "https://www.investing.com/news/stock-market-news/openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-ecommerce-firms-5016475",
+   "date": "2026-11-10",
+   "tag": "Distribution",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "The AI stack is only as strong as its weakest supplier",
+    "vi": "Hệ thống AI chỉ mạnh bằng nhà cung cấp yếu nhất của nó"
+   },
+   "src": "esecurityplanet.com",
+   "url": "https://www.esecurityplanet.com/threats/news-fireworks-ai-second-breach-notion-chat-transcripts/",
+   "date": "2026-11-11",
+   "tag": "Risk",
+   "who": "",
+   "kind": "shift"
+  },
+  {
+   "t": {
+    "en": "Agent trust is built in layers: approval, identity, then limits",
+    "vi": "Niềm tin vào agent được xây theo lớp: duyệt, danh tính, rồi mới đến giới hạn"
    },
    "src": "openai.com",
    "url": "https://openai.com/index/introducing-chatgpt-wallet/",
    "date": "2026-11-13",
-   "tag": "Agents",
+   "tag": "",
    "who": "",
-   "kind": "frontier"
+   "kind": "mega"
   },
   {
    "t": {
-    "en": "OpenAI breaks up its standalone robotics team because its general model now runs robots better",
-    "vi": "OpenAI giải tán đội robot riêng vì model đa năng của họ giờ điều khiển robot tốt hơn"
+    "en": "Price per finished task replaces price per token",
+    "vi": "Giá mỗi việc làm xong thay cho giá mỗi token"
    },
-   "src": "fortune.com",
-   "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/",
-   "date": "2026-11-13",
-   "tag": "Industry",
+   "src": "aiweekly.co",
+   "url": "https://aiweekly.co/alerts/co-design-bench-top-coding-agent-completes-just-264-of-real-user-tasks",
+   "date": "2026-11-01",
+   "tag": "",
    "who": "",
-   "kind": "frontier"
+   "kind": "mega"
   },
   {
    "t": {
-    "en": "A Microsoft 365 outage runs into a second day and takes Copilot down with Outlook and Teams",
-    "vi": "Sự cố Microsoft 365 kéo sang ngày thứ hai, khiến Copilot sập cùng Outlook và Teams"
+    "en": "Everyone sends their own agent to work things out together",
+    "vi": "Ai cũng gửi agent riêng đi tự thương lượng với nhau"
    },
-   "src": "windowscentral.com",
-   "url": "https://www.windowscentral.com/microsoft/azure/microsoft-365-outlook-teams-onedrive-and-copilot-are-all-down-right-now",
-   "date": "2026-11-13",
-   "tag": "Platform",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "A parent builds his family's AI brain from plain Markdown files",
-    "vi": "Một người cha xây \"bộ não AI\" cho gia đình từ các file Markdown đơn giản"
-   },
-   "src": "lennysnewsletter.com",
-   "url": "https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai",
+   "src": "alignment.anthropic.com",
+   "url": "https://alignment.anthropic.com/2026/worse-together/",
    "date": "2026-11-11",
    "tag": "",
-   "who": "How I AI (Claire Vo) · Lenny's Newsletter",
-   "kind": "people"
+   "who": "",
+   "kind": "hype"
   },
   {
    "t": {
-    "en": "A job search agent that prepares everything and ships nothing you did not approve",
-    "vi": "Một agent tìm việc chuẩn bị mọi thứ nhưng không gửi gì bạn chưa duyệt"
+    "en": "AI that picks from your fixed options and says how sure it is",
+    "vi": "AI chọn từ các lựa chọn cố định của bạn và cho biết nó chắc đến đâu"
    },
-   "src": "news.aakashg.com",
-   "url": "https://www.news.aakashg.com/p/job-search-agent",
-   "date": "2026-11-13",
+   "src": "radar · new",
+   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/decision-models",
+   "date": "2026-11-15",
    "tag": "",
-   "who": "Aakash Gupta (Product Growth)",
-   "kind": "people"
+   "who": "",
+   "kind": "radar"
+  },
+  {
+   "t": {
+    "en": "Consumer health AI that gives advice with a licensed doctor behind it",
+    "vi": "AI sức khoẻ cho người dùng đưa lời khuyên, có bác sĩ được cấp phép đứng sau"
+   },
+   "src": "radar · new",
+   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/ai-care-with-doctors",
+   "date": "2026-11-15",
+   "tag": "",
+   "who": "",
+   "kind": "radar"
+  },
+  {
+   "t": {
+    "en": "Verifiable identity for AI agents, so a site can tell which agent is knocking and who stands behind it",
+    "vi": "Danh tính có thể kiểm chứng cho agent AI, để một trang web biết agent nào đang gõ cửa và ai đứng sau nó"
+   },
+   "src": "radar · new",
+   "url": "https://ellanguyen-isp.github.io/daily-spark/#radar/agent-identity",
+   "date": "2026-11-15",
+   "tag": "",
+   "who": "",
+   "kind": "radar"
   }
  ]
 }

@@ -1,0 +1,265 @@
+{
+ "type": "weekly",
+ "date": "2026-11-15",
+ "edition": "W03",
+ "minutes": 10,
+ "summary": {
+  "en": "Trust in steps: agents get approval taps, IDs and blocks, the price that counts is per finished job, and one weak supplier can take your AI down.",
+  "vi": "Niềm tin từng bước: agent phải được duyệt, có danh tính hoặc bị chặn, cái giá đáng tính là giá mỗi việc làm xong, và một nhà cung cấp yếu có thể kéo AI của bạn sập theo."
+ },
+ "week": {
+  "from": "2026-11-09",
+  "to": "2026-11-14"
+ },
+ "market": {
+  "big": {
+   "en": "Last week the AI bill arrived. This week the question was how much to let AI do, and on whose terms. OpenAI let its agents pay but made people approve every purchase, United blocked outside agents, and an open standard for agent identity launched with 11 backers. New models from Anthropic and Google came with a quieter message: judge them by cost and quality per finished job, because a real-user test found the best coding agent fully finishes only 26.4% of tasks. And a Microsoft outage of more than 18 hours, a breach that reached another company's AI chats, and Nvidia's surprise CEO exit showed how much every AI product leans on a few suppliers. For product builders: hand over trust in steps, measure the finished job, and know your fallback.",
+   "vi": "Tuần trước, hoá đơn AI đã đến. Tuần này, câu hỏi là nên để AI làm đến đâu, và theo điều kiện của ai. OpenAI cho agent trả tiền nhưng bắt người dùng duyệt từng lần mua, United chặn agent bên ngoài, và một chuẩn mở về danh tính agent ra mắt với 11 bên ủng hộ. Các model mới của Anthropic và Google đi kèm một thông điệp nhẹ nhàng hơn: hãy đánh giá chúng bằng chi phí và chất lượng trên mỗi việc làm xong, vì một bài test từ người dùng thật cho thấy agent viết code tốt nhất chỉ làm xong trọn vẹn 26,4% việc. Còn sự cố Microsoft kéo dài hơn 18 giờ, một vụ tấn công lan tới đoạn chat AI của công ty khác, và việc CEO Nvidia bất ngờ rời đi cho thấy mọi sản phẩm AI phụ thuộc vào vài nhà cung cấp đến mức nào. Với người làm sản phẩm: trao niềm tin từng bước, đo việc làm xong, và biết phương án dự phòng của mình."
+  },
+  "shifts": [
+   {
+    "date": "2026-11-10",
+    "src": "linuxfoundation.org",
+    "url": "https://www.linuxfoundation.org/press/linux-foundation-welcomes-agent-name-service-to-bring-verifiable-identity-and-discovery-to-ai-agents",
+    "tag": "Trust",
+    "t": {
+     "en": "Agents get gates: approve every step, prove who you are, or stay out",
+     "vi": "Agent gặp cổng kiểm soát: duyệt từng bước, chứng minh mình là ai, hoặc đứng ngoài"
+    },
+    "stat": {
+     "v": "47% to 67%",
+     "l": {
+      "en": "of team runs where a user's key request was still in the ordering agent's context at checkout, though it arrived in 94 to 99% (Anthropic Fellows)",
+      "vi": "số lần chạy theo nhóm mà yêu cầu chính của người dùng còn nằm trong ngữ cảnh của agent đặt hàng lúc thanh toán, dù nó đã đến trong 94 đến 99% lần (Anthropic Fellows)"
+     }
+    },
+    "p": {
+     "en": [
+      "ChatGPT Wallet lets OpenAI's agents pay for things, but the agent never sees the card and a person approves each purchase with Face ID or a fingerprint; spending rules come later",
+      "United Airlines went the other way and banned outside AI agents from booking or acting for its travelers",
+      "The Linux Foundation took on Agent Name Service, a DNS-based identity standard for agents with public audit logs, backed by 11 groups including Cisco, Cloudflare and Salesforce",
+      "Anthropic researchers found that when each user sends their own agent into a shared task, the group does worse than with one shared agent, and agents make up claims about each other"
+     ],
+     "vi": [
+      "ChatGPT Wallet cho agent của OpenAI trả tiền mua đồ, nhưng agent không bao giờ thấy thẻ và người dùng duyệt từng lần mua bằng Face ID hoặc vân tay; quy tắc chi tiêu sẽ có sau",
+      "United Airlines đi hướng ngược lại và cấm agent AI bên ngoài đặt vé hay thao tác thay hành khách",
+      "Linux Foundation tiếp nhận Agent Name Service, một chuẩn danh tính dựa trên DNS cho agent kèm nhật ký kiểm tra công khai, được 11 tổ chức gồm Cisco, Cloudflare và Salesforce ủng hộ",
+      "Các nhà nghiên cứu của Anthropic thấy rằng khi mỗi người dùng gửi agent riêng vào một việc chung, cả nhóm làm tệ hơn so với một agent dùng chung, và các agent bịa ra điều về nhau"
+     ]
+    },
+    "w": {
+     "en": "Trust is now handed to agents in steps: a human tap first, a verified identity next, looser rules last. If your product lets AI act, design the approval step, the record and the way to say no before you design the magic.",
+     "vi": "Niềm tin giờ được trao cho agent từng bước: trước là một cú chạm của con người, sau là danh tính đã kiểm chứng, cuối cùng mới là quy tắc thoáng hơn. Nếu sản phẩm của bạn cho AI hành động, hãy thiết kế bước duyệt, bản ghi và cách nói không trước khi thiết kế phần kỳ diệu."
+    }
+   },
+   {
+    "date": "2026-11-12",
+    "src": "blog.google",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+    "tag": "Cost",
+    "t": {
+     "en": "The price that counts is per finished job, not per token or per score",
+     "vi": "Cái giá đáng tính là giá mỗi việc làm xong, không phải mỗi token hay mỗi điểm số"
+    },
+    "stat": {
+     "v": "26.4%",
+     "l": {
+      "en": "of real-user coding tasks the best agent fully finished, while it met 69.9% of the checks (Co-Design Bench)",
+      "vi": "số việc code từ người dùng thật mà agent tốt nhất làm xong trọn vẹn, dù nó đạt 69,9% các mục kiểm tra (Co-Design Bench)"
+     }
+    },
+    "p": {
+     "en": [
+      "Gemini 4 Hydrogen costs twice as much per token as Flash, yet Artificial Analysis estimates $1.87 per benchmark task against $7.77 for Flash, because it finishes faster",
+      "Anthropic launched Claude Fable 5.2 and still told most people to start on the cheaper Opus 5.5",
+      "Gemini 4 Carbon shows why one score misleads: Google says unsupported claims fell by about half, while an independent test found made-up answers rose from 4% to 11%",
+      "Google also sells a judge model that picks from fixed options with a confidence score, so code can send unsure cases to a person"
+     ],
+     "vi": [
+      "Gemini 4 Hydrogen đắt gấp đôi Flash tính theo token, nhưng Artificial Analysis ước tính 1,87 USD mỗi việc trong bài test so với 7,77 USD của Flash, vì nó làm xong nhanh hơn",
+      "Anthropic ra Claude Fable 5.2 nhưng vẫn khuyên phần lớn mọi người bắt đầu với Opus 5.5 rẻ hơn",
+      "Gemini 4 Carbon cho thấy vì sao một điểm số dễ gây hiểu lầm: Google nói số khẳng định thiếu căn cứ giảm khoảng một nửa, trong khi một bài test độc lập thấy câu trả lời bịa tăng từ 4% lên 11%",
+      "Google còn bán một model chấm chọn từ các lựa chọn cố định kèm điểm tự tin, để code chuyển các ca chưa chắc cho người xem"
+     ]
+    },
+    "w": {
+     "en": "Model choice is now a unit economics question. For each AI feature, track cost and quality per finished job, and track each failure type on its own, because one number can rise while the failure users hate gets worse.",
+     "vi": "Chọn model giờ là bài toán kinh tế đơn vị. Với mỗi tính năng AI, hãy theo dõi chi phí và chất lượng trên mỗi việc làm xong, và theo dõi riêng từng loại lỗi, vì một con số có thể tăng trong khi lỗi người dùng ghét nhất lại tệ hơn."
+    }
+   },
+   {
+    "date": "2026-11-10",
+    "src": "investing.com (Reuters)",
+    "url": "https://www.investing.com/news/stock-market-news/openai-lets-businesses-claim-chatgpt-profiles-adds-ai-agents-for-us-ecommerce-firms-5016475",
+    "tag": "Distribution",
+    "t": {
+     "en": "Assistants become a storefront you have to manage",
+     "vi": "Trợ lý trở thành mặt tiền cửa hàng mà bạn phải tự quản lý"
+    },
+    "stat": {
+     "v": "1.54M",
+     "l": {
+      "en": "daily users of DeepSeek's open-source agent harness, up from 271,000 in five weeks",
+      "vi": "người dùng mỗi ngày của bộ khung agent mã nguồn mở của DeepSeek, tăng từ 271.000 trong năm tuần"
+     }
+    },
+    "p": {
+     "en": [
+      "ChatGPT now lets businesses claim a profile, add product feeds with price and availability, and see aggregated mentions and clicks",
+      "Eligible US e-commerce businesses can put their own labeled agent in front of shoppers, and can pay to make it the destination of a ChatGPT ad",
+      "With Wallet, the same assistant can now take the order and the payment, after the shopper approves",
+      "On the open side, about 60% of DeepSeek's harness users have added a plugin of their own: assistants are becoming platforms that others build into"
+     ],
+     "vi": [
+      "ChatGPT giờ cho doanh nghiệp nhận hồ sơ của mình, thêm danh sách sản phẩm kèm giá và tình trạng còn hàng, và xem số lần được nhắc tới và lượt bấm đã tổng hợp",
+      "Doanh nghiệp thương mại điện tử đủ điều kiện ở Mỹ có thể đặt agent riêng có gắn nhãn trước mặt người mua, và có thể trả tiền để quảng cáo ChatGPT dẫn thẳng tới agent đó",
+      "Với Wallet, cùng một trợ lý giờ có thể nhận đơn và nhận tiền, sau khi người mua duyệt",
+      "Ở phía mã nguồn mở, khoảng 60% người dùng bộ khung của DeepSeek đã tự thêm plugin: trợ lý đang trở thành nền tảng để người khác xây vào"
+     ]
+    },
+    "w": {
+     "en": "How an assistant describes your product is now something you manage, organic and paid. If you do not fill in your profile, the assistant still describes you, using whatever it found.",
+     "vi": "Cách một trợ lý mô tả sản phẩm của bạn giờ là thứ bạn phải quản lý, cả miễn phí lẫn trả tiền. Nếu bạn không điền hồ sơ, trợ lý vẫn mô tả bạn, bằng bất cứ thứ gì nó tìm được."
+    }
+   },
+   {
+    "date": "2026-11-11",
+    "src": "esecurityplanet.com",
+    "url": "https://www.esecurityplanet.com/threats/news-fireworks-ai-second-breach-notion-chat-transcripts/",
+    "tag": "Risk",
+    "t": {
+     "en": "The AI stack is only as strong as its weakest supplier",
+     "vi": "Hệ thống AI chỉ mạnh bằng nhà cung cấp yếu nhất của nó"
+    },
+    "stat": {
+     "v": "18+ hrs",
+     "l": {
+      "en": "length of the Microsoft 365 outage that took Copilot down with Outlook and Teams",
+      "vi": "thời gian sự cố Microsoft 365 kéo Copilot sập cùng Outlook và Teams"
+     }
+    },
+    "p": {
+     "en": [
+      "A Microsoft outage of more than 18 hours took Copilot down along with email and chat; the AI assistant had no separate path",
+      "Fireworks AI, a model hosting company, disclosed a second breach in under a month, which came in through a hacked cloud provider and exposed some of Notion's AI chat transcripts (fewer than 1% of workspaces)",
+      "Nvidia's founder CEO resigned with no warning and the CFO stepped in, a reminder that almost every AI product runs on one chip supplier",
+      "The common lesson: risk now flows down the chain, from a cloud provider to a model host to the app your users trust"
+     ],
+     "vi": [
+      "Một sự cố Microsoft kéo dài hơn 18 giờ làm Copilot sập cùng email và chat; trợ lý AI không có đường chạy riêng",
+      "Fireworks AI, một công ty host model, công bố vụ tấn công thứ hai trong chưa đầy một tháng, đi vào qua một nhà cung cấp cloud bị hack và làm lộ một phần đoạn chat AI của Notion (dưới 1% số workspace)",
+      "CEO sáng lập Nvidia từ chức không báo trước và giám đốc tài chính lên thay tạm thời, nhắc rằng gần như mọi sản phẩm AI đều chạy trên một nhà cung cấp chip",
+      "Bài học chung: rủi ro giờ chảy xuống theo chuỗi, từ nhà cung cấp cloud tới nơi host model rồi tới app mà người dùng của bạn tin tưởng"
+     ]
+    },
+    "w": {
+     "en": "Your AI feature inherits the reliability and security of every supplier under it. Know which vendor sees your users' prompts, what users see when the model is down, and whether a second provider is worth it.",
+     "vi": "Tính năng AI của bạn thừa hưởng độ ổn định và bảo mật của mọi nhà cung cấp bên dưới. Hãy biết nhà cung cấp nào thấy prompt của người dùng, người dùng thấy gì khi model sập, và có đáng dùng nhà cung cấp thứ hai không."
+    }
+   }
+  ]
+ },
+ "trend": [
+  {
+   "k": "mega",
+   "t": {
+    "en": "Agent trust is built in layers: approval, identity, then limits",
+    "vi": "Niềm tin vào agent được xây theo lớp: duyệt, danh tính, rồi mới đến giới hạn"
+   },
+   "e": {
+    "en": "Evidence from several companies in one week: OpenAI made every agent purchase need a human tap, United blocked outside agents, 11 groups backed an open identity standard for agents, and Google sold a judge model whose confidence score decides when a person should step in. Different answers, same direction: nobody is handing agents full freedom, and the products that win will make each step of trust visible.",
+    "vi": "Bằng chứng từ nhiều công ty trong cùng một tuần: OpenAI bắt mọi lần agent mua hàng phải có người chạm duyệt, United chặn agent bên ngoài, 11 tổ chức ủng hộ một chuẩn danh tính mở cho agent, và Google bán model chấm có điểm tự tin để quyết định khi nào cần người vào. Câu trả lời khác nhau nhưng cùng một hướng: không ai trao cho agent toàn quyền, và sản phẩm thắng sẽ là sản phẩm cho thấy rõ từng bước của niềm tin."
+   },
+   "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+   "src": "openai.com",
+   "date": "2026-11-13"
+  },
+  {
+   "k": "mega",
+   "t": {
+    "en": "Price per finished task replaces price per token",
+    "vi": "Giá mỗi việc làm xong thay cho giá mỗi token"
+   },
+   "e": {
+    "en": "Second week running. Google now markets a model that is pricier per token but cheaper per task, Anthropic tells buyers to start with its cheaper model, and a test built from real user sessions shows a big gap between passing checks (69.9%) and finishing the job (26.4%). Expect pricing, evals and model choice to be argued in finished jobs.",
+    "vi": "Tuần thứ hai liên tiếp. Google giờ quảng bá một model đắt hơn theo token nhưng rẻ hơn theo việc, Anthropic khuyên người mua bắt đầu với model rẻ hơn, và một bài test từ phiên làm việc thật cho thấy khoảng cách lớn giữa đạt các mục kiểm tra (69,9%) và làm xong việc (26,4%). Hãy chuẩn bị để giá, eval và việc chọn model đều được tranh luận bằng số việc làm xong."
+   },
+   "url": "https://aiweekly.co/alerts/co-design-bench-top-coding-agent-completes-just-264-of-real-user-tasks",
+   "src": "aiweekly.co",
+   "date": "2026-11-01"
+  },
+  {
+   "k": "hype",
+   "t": {
+    "en": "Everyone sends their own agent to work things out together",
+    "vi": "Ai cũng gửi agent riêng đi tự thương lượng với nhau"
+   },
+   "e": {
+    "en": "The pitch is a world where your agent books the group dinner with everyone else's agent. The first careful test says not yet: one shared coordinator beat a team of personal agents in all four settings, agents placed orders before reading all their messages, and over half of team runs had a made-up claim about another person. Simple guards fixed many failures, so this is a design problem to test, not a feature to promise.",
+    "vi": "Lời quảng cáo là một thế giới nơi agent của bạn tự đặt bữa tối cho cả nhóm cùng agent của mọi người. Bài test cẩn thận đầu tiên nói là chưa: một agent điều phối chung thắng một đội agent cá nhân ở cả bốn tình huống, agent đặt hàng trước khi đọc hết tin nhắn, và hơn một nửa số lần chạy theo nhóm có một điều bịa về người khác. Vài rào chắn đơn giản đã sửa được nhiều lỗi, nên đây là bài toán thiết kế cần test, không phải tính năng để hứa."
+   },
+   "url": "https://alignment.anthropic.com/2026/worse-together/",
+   "src": "alignment.anthropic.com",
+   "date": "2026-11-11"
+  }
+ ],
+ "radar": {
+  "note": {
+   "en": "No maturity moves this week, because no capability had new independent proof. Three new entries: judge models that pick from fixed options with a confidence score (emerging), consumer health AI with doctors behind it (emerging), and verifiable agent identity (early).",
+   "vi": "Tuần này không có mục nào đổi mức, vì chưa có năng lực nào có bằng chứng độc lập mới. Ba mục mới: model chấm chọn từ các lựa chọn cố định kèm điểm tự tin (emerging), AI sức khoẻ cho người dùng có bác sĩ đứng sau (emerging), và danh tính agent có thể kiểm chứng (early)."
+  },
+  "changes": [
+   {
+    "id": "decision-models",
+    "status": "new",
+    "e": {
+     "en": "Emerging. Google sells a judge model with a 0 to 1 confidence and already runs it in its own products, and OpenAI and Jev sell similar ones. Check the confidence against your own cases before trusting it.",
+     "vi": "Emerging. Google bán model chấm có độ tự tin từ 0 đến 1 và đã chạy nó trong chính sản phẩm của mình, OpenAI và Jev cũng bán model tương tự. Hãy đối chiếu độ tự tin với các ca của bạn trước khi tin."
+    }
+   },
+   {
+    "id": "ai-care-with-doctors",
+    "status": "new",
+    "e": {
+     "en": "Emerging. Oura pays $625M for Counsel Health, whose AI chat with licensed doctors has run in the Oura app since June. Real users, but the doctors are the costly part.",
+     "vi": "Emerging. Oura trả 625 triệu USD mua Counsel Health, nơi chat AI kèm bác sĩ được cấp phép đã chạy trong app Oura từ tháng 6. Có người dùng thật, nhưng bác sĩ là phần tốn kém."
+    }
+   },
+   {
+    "id": "agent-identity",
+    "status": "new",
+    "e": {
+     "en": "Early. An open identity standard for agents launched with 11 backers, but sites do not check it yet, and United blocked outside agents the same week.",
+     "vi": "Early. Một chuẩn danh tính mở cho agent ra mắt với 11 bên ủng hộ, nhưng các trang web chưa kiểm tra nó, và United chặn agent bên ngoài ngay trong tuần đó."
+    }
+   }
+  ]
+ },
+ "bet": {
+  "time": "2 hrs",
+  "t": {
+   "en": "Draw a trust ladder for one AI feature and test its hand-off rule on 20 real cases",
+   "vi": "Vẽ một chiếc thang niềm tin cho một tính năng AI và thử quy tắc chuyển cho người trên 20 tình huống thật"
+  },
+  "why": {
+   "en": "This week every big player answered the same question differently: how much should AI do before a person checks? A written ladder for your own feature, tested on real cases, turns that question into a decision you can show, and it is real AI failure-handling work for your portfolio.",
+   "vi": "Tuần này mọi tên tuổi lớn đều trả lời cùng một câu hỏi theo cách khác nhau: AI nên làm đến đâu trước khi có người kiểm tra? Một chiếc thang được viết ra cho chính tính năng của bạn, thử trên tình huống thật, biến câu hỏi đó thành một quyết định có thể cho người khác xem, và đó là sản phẩm thật về xử lý lỗi AI cho hồ sơ của bạn."
+  },
+  "s": {
+   "en": [
+    "List every action the AI takes in one feature you are working on, and put each on a rung: suggest only, act after the user approves, or act alone and leave a record",
+    "Take 20 real cases (last week's test set works), have a model give its answer plus how sure it is, pick a threshold for sending cases to a person, and count how many go to a person and how many confident answers are still wrong",
+    "Write one page: the ladder, the threshold, what users see if the model provider is down for a day, and what evidence would let each action move up one rung"
+   ],
+   "vi": [
+    "Liệt kê mọi thao tác AI làm trong một tính năng bạn đang làm, và đặt mỗi thao tác lên một bậc: chỉ gợi ý, làm sau khi người dùng duyệt, hoặc tự làm và để lại bản ghi",
+    "Lấy 20 tình huống thật (bộ test tuần trước dùng được), cho model đưa câu trả lời kèm độ chắc chắn, chọn một ngưỡng để chuyển cho người, rồi đếm bao nhiêu ca được chuyển và bao nhiêu câu trả lời tự tin vẫn sai",
+    "Viết một trang: chiếc thang, ngưỡng, người dùng thấy gì nếu nhà cung cấp model sập một ngày, và bằng chứng nào cho phép mỗi thao tác lên thêm một bậc"
+   ]
+  },
+  "o": {
+   "en": "A one-page trust ladder with a tested hand-off threshold and an outage plan, ready to share with your team or turn into a post",
+   "vi": "Một trang thang niềm tin kèm ngưỡng chuyển cho người đã được thử và kế hoạch khi sự cố, sẵn sàng chia sẻ với nhóm hoặc biến thành một bài viết"
+  }
+ }
+}

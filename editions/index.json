@@ -1,6 +1,16 @@
 {
  "editions": [
   {
+   "date": "2026-11-15",
+   "edition": "W03",
+   "type": "weekly",
+   "summary": {
+    "en": "Trust in steps: agents get approval taps, IDs and blocks, the price that counts is per finished job, and one weak supplier can take your AI down.",
+    "vi": "Niềm tin từng bước: agent phải được duyệt, có danh tính hoặc bị chặn, cái giá đáng tính là giá mỗi việc làm xong, và một nhà cung cấp yếu có thể kéo AI của bạn sập theo."
+   },
+   "minutes": 10
+  },
+  {
    "date": "2026-11-14",
    "edition": "012",
    "type": "daily",

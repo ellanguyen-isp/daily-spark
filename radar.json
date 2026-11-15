@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-15",
  "intro": {
   "en": "What AI can really do for products right now, with proof. Ready = you can ship it today. Emerging = works, but test it hard first. Early = real demos, not yet safe to build a business on. The weekly edition updates this page every Sunday.",
   "vi": "AI thật sự làm được gì cho sản phẩm ngay lúc này, kèm bằng chứng. Ready = có thể ra mắt ngay hôm nay. Emerging = chạy được, nhưng phải thử kỹ trước. Early = có demo thật, nhưng chưa nên xây cả một doanh nghiệp trên nó. Bản weekly cập nhật trang này mỗi Chủ nhật."
@@ -574,7 +574,7 @@
    "id": "open-weight-models",
    "area": "Platforms",
    "maturity": "ready",
-   "status": "moved",
+   "status": "stable",
    "since": "2026-11-01",
    "cap": {
     "en": "Strong open-weight models you can run on your own servers",
@@ -640,7 +640,7 @@
    "id": "agent-shopping",
    "area": "Agents",
    "maturity": "early",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-08",
    "cap": {
     "en": "Consumer agents that order, book and pay for you in other companies' apps",
@@ -655,6 +655,15 @@
     "vi": "Chạy được trong demo, nhưng gần như chưa ai dùng. Với thói quen chỉ mất 90 giây trong app, agent không nhanh hơn. Hãy theo dõi, đừng tính doanh thu dựa vào nó."
    },
    "evidence": [
+    {
+     "date": "2026-11-13",
+     "src": "openai.com",
+     "url": "https://openai.com/index/introducing-chatgpt-wallet/",
+     "note": {
+      "en": "ChatGPT Wallet lets OpenAI's agents pay for US Pro users, but a person reviews and approves every purchase with Face ID or a fingerprint; spending rules come later. No usage numbers yet, so it stays early.",
+      "vi": "ChatGPT Wallet cho agent của OpenAI trả tiền thay người dùng Pro ở Mỹ, nhưng người dùng phải xem và duyệt từng lần mua bằng Face ID hoặc vân tay; quy tắc chi tiêu sẽ có sau. Chưa có số liệu sử dụng, nên vẫn ở mức early."
+     }
+    },
     {
      "date": "2026-11-04",
      "src": "nrn.com",
@@ -680,7 +689,7 @@
    "id": "ai-bug-finding",
    "area": "Build",
    "maturity": "emerging",
-   "status": "new",
+   "status": "stable",
    "since": "2026-11-08",
    "cap": {
     "en": "AI that finds, proves and drafts fixes for security bugs at scale",
@@ -712,6 +721,135 @@
      "note": {
       "en": "Added: a lab found hundreds of real kernel bugs at low cost, and maintainers began merging fixes.",
       "vi": "Được thêm: một lab tìm ra hàng trăm lỗi nhân thật với chi phí thấp, và người bảo trì bắt đầu nhận bản vá."
+     }
+    }
+   ]
+  },
+  {
+   "id": "decision-models",
+   "area": "Build",
+   "maturity": "emerging",
+   "status": "new",
+   "since": "2026-11-15",
+   "cap": {
+    "en": "AI that picks from your fixed options and says how sure it is",
+    "vi": "AI chọn từ các lựa chọn cố định của bạn và cho biết nó chắc đến đâu"
+   },
+   "means": {
+    "en": "Many AI features are a choice, not a paragraph: route this, flag that, grade this. A confidence score per choice lets your code decide when a person should look, in about a tenth of a second and for very little money.",
+    "vi": "Nhiều tính năng AI là một lựa chọn, không phải một đoạn văn: chuyển việc này, gắn cờ việc kia, chấm điểm việc này. Điểm tự tin cho mỗi lựa chọn giúp code của bạn quyết định khi nào cần người xem lại, trong khoảng một phần mười giây và rất rẻ."
+   },
+   "limit": {
+    "en": "Confidence is only useful once you check it against your own labeled cases. A model can be 0.9 sure and still wrong, so set the threshold from your data, not from the vendor.",
+    "vi": "Điểm tự tin chỉ có ích khi bạn đối chiếu nó với các ca đã gán nhãn của chính bạn. Model có thể chắc 0,9 mà vẫn sai, nên hãy đặt ngưỡng từ dữ liệu của bạn, không phải từ nhà cung cấp."
+   },
+   "evidence": [
+    {
+     "date": "2026-11-11",
+     "src": "blog.google",
+     "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+     "note": {
+      "en": "Google's Decisions API scores yes or no, 2 to 255 options, or a rubric grade in one pass, with a 0 to 1 confidence, at $0.10 per million input tokens; Google already uses it to route queries and check tools in its own products, and OpenAI and Jev sell similar models.",
+      "vi": "Decisions API của Google chấm có hoặc không, từ 2 đến 255 lựa chọn, hoặc điểm theo thang trong một lần, kèm độ tự tin từ 0 đến 1, giá 0,10 USD mỗi triệu token đầu vào; Google đã dùng nó để phân luồng truy vấn và kiểm tra công cụ trong chính sản phẩm của mình, và OpenAI cùng Jev bán model tương tự."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "maturity": "emerging",
+     "note": {
+      "en": "Added: more than one vendor now sells a fast judge model, and Google runs one inside its own products.",
+      "vi": "Được thêm: đã có hơn một nhà cung cấp bán model chấm nhanh, và Google chạy nó trong chính sản phẩm của mình."
+     }
+    }
+   ]
+  },
+  {
+   "id": "ai-care-with-doctors",
+   "area": "Health",
+   "maturity": "emerging",
+   "status": "new",
+   "since": "2026-11-15",
+   "cap": {
+    "en": "Consumer health AI that gives advice with a licensed doctor behind it",
+    "vi": "AI sức khoẻ cho người dùng đưa lời khuyên, có bác sĩ được cấp phép đứng sau"
+   },
+   "means": {
+    "en": "Health apps can move from showing data to saying what to do next, because a person with a license can step in when the AI is not enough.",
+    "vi": "App sức khoẻ có thể chuyển từ hiển thị dữ liệu sang nói nên làm gì tiếp, vì có một người có giấy phép bước vào khi AI chưa đủ."
+   },
+   "limit": {
+    "en": "The doctors are the expensive, regulated part. It works at the scale of a large app with money to buy a care team, not as a feature a small team bolts on.",
+    "vi": "Bác sĩ là phần đắt và bị quản lý chặt. Mô hình này chạy được ở quy mô một app lớn có tiền mua cả đội chăm sóc, không phải tính năng mà nhóm nhỏ gắn thêm vào."
+   },
+   "evidence": [
+    {
+     "date": "2026-11-10",
+     "src": "techcrunch.com",
+     "url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+     "note": {
+      "en": "Oura is paying $625M for Counsel Health, whose medical AI chat with licensed physicians has run inside the Oura app since June; Oura plans to expand into acute, specialty and chronic care.",
+      "vi": "Oura trả 625 triệu USD mua Counsel Health, nơi có chat AI y tế kèm bác sĩ được cấp phép đã chạy trong app Oura từ tháng 6; Oura dự định mở rộng sang chăm sóc cấp tính, chuyên khoa và bệnh mãn tính."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "maturity": "emerging",
+     "note": {
+      "en": "Added: AI plus doctors has run with real users inside a large consumer app for months, and a $625M deal backs it.",
+      "vi": "Được thêm: AI kèm bác sĩ đã chạy với người dùng thật trong một app tiêu dùng lớn nhiều tháng, và có thương vụ 625 triệu USD đứng sau."
+     }
+    }
+   ]
+  },
+  {
+   "id": "agent-identity",
+   "area": "Agents",
+   "maturity": "early",
+   "status": "new",
+   "since": "2026-11-15",
+   "cap": {
+    "en": "Verifiable identity for AI agents, so a site can tell which agent is knocking and who stands behind it",
+    "vi": "Danh tính có thể kiểm chứng cho agent AI, để một trang web biết agent nào đang gõ cửa và ai đứng sau nó"
+   },
+   "means": {
+    "en": "Instead of blocking every outside agent, a business could let in agents it can verify, and keep a record of what each one did.",
+    "vi": "Thay vì chặn mọi agent từ bên ngoài, doanh nghiệp có thể cho vào những agent kiểm chứng được, và giữ lại bản ghi việc mỗi agent đã làm."
+   },
+   "limit": {
+    "en": "It is a new standard with supporters, not something sites check yet. This week United simply blocked outside agents instead.",
+    "vi": "Đây là một chuẩn mới có nhiều bên ủng hộ, chưa phải thứ các trang web đã kiểm tra. Tuần này United vẫn chọn chặn thẳng agent bên ngoài."
+   },
+   "evidence": [
+    {
+     "date": "2026-11-10",
+     "src": "linuxfoundation.org",
+     "url": "https://www.linuxfoundation.org/press/linux-foundation-welcomes-agent-name-service-to-bring-verifiable-identity-and-discovery-to-ai-agents",
+     "note": {
+      "en": "The Linux Foundation took on Agent Name Service, a seven-document standard that gives agents DNS-based identities with public audit logs; 11 groups including Cisco, Cloudflare, GoDaddy and Salesforce back it.",
+      "vi": "Linux Foundation tiếp nhận Agent Name Service, một chuẩn gồm bảy tài liệu cho agent danh tính dựa trên DNS kèm nhật ký kiểm tra công khai; 11 tổ chức gồm Cisco, Cloudflare, GoDaddy và Salesforce ủng hộ."
+     }
+    },
+    {
+     "date": "2026-11-11",
+     "src": "cbsnews.com",
+     "url": "https://www.cbsnews.com/news/united-airlines-bans-ai-agents-booking-flights/",
+     "note": {
+      "en": "United Airlines says outside AI agents may not book or act for its travelers, citing security and rules.",
+      "vi": "United Airlines nói agent AI bên ngoài không được đặt vé hay thao tác thay hành khách, vì lý do bảo mật và quy định."
+     }
+    }
+   ],
+   "history": [
+    {
+     "date": "2026-11-15",
+     "maturity": "early",
+     "note": {
+      "en": "Added: an open standard with 11 backers launched the same week a major airline blocked outside agents.",
+      "vi": "Được thêm: một chuẩn mở có 11 bên ủng hộ ra mắt đúng tuần một hãng bay lớn chặn agent bên ngoài."
      }
     }
    ]
