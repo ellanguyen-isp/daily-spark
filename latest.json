@@ -1,36 +1,44 @@
 {
  "type": "daily",
- "date": "2026-11-16",
- "edition": "013",
+ "date": "2026-11-17",
+ "edition": "014",
  "summary": {
-  "en": "Trust before power: four nonprofits ask a court to freeze AI at its Nov 12 level, a strong open model ships its weights that same day, and Meta says it held Muse back seven months so one failure would not end trust.",
-  "vi": "Niềm tin trước sức mạnh: bốn tổ chức phi lợi nhuận xin tòa đóng băng AI ở mức ngày 12/11, một model mở mạnh công bố trọng số đúng hôm đó, và Meta kể họ giữ Muse lại bảy tháng để một lần lỗi không phá hỏng niềm tin."
+  "en": "Checked before trusted: Apple starts a 200,000-person study of AI health answers, OpenAI's hospital agents keep every order a draft until a clinician signs, and a tampered A/B testing script turns 186 big sites into card skimmers.",
+  "vi": "Kiểm tra rồi mới tin: Apple mở một nghiên cứu với tới 200.000 người về câu trả lời sức khỏe của AI, agent bệnh viện của OpenAI giữ mọi y lệnh ở dạng nháp cho tới khi bác sĩ ký, và một script A/B testing bị sửa đã biến 186 trang web lớn thành máy đánh cắp thẻ."
  },
  "big": {
-  "en": "A quiet weekend, so today has two smaller but real stories instead of a big launch. Four nonprofits asked a California court to stop five AI labs from building anything more capable than their best model on Nov 12. On that same day, Thinking Machines put the full weights of a strong coding model online for anyone to download, which no court order can call back. For product people: plan on what models can do today, not on next year's promise, and start treating published failure rates as part of how you pick a model.",
-  "vi": "Cuối tuần yên ắng, nên hôm nay có hai tin nhỏ hơn nhưng có thật, thay vì một màn ra mắt lớn. Bốn tổ chức phi lợi nhuận xin một tòa án ở California cấm năm lab AI xây bất cứ thứ gì mạnh hơn model tốt nhất của họ vào ngày 12/11. Cũng đúng ngày đó, Thinking Machines đưa toàn bộ trọng số của một model lập trình mạnh lên mạng cho ai cũng tải được, và không lệnh tòa nào thu hồi được. Với người làm sản phẩm: hãy lên kế hoạch dựa trên những gì model làm được hôm nay, không dựa vào lời hứa của năm sau, và bắt đầu coi tỷ lệ lỗi được công bố là một phần của việc chọn model."
+  "en": "No new frontier model this weekend, but three real stories share one idea: trust has to be checked, not assumed. Apple is not shipping an AI health chatbot; it is running a study to learn whether people understand and trust AI health answers. OpenAI put computer-use agents into hospital software, and its demo keeps every order unsigned until a clinician approves it. And on Nov 16, a one-line change to scripts hosted by Optimizely, an A/B testing tool, ran a card skimmer on 186 sites, including CNN, BBC and Zoom. For product people: a correct answer, a finished-looking task and a trusted vendor are three different things, and each needs its own check.",
+  "vi": "Cuối tuần không có model hàng đầu mới, nhưng có ba tin thật cùng chung một ý: niềm tin phải được kiểm tra, không thể mặc định. Apple không tung ra chatbot sức khỏe; họ chạy một nghiên cứu để biết người dùng có hiểu và tin câu trả lời sức khỏe của AI hay không. OpenAI đưa agent điều khiển máy tính vào phần mềm bệnh viện, và bản demo giữ mọi y lệnh ở trạng thái chưa ký cho tới khi bác sĩ duyệt. Còn ngày 16/11, chỉ một dòng code chèn vào script do Optimizely (công cụ A/B testing) lưu trữ đã chạy mã đánh cắp thẻ trên 186 trang, gồm CNN, BBC và Zoom. Với người làm sản phẩm: một câu trả lời đúng, một việc trông như đã xong và một nhà cung cấp đáng tin là ba chuyện khác nhau, và mỗi chuyện cần một bước kiểm tra riêng."
  },
  "headlines": [
   {
    "t": {
-    "en": "Four nonprofits sue five AI labs to freeze frontier AI at its Nov 12 level",
-    "vi": "Bốn tổ chức phi lợi nhuận kiện năm lab AI, đòi đóng băng AI hàng đầu ở mức ngày 12/11"
+    "en": "Apple launches a study app to learn how people use AI for health questions",
+    "vi": "Apple ra mắt ứng dụng nghiên cứu để tìm hiểu cách mọi người dùng AI cho câu hỏi sức khỏe"
    },
-   "src": "decrypt.co",
-   "url": "https://decrypt.co/383270/openai-anthropic-google-ai-giants-lawsuit-development-freeze"
+   "src": "techcrunch.com",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"
   },
   {
    "t": {
-    "en": "Thinking Machines opens the weights of Inkling 2 Small, and publishes a misbehavior rate next to its benchmarks",
-    "vi": "Thinking Machines mở trọng số Inkling 2 Small, và công bố tỷ lệ hành xử sai bên cạnh điểm benchmark"
+    "en": "OpenAI puts computer-use agents into hospital software, and keeps every order a draft until a clinician signs",
+    "vi": "OpenAI đưa agent điều khiển máy tính vào phần mềm bệnh viện, và giữ mọi y lệnh ở dạng nháp cho tới khi bác sĩ ký"
    },
-   "src": "thinkingmachines.ai",
-   "url": "https://thinkingmachines.ai/news/inkling-2-small/"
+   "src": "openai.com",
+   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/"
+  },
+  {
+   "t": {
+    "en": "A tampered A/B testing script turns 186 big sites into card and crypto skimmers",
+    "vi": "Một script A/B testing bị sửa biến 186 trang web lớn thành công cụ đánh cắp thẻ và tiền mã hóa"
+   },
+   "src": "stepsecurity.io",
+   "url": "https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer"
   }
  ],
  "question": {
-  "en": "If the model you use today were the best you would ever get, which feature would you still ship, and which one is quietly waiting for a better model?",
-  "vi": "Nếu model bạn đang dùng hôm nay là model tốt nhất bạn từng có, tính năng nào bạn vẫn sẽ ra mắt, và tính năng nào đang lặng lẽ chờ một model tốt hơn?"
+  "en": "Your AI gives a correct answer, but would the user understand it and do the right thing next? How would you find out without asking them if they \"liked\" it?",
+  "vi": "AI của bạn đưa câu trả lời đúng, nhưng người dùng có hiểu và làm đúng bước tiếp theo không? Làm sao bạn biết được mà không hỏi họ có \"thích\" nó không?"
  },
  "exercises": [
   {
@@ -41,8 +49,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Name the one failure that would end trust in an AI feature",
-    "vi": "Gọi tên lỗi duy nhất có thể chấm dứt niềm tin vào một tính năng AI"
+    "en": "Write the done-states for one AI action in a feature you are working on",
+    "vi": "Viết các trạng thái hoàn thành cho một hành động AI trong tính năng bạn đang làm"
    }
   },
   {
@@ -53,8 +61,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Draft a short post: working is not the same as good",
-    "vi": "Viết nháp một bài ngắn: chạy được không có nghĩa là hay"
+    "en": "Write a short post: \"Right answer, wrong understanding\"",
+    "vi": "Viết một bài ngắn: \"Trả lời đúng, hiểu sai\""
    }
   },
   {
@@ -65,70 +73,82 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a retry-once-then-draft gate for an agent's replies",
-    "vi": "Xây cổng kiểm tra viết lại một lần rồi chuyển nháp cho câu trả lời của agent"
+    "en": "Build a script that lists every outside host a page loads code from",
+    "vi": "Xây một script liệt kê mọi tên miền bên ngoài mà một trang tải code về"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "Four nonprofits sue five AI labs to freeze frontier AI at its Nov 12 level",
-    "vi": "Bốn tổ chức phi lợi nhuận kiện năm lab AI, đòi đóng băng AI hàng đầu ở mức ngày 12/11"
+    "en": "Apple launches a study app to learn how people use AI for health questions",
+    "vi": "Apple ra mắt ứng dụng nghiên cứu để tìm hiểu cách mọi người dùng AI cho câu hỏi sức khỏe"
    },
-   "src": "decrypt.co",
-   "url": "https://decrypt.co/383270/openai-anthropic-google-ai-giants-lawsuit-development-freeze",
-   "date": "2026-11-14",
-   "tag": "Policy",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "Thinking Machines opens the weights of Inkling 2 Small, and publishes a misbehavior rate next to its benchmarks",
-    "vi": "Thinking Machines mở trọng số Inkling 2 Small, và công bố tỷ lệ hành xử sai bên cạnh điểm benchmark"
-   },
-   "src": "thinkingmachines.ai",
-   "url": "https://thinkingmachines.ai/news/inkling-2-small/",
-   "date": "2026-11-12",
-   "tag": "Model",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "Meta held Muse back for seven months because one failure can end trust",
-    "vi": "Meta giữ Muse lại bảy tháng vì một lần lỗi có thể chấm dứt niềm tin"
-   },
-   "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=WY0cdD4gNoQ",
+   "src": "techcrunch.com",
+   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
    "date": "2026-11-15",
+   "tag": "Health",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "OpenAI puts computer-use agents into hospital software, and keeps every order a draft until a clinician signs",
+    "vi": "OpenAI đưa agent điều khiển máy tính vào phần mềm bệnh viện, và giữ mọi y lệnh ở dạng nháp cho tới khi bác sĩ ký"
+   },
+   "src": "openai.com",
+   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/",
+   "date": "2026-11-16",
+   "tag": "Agents",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "A tampered A/B testing script turns 186 big sites into card and crypto skimmers",
+    "vi": "Một script A/B testing bị sửa biến 186 trang web lớn thành công cụ đánh cắp thẻ và tiền mã hóa"
+   },
+   "src": "stepsecurity.io",
+   "url": "https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer",
+   "date": "2026-11-17",
+   "tag": "Security",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "If you sell AI, you sell compute: a solo founder on fighting token fraud",
+    "vi": "Bán AI là bán sức máy: một nhà sáng lập một mình kể chuyện chống gian lận token"
+   },
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo",
+   "date": "2026-11-16",
    "tag": "",
-   "who": "Lenny's Podcast · Mona Sarantakos",
+   "who": "How I AI (Claire Vo) · Lenny's Newsletter",
    "kind": "people"
   },
   {
    "t": {
-    "en": "An agent that interviews every user who drops off, with a check before it replies",
-    "vi": "Một agent phỏng vấn mọi người dùng bỏ ngang, có bước kiểm tra trước khi trả lời"
+    "en": "The team behind Grok Bot says execution is cheap now; deciding what to build is the bottleneck",
+    "vi": "Đội làm Grok Bot nói làm ra giờ đã rẻ; quyết định xây gì mới là nút thắt"
    },
    "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=JpyhPePe150",
+   "url": "https://www.youtube.com/watch?v=y1-9yeYLJUo",
    "date": "2026-11-14",
    "tag": "",
-   "who": "Aakash Gupta (Product Growth) · Greg Greiner",
+   "who": "Y Combinator · Lauren Tan and Roman Ugarte",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Design Arena sells human taste to AI labs, because working is not the same as good",
-    "vi": "Design Arena bán gu thẩm mỹ của con người cho các lab AI, vì chạy được không có nghĩa là hay"
+    "en": "Measure the outcome, not just the assumption tests",
+    "vi": "Hãy đo kết quả, không chỉ đo các bài kiểm tra giả định"
    },
-   "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=EWmqL-63tyM",
-   "date": "2026-11-13",
+   "src": "producttalk.org",
+   "url": "https://www.producttalk.org/ch-11-measuring-impact/",
+   "date": "2026-11-16",
    "tag": "",
-   "who": "YC Root Access · Grace Li",
+   "who": "Product Talk (Teresa Torres)",
    "kind": "people"
   }
  ]

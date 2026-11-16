@@ -1,0 +1,385 @@
+{
+ "date": "2026-11-17",
+ "edition": "014",
+ "minutes": 9,
+ "summary": {
+  "en": "Checked before trusted: Apple starts a 200,000-person study of AI health answers, OpenAI's hospital agents keep every order a draft until a clinician signs, and a tampered A/B testing script turns 186 big sites into card skimmers.",
+  "vi": "Kiểm tra rồi mới tin: Apple mở một nghiên cứu với tới 200.000 người về câu trả lời sức khỏe của AI, agent bệnh viện của OpenAI giữ mọi y lệnh ở dạng nháp cho tới khi bác sĩ ký, và một script A/B testing bị sửa đã biến 186 trang web lớn thành máy đánh cắp thẻ."
+ },
+ "frontier": {
+  "big": {
+   "en": "No new frontier model this weekend, but three real stories share one idea: trust has to be checked, not assumed. Apple is not shipping an AI health chatbot; it is running a study to learn whether people understand and trust AI health answers. OpenAI put computer-use agents into hospital software, and its demo keeps every order unsigned until a clinician approves it. And on Nov 16, a one-line change to scripts hosted by Optimizely, an A/B testing tool, ran a card skimmer on 186 sites, including CNN, BBC and Zoom. For product people: a correct answer, a finished-looking task and a trusted vendor are three different things, and each needs its own check.",
+   "vi": "Cuối tuần không có model hàng đầu mới, nhưng có ba tin thật cùng chung một ý: niềm tin phải được kiểm tra, không thể mặc định. Apple không tung ra chatbot sức khỏe; họ chạy một nghiên cứu để biết người dùng có hiểu và tin câu trả lời sức khỏe của AI hay không. OpenAI đưa agent điều khiển máy tính vào phần mềm bệnh viện, và bản demo giữ mọi y lệnh ở trạng thái chưa ký cho tới khi bác sĩ duyệt. Còn ngày 16/11, chỉ một dòng code chèn vào script do Optimizely (công cụ A/B testing) lưu trữ đã chạy mã đánh cắp thẻ trên 186 trang, gồm CNN, BBC và Zoom. Với người làm sản phẩm: một câu trả lời đúng, một việc trông như đã xong và một nhà cung cấp đáng tin là ba chuyện khác nhau, và mỗi chuyện cần một bước kiểm tra riêng."
+  },
+  "items": [
+   {
+    "date": "2026-11-15",
+    "src": "techcrunch.com",
+    "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
+    "tag": "Health",
+    "t": {
+     "en": "Apple launches a study app to learn how people use AI for health questions",
+     "vi": "Apple ra mắt ứng dụng nghiên cứu để tìm hiểu cách mọi người dùng AI cho câu hỏi sức khỏe"
+    },
+    "p": {
+     "en": [
+      "The Apple Health AI Study app, powered by OpenEvidence, answers health questions from clinical sources such as NEJM, JAMA and Nature, with linked citations and plain-language wording",
+      "Users can opt in to share HealthKit data (resting heart rate, sleep, activity, lab results), rate answers and fill in monthly surveys; the app also helps people prepare for doctor visits",
+      "Apple is measuring trust, understanding and whether the answers help people talk to their doctor; a February Oxford study found chatbots named the right condition about 95% of the time, but everyday users reached the right answer less than 35% of the time",
+      "Open to US adults 21 and over with a recent iPhone; OpenEvidence deletes questions and answers within 24 hours and the data is not used to train models; Apple has not said if this will reach the Health app or Siri"
+     ],
+     "vi": [
+      "Ứng dụng Apple Health AI Study, chạy bằng OpenEvidence, trả lời câu hỏi sức khỏe dựa trên nguồn lâm sàng như NEJM, JAMA và Nature, có trích dẫn kèm đường link và lời lẽ dễ hiểu",
+      "Người dùng có thể chọn chia sẻ dữ liệu HealthKit (nhịp tim lúc nghỉ, giấc ngủ, vận động, kết quả xét nghiệm), chấm điểm câu trả lời và làm khảo sát hàng tháng; ứng dụng còn giúp chuẩn bị trước khi đi khám",
+      "Apple đo mức độ tin tưởng, mức độ hiểu và việc câu trả lời có giúp người dùng nói chuyện với bác sĩ hay không; một nghiên cứu của Oxford hồi tháng 2 cho thấy chatbot gọi đúng bệnh khoảng 95% số lần, nhưng người dùng bình thường chỉ ra được đáp án đúng dưới 35% số lần",
+      "Dành cho người lớn ở Mỹ từ 21 tuổi có iPhone đời mới; OpenEvidence xóa câu hỏi và câu trả lời trong vòng 24 giờ và dữ liệu không dùng để huấn luyện model; Apple chưa nói liệu tính năng này có vào ứng dụng Health hay Siri không"
+     ]
+    },
+    "w": {
+     "en": "A right answer is not the same as a user who understands it. If your product gives health or money advice, test what users do with the answer, not only whether the answer is correct.",
+     "vi": "Một câu trả lời đúng không đồng nghĩa với việc người dùng hiểu nó. Nếu sản phẩm của bạn đưa lời khuyên về sức khỏe hay tiền bạc, hãy kiểm tra người dùng làm gì với câu trả lời, chứ không chỉ kiểm tra câu trả lời có đúng không."
+    },
+    "stat": {
+     "v": "200,000",
+     "l": {
+      "en": "US participants Apple aims to enroll, over more than 12 months",
+      "vi": "số người tham gia ở Mỹ mà Apple muốn tuyển, trong hơn 12 tháng"
+     }
+    }
+   },
+   {
+    "date": "2026-11-16",
+    "src": "openai.com",
+    "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/",
+    "tag": "Agents",
+    "t": {
+     "en": "OpenAI puts computer-use agents into hospital software, and keeps every order a draft until a clinician signs",
+     "vi": "OpenAI đưa agent điều khiển máy tính vào phần mềm bệnh viện, và giữ mọi y lệnh ở dạng nháp cho tới khi bác sĩ ký"
+    },
+    "p": {
+     "en": [
+      "ChatGPT for Healthcare gets agents that work inside the screens of health record and insurer software, a new clinical search with citations, and 21 healthcare plugins; there is no new model",
+      "In the demo with synthetic patients, the agent gathers chart context and drafts an MRI order, a note and a patient reply; all start unsigned, the clinician edits and approves, and the insurer request stays a saved draft",
+      "OpenAI's own numbers: GPT-6 Astra was rated clinically safe on 99% of 325 inbox tasks, and on an admin benchmark the cheaper GPT-6 Luna scored 91.8% at about 8.5 cents per task",
+      "Many plugins are read-only, and a screenshot of a finished screen does not prove the other system accepted the change; prepared, signed, submitted and approved are separate states to check"
+     ],
+     "vi": [
+      "ChatGPT for Healthcare có thêm agent làm việc ngay trên màn hình của phần mềm hồ sơ bệnh án và cổng bảo hiểm, công cụ tìm kiếm lâm sàng mới có trích dẫn, và 21 plugin y tế; không có model mới",
+      "Trong bản demo với bệnh nhân giả lập, agent thu thập thông tin hồ sơ rồi soạn y lệnh chụp MRI, một ghi chú và một tin trả lời bệnh nhân; tất cả bắt đầu ở trạng thái chưa ký, bác sĩ sửa và duyệt, còn yêu cầu gửi bảo hiểm vẫn chỉ là bản nháp đã lưu",
+      "Số liệu do chính OpenAI đưa ra: GPT-6 Astra được đánh giá an toàn lâm sàng ở 99% trong 325 việc xử lý hộp thư, và trên một bộ đo việc hành chính, GPT-6 Luna rẻ hơn đạt 91,8% với khoảng 8,5 cent mỗi việc",
+      "Nhiều plugin chỉ đọc được, và một ảnh chụp màn hình trông như đã xong không chứng minh hệ thống bên kia đã nhận thay đổi; đã soạn, đã ký, đã gửi và đã duyệt là những trạng thái riêng cần kiểm tra"
+     ]
+    },
+    "w": {
+     "en": "Name the states of every agent action in your product (drafted, approved, sent, accepted) and check each one separately. \"The agent said it is done\" is not a state.",
+     "vi": "Hãy đặt tên các trạng thái cho mọi hành động của agent trong sản phẩm của bạn (đã soạn, đã duyệt, đã gửi, đã được nhận) và kiểm tra từng trạng thái riêng. \"Agent nói là xong rồi\" không phải là một trạng thái."
+    },
+    "stat": {
+     "v": "99% of 325",
+     "l": {
+      "en": "inbox tasks where GPT-6 Astra was rated clinically safe (OpenAI's figures)",
+      "vi": "việc xử lý hộp thư mà GPT-6 Astra được đánh giá an toàn lâm sàng (số liệu của OpenAI)"
+     }
+    }
+   },
+   {
+    "date": "2026-11-17",
+    "src": "stepsecurity.io",
+    "url": "https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer",
+    "tag": "Security",
+    "t": {
+     "en": "A tampered A/B testing script turns 186 big sites into card and crypto skimmers",
+     "vi": "Một script A/B testing bị sửa biến 186 trang web lớn thành công cụ đánh cắp thẻ và tiền mã hóa"
+    },
+    "p": {
+     "en": [
+      "On Nov 16, a one-line addition to scripts served from Optimizely's CDN loaded attacker code on 186 sites, including CNN, BBC, Fox News, Zoom, Salesforce, GitLab and Air France, for at least 13 hours",
+      "The code swapped copied crypto wallet addresses, captured card numbers from checkout forms, and on older iPhones loaded a second stage; about $6,600 in crypto is visible on-chain, stolen cards are not",
+      "The sites' own code was clean, so code review missed it; a consent banner only decides when a vendor script runs, not what is inside it",
+      "What would have helped: no third-party tags on checkout, card fields in the payment provider's own iframe, and a strict allowlist of hosts a page may load from and send data to"
+     ],
+     "vi": [
+      "Ngày 16/11, chỉ một dòng code chèn thêm vào script phát từ CDN của Optimizely đã tải mã của kẻ tấn công trên 186 trang, gồm CNN, BBC, Fox News, Zoom, Salesforce, GitLab và Air France, trong ít nhất 13 giờ",
+      "Đoạn mã tráo địa chỉ ví tiền mã hóa khi người dùng sao chép, lấy số thẻ từ form thanh toán, và trên iPhone đời cũ thì tải thêm một bước tấn công thứ hai; khoảng 6.600 USD tiền mã hóa hiện thấy được trên chuỗi, còn số thẻ bị lấy thì không đếm được",
+      "Mã của chính các trang này sạch, nên review code không phát hiện ra; banner xin đồng ý cookie chỉ quyết định khi nào script của bên thứ ba chạy, không quyết định bên trong nó có gì",
+      "Điều lẽ ra giúp được: không gắn tag bên thứ ba ở trang thanh toán, để ô nhập thẻ trong iframe của chính nhà cung cấp thanh toán, và có danh sách chặt các tên miền mà trang được phép tải về và gửi dữ liệu tới"
+     ]
+    },
+    "w": {
+     "en": "Every script you add for testing or analytics runs with the same power as your own code. Keep your most sensitive page (sign-up, payment) free of them.",
+     "vi": "Mỗi script bạn thêm để thử nghiệm hay đo lường đều chạy với quyền ngang code của chính bạn. Hãy giữ trang nhạy cảm nhất (đăng ký, thanh toán) không có chúng."
+    },
+    "stat": {
+     "v": "186 sites",
+     "l": {
+      "en": "counted as infected by researcher Scott Helme, from 188 script files",
+      "vi": "bị nhiễm theo đếm của nhà nghiên cứu Scott Helme, từ 188 file script"
+     }
+    }
+   }
+  ],
+  "watch": {
+   "en": "Sierra's Poppy 1.0, the protocol that tells personal agents what a business allows, is now on every Shopify store with 100+ partners, but its spec can still change in breaking ways. Optimizely had not explained the breach as of Nov 16. Anthropic is set to price its IPO on Nov 18.",
+   "vi": "Poppy 1.0 của Sierra, giao thức cho agent cá nhân biết doanh nghiệp cho phép làm gì, đã bật trên mọi cửa hàng Shopify với hơn 100 đối tác, nhưng đặc tả vẫn có thể thay đổi theo cách làm hỏng tích hợp cũ. Tới ngày 16/11 Optimizely vẫn chưa giải thích vụ xâm nhập. Anthropic dự kiến chốt giá IPO ngày 18/11."
+  }
+ },
+ "people": [
+  {
+   "who": "How I AI (Claire Vo) · Lenny's Newsletter",
+   "date": "2026-11-16",
+   "src": "lennysnewsletter.com",
+   "url": "https://www.lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo",
+   "kind": {
+    "en": "40 min video · from show notes and chapters",
+    "vi": "video 40 phút · từ ghi chú và danh sách chương"
+   },
+   "t": {
+    "en": "If you sell AI, you sell compute: a solo founder on fighting token fraud",
+    "vi": "Bán AI là bán sức máy: một nhà sáng lập một mình kể chuyện chống gian lận token"
+   },
+   "p": {
+    "en": [
+     "Claire Vo says token fraud cost her tens of thousands of dollars in a year: farmed free trials, resold promo codes, relays that wrap her product, and even a custom MCP running as a 24/7 compute worker",
+     "Her core point: an AI product's free tier is free compute, so abusers treat it as a resource, not a trial",
+     "Her stack mixes business controls that slow fraud down with technical ones (payment risk scoring, bot detection, a firewall and an AI gateway) plus a classifier that flags abuse in real time, and bots that watch the bots",
+     "She ended free trials for good, and warns that an AI support agent can itself become a way in"
+    ],
+    "vi": [
+     "Claire Vo kể gian lận token đã làm cô mất hàng chục nghìn đô trong một năm: lạm dụng dùng thử miễn phí, bán lại mã khuyến mãi, dùng relay bọc sản phẩm của cô, thậm chí một MCP tự chế chạy như máy tính toán 24/7",
+     "Ý chính của cô: gói miễn phí của sản phẩm AI là sức máy miễn phí, nên kẻ lạm dụng coi nó là tài nguyên, không phải bản dùng thử",
+     "Hệ phòng thủ của cô kết hợp biện pháp kinh doanh làm chậm gian lận với biện pháp kỹ thuật (chấm điểm rủi ro thanh toán, phát hiện bot, tường lửa và cổng AI), thêm một bộ phân loại gắn cờ lạm dụng theo thời gian thực, và bot canh chừng bot",
+     "Cô đã bỏ hẳn dùng thử miễn phí, và cảnh báo rằng chính agent chăm sóc khách hàng bằng AI cũng có thể thành lối vào cho kẻ xấu"
+    ]
+   },
+   "k": {
+    "en": "Before you price a free tier, ask what it costs you when someone uses it all day without ever meaning to pay.",
+    "vi": "Trước khi định giá gói miễn phí, hãy hỏi nó tốn bao nhiêu nếu có người dùng cả ngày mà không hề định trả tiền."
+   }
+  },
+  {
+   "who": "Y Combinator · Lauren Tan and Roman Ugarte",
+   "date": "2026-11-14",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=y1-9yeYLJUo",
+   "kind": {
+    "en": "60 min video · from a written recap",
+    "vi": "video 60 phút · từ bản tóm tắt"
+   },
+   "t": {
+    "en": "The team behind Grok Bot says execution is cheap now; deciding what to build is the bottleneck",
+    "vi": "Đội làm Grok Bot nói làm ra giờ đã rẻ; quyết định xây gì mới là nút thắt"
+   },
+   "p": {
+    "en": [
+     "Grok Bot, which lets teams spin up AI teammates with their own identity, phone number and card, went from first line of code to launch in seven weeks",
+     "Trust is earned in steps: bots start with read-only tasks before they get write access, and agents merge their own code only after it passes CI and checks the team wrote",
+     "Their quality bet is an \"inverted pyramid\": put effort into lint rules, static checks and CI, and save human review for architecture and product direction",
+     "Open problems they name: bots still miss social context, like who can actually decide in a Slack thread, and sign-in and permissions for bots are unsolved"
+    ],
+    "vi": [
+     "Grok Bot, công cụ cho các đội tạo đồng đội AI có danh tính, số điện thoại và thẻ riêng, đi từ dòng code đầu tiên tới ra mắt trong bảy tuần",
+     "Niềm tin được trao theo từng bậc: bot bắt đầu với việc chỉ đọc rồi mới được quyền ghi, và agent chỉ tự gộp code sau khi qua CI và các bước kiểm tra do đội viết",
+     "Cách họ giữ chất lượng là \"kim tự tháp ngược\": dồn công sức vào luật lint, kiểm tra tĩnh và CI, để con người chỉ review kiến trúc và hướng sản phẩm",
+     "Những vấn đề họ thừa nhận còn mở: bot vẫn không hiểu bối cảnh xã hội, như ai thật sự có quyền quyết trong một thread Slack, và việc đăng nhập, phân quyền cho bot vẫn chưa ai giải được"
+    ]
+   },
+   "k": {
+    "en": "When building gets cheap, a clear goal and good automatic checks are worth more than another reviewer.",
+    "vi": "Khi việc xây trở nên rẻ, một mục tiêu rõ ràng và các bước kiểm tra tự động tốt đáng giá hơn thêm một người review."
+   },
+   "stat": {
+    "v": "4,000+",
+    "l": {
+     "en": "pull requests a month Lauren Tan reports, up from 2,000",
+     "vi": "pull request mỗi tháng mà Lauren Tan báo cáo, tăng từ 2.000"
+    }
+   }
+  },
+  {
+   "who": "Product Talk (Teresa Torres)",
+   "date": "2026-11-16",
+   "src": "producttalk.org",
+   "url": "https://www.producttalk.org/ch-11-measuring-impact/",
+   "kind": {
+    "en": "5 min read · reading guide for chapter 11",
+    "vi": "đọc 5 phút · hướng dẫn đọc chương 11"
+   },
+   "t": {
+    "en": "Measure the outcome, not just the assumption tests",
+    "vi": "Hãy đo kết quả, không chỉ đo các bài kiểm tra giả định"
+   },
+   "p": {
+    "en": [
+     "Start small: instrument only what your current assumption tests need, not everything you could track",
+     "Passing assumption tests is not enough; check whether the shipped solution actually moved the outcome you set",
+     "Hard outcomes, even ones that happen outside your product, can still be measured: one team started at a 5% response rate on whether students got jobs and grew it to 37%",
+     "Three traps: measuring everything, getting so deep in tests you forget the outcome, and never testing the link between your product outcome and the business outcome"
+    ],
+    "vi": [
+     "Bắt đầu nhỏ: chỉ gắn đo lường cho những gì bài kiểm tra giả định hiện tại cần, không phải mọi thứ có thể đo",
+     "Qua được các bài kiểm tra giả định là chưa đủ; hãy kiểm tra giải pháp đã ra mắt có thật sự làm dịch chuyển kết quả bạn đặt ra không",
+     "Kết quả khó đo, kể cả những thứ xảy ra bên ngoài sản phẩm, vẫn đo được: một đội bắt đầu với tỷ lệ phản hồi 5% về việc sinh viên có tìm được việc không, rồi nâng lên 37%",
+     "Ba cái bẫy: đo mọi thứ, mải mê kiểm tra tới quên kết quả, và không bao giờ kiểm tra mối nối giữa kết quả sản phẩm và kết quả kinh doanh"
+    ]
+   },
+   "k": {
+    "en": "Pick the hardest thing to measure in your product and start with an imperfect proxy this week.",
+    "vi": "Chọn thứ khó đo nhất trong sản phẩm của bạn và bắt đầu với một chỉ số thay thế chưa hoàn hảo ngay tuần này."
+   },
+   "stat": {
+    "v": "5% to 37%",
+    "l": {
+     "en": "response rate on a hard-to-measure outcome, improved step by step",
+     "vi": "tỷ lệ phản hồi về một kết quả khó đo, được cải thiện từng bước"
+    }
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "A startup is a company designed to grow fast.",
+   "vi": "Startup là một công ty được thiết kế để tăng trưởng nhanh."
+  },
+  "src": "Startup = Growth · Paul Graham",
+  "date": "2012 · essay",
+  "url": "https://paulgraham.com/growth.html",
+  "e": {
+   "en": "Paul Graham argues that growth is the one thing that makes a startup a startup. Pick one number, ideally revenue or active users, and measure its weekly growth rate. At Y Combinator, 5 to 7% a week is good and 10% is exceptional. The value is not the number itself but the compass: when you are unsure what to do, do what moves that rate. The danger is the same one Teresa Torres names today: you can be busy with tests and features that never move the number that matters. And as today's security story shows, growth tactics you add without checking, like extra scripts on a page, can cost you the trust that growth depends on.",
+   "vi": "Paul Graham cho rằng tăng trưởng là điều duy nhất khiến một startup là startup. Hãy chọn một con số, lý tưởng là doanh thu hoặc người dùng hoạt động, và đo tốc độ tăng mỗi tuần. Ở Y Combinator, 5 đến 7% mỗi tuần là tốt và 10% là xuất sắc. Giá trị không nằm ở con số mà ở cái la bàn: khi không chắc nên làm gì, hãy làm điều đẩy được tốc độ đó. Mối nguy cũng chính là điều Teresa Torres nhắc hôm nay: bạn có thể bận rộn với các bài kiểm tra và tính năng mà chẳng bao giờ làm dịch chuyển con số quan trọng. Và như tin bảo mật hôm nay cho thấy, những chiêu tăng trưởng thêm vào mà không kiểm tra, như gắn thêm script lên trang, có thể làm mất chính niềm tin mà tăng trưởng dựa vào."
+  },
+  "a": {
+   "en": [
+    "Choose one growth number for the product you work on and write down last week's value and this week's",
+    "Before starting a task, ask in one line how it would move that number; if you cannot say, push it down the list",
+    "Review the rate weekly, not daily, so one noisy day does not change your plan"
+   ],
+   "vi": [
+    "Chọn một con số tăng trưởng cho sản phẩm bạn đang làm và ghi lại giá trị tuần trước và tuần này",
+    "Trước khi bắt đầu một việc, viết một dòng xem nó đẩy con số đó thế nào; nếu không nói được, hãy đẩy việc đó xuống cuối danh sách",
+    "Xem lại tốc độ mỗi tuần, không phải mỗi ngày, để một ngày nhiễu không làm đổi kế hoạch"
+   ]
+  },
+  "x": {
+   "en": "For a product you are taking to new users, the weekly number could be new users still active in week two. Run today's understanding test, then see next week whether clearer suggestions move it.",
+   "vi": "Với một sản phẩm bạn đang đưa tới người dùng mới, con số mỗi tuần có thể là số người dùng mới vẫn hoạt động ở tuần thứ hai. Hãy chạy bài kiểm tra mức độ hiểu hôm nay, rồi tuần sau xem gợi ý rõ hơn có làm con số đó tăng không."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "Your AI gives a correct answer, but would the user understand it and do the right thing next? How would you find out without asking them if they \"liked\" it?",
+    "vi": "AI của bạn đưa câu trả lời đúng, nhưng người dùng có hiểu và làm đúng bước tiếp theo không? Làm sao bạn biết được mà không hỏi họ có \"thích\" nó không?"
+   },
+   "c": {
+    "en": "Apple's AI health study",
+    "vi": "Nghiên cứu AI sức khỏe của Apple"
+   }
+  },
+  {
+   "q": {
+    "en": "In your product, when an agent or a flow says \"done\", what does it really mean: prepared, sent, or accepted on the other side? Where could a finished-looking screen be lying to you?",
+    "vi": "Trong sản phẩm của bạn, khi một agent hay một luồng nói \"xong\", nó thật sự nghĩa là gì: đã chuẩn bị, đã gửi, hay bên kia đã nhận? Ở đâu một màn hình trông như đã xong có thể đang nói dối bạn?"
+   },
+   "c": {
+    "en": "OpenAI's hospital agents and their draft-first demo",
+    "vi": "Agent bệnh viện của OpenAI và bản demo nháp trước"
+   }
+  },
+  {
+   "q": {
+    "en": "Which code from other companies runs on your most sensitive page today, and who would notice first if it changed tonight?",
+    "vi": "Hôm nay có những đoạn code nào của công ty khác đang chạy trên trang nhạy cảm nhất của bạn, và ai sẽ phát hiện đầu tiên nếu nó bị đổi tối nay?"
+   },
+   "c": {
+    "en": "The tampered A/B testing script on 186 sites",
+    "vi": "Script A/B testing bị sửa trên 186 trang"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Write the done-states for one AI action in a feature you are working on",
+    "vi": "Viết các trạng thái hoàn thành cho một hành động AI trong tính năng bạn đang làm"
+   },
+   "s": {
+    "en": [
+     "Pick one action the AI takes for a user (sends, books, saves, changes something)",
+     "List its states from start to finish, and next to each write the evidence that proves it (a log line, a confirmation, a reply from the other system)",
+     "Mark which state the user sees today, and which state your metrics count as \"done\""
+    ],
+    "vi": [
+     "Chọn một hành động AI làm thay người dùng (gửi, đặt, lưu, thay đổi một thứ gì đó)",
+     "Liệt kê các trạng thái của nó từ đầu đến cuối, và bên cạnh mỗi trạng thái ghi bằng chứng chứng minh nó (một dòng log, một xác nhận, một phản hồi từ hệ thống bên kia)",
+     "Đánh dấu trạng thái nào người dùng đang thấy hôm nay, và trạng thái nào số liệu của bạn đang tính là \"xong\""
+    ]
+   },
+   "o": {
+    "en": "A one-page state list with evidence, and the gap between what users see and what you count.",
+    "vi": "Một danh sách trạng thái một trang kèm bằng chứng, và khoảng cách giữa điều người dùng thấy và điều bạn đang đếm."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"Right answer, wrong understanding\"",
+    "vi": "Viết một bài ngắn: \"Trả lời đúng, hiểu sai\""
+   },
+   "s": {
+    "en": [
+     "Open with the gap: chatbots named the right condition about 95% of the time, people reached the right answer less than 35% of the time",
+     "Explain why Apple chose to study trust and understanding before shipping, in 3 short sentences",
+     "End with one test any product builder can run this week to measure understanding, not accuracy"
+    ],
+    "vi": [
+     "Mở đầu bằng khoảng trống: chatbot gọi đúng bệnh khoảng 95% số lần, con người chỉ ra đúng đáp án dưới 35% số lần",
+     "Giải thích trong 3 câu ngắn vì sao Apple chọn nghiên cứu niềm tin và mức độ hiểu trước khi ra mắt",
+     "Kết bằng một bài kiểm tra mà bất kỳ người làm sản phẩm nào cũng chạy được tuần này để đo mức độ hiểu, không phải độ chính xác"
+    ]
+   },
+   "o": {
+    "en": "A 150 to 200 word post ready to share, with one concrete test readers can copy.",
+    "vi": "Một bài 150 đến 200 chữ sẵn sàng chia sẻ, có một bài kiểm tra cụ thể người đọc có thể làm theo."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a script that lists every outside host a page loads code from",
+    "vi": "Xây một script liệt kê mọi tên miền bên ngoài mà một trang tải code về"
+   },
+   "s": {
+    "en": [
+     "With Playwright, open your sign-up or payment page and record every script request and every host the page sends data to",
+     "Group them into your own domain, known vendors, and unknown, and save the list as a baseline file",
+     "Run it again and print any host that is new since the baseline; then draft a Content-Security-Policy-Report-Only header that allows only the known hosts"
+    ],
+    "vi": [
+     "Dùng Playwright mở trang đăng ký hoặc thanh toán của bạn và ghi lại mọi yêu cầu tải script cùng mọi tên miền mà trang gửi dữ liệu tới",
+     "Chia chúng thành tên miền của bạn, nhà cung cấp đã biết, và chưa rõ, rồi lưu danh sách thành file mốc",
+     "Chạy lại và in ra mọi tên miền mới so với mốc; sau đó soạn một header Content-Security-Policy-Report-Only chỉ cho phép các tên miền đã biết"
+    ]
+   },
+   "o": {
+    "en": "A small script with a saved baseline that flags new outside hosts, plus a draft report-only policy.",
+    "vi": "Một script nhỏ có file mốc, báo khi xuất hiện tên miền bên ngoài mới, kèm bản nháp chính sách chỉ-báo-cáo."
+   }
+  }
+ ]
+}
