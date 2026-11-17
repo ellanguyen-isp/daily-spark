@@ -1,0 +1,378 @@
+{
+ "date": "2026-11-18",
+ "edition": "015",
+ "minutes": 9,
+ "summary": {
+  "en": "Your test, not theirs: OpenAI's GPT-6.2 Astra wins its own benchmarks but disappoints early testers, Microsoft says its new coding model does 96% of the work for 5% of the price, and Google makes its errand-running Gemini Tasks free in six countries.",
+  "vi": "Bài test của bạn, không phải của họ: GPT-6.2 Astra của OpenAI thắng trên bộ đo của chính hãng nhưng làm người thử sớm thất vọng, Microsoft nói model lập trình mới làm được 96% việc với 5% chi phí, và Google cho dùng miễn phí Gemini Tasks, agent làm việc vặt, ở sáu nước."
+ },
+ "frontier": {
+  "big": {
+   "en": "Three launches on Nov 17, one lesson. OpenAI shipped GPT-6.2 Astra and Sol with strong numbers on its own benchmarks and a 20% lower Astra price, yet the first hands-on reviews were mostly negative. Microsoft says its new MAI Code 2 does 96% of Claude Opus 5.5's work at 5% of the cost, but every figure is its own and nobody has checked them yet. Google made Gemini Tasks, its agent that calls, shops and pays for you, free for hundreds of millions of people, with a tap to approve before it buys. For product people: a vendor's chart is a hypothesis; the only number that decides a switch is the one from your own tasks.",
+   "vi": "Ba lần ra mắt ngày 17/11, một bài học. OpenAI tung GPT-6.2 Astra và Sol với điểm cao trên bộ đo của chính họ và giá Astra giảm 20%, nhưng những bài đánh giá thực tế đầu tiên phần lớn là chê. Microsoft nói MAI Code 2 mới làm được 96% việc của Claude Opus 5.5 với 5% chi phí, nhưng mọi con số đều do họ tự công bố và chưa ai kiểm chứng. Google cho dùng miễn phí Gemini Tasks, agent gọi điện, mua sắm và thanh toán thay bạn, với hàng trăm triệu người, kèm một bước bấm duyệt trước khi mua. Với người làm sản phẩm: biểu đồ của nhà cung cấp chỉ là giả thuyết; con số quyết định có đổi hay không là con số từ chính các việc của bạn."
+  },
+  "items": [
+   {
+    "date": "2026-11-17",
+    "src": "openai.com",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "tag": "Model",
+    "t": {
+     "en": "OpenAI ships GPT-6.2 Astra and Sol: cheaper frontier model, same-price everyday model",
+     "vi": "OpenAI ra mắt GPT-6.2 Astra và Sol: model hàng đầu rẻ hơn, model dùng hằng ngày giữ nguyên giá"
+    },
+    "p": {
+     "en": [
+      "Astra is for hard, long projects; Sol is the efficient everyday model; both are in ChatGPT Work and Codex for paid plans and in the API",
+      "API prices: Astra $8 in and $40 out per million tokens (20% less than GPT-6 Astra, cached input $0.40); Sol stays at $2 and $10",
+      "OpenAI's own claims: Astra is 5.5 points ahead of Claude Fable 5.2 on Agents' Last Exam at 5% of the cost, and Sol lands within 0.5 points of Astra on a coding benchmark at about one fifth of the cost",
+      "Early users disagree: several well-known testers called Astra uneven and hard to steer, and it scores below Fable 5.2 on some outside benchmarks"
+     ],
+     "vi": [
+      "Astra dành cho dự án khó và dài; Sol là model hiệu quả cho việc hằng ngày; cả hai có trong ChatGPT Work và Codex cho gói trả phí và trong API",
+      "Giá API: Astra 8 USD đầu vào và 40 USD đầu ra cho mỗi triệu token (rẻ hơn GPT-6 Astra 20%, đầu vào đã cache 0,40 USD); Sol giữ 2 và 10 USD",
+      "Theo chính OpenAI: Astra hơn Claude Fable 5.2 5,5 điểm trên Agents' Last Exam với 5% chi phí, và Sol chỉ kém Astra 0,5 điểm trên một bộ đo lập trình với khoảng một phần năm chi phí",
+      "Người dùng sớm không đồng ý: nhiều người thử nổi tiếng nói Astra thất thường và khó điều khiển, và nó điểm thấp hơn Fable 5.2 trên một số bộ đo bên ngoài"
+     ]
+    },
+    "w": {
+     "en": "The cheaper model is the real news for most products. If your feature runs on a mid-tier model, test Sol on your own tasks before you pay for Astra.",
+     "vi": "Model rẻ hơn mới là tin chính với đa số sản phẩm. Nếu tính năng của bạn chạy trên model tầm trung, hãy thử Sol trên chính các việc của bạn trước khi trả tiền cho Astra."
+    },
+    "stat": {
+     "v": "$8 / $40",
+     "l": {
+      "en": "Astra API price per million input / output tokens, 20% below GPT-6 Astra",
+      "vi": "giá API của Astra cho mỗi triệu token đầu vào / đầu ra, thấp hơn GPT-6 Astra 20%"
+     }
+    }
+   },
+   {
+    "date": "2026-11-17",
+    "src": "microsoft.ai",
+    "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+    "tag": "Model",
+    "t": {
+     "en": "Microsoft launches MAI Code 2 and pitches it on price, not on being the best",
+     "vi": "Microsoft ra mắt MAI Code 2 và chào bán bằng giá, không phải bằng việc giỏi nhất"
+    },
+    "p": {
+     "en": [
+      "At its Ignite event Microsoft launched its own models for coding, security, images, speech and routing; MAI Code 2 and Code 2 Flash are already in GitHub Copilot",
+      "Its pitch is cost: MAI Code 2 gives about 98% of GPT-6.1 Sol's results at 40% of its price, and Code 2 Flash matches Claude Haiku 5.5 at 20% of its price",
+      "Microsoft says MAI Code 2 is not yet tuned for very long agent tasks, and all the numbers are its own, with no outside check so far",
+      "In Copilot, business admins may need to turn the models on before they show up in the picker"
+     ],
+     "vi": [
+      "Tại sự kiện Ignite, Microsoft ra mắt các model riêng cho lập trình, bảo mật, hình ảnh, giọng nói và định tuyến; MAI Code 2 và Code 2 Flash đã có trong GitHub Copilot",
+      "Điểm chào bán là chi phí: MAI Code 2 cho khoảng 98% kết quả của GPT-6.1 Sol với 40% giá, còn Code 2 Flash ngang Claude Haiku 5.5 với 20% giá",
+      "Microsoft nói MAI Code 2 chưa được tinh chỉnh cho các việc agent rất dài, và mọi con số là của chính họ, chưa có bên ngoài kiểm chứng",
+      "Trong Copilot, quản trị viên doanh nghiệp có thể phải bật model thì nó mới hiện trong danh sách chọn"
+     ]
+    },
+    "w": {
+     "en": "\"96% as good\" means 4% of your tasks may fail. Ask which 4%, and whether those are the tasks your users care about most.",
+     "vi": "\"Tốt bằng 96%\" nghĩa là 4% việc của bạn có thể hỏng. Hãy hỏi đó là 4% nào, và có phải là những việc người dùng quan tâm nhất không."
+    },
+    "stat": {
+     "v": "96% for 5%",
+     "l": {
+      "en": "of Claude Opus 5.5's performance at 5% of its cost, by Microsoft's own figures",
+      "vi": "hiệu năng của Claude Opus 5.5 với 5% chi phí, theo số liệu của chính Microsoft"
+     }
+    }
+   },
+   {
+    "date": "2026-11-17",
+    "src": "blog.google",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+    "tag": "Agents",
+    "t": {
+     "en": "Google makes Gemini Tasks free: an agent that calls, shops and pays, with a tap before it buys",
+     "vi": "Google cho dùng miễn phí Gemini Tasks: agent gọi điện, mua sắm và thanh toán, có một bước bấm trước khi mua"
+    },
+    "p": {
+     "en": [
+      "A toggle on the Gemini home screen switches from Chat to Task; it was a paid feature five weeks ago and is now free in the US, Japan, South Korea, Canada, Australia and India",
+      "Tasks can phone businesses to book, read bills in a utility portal, compare products and check out with Google Pay, and add items to a grocery order; it connects to more than 60 apps",
+      "Gemini pauses for approval before steps like \"Buy\", and users can set a hard spending cap; but an \"Always allow\" option lets routine actions skip the prompt",
+      "Google admits tasks do not always finish: on some sites it does most of the work and hands the last click back to you; each task runs in its own isolated machine"
+     ],
+     "vi": [
+      "Một nút gạt trên màn hình chính Gemini chuyển từ Chat sang Task; năm tuần trước đây là tính năng trả phí, nay miễn phí ở Mỹ, Nhật, Hàn Quốc, Canada, Úc và Ấn Độ",
+      "Tasks có thể gọi điện đặt lịch với doanh nghiệp, đọc hóa đơn trên cổng điện nước, so sánh sản phẩm rồi thanh toán bằng Google Pay, và thêm món vào đơn đi chợ; nó kết nối hơn 60 ứng dụng",
+      "Gemini dừng lại xin duyệt trước các bước như \"Mua\", và người dùng có thể đặt trần chi tiêu cứng; nhưng tùy chọn \"Luôn cho phép\" giúp việc quen thuộc bỏ qua bước hỏi",
+      "Google thừa nhận không phải việc nào cũng xong: trên một số trang, nó làm gần hết rồi trả cú bấm cuối lại cho bạn; mỗi việc chạy trong một máy riêng biệt"
+     ]
+    },
+    "w": {
+     "en": "Your users may soon ask a free agent to do your app's job from outside your app. Check which of your flows an agent could finish, and which step still needs you.",
+     "vi": "Người dùng của bạn có thể sớm nhờ một agent miễn phí làm việc của ứng dụng bạn từ bên ngoài ứng dụng. Hãy xem luồng nào agent có thể làm xong, và bước nào vẫn cần đến bạn."
+    },
+    "stat": {
+     "v": "60+",
+     "l": {
+      "en": "apps Gemini Tasks can connect to",
+      "vi": "ứng dụng mà Gemini Tasks có thể kết nối"
+     }
+    }
+   }
+  ],
+  "watch": {
+   "en": "No outside tests of Microsoft's MAI Code 2 numbers yet; look for them before you plan around the price. OpenAI says many of its own staff already use Sol as their default. Gemini Tasks' phone calls and texting are US only, and the UK and EU are not on the free list.",
+   "vi": "Chưa có bài kiểm tra độc lập nào cho số liệu MAI Code 2 của Microsoft; hãy chờ chúng trước khi tính toán dựa trên giá. OpenAI nói nhiều nhân viên của họ đã dùng Sol làm model mặc định. Tính năng gọi điện và nhắn tin của Gemini Tasks chỉ có ở Mỹ, và Anh cùng EU chưa có trong danh sách miễn phí."
+  }
+ },
+ "people": [
+  {
+   "who": "Every (Dan Shipper)",
+   "kind": {
+    "en": "11 min video · from chapters and Every's published findings",
+    "vi": "Video 11 phút · dựa trên các chương và kết luận Every đã công bố"
+   },
+   "date": "2026-11-18",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=6Sz_8EhZWAc",
+   "t": {
+    "en": "Every tested GPT-6.2 Astra for two weeks and called it a step back",
+    "vi": "Every thử GPT-6.2 Astra hai tuần và gọi đó là một bước lùi"
+   },
+   "p": {
+    "en": [
+     "Their review tests writing, coding and design on the team's real work, not on public benchmarks, and Dan Shipper called the release disappointing next to Claude Fable 5.2",
+     "Coding: Astra roughly matched the previous model on their coding tests, but often stopped before finishing a build end to end",
+     "Writing: its push to be brief sometimes made text hard to follow or dropped the explanation a reader needed",
+     "Design: good default taste, but hard to make it try something different; outputs share a clear house style"
+    ],
+    "vi": [
+     "Bài đánh giá thử viết, lập trình và thiết kế trên việc thật của đội, không phải trên bộ đo công khai, và Dan Shipper gọi bản này là đáng thất vọng so với Claude Fable 5.2",
+     "Lập trình: Astra gần bằng model trước trên các bài test lập trình của họ, nhưng hay dừng trước khi làm xong trọn vẹn một bản build",
+     "Viết: việc cố viết ngắn đôi khi làm chữ khó theo dõi hoặc bỏ mất phần giải thích người đọc cần",
+     "Thiết kế: gu mặc định tốt, nhưng khó bảo nó thử hướng khác; các kết quả có chung một phong cách rõ rệt"
+    ]
+   },
+   "k": {
+    "en": "Add \"did it finish?\" to every model test. A model that scores well but stops halfway costs you more than a weaker one that finishes.",
+    "vi": "Thêm câu \"nó có làm xong không?\" vào mọi bài test model. Một model điểm cao nhưng dừng giữa chừng tốn của bạn nhiều hơn một model yếu hơn mà làm xong."
+   }
+  },
+  {
+   "who": "Product Talk (Teresa Torres & Petra Wille)",
+   "kind": {
+    "en": "14 min podcast · from show notes (transcript is paid)",
+    "vi": "Podcast 14 phút · dựa trên ghi chú tập (bản ghi lời phải trả phí)"
+   },
+   "date": "2026-11-17",
+   "src": "producttalk.org",
+   "url": "https://www.producttalk.org/the-sharing-gap-all-things-product-podcast-with-teresa-torres-petra-wille/",
+   "t": {
+    "en": "The sharing gap: why good product work stays private, and how to start sharing it",
+    "vi": "Khoảng trống chia sẻ: vì sao việc làm sản phẩm tốt cứ nằm im, và cách bắt đầu chia sẻ"
+   },
+   "p": {
+    "en": [
+     "Useful posts about how work really gets done are being crowded out by generic advice and AI filler",
+     "Petra sees strong product leaders keep their work private because they think peers are ahead or their work is too small; even \"we tried 20 things and nothing worked\" teaches others",
+     "Teresa stopped writing general guides about two years ago and now writes only about what she is doing herself, like building AI evals; every piece has done better since",
+     "A low-risk start: for 5 days, post the most interesting thing that happened at work, written for someone one step behind you; you do not need the ending"
+    ],
+    "vi": [
+     "Những bài viết hữu ích về cách công việc thật sự được làm đang bị lấn át bởi lời khuyên chung chung và nội dung AI rỗng",
+     "Petra thấy nhiều lãnh đạo sản phẩm giỏi giữ kín công việc vì nghĩ người khác đi trước hoặc việc của mình quá nhỏ; ngay cả \"chúng tôi thử 20 cách và không cách nào hiệu quả\" cũng dạy được người khác",
+     "Teresa ngừng viết hướng dẫn chung chung khoảng hai năm trước, giờ chỉ viết về những gì chính bà đang làm, như xây eval cho AI; bài nào từ đó cũng hiệu quả hơn",
+     "Cách bắt đầu ít rủi ro: trong 5 ngày, đăng điều thú vị nhất xảy ra ở chỗ làm, viết cho người đi sau bạn một bước; bạn không cần có kết thúc"
+    ]
+   },
+   "k": {
+    "en": "Your messy middle is your content. Write what you tried this week, even if it has not worked yet.",
+    "vi": "Phần lộn xộn ở giữa chính là nội dung của bạn. Hãy viết điều bạn đã thử tuần này, kể cả khi nó chưa thành."
+   }
+  },
+  {
+   "who": "Hello China Tech",
+   "kind": {
+    "en": "6 min read · from the free part (the rest is paid)",
+    "vi": "Đọc 6 phút · dựa trên phần miễn phí (phần còn lại trả phí)"
+   },
+   "date": "2026-11-17",
+   "src": "hellochinatech.com",
+   "url": "https://hellochinatech.com/p/baidu-ai-search-monetization",
+   "t": {
+    "en": "Baidu and Google made the same AI search promise; only one still has people searching",
+    "vi": "Baidu và Google cùng hứa một điều với tìm kiếm AI; chỉ một bên còn giữ được người dùng tìm kiếm"
+   },
+   "p": {
+    "en": [
+     "Both CEOs said the same thing: improve the AI search experience first, earn from ads later",
+     "Last quarter Google's search revenue grew 12% while Baidu's online marketing revenue fell 22%; Baidu's AI cloud grew 94%, but that does not fix search",
+     "The difference is usage: Google reports query growth, while Chinese users opened search apps 35.8 times a month in August, down 21.7% in a year, as questions move into chatbots and super apps",
+     "\"Experience first, money later\" only works if people keep coming back; falling usage warns you before revenue does"
+    ],
+    "vi": [
+     "Cả hai CEO nói giống nhau: làm tốt trải nghiệm tìm kiếm AI trước, kiếm tiền từ quảng cáo sau",
+     "Quý vừa rồi doanh thu tìm kiếm của Google tăng 12% còn doanh thu quảng cáo trực tuyến của Baidu giảm 22%; mảng đám mây AI của Baidu tăng 94%, nhưng điều đó không cứu được tìm kiếm",
+     "Khác biệt nằm ở mức sử dụng: Google báo số lượt tìm kiếm tăng, còn người dùng Trung Quốc mở ứng dụng tìm kiếm 35,8 lần mỗi tháng vào tháng 8, giảm 21,7% sau một năm, vì câu hỏi chuyển sang chatbot và siêu ứng dụng",
+     "\"Trải nghiệm trước, tiền sau\" chỉ đúng khi người dùng còn quay lại; mức sử dụng giảm sẽ cảnh báo bạn trước cả doanh thu"
+    ]
+   },
+   "k": {
+    "en": "Put one usage number next to every revenue number you report. Usage moves first.",
+    "vi": "Đặt một con số về mức sử dụng cạnh mỗi con số doanh thu bạn báo cáo. Mức sử dụng đổi trước."
+   },
+   "stat": {
+    "v": "-22%",
+    "l": {
+     "en": "Baidu's online marketing revenue, while Google Search grew 12%",
+     "vi": "doanh thu quảng cáo trực tuyến của Baidu, trong khi Google Search tăng 12%"
+    }
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "Writing about something, even something you know well, usually shows you that you didn't know it as well as you thought.",
+   "vi": "Viết về một điều gì đó, kể cả điều bạn biết rõ, thường cho bạn thấy bạn không hiểu nó kỹ như mình tưởng."
+  },
+  "src": "Putting Ideas into Words · Paul Graham",
+  "date": "2022 · essay",
+  "url": "https://paulgraham.com/words.html",
+  "e": {
+   "en": "Paul Graham argues that writing is not just a way to share ideas; it is a way to test them. When you put a vague idea into full sentences, the gaps show up: the step you skipped, the claim you cannot back. That is why Teresa Torres says to write about your own practice: the writing makes the practice sharper, not only more visible. It is also a warning about today's models: Every found that Astra's push for short answers sometimes dropped the explanation a reader needed. Short is good only when the thinking behind it is complete.",
+   "vi": "Paul Graham cho rằng viết không chỉ là cách chia sẻ ý tưởng; đó là cách kiểm tra ý tưởng. Khi bạn đưa một ý mơ hồ vào câu chữ đầy đủ, chỗ hổng sẽ lộ ra: bước bạn bỏ qua, nhận định bạn không chứng minh được. Đó là lý do Teresa Torres khuyên viết về chính việc mình làm: viết làm việc đó sắc hơn, không chỉ dễ thấy hơn. Đây cũng là lời nhắc về các model hôm nay: Every thấy việc Astra cố trả lời ngắn đôi khi bỏ mất phần giải thích người đọc cần. Ngắn chỉ tốt khi suy nghĩ phía sau đã trọn vẹn."
+  },
+  "a": {
+   "en": [
+    "Before a decision meeting, write your recommendation as five full sentences; if one is hard to write, that is the part you have not thought through",
+    "After a test or experiment, write what you expected, what happened, and why, even if the result was nothing",
+    "When an AI drafts for you, read it and ask: what would a reader one step behind me need that is missing here?"
+   ],
+   "vi": [
+    "Trước một buổi họp ra quyết định, viết đề xuất của bạn thành năm câu đầy đủ; câu nào khó viết thì đó là phần bạn chưa nghĩ kỹ",
+    "Sau một bài test hay thử nghiệm, viết điều bạn đã kỳ vọng, điều đã xảy ra, và vì sao, kể cả khi kết quả là không có gì",
+    "Khi AI viết nháp giúp bạn, đọc lại và hỏi: người đi sau tôi một bước sẽ cần gì mà ở đây còn thiếu?"
+   ]
+  },
+  "x": {
+   "en": "Before you decide whether a feature you are working on should switch to a new model, write the decision in five sentences: what you tested, what passed, what stopped early, what it costs, and what you will do. If you cannot write sentence three, run the test first.",
+   "vi": "Trước khi quyết định một tính năng bạn đang làm có nên đổi sang model mới, hãy viết quyết định đó thành năm câu: bạn đã test gì, cái gì đạt, cái gì dừng sớm, chi phí bao nhiêu, và bạn sẽ làm gì. Nếu không viết được câu thứ ba, hãy chạy test trước."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "If a vendor says its model is 96% as good for 5% of the price, what is the one test in your own product that would prove or break that claim?",
+    "vi": "Nếu một nhà cung cấp nói model của họ tốt bằng 96% với 5% giá, bài test nào trong chính sản phẩm của bạn sẽ chứng minh hoặc bác bỏ điều đó?"
+   },
+   "c": {
+    "en": "Microsoft's MAI Code 2",
+    "vi": "MAI Code 2 của Microsoft"
+   }
+  },
+  {
+   "q": {
+    "en": "When a new model ships, what actually makes you switch: the benchmark chart, a reviewer you trust, or your own eval? What would make you wait?",
+    "vi": "Khi có model mới, điều gì thật sự khiến bạn đổi: biểu đồ benchmark, một người đánh giá bạn tin, hay eval của chính bạn? Điều gì sẽ khiến bạn chờ?"
+   },
+   "c": {
+    "en": "GPT-6.2 Astra and Sol versus Every's hands-on test",
+    "vi": "GPT-6.2 Astra và Sol so với bài thử thực tế của Every"
+   }
+  },
+  {
+   "q": {
+    "en": "What small, unfinished piece of your work this week would help someone one step behind you, and what stops you from sharing it?",
+    "vi": "Phần việc nhỏ, chưa xong nào của bạn tuần này có thể giúp người đi sau bạn một bước, và điều gì đang ngăn bạn chia sẻ nó?"
+   },
+   "c": {
+    "en": "Teresa Torres and Petra Wille on the sharing gap",
+    "vi": "Teresa Torres và Petra Wille về khoảng trống chia sẻ"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Write a one-page model-switch rule for a feature you are working on",
+    "vi": "Viết một trang quy tắc đổi model cho một tính năng bạn đang làm"
+   },
+   "s": {
+    "en": [
+     "List the 3 tasks the feature must never get wrong, and the 1 task where cost matters most",
+     "For each, write the pass line (what counts as done) and the most you would pay per passed task",
+     "Add a last rule: switch only if the new model passes all 3 must-win tasks and does not stop early more often than today"
+    ],
+    "vi": [
+     "Liệt kê 3 việc tính năng không bao giờ được làm sai, và 1 việc mà chi phí quan trọng nhất",
+     "Với mỗi việc, viết ngưỡng đạt (thế nào là xong) và mức tối đa bạn chịu trả cho mỗi việc đạt",
+     "Thêm quy tắc cuối: chỉ đổi khi model mới đạt cả 3 việc bắt buộc và không dừng sớm nhiều hơn hiện tại"
+    ]
+   },
+   "o": {
+    "en": "A one-page rule you can apply the next time any model launches, in minutes instead of days.",
+    "vi": "Một trang quy tắc bạn áp dụng được cho lần ra mắt model tiếp theo, trong vài phút thay vì vài ngày."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: \"The chart said yes, the testers said no\"",
+    "vi": "Viết một bài ngắn: \"Biểu đồ nói có, người thử nói không\""
+   },
+   "s": {
+    "en": [
+     "Open with the gap: OpenAI's own numbers put Astra ahead of rivals, while early hands-on reviews called it a step back",
+     "Explain in 3 short sentences why both can be true: benchmarks test short, clean tasks; real work needs a model that finishes",
+     "End with your own rule for testing a new model, in one line readers can copy"
+    ],
+    "vi": [
+     "Mở đầu bằng khoảng cách: số liệu của chính OpenAI đặt Astra trên đối thủ, trong khi các bài đánh giá thực tế đầu tiên gọi nó là bước lùi",
+     "Giải thích trong 3 câu ngắn vì sao cả hai đều có thể đúng: benchmark đo việc ngắn và gọn; việc thật cần một model làm đến cùng",
+     "Kết bằng quy tắc của riêng bạn khi thử model mới, trong một dòng người đọc có thể chép lại"
+    ]
+   },
+   "o": {
+    "en": "A 150 to 200 word post ready to share, and day 1 of a 5-day sharing habit.",
+    "vi": "Một bài 150 đến 200 chữ sẵn sàng chia sẻ, và ngày 1 của thói quen chia sẻ 5 ngày."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a tiny script that compares two models on 10 of your own tasks",
+    "vi": "Xây một script nhỏ so sánh hai model trên 10 việc của chính bạn"
+   },
+   "s": {
+    "en": [
+     "Write 10 real tasks in a JSON file, each with a simple check (must contain, must be valid JSON, must call a tool, and so on)",
+     "Run each task on two models through one API, and record pass or fail, tokens used, and whether the answer stopped before the end",
+     "Print one table: pass rate, cost per passed task, and stopped-early count for each model"
+    ],
+    "vi": [
+     "Viết 10 việc thật vào một file JSON, mỗi việc có một phép kiểm đơn giản (phải chứa, phải là JSON hợp lệ, phải gọi công cụ, v.v.)",
+     "Chạy mỗi việc trên hai model qua cùng một API, ghi lại đạt hay không, số token, và câu trả lời có dừng trước khi xong không",
+     "In ra một bảng: tỉ lệ đạt, chi phí mỗi việc đạt, và số lần dừng sớm của mỗi model"
+    ]
+   },
+   "o": {
+    "en": "A reusable mini eval you can run on launch day for any new model.",
+    "vi": "Một bộ eval nhỏ dùng lại được, chạy ngay ngày ra mắt cho bất kỳ model mới nào."
+   }
+  }
+ ]
+}

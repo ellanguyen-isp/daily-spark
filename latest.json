@@ -1,44 +1,44 @@
 {
  "type": "daily",
- "date": "2026-11-17",
- "edition": "014",
+ "date": "2026-11-18",
+ "edition": "015",
  "summary": {
-  "en": "Checked before trusted: Apple starts a 200,000-person study of AI health answers, OpenAI's hospital agents keep every order a draft until a clinician signs, and a tampered A/B testing script turns 186 big sites into card skimmers.",
-  "vi": "Kiểm tra rồi mới tin: Apple mở một nghiên cứu với tới 200.000 người về câu trả lời sức khỏe của AI, agent bệnh viện của OpenAI giữ mọi y lệnh ở dạng nháp cho tới khi bác sĩ ký, và một script A/B testing bị sửa đã biến 186 trang web lớn thành máy đánh cắp thẻ."
+  "en": "Your test, not theirs: OpenAI's GPT-6.2 Astra wins its own benchmarks but disappoints early testers, Microsoft says its new coding model does 96% of the work for 5% of the price, and Google makes its errand-running Gemini Tasks free in six countries.",
+  "vi": "Bài test của bạn, không phải của họ: GPT-6.2 Astra của OpenAI thắng trên bộ đo của chính hãng nhưng làm người thử sớm thất vọng, Microsoft nói model lập trình mới làm được 96% việc với 5% chi phí, và Google cho dùng miễn phí Gemini Tasks, agent làm việc vặt, ở sáu nước."
  },
  "big": {
-  "en": "No new frontier model this weekend, but three real stories share one idea: trust has to be checked, not assumed. Apple is not shipping an AI health chatbot; it is running a study to learn whether people understand and trust AI health answers. OpenAI put computer-use agents into hospital software, and its demo keeps every order unsigned until a clinician approves it. And on Nov 16, a one-line change to scripts hosted by Optimizely, an A/B testing tool, ran a card skimmer on 186 sites, including CNN, BBC and Zoom. For product people: a correct answer, a finished-looking task and a trusted vendor are three different things, and each needs its own check.",
-  "vi": "Cuối tuần không có model hàng đầu mới, nhưng có ba tin thật cùng chung một ý: niềm tin phải được kiểm tra, không thể mặc định. Apple không tung ra chatbot sức khỏe; họ chạy một nghiên cứu để biết người dùng có hiểu và tin câu trả lời sức khỏe của AI hay không. OpenAI đưa agent điều khiển máy tính vào phần mềm bệnh viện, và bản demo giữ mọi y lệnh ở trạng thái chưa ký cho tới khi bác sĩ duyệt. Còn ngày 16/11, chỉ một dòng code chèn vào script do Optimizely (công cụ A/B testing) lưu trữ đã chạy mã đánh cắp thẻ trên 186 trang, gồm CNN, BBC và Zoom. Với người làm sản phẩm: một câu trả lời đúng, một việc trông như đã xong và một nhà cung cấp đáng tin là ba chuyện khác nhau, và mỗi chuyện cần một bước kiểm tra riêng."
+  "en": "Three launches on Nov 17, one lesson. OpenAI shipped GPT-6.2 Astra and Sol with strong numbers on its own benchmarks and a 20% lower Astra price, yet the first hands-on reviews were mostly negative. Microsoft says its new MAI Code 2 does 96% of Claude Opus 5.5's work at 5% of the cost, but every figure is its own and nobody has checked them yet. Google made Gemini Tasks, its agent that calls, shops and pays for you, free for hundreds of millions of people, with a tap to approve before it buys. For product people: a vendor's chart is a hypothesis; the only number that decides a switch is the one from your own tasks.",
+  "vi": "Ba lần ra mắt ngày 17/11, một bài học. OpenAI tung GPT-6.2 Astra và Sol với điểm cao trên bộ đo của chính họ và giá Astra giảm 20%, nhưng những bài đánh giá thực tế đầu tiên phần lớn là chê. Microsoft nói MAI Code 2 mới làm được 96% việc của Claude Opus 5.5 với 5% chi phí, nhưng mọi con số đều do họ tự công bố và chưa ai kiểm chứng. Google cho dùng miễn phí Gemini Tasks, agent gọi điện, mua sắm và thanh toán thay bạn, với hàng trăm triệu người, kèm một bước bấm duyệt trước khi mua. Với người làm sản phẩm: biểu đồ của nhà cung cấp chỉ là giả thuyết; con số quyết định có đổi hay không là con số từ chính các việc của bạn."
  },
  "headlines": [
   {
    "t": {
-    "en": "Apple launches a study app to learn how people use AI for health questions",
-    "vi": "Apple ra mắt ứng dụng nghiên cứu để tìm hiểu cách mọi người dùng AI cho câu hỏi sức khỏe"
-   },
-   "src": "techcrunch.com",
-   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"
-  },
-  {
-   "t": {
-    "en": "OpenAI puts computer-use agents into hospital software, and keeps every order a draft until a clinician signs",
-    "vi": "OpenAI đưa agent điều khiển máy tính vào phần mềm bệnh viện, và giữ mọi y lệnh ở dạng nháp cho tới khi bác sĩ ký"
+    "en": "OpenAI ships GPT-6.2 Astra and Sol: cheaper frontier model, same-price everyday model",
+    "vi": "OpenAI ra mắt GPT-6.2 Astra và Sol: model hàng đầu rẻ hơn, model dùng hằng ngày giữ nguyên giá"
    },
    "src": "openai.com",
-   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/"
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
   },
   {
    "t": {
-    "en": "A tampered A/B testing script turns 186 big sites into card and crypto skimmers",
-    "vi": "Một script A/B testing bị sửa biến 186 trang web lớn thành công cụ đánh cắp thẻ và tiền mã hóa"
+    "en": "Microsoft launches MAI Code 2 and pitches it on price, not on being the best",
+    "vi": "Microsoft ra mắt MAI Code 2 và chào bán bằng giá, không phải bằng việc giỏi nhất"
    },
-   "src": "stepsecurity.io",
-   "url": "https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer"
+   "src": "microsoft.ai",
+   "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/"
+  },
+  {
+   "t": {
+    "en": "Google makes Gemini Tasks free: an agent that calls, shops and pays, with a tap before it buys",
+    "vi": "Google cho dùng miễn phí Gemini Tasks: agent gọi điện, mua sắm và thanh toán, có một bước bấm trước khi mua"
+   },
+   "src": "blog.google",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
   }
  ],
  "question": {
-  "en": "Your AI gives a correct answer, but would the user understand it and do the right thing next? How would you find out without asking them if they \"liked\" it?",
-  "vi": "AI của bạn đưa câu trả lời đúng, nhưng người dùng có hiểu và làm đúng bước tiếp theo không? Làm sao bạn biết được mà không hỏi họ có \"thích\" nó không?"
+  "en": "If a vendor says its model is 96% as good for 5% of the price, what is the one test in your own product that would prove or break that claim?",
+  "vi": "Nếu một nhà cung cấp nói model của họ tốt bằng 96% với 5% giá, bài test nào trong chính sản phẩm của bạn sẽ chứng minh hoặc bác bỏ điều đó?"
  },
  "exercises": [
   {
@@ -49,8 +49,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Write the done-states for one AI action in a feature you are working on",
-    "vi": "Viết các trạng thái hoàn thành cho một hành động AI trong tính năng bạn đang làm"
+    "en": "Write a one-page model-switch rule for a feature you are working on",
+    "vi": "Viết một trang quy tắc đổi model cho một tính năng bạn đang làm"
    }
   },
   {
@@ -61,8 +61,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Write a short post: \"Right answer, wrong understanding\"",
-    "vi": "Viết một bài ngắn: \"Trả lời đúng, hiểu sai\""
+    "en": "Write a short post: \"The chart said yes, the testers said no\"",
+    "vi": "Viết một bài ngắn: \"Biểu đồ nói có, người thử nói không\""
    }
   },
   {
@@ -73,82 +73,82 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a script that lists every outside host a page loads code from",
-    "vi": "Xây một script liệt kê mọi tên miền bên ngoài mà một trang tải code về"
+    "en": "Build a tiny script that compares two models on 10 of your own tasks",
+    "vi": "Xây một script nhỏ so sánh hai model trên 10 việc của chính bạn"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "Apple launches a study app to learn how people use AI for health questions",
-    "vi": "Apple ra mắt ứng dụng nghiên cứu để tìm hiểu cách mọi người dùng AI cho câu hỏi sức khỏe"
+    "en": "OpenAI ships GPT-6.2 Astra and Sol: cheaper frontier model, same-price everyday model",
+    "vi": "OpenAI ra mắt GPT-6.2 Astra và Sol: model hàng đầu rẻ hơn, model dùng hằng ngày giữ nguyên giá"
    },
-   "src": "techcrunch.com",
-   "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/",
-   "date": "2026-11-15",
-   "tag": "Health",
+   "src": "openai.com",
+   "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+   "date": "2026-11-17",
+   "tag": "Model",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "OpenAI puts computer-use agents into hospital software, and keeps every order a draft until a clinician signs",
-    "vi": "OpenAI đưa agent điều khiển máy tính vào phần mềm bệnh viện, và giữ mọi y lệnh ở dạng nháp cho tới khi bác sĩ ký"
+    "en": "Microsoft launches MAI Code 2 and pitches it on price, not on being the best",
+    "vi": "Microsoft ra mắt MAI Code 2 và chào bán bằng giá, không phải bằng việc giỏi nhất"
    },
-   "src": "openai.com",
-   "url": "https://openai.com/index/more-ways-to-move-care-forward-with-chatgpt-for-healthcare/",
-   "date": "2026-11-16",
+   "src": "microsoft.ai",
+   "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/",
+   "date": "2026-11-17",
+   "tag": "Model",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "Google makes Gemini Tasks free: an agent that calls, shops and pays, with a tap before it buys",
+    "vi": "Google cho dùng miễn phí Gemini Tasks: agent gọi điện, mua sắm và thanh toán, có một bước bấm trước khi mua"
+   },
+   "src": "blog.google",
+   "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/",
+   "date": "2026-11-17",
    "tag": "Agents",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "A tampered A/B testing script turns 186 big sites into card and crypto skimmers",
-    "vi": "Một script A/B testing bị sửa biến 186 trang web lớn thành công cụ đánh cắp thẻ và tiền mã hóa"
-   },
-   "src": "stepsecurity.io",
-   "url": "https://www.stepsecurity.io/blog/optimjack-optimizely-hosted-scripts-crypto-clipper-card-skimmer",
-   "date": "2026-11-17",
-   "tag": "Security",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "If you sell AI, you sell compute: a solo founder on fighting token fraud",
-    "vi": "Bán AI là bán sức máy: một nhà sáng lập một mình kể chuyện chống gian lận token"
-   },
-   "src": "lennysnewsletter.com",
-   "url": "https://www.lennysnewsletter.com/p/how-i-fight-token-fraud-as-a-solo",
-   "date": "2026-11-16",
-   "tag": "",
-   "who": "How I AI (Claire Vo) · Lenny's Newsletter",
-   "kind": "people"
-  },
-  {
-   "t": {
-    "en": "The team behind Grok Bot says execution is cheap now; deciding what to build is the bottleneck",
-    "vi": "Đội làm Grok Bot nói làm ra giờ đã rẻ; quyết định xây gì mới là nút thắt"
+    "en": "Every tested GPT-6.2 Astra for two weeks and called it a step back",
+    "vi": "Every thử GPT-6.2 Astra hai tuần và gọi đó là một bước lùi"
    },
    "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=y1-9yeYLJUo",
-   "date": "2026-11-14",
+   "url": "https://www.youtube.com/watch?v=6Sz_8EhZWAc",
+   "date": "2026-11-18",
    "tag": "",
-   "who": "Y Combinator · Lauren Tan and Roman Ugarte",
+   "who": "Every (Dan Shipper)",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Measure the outcome, not just the assumption tests",
-    "vi": "Hãy đo kết quả, không chỉ đo các bài kiểm tra giả định"
+    "en": "The sharing gap: why good product work stays private, and how to start sharing it",
+    "vi": "Khoảng trống chia sẻ: vì sao việc làm sản phẩm tốt cứ nằm im, và cách bắt đầu chia sẻ"
    },
    "src": "producttalk.org",
-   "url": "https://www.producttalk.org/ch-11-measuring-impact/",
-   "date": "2026-11-16",
+   "url": "https://www.producttalk.org/the-sharing-gap-all-things-product-podcast-with-teresa-torres-petra-wille/",
+   "date": "2026-11-17",
    "tag": "",
-   "who": "Product Talk (Teresa Torres)",
+   "who": "Product Talk (Teresa Torres & Petra Wille)",
+   "kind": "people"
+  },
+  {
+   "t": {
+    "en": "Baidu and Google made the same AI search promise; only one still has people searching",
+    "vi": "Baidu và Google cùng hứa một điều với tìm kiếm AI; chỉ một bên còn giữ được người dùng tìm kiếm"
+   },
+   "src": "hellochinatech.com",
+   "url": "https://hellochinatech.com/p/baidu-ai-search-monetization",
+   "date": "2026-11-17",
+   "tag": "",
+   "who": "Hello China Tech",
    "kind": "people"
   }
  ]
