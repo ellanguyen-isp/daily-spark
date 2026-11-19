@@ -1,0 +1,343 @@
+{
+ "date": "2026-11-20",
+ "edition": "017",
+ "minutes": 8,
+ "summary": {
+  "en": "Agents get a name: Anthropic opens at $111.50 after an $83 IPO price and shows $33.24B in nine-month revenue, and Microsoft gives its Copilot agent its own memory, tools and identity.",
+  "vi": "Agent có tên riêng: Anthropic mở phiên ở $111,50 sau giá IPO $83 và công bố doanh thu 9 tháng $33,24 tỉ, còn Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng."
+ },
+ "frontier": {
+  "big": {
+   "en": "A quieter news day with two real stories. Anthropic is now a public company: priced at $83, it opened at $111.50 and closed up about 17% on a day the wider market fell, and its filing shows both fast revenue growth and how much of it goes back into compute. Microsoft gives its Copilot agent its own memory, tools and identity, so the agent becomes an actor, not just a chat box. For product people: the model under your feature now answers to public investors every quarter, and agents are starting to act under their own names. Keep a tested backup model, and decide clearly who your AI acts as.",
+   "vi": "Một ngày ít tin, với hai câu chuyện thật. Anthropic giờ là công ty đại chúng: định giá $83, mở phiên ở $111,50 và đóng cửa tăng khoảng 17% trong ngày thị trường chung đi xuống, và hồ sơ của họ cho thấy cả doanh thu tăng nhanh lẫn phần lớn tiền quay lại chi cho tính toán. Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng, nên agent trở thành một bên hành động, không chỉ là ô chat. Với người làm sản phẩm: model nằm dưới tính năng của bạn giờ phải báo cáo với nhà đầu tư mỗi quý, và agent bắt đầu hành động dưới tên của chính nó. Hãy giữ một model dự phòng đã test, và quyết định rõ AI của bạn hành động với tư cách ai."
+  },
+  "items": [
+   {
+    "date": "2026-11-19",
+    "src": "theneuron.ai",
+    "url": "https://www.theneuron.ai/news/anthropic-ipo-1-5-trillion-valuation/",
+    "tag": "Platform",
+    "t": {
+     "en": "Anthropic goes public: $83 IPO price, $111.50 open, and a filing that shows what AI really costs",
+     "vi": "Anthropic lên sàn: giá IPO $83, mở phiên $111,50, và hồ sơ cho thấy AI thật sự tốn bao nhiêu"
+    },
+    "p": {
+     "en": [
+      "Priced on Nov 18 at $83, above the $70 to $78 range: 980 million shares and about $81.3B raised, called the largest IPO on record",
+      "Market reports say ANT opened at $111.50, 34% above the IPO price, and closed near $97, up about 17%, on a day the S&P 500 fell about 2%",
+      "Its filing shows $33.24B in revenue for the first nine months of 2026, up from $2.55B a year earlier, and an operating loss that shrank to $1.26B from $5.22B",
+      "The other side: $18.81B spent on computing and infrastructure in those nine months, and about $900.9B in purchase and lease commitments"
+     ],
+     "vi": [
+      "Định giá ngày 18/11 ở $83, cao hơn khung $70 đến $78: 980 triệu cổ phiếu và khoảng $81,3 tỉ huy động, được gọi là thương vụ IPO lớn nhất từng có",
+      "Theo các bản tin thị trường, ANT mở phiên ở $111,50, cao hơn giá IPO 34%, và đóng cửa quanh $97, tăng khoảng 17%, trong ngày S&P 500 giảm khoảng 2%",
+      "Hồ sơ cho thấy doanh thu 9 tháng đầu 2026 là $33,24 tỉ, so với $2,55 tỉ một năm trước, và lỗ hoạt động giảm còn $1,26 tỉ từ $5,22 tỉ",
+      "Mặt còn lại: $18,81 tỉ chi cho tính toán và hạ tầng trong 9 tháng đó, và khoảng $900,9 tỉ cam kết mua và thuê"
+     ]
+    },
+    "w": {
+     "en": "The company behind a model you may build on now reports to public investors every quarter. Prices, limits and focus will follow what moves its margins, so keep a second model tested and a price change becomes a choice, not a crisis.",
+     "vi": "Công ty đứng sau model bạn có thể đang dùng giờ phải báo cáo với nhà đầu tư mỗi quý. Giá, giới hạn và trọng tâm sẽ đi theo thứ làm thay đổi biên lợi nhuận, nên hãy giữ một model thứ hai đã test, để việc đổi giá là một lựa chọn, không phải khủng hoảng."
+    },
+    "stat": {
+     "v": "$33.24B",
+     "l": {
+      "en": "revenue in the first nine months of 2026 ($2.55B a year earlier)",
+      "vi": "doanh thu 9 tháng đầu 2026 (một năm trước là $2,55 tỉ)"
+     }
+    }
+   },
+   {
+    "date": "2026-11-17",
+    "src": "theneuron.ai",
+    "url": "https://www.theneuron.ai/news/microsoft-ignite-2026-copilot-autopilot-today-fusion/",
+    "tag": "Agents",
+    "t": {
+     "en": "Microsoft gives its Copilot agent its own memory, tools and identity",
+     "vi": "Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng"
+    },
+    "p": {
+     "en": [
+      "Copilot Autopilot is a persistent personal agent with its own memory, tools and identity, starting to roll out through Microsoft's early-access Frontier program",
+      "The new Today has two parts: a morning Today Brief included with a Microsoft 365 Copilot license, and an intraday Today Feed that costs Copilot credits, so the always-on part is metered",
+      "GitHub says Copilot Fusion Max scored within two points of Claude Code on Opus 5.5 Max on one coding agent index, at about half the API cost per task and about 40% less time, for specific setups only",
+      "Office in Copilot (Word, Excel, PowerPoint) is now generally available, and Copilot Code is due for general availability in December"
+     ],
+     "vi": [
+      "Copilot Autopilot là một agent cá nhân chạy liên tục, có bộ nhớ, công cụ và danh tính riêng, bắt đầu triển khai qua chương trình dùng sớm Frontier của Microsoft",
+      "Today mới có hai phần: bản tóm tắt buổi sáng Today Brief đi kèm giấy phép Microsoft 365 Copilot, và Today Feed cập nhật trong ngày tốn Copilot credits, nên phần luôn bật là phần tính tiền",
+      "GitHub nói Copilot Fusion Max đạt điểm chỉ kém Claude Code chạy Opus 5.5 Max hai điểm trên một bảng xếp hạng agent lập trình, với khoảng một nửa chi phí API mỗi việc và nhanh hơn khoảng 40%, chỉ với một số cấu hình",
+      "Office trong Copilot (Word, Excel, PowerPoint) đã phát hành chính thức, và Copilot Code dự kiến phát hành chính thức vào tháng 12"
+     ]
+    },
+    "w": {
+     "en": "Once an agent has its own identity, \"who did this?\" becomes a product question. Decide early what your AI acts as: the user, itself, or a helper the user approves step by step, and show that on every action.",
+     "vi": "Khi agent có danh tính riêng, câu hỏi \"ai đã làm việc này?\" trở thành câu hỏi sản phẩm. Hãy quyết định sớm AI của bạn hành động với tư cách gì: người dùng, chính nó, hay một trợ lý được người dùng duyệt từng bước, và thể hiện điều đó ở mọi hành động."
+    }
+   }
+  ],
+  "watch": {
+   "en": "Headlines say Citi and Bank of America are restricting outside AI agents from customer accounts, and Wells Fargo wants customers to prove they revoked agents; details not checked yet, so read before you rely on it. Google opened a waitlist for Stitch Loop, an experimental product agent linked to your code and live product metrics.",
+   "vi": "Các tiêu đề báo nói Citi và Bank of America đang hạn chế agent AI bên ngoài truy cập tài khoản khách hàng, và Wells Fargo muốn khách chứng minh đã thu hồi quyền của agent; chi tiết chưa được kiểm tra, nên hãy đọc kỹ trước khi dựa vào. Google mở danh sách chờ cho Stitch Loop, một agent sản phẩm thử nghiệm nối với code và số liệu sản phẩm thật."
+  }
+ },
+ "people": [
+  {
+   "who": "YC Root Access · Auctor founders with Pete Koomen",
+   "kind": {
+    "en": "video · from the episode description",
+    "vi": "Video · dựa trên mô tả tập"
+   },
+   "date": "2026-11-17",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=FmvRhxq2oHE",
+   "t": {
+    "en": "Auctor: a dog photo brought hundreds of demos, and building for demos nearly sank adoption",
+    "vi": "Auctor: một tấm ảnh với chú chó mang về hàng trăm buổi demo, và việc xây cho demo suýt làm hỏng việc dùng thật"
+   },
+   "p": {
+    "en": [
+     "Auctor builds AI that carries enterprise software projects from business requirements to design, setup and go-live on Salesforce, ServiceNow and SAP; it recently raised a Series A from Sequoia",
+     "A photo of the founders with their dog brought in hundreds of demos: attention arrived long before real adoption",
+     "Building for those demos left them with a product customers struggled to adopt",
+     "A rewrite of roughly two months drove usage up 5 to 10 times"
+    ],
+    "vi": [
+     "Auctor xây AI đưa các dự án phần mềm doanh nghiệp từ yêu cầu nghiệp vụ tới thiết kế, cấu hình và vận hành trên Salesforce, ServiceNow và SAP; họ vừa gọi vốn Series A từ Sequoia",
+     "Một tấm ảnh các nhà sáng lập với chú chó mang về hàng trăm buổi demo: sự chú ý đến rất lâu trước khi có người dùng thật",
+     "Xây sản phẩm cho những buổi demo đó khiến họ có một sản phẩm mà khách hàng khó dùng",
+     "Một lần viết lại khoảng hai tháng đã giúp mức sử dụng tăng 5 đến 10 lần"
+    ]
+   },
+   "k": {
+    "en": "A demo tests whether people want to watch; usage tests whether they want to work in it. Build for the second.",
+    "vi": "Demo kiểm tra người ta có muốn xem không; mức sử dụng kiểm tra họ có muốn làm việc trong đó không. Hãy xây cho điều thứ hai."
+   },
+   "stat": {
+    "v": "5 to 10x",
+    "l": {
+     "en": "usage after a two-month rewrite",
+     "vi": "mức sử dụng sau hai tháng viết lại"
+    }
+   }
+  },
+  {
+   "who": "Y Combinator · Jacob Coxon vs. Robin Hanson",
+   "kind": {
+    "en": "debate video · from the description and chapters",
+    "vi": "Video tranh luận · dựa trên mô tả và các chương"
+   },
+   "date": "2026-11-19",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+   "t": {
+    "en": "YC's first debate: slow frontier AI down, or let liability do the work?",
+    "vi": "Cuộc tranh luận đầu tiên của YC: làm chậm AI tiên phong, hay để trách nhiệm pháp lý làm việc đó?"
+   },
+   "p": {
+    "en": [
+     "Jacob Coxon, a former Anthropic and OpenAI researcher, argues governments should slow frontier AI, with a case built on superintelligence by 2028",
+     "His evidence: models already behave in ways we do not understand",
+     "Robin Hanson, an economist at GMU, warns against arguing from abstractions and says new technologies take decades to spread",
+     "His alternative, per the chapters: liability instead of regulation, so harm is handled after the fact rather than by permission first"
+    ],
+    "vi": [
+     "Jacob Coxon, cựu nhà nghiên cứu của Anthropic và OpenAI, cho rằng chính phủ nên làm chậm AI tiên phong, dựa trên lập luận siêu trí tuệ sẽ đến vào 2028",
+     "Bằng chứng của anh: model đã có những hành vi mà chúng ta không hiểu",
+     "Robin Hanson, nhà kinh tế học ở GMU, cảnh báo việc lập luận từ những khái niệm trừu tượng và nói công nghệ mới cần hàng chục năm để lan rộng",
+     "Giải pháp của ông, theo các chương: trách nhiệm pháp lý thay cho quy định, tức xử lý tác hại sau khi xảy ra thay vì xin phép trước"
+    ]
+   },
+   "k": {
+    "en": "Either way, builders end up answering for what their AI does. Keep a record of what it was told and what it did.",
+    "vi": "Dù bên nào thắng, người xây sản phẩm cuối cùng vẫn phải chịu trách nhiệm cho việc AI của mình làm. Hãy lưu lại AI đã được bảo gì và đã làm gì."
+   }
+  },
+  {
+   "who": "Starter Story · founder of Stella",
+   "kind": {
+    "en": "short video · from the description",
+    "vi": "Video ngắn · dựa trên mô tả"
+   },
+   "date": "2026-11-17",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/shorts/Cs0_dFJsikQ",
+   "t": {
+    "en": "A $300K a month app founder: going viral is a skill, not luck",
+    "vi": "Nhà sáng lập app $300 nghìn mỗi tháng: viral là kỹ năng, không phải may mắn"
+   },
+   "p": {
+    "en": [
+     "Her manifesting app Stella makes $300K a month, and she says she could start a new TikTok and reach 50,000 followers in 3 to 4 months",
+     "She tested the claim: a fresh account passed 40,000 followers in a couple of months",
+     "Her method starts with research, not ideas: pick a niche, study its most viral content, and work out the human psychology behind why it works",
+     "Then recreate that format again and again, instead of chasing something new each time"
+    ],
+    "vi": [
+     "App manifesting Stella của cô kiếm $300 nghìn mỗi tháng, và cô nói có thể mở một TikTok mới và đạt 50.000 người theo dõi trong 3 đến 4 tháng",
+     "Cô đã thử: một tài khoản mới vượt 40.000 người theo dõi trong vài tháng",
+     "Phương pháp của cô bắt đầu từ nghiên cứu, không phải ý tưởng: chọn một ngách, xem kỹ nội dung viral nhất trong ngách, và tìm ra tâm lý con người khiến nó hiệu quả",
+     "Rồi làm lại định dạng đó nhiều lần, thay vì mỗi lần lại đi tìm thứ mới"
+    ]
+   },
+   "k": {
+    "en": "Treat distribution like product work: find what already works in your niche, learn why, and repeat the format.",
+    "vi": "Hãy xem phân phối như làm sản phẩm: tìm thứ đã hiệu quả trong ngách của bạn, hiểu vì sao, rồi lặp lại định dạng đó."
+   },
+   "stat": {
+    "v": "$300K/mo",
+    "l": {
+     "en": "revenue of the app behind the method",
+     "vi": "doanh thu của app đứng sau phương pháp này"
+    }
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "The thing I probably repeat most is this recipe for a startup: get a version 1 out fast, then improve it based on users' reactions.",
+   "vi": "Điều có lẽ tôi lặp lại nhiều nhất là công thức này cho startup: đưa phiên bản 1 ra thật nhanh, rồi cải thiện nó dựa trên phản ứng của người dùng."
+  },
+  "src": "The Hardest Lessons for Startups to Learn · Paul Graham",
+  "date": "2006 · essay",
+  "url": "https://paulgraham.com/startuplessons.html",
+  "e": {
+   "en": "Paul Graham's point is that the lessons founders resist most are the simple ones, and the first is to release early and let real users steer. A demo, a pitch or a launch wave shows what people say they want; a working version in their hands shows what they do. Today's stories repeat it: Auctor got hundreds of demos but needed a rewrite before customers really used the product, and Microsoft ships its new agent to an early-access group first. The reaction you learn from has to come from use, not from applause.",
+   "vi": "Ý của Paul Graham là những bài học nhà sáng lập hay cưỡng lại nhất lại là những bài đơn giản, và bài đầu tiên là ra mắt sớm để người dùng thật dẫn đường. Một buổi demo, một bài pitch hay một đợt ra mắt cho thấy điều người ta nói họ muốn; một phiên bản chạy được trong tay họ cho thấy điều họ làm. Các tin hôm nay lặp lại điều đó: Auctor có hàng trăm buổi demo nhưng phải viết lại trước khi khách hàng thật sự dùng sản phẩm, và Microsoft đưa agent mới cho một nhóm dùng sớm trước. Phản ứng bạn học được phải đến từ việc dùng, không phải từ tiếng vỗ tay."
+  },
+  "a": {
+   "en": [
+    "Ship the smallest version of a feature you are working on to 5 real users this week, before it looks finished",
+    "Judge it by one usage signal (came back, finished the task), not by how the demo went",
+    "After each round, change one thing based on what users did, and write down what you expected versus what happened"
+   ],
+   "vi": [
+    "Đưa phiên bản nhỏ nhất của một tính năng bạn đang làm cho 5 người dùng thật trong tuần này, trước khi nó trông hoàn chỉnh",
+    "Đánh giá nó bằng một tín hiệu sử dụng (quay lại, làm xong việc), không phải bằng việc buổi demo diễn ra thế nào",
+    "Sau mỗi vòng, đổi một điều dựa trên điều người dùng đã làm, và ghi lại điều bạn đã đoán so với điều thực sự xảy ra"
+   ]
+  },
+  "x": {
+   "en": "For an AI feature you are working on, pick the eval case you use in every demo. Hand the feature to two people with their own real task and no script. Every place they get stuck that the demo case never shows is your next fix and your next eval case.",
+   "vi": "Với một tính năng AI bạn đang làm, chọn ca eval bạn dùng trong mọi buổi demo. Đưa tính năng cho hai người với việc thật của họ và không có kịch bản. Mọi chỗ họ bị kẹt mà ca demo không bao giờ cho thấy chính là việc cần sửa tiếp theo và ca eval tiếp theo của bạn."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "If the price of the model your product depends on rose 30% next quarter, what would you change first, and how long would switching take?",
+    "vi": "Nếu giá của model mà sản phẩm bạn phụ thuộc tăng 30% vào quý sau, bạn sẽ đổi điều gì trước tiên, và việc chuyển đổi mất bao lâu?"
+   },
+   "c": {
+    "en": "Anthropic's IPO filing",
+    "vi": "Hồ sơ IPO của Anthropic"
+   }
+  },
+  {
+   "q": {
+    "en": "When your AI takes an action, whose name is on it: the user's, the AI's, or nobody's? Would a user be able to tell?",
+    "vi": "Khi AI của bạn thực hiện một hành động, tên của ai gắn trên đó: người dùng, AI, hay không ai cả? Người dùng có nhận ra được không?"
+   },
+   "c": {
+    "en": "Microsoft's Copilot Autopilot",
+    "vi": "Copilot Autopilot của Microsoft"
+   }
+  },
+  {
+   "q": {
+    "en": "Which part of what you are building now was shaped by a demo or a pitch rather than by someone using it for real?",
+    "vi": "Phần nào trong thứ bạn đang xây được định hình bởi một buổi demo hay bài pitch, thay vì bởi ai đó dùng nó thật?"
+   },
+   "c": {
+    "en": "Auctor on YC Root Access",
+    "vi": "Auctor trên YC Root Access"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Map who your AI acts as, action by action",
+    "vi": "Vẽ bản đồ AI của bạn hành động với tư cách ai, từng hành động một"
+   },
+   "s": {
+    "en": [
+     "List every action an AI feature you are working on can take: read, write, send, buy, change settings",
+     "Mark each one: acts as the user, acts as itself, or asks the user first",
+     "For each action, write the one line the user sees afterwards that says who did it and how to undo it"
+    ],
+    "vi": [
+     "Liệt kê mọi hành động mà một tính năng AI bạn đang làm có thể thực hiện: đọc, ghi, gửi, mua, đổi cài đặt",
+     "Đánh dấu mỗi hành động: thay mặt người dùng, tự nó làm, hay hỏi người dùng trước",
+     "Với mỗi hành động, viết một dòng người dùng thấy sau đó cho biết ai đã làm và cách hoàn tác"
+    ]
+   },
+   "o": {
+    "en": "A one-page action map you can hand to design and engineering.",
+    "vi": "Một trang bản đồ hành động có thể đưa cho đội thiết kế và kỹ thuật."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Write a short post: built for the demo, or built for the user?",
+    "vi": "Viết một bài ngắn: xây cho demo, hay xây cho người dùng?"
+   },
+   "s": {
+    "en": [
+     "Open with one line: a viral demo is not the same as a product people use",
+     "Tell Auctor's story in 3 facts: hundreds of demos, a product customers struggled to adopt, a two-month rewrite with 5 to 10x usage",
+     "Close with one moment from your own work when a demo hid a real problem, and the lesson you took"
+    ],
+    "vi": [
+     "Mở bài bằng một câu: một demo viral không giống một sản phẩm người ta dùng",
+     "Kể câu chuyện Auctor bằng 3 dữ kiện: hàng trăm buổi demo, một sản phẩm khách hàng khó dùng, hai tháng viết lại và mức sử dụng tăng 5 đến 10 lần",
+     "Kết bằng một khoảnh khắc trong công việc của bạn khi demo che giấu một vấn đề thật, và bài học bạn rút ra"
+    ]
+   },
+   "o": {
+    "en": "A post of about 150 words, ready to share.",
+    "vi": "Một bài khoảng 150 chữ, sẵn sàng chia sẻ."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Build a one-line model switch and test a backup",
+    "vi": "Xây công tắc đổi model một dòng và thử model dự phòng"
+   },
+   "s": {
+    "en": [
+     "In a small project, put every model call behind one function that reads the provider and model name from a setting",
+     "Run the same 5 real test cases through your main model and one backup",
+     "Log pass or fail, cost and time for each case in a small table"
+    ],
+    "vi": [
+     "Trong một dự án nhỏ, đặt mọi lệnh gọi model sau một hàm duy nhất đọc tên nhà cung cấp và model từ một cài đặt",
+     "Chạy cùng 5 ca test thật qua model chính và một model dự phòng",
+     "Ghi đạt hay không, chi phí và thời gian của từng ca vào một bảng nhỏ"
+    ]
+   },
+   "o": {
+    "en": "A working switch and a 5-row comparison, so a price change is a setting, not a rewrite.",
+    "vi": "Một công tắc chạy được và bảng so sánh 5 dòng, để việc đổi giá chỉ là đổi cài đặt, không phải viết lại."
+   }
+  }
+ ]
+}

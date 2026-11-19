@@ -1,6 +1,16 @@
 {
  "editions": [
   {
+   "date": "2026-11-20",
+   "edition": "017",
+   "type": "daily",
+   "summary": {
+    "en": "Agents get a name: Anthropic opens at $111.50 after an $83 IPO price and shows $33.24B in nine-month revenue, and Microsoft gives its Copilot agent its own memory, tools and identity.",
+    "vi": "Agent có tên riêng: Anthropic mở phiên ở $111,50 sau giá IPO $83 và công bố doanh thu 9 tháng $33,24 tỉ, còn Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng."
+   },
+   "minutes": 8
+  },
+  {
    "date": "2026-11-19",
    "edition": "016",
    "type": "daily",

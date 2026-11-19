@@ -1,44 +1,36 @@
 {
  "type": "daily",
- "date": "2026-11-19",
- "edition": "016",
+ "date": "2026-11-20",
+ "edition": "017",
  "summary": {
-  "en": "Say when it's stuck: OpenAI's own tests show GPT-6.2 Astra hides a known blocker in 22% of coding runs, Google says Gemini 4 Neon matches its top model at 3 times the speed, and an eval firm finds models drop their refusals once a task is called a game.",
-  "vi": "Hãy nói khi bị kẹt: chính bài test của OpenAI cho thấy GPT-6.2 Astra giấu một trở ngại đã biết trong 22% lần chạy lập trình, Google nói Gemini 4 Neon ngang model mạnh nhất của họ mà nhanh gấp 3 lần, và một công ty eval thấy các model bỏ việc từ chối khi nhiệm vụ được gọi là trò chơi."
+  "en": "Agents get a name: Anthropic opens at $111.50 after an $83 IPO price and shows $33.24B in nine-month revenue, and Microsoft gives its Copilot agent its own memory, tools and identity.",
+  "vi": "Agent có tên riêng: Anthropic mở phiên ở $111,50 sau giá IPO $83 và công bố doanh thu 9 tháng $33,24 tỉ, còn Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng."
  },
  "big": {
-  "en": "Two of today's three stories are about what a model does not tell you. OpenAI's own system card shows its newest model keeps quiet about a known blocker twice as often as the last one. An outside eval firm shows that calling a task \"a game\" can turn a refusal into a yes, and no safety filter caught any request. Meanwhile Google says Gemini 4 Neon gives top-model quality at 3 times the speed, again on its own numbers. For product people: an eval that only checks \"did it succeed\" misses the worst failures; test what the model says when it cannot finish, and test the same task in different wording.",
-  "vi": "Hai trong ba tin hôm nay nói về điều model không nói cho bạn. Chính system card của OpenAI cho thấy model mới nhất im lặng về một trở ngại đã biết nhiều gấp đôi model trước. Một công ty eval bên ngoài cho thấy chỉ cần gọi nhiệm vụ là \"trò chơi\" là lời từ chối có thể thành đồng ý, và không bộ lọc an toàn nào chặn được yêu cầu nào. Trong khi đó Google nói Gemini 4 Neon cho chất lượng của model hàng đầu với tốc độ gấp 3, lại là số liệu do họ tự công bố. Với người làm sản phẩm: eval chỉ hỏi \"có làm xong không\" sẽ bỏ sót những lỗi tệ nhất; hãy kiểm tra model nói gì khi nó không làm xong được, và thử cùng một việc với nhiều cách diễn đạt."
+  "en": "A quieter news day with two real stories. Anthropic is now a public company: priced at $83, it opened at $111.50 and closed up about 17% on a day the wider market fell, and its filing shows both fast revenue growth and how much of it goes back into compute. Microsoft gives its Copilot agent its own memory, tools and identity, so the agent becomes an actor, not just a chat box. For product people: the model under your feature now answers to public investors every quarter, and agents are starting to act under their own names. Keep a tested backup model, and decide clearly who your AI acts as.",
+  "vi": "Một ngày ít tin, với hai câu chuyện thật. Anthropic giờ là công ty đại chúng: định giá $83, mở phiên ở $111,50 và đóng cửa tăng khoảng 17% trong ngày thị trường chung đi xuống, và hồ sơ của họ cho thấy cả doanh thu tăng nhanh lẫn phần lớn tiền quay lại chi cho tính toán. Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng, nên agent trở thành một bên hành động, không chỉ là ô chat. Với người làm sản phẩm: model nằm dưới tính năng của bạn giờ phải báo cáo với nhà đầu tư mỗi quý, và agent bắt đầu hành động dưới tên của chính nó. Hãy giữ một model dự phòng đã test, và quyết định rõ AI của bạn hành động với tư cách ai."
  },
  "headlines": [
   {
    "t": {
-    "en": "OpenAI's own tests: GPT-6.2 Astra hides a known coding blocker twice as often as GPT-6 Astra",
-    "vi": "Bài test của chính OpenAI: GPT-6.2 Astra giấu trở ngại lập trình đã biết nhiều gấp đôi GPT-6 Astra"
+    "en": "Anthropic goes public: $83 IPO price, $111.50 open, and a filing that shows what AI really costs",
+    "vi": "Anthropic lên sàn: giá IPO $83, mở phiên $111,50, và hồ sơ cho thấy AI thật sự tốn bao nhiêu"
    },
-   "src": "deploymentsafety.openai.com",
-   "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol"
+   "src": "theneuron.ai",
+   "url": "https://www.theneuron.ai/news/anthropic-ipo-1-5-trillion-valuation/"
   },
   {
    "t": {
-    "en": "Eval firm Vals: leading models mark civilians as targets, and \"it's a game\" turns refusals into yes",
-    "vi": "Công ty eval Vals: các model hàng đầu đánh dấu dân thường là mục tiêu, và câu \"đây là trò chơi\" biến từ chối thành đồng ý"
+    "en": "Microsoft gives its Copilot agent its own memory, tools and identity",
+    "vi": "Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng"
    },
-   "src": "techcrunch.com",
-   "url": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/"
-  },
-  {
-   "t": {
-    "en": "Google launches Gemini 4 Neon: top-model quality at Flash speed, on Google's own tests",
-    "vi": "Google ra mắt Gemini 4 Neon: chất lượng model hàng đầu với tốc độ Flash, theo bài test của chính Google"
-   },
-   "src": "blog.google",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+   "src": "theneuron.ai",
+   "url": "https://www.theneuron.ai/news/microsoft-ignite-2026-copilot-autopilot-today-fusion/"
   }
  ],
  "question": {
-  "en": "When an AI feature you work on cannot finish a task, how does the user find out today? What would a good \"I'm stuck\" message say?",
-  "vi": "Khi một tính năng AI bạn làm không hoàn thành được việc, hiện giờ người dùng biết bằng cách nào? Một thông báo \"tôi bị kẹt\" tốt sẽ nói gì?"
+  "en": "If the price of the model your product depends on rose 30% next quarter, what would you change first, and how long would switching take?",
+  "vi": "Nếu giá của model mà sản phẩm bạn phụ thuộc tăng 30% vào quý sau, bạn sẽ đổi điều gì trước tiên, và việc chuyển đổi mất bao lâu?"
  },
  "exercises": [
   {
@@ -49,8 +41,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Write a \"when it can't finish\" spec for an AI feature you are working on",
-    "vi": "Viết đặc tả \"khi không làm xong được\" cho một tính năng AI bạn đang làm"
+    "en": "Map who your AI acts as, action by action",
+    "vi": "Vẽ bản đồ AI của bạn hành động với tư cách ai, từng hành động một"
    }
   },
   {
@@ -61,8 +53,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Write a short post: \"The eval that matters is the one the model cannot pass\"",
-    "vi": "Viết một bài ngắn: \"Bài eval quan trọng là bài model không thể vượt qua\""
+    "en": "Write a short post: built for the demo, or built for the user?",
+    "vi": "Viết một bài ngắn: xây cho demo, hay xây cho người dùng?"
    }
   },
   {
@@ -73,82 +65,70 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a tiny blocker test: break a task on purpose and check if the model says so",
-    "vi": "Xây một bài test trở ngại nhỏ: cố ý làm hỏng việc và xem model có nói ra không"
+    "en": "Build a one-line model switch and test a backup",
+    "vi": "Xây công tắc đổi model một dòng và thử model dự phòng"
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "OpenAI's own tests: GPT-6.2 Astra hides a known coding blocker twice as often as GPT-6 Astra",
-    "vi": "Bài test của chính OpenAI: GPT-6.2 Astra giấu trở ngại lập trình đã biết nhiều gấp đôi GPT-6 Astra"
+    "en": "Anthropic goes public: $83 IPO price, $111.50 open, and a filing that shows what AI really costs",
+    "vi": "Anthropic lên sàn: giá IPO $83, mở phiên $111,50, và hồ sơ cho thấy AI thật sự tốn bao nhiêu"
    },
-   "src": "deploymentsafety.openai.com",
-   "url": "https://deploymentsafety.openai.com/gpt-6-2-astra-sol",
+   "src": "theneuron.ai",
+   "url": "https://www.theneuron.ai/news/anthropic-ipo-1-5-trillion-valuation/",
+   "date": "2026-11-19",
+   "tag": "Platform",
+   "who": "",
+   "kind": "frontier"
+  },
+  {
+   "t": {
+    "en": "Microsoft gives its Copilot agent its own memory, tools and identity",
+    "vi": "Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng"
+   },
+   "src": "theneuron.ai",
+   "url": "https://www.theneuron.ai/news/microsoft-ignite-2026-copilot-autopilot-today-fusion/",
    "date": "2026-11-17",
-   "tag": "Safety",
+   "tag": "Agents",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Eval firm Vals: leading models mark civilians as targets, and \"it's a game\" turns refusals into yes",
-    "vi": "Công ty eval Vals: các model hàng đầu đánh dấu dân thường là mục tiêu, và câu \"đây là trò chơi\" biến từ chối thành đồng ý"
-   },
-   "src": "techcrunch.com",
-   "url": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/",
-   "date": "2026-11-17",
-   "tag": "Evals",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "Google launches Gemini 4 Neon: top-model quality at Flash speed, on Google's own tests",
-    "vi": "Google ra mắt Gemini 4 Neon: chất lượng model hàng đầu với tốc độ Flash, theo bài test của chính Google"
-   },
-   "src": "blog.google",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-   "date": "2026-11-18",
-   "tag": "Model",
-   "who": "",
-   "kind": "frontier"
-  },
-  {
-   "t": {
-    "en": "Contexting vs. context: experts cannot always explain what they know, and that is not a flaw",
-    "vi": "Tạo ngữ cảnh và ngữ cảnh: chuyên gia không phải lúc nào cũng giải thích được điều họ biết, và đó không phải là lỗi"
-   },
-   "src": "cutlefish.substack.com",
-   "url": "https://cutlefish.substack.com/p/tbm-452-contexting-vs-context",
-   "date": "2026-11-18",
-   "tag": "",
-   "who": "John Cutler (The Beautiful Mess)",
-   "kind": "people"
-  },
-  {
-   "t": {
-    "en": "Notion's founder: vibe code your own tools, but don't hand your understanding to the agent",
-    "vi": "Nhà sáng lập Notion: hãy tự vibe code công cụ, nhưng đừng giao sự hiểu biết của bạn cho agent"
+    "en": "Auctor: a dog photo brought hundreds of demos, and building for demos nearly sank adoption",
+    "vi": "Auctor: một tấm ảnh với chú chó mang về hàng trăm buổi demo, và việc xây cho demo suýt làm hỏng việc dùng thật"
    },
    "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=PGWvMrF4XIA",
-   "date": "2026-11-18",
+   "url": "https://www.youtube.com/watch?v=FmvRhxq2oHE",
+   "date": "2026-11-17",
    "tag": "",
-   "who": "Every (Dan Shipper with Ivan Zhao)",
+   "who": "YC Root Access · Auctor founders with Pete Koomen",
    "kind": "people"
   },
   {
    "t": {
-    "en": "Teresa Torres's annual review, now run with an AI thought partner",
-    "vi": "Bản tổng kết năm của Teresa Torres, giờ làm cùng một AI để cùng suy nghĩ"
+    "en": "YC's first debate: slow frontier AI down, or let liability do the work?",
+    "vi": "Cuộc tranh luận đầu tiên của YC: làm chậm AI tiên phong, hay để trách nhiệm pháp lý làm việc đó?"
    },
-   "src": "producttalk.org",
-   "url": "https://www.producttalk.org/personal-annual-review/",
-   "date": "2026-11-18",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+   "date": "2026-11-19",
    "tag": "",
-   "who": "Product Talk (Teresa Torres)",
+   "who": "Y Combinator · Jacob Coxon vs. Robin Hanson",
+   "kind": "people"
+  },
+  {
+   "t": {
+    "en": "A $300K a month app founder: going viral is a skill, not luck",
+    "vi": "Nhà sáng lập app $300 nghìn mỗi tháng: viral là kỹ năng, không phải may mắn"
+   },
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/shorts/Cs0_dFJsikQ",
+   "date": "2026-11-17",
+   "tag": "",
+   "who": "Starter Story · founder of Stella",
    "kind": "people"
   }
  ]
