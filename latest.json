@@ -1,36 +1,36 @@
 {
  "type": "daily",
- "date": "2026-11-20",
- "edition": "017",
+ "date": "2026-11-21",
+ "edition": "018",
  "summary": {
-  "en": "Agents get a name: Anthropic opens at $111.50 after an $83 IPO price and shows $33.24B in nine-month revenue, and Microsoft gives its Copilot agent its own memory, tools and identity.",
-  "vi": "Agent có tên riêng: Anthropic mở phiên ở $111,50 sau giá IPO $83 và công bố doanh thu 9 tháng $33,24 tỉ, còn Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng."
+  "en": "Proof you can check: an Anthropic mathematician says Claude helped him prove the Riemann hypothesis and ships it only as Lean code, an all-human rival proof appears hours later, and a 26.4B open model runs a test task for $0.59 instead of $3.53.",
+  "vi": "Bằng chứng kiểm được: một nhà toán học của Anthropic nói Claude đã giúp anh chứng minh giả thuyết Riemann và chỉ công bố bằng code Lean, một chứng minh đối thủ hoàn toàn do người làm xuất hiện vài giờ sau, và một model mở 26,4B chạy một bài test với giá $0,59 thay vì $3,53."
  },
  "big": {
-  "en": "A quieter news day with two real stories. Anthropic is now a public company: priced at $83, it opened at $111.50 and closed up about 17% on a day the wider market fell, and its filing shows both fast revenue growth and how much of it goes back into compute. Microsoft gives its Copilot agent its own memory, tools and identity, so the agent becomes an actor, not just a chat box. For product people: the model under your feature now answers to public investors every quarter, and agents are starting to act under their own names. Keep a tested backup model, and decide clearly who your AI acts as.",
-  "vi": "Một ngày ít tin, với hai câu chuyện thật. Anthropic giờ là công ty đại chúng: định giá $83, mở phiên ở $111,50 và đóng cửa tăng khoảng 17% trong ngày thị trường chung đi xuống, và hồ sơ của họ cho thấy cả doanh thu tăng nhanh lẫn phần lớn tiền quay lại chi cho tính toán. Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng, nên agent trở thành một bên hành động, không chỉ là ô chat. Với người làm sản phẩm: model nằm dưới tính năng của bạn giờ phải báo cáo với nhà đầu tư mỗi quý, và agent bắt đầu hành động dưới tên của chính nó. Hãy giữ một model dự phòng đã test, và quyết định rõ AI của bạn hành động với tư cách ai."
+  "en": "Two real stories today, and one of them is huge if it holds. Levent Alpöge, a mathematician at Anthropic, says he and Claude proved the Riemann hypothesis and its generalized form, and he released the proof only as machine-checkable Lean code, not as a paper people can read. Hours later, the AMS president posted a rival all-human proof of the generalized version that is still under private review. The lesson for product people: when the work is too big to read, trust moves from \"who made it\" to \"what can check it\". Separately, Thinking Machines shipped a small open model that ties a bigger rival on a public index at about a sixth of the cost per task.",
+  "vi": "Hôm nay có hai câu chuyện thật, và một trong số đó rất lớn nếu nó đứng vững. Levent Alpöge, nhà toán học ở Anthropic, nói anh và Claude đã chứng minh giả thuyết Riemann và dạng tổng quát của nó, và anh chỉ công bố chứng minh dưới dạng code Lean mà máy kiểm được, không phải một bài báo người đọc được. Vài giờ sau, chủ tịch AMS đăng một chứng minh đối thủ cho dạng tổng quát, hoàn toàn do người làm và vẫn đang được xem xét riêng. Bài học cho người làm sản phẩm: khi sản phẩm quá lớn để đọc hết, niềm tin chuyển từ \"ai làm ra\" sang \"cái gì kiểm được nó\". Ngoài ra, Thinking Machines ra một model mở nhỏ, ngang một đối thủ lớn hơn trên một bảng chỉ số công khai, với chi phí mỗi việc chỉ khoảng một phần sáu."
  },
  "headlines": [
   {
    "t": {
-    "en": "Anthropic goes public: $83 IPO price, $111.50 open, and a filing that shows what AI really costs",
-    "vi": "Anthropic lên sàn: giá IPO $83, mở phiên $111,50, và hồ sơ cho thấy AI thật sự tốn bao nhiêu"
+    "en": "Two Riemann proofs in one day: one made with Claude and checked by machine, one all human and checked by a colleague",
+    "vi": "Hai chứng minh Riemann trong một ngày: một làm cùng Claude và do máy kiểm, một hoàn toàn do người và do đồng nghiệp kiểm"
    },
-   "src": "theneuron.ai",
-   "url": "https://www.theneuron.ai/news/anthropic-ipo-1-5-trillion-valuation/"
+   "src": "officechai.com",
+   "url": "https://officechai.com/ai/hours-after-alpoges-ai-assisted-riemann-hypothesis-proof-ams-president-ravi-vakil-rushes-out-a-rival-all-human-proof-by-alessandro-masullo/"
   },
   {
    "t": {
-    "en": "Microsoft gives its Copilot agent its own memory, tools and identity",
-    "vi": "Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng"
+    "en": "Thinking Machines' Inkling 2 Mini: an open model that thinks in loops and fits on a laptop",
+    "vi": "Inkling 2 Mini của Thinking Machines: model mở suy nghĩ theo vòng lặp và chạy được trên laptop"
    },
-   "src": "theneuron.ai",
-   "url": "https://www.theneuron.ai/news/microsoft-ignite-2026-copilot-autopilot-today-fusion/"
+   "src": "testingcatalog.com",
+   "url": "https://www.testingcatalog.com/thinking-machines-releases-inkling-2-mini-looped-open-model/"
   }
  ],
  "question": {
-  "en": "If the price of the model your product depends on rose 30% next quarter, what would you change first, and how long would switching take?",
-  "vi": "Nếu giá của model mà sản phẩm bạn phụ thuộc tăng 30% vào quý sau, bạn sẽ đổi điều gì trước tiên, và việc chuyển đổi mất bao lâu?"
+  "en": "In your work, where do you already trust a result you have not read in full? What checks it, and what does that check not cover?",
+  "vi": "Trong công việc, bạn đang tin một kết quả nào mà mình chưa đọc hết? Cái gì kiểm nó, và phần nào bộ kiểm đó chưa bao phủ?"
  },
  "exercises": [
   {
@@ -41,8 +41,8 @@
    },
    "time": "30 min",
    "g": {
-    "en": "Map who your AI acts as, action by action",
-    "vi": "Vẽ bản đồ AI của bạn hành động với tư cách ai, từng hành động một"
+    "en": "Turn one AI feature you work on into something a checker can judge.",
+    "vi": "Biến một tính năng AI bạn đang làm thành thứ một bộ kiểm có thể chấm."
    }
   },
   {
@@ -53,8 +53,8 @@
    },
    "time": "20 min",
    "g": {
-    "en": "Write a short post: built for the demo, or built for the user?",
-    "vi": "Viết một bài ngắn: xây cho demo, hay xây cho người dùng?"
+    "en": "Draft a short post: \"When the work is too big to read, trust the checker.\"",
+    "vi": "Viết nháp một bài ngắn: \"Khi sản phẩm quá lớn để đọc, hãy tin bộ kiểm.\""
    }
   },
   {
@@ -65,70 +65,70 @@
    },
    "time": "45 min",
    "g": {
-    "en": "Build a one-line model switch and test a backup",
-    "vi": "Xây công tắc đổi model một dòng và thử model dự phòng"
+    "en": "Run a small open model on your laptop and compare it with your usual model on your own tasks.",
+    "vi": "Chạy một model mở nhỏ trên laptop và so với model bạn hay dùng trên chính việc của bạn."
    }
   }
  ],
  "stamps": [
   {
    "t": {
-    "en": "Anthropic goes public: $83 IPO price, $111.50 open, and a filing that shows what AI really costs",
-    "vi": "Anthropic lên sàn: giá IPO $83, mở phiên $111,50, và hồ sơ cho thấy AI thật sự tốn bao nhiêu"
+    "en": "Two Riemann proofs in one day: one made with Claude and checked by machine, one all human and checked by a colleague",
+    "vi": "Hai chứng minh Riemann trong một ngày: một làm cùng Claude và do máy kiểm, một hoàn toàn do người và do đồng nghiệp kiểm"
    },
-   "src": "theneuron.ai",
-   "url": "https://www.theneuron.ai/news/anthropic-ipo-1-5-trillion-valuation/",
-   "date": "2026-11-19",
-   "tag": "Platform",
+   "src": "officechai.com",
+   "url": "https://officechai.com/ai/hours-after-alpoges-ai-assisted-riemann-hypothesis-proof-ams-president-ravi-vakil-rushes-out-a-rival-all-human-proof-by-alessandro-masullo/",
+   "date": "2026-11-20",
+   "tag": "Research",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Microsoft gives its Copilot agent its own memory, tools and identity",
-    "vi": "Microsoft cho agent Copilot bộ nhớ, công cụ và danh tính riêng"
+    "en": "Thinking Machines' Inkling 2 Mini: an open model that thinks in loops and fits on a laptop",
+    "vi": "Inkling 2 Mini của Thinking Machines: model mở suy nghĩ theo vòng lặp và chạy được trên laptop"
    },
-   "src": "theneuron.ai",
-   "url": "https://www.theneuron.ai/news/microsoft-ignite-2026-copilot-autopilot-today-fusion/",
-   "date": "2026-11-17",
-   "tag": "Agents",
+   "src": "testingcatalog.com",
+   "url": "https://www.testingcatalog.com/thinking-machines-releases-inkling-2-mini-looped-open-model/",
+   "date": "2026-11-20",
+   "tag": "Model",
    "who": "",
    "kind": "frontier"
   },
   {
    "t": {
-    "en": "Auctor: a dog photo brought hundreds of demos, and building for demos nearly sank adoption",
-    "vi": "Auctor: một tấm ảnh với chú chó mang về hàng trăm buổi demo, và việc xây cho demo suýt làm hỏng việc dùng thật"
+    "en": "Ramp paused hiring for a quarter, and non-engineers opened 7,000 pull requests",
+    "vi": "Ramp tạm dừng tuyển một quý, và người không phải kỹ sư mở 7.000 pull request"
    },
    "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=FmvRhxq2oHE",
-   "date": "2026-11-17",
+   "url": "https://www.youtube.com/watch?v=0Hvs6-XODgU",
+   "date": "2026-11-18",
    "tag": "",
-   "who": "YC Root Access · Auctor founders with Pete Koomen",
+   "who": "Y Combinator · How to Build the Future with Ramp's Eric Glyman",
    "kind": "people"
   },
   {
    "t": {
-    "en": "YC's first debate: slow frontier AI down, or let liability do the work?",
-    "vi": "Cuộc tranh luận đầu tiên của YC: làm chậm AI tiên phong, hay để trách nhiệm pháp lý làm việc đó?"
+    "en": "When your hard tests stop being hard: Every says GPT-6.2 \"saturated\" its evals",
+    "vi": "Khi bài test khó không còn khó: Every nói GPT-6.2 đã \"bão hòa\" bộ đánh giá của họ"
    },
-   "src": "youtube.com",
-   "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
-   "date": "2026-11-19",
+   "src": "every.to",
+   "url": "https://every.to/vibe-check/vibe-check-gpt-6-2-astra-and-sol-leave-us-wanting-more",
+   "date": "2026-11-17",
    "tag": "",
-   "who": "Y Combinator · Jacob Coxon vs. Robin Hanson",
+   "who": "Every · Katie Parrott with Mike Taylor",
    "kind": "people"
   },
   {
    "t": {
-    "en": "A $300K a month app founder: going viral is a skill, not luck",
-    "vi": "Nhà sáng lập app $300 nghìn mỗi tháng: viral là kỹ năng, không phải may mắn"
+    "en": "How a team lets anyone ship to production: plan, AI review, then a 1% rollout",
+    "vi": "Cách một đội cho bất kỳ ai đưa code lên production: lên kế hoạch, AI review, rồi phát hành cho 1%"
    },
    "src": "youtube.com",
-   "url": "https://www.youtube.com/shorts/Cs0_dFJsikQ",
-   "date": "2026-11-17",
+   "url": "https://www.youtube.com/watch?v=-xQPRlk7VRE",
+   "date": "2026-11-21",
    "tag": "",
-   "who": "Starter Story · founder of Stella",
+   "who": "Aakash Gupta · with TinyFish CPO Shuhao Zhang",
    "kind": "people"
   }
  ]

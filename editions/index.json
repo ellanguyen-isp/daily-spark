@@ -1,6 +1,16 @@
 {
  "editions": [
   {
+   "date": "2026-11-21",
+   "edition": "018",
+   "type": "daily",
+   "summary": {
+    "en": "Proof you can check: an Anthropic mathematician says Claude helped him prove the Riemann hypothesis and ships it only as Lean code, an all-human rival proof appears hours later, and a 26.4B open model runs a test task for $0.59 instead of $3.53.",
+    "vi": "Bằng chứng kiểm được: một nhà toán học của Anthropic nói Claude đã giúp anh chứng minh giả thuyết Riemann và chỉ công bố bằng code Lean, một chứng minh đối thủ hoàn toàn do người làm xuất hiện vài giờ sau, và một model mở 26,4B chạy một bài test với giá $0,59 thay vì $3,53."
+   },
+   "minutes": 9
+  },
+  {
    "date": "2026-11-20",
    "edition": "017",
    "type": "daily",

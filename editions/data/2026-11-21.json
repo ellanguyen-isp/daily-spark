@@ -1,0 +1,350 @@
+{
+ "date": "2026-11-21",
+ "edition": "018",
+ "minutes": 9,
+ "summary": {
+  "en": "Proof you can check: an Anthropic mathematician says Claude helped him prove the Riemann hypothesis and ships it only as Lean code, an all-human rival proof appears hours later, and a 26.4B open model runs a test task for $0.59 instead of $3.53.",
+  "vi": "Bằng chứng kiểm được: một nhà toán học của Anthropic nói Claude đã giúp anh chứng minh giả thuyết Riemann và chỉ công bố bằng code Lean, một chứng minh đối thủ hoàn toàn do người làm xuất hiện vài giờ sau, và một model mở 26,4B chạy một bài test với giá $0,59 thay vì $3,53."
+ },
+ "frontier": {
+  "big": {
+   "en": "Two real stories today, and one of them is huge if it holds. Levent Alpöge, a mathematician at Anthropic, says he and Claude proved the Riemann hypothesis and its generalized form, and he released the proof only as machine-checkable Lean code, not as a paper people can read. Hours later, the AMS president posted a rival all-human proof of the generalized version that is still under private review. The lesson for product people: when the work is too big to read, trust moves from \"who made it\" to \"what can check it\". Separately, Thinking Machines shipped a small open model that ties a bigger rival on a public index at about a sixth of the cost per task.",
+   "vi": "Hôm nay có hai câu chuyện thật, và một trong số đó rất lớn nếu nó đứng vững. Levent Alpöge, nhà toán học ở Anthropic, nói anh và Claude đã chứng minh giả thuyết Riemann và dạng tổng quát của nó, và anh chỉ công bố chứng minh dưới dạng code Lean mà máy kiểm được, không phải một bài báo người đọc được. Vài giờ sau, chủ tịch AMS đăng một chứng minh đối thủ cho dạng tổng quát, hoàn toàn do người làm và vẫn đang được xem xét riêng. Bài học cho người làm sản phẩm: khi sản phẩm quá lớn để đọc hết, niềm tin chuyển từ \"ai làm ra\" sang \"cái gì kiểm được nó\". Ngoài ra, Thinking Machines ra một model mở nhỏ, ngang một đối thủ lớn hơn trên một bảng chỉ số công khai, với chi phí mỗi việc chỉ khoảng một phần sáu."
+  },
+  "items": [
+   {
+    "date": "2026-11-20",
+    "src": "officechai.com",
+    "url": "https://officechai.com/ai/hours-after-alpoges-ai-assisted-riemann-hypothesis-proof-ams-president-ravi-vakil-rushes-out-a-rival-all-human-proof-by-alessandro-masullo/",
+    "tag": "Research",
+    "t": {
+     "en": "Two Riemann proofs in one day: one made with Claude and checked by machine, one all human and checked by a colleague",
+     "vi": "Hai chứng minh Riemann trong một ngày: một làm cùng Claude và do máy kiểm, một hoàn toàn do người và do đồng nghiệp kiểm"
+    },
+    "p": {
+     "en": [
+      "Levent Alpöge says he and Claude proved the Riemann hypothesis and the generalized version, released only as Lean code; a written version would run past 250,000 pages",
+      "MIT's Andrew Sutherland reproduced the Lean check; the open question is whether the formal definitions really say what the famous problem says, with no hidden extra assumptions",
+      "Hours later, Stanford's Ravi Vakil, the AMS president, released Alessandro Masullo's draft proof of the generalized version early: \"all human, with no AI\", reviewed for months by Brian Conrad",
+      "Neither counts as settled yet: the Clay prize rules need two years after publication and general acceptance"
+     ],
+     "vi": [
+      "Levent Alpöge nói anh và Claude đã chứng minh giả thuyết Riemann và dạng tổng quát, chỉ công bố bằng code Lean; một bản viết tay sẽ dài hơn 250.000 trang",
+      "Andrew Sutherland ở MIT đã chạy lại và xác nhận phần kiểm tra Lean; câu hỏi còn lại là các định nghĩa hình thức có thật sự nói đúng điều bài toán nổi tiếng nói không, và không có giả định ẩn nào",
+      "Vài giờ sau, Ravi Vakil ở Stanford, chủ tịch AMS, công bố sớm bản nháp chứng minh dạng tổng quát của Alessandro Masullo: \"hoàn toàn do người, không có AI\", được Brian Conrad xem xét nhiều tháng",
+      "Chưa bên nào được coi là xong: luật giải Clay cần hai năm sau khi công bố và được giới chuyên môn chấp nhận rộng rãi"
+     ]
+    },
+    "w": {
+     "en": "When an AI produces more than anyone can read, the checker becomes the product. For any feature where AI does big work, decide what will check it (a test, a rule, a human sample), and also check that the checker is testing the right thing.",
+     "vi": "Khi AI tạo ra nhiều hơn mức ai đó đọc được, bộ kiểm tra trở thành sản phẩm. Với tính năng nào AI làm phần việc lớn, hãy quyết định cái gì sẽ kiểm nó (một bài test, một quy tắc, một mẫu do người xem), và kiểm luôn xem bộ kiểm có đang kiểm đúng điều cần kiểm không."
+    },
+    "stat": {
+     "v": "41 days",
+     "l": {
+      "en": "from the first step (Oct 6) to the claimed result (Nov 16), per the account",
+      "vi": "từ bước đầu (6/10) tới kết quả được tuyên bố (16/11), theo lời kể"
+     }
+    }
+   },
+   {
+    "date": "2026-11-20",
+    "src": "testingcatalog.com",
+    "url": "https://www.testingcatalog.com/thinking-machines-releases-inkling-2-mini-looped-open-model/",
+    "tag": "Model",
+    "t": {
+     "en": "Thinking Machines' Inkling 2 Mini: an open model that thinks in loops and fits on a laptop",
+     "vi": "Inkling 2 Mini của Thinking Machines: model mở suy nghĩ theo vòng lặp và chạy được trên laptop"
+    },
+    "p": {
+     "en": [
+      "26.4B total parameters with 3.4B active, about 20GB of memory, weights on Hugging Face and Ollama for a Mac with 32GB or more",
+      "It is a looped model: the middle 12 of its 24 layers run three times per token, so it reasons more inside and writes fewer tokens",
+      "Artificial Analysis puts it at 20.1 on its index, tied with Qwen3.8 27B, but at $0.59 and 9.0 minutes per task against $3.53 and 38.2 minutes",
+      "The company's own coding numbers: 48.2% on DeepSWE v1.1 vs 42.2% for Qwen3.8 27B; it still trails bigger models on the hardest reasoning tests"
+     ],
+     "vi": [
+      "Tổng 26,4B tham số, 3,4B hoạt động, cần khoảng 20GB bộ nhớ, có trọng số trên Hugging Face và Ollama cho Mac từ 32GB",
+      "Đây là model vòng lặp: 12 lớp giữa trong 24 lớp chạy ba lần mỗi token, nên nó suy nghĩ nhiều hơn bên trong và viết ít token hơn",
+      "Artificial Analysis cho nó 20,1 điểm, ngang Qwen3.8 27B, nhưng tốn $0,59 và 9,0 phút mỗi việc so với $3,53 và 38,2 phút",
+      "Số liệu lập trình của chính công ty: 48,2% trên DeepSWE v1.1 so với 42,2% của Qwen3.8 27B; nó vẫn kém các model lớn hơn ở các bài suy luận khó nhất"
+     ]
+    },
+    "w": {
+     "en": "Same score, a sixth of the cost and a quarter of the time changes what you can afford to run on every request. Price your feature per finished task, and test whether a small model is good enough for the easy 80%.",
+     "vi": "Cùng điểm, chi phí chỉ một phần sáu và thời gian một phần tư sẽ thay đổi việc bạn có thể chạy gì cho mỗi yêu cầu. Hãy tính giá tính năng theo mỗi việc hoàn thành, và test xem model nhỏ có đủ tốt cho 80% việc dễ không."
+    },
+    "stat": {
+     "v": "$0.59",
+     "l": {
+      "en": "per index task, vs $3.53 for a model with the same score",
+      "vi": "mỗi việc trên bảng chỉ số, so với $3,53 của model cùng điểm"
+     }
+    }
+   }
+  ],
+  "watch": {
+   "en": "The same AI-assisted team also claims a blow-up result for the Navier-Stokes equations, but reports say its public Lean package leaves out the numerical certificate it depends on: a reminder to ask what a check does not cover. Bloomberg reports Apple is in early work on an agent that can control your computer; not confirmed by Apple.",
+   "vi": "Cùng nhóm làm với AI cũng tuyên bố một kết quả về phương trình Navier-Stokes, nhưng các bản tin nói gói Lean công khai bỏ ra phần chứng chỉ số mà kết quả dựa vào: một lời nhắc hãy hỏi phần nào bộ kiểm chưa bao phủ. Bloomberg đưa tin Apple đang ở giai đoạn đầu làm một agent điều khiển máy tính; Apple chưa xác nhận."
+  }
+ },
+ "people": [
+  {
+   "who": "Y Combinator · How to Build the Future with Ramp's Eric Glyman",
+   "kind": {
+    "en": "~52 min video · from chapters and a written recap",
+    "vi": "Video ~52 phút · dựa trên các chương và một bản tóm tắt viết"
+   },
+   "date": "2026-11-18",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=0Hvs6-XODgU",
+   "t": {
+    "en": "Ramp paused hiring for a quarter, and non-engineers opened 7,000 pull requests",
+    "vi": "Ramp tạm dừng tuyển một quý, và người không phải kỹ sư mở 7.000 pull request"
+   },
+   "p": {
+    "en": [
+     "Glyman's line: \"model progress didn't stall. organizations did\"; the teams using the least AI asked for the most headcount",
+     "When staff were asked to use Claude Code, a common answer was \"what's terminal?\", and the AI could not see company data, Slack or customers",
+     "The fix was to connect the AI to everything; now a customer bug can get a fix and a reply the same afternoon",
+     "Ramp stopped hiring for a quarter while revenue grew more than 100%; the chapters also cover building their own harnesses and a shared company brain"
+    ],
+    "vi": [
+     "Câu của Glyman: \"model không chậm lại, tổ chức mới chậm\"; những nhóm dùng AI ít nhất lại xin thêm người nhiều nhất",
+     "Khi nhân viên được yêu cầu dùng Claude Code, câu trả lời hay gặp là \"terminal là gì?\", và AI không thấy được dữ liệu công ty, Slack hay khách hàng",
+     "Cách sửa là nối AI với mọi thứ; giờ một lỗi khách báo có thể được sửa và trả lời ngay trong buổi chiều",
+     "Ramp dừng tuyển một quý trong khi doanh thu tăng hơn 100%; các chương còn nói về việc tự xây harness và một \"bộ não\" chung của công ty"
+    ]
+   },
+   "k": {
+    "en": "Access beats talent here: an AI that cannot see your data or your users is a toy. Before asking for more people, ask what your tools are not connected to.",
+    "vi": "Ở đây quyền truy cập quan trọng hơn tài năng: một AI không thấy dữ liệu hay người dùng của bạn chỉ là đồ chơi. Trước khi xin thêm người, hãy hỏi công cụ của bạn đang chưa được nối với cái gì."
+   },
+   "stat": {
+    "v": "7,000",
+    "l": {
+     "en": "pull requests from non-engineers in Q2, up from zero two years earlier",
+     "vi": "pull request từ người không phải kỹ sư trong quý 2, từ con số 0 hai năm trước"
+    }
+   }
+  },
+  {
+   "who": "Every · Katie Parrott with Mike Taylor",
+   "kind": {
+    "en": "article · from the free preview",
+    "vi": "Bài viết · dựa trên phần đọc miễn phí"
+   },
+   "date": "2026-11-17",
+   "src": "every.to",
+   "url": "https://every.to/vibe-check/vibe-check-gpt-6-2-astra-and-sol-leave-us-wanting-more",
+   "t": {
+    "en": "When your hard tests stop being hard: Every says GPT-6.2 \"saturated\" its evals",
+    "vi": "Khi bài test khó không còn khó: Every nói GPT-6.2 đã \"bão hòa\" bộ đánh giá của họ"
+   },
+   "p": {
+    "en": [
+     "Every's head of evals, Mike Taylor, tests on tasks no model could solve at the start of this year: a themed training plan, a minute-by-minute show plan, executive exercises",
+     "Each test has its own prompt and realistic data, not a public benchmark",
+     "Both GPT-6.2 models handle all of them, but older models already did well, so the tests no longer tell models apart",
+     "The work they most want help with still needs more judgment and follow-through than these tests ask for"
+    ],
+    "vi": [
+     "Trưởng nhóm đánh giá của Every, Mike Taylor, test bằng các việc mà đầu năm nay chưa model nào làm được: một giáo trình huấn luyện theo chủ đề, kế hoạch chạy chương trình theo từng phút, bài tập cho lãnh đạo",
+     "Mỗi bài có prompt riêng và dữ liệu thực tế, không phải benchmark công khai",
+     "Cả hai model GPT-6.2 làm được hết, nhưng model cũ cũng đã làm tốt, nên các bài test không còn phân biệt được model",
+     "Việc họ muốn được giúp nhất vẫn cần nhiều phán đoán và theo đến cùng hơn những gì các bài test này đòi hỏi"
+    ]
+   },
+   "k": {
+    "en": "An eval set has a shelf life. When every model passes, add new cases from the failures you see today, or your tests will tell you nothing.",
+    "vi": "Bộ đánh giá có hạn sử dụng. Khi model nào cũng qua, hãy thêm ca mới từ những lỗi bạn thấy hôm nay, nếu không bài test sẽ không còn nói gì với bạn."
+   }
+  },
+  {
+   "who": "Aakash Gupta · with TinyFish CPO Shuhao Zhang",
+   "kind": {
+    "en": "video · from the description and timestamps",
+    "vi": "Video · dựa trên mô tả và mốc thời gian"
+   },
+   "date": "2026-11-21",
+   "src": "youtube.com",
+   "url": "https://www.youtube.com/watch?v=-xQPRlk7VRE",
+   "t": {
+    "en": "How a team lets anyone ship to production: plan, AI review, then a 1% rollout",
+    "vi": "Cách một đội cho bất kỳ ai đưa code lên production: lên kế hoạch, AI review, rồi phát hành cho 1%"
+   },
+   "p": {
+    "en": [
+     "TinyFish went from 100K to 300K users in 28 days, and Zhang opens his real GitHub to show the pipeline behind it",
+     "The path runs from the agent's plan to an AI-reviewed pull request to a 1% rollout, so a mistake reaches few people",
+     "Every project starts from a template, and one segment goes from idea to PRD to a 20-hour build",
+     "He ends on an ops agent that watches production, which he thinks will set teams apart"
+    ],
+    "vi": [
+     "TinyFish tăng từ 100 nghìn lên 300 nghìn người dùng trong 28 ngày, và Zhang mở GitHub thật để cho xem quy trình phía sau",
+     "Đường đi là từ kế hoạch của agent tới pull request được AI review rồi phát hành cho 1%, nên một lỗi chỉ chạm tới ít người",
+     "Mọi dự án bắt đầu từ một template, và một phần đi từ ý tưởng tới PRD tới một lần build 20 giờ",
+     "Anh kết thúc bằng một agent vận hành theo dõi production, thứ anh nghĩ sẽ tạo khác biệt giữa các đội"
+    ]
+   },
+   "k": {
+    "en": "Letting more people ship is safe only when the blast radius is small. A 1% rollout is the cheap checker that makes speed safe.",
+    "vi": "Cho nhiều người ship chỉ an toàn khi vùng ảnh hưởng nhỏ. Phát hành cho 1% là bộ kiểm rẻ giúp tốc độ trở nên an toàn."
+   },
+   "stat": {
+    "v": "100K to 300K",
+    "l": {
+     "en": "users in 28 days",
+     "vi": "người dùng trong 28 ngày"
+    }
+   }
+  }
+ ],
+ "timeless": {
+  "q": {
+   "en": "Write simply: ordinary words and short sentences, so the reader spends their effort on your ideas, not on your prose.",
+   "vi": "Viết đơn giản: từ ngữ thông thường và câu ngắn, để người đọc dùng sức cho ý tưởng của bạn, không phải cho câu chữ."
+  },
+  "src": "Write Simply · Paul Graham",
+  "date": "2021 · essay",
+  "url": "https://paulgraham.com/simply.html",
+  "e": {
+   "en": "Paul Graham argues that simple writing is more considerate: it is faster to read, easier for people reading in a second language, and it lasts longer because fancy style ages. It also keeps you honest, since a simple sentence has nowhere to hide a weak idea. Today's 250,000-page proof shows the other side: a result nobody can read must be trusted through a machine, and people still want the short version that explains why it works.",
+   "vi": "Paul Graham cho rằng viết đơn giản là tôn trọng người đọc: đọc nhanh hơn, dễ hơn cho người đọc bằng ngôn ngữ thứ hai, và bền hơn vì lối viết cầu kỳ sẽ lỗi thời. Nó còn giúp bạn trung thực, vì một câu đơn giản không có chỗ giấu một ý yếu. Chứng minh 250.000 trang hôm nay cho thấy mặt còn lại: một kết quả không ai đọc nổi phải được tin qua máy, và người ta vẫn muốn bản ngắn giải thích vì sao nó đúng."
+  },
+  "a": {
+   "en": [
+    "Before you send a spec, cut every sentence that a new teammate would need to read twice",
+    "Explain your feature in five plain sentences; if you cannot, the idea is not clear yet",
+    "When an AI writes a long answer for you, ask for the three-sentence version and check the long one against it"
+   ],
+   "vi": [
+    "Trước khi gửi một spec, cắt mọi câu mà một đồng đội mới phải đọc hai lần",
+    "Giải thích tính năng của bạn bằng năm câu đơn giản; nếu chưa làm được, ý tưởng vẫn chưa rõ",
+    "Khi AI viết một câu trả lời dài cho bạn, hãy yêu cầu bản ba câu và đối chiếu bản dài với nó"
+   ]
+  },
+  "x": {
+   "en": "For a feature you are working on, write the eval rules so a user could read each one in one breath: \"never suggest a food the user marked as an allergy\" beats a paragraph about safety principles.",
+   "vi": "Với một tính năng bạn đang làm, hãy viết các quy tắc đánh giá sao cho người dùng đọc mỗi quy tắc trong một hơi: \"không bao giờ gợi ý món người dùng đã đánh dấu là dị ứng\" tốt hơn một đoạn văn về nguyên tắc an toàn."
+  }
+ },
+ "think": [
+  {
+   "q": {
+    "en": "In your work, where do you already trust a result you have not read in full? What checks it, and what does that check not cover?",
+    "vi": "Trong công việc, bạn đang tin một kết quả nào mà mình chưa đọc hết? Cái gì kiểm nó, và phần nào bộ kiểm đó chưa bao phủ?"
+   },
+   "c": {
+    "en": "The Lean-only Riemann proof",
+    "vi": "Chứng minh Riemann chỉ bằng Lean"
+   }
+  },
+  {
+   "q": {
+    "en": "Which of your own tests would every current model pass today? What failure have you seen recently that should replace it?",
+    "vi": "Bài test nào của bạn mà model nào hiện nay cũng qua? Lỗi nào bạn thấy gần đây nên thay thế nó?"
+   },
+   "c": {
+    "en": "Every's saturated evals",
+    "vi": "Bộ đánh giá đã bão hòa của Every"
+   }
+  },
+  {
+   "q": {
+    "en": "If a model six times cheaper were good enough for most of your requests, what would you build that you cannot afford today?",
+    "vi": "Nếu một model rẻ hơn sáu lần đủ tốt cho phần lớn yêu cầu của bạn, bạn sẽ xây gì mà hôm nay chưa đủ tiền làm?"
+   },
+   "c": {
+    "en": "Inkling 2 Mini's cost per task",
+    "vi": "Chi phí mỗi việc của Inkling 2 Mini"
+   }
+  }
+ ],
+ "exercises": [
+  {
+   "k": "work",
+   "tag": {
+    "en": "Work",
+    "vi": "Công việc"
+   },
+   "time": "30 min",
+   "g": {
+    "en": "Turn one AI feature you work on into something a checker can judge.",
+    "vi": "Biến một tính năng AI bạn đang làm thành thứ một bộ kiểm có thể chấm."
+   },
+   "s": {
+    "en": [
+     "List 10 cases where a wrong answer would hurt a real user",
+     "Write one pass or fail rule per case in one plain sentence",
+     "Run the feature on all 10 and mark the pass rate"
+    ],
+    "vi": [
+     "Liệt kê 10 ca mà một câu trả lời sai sẽ làm hại người dùng thật",
+     "Viết một quy tắc đạt hoặc không đạt cho mỗi ca bằng một câu đơn giản",
+     "Chạy tính năng trên cả 10 ca và ghi tỉ lệ đạt"
+    ]
+   },
+   "o": {
+    "en": "A 10-case check sheet with a first pass rate.",
+    "vi": "Một bảng kiểm 10 ca với tỉ lệ đạt đầu tiên."
+   }
+  },
+  {
+   "k": "write",
+   "tag": {
+    "en": "Write",
+    "vi": "Viết"
+   },
+   "time": "20 min",
+   "g": {
+    "en": "Draft a short post: \"When the work is too big to read, trust the checker.\"",
+    "vi": "Viết nháp một bài ngắn: \"Khi sản phẩm quá lớn để đọc, hãy tin bộ kiểm.\""
+   },
+   "s": {
+    "en": [
+     "Open with the two Riemann proofs posted on the same day",
+     "Add one example from product work where you rely on a test, not a read",
+     "End with one question you would ask about any checker"
+    ],
+    "vi": [
+     "Mở đầu bằng hai chứng minh Riemann được đăng cùng một ngày",
+     "Thêm một ví dụ trong làm sản phẩm khi bạn dựa vào bài test, không phải đọc",
+     "Kết bằng một câu hỏi bạn sẽ hỏi về bất kỳ bộ kiểm nào"
+    ]
+   },
+   "o": {
+    "en": "A 150-word post ready to polish and share.",
+    "vi": "Một bài 150 chữ sẵn sàng chỉnh và chia sẻ."
+   }
+  },
+  {
+   "k": "build",
+   "tag": {
+    "en": "Build",
+    "vi": "Xây"
+   },
+   "time": "45 min",
+   "g": {
+    "en": "Run a small open model on your laptop and compare it with your usual model on your own tasks.",
+    "vi": "Chạy một model mở nhỏ trên laptop và so với model bạn hay dùng trên chính việc của bạn."
+   },
+   "s": {
+    "en": [
+     "Install Ollama and pull a small open model that fits your memory",
+     "Give it and your usual model the same 5 prompts from real work",
+     "Score each answer good enough or not, and note time and cost"
+    ],
+    "vi": [
+     "Cài Ollama và tải một model mở nhỏ vừa bộ nhớ máy",
+     "Đưa cho nó và model bạn hay dùng cùng 5 prompt từ việc thật",
+     "Chấm mỗi câu trả lời là đủ tốt hay không, và ghi lại thời gian và chi phí"
+    ]
+   },
+   "o": {
+    "en": "A 5-row table showing where a small local model is good enough.",
+    "vi": "Một bảng 5 dòng cho thấy chỗ nào model nhỏ chạy tại máy là đủ tốt."
+   }
+  }
+ ]
+}
