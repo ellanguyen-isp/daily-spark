@@ -1,0 +1,1159 @@
+{
+ "date": "2026-11-23",
+ "generated_at": "2026-11-23T10:03+07:00",
+ "window_days": 3,
+ "youtube_api": true,
+ "sources": [
+  {
+   "source": "Starter Story",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 4
+  },
+  {
+   "source": "Starter Story Build",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "Lenny's Podcast",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 5
+  },
+  {
+   "source": "The Skip (Nikhyl Singhal)",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "YC Root Access",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
+  },
+  {
+   "source": "Y Combinator",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 1
+  },
+  {
+   "source": "Naval",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "Every",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 1
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Simon Willison",
+   "ok": true,
+   "via": "rss",
+   "new": 4
+  },
+  {
+   "source": "Every",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Benedict Evans",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Rob Snyder (Physics of Startups)",
+   "ok": null,
+   "note": "no feed; the Worker reads the page"
+  },
+  {
+   "source": "Aakash Gupta newsletter",
+   "ok": true,
+   "via": "rss",
+   "new": 1
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Product Talk (Teresa Torres)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "John Cutler",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "SVPG (Marty Cagan)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Andrew Chen",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "April Dunford",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Jason Cohen",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Gibson Biddle",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Brian Balfour",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Melissa Perri",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Hello China Tech",
+   "ok": true,
+   "via": "rss",
+   "new": 1
+  },
+  {
+   "source": "Y Combinator blog",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Naval",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Linear blog (Karri Saarinen)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "OpenAI news",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Google AI blog",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Product Hunt",
+   "ok": true,
+   "via": "rss",
+   "new": 10
+  },
+  {
+   "source": "Anthropic news",
+   "ok": null,
+   "note": "no feed; the Worker reads the page"
+  },
+  {
+   "source": "Hacker News front page",
+   "ok": true,
+   "via": "rss",
+   "new": 26
+  }
+ ],
+ "items": [
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "The Best Marketers Are Allergic To AI",
+   "url": "https://www.youtube.com/watch?v=52zX-vp0Ags",
+   "published": "2026-11-23",
+   "summary": "Why Hector Serrano (Former Head of Content, Wispr Flow) believes the best marketers are allergic to AI"
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "Why cracking your knuckles doesn't cause arthritis",
+   "url": "https://www.youtube.com/watch?v=sp_X5hQAbl0",
+   "published": "2026-11-23",
+   "summary": "Does cracking your knuckles cause arthritis? Dr. Donald Unger cracked only his left hand's knuckles for more than 60 years and kept the right as a control. Neither hand developed arthritis, and he won the 2009 Ig Nobel Prize in Medicine. In 2015, researchers filmed a knuckle crack in a real-time MRI and saw the crack come as a cavity formed in the joint. Sources: Ig Nobel Prize 2009 (Improbable Research); Kawchuk GN et al., \"Real-Time Visualization of Joint Cavitation\", PLOS ONE 10(4), 2015. Idea: AsapSCIENCE. Which knuckle do you crack first? #Shorts #health #science"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "Select Styling Specimens",
+   "url": "https://simonwillison.net/2026/Nov/22/select-styling/",
+   "published": "2026-11-23",
+   "summary": "Tool: Select Styling Specimens I got frustrated at how HTML <select> boxes default to looking different in different browsers, and are (I think) quite ugly in Chrome: So I had Claude Fable 5.2 build me this page showing all of the ways they can be styled: Build an HTML page that shows all of the ways a select box can be styled, I plan to take screenshots in every desktop and mobile browser After some experimentation I've decided my favorite CSS for select boxes is this: select { appearance : none ; color : # 1f2933 ; padding : 0.5 em 2.25 em 0.5 em 0.75 em ; border : 1 px solid # c4cbd3 ; bord..."
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Free alternative TV network built from the Internet Archive's forgotten videos",
+   "url": "https://spelunkr.tv",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+   "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
+   "url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "GL.iNet Security Notice 2026-11-20",
+   "url": "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "A miniature San Francisco with live buses, planes and boats",
+   "url": "https://smallsf.com/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "The Usefulness of Useless Knowledge [pdf] (1939)",
+   "url": "https://www.ias.edu/sites/default/files/library/UsefulnessHarpers.pdf",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "The struggle for freedom: How BSD escaped AT&T licensing",
+   "url": "https://fosscomics.com/posts/16.%20BSD%20Unix%20Part%206%20-%20The%20Struggle%20for%20Freedom/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Nyx, the Oldest Internet Service Provider",
+   "url": "https://nyx.net/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Progress map for the Lean formalization of Alessandro Masullo's manuscript",
+   "url": "https://claude.ai/artifact/CtQyX8qfYAF822bgHJHHE3",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Assume People Are Not Interested in Your Blog Post",
+   "url": "https://danielsada.tech/blog/assume-people-are-not-interested-in-your-blog-post/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "What we learned operating auth for 1k APIs",
+   "url": "https://nango.dev/blog/lessons-from-operating-api-auth-for-900-apis/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "What Happened to Silicon Valley?",
+   "url": "https://www.oreilly.com/radar/what-happened-to-silicon-valley/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Advanced Character Physics (2001) [pdf]",
+   "url": "https://www.cs.cmu.edu/afs/cs/academic/class/15462-s13/www/lec_slides/Jakobsen.pdf",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Localcode, open source agentic coding on your Mac with one command",
+   "url": "https://github.com/mjwsolo/localcode",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Nespresso's project to reduce grams of coffee per capsule",
+   "url": "https://alvinbunk.wordpress.com/2026/11/01/nespresso-project-olympus/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "0rwx – A simple model of AI usage, inspired by Unix permissions",
+   "url": "https://0rwx.com/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Will the first approved psychedelic become a blockbuster?",
+   "url": "https://www.pharmavoice.com/news/race-first-psilocybin-blockbuster-compass-usona/875270/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Harvard CS 2881R AI Safety",
+   "url": "https://boazbk.github.io/mltheoryseminar/",
+   "published": "2026-11-23",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "He Scaled a Reddit Micro-SaaS to $40K/Month",
+   "url": "https://www.youtube.com/watch?v=Ce_wXQ1BJjE",
+   "published": "2026-11-23",
+   "summary": "Filip built 5 products that went nowhere and made ZERO. Then he started building in public on X, launched a micro-saas, and today that app makes $15K/month. It took him 6 months to make $1K MRR, then he changed one thing that tripled revenue in 1 month. Oh and at the end... he shares a HUGE update! *190+ micro-SaaS ideas making millions:* https://clickhubspot.com/4ydj Say hi to Filip: https://twitter.com/FilipPanoski Check out Bazzly: https://www.bazzly.ai/ Chapters: 0:00 - Zero to $15K MRR 0:59 - Update!! 1:38 - Meet Filip! 2:18 - What is the app? 2:57 - Filip’s background 3:53 - Finding and validating the idea 4:53 - More micro-saas ideas 5:15 - What makes your product different? 6:18 - Building the app 7:29 - Early growth and traction 9:37 - Hitting $15K MRR 11:55 - Partnering with a bigger influencer 13:18 - App demo 15:38 - Final advice 16:22 - Update: $40K MRR! 17:32 - Reflections 🔔 Follow the Second Channel: @StarterStoryBuild 🏁 We're hiring: starterstory.com/jobs This video is an educational case study of this founder’s experience. It is not financial advice and does not guarantee any income or results. Every business is different and your results may vary."
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Why “everyone’s a builder” isn’t working | A reality check with Sherif Mansour",
+   "url": "https://www.youtube.com/watch?v=hRtmV1mCBSE",
+   "published": "2026-11-22",
+   "summary": "Sherif Mansour is Head of AI and Product Craft at Atlassian (the company behind Jira and Confluence), where he has spent 17 years building and scaling some of the most successful enterprise products in history. He joined Atlassian as its first PM on Confluence, eventually becoming its first Distinguished PM, and now leads both the craft of product management across the company and Atlassian’s AI product strategy. We discuss: 1. Why a PM’s #1 job is to build a “shared brain” 2. The artist, the scientist, and the GM: three types of PM, and how to tell which one you are 3. Why PM roles are growing fastest in the AI era 4. Why Atlassian is hiring more juniors than ever 5. The most common mistake new PM managers make *Brought to you by:* WorkOS—Make your app enterprise-ready, with SSO, SCIM, RBAC, and more: https://workos.com/lenny DX—Engineering intelligence for the AI era: https://getdx.com/?utm_source=lenny&utm_medium=sponsorship&utm_campaign=q42026 *Episode transcript:* https://www.lennysnewsletter.com/p/first-principles-what-it-takes-to *Archive of all Lenny's Podcast transcripts:* https://www.dropbox.com/scl/fo/yxi4s2w998p1gvtpu4193/AMdNPR8AOw0lMklwtnC0TrQ?rlkey=j06x0nipoti519e0xg..."
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "Why you can't fold paper more than 7 times",
+   "url": "https://www.youtube.com/watch?v=Wcq0zJoxFms",
+   "published": "2026-11-22",
+   "summary": "Why you can't fold paper more than 7 times. Seven folds is already 128 layers. In January 2002, high school junior Britney Gallivan folded a roll of toilet paper about 4,000 feet long 12 times. At 42 folds, 0.1 mm paper would be 439,805 km tall, past the Moon at 384,400 km. Sources: Guinness World Records (most times to fold a piece of paper), MathWorld \"Folding\", NASA Moon Fact Sheet. Idea: Hafu Go. Fold one yourself: how far do you get? #Shorts #math #science"
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth"
+   ],
+   "via": "rss",
+   "title": "First principles: What it takes to be a great product manager in the AI era | Sherif Mansour",
+   "url": "https://www.lennysnewsletter.com/p/first-principles-what-it-takes-to",
+   "published": "2026-11-22",
+   "summary": "Sherif Mansour on why PMs are thriving in the AI era, the artist PM advantage, and why juniors are your secret weapon now"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "Muru",
+   "url": "https://simonwillison.net/2026/Nov/21/muru/",
+   "published": "2026-11-22",
+   "summary": "Muru Graham Dumpleton started mod_wsgi 20 years ago, and has been thinking about the ideal way to serve Python web applications in production ever since. Muru is his new, AI-assisted Rust server that aims to provide the best possible tools for running ASGI and WSGI Python apps both in development and production. As he did with wrapture , he's been publishing an extraordinarily detailed account of the project as he works on it - as part of his development process. Here's everything he's published so far, all in the last three weeks: 2026-11-04 — Twenty years of mod_wsgi, and what comes next 202..."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Perplexity and Intelligence",
+   "url": "https://openai.com/index/perplexity-and-intelligence",
+   "published": "2026-11-22",
+   "summary": "How perplexity measures progress in AI models, and why it could help developers establish a shared approach to evaluating emerging capabilities."
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "oovi",
+   "url": "https://www.producthunt.com/products/oovi",
+   "published": "2026-11-22",
+   "summary": "Your own team of AI on your desktop Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Masullo on the Riemann Hypothesis",
+   "url": "https://johncarlosbaez.wordpress.com/2026/11/22/masullo-on-the-riemann-hypothesis/",
+   "published": "2026-11-22",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Show HN: I built a game where you are an LLM's subagent",
+   "url": "https://github.com/gulivan/worker755",
+   "published": "2026-11-22",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Open Social Web Alliance",
+   "url": "https://osw-alliance.net/en/",
+   "published": "2026-11-22",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "I joined the NTP Pool, but not with my Stratum 1 Pi",
+   "url": "https://www.jeffgeerling.com/blog/2026/i-joined-the-ntp-pool/",
+   "published": "2026-11-22",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
+   "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+   "published": "2026-11-22",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "A Better Vocabulary for Testing",
+   "url": "https://alperenkeles.com/posts/vocab-for-testing/",
+   "published": "2026-11-22",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "Bro charges $3K a month for his SaaS and says it's \"very affordable\" 👀",
+   "url": "https://www.youtube.com/watch?v=db-XcsgG_NY",
+   "published": "2026-11-22",
+   "summary": "Bro sells his software for $3K a month and says it’s “very affordable.” Meet Oliver. He scaled Tabs Chocolate to $11M a year and sold it for millions. Now he runs Bustem, a mix of AI agents and real people that finds and takes down copycats, counterfeits, and unauthorized resellers for e-commerce brands. “We do this for 1,500 bucks to $5,000 a month on average, about 3K a month. So very affordable.”"
+  },
+  {
+   "source": "Hello China Tech",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "china",
+    "ai",
+    "consumer-tech"
+   ],
+   "via": "rss",
+   "title": "Tencent's profit fell 6%, or rose 8%. China's fine print",
+   "url": "https://hellochinatech.com/p/weekly-recap-2026-11-22",
+   "published": "2026-11-22",
+   "summary": "Anthropic's $81.3bn IPO, 31 partners behind DeepSeek's new shareholder, Alibaba's V900 chip: China tech's second lines."
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "The Genius Of Wispr Flow's UGC Model",
+   "url": "https://www.youtube.com/watch?v=c41UFN4GXRY",
+   "published": "2026-11-21",
+   "summary": "Inside Wispr Flow's UGC engine that has some creators making $13K a month | Herctor Serrano (Former Head of Content, Wispr Flow)"
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "The Story Of How Muse Began",
+   "url": "https://www.youtube.com/watch?v=IFrrJHGnee8",
+   "published": "2026-11-21",
+   "summary": "The ping that made Mona go all in on Muse | Mona Sarantakos (Head of Product, Muse)"
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Understanding vibes is actually a skill",
+   "url": "https://www.youtube.com/watch?v=HiDkG7MYSgg",
+   "published": "2026-11-21",
+   "summary": "The PM skill that you won't find in any job description | Tulsee Doshi (Head of Product, Gemini)"
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "Why a coin flip isn't 50/50",
+   "url": "https://www.youtube.com/watch?v=nZalmtKihy8",
+   "published": "2026-11-21",
+   "summary": "A coin flip isn't 50/50. Researchers flipped coins 350,757 times. Heads and tails came out even at 0.500. But the side that started facing up landed up 50.8% of the time. A flipped coin wobbles, so it spends a little more time with the starting side up. A 2007 physics model by Diaconis, Holmes and Montgomery predicted about 51%. The 2023 data landed on 50.8%.Why a coin flip isn't 50/50. Researchers flipped coins 350,757 times. Heads and tails came out even, but the side that started facing up landed up 50.8% of the time, because a flipped coin wobbles. Source: Bartos et al. 2023, \"Fair coins tend to land on the same side they started\" (arXiv 2310.04153). Prediction: Diaconis, Holmes and Montgomery 2007. Idea: Mark Rober. Call it before you flip: same side or the other? #Shorts #coinflip #probability Idea: Mark Rober. Sources: Bartos et al. 2023, \"Fair coins tend to land on the same side they started\" (arXiv 2310.04153). Diaconis, Holmes and Montgomery 2007. Call it before you flip: same side or the other?"
+  },
+  {
+   "source": "Y Combinator",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "startups",
+    "startup-school",
+    "ai"
+   ],
+   "via": "youtube-api",
+   "title": "We’ll Be Inferior to Our Grandchildren—and That’s Great",
+   "url": "https://www.youtube.com/watch?v=tgK-mPtgCCU",
+   "published": "2026-11-21",
+   "summary": "Jacob Coxon worries that next to AI, “we’d be the ants, they would be the humans negotiating with each other. We’d be vastly inferior to them.” Robin Hanson: “We’re gonna be inferior to our grandchildren, and I think that’s great.”"
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth"
+   ],
+   "via": "rss",
+   "title": "🧠 Community Wisdom: Handling context switching with multiple agents, giving feedback on AI-generated designs, getting AI to write less like AI, why PMs don’t share what they’re really working on",
+   "url": "https://www.lennysnewsletter.com/p/community-wisdom-handling-context",
+   "published": "2026-11-21",
+   "summary": "Community Wisdom 306"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "Quoting Ravi Vakil",
+   "url": "https://simonwillison.net/2026/Nov/20/ravi-vakil/",
+   "published": "2026-11-21",
+   "summary": "Alessandro Masullo has a proposed proof of [Generalized Riemann Hypothesis], and Brian Conrad has been looking closely at it for months and gave extensive feedback which is being incorporated, and it is so far looking good. It is all human, with no AI. The hope was to bring Alessandro to Stanford for a year to polish the writing and then announce it after running it by enough people. Now it seems best to put out the current draft. — Ravi Vakil , Hurried Announcement: Alessandro Masullo GRH Tags: mathematics"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Omi CLI",
+   "url": "https://www.producthunt.com/products/omi-cli",
+   "published": "2026-11-21",
+   "summary": "AI coding agents that work while you're away. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Creavit Studio 4.0",
+   "url": "https://www.producthunt.com/products/creavit-studio",
+   "published": "2026-11-21",
+   "summary": "Screen recording, iPhone camera and cinematic demos for Mac Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Resurf",
+   "url": "https://www.producthunt.com/products/resurf-2",
+   "published": "2026-11-21",
+   "summary": "Personal Knowledge Base & Bookmark Manager for Mac Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Verge: Corner Controls",
+   "url": "https://www.producthunt.com/products/verge-corner-controls",
+   "published": "2026-11-21",
+   "summary": "Swipe a screen corner to set brightness, volume and more Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Smorza",
+   "url": "https://www.producthunt.com/products/smorza",
+   "published": "2026-11-21",
+   "summary": "Every Mac app gets its own volume and output Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Stitch Loop",
+   "url": "https://www.producthunt.com/products/stitch-loop",
+   "published": "2026-11-21",
+   "summary": "Google’s AI agent that ships fixes and watches the metric Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "WaitFeed",
+   "url": "https://www.producthunt.com/products/waitfeed-2",
+   "published": "2026-11-21",
+   "summary": "Tech feed inside agent wait time Discussion | Link"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "This guy scaled from $0 to $11M/year with e-commerce now he does $600K/month with SaaS 😳",
+   "url": "https://www.youtube.com/watch?v=NT-BHHKJ11g",
+   "published": "2026-11-21",
+   "summary": "Bro sold an $11M brand at 19 and now does $600K/month with no investors. Meet Oliver. He started Tabs Chocolate at 19, scaled it from zero to $11M a year, and sold it for millions. Now he’s building Bustem. It helps e-commerce brands find and take down the copycats, counterfeits, and unauthorized resellers ripping them off. “We’ve scaled from zero to $600,000 a month.”"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "$400K MRR founder reveals the 4 rules for picking an app idea that actually makes money 💰",
+   "url": "https://www.youtube.com/watch?v=umJFEEsybjU",
+   "published": "2026-11-21",
+   "summary": "Bro’s 4 rules for picking an app idea that actually makes money. Meet Yoni. He built Brainrot, a gamified screen time app, and scaled it from about $10K/month to about $400K/month. His filters for a first app idea: One core function, one core problem, one core user. No super apps with many features for many people. Stay out of hyper competitive spaces if it’s your first swing Don’t chase trends or copy apps to make a quick buck Build something very high LTV, or something people open on their phone every single day"
+  },
+  {
+   "source": "Aakash Gupta newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "product",
+    "ai-pm"
+   ],
+   "via": "rss",
+   "title": "How to Ship to Production with AI Agents",
+   "url": "https://www.news.aakashg.com/p/ai-agents-ship-to-production",
+   "published": "2026-11-21",
+   "summary": "TinyFish went from 100K to 300K users in 28 days. CPO Shuhao Zhang shows the agent pipeline behind how they ship, from AI code review to a 1% rollout."
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "aggregation",
+    "strategy"
+   ],
+   "via": "rss",
+   "title": "2026.47: Down in DC",
+   "url": "https://stratechery.com/2026/down-in-dc/",
+   "published": "2026-11-21",
+   "summary": "The best Stratechery content from the week of November 16, 2026, including obituaries and exceptionalism, arguments about agents, and Ben gets a Duo."
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "Quoting Levent Alpöge",
+   "url": "https://simonwillison.net/2026/Nov/20/levent-alpoge/",
+   "published": "2026-11-20",
+   "summary": "I believe I have, working with Claude, discovered a proof of the Riemann Hypothesis. In fact, the method easily extends much further, resolving the so-called Generalized Riemann Hypothesis, and I expect, with more time, the Extended Riemann Hypothesis too. Claude and I have also formalized the arguments without assumptions. It is natural to feel that this is an end, in my case a loss of a principal guiding light, but what I saw during the course of progress so amazed me that I believe it is one dawn across science of something far greater. [...] Claude and I have had a great time together with..."
+  },
+  {
+   "source": "OpenAI news",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-models"
+   ],
+   "via": "rss",
+   "title": "Combatting adversarial distillation",
+   "url": "https://openai.com/index/combatting-adversarial-distillation",
+   "published": "2026-11-20",
+   "summary": "OpenAI’s layered approach to adversarial distillation combines model training, safeguards, detection, and enforcement to protect against capability extraction."
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "30yr-uptime",
+   "url": "https://www.producthunt.com/products/30yr-uptime",
+   "published": "2026-11-20",
+   "summary": "Claude Code mod for taking care of your body Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "gitroots",
+   "url": "https://www.producthunt.com/products/gitroots",
+   "published": "2026-11-20",
+   "summary": "Path-level GitHub access for developers and AI agents Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "How the World Draws the World",
+   "url": "https://googlemapsmania.blogspot.com/2026/10/how-world-draws-world.html",
+   "published": "2026-11-20",
+   "summary": "Comments"
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "vietnam",
+    "startups",
+    "sea"
+   ],
+   "via": "youtube-api",
+   "title": "Vì sao người Việt có cái nhìn tích cực về AI?",
+   "url": "https://www.youtube.com/watch?v=RlOubT6zcNc",
+   "published": "2026-11-20",
+   "summary": "[English below] Khảo sát từ Gallup cho thấy phần lớn người Việt có thái độ cởi mở với AI, đồng thời chỉ hơn 20% lo ngại nguy cơ mất việc - một tỷ lệ tương đối thấp so với mặt bằng chung thế giới. Nhìn từ cơ cấu thị trường, ông Ralf Matthaes đã có những lý giải nhất định về tâm lý này. Xem phiên bản đầy đủ tập 417 Vietnam Innovators (Tiếng Anh) trên các kênh Youtube, Spotify & Apple Podcasts của Vietnam Innovators Digest để lắng nghe trọn vẹn chia sẻ từ ông Ralf Matthaes - Founder & Managing Director, Infocus Mekong Research (IFM Research). - A Gallup survey shows that the majority of Vietnamese hold an open attitude toward AI, while just over 20% express concern about losing their jobs, a relatively low rate compared to the global average. Looking from the perspective of market structure, Mr. Ralf Matthaes - Founder & Managing Director, Infocus Mekong Research (IFM Research), offers notable context behind this sentiment. Listen more from EP 417 of Vietnam Innovators (English Edition), available on Vietnam Innovators Digest’s YouTube, Spotify, and Apple Podcasts."
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "aggregation",
+    "strategy"
+   ],
+   "via": "rss",
+   "title": "Sharp Tech on Video: Jensen’s Not Coming Back, AI Shopping, The iPhone Duo",
+   "url": "https://stratechery.com/2026/sharp-tech-on-video-jensens-not-coming-back-ai-shopping-the-iphone-duo/",
+   "published": "2026-11-20",
+   "summary": "Sharp Tech is, for the first time, available on video. You have three ways to consume it: YouTube, Spotify, and here on Stratechery"
+  }
+ ]
+}
