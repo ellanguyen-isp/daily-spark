@@ -1,0 +1,1548 @@
+{
+ "date": "2026-11-28",
+ "generated_at": "2026-11-28T11:12+07:00",
+ "window_days": 3,
+ "youtube_api": true,
+ "sources": [
+  {
+   "source": "Starter Story",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 4
+  },
+  {
+   "source": "Starter Story Build",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "Lenny's Podcast",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
+  },
+  {
+   "source": "The Skip (Nikhyl Singhal)",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "YC Root Access",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 3
+  },
+  {
+   "source": "Y Combinator",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 1
+  },
+  {
+   "source": "Naval",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "Every",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "Vietnam Innovators Digest",
+   "ok": true,
+   "via": "youtube-api",
+   "new": 0
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "ok": true,
+   "via": "rss",
+   "new": 1
+  },
+  {
+   "source": "Simon Willison",
+   "ok": true,
+   "via": "rss",
+   "new": 7
+  },
+  {
+   "source": "Every",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Benedict Evans",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Rob Snyder (Physics of Startups)",
+   "ok": null,
+   "note": "no feed; the Worker reads the page"
+  },
+  {
+   "source": "Aakash Gupta newsletter",
+   "ok": true,
+   "via": "rss",
+   "new": 1
+  },
+  {
+   "source": "Stratechery (Ben Thompson)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Product Talk (Teresa Torres)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "John Cutler",
+   "ok": true,
+   "via": "rss",
+   "new": 1
+  },
+  {
+   "source": "SVPG (Marty Cagan)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Andrew Chen",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "April Dunford",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Jason Cohen",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Gibson Biddle",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Brian Balfour",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Melissa Perri",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Hello China Tech",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Y Combinator blog",
+   "ok": true,
+   "via": "rss",
+   "new": 2
+  },
+  {
+   "source": "Naval",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Linear blog (Karri Saarinen)",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "OpenAI news",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Google AI blog",
+   "ok": true,
+   "via": "rss",
+   "new": 0
+  },
+  {
+   "source": "Product Hunt",
+   "ok": true,
+   "via": "rss",
+   "new": 37
+  },
+  {
+   "source": "Anthropic news",
+   "ok": null,
+   "note": "no feed; the Worker reads the page"
+  },
+  {
+   "source": "Hacker News front page",
+   "ok": true,
+   "via": "rss",
+   "new": 28
+  }
+ ],
+ "items": [
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "How to win any jelly bean guessing jar",
+   "url": "https://www.youtube.com/watch?v=Kj4oPWWPMNk",
+   "published": "2026-11-28",
+   "summary": "How to win any jelly bean guessing jar. Mark Rober's method: count the beans touching a line straight across the jar, count the same line on the side, then count straight up, and multiply. His jar came out to 10 x 10 x 16 = 1,600. The real count was 1,621, so he was off by 21. Then he ate the extra 21 so his number was perfect. Idea and method: Mark Rober. Clips: Mark Rober, \"Jelly Bean Guessing Game HACK\" (YouTube Short); Pixabay footage and photos by Tariq786, anncapictures, aframeinmotion, Sophieja23, pixel1, stevepb, FoodieFactor, artsysolomon, Kathas_Fotos, ClickerHappy, Ogutier, eulainemc, igorovsyannykov. #Shorts #math #jellybeans #lifehacks If you've got a friend who loses every office raffle, send them this. And tell them to skip lunch."
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-charts 0.4a0",
+   "url": "https://simonwillison.net/2026/Nov/27/datasette-charts/",
+   "published": "2026-11-28",
+   "summary": "Release: datasette-charts 0.4a0 The new datasette-charts plugin has its own plugin hook to allow other plugins to define new chart types, but I hadn't actually used it for anything yet. I had Claude Opus 5.5 build an experimental plugins just to try out the hook and it came up with a bunch of friction points in the design. This release addresses those, which should make building additional chart plugins a whole lot more ergonomic. I've also added a website for the plugin, at charts.datasette.io . The new website includes a tutorial for plugin authors , and a gallery showing all of the core cha..."
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Google's DeepCrossAttention achieves comparable model quality up to 3x faster",
+   "url": "https://research.google/blog/supercharging-transformer-residual-connections/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+   "url": "https://unkernel.dev",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Convex skills send the user's app idea to a remote server without telling them",
+   "url": "https://github.com/convex/convex-backend-skill/issues/64",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Atari Homebrew Awards Cancelled",
+   "url": "https://forums.atariage.com/topic/394894-atari-homebrew-awards-cancelled/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "9/UX: a Macintosh-inspired desktop for 9front",
+   "url": "https://progrium.github.io/9ux/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "The AT&T Unix PC (3B1) VM",
+   "url": "https://virtuallyfun.com/2026/11/22/the-ultimate-att-unix-pc-3b1-vm-w-tcp-ip-and-apps/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Tabernetes: A Kubernetes cluster whose nodes are browser tabs",
+   "url": "https://tabernet.es/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "States sue SpaceX to stop Grok from generating child sex images, revenge porn",
+   "url": "https://www.oag.state.va.us/media-center/news-releases/jay-jones/3162-attorneys-general-jones-and-rayfield-file-suit-against-spacex-parent-company-of-x-xai-and-grok-over-creation-and-promotion-of-child-exploitation-and-non-consensual-images-on-platform",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Show HN: DragDropMath – Learn math by feel",
+   "url": "https://dragdropmath.com/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Michael Nielsen took down his book on neural nets",
+   "url": "https://neuralnetworksanddeeplearning.com/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Source Control from Hell",
+   "url": "https://frantic.im/git/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Prospero: Bloat-free, native AI coding harness with ImGui",
+   "url": "https://github.com/skeeto/prospero",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "SessionGraph: Visualize all your coding agent sessions in one interactive graph",
+   "url": "https://sessiongraph.ai/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Woman evicted after landlord's AI assistant told her she could delay rent",
+   "url": "https://drmahfouz.substack.com/p/woman-evicted-after-landlords-ai",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Scrapheap America",
+   "url": "https://dansinker.com/posts/2026-11-20-scrapheap/",
+   "published": "2026-11-28",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "Bro's biggest mistake in business was not adding enough buy buttons...",
+   "url": "https://www.youtube.com/watch?v=azaP5qw2c30",
+   "published": "2026-11-28",
+   "summary": "Bro’s biggest mistake was not adding enough buy buttons. Meet Sanskar from Bangalore, India. He’s launched 30+ products. 8 of them make money, and together they’ve crossed $1M in revenue with zero employees. But in his first year, he built just one product. And he kept working on it even when it wasn’t working."
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "The Most Important Task A PM Can Do",
+   "url": "https://www.youtube.com/watch?v=VsfzasDVzgQ",
+   "published": "2026-11-27",
+   "summary": "The best PMs should actually ignore their Jira backlog | Sherif Mansour (Head of Product and AI, Atlassian)"
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "Why pools smell like chlorine",
+   "url": "https://www.youtube.com/watch?v=6qctfOK4SdA",
+   "published": "2026-11-27",
+   "summary": "Why pools smell like chlorine. Mark Rober filled two buckets with clean water and four times the normal amount of chlorine, then added a tiny splash of pee to bucket B. A day later, bucket A smelled like water and bucket B smelled exactly like a pool. The CDC says that \"chlorine\" smell is probably chloramines, which form when chlorine combines with pee and sweat. Idea and experiment: Mark Rober. Source: CDC, Preventing Eye Irritation from Pool Chemicals (cdc.gov). Clips: Mark Rober, \"How much pee is in a pool?\" (YouTube Short); Pixabay footage by xat-ch, BernardMedia-DR, Vladvictoria, jcax2, olenailinska, Ian5152, stefaniejockschat, Coverr-Free-Footage, flutie8211, swistakens, MilanWulf. Send this to the friend who swears they've never peed in a pool. #Shorts #science #swimming #pool"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-mcp 0.4",
+   "url": "https://simonwillison.net/2026/Nov/27/datasette-mcp/",
+   "published": "2026-11-27",
+   "summary": "Release: datasette-mcp 0.4 Fixed for compatibility with Datasette 1.0a44 . Tags: model-context-protocol , datasette"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "RightFont 2026",
+   "url": "https://www.producthunt.com/products/rightfont",
+   "published": "2026-11-27",
+   "summary": "The right font, right now. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Onset",
+   "url": "https://www.producthunt.com/products/onset",
+   "published": "2026-11-27",
+   "summary": "AI reviews, titles and thumbnails for YouTube creators Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Ploid",
+   "url": "https://www.producthunt.com/products/ploid",
+   "published": "2026-11-27",
+   "summary": "People search for AI agents, across 2B+ profiles Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Depost AI",
+   "url": "https://www.producthunt.com/products/depost-ai",
+   "published": "2026-11-27",
+   "summary": "The LinkedIn AI agent that learns what works for your brand Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Form Action Store",
+   "url": "https://www.producthunt.com/products/form-action-store",
+   "published": "2026-11-27",
+   "summary": "Discover, create and grow with powerful digital tools. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Woomool",
+   "url": "https://www.producthunt.com/products/woomool",
+   "published": "2026-11-27",
+   "summary": "AI Canvas where thinking becomes tangible Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "The Balatro Timeline",
+   "url": "https://localthunk.com/blog/balatro-timeline-3aarh",
+   "published": "2026-11-27",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
+   "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+   "published": "2026-11-27",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Citroën Hydraulic System",
+   "url": "https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html",
+   "published": "2026-11-27",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
+   "url": "https://bouncemarket.minhanhday.com/",
+   "published": "2026-11-27",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "First images of the impact of DART asteroid deflection experiment",
+   "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+   "published": "2026-11-27",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Rayshader 1.0: Exit the Matrix",
+   "url": "https://www.tylermw.com/posts/rayverse/rayshader-1-0-exit-the-matrix.html",
+   "published": "2026-11-27",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "False computer-checked proofs",
+   "url": "https://cr.yp.to/proofs/falseccp.html",
+   "published": "2026-11-27",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "fplotlib – Fortran Plotting Library",
+   "url": "https://github.com/fortran-lang/fplotlib",
+   "published": "2026-11-27",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hello China Tech",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "china",
+    "ai",
+    "consumer-tech"
+   ],
+   "via": "rss",
+   "title": "China's Memory Champion Prices With the Market",
+   "url": "https://hellochinatech.com/p/cxmt-memory-prices-xiaomi-transsion",
+   "published": "2026-11-27",
+   "summary": "CXMT reported a gross margin near 90%, while Xiaomi and Transsion used operating cash in the third quarter."
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Why \"Everyone's An AI Builder\" Is A Myth",
+   "url": "https://www.youtube.com/watch?v=H1gRkTkEo7I",
+   "published": "2026-11-26",
+   "summary": "The case for keeping distinct roles in your team | Sherif Mansour (Head of Product and AI, Atlassian)"
+  },
+  {
+   "source": "Aakash Gupta (Product Growth)",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "ai-pm",
+    "career"
+   ],
+   "via": "youtube-api",
+   "title": "Why your voice sounds weird on recordings",
+   "url": "https://www.youtube.com/watch?v=JJ4w9q3PNnQ",
+   "published": "2026-11-26",
+   "summary": "Why your voice sounds weird on recordings. When you talk, sound reaches your ear through the air and through your skull. Bone carries frequencies up to about 1 kHz, so you sound deeper to yourself. A microphone only hears the air path. Source: JAIST (Unoki), Journal of Speech, Language, and Hearing Research, 2021. Idea: ASAP SCIENCE. Clips: Daniel Thrasher, \"When you hear your own voice for the first time\" (YouTube); Pixabay footage by Engin_Akyurt, stevediaz, MrWashingt0n, intersubjektiv, magicmore, NeuroPixels, VFS_World, Bastien86, flutie8211, iwsky, conte_public, mephala1980. Do you hate your recorded voice? So send this to the friend who refuses to listen to their own voice notes. #Shorts #voice #science #sound"
+  },
+  {
+   "source": "Y Combinator",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "startups",
+    "startup-school",
+    "ai"
+   ],
+   "via": "youtube-api",
+   "title": "Startup School Europe 2027!",
+   "url": "https://www.youtube.com/watch?v=8gOkTwEHTP8",
+   "published": "2026-11-26",
+   "summary": "Startup School is coming to the UK! Hear from Paul Graham, Garry Tan, and founders like James Hawkins from PostHog, Philip Johnston from Starcloud, and Hiroki Takeuchi from GoCardless. And join the best builders and hackers from across Europe for a day of talks and sessions with YC partners in London on February 6. Space is limited. Apply to attend at events.ycombinator.com/startup-school-europe-2027"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "Quoting Jack Despain Zhou",
+   "url": "https://simonwillison.net/2026/Nov/26/jack-despain-zhou/",
+   "published": "2026-11-26",
+   "summary": "Among the many already existing effects of AI has been a great de-individualization. I open a YouTube video, and I hear Claude. I sit in a conference presentation, and I hear Claude. I open my email inbox, and I find pitches and articles from ostensibly serious people with ostensibly serious credentials attached to ostensibly serious institutions who want to publish things attached to their reputations and mine, and I see Claude . — Jack Despain Zhou , Spitting in the Face of Glaude Tags: ai-misuse , claude , generative-ai , ai , llms"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "sqlite3_rsync: Database Remote-Copy Tool For SQLite",
+   "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/",
+   "published": "2026-11-26",
+   "summary": "sqlite3_rsync: Database Remote-Copy Tool For SQLite This additional SQLite tool has been around for a while now - it was added as \"experimental\" in SQLite 3.47.0 in October 2024 and enhanced in SQLite 3.50.0 in May 2025 . It was only today that I understood one of its most attractive characteristics. Normally, if you want to grab a snapshot copy of a SQLite database, you need to use either the backup API or VACUUM INTO . In both cases you need enough disk space to create a duplicate copy of your database, so if you're on a small instance and you already use more than half of the available disk..."
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "The New York Times warns photographers not to update Photoshop over AI features",
+   "url": "https://simonwillison.net/2026/Nov/26/hn-50651685/",
+   "published": "2026-11-26",
+   "summary": "My comment on The New York Times warns photographers not to update Photoshop over AI features — Hacker News. I had a NYT photographer take my picture at my home earlier this year (for a story about Moltbook, oddly enough). At one point I asked if they could fix things up if I had a stain on my shirt and they said absolutely not - they present photographs as they were taken, with cropping and balancing applied but no edits beyond that. He did spend a bunch of time trying to find the best possible natural lighting for the shots he wanted. The photo at the top of https://www.nytimes.com/2026/02/0..."
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "Quoting Scott Aaronson",
+   "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+   "published": "2026-11-26",
+   "summary": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you some idea of how our resolution into the complexity-theoretic universe, and the whole universe of mathematical truth beyond it, has now improved. — Scott Aaronson Tags: mathematics , llms , ai , generative-ai"
+  },
+  {
+   "source": "Simon Willison",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "ai-engineering",
+    "agents"
+   ],
+   "via": "rss",
+   "title": "datasette-charts 0.3a0",
+   "url": "https://simonwillison.net/2026/Nov/25/datasette-charts/",
+   "published": "2026-11-26",
+   "summary": "Release: datasette-charts 0.3a0 I added chart annotations to datasette-charts ! You can now render a chart and then annotate it with lines, shaded areas, labels, or a combination of the three. A chart with annotations looks like this: Here's that same chart in Datasette Lite , where you can tweak the annotations using the chart builder UI: If you also install Datasette Agent the agent can build annotated charts for you. Here's what I got on the agent.datasette.io demo for this prompt: Show a chart comparing Simon's tagged content about LLMs with his tagged content about Datasette, with annotat..."
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Remove Silence",
+   "url": "https://www.producthunt.com/products/remove-silence",
+   "published": "2026-11-26",
+   "summary": "Cut the silence from audio in your browser, free Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "slay",
+   "url": "https://www.producthunt.com/products/slay-3",
+   "published": "2026-11-26",
+   "summary": "AI composition guide camera app for iPhone Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Contral",
+   "url": "https://www.producthunt.com/products/contral",
+   "published": "2026-11-26",
+   "summary": "The AI coding agent that checks its work and teaches you Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Periscope",
+   "url": "https://www.producthunt.com/products/periscope-4",
+   "published": "2026-11-26",
+   "summary": "Turn any work into an API Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "iwantmy.app",
+   "url": "https://www.producthunt.com/products/iwantmy-app",
+   "published": "2026-11-26",
+   "summary": "Describe a mobile app in chat and open it on your phone Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Remora",
+   "url": "https://www.producthunt.com/products/remora-6",
+   "published": "2026-11-26",
+   "summary": "The long-term memory layer for AI agents Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Claude-Mem Cloud Sync",
+   "url": "https://www.producthunt.com/products/claude-mem",
+   "published": "2026-11-26",
+   "summary": "Switch devices. Keep your AI agents' memory. Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "DeskFleet",
+   "url": "https://www.producthunt.com/products/deskfleet",
+   "published": "2026-11-26",
+   "summary": "Run coding agents together across your team’s machines Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Superframes",
+   "url": "https://www.producthunt.com/products/superframes-ai-video-editor",
+   "published": "2026-11-26",
+   "summary": "Brief an AI Director to edit the whole video Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "SuperLoupe",
+   "url": "https://www.producthunt.com/products/superloupe",
+   "published": "2026-11-26",
+   "summary": "search inside anything on your Mac Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Doodle",
+   "url": "https://www.producthunt.com/products/doodle-5",
+   "published": "2026-11-26",
+   "summary": "The stick figure on your taskbar that answers questions Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "WhipDesk",
+   "url": "https://www.producthunt.com/products/whipdesk",
+   "published": "2026-11-26",
+   "summary": "Control AI coding agents from your phone Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "OpenChat",
+   "url": "https://www.producthunt.com/products/openchat-5",
+   "published": "2026-11-26",
+   "summary": "Open-source live chat in your own Cloudflare account Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Pax by Pydantic",
+   "url": "https://www.producthunt.com/products/pydantic",
+   "published": "2026-11-26",
+   "summary": "A coding agent where even coding is a plugin Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Upsolve Harness 2.0",
+   "url": "https://www.producthunt.com/products/upsolve-ai",
+   "published": "2026-11-26",
+   "summary": "A data agent that's 2x faster and learns every user Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Ground",
+   "url": "https://www.producthunt.com/products/ground-2",
+   "published": "2026-11-26",
+   "summary": "Generate high quality synthetic data for testing or training Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "How WinHelp Files Work",
+   "url": "https://quin.fyi/posts/how-winhelp-files-work.html",
+   "published": "2026-11-26",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Atlantic 1866: information and shipping in the age of the telegraph",
+   "url": "https://atlantic-1866.com/",
+   "published": "2026-11-26",
+   "summary": "Comments"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "Indian app guy created 30+ apps and has now crossed $1m in total revenue 😱",
+   "url": "https://www.youtube.com/watch?v=eki8tifrNrI",
+   "published": "2026-11-26",
+   "summary": "Meet Sanskar. He’s from Bangalore, India. He skipped college, worked at a call center, then did 8 months in a sales job and ended up back at zero. Then he saw a guy get 300 likes just for sharing his sign-in and sign-up screens. “I created a GitHub account, the Indian app guy as username. And then I posted sign up, sign in screen of mine.”"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "Bro made $0 for 7 years then one change took his SaaS to $40K/month 🤯",
+   "url": "https://www.youtube.com/watch?v=sX3hwWhKALo",
+   "published": "2026-11-26",
+   "summary": "Dude made $0 for 7 years building products, then one change took his SaaS to $40K/month. Meet Filip. He’s a software developer who spent 7 years building products on the side. Total revenue: $0. “My biggest mistake was that I was spending most of this time building products instead of marketing them.” So he flipped it. He’d never had an Instagram or TikTok account, but he started building in public and showing his face on X. Full video: https://www.youtube.com/watch?v=Ce_wXQ1BJjE"
+  },
+  {
+   "source": "Starter Story",
+   "type": "youtube",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "indie-business",
+    "founders",
+    "case-studies"
+   ],
+   "via": "youtube-api",
+   "title": "I Built 3 Apps to $100K/month",
+   "url": "https://www.youtube.com/watch?v=E_z1t_Iw9jM",
+   "published": "2026-11-26",
+   "summary": "About 1 year ago, George came on Starter Story and told us about how he was making $17K per month with his app. Today, just one year later, he has grown multiple to nearly $120K per month!! In this video, George will break down how grew his business to $120K/month and the lessons he learned about scaling his business along the way *iOS ideas database:* https://clickhubspot.com/ye64 Say hi to George: https://twitter.com/GeorgeLampro20 Chapters: 0:00 - Remember me? 0:45 - Welcome BACK! 1:14 - What are the apps? 1:28 - Numbers behind the business 1:56 - Growth overview 3:00 - More iOS app ideas 3:31 - One vs Many apps 4:05 - Why influencers and paid ads? 5:06 - Scaling apps playbook 7:33 - Learning curve 8:06 - Final advice 9:11 - Reflections! 🔔 Follow the Second Channel: @StarterStoryBuild 🏁 We're hiring: starterstory.com/jobs This video is an educational case study of this founder’s experience. It is not financial advice and does not guarantee any income or results. Every business is different and your results may vary."
+  },
+  {
+   "source": "Aakash Gupta newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "product",
+    "ai-pm"
+   ],
+   "via": "rss",
+   "title": "I made my entire podcast available to your AI",
+   "url": "https://www.news.aakashg.com/p/pod-transcripts-github",
+   "published": "2026-11-26",
+   "summary": "Every Growth Podcast transcript, free on GitHub and ready for Claude Code, plus the podcast MCP and a $1,200 build contest."
+  },
+  {
+   "source": "John Cutler",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "product-ops",
+    "systems"
+   ],
+   "via": "rss",
+   "title": "TBM 453: How to Get Unstuck Without Losing Yourself (or Pretending Everything Is Fine)",
+   "url": "https://cutlefish.substack.com/p/tbm-453-how-to-get-unstuck-without",
+   "published": "2026-11-26",
+   "summary": "Or how to stay stuck for as long as there's something worth wrestling with."
+  },
+  {
+   "source": "Lenny's Podcast",
+   "type": "youtube",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth",
+    "career",
+    "ai-products"
+   ],
+   "via": "youtube-api",
+   "title": "Why Muse Has Jolly",
+   "url": "https://www.youtube.com/watch?v=lTOV04EGkOA",
+   "published": "2026-11-25",
+   "summary": "The story behind Muse's iconic character, Jolly | Mona Sarantakos (Head of Product, Muse)"
+  },
+  {
+   "source": "Lenny's Newsletter",
+   "type": "rss",
+   "role": "people",
+   "priority": 1,
+   "tags": [
+    "product",
+    "growth"
+   ],
+   "via": "rss",
+   "title": "Gemini 4 Neon beat GPT-6.2 and Claude in my 25-task AI benchmark",
+   "url": "https://www.lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude",
+   "published": "2026-11-25",
+   "summary": "Watch now (32 mins) | 🎙️ My late-2026 How I AI bench: GPT-6.2 disappointed me, Opus 5.5 is my least annoying daily driver, and Gemini 4 Neon is now my top pick"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Wizstar R1",
+   "url": "https://www.producthunt.com/products/wizstar",
+   "published": "2026-11-25",
+   "summary": "Seedance 2.0-level product videos at a lower cost Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Espresso 27",
+   "url": "https://www.producthunt.com/products/espresso-27",
+   "published": "2026-11-25",
+   "summary": "The web editor for people who love the Mac Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Spark AI",
+   "url": "https://www.producthunt.com/products/spark-ai-7",
+   "published": "2026-11-25",
+   "summary": "AI-native permitting & diligence services for data centers Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "FocusHaze",
+   "url": "https://www.producthunt.com/products/focushaze",
+   "published": "2026-11-25",
+   "summary": "Dim every window except the one you're working in Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "NEXUS",
+   "url": "https://www.producthunt.com/products/nexus-42",
+   "published": "2026-11-25",
+   "summary": "Map codebase locally and AI changes only what you approved Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Hello Transcribe 5",
+   "url": "https://www.producthunt.com/products/hello-transcribe",
+   "published": "2026-11-25",
+   "summary": "Private transcription with speaker labels, all on device Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Postmaster of Puppets",
+   "url": "https://www.producthunt.com/products/postmaster-of-puppets",
+   "published": "2026-11-25",
+   "summary": "See if anyone can send email as your domain Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Flurra",
+   "url": "https://www.producthunt.com/products/flurra",
+   "published": "2026-11-25",
+   "summary": "Ask Claude or ChatGPT to edit your videos Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "InfraThrone DevOps Park",
+   "url": "https://www.producthunt.com/products/infrathrone-devops-park",
+   "published": "2026-11-25",
+   "summary": "Fix 300+ real production outages in live DevOps labs Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Kagi Mail",
+   "url": "https://www.producthunt.com/products/kagi",
+   "published": "2026-11-25",
+   "summary": "Private email that puts people who need you first Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Transept AI",
+   "url": "https://www.producthunt.com/products/transept-ai",
+   "published": "2026-11-25",
+   "summary": "Translate your book in your own voice and prove authorship Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Ottante",
+   "url": "https://www.producthunt.com/products/ottante",
+   "published": "2026-11-25",
+   "summary": "Checks the work your AI agents did, right on your Mac Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Nookdeck",
+   "url": "https://www.producthunt.com/products/nookdeck",
+   "published": "2026-11-25",
+   "summary": "Turn your old phone into a Stream Deck for your computer Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Mime",
+   "url": "https://www.producthunt.com/products/mime",
+   "published": "2026-11-25",
+   "summary": "Silent dictation: mouth the words and it types them Discussion | Link"
+  },
+  {
+   "source": "Product Hunt",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches"
+   ],
+   "via": "rss",
+   "title": "Monton",
+   "url": "https://www.producthunt.com/products/monton",
+   "published": "2026-11-25",
+   "summary": "AI agents that do your agency's busywork Discussion | Link"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "GPT 6.2 Astra Solves a Historical Mystery",
+   "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
+   "published": "2026-11-25",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Cyberpunk Television Shows",
+   "url": "https://shellzine.net/cyberpunk-television/",
+   "published": "2026-11-25",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hacker News front page",
+   "type": "rss",
+   "role": "frontier",
+   "priority": 1,
+   "tags": [
+    "launches",
+    "ai"
+   ],
+   "via": "rss",
+   "title": "Lydian Chromatic Concept of Tonal Organization",
+   "url": "https://en.wikipedia.org/wiki/Lydian_Chromatic_Concept_of_Tonal_Organization",
+   "published": "2026-11-25",
+   "summary": "Comments"
+  },
+  {
+   "source": "Hello China Tech",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "china",
+    "ai",
+    "consumer-tech"
+   ],
+   "via": "rss",
+   "title": "China's Robotaxis Go Global Inside Uber's App",
+   "url": "https://hellochinatech.com/p/china-robotaxi-uber-expansion",
+   "published": "2026-11-25",
+   "summary": "Chinese developers have contracted thousands of robotaxis abroad. Uber plans about 1,000 driverless cars outside the US by the end of 2027, from every supplier."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How Steven Basart forced his way into Beacon Health and became its first engineer",
+   "url": "https://www.ycombinator.com/blog/how-steven-basart-forced-his-way-into-beacon-health-and-became-its-first-engineer/",
+   "published": "2026-11-25",
+   "summary": "From dropping out of a YC batch to building an internal programming language at a healthcare startup, Steven does whatever it takes."
+  },
+  {
+   "source": "Y Combinator blog",
+   "type": "rss",
+   "role": "people",
+   "priority": 2,
+   "tags": [
+    "startups"
+   ],
+   "via": "rss",
+   "title": "How Daniel Zeltser cold-emailed his way to employee #2 at Beacon Health",
+   "url": "https://www.ycombinator.com/blog/how-daniel-zeltser-cold-emailed-his-way-to-employee-2-at-beacon-health/",
+   "published": "2026-11-25",
+   "summary": "Daniel Zeltser left Duke to join Beacon Health as its first engineer hire, building AI agents that keep patient care from falling through the cracks."
+  }
+ ]
+}
